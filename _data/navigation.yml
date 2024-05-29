@@ -1,12 +1,100 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Categories"
+    url: /categories/
+  - title: "Tags"
+    url: /tags/
+  #- title: "About"
+  #  url: /about/
+  - title: "Posts by Year"
+    url: /posts/
+  # - title: Archive
+  #   sublinks:
+  #     - title: By Tag
+  #       url: /tags/
+  #     - title: By Category
+  #       url: /categories/
+  #     - title: By Year
+  #       url: /posts/
+  - title: Recommended
+    sublinks:
+      - title: 구라제거기
+        url: /HoaxEliminator
+      - title: Notepad4
+        url: /Notepad4
+      - title: (구) TEUS.me
+        url: https://teus.tistory.com/
+
+sidebar-category:
+  - title: "영화"
+    children:
+    - title: "007"
+      url:  "/JamesBond"
+      category: "JamesBond"
+    - title: "DC 히어로"
+      url:  "/DCHero"
+      category: "DCHero"
+    - title: "마블 히어로"
+      url:  "/MarvelHero"
+      category: "MarvelHero"
+    - title: "액션 어드벤처"
+      url:  "/ActionAdventure"
+      category: "ActionAdventure"
+    - title: "SF"
+      url:  "/SciFi"
+      category: "SciFi"
+    - title: "애니"
+      url:  "/Animation"
+      category: "Animation"
+    - title: "그외 모든 영화"
+      url:  "/AnyMovies"
+      category: "AnyMovies"
+    - title: "영화잡답"
+      url:  "/MovieTalk"
+      category: "MovieTalk"
+  - title: "IT"
+    children:
+    - title: "구라제거기"
+      url:  "/HoaxEliminator"
+      category: "HoaxEliminator"
+    - title: "Notepad4"
+      url:  "/Notepad4"
+      category: "Notepad4"
+    - title: "iDevice"
+      url:  "/iDevice"
+      category: "iDevice"
+    - title: "자작 프로그램"
+      url:  "/MyProgram"
+      category: "MyProgram"
+    - title: "블로그"
+      url:  "/blog"
+      category: "blog"
+    - title: "미디어"
+      url:  "/media"
+      category: "media"
+    - title: "알고리즘"
+      url:  "/algorithm"
+      category: "algorithm"
+    - title: "게임"
+      url:  "/game"
+      category: "game"
+    - title: "잡담"
+      url:  "/ITTalk"
+      category: "ITTalk"
+  - title: "신변잡기"
+    children:
+    - title: "스위스 여행 2025"
+      url:  "/travel2025"
+      category: "travel2025"
+    - title: "먹거리"
+      url:  "/food"
+      category: "food"
+    - title: "책"
+      url:  "/books"
+      category: "books"
+    - title: "farewell"
+      url:  "/farewell"
+      category: "farewell"
+    - title: "기타 등등"
+      url:  "/etc"
+      category: "etc"
