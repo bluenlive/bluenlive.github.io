@@ -320,8 +320,6 @@ defaults:
       author_profile: true
       read_time: false
       show_date: true
-      date_format: "%Y-%m-%d"
-      show_last_modified_at: true
       comments: # true
       share: true
       related: true
