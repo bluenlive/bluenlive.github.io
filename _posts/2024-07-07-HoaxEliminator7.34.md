@@ -56,7 +56,7 @@ x86과 x64 버전이 함께 들어있는데, 64비트 환경이라면 x64 버전
 
 
 <div style="text-align: center;" markdown="1">
-[Download](</attachment/2024-07-06/HoaxEliminator7.34.zip>){: .btn .btn--info} [HoaxEliminator7.34.zip](</attachment/2024-07-06/HoaxEliminator7.34.zip>)
+[Download](</attachment/2024-07-06/HoaxEliminator7.35.zip>){: .btn .btn--info} [HoaxEliminator7.35.zip](</attachment/2024-07-06/HoaxEliminator7.35.zip>)
 <br>password꞉ <span style="color: red; font-size: 1.5em;"><b>teus.me</b></span>
 </div>
 
