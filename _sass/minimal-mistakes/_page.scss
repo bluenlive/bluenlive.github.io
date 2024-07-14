@@ -116,6 +116,11 @@ body {
     font-size: 1em;
   }
 
+  // BLUEnLIVE: shrink font size for lists
+  ul, ol, dl {
+    font-size: 0.975em!important;
+  }
+
   /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
