@@ -2,7 +2,7 @@
 layout: single
 title: "제임스 본드 테마의 작곡가는?"
 categories:
-  - 007
+  - JamesBond
 ---
 
 
