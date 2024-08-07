@@ -290,7 +290,7 @@
   .hidden-links {
     position: absolute;
     top: 100%;
-    inset-inline-end: 0;
+    right: 0;
     margin-top: 15px;
     padding: 5px;
     border: 1px solid $border-color;
@@ -315,11 +315,11 @@
       }
     }
 
-    &::before {
+    &:before {
       content: "";
       position: absolute;
       top: -11px;
-      inset-inline-end: 10px;
+      right: 10px;
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
@@ -328,11 +328,11 @@
       z-index: 0;
     }
 
-    &::after {
+    &:after {
       content: "";
       position: absolute;
       top: -10px;
-      inset-inline-end: 10px;
+      right: 10px;
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;

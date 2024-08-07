@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2024-05-27T01:08:26+08:00'
+last_modified_at: '2024-06-27T21:13:13+08:00'
 toc: false
 ---
 
@@ -16,6 +16,28 @@ toc: false
 
 {% raw %}
 ## Unreleased
+
+### Enhancements
+
+- Add RTL Support. [#4886](https://github.com/mmistakes/minimal-mistakes/pull/4886)
+- Add missing Polish translation. [#4890](https://github.com/mmistakes/minimal-mistakes/pull/4890)
+- Rewrite most directions with [CSS logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values).
+
+### Bug Fixes
+
+- Replace a redirected link to MadeMistakes in footer. [#4882](https://github.com/mmistakes/minimal-mistakes/pull/4882)
+- Fix wrong float direction for `feature_row` with `type="right"`. [#4061](https://github.com/mmistakes/minimal-mistakes/issues/4061)
+
+### Documentation & Maintenance
+
+- Automatically update Algolia search index with GitHub Actions.
+
+## [4.26.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.26.2)
+
+### Enhancements
+
+- Add Czech localization. [#4866](https://github.com/mmistakes/minimal-mistakes/pull/4866)
+- Allow overriding HTML `lang` attribute on a per-page basis. [#4862](https://github.com/mmistakes/minimal-mistakes/pull/4862)
 
 ### Bug Fixes
 
