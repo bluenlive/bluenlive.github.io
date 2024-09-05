@@ -16,9 +16,11 @@ categories:
 이 서비스를 사용하기 위해서는 API 키가 필요하다.  
 국가주소정보시스템에서 API 키를 발급받아야 한다.
 
-[국가주소정보시스템 API신청하기](https://business.juso.go.kr/addrlink/openApi/apiReqst.do){:target="_blank"}에 접속해서 API 키를 발급받는다.
+[국가주소정보시스템 API신청하기](https://business.juso.go.kr/addrlink/openApi/apiReqst.do){:target="_blank"}에 접속해서 API 키를 발급받는다.  
+이 때 반드시 **검색API**를 신청해야 한다.
 
 ![image](</images/2024-09-05/apis64_Q.png>){: .align-center}
+*검색API*
 
 페이지 하단에서는 아래와 같은 경고를 볼 수 있다.  
 당연한 말씀.
@@ -95,6 +97,7 @@ private async void btSearch_Click(object sender, EventArgs e)
 **부적절한 접속을 방지**하기 위한 **보호 코드**를 추가하는 것이 좋으며, 이는 예제 코드에도 명시되어 있다.
 
 ![image](</images/2024-09-05/sample_Q.png>){: .align-center}
+*정규식 13회 실행의 압박*
 
 그런데, 이 코드를 들여다 보면 뭔가 이상하다.  
 위의 정규식 코드로는 **\[**, **\]** 를 걸러낼 수 없다.  
@@ -103,7 +106,7 @@ private async void btSearch_Click(object sender, EventArgs e)
 ![image](</images/2024-09-05/error_Q.png>){: .align-center}
 *\[, \] 도 검색이 불가하다고 명시되어 있음*
 
-게다가, **SELECT** 처럼 SQL Injection을 막기 위한 코드를 막는 부분은 단순하게 해당 단어만 들어있으면 무조건 걸러낸다.  
+게다가, **SELECT** 처럼 SQL Injection을 막기 위한 코드 부분은 단순하게 해당 단어만 들어있으면 무조건 걸러낸다.  
 그리고, 그 단어 중에 **OR**이 포함되어 있다.  
 따라서, **WORLD** 같은 단어도 검색할 수 없는 것이다.
 
