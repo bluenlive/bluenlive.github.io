@@ -54,4 +54,3 @@ categories:
 ![image](</images/2024-02-10b/pluto5.jpg>){: .align-center}
 
 덧2. 로봇의 이름 "플루토"는 (행성에서 퇴출된) 명왕성(Pluto)에서 따온 게 아니라 **플루토늄**에서 따왔다고 함
-

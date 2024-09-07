@@ -70,7 +70,6 @@ def get_moon_rise_moon_set(location, tm):
     return moon_rise, moon_set
 {% endhighlight %}
 
-
 ## 필요한 함수들의 구현
 
 **경위도 좌표를 직교좌표로 변환**하는 함수가 우선 필요하다.  
@@ -160,6 +159,7 @@ def calc_angle_between(azimuth1, zenith1, azimuth2, zenith2):
 ## 본체 구현
 
 실제로 구현해야 할 내용은 다음과 같다.
+
 - 주어진 날짜의 달이 뜨고 지는 시간 계산
 - 이 시간에 대해 달의 방위 계산
 - 이 시간에 대해 ISS의 위치 계산

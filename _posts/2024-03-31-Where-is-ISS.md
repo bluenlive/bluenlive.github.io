@@ -181,7 +181,8 @@ WGS84 latitude -6.2373 N longitude 152.1915 E elevation 422381.6 m
 
 덧1. 비행 고도가 약 400 km라고 전술했는데, 데이터 확인 결과 고도는 약 422 km이다.
 
-덧2. ISS의 위치를 실시간으로 확인할 수 있는 사이트들은 아래와 같다.  
+덧2. ISS의 위치를 실시간으로 확인할 수 있는 사이트들은 아래와 같다.
+
 - [Heavens-Above](https://heavens-above.com){:target="_blank"}
 - [N2YO](https://www.n2yo.com){:target="_blank"}
 - [NASA](https://spotthestation.nasa.gov){:target="_blank"}

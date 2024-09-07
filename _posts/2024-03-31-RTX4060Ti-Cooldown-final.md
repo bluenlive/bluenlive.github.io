@@ -53,7 +53,3 @@ Curve Optimizer를 통해 **-25**로 설정했다.
 이제 정말 안정화된 것 같다.
 
 ![image](</images/2024-03-31a/cpuinfos64_Q.png>){: .align-center}
-
-
-
-

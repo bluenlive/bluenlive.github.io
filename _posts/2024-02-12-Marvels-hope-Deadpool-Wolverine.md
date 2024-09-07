@@ -25,4 +25,3 @@ categories:
     <span class="quotationMark quotationMark--right"></span ></blockquote>
   </div>
 </div>
-

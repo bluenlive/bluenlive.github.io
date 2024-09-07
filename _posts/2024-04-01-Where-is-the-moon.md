@@ -46,7 +46,6 @@ from datetime import datetime
 from pytz import timezone
 from pytz import utc
 
-
 location = LocationInfo(name="Seoul", region="Korea", timezone="Asia/Seoul", latitude=37.46707105652381, longitude=127.07507550716402)
 tm = datetime.now(tz=utc)
 
@@ -59,7 +58,6 @@ zenith_sun = sun.zenith(location.observer, tm)
 print('해의 방위각:', azimuth_sun)
 print('해의 천정각:', zenith_sun)
 print()
-
 
 azimuth_moon = moon.azimuth(location.observer, tm)
 zenith_moon = moon.zenith(location.observer, tm)
@@ -78,7 +76,6 @@ print('달의 위상:', moon_phase)
 | 14 .. 20.99 | Full Moon |
 | 21 .. 27.99 | Last Quarter |
 
-
 실행 결과는 다음과 같다.
 
 ```text
@@ -91,4 +88,3 @@ print('달의 위상:', moon_phase)
 달의 천정각: 127.77412008449195
 달의 위상: 21.889000000000003
 ```
-
