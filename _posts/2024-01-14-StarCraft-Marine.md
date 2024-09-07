@@ -43,4 +43,3 @@ categories:
 부디 모든 일이 잘 풀려서 공식 게임으로 출시되었으면 하는 바람이다.
 
 제작자 홈페이지: [StarCraft꞉ Marine](https://j-jlucas.github.io/PlaySCM){:target="_blank"}
-

@@ -33,4 +33,3 @@ categories:
 ![image](</images/2024-01-17a/teusme_blog.png>){: .align-center}
 
 기존 블로그에 더 이상의 업데이트는 하지 않고, 새로운 프로그램들은 여기에 올릴 예정.
-

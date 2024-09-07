@@ -47,7 +47,6 @@ toc_sticky: true
 이 함내 방송장비는 **1MC**(one-M-C)라고 부른다.  
 번역 따윈 할 필요 없다.
 
-
 ## 상황에 대한 몰이해
 
 ![image](/images/2024-01-12/ct02s64.jpg ){: .align-center}
@@ -66,7 +65,6 @@ The threats come as a response to the US involvement in Chechnya and are not con
 
 체첸을 **체크냐**라고 적은 건 그냥 애교 수준이다.
 
-
 ## 다른 작품들에 대한 몰이해
 
 ![image](/images/2024-01-12/ct07s64.jpg ){: .align-center}
@@ -83,4 +81,3 @@ The threats come as a response to the US involvement in Chechnya and are not con
 
 실버 → 은색, 서퍼 → 파도 까진 대충 그렇다 치고 **왕**은 누구인가?  
 **내가 왕이 될 상인가?** 같은 건가?
-
