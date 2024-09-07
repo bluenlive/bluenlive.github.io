@@ -95,4 +95,3 @@ categories:
 
 ![image](</images/2024-05-15b/escape_Bs64.jpg>){: .align-center}
 *정말로 〈혹성탈출〉에 가까운 제목 이었음*
-

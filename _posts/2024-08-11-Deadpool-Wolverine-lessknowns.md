@@ -24,7 +24,6 @@ toc_sticky: true
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/9AdF-yOJ0c8?controls=0&start=34&end=42" frameborder="0" allowfullscreen></iframe>
 
-
 ## 인간의 뼈는 206개? 207개? 215개?
 
 데드풀이 연기하는 라이언 레이놀즈는 인간의 뼈는 **206개**이고, 〈가십걸〉을 볼 땐 **207개**라고 말한다.  
@@ -34,7 +33,6 @@ toc_sticky: true
 
 ![image](</images/2024-08-11/Terminator2s64.jpg>){: .align-center}
 *인간 몸에는 215개의 뼈가 있고 그 중 한 개가 부러진 것 뿐이지롱*
-
 
 ## 감히 그 입에!!!
 
@@ -53,7 +51,6 @@ Get my country's name out of your fucking mouth!
 ![image](</images/2024-08-11/WillSmashs64.jpg>){: .align-center}
 *Keep my wife's name out of your fucking mouth!*
 
-
 ## 웬 헐크?
 
 데드풀이 다양한 울버린의 변종을 찾아다니는데, 그 중엔 헐크랑 싸우는 울버린도 있다.  
@@ -62,14 +59,12 @@ Get my country's name out of your fucking mouth!
 ![image](</images/2024-08-11/s-l1200_Bs64.jpg>){: .align-center}
 *이 표지는 181화임*
 
-
 ## MJ라고 부르라고?
 
 보이드에서 데드풀은 카산드라 노바에게 자신은 **마블 지쟈쓰**이며 **MJ**라고 불러도 된다는 드립을 친다.  
 여기서 MJ는 물론 스파이더맨의 여친 **Mary Jane**을 의미하기도 하지만, x약인 **마리x나**를 의미하기도 한다.
 
 ![image](</images/2024-08-11/Spider-Man-Mary-Jane-Kisss64.jpg>){: .align-center}
-
 
 ## 5명의 퍼니셔?
 
@@ -94,7 +89,6 @@ Get my country's name out of your fucking mouth!
 
 ![image](</images/2024-08-11/purnisherss64.jpg>){: .align-center}
 
-
 ## Either you die a hero...
 
 **제4의 벽**은 넘지만, **재생 능력은 갖추지 못했던** 나이스풀이 죽을 때 데드풀이 외친다.
@@ -113,4 +107,3 @@ He died a hero!!
 
 ![image](</images/2024-08-11/heros64.jpg>){: .align-center}
 *Either you die a hero, or live long enough to see yourself become the villain*
-

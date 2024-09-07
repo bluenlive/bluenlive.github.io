@@ -25,6 +25,7 @@ categories:
 메일 주소는 [`info.ko@switzerland.com`](mailto:info.ko@switzerland.com)이다.
 
 메일을 보낼 땐 아래와 같은 내용을 넣어주면 된다.
+
 ```text
 제목: 스위스 여행 정보 요청
 수신인: (이름)
@@ -44,6 +45,4 @@ categories:
 ![image](</images/2024-05-06/Scan4s64.jpg>){: .align-center}
 *스위스 트래블 지도*
 
-
 덧. 메일 보낼 때 좀 더 상세한 요청사항을 적었지만, 냉정하게(?) 딱 저거 둘 만 받음
-

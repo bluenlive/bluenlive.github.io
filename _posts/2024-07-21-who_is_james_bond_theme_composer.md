@@ -27,7 +27,6 @@ categories:
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/g6EuzGhIyRQ?controls=0" frameborder="0" allowfullscreen></iframe>
 
-
 하지만, 제작진은 이 음악이 그닥 마음에 들지 않았는지 **편곡과 연주**를 존 배리 오케스트라에게 맡긴다.
 
 문제는 시간도 충분히 주지 않았는데다 존 배리는 007 소설이나 영화에 대해 아무 것도 몰랐다는 것.  
@@ -43,4 +42,3 @@ categories:
 
 존 배리의 음악을 마음에 들어한 제작진은 차기작인 〈위기일발〉부터 음악을 존 배리에게 전담시킨다.  
 이후는 뭐 익히 알려진 바와 같이 존 배리는 **제임스 본드 영화 음악의 대부**가 된다.
-
