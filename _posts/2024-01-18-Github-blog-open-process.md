@@ -89,7 +89,8 @@ Giscus를 사용하는 것이 합리적이라 판단. [이 글](https://univdev.
 ## 4. 포스팅 관련
 
 이미지 갤러리를 사용하는 것은 [이 글](https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/){:target="_blank"}을 참고했다.  
-간단히 요약하면, 헤더 영역에 gallery 목록을 작성하고, 본문에는 다음 형식으로 갤러리를 삽입.  
+간단히 요약하면, 헤더 영역에 gallery 목록을 작성하고, 본문에는 다음 형식으로 갤러리를 삽입.
+
 ```liquid
 {% raw %}{% include gallery id="gallery_name" %}{% endraw %}
 ```
