@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "SRT 자막 관리 도우미 SRTier v5.23 공개"
+date: 2024-9-8 14:41:00 +0900
 categories:
   - MyProgram
 ---

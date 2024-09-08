@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "C#에서 DllImport 대신 LibraryImport 사용하기"
+date: 2024-9-8 15:58:00 +0900
 categories:
   - algorithm
 ---
