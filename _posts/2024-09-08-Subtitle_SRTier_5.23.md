@@ -14,7 +14,7 @@ SRT 자막 관리 도우미 SRTier를 5.23으로 업데이트했다.
 
 이 프로그램의 주요 기능은 아래와 같다.
 
-<div style="background-color: #eeeeee; padding: 10px; border: 1px dashed #c1c1c1; font-size: 0.85em; margin-bottom: 1.2em;" markdown="1">
+<div style="background-color: #eeeeee; padding: 0 10px 10px 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em; font-size: 0.95em;" markdown="1">
 - **SRT 교정**: SRT 파일을 읽은 뒤 오류를 수정한 뒤 다시 기록하거나 시간을 조정함
 - **자막 변환**: SAMI/SSA/ASS 자막을 SRT로 변환, SRT 자막을 SAMI로 변환
 - **텍스트 추출**: SRT 자막에서 텍스트만 추출
@@ -26,7 +26,7 @@ SRT 자막 관리 도우미 SRTier를 5.23으로 업데이트했다.
 
 조금 더 상세히 보면 기능들은 이렇다.
 
-<div style="background-color: rgb(219, 232, 251); padding: 10px; border: 1px dashed rgb(121, 165, 228); font-size: 0.85em; margin-bottom: 1.2em;" markdown="1">
+<div style="background-color: #d8e8fb; padding: 0 10px 10px 10px; border: 1px dashed #79a5e4; margin-bottom: 1.2em; font-size: 0.95em;" markdown="1">
 1. **SRT 교정**  
 - OCR 과정에서 **따옴표가 잘못 인식**된 경우나 **I(i)를 l(L)로 잘못 인식**된 경우를 수정  
 - OCR 과정에서 **숫자 사이에 불필요한 공백**이 들어간 경우 수정  

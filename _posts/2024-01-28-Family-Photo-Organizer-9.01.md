@@ -25,7 +25,7 @@ FPO는 HEIF/JPEG의 Exif 정보 중 촬영일자 정보를 읽어 **파일명을
 
 이 프로그램의 상세한 기능은 아래와 같다.
 
-<div style="background-color: #fefeb8; padding: 10px; border: 1px dashed #f3c534; font-size: 0.85em; margin-bottom: 1.2em;" markdown="1">
+<div style="background-color: #fefeb8; padding: 10px; border: 1px dashed #f3c534; font-size: 0.95em; margin-bottom: 1.2em;" markdown="1">
 **멀티코어 환경에서 이미지를 동시에 변환**(v5.1a부터)
 - JPEG 파일을 읽을 때 노이즈(JPEG Artifacts)를 제거하는 옵션 추가([jpeg-quantsmooth](https://github.com/ilyakurdyukov/jpeg-quantsmooth){:target="_blank"} 적용)
 - Exif에 기록된 촬영일자 순으로 파일명 수정

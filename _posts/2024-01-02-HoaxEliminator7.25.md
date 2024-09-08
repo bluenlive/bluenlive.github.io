@@ -8,7 +8,7 @@ categories:
 tags: ["activex","nProtect","구라제거기","뱅킹","보안","안랩"]
 ---
 
-<div style="border-style: dashed; border-width: 1px; border-color: rgb(121, 165, 228); background-color: rgb(219, 232, 251); padding: 10px;"><p style="text-align: center; margin-bottom: 0;"><span style="font-size: 1.111em;"><b><a href="/hoaxeliminator/HoaxEliminator7.34/">새 버전</a>이 나왔습니다. <a href="/hoaxeliminator/HoaxEliminator7.34/">새 버전</a>을 사용해주시기 바랍니다.</b></span></p></div><p><br /></p>
+<div style="border-style: dashed; border-width: 1px; border-color: #79a5e4; background-color: #dbe8fb; padding: 10px;"><p style="text-align: center; margin-bottom: 0;"><span style="font-size: 1.111em;"><b><a href="/hoaxeliminator/HoaxEliminator7.34/">새 버전</a>이 나왔습니다. <a href="/hoaxeliminator/HoaxEliminator7.34/">새 버전</a>을 사용해주시기 바랍니다.</b></span></p></div><p><br /></p>
 
 PC 뱅킹의 주적은 **PC 뱅킹 프로그램**이다.
 
