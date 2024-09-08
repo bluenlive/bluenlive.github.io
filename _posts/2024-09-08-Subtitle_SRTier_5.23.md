@@ -75,7 +75,7 @@ SRT 자막 관리 도우미 SRTier를 5.23으로 업데이트했다.
 이 프로그램은 아래 링크에서 다운받을 수 있다.
 
 <div style="text-align: center;" markdown="1">
-[Download SRTier v5.23.rar](</attachment/2024-09-08/SRTier v5.23.rar>){: .btn .btn--info .btn--large}
+[Download SRTier v5.23.rar](</attachment/2024-09-08/SRTier v5.23.rar>){: .btn .btn--info .btn--x-large}
 <br>password꞉ <span style="color: red; font-size: 1.5em;"><b>teus.me</b></span>
 </div>
 

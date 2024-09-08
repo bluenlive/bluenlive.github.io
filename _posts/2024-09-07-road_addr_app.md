@@ -32,7 +32,7 @@ categories:
 아래 링크에서 다운받을 수 있다.
 
 <div style="text-align: center;" markdown="1">
-[Download RoadAddress.zip](</attachment/2024-09-07/RoadAddress.zip>){: .btn .btn--info .btn--large}
+[Download RoadAddress.zip](</attachment/2024-09-07/RoadAddress.zip>){: .btn .btn--info .btn--x-large}
 <br>password꞉ <span style="color: red; font-size: 1.5em;"><b>teus.me</b></span>
 </div>
 
