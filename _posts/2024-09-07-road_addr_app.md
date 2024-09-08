@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "간단히 만들어본 도로명 주소 검색 앱"
+date: 2024-9-8 18:32:00 +0900
 categories:
   - MyProgram
 ---
@@ -40,3 +41,6 @@ categories:
 
 * 2024.9.7꞉ 1.00 공개
   * 최초 공개
+
+* 2024.9.8꞉ 1.01 공개
+  * Ctrl+F1로 API Key 변경 메뉴 추가
