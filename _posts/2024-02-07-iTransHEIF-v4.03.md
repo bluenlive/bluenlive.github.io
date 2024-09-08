@@ -35,7 +35,7 @@ categories:
 변환기는 아래 링크에서 다운받을 수 있으며, 별도의 설치 프로그램 따위는 없다.
 
 <div style="text-align: center;" markdown="1">
-[Download](</attachment/2024-02-07/iTransHEIF_v4.04.rar>){: .btn .btn--info} [iTransHEIF_v4.04.rar](</attachment/2024-02-07/iTransHEIF_v4.04.rar>)
+[Download iTransHEIF_v4.04.rar](</attachment/2024-02-07/iTransHEIF_v4.04.rar>){: .btn .btn--info .btn--large}
 <br>64bit only / password꞉ <span style="color: red; font-size: 1.5em;"><b>teus.me</b></span>
 </div>
 
