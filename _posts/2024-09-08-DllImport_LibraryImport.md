@@ -8,7 +8,7 @@ categories:
 C# 만으로는 모든 기능을 구현할 수 없기 때문에 윈도우 등에서 만든 DLL을 사용해야 할 때가 있다.  
 이를 위해 `DllImport`를 사용하는데, .NET 5부터는 `DllImport` 대신 `LibraryImport`를 사용할 수 있다.
 
-기존의 `DllImport`는 마샬링을 **런타임**에서 수행하다보니 동적으로 IL 코드를 생성할 수 없는 환경에서는 사용할 수 없었다.  
+`DllImport`는 마샬링을 **런타임**에서 수행하므로, 동적으로 IL 코드를 생성할 수 없는 환경에서는 사용할 수 없었다.  
 `LibraryImport`는 **컴파일 시점**에서 마샬링 코드를 생성하기 때문에 이러한 문제를 해결할 수 있다.
 
 ## GetSystemMenu
@@ -27,7 +27,7 @@ private static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
 private static partial IntPtr GetSystemMenu(IntPtr hWnd, [MarshalAs(UnmanagedType.Bool)] bool bRevert);
 ```
 
-쉽게 생각하면 `extern` 키워드를 사용하지 않고, `partial` 키워드를 사용하며, 필요한 경우 `MarshalAs` 특성을 사용하면 된다.
+쉽게 생각하면 `extern` 대신 `partial` 키워드를 사용하며, 필요한 경우 `MarshalAs` 특성을 사용하면 된다.
 
 ## AppendMenu
 
