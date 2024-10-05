@@ -115,12 +115,12 @@ private async void btSearch_Click(object sender, EventArgs e)
 C#에서는 실행 효율을 위해 **컴파일된 정규식**을 사용하는 것이 좋다.
 
 ```csharp
-[GeneratedRegex(@"[\[\]%=><]|\WOR\W|\WSELECT\W|\WINSERT\W|\WDELETE\W|\WUPDATE\W|\WCREATE\W|\WDROP\W|\WEXEC\W|\WUNION\W|\WFETCH\W|\WDECLARE\W|\WTRUNCATE\W", RegexOptions.IgnoreCase)]
+[GeneratedRegex(@"[\[\]%=><]|\b(OR|SELECT|INSERT|DELETE|UPDATE|CREATE|DROP|EXEC|UNION|FETCH|DECLARE|TRUNCATE)\b", RegexOptions.IgnoreCase)]
 private static partial Regex MyRegexInvalidChar();
 
 private static string CheckInvalidChars(string text)
 {
-    Match ret = MyRegexInvalidChar().Match(" " + text + " ");
+    Match ret = MyRegexInvalidChar().Match(text);
     if (!ret.Success)
         return string.Empty;
 
