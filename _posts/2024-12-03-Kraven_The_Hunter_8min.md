@@ -11,7 +11,7 @@ categories:
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/i-nAetWvYa8?controls=0" frameborder="0" allowfullscreen></iframe>
 
 그런데, 클립을 보다보니 굉장히 귀에 익은 음악이 들려온다.  
-고 **션 코너리**가 주연했던, 전설과도 같은 잠수함 영화 **〈붉은 10월〉**의 주요 테마 《Hymm to the Red October》가 들리는 것이다.
+고 **션 코너리**가 주연했던, 전설의 잠수함 영화 **〈붉은 10월〉**의 주요 테마 《Hymm to the Red October》가 들리는 것이다.
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/MRG1UixHvos?controls=0" frameborder="0" allowfullscreen></iframe>
 
