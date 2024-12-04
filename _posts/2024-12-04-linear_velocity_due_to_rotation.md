@@ -52,7 +52,6 @@ lon = np.arctan2(p3[1], p3[0])
 v3 = d3 * we * np.array([-np.sin(lon), np.cos(lon), 0])
 print('선속도:', v3, 'm/s')
 
-
 # 독도 동도의 선속력
 s3 = np.sqrt(v3[0]**2 + v3[1]**2) * 3600 / 1000
 print('선속력:', s3, 'km/h')
