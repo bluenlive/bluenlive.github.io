@@ -35,5 +35,5 @@ $$1+3+5+\cdots+(2n-1)+\cdots+5+3+1 = 2\left(1+3+\cdots+\left(2n-1\right)\right) 
 $$\sum_{i=1}^{n}2i^2-2i+1 = \frac{2n(n+1)(2n+1)}{6} - \frac{2n(n+1)}{2} + n = \frac{2n(n+1)(2n+1)}{6}$$
 
 문제에 언급된 $$n=4$$인 경우 및 $$n=10$$인 경우의 결과는 다음과 같다.\
-$$\frac{2\cdot4\cdot5\cdot9}{6} - 4^2 &= 44$$\
-$$\frac{2\cdot10\cdot11\cdot21}{6} - 10^2 &= 670$$
+$$\frac{2\cdot4\cdot5\cdot9}{6} - 4^2 = 44$$\
+$$\frac{2\cdot10\cdot11\cdot21}{6} - 10^2 = 670$$
