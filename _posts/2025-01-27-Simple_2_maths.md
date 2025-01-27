@@ -34,14 +34,16 @@ $$\begin{align}
 
 이 부분을 일반화해보면 다음과 같다.\
 $$\begin{align}
-1+3+5+\cdots+(2n-1)+\cdots+5+3+1 & =\\
-2\left(1+3+5+\cdots+\left(2n-1\right)\right) - (2n-1) & = 2n^2-2n+1
+f(n) & = 1+3+5+\cdots+(2n-1)+\cdots+5+3+1\\
+& = 2\left(1+3+5+\cdots+\left(2n-1\right)\right) - (2n-1)\\
+& = 2n^2-2n+1
 \end{align}$$
 
 그리고, 한 행에 사용되는 정육면체의 개수가 위와 같을 때 층의 개수가 $$n$$이라면 전체 정육면체의 개수는 다음과 같다.\
 $$\begin{align}
-\sum_{i=1}^{n}2i^2-2i+1 & =\\
-\frac{2n(n+1)(2n+1)}{6} - \frac{2n(n+1)}{2} + n & = \frac{2n(n+1)(2n+1)}{6} - n^2
+g(n) & = \sum_{i=1}^{n}2i^2-2i+1\\
+& = \frac{2n(n+1)(2n+1)}{6} - \frac{2n(n+1)}{2} + n\\
+& = \frac{2n(n+1)(2n+1)}{6} - n^2
 \end{align}$$
 
 문제에 언급된 $$n=4$$인 경우 및 $$n=10$$인 경우의 결과는 다음과 같다.\
