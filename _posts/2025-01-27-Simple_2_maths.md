@@ -11,13 +11,17 @@ categories:
 ![image](</images/2025-01-27/math1_Bs64.jpg>){: .align-center}
 
 1개, 2개, 3개... 씩 그룹 지어 생각하면 쉽게 풀 수 있다.\
-$$\left( \frac{1}{1} \right),\ \left( \frac{1}{2},\ \frac{2}{1} \right),\ \left( \frac{1}{3},\ \frac{2}{2},\ \frac{3}{1} \right),\cdots$$
+$$\begin{align}
+\left( \frac{1}{1} \right),\ \left( \frac{1}{2},\ \frac{2}{1} \right),\ \left( \frac{1}{3},\ \frac{2}{2},\ \frac{3}{1} \right),\cdots
+\end{align}$$
 
 199번째 항을 구하려면 일단, 이 항이 몇 번째 그룹인지와 그 그룹에서 몇 번째 항인지 알아야 한다.\
 각 그룹의 항의 개수가 1개, 2개, 3개... 순으로 증가하므로, 199번째 항은 20번째 그룹의 9번째 항이다.\
-$$\sum_{i=1}^{19}i = \frac{19\cdot 20}{2} = 190$$
+$$\begin{align}
+\sum_{i=1}^{19}i = \frac{19\cdot 20}{2} = 190
+\end{align}$$
 
-따라서, 199번째 항은 $$\frac{9}{12}$$이다.
+따라서, 199번째 항은 $$\begin{align} \frac{9}{12} \end{align}$$이다.
 
 ---
 
@@ -29,19 +33,16 @@ $$\sum_{i=1}^{19}i = \frac{19\cdot 20}{2} = 190$$
 첫 번째 층에는 1개, 두 번째 층에는 1+3+1=5개, 세 번째 층에는 1+3+5+3+1=13개... 이런 식으로 쌓아가면 된다.
 
 이 부분을 일반화해보면 다음과 같다.\
-$$1+3+5+\cdots+(2n-1)+\cdots+5+3+1 = 2\left(1+3+\cdots+\left(2n-1\right)\right) - (2n-1) = 2n^2-2n+1$$
-
 $$\begin{align}
-1+3+5+\cdots+(2n-1)+\cdots+5+3+1 = 2\left(1+3+\cdots+\left(2n-1\right)\right) - (2n-1) = 2n^2-2n+1
+1+3+5+\cdots+(2n-1)+\cdots+5+3+1 & =\\
+2\left(1+3+\cdots+\left(2n-1\right)\right) - (2n-1) & = 2n^2-2n+1
 \end{align}$$
 
 그리고, 한 행에 사용되는 정육면체의 개수가 위와 같을 때 층의 개수가 $$n$$이라면 전체 정육면체의 개수는 다음과 같다.\
-$$\sum_{i=1}^{n}2i^2-2i+1 = \frac{2n(n+1)(2n+1)}{6} - \frac{2n(n+1)}{2} + n = \frac{2n(n+1)(2n+1)}{6}$$
-
 $$\begin{align}
-\sum_{i=1}^{n}2i^2-2i+1 = \frac{2n(n+1)(2n+1)}{6} - \frac{2n(n+1)}{2} + n = \frac{2n(n+1)(2n+1)}{6}
+\sum_{i=1}^{n}2i^2-2i+1 & =\\
+\frac{2n(n+1)(2n+1)}{6} - \frac{2n(n+1)}{2} + n & = \frac{2n(n+1)(2n+1)}{6}
 \end{align}$$
-
 
 문제에 언급된 $$n=4$$인 경우 및 $$n=10$$인 경우의 결과는 다음과 같다.\
 $$\begin{align}
