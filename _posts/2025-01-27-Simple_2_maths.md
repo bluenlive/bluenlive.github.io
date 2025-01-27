@@ -38,8 +38,13 @@ $$\begin{align}
 그리고, 한 행에 사용되는 정육면체의 개수가 위와 같을 때 층의 개수가 $$n$$이라면 전체 정육면체의 개수는 다음과 같다.\
 $$\sum_{i=1}^{n}2i^2-2i+1 = \frac{2n(n+1)(2n+1)}{6} - \frac{2n(n+1)}{2} + n = \frac{2n(n+1)(2n+1)}{6}$$
 
+$$\begin{align}
+\sum_{i=1}^{n}2i^2-2i+1 = \frac{2n(n+1)(2n+1)}{6} - \frac{2n(n+1)}{2} + n = \frac{2n(n+1)(2n+1)}{6}
+\end{align}$$
+
+
 문제에 언급된 $$n=4$$인 경우 및 $$n=10$$인 경우의 결과는 다음과 같다.\
 $$\begin{align}
-\frac{2\cdot4\cdot5\cdot9}{6} - 4^2 & = 44$$\
-$$\frac{2\cdot10\cdot11\cdot21}{6} - 10^2 & = 670
+\frac{2\cdot4\cdot5\cdot9}{6} - 4^2 & = 44\\
+\frac{2\cdot10\cdot11\cdot21}{6} - 10^2 & = 670
 \end{align}$$
