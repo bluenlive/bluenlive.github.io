@@ -4,6 +4,11 @@ title: "굉장히 빠르게 정규분포 난수 생성하기"
 date: 2025-2-9 22:59:00 +0900
 categories:
   - algorithm
+toc: true
+toc_label: "Contents"
+#toc_icon: "cog"
+toc_icon: "book-open"
+toc_sticky: true
 ---
 
 ## 들어가기에 앞서
