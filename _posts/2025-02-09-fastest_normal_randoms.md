@@ -169,7 +169,7 @@ int main() {
     _PS256_CONST(minustwo, -2.0f);
 
     unsigned int seed = (unsigned int)rd();
-    __m256i x0 = _mm256_setr_epi32(seed, seed + 1, seed + 2, seed + 3, seed + 4, seed + 5, seed + 6, seed + 7);
+    __m256i x0 = _mm256_setr_epi32(seed, seed+1, seed+2, seed+3, seed+4, seed+5, seed+6, seed+7);
 
     __declspec(align(32)) float data[16];
 
