@@ -89,7 +89,7 @@ int main() {
 더불어, float로 생성하는가 double로 생성하는가 중요한 요소가 될 수 있다.
 
 정규분포 난수를 고속으로 생성하는 알고리즘이 몇 가지가 있다.\
-그 중에서도 **Ziggurat**, **Box-Muller** 등이 있다.\
+그 중에서도 **Ziggurat**, **Box-Muller** 등이 많이 사용된다.\
 이러한 알고리즘들은 높은 속도를 유지하면서도, 높은 품질의 난수를 생성하는 데에 도움을 준다.\
 따라서, 대량의 난수를 필요로 하는 응용 프로그램에서는 이러한 알고리즘을 고려해보는 것이 좋다.
 
@@ -101,9 +101,9 @@ Box-Muller 알고리즘은 가장 널리 사용되는 정규분포 난수 생성
 정교한 증명은 쉽지 않지만, 정리된 내용은 기적적으로 단순하다.
 
 균등분포 난수 $$ u \left(0,1\right], v \left[0,1\right] $$를 생성하고, 다음과 같이 변환한다.\
-$$ x = \sqrt{-2\ln u} \cos\left(2\pi v\right) $$\
-$$ y = \sqrt{-2\ln u} \sin\left(2\pi v\right) $$\
-이렇게 생성된 $$ x $$와 $$ y $$는 서로 독립이고, 표준 정규분포 ** \mathcal{N} \left(0, 1 \right) $$를 따른다.
+$$\begin x = \sqrt{-2\ln u} \cos\left(2\pi v\right) \end$$\
+$$\begin y = \sqrt{-2\ln u} \sin\left(2\pi v\right) \end$$\
+이렇게 생성된 $$ x $$와 $$ y $$는 서로 독립이고, 표준 정규분포 $$\begin \mathcal{N} \left(0, 1 \right) \end$$를 따른다.
 
 ## C++로 Box-Muller 알고리즘 구현
 
