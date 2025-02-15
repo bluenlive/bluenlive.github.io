@@ -6,12 +6,12 @@ categories:
   - MovieTalk
 ---
 
-## 미스터션샤인
+## 〈미스터 션샤인〉
 
 ![image](</images/2025-02-15b/Company_of_Korean_rebels_1907_by_F.A._McKenzie_from_Tragedy_of_Korea_Bs64.jpg>){: .align-center}
 
-이 사진은 1907년 9월 25일 영국인 F.A. 맥켄지가 촬영한 것으로, 그의 책 〈Tragedy of Korea〉에 실렸다.\
-드라마 〈미스터션샤인〉에서도 오마주 되었던 바로 그 사진이다.
+이 사진은 1907년 9월 25일 영국인 F.A. 맥켄지가 촬영한 것으로, 그의 책 《Tragedy of Korea》에 실렸다.\
+드라마 〈미스터 션샤인〉에서도 오마주 되었던 바로 그 사진이다.
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/IxOYmpkzpz4?controls=0" frameborder="0" allowfullscreen></iframe>
 
@@ -38,6 +38,6 @@ categories:
 ![image](</images/2025-02-15b/road_Bs64.jpg>){: .align-center}
 
 주변을 둘러보니, 대략의 위치를 찾을 수 있었다.\
-능선의 사진을 여러 장 찍었는데, 막상 집에 돌아와서 확인해보니 좀 더 우측을 찍었어야 됐었던 것 같다.
+능선의 사진을 여러 장 찍었는데, 막상 집에 돌아와서 확인해보니 좀 더 우측을 찍었어야 됐던 것 같다.
 
 ![image](</images/2025-02-15b/theplace_Bs64.jpg>){: .align-center}
