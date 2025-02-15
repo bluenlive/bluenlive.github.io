@@ -12,7 +12,7 @@ categories:
 ## 사소한 시작
 
 발단은 사소했다.\
-[Spetral Python](https://spectralpython.net/){:target="_blank"}이라는 라이브러리를 사용하는데, 파일을 읽지 못하고 예외가 발생했다.
+[Spetral Python](https://www.spectralpython.net/){:target="_blank"}이라는 라이브러리를 사용하는데, 파일을 읽지 못하고 예외가 발생했다.
 
 Spectral 데이터는 텍스트 포맷의 ENVY 파일과 바이너리 포맷으로 구성되어 있다.\
 이 중 ENVY 파일을 읽을 때 문제가 발생한 것.\
@@ -44,4 +44,4 @@ ANSI 포맷으로 변환하는 것으로 간단하게 종료.
 이것도 부족한지 [simdutf/simdutf](https://github.com/simdutf/simdutf){:target="_blank"}에서는 수많은 SIMD 기술들을 다 동원한다.
 
 즉, UTF-8 검증은 이제 어려운 기술도 아니고, 뭔가를 스스로 만들어야 되는 기술도 아니다.\
-그런데, 파이썬은 대체 왜 저런 수준인 걸까...
+그런데, **파이썬은 대체 왜 저런 수준**인 걸까...
