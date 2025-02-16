@@ -1,15 +1,15 @@
 ---
 layout: single
-title: "SRT 자막 관리 도우미 SRTier v5.23 공개"
-date: 2024-9-8 14:41:00 +0900
+title: "SRT 자막 관리 도우미 SRTier v5.25 공개"
+date: 2025-2-16 11:21:00 +0900
 categories:
   - MyProgram
 ---
 
 
-SRT 자막 관리 도우미 SRTier를 5.23으로 업데이트했다.
+SRT 자막 관리 도우미 SRTier를 5.25로 업데이트했다.
 
-자막 속성을 선택적으로 없애는 기능을 추가했고 및 반모음 오타 수정 기능을 추가했다.
+자막 속성을 선택적으로 없애는 기능을 추가했고 반모음 오타 수정 기능을 추가했다.
 
 ![image](</images/2024-09-08/srtier_B_Q.png>){: .align-center}
 
@@ -76,7 +76,7 @@ SRT 자막 관리 도우미 SRTier를 5.23으로 업데이트했다.
 이 프로그램은 아래 링크에서 다운받을 수 있다.
 
 <div style="text-align: center;" markdown="1">
-[Download SRTier v5.23.rar](</attachment/2024-09-08/SRTier v5.23.rar>){: .btn .btn--info .btn--x-large}
+[Download SRTier v5.25.rar](</attachment/2024-09-08/SRTier v5.25.rar>){: .btn .btn--info .btn--x-large}
 <br>password꞉ <span style="color: red; font-size: 1.5em;"><b>teus.me</b></span>
 </div>
 
@@ -86,3 +86,7 @@ SRT 자막 관리 도우미 SRTier를 5.23으로 업데이트했다.
   * UI 글꼴을 맑은 고딕에서 Segoe UI로 변경
   * 자막 효과 중에서 일부만 제거하는 기능 추가
   * 반모음 오타 수정 기능 추가
+
+* 2025.2.16꞉ v5.25 공개
+  * SAMI → SRT 변환 시 언어가 하나만 있으면 파일명에 언어를 추가하지 않도록 수정
+  * TOSS 아이디 후원을 [Buy Me A Coffee](https://buymeacoffee.com/bluenlive){:target="_blank"}로 변경
