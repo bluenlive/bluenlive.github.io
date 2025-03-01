@@ -18,7 +18,7 @@ Doppler rate를 계산하기 위해서는 radar velocity(effective velocity) $$ 
 ![image](</images/2025-02-28/Cumming_Bs64_Q.png>){: .align-center}
 
 위 그림에서 위성의 위치 $$ C $$를 알면 $$ V_s $$를 알 수 있다.\
-그리고, $$ C $$와 빔 벡터를 통해 지표면과의 접점인 $$ B $$를 알 수 있다.\
+그리고, $$ C $$와 빔 벡터를 통해 지표면과의 접점 $$ B $$를 알 수 있다.\
 그리고, 이 값들을 통해 $$ \theta_{sq} $$, $$ \theta_g $$를 계산할 수 있다.
 
 그러면, 아래와 같은 식이 성립한다.\
@@ -41,12 +41,12 @@ $$\begin{align}
 \end{align}$$
 
 그런데, 우리가 원하는 값은 $$ \theta $$가 아니라 $$ \sin \theta $$다.\
-따라서, 이 식을 적용하면...
+따라서, 아래의 식을 적용하면...\
 $$\begin{align}
 \sin \theta = \sqrt{1 - \cos ^2 \theta}
 \end{align}$$
 
-아래와 같이 원하는 값을 도출할 수 있다.
+아래와 같이 원하는 값을 도출할 수 있다.\
 $$\begin{align}
 \sin \theta = \sqrt {1 - \frac {\left ( \overrightarrow{a} \cdot \overrightarrow{b} \right )^2}{\left ( \left\| \overrightarrow{a} \right\| \cdot \left\| \overrightarrow{b} \right\| \right )^2}}
 \end{align}$$
@@ -89,8 +89,8 @@ np.sqrt((1 - (np.dot(C, B_to_C) ** 2 / np.dot(C, C) / np.dot(B_to_C, B_to_C))) /
         (1 - (np.dot(B, B_to_C) ** 2 / np.dot(B, B) / np.dot(B_to_C, B_to_C))))
 ```
 
-여기서 `np.dot(C, B_to_C)`를 강력한 **einsum**을 활용해서 `np.einsum('i,i->',C,B_to_C)`로 변경할 수 있다.\
-그럼 아래와 같이 변형이 가능하다.
+여기서 `np.dot(C, B_to_C)`는 강력한 **einsum**을 활용하면 `np.einsum('i,i->',C,B_to_C)`로 변형할 수 있다.\
+그럼 아래와 같이 쓸 수 있다.
 ```python
 np.sqrt((1 - (np.einsum('i,i->',C,B_to_C) ** 2 / np.einsum('i,i->',C,C) / np.einsum('i,i->',B_to_C,B_to_C))) /
         (1 - (np.einsum('i,i->',B,B_to_C) ** 2 / np.einsum('i,i->',B,B) / np.einsum('i,i->',B_to_C,B_to_C))))
@@ -106,7 +106,7 @@ np.sqrt((1 - (np.einsum('i,i->',C,B_to_C) ** 2 / np.einsum('i,i->',C,C) / sqr_no
 ## 파이썬에서의 활용 #2
 
 위에 길게 적긴 했지만, 사실 B, C가 위치 하나만을 기술할 때는 눈에 띄는 성능 향상은 없다.\
-이 접근방식은 B, C가 연속되는 위성의 위치 수백개 이상을 기술할 때 의미가 있는 방식이다.
+이 최적화는 B, C가 연속되는 위성의 위치 수백개 이상을 기술할 때 의미가 있는 방식이다.
 
 여기서는 설명을 간단하게 하기 위해 위성의 위치 2개를 저장한 것으로 기술하는 것으로 시작한다.
 ```python
@@ -144,4 +144,4 @@ np.sqrt((1 - (np.einsum('ij,ij->i', C, B_to_C) ** 2 / np.einsum('ij,ij->i', C, C
         (1 - (np.einsum('ij,ij->i', B, B_to_C) ** 2 / np.einsum('ij,ij->i', B, B) / sqr_norm_B_to_C)))
 ```
 
-이렇게 하면, 많은 수의 위성 위치에 대해서 최적화된 $$ V_g $$를 계산할 수 있다.
+이렇게 하면, 많은 수의 위성 위치에 대해서 최적화된 성능으로 $$ V_g $$를 계산할 수 있다.
