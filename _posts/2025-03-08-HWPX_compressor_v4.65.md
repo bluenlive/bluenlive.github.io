@@ -30,8 +30,7 @@ PNGquant를 선택하는 자동 옵션도 있음
 </div>
 </span></p></div>
 
-이 프로그램은 아래 링크에서 다운받을 수 있다.\
-**avx2**가 지원되는 CPU에서만 동작한다.
+이 프로그램은 아래 링크에서 다운받을 수 있으며, **avx2**가 지원되는 CPU에서만 동작한다.
 
 <div style="text-align: center;" markdown="1">
 [Download HWPX Image Shrinker v4.65.rar](</attachment/2025-03-08/HWPX Image Shrinker v4.65.rar>){: .btn .btn--info .btn--x-large}
