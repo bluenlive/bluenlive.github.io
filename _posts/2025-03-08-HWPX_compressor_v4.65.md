@@ -15,8 +15,8 @@ categories:
 읽고 압축할 수 있는 파일 포맷에 TIFF를 추가했다.\
 이를 위해 [LibTIFF](https://gitlab.com/libtiff/libtiff/){:target="_blank"}보다 가볍고, 읽기 기능에 특화된 [tiffloader](https://github.com/MalcolmMcLean/tiffloader){:target="_blank"}를 사용했다.
 
-이전과 동일하게, 예전 한/글 파일(∗.hwp)는 압축하지 못하고, 한/글 표준문서(∗.hwpx)와 HWPML 2.x(∗.hml)만 압축할 수 있다.\
-굳이 예전 포맷의 데이터를 사용해야 하는 사용자라면 한/글 표준문서(hwpx)로 다시 저장해서 변환하면 된다.
+이전과 동일하게, 한/글 표준문서(∗.hwpx)와 HWPML 2.x(∗.hml)만 압축할 수 있다.\
+굳이 예전 한/글 파일(∗.hwp)을 압축하려면 한/글 표준문서(hwpx)로 다시 저장해서 처리하면 된다.
 
 이 버전에서 수정된 사항들은 아래와 같다.
 
@@ -41,6 +41,6 @@ PNGquant를 선택하는 자동 옵션도 있음
 ## 히스토리
 
 * 2024.3.8꞉ v4.65
-  * 처리 대상 이미지 포맷에 *TIFF* 추가
+  * 처리 대상 이미지 포맷에 **TIFF** 추가
   * libzip을 1.11.2로 업데이트 (2024.12.22)
   * JpegQ를 상하 키보드로 조절할 수 있도록 수정
