@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "C언어로 float16 빠르게 읽기"
-#date: 2025-3-9 21:15:00 +0900
+#date: 2025-3-10 22:49:00 +0900
 categories:
   - algorithm
 ---

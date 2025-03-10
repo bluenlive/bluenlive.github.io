@@ -37,7 +37,7 @@ Acknowlegements, Lode Vandevenne for the Zlib decompressor
 
 ## unsigned char* floadtiffwhite()
 
-```cpp
+```c
 for(i=0;i< *width * *height;i++)
 {
     rgb[i*3] = buff[i*4] + 255 - buff[i*4+3];
@@ -61,7 +61,7 @@ $$\begin{align}
 
 따라서, 아래와 같이 수정해야 의도에 맞게 동작한다.
 
-```cpp
+```c
 for(i=0;i< *width * *height;i++)
 {
     const int alpha = buff[i * 4 + 3];
@@ -73,7 +73,7 @@ for(i=0;i< *width * *height;i++)
 
 ## unsigned char *floadtiff()
 
-```cpp
+```c
 if (enda == 'I' && endb == 'I')
 {
     type = LITTLE_ENDIAN;
@@ -89,7 +89,7 @@ else
 너무나 사소한 오타가 있었다.\
 웬만한 IDE에선 다 경고할텐데...
 
-```cpp
+```c
 if (enda == 'I' && endb == 'I')
     type = LITTLE_ENDIAN;
 else if (enda == 'M' && endb == 'M')
@@ -103,7 +103,7 @@ else
 TIFF 파일의 헤더를 읽은 뒤, 실제 처리할 수 없는 경우를 미리 걸러대도록 수정했다.\
 이런 부분은 만들어두셨어도 됐을 거 같은데...
 
-```cpp
+```c
 // BLUEnLIVE: predictor가 3이면 처리 불가함
 if (header->predictor < 1 || header->predictor > 2)
     return -1;
@@ -115,7 +115,7 @@ if (header->planarconfiguration == 2 && header->tilewidth > 0 && header->tilehei
 
 ## static int paltorgba()
 
-```cpp
+```c
 if (index >= 0 && index < header->Ncolormap)
 {
     rgba[0] = header->colormap[index * 3];
@@ -129,14 +129,14 @@ RGBA를 다루는 부분인데, `rgba[3] = 255;`가 누락됐다...\
 
 ## static int readintsample()
 
-```cpp
+```c
 if (header->sampleformat[sample_index] == SAMPLEFORMAT_UINT)
 ```
 
 Sample Format을 UNIT 대신 INT로 지정해놓은 파일들이 종종 보인다.\
 이를 정상적으로 처리하지 못해서 아래와 같이 수정.
 
-```cpp
+```c
 if ((header->sampleformat[sample_index] == SAMPLEFORMAT_UINT) || (header->sampleformat[sample_index] == SAMPLEFORMAT_INT))
 ```
 
@@ -149,7 +149,7 @@ if ((header->sampleformat[sample_index] == SAMPLEFORMAT_UINT) || (header->sample
 하지만, 내가 사용하는 환경(Visual C++)에서 이러한 고려는 불필요하다.\
 따라서 아래와 같이 과감하게 수정.
 
-```cpp
+```c
 static double memreadieee754(unsigned char* buff, int bigendian)
 {
     unsigned long long tempd = 0;
@@ -175,7 +175,7 @@ TIFF에서 다루는 데이터 중에 Half-precision floating-point (16비트 fl
 
 처리할 수 있는 데이터에 이 float16을 추가하면서, 이 형식을 읽을 수 있는 함수를 추가했다.
 
-```cpp
+```c
 static float memreadieee754f16(unsigned char* mem, int bigendian)
 {
     unsigned long buff = 0;
