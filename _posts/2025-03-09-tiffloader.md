@@ -155,23 +155,15 @@ static double memreadieee754(unsigned char* buff, int bigendian)
 {
     unsigned long long tempd = 0;
     if (bigendian)
-        tempd = ((unsigned long long)buff[0] << 56) |
-                ((unsigned long long)buff[1] << 48) |
-                ((unsigned long long)buff[2] << 40) |
-                ((unsigned long long)buff[3] << 32) |
-                ((unsigned long long)buff[4] << 24) |
-                ((unsigned long long)buff[5] << 16) |
-                ((unsigned long long)buff[6] << 8) |
-                (unsigned long long)buff[7];
+        tempd = ((unsigned long long)buff[0] << 56) | ((unsigned long long)buff[1] << 48) |
+                ((unsigned long long)buff[2] << 40) | ((unsigned long long)buff[3] << 32) |
+                ((unsigned long long)buff[4] << 24) | ((unsigned long long)buff[5] << 16) |
+                ((unsigned long long)buff[6] << 8)  | (unsigned long long)buff[7];
     else
-        tempd = ((unsigned long long)buff[7] << 56) |
-                ((unsigned long long)buff[6] << 48) |
-                ((unsigned long long)buff[5] << 40) |
-                ((unsigned long long)buff[4] << 32) |
-                ((unsigned long long)buff[3] << 24) |
-                ((unsigned long long)buff[2] << 16) |
-                ((unsigned long long)buff[1] << 8) |
-                (unsigned long long)buff[0];
+        tempd = ((unsigned long long)buff[7] << 56) | ((unsigned long long)buff[6] << 48) |
+                ((unsigned long long)buff[5] << 40) | ((unsigned long long)buff[4] << 32) |
+                ((unsigned long long)buff[3] << 24) | ((unsigned long long)buff[2] << 16) |
+                ((unsigned long long)buff[1] << 8)  | (unsigned long long)buff[0];
 
     return *(double*)&tempd;
 }
