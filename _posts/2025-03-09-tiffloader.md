@@ -62,7 +62,7 @@ $$\begin{align}
 따라서, 아래와 같이 수정해야 의도에 맞게 동작한다.
 
 ```c
-for(i=0;i< *width * *height;i++)
+for (i = 0; i < *width * *height; i++)
 {
     const int alpha = buff[i * 4 + 3];
     rgb[i * 3] = (unsigned char)(buff[i * 4] * alpha / 255 + 255 - alpha);
