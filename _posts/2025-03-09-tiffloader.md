@@ -223,7 +223,6 @@ static float memreadieee754f16(unsigned char* mem, int bigendian)
     {
         const static unsigned long pInf = 0x7F800000;
         const static unsigned long nInf = 0xFF800000;
-
         return sign == 1 ? *(float*)&pInf : *(float*)&nInf;
     }
     if (shift > -15)
