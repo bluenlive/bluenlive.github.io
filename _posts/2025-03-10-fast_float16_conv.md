@@ -110,14 +110,10 @@ static float memreadieee754f16_fast(unsigned char* mem, int bigendian)
 
     const unsigned long u32_sign = (u32 & 0x8000) << 16;
     unsigned long u32_expo = (u32 & 0x7c00) >> 10;
-    if (u32_expo) {
-        if (u32_expo == 0x1f)
-            u32_expo = 0xff;
-        else
-            u32_expo += (127 - 15);
-
-        u32_expo <<= 23;
-    }
+    if (u32_expo == 0x1f)
+        u32_expo = 0xff << 23;
+    else if (u32_expo)
+        u32_expo = (u32_expo + (127 - 15)) << 23;
     const unsigned long u32_frac = (u32 & 0x03ff) << (23 - 10);
     u32 = u32_sign | u32_expo | u32_frac;
 
@@ -173,14 +169,10 @@ static double f32tof64(const float f)
 
     const unsigned long long u64_sign = (u64 & 0x80000000) << 32;
     unsigned long long u64_expo = (u64 & 0x7f800000) >> 23;
-    if (u64_expo) {
-        if (u64_expo == 0xff)
-            u64_expo = 0x7ff;
-        else
-            u64_expo += (1023 - 127);
-
-        u64_expo <<= 52;
-    }
+    if (u64_expo == 0xff)
+        u64_expo = 0x7ff << 52;
+    else if (u64_expo)
+        u64_expo = (u64_expo + (1023 - 127)) << 52;
     const unsigned long long u64_frac = (u64 & 0x7fffff) << (52 - 23);
     u64 = u64_sign | u64_expo | u64_frac;
 
