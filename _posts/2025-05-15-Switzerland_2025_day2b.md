@@ -1,7 +1,7 @@
 ---
 layout: single
 #classes: wide
-title: "2025년 스위스 여행 2일차꞉ 스위스의 수도 베른"
+title: "2025년 스위스 여행 2일차꞉ 스위스의 수도(?) 베른"
 date: 2025-5-16 22:46:00 +0900
 categories:
   - travel2025
