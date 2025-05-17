@@ -95,7 +95,7 @@ tags: ["Bohemian Rhapsody", "Queen"]
 
 ![image](</images/2025-05-17/114_IMG_9291s64.jpg>){: .align-center}
 
-시옹 성은 바이런의 시 《시옹의 죄수(The Prisoner of Chillon》로도 잘 알려져있다.\
+시옹 성은 바이런의 시 《시옹의 죄수(The Prisoner of Chillon)》로도 잘 알려져있다.\
 자유를 옹호하던 수도사로서 6년 간 감금되었던 프랑수아 보니바르(François Bonivard)를 만난 뒤 쓴 시다.
 
 <div class="quoteMachine">
