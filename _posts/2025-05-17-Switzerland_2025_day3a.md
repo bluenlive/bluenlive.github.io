@@ -128,7 +128,7 @@ Brightest in dungeons, Liberty! thou art..."<br />
 
 ![image](</images/2025-05-17/132_IMG_9302s64.jpg>){: .align-center}
 
-조금만 걸어가면 Veytaux-Chillon (베이토-시옹) 역이 있다.\
+조금만 걸어가면 Veytaux-Chillon(베이토-시옹) 역이 있다.\
 여기서 기차를 타고 다음 여행지로 이동했다.
 
 ![image](</images/2025-05-17/138_IMG_9311s64.jpg>){: .align-center}
