@@ -11,7 +11,7 @@ categories:
 **Interlaken Ost(인터라켄 동역)**에 도착해서 바로 유람선에 올랐다.\
 [유람선의 타임 테이블은 홈페이지](https://www.bls-schiff.ch/en/lake-cruise/timetable/boat-schedule)에 **pdf** 형식으로 올라와있어서 계획을 잡고 움직이기 수월했다.
 
-유람선에 올라타자 마자 콜라를 사왔는데, 마침 검표가 진행중이었다.\
+유람선에 올라타자마자 콜라를 사왔는데, 마침 검표가 진행중이었다.\
 (여기 유람선은 탈 때 검표하지 않고, 출항 후에 검표함)
 
 ![image](</images/2025-05-24c/IMG_9644s64.jpg>){: .align-center}
