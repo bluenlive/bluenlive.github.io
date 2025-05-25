@@ -21,10 +21,10 @@ categories:
 
 ![image](</images/2025-05-25a/10_IMG_9236s64.jpg>){: .align-center}
 
-언젠가는 여기서 1박을 할 꿈을 꾸며 한 컷.
+언젠가는 여기서 1박 할 꿈을 꾸며 한 컷.
 
 ![image](</images/2025-05-25a/12_IMG_9712s64.jpg>){: .align-center}
 
-10분여를 보내고 나니, 이윽고 우리가 내리려는 다음 기항지인 **Brienz(브리엔츠)**가 가까이 다가왔다.
+10분 정도를 보내고 나니, 이윽고 우리가 내리려는 다음 기항지인 **Brienz(브리엔츠)**가 다가왔다.
 
 ![image](</images/2025-05-25a/14_IMG_9714s64.jpg>){: .align-center}
