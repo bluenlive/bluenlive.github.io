@@ -26,6 +26,7 @@ categories:
 들은 대로 물살이 세기도 했고, 서핑 하러 오신 분도 볼 수 있었다.
 
 ![image](</images/2025-05-27/07_IMG_9789s64.jpg>){: .align-center}
+*왼쪽 분이 서퍼*
 
 **Obere Schleuse**는 이 곳에 있는 목조 지붕 다리다.\
 이 다리는 **Aare River(아레 강)**과 **Lake Thun(툰 호수)**를 연결하는 200년 된 곳이다.
