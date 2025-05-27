@@ -47,6 +47,6 @@ categories:
 
 ![image](</images/2025-05-27/28_IMG_9810s64.jpg>){: .align-center}
 
-**Flusswelle Thun**에서 한 컷 더 찍고 역으로 이동했다.
+**Flusswelle Thun**에서 막컷 하나 더 찍고 역으로 이동했다.
 
 ![image](</images/2025-05-27/39_IMG_9813s64.jpg>){: .align-center}
