@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2025-02-14T22:47:24+08:00'
+last_modified_at: '2025-05-02T18:50:37+08:00'
 toc: false
 ---
 
@@ -15,7 +15,18 @@ toc: false
 -->
 
 {% raw %}
-## Unreleased
+## [4.27.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.1)
+
+### Enhancements
+
+- Add a "Share on Bluesky" button [#5179](https://github.com/mmistakes/minimal-mistakes/issues/5179)
+- Add preset variables for modern font stack [#5033](https://github.com/mmistakes/minimal-mistakes/issues/5033)
+
+### Bug Fixes
+
+- Fix wrong icon and color for X share button.
+
+## [4.27.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.0)
 
 ### Enhancements
 
@@ -29,6 +40,7 @@ toc: false
 - Add Bulgarian translation. [#5003](https://github.com/mmistakes/minimal-mistakes/pull/5003)
 - Add provider and comments info to `single.html` layout for non-production. [#5068](https://github.com/mmistakes/minimal-mistakes/issues/5068)
 - Tweak contrast skin $primary-color to adhere to WCAG guidelines. [#5126](https://github.com/mmistakes/minimal-mistakes/issues/5126)
+- Update social share buttons to reflect Twitter rebranding to X [#5210](https://github.com/mmistakes/minimal-mistakes/issues/5210)
 
 ### Bug Fixes
 
@@ -40,6 +52,7 @@ toc: false
 - Fix extra newline generated in `_includes/post_pagination.html`.
 - Hide hidden links & remove the overlay when one is clicked. [#5042](https://github.com/mmistakes/minimal-mistakes/pull/5042)
 - Fix typo in "Configuration" [#5106](https://github.com/mmistakes/minimal-mistakes/issues/5106)
+- bundle exec jekyll serve will fail if more than once [#5193](https://github.com/mmistakes/minimal-mistakes/issues/5193)
 
 ### Documentation & Maintenance
 
