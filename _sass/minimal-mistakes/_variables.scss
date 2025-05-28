@@ -52,7 +52,6 @@ $industrial: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus San
 $rounded-sans: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
 
 /* sans serif typefaces - defined in Minimal Mistakes */
-$sans-serif-narrow: $sans-serif !default;
 $helvetica: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
 
 /* Serif - modern font stack */
@@ -87,6 +86,7 @@ $emoji-native: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto C
 /* system typefaces */
 $serif: $default-serif !default;
 $sans-serif: 'Pretendard Variable', $default-sans-serif !default;
+$sans-serif-narrow: $sans-serif !default;
 $monospace: "Source Code Pro", /* Monaco, */ Consolas, "Lucida Console", monospace !default;
 $title-san-serif: 'GmarketSans', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
 "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
