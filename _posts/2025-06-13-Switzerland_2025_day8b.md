@@ -8,8 +8,6 @@ categories:
 #tags: ["Euler"]
 ---
 
-Zentralbibliothek Zürich
-
 슈탄저호른에서 내려와서 취리히 시내로 이동했다.\
 다른 곳도 아닌 취리히인데, 공항만 이용하기엔 너무 아까웠기 때문이다.
 
@@ -19,18 +17,18 @@ Zentralbibliothek Zürich
 
 ![image](</images/2025-06-13/IMG_0281s64.jpg>){: .align-center}
 
-취리히를 구경하려면 일단 Lindenhof(린덴호프)로 가는 게 좋다.\
+취리히를 구경하려면 일단 **Lindenhof(린덴호프)**로 가는 게 좋다.\
 길을 따라 올라가다 보면 좀 전에 있었던 경찰서와 **WOW Museum(과학박물관)**이 보인다.
 
 ![image](</images/2025-06-13/IMG_0286s64.jpg>){: .align-center}
 *왼쪽이 WOW Museum*
 
 린덴호프에서 보는 풍경은 이렇다.\
-왼쪽에 보이는 첨탑은 **Predigerkirche(설교자의 교회)**라고 한다.\
+왼쪽에 보이는 첨탑은 **Predigerkirche(설교자의 교회)**라고 한다.
 
 ![image](</images/2025-06-13/IMG_0287s64.jpg>){: .align-center}
 
-김밥 한 줄 먹고 쉬었다가, 같은 장소에서 약간 오른쪽을 찍은 풍경.
+김밥 한 줄 먹으며 풍경을 즐기며 쉰 뒤에, 같은 장소에서 약간 오른쪽을 찍은 풍경.
 
 ![image](</images/2025-06-13/IMG_0300s64.jpg>){: .align-center}
 
