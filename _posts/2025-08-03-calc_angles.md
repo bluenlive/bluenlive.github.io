@@ -114,8 +114,7 @@ if __name__ == "__main__":
         # 두 빔 벡터 사이의 el, az 각을 각각 계산함
         beam_from = np.array([0, 0, 1])
         beam_to = quaternion_rotate_vector(quaternion_from_beam(el, az), beam_from)
-        print("- Beam from:", beam_from)
-        print("- Beam to:", beam_to)
+        print("- Beam :", beam_from, "->", beam_to)
 
         # 두 벡터 사이의 elevation 각도 계산
         el_angle = calc_el_angle(beam_from, beam_to)
@@ -133,43 +132,37 @@ if __name__ == "__main__":
 ```text
 # Elevation: 10
 # Azimuth:   0
-- Beam from: [0 0 1]
-- Beam to: [ 0.         -0.17364818  0.98480775]
+- Beam : [0 0 1] -> [ 0.         -0.17364818  0.98480775]
 - Elevation angle (degrees): 10.0
 - Azimuth angle (degrees): 0.0
 
 # Elevation: 0
 # Azimuth:   -10
-- Beam from: [0 0 1]
-- Beam to: [-0.17364818  0.          0.98480775]
+- Beam : [0 0 1] -> [-0.17364818  0.          0.98480775]
 - Elevation angle (degrees): -0.0
 - Azimuth angle (degrees): -10.0
 
 # Elevation: 86.3
 # Azimuth:   89.2
-- Beam from: [0 0 1]
-- Beam to: [ 9.99902524e-01 -1.39330778e-02  9.01011726e-04]
+- Beam : [0 0 1] -> [ 9.99902524e-01 -1.39330778e-02  9.01011726e-04]
 - Elevation angle (degrees): 86.3
 - Azimuth angle (degrees): 89.94837081
 
 # Elevation: 42.195
 # Azimuth:   -32.1
-- Beam from: [0 0 1]
-- Beam to: [-0.53139858 -0.56897447  0.62760147]
+- Beam : [0 0 1] -> [-0.53139858 -0.56897447  0.62760147]
 - Elevation angle (degrees): 42.195
 - Azimuth angle (degrees): -40.25503681
 
 # Elevation: -21
 # Azimuth:   -37
-- Beam from: [0 0 1]
-- Beam to: [-0.60181502  0.28620537  0.74559048]
+- Beam : [0 0 1] -> [-0.60181502  0.28620537  0.74559048]
 - Elevation angle (degrees): -21.0
 - Azimuth angle (degrees): -38.90927699
 
 # Elevation: -4
 # Azimuth:   2.5
-- Beam from: [0 0 1]
-- Beam to: [0.04361939 0.06969008 0.99661459]
+- Beam : [0 0 1] -> [0.04361939 0.06969008 0.99661459]
 - Elevation angle (degrees): -4.0
 - Azimuth angle (degrees): 2.50609697
 ```
@@ -230,48 +223,42 @@ def calc_noncommutative_az_angle(el, az):
 # Elevation: 10
 # Azimuth:   0
 - derived azimuth angle: 0.0
-- Beam from: [0 0 1]
-- Beam to: [ 0.         -0.17364818  0.98480775]
+- Beam : [0 0 1] -> [ 0.         -0.17364818  0.98480775]
 - Elevation angle (degrees): 10.0
 - Azimuth angle (degrees): 0.0
 
 # Elevation: 0
 # Azimuth:   -10
 - derived azimuth angle: -10.0
-- Beam from: [0 0 1]
-- Beam to: [-0.17364818  0.          0.98480775]
+- Beam : [0 0 1] -> [-0.17364818  0.          0.98480775]
 - Elevation angle (degrees): -0.0
 - Azimuth angle (degrees): -10.0
 
 # Elevation: 86.3
 # Azimuth:   89.2
 - derived azimuth angle: 77.79053214
-- Beam from: [0 0 1]
-- Beam to: [ 0.97738096 -0.21104549  0.0136477 ]
+- Beam : [0 0 1] -> [ 0.97738096 -0.21104549  0.0136477 ]
 - Elevation angle (degrees): 86.3
 - Azimuth angle (degrees): 89.2
 
 # Elevation: 42.195
 # Azimuth:   -32.1
 - derived azimuth angle: -24.92630127
-- Beam from: [0 0 1]
-- Beam to: [-0.42145214 -0.60909162  0.67185228]
+- Beam : [0 0 1] -> [-0.42145214 -0.60909162  0.67185228]
 - Elevation angle (degrees): 42.195
 - Azimuth angle (degrees): -32.1
 
 # Elevation: -21
 # Azimuth:   -37
 - derived azimuth angle: -35.12651334
-- Beam from: [0 0 1]
-- Beam to: [-0.57538379  0.29310325  0.76356007]
+- Beam : [0 0 1] -> [-0.57538379  0.29310325  0.76356007]
 - Elevation angle (degrees): -21.0
 - Azimuth angle (degrees): -37.0
 
 # Elevation: -4
 # Azimuth:   2.5
 - derived azimuth angle: 2.49391782
-- Beam from: [0 0 1]
-- Beam to: [0.04351333 0.0696904  0.9966192 ]
+- Beam : [0 0 1] -> [0.04351333 0.0696904  0.9966192 ]
 - Elevation angle (degrees): -4.0
 - Azimuth angle (degrees): 2.5
 ```
