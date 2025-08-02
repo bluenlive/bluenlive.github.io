@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2025-05-02T18:50:37+08:00'
+last_modified_at: '2025-07-29T13:13:14+08:00'
 toc: false
 ---
 
@@ -15,12 +15,37 @@ toc: false
 -->
 
 {% raw %}
+## Unreleased
+
+### Enhancements
+
+- Updated Traditional Chinese translation [#5250](https://github.com/mmistakes/minimal-mistakes/issues/5250)
+
+## [4.27.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.3)
+
+### Bug Fixes
+
+- Add explicit CSS rules for `.sr-only` following Font Awesome 7's changes. [#5296](https://github.com/mmistakes/minimal-mistakes/issues/5296)
+
+## [4.27.2](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.2)
+
+### Enhancements
+
+- Hide `.page__footer-follow` if there are no links nor atom feed. [#5279](https://github.com/mmistakes/minimal-mistakes/issues/5279)
+- Add HTML escaping for some titles, labels and metada that was missing. [#5276](https://github.com/mmistakes/minimal-mistakes/issues/5276)
+- Add optional `footer.since` for copyright time range. [#5275](https://github.com/mmistakes/minimal-mistakes/issues/5275)
+
+### Bug Fixes
+
+- Add `escape_once` to gallery title and alt text.
+
 ## [4.27.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.1)
 
 ### Enhancements
 
 - Add a "Share on Bluesky" button [#5179](https://github.com/mmistakes/minimal-mistakes/issues/5179)
 - Add preset variables for modern font stack [#5033](https://github.com/mmistakes/minimal-mistakes/issues/5033)
+- Update X share button to match brand color [#5245](https://github.com/mmistakes/minimal-mistakes/issues/5245)
 
 ### Bug Fixes
 
