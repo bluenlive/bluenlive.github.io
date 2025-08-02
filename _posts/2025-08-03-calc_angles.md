@@ -11,7 +11,7 @@ categories:
 오일러 회전을 연속적으로 계산할 때, roll, pitch, yaw 순서로 계산할 때와 역순으로 계산할 때는 결과가 다르다.\
 아래 그림에서 $$beam1(= +z)$$을 $$beam2$$로 변환하기 위해 회전이동을 할 때 el각과 az각을 적용하는 순서에 따라 결과가 다르다는 것이다.
 
-![image](</images/2025-08-03/earth_rotation.png>){: .align-center}
+![image](</images/2025-08-03/graph_B_Q.png>){: .align-center}
 
 게다가, 어떤 각을 먼저 계산하든, 회전 결과 $$beam2$$를 $$beam1$$과 비교해보면 둘 사이의 각도가 의도한 el, az각과 다르다.\
 이 점은 아래 코드로 간단히 확인할 수 있다.
