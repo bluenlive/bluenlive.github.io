@@ -18,7 +18,7 @@ $$
 q_2 = (a_2, b_2, c_2, d_2)
 $$
 
-이 두 쿼터니언의 **Hamilton 곱** $$q = q_1 \cdot q_2$$는 다음과 같이 정의된다.
+이 두 쿼터니언의 **Hamilton 곱** $$q = q_1 \times q_2$$는 다음과 같이 정의된다.
 
 $$
 \begin{aligned}
