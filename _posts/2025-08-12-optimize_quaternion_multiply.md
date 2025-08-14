@@ -35,7 +35,7 @@ $$
 곱셈 연산자 오버로딩을 사용하면 상당히 유용하게 사용할 수 있다.
 
 ```cpp
-template<typename T =double>
+template<typename T = double>
 class Quaternion {
     template<typename T1>
     Quaternion operator*=(const Quaternion<T1>& y) {
@@ -136,7 +136,7 @@ Qd quat_mul_avx(const std::vector<Qd>& q)
 
 ## AVX와 FMA3를 활용한 최적화 구현
 
-이왕 하는 거 FMA3를 활용해서 구현하는 것으로 더 밀여붙여보기로 했다.
+이왕 시작한 김에 FMA3를 활용해서 구현하는 것으로 더 밀여붙여보기로 했다.
 
 ```cpp
 static __forceinline __m256d _invsqrt_nr_avx_fma(__m256d x) {
@@ -229,7 +229,7 @@ Qd quat_mul_avx_fma(const std::vector<Qd>& q)
 위의 함수들로 실행한 결과는 거의 동일하다.\
 **거의** 라는 표현을 쓴 이유는 비트 단위까지는 동일하지 않은 결과가 가끔 나오기 때문.
 
-다양한 입력에 대해 확인 해본 결과 세 코드들은 모두 서로 교환 가능한 수준까지 동일한 결과를 보여준다.\
+다양한 입력에 대해 확인한 결과 세 코드들은 모두 서로 교환해서 쓸 수 있는 수준까지 동일한 결과를 보여준다.\
 그렇다면 다음으로 확인할 것은 실행 성능이다.
 
 동일합 입력값들에 대해서 천만번 씩 실행한 결과는 아래와 같다.\
@@ -249,7 +249,7 @@ qd(FMA) [a b c d] = [-0.2930861888 0.0078265947 0.8182374980 0.4944963368]
 그냥 곱셈한 것보다 AVX/FMA를 활용한 쪽이 더 느리다...
 
 이것이 실제 연산 성능에 의한 것인지, 함수 호출 메커니즘에 의한 것인지 확인이 필요하다.\
-그래서 곱셈 연산자 오버로딩 버전도 동일한 함수 형태로 만들어본다.
+그래서 곱셈 연산자 오버로딩 버전도 동일한 함수 형태로 만들어봤다.
 
 ```cpp
 Qd quat_mul(const std::vector<Qd>& q)
