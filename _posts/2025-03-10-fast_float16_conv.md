@@ -16,7 +16,7 @@ float16의 구조에 대해 얘기할 겸해서 간단하게 변환하는 법을
 [이전 글](/algorithm/tiffloader/)에서 적은 코드다.\
 아래와 같이 하면 정확하게 float16을 읽을 수 있다.
 
-```c
+```cpp
 static float memreadieee754f16(unsigned char* mem, int bigendian)
 {
     unsigned long buff = 0;
@@ -99,7 +99,7 @@ MSB가 부호, 그 다음이 exponent(지수), 마지막으로 fraction(가수)�
 float16은 offset이 15($$ 2^4 - 1 $$)이고, float는 offset이 127($$ 2^7 - 1 $$)이다.\
 fraction은 간단하게 shift만 하면 된다.
 
-```c
+```cpp
 static float memreadieee754f16_fast(unsigned char* mem, int bigendian)
 {
     unsigned long u32;
@@ -127,7 +127,7 @@ static float memreadieee754f16_fast(unsigned char* mem, int bigendian)
 위와 사실상 동일한 코드다.\
 단, exponent를 처리할 때 좀 더 최적화한 동작을 위해 **테이블**로 구현했다.
 
-```c
+```cpp
 static float memreadieee754f16_fast2(unsigned char* mem, int bigendian)
 {
     unsigned long u32;
@@ -161,7 +161,7 @@ static float memreadieee754f16_fast2(unsigned char* mem, int bigendian)
 똑같은 원리로 float를 double로도 변환할 수 있다.\
 물론, 이 작업은 큰 의미는 없다. 그냥 재미로(?) 만들어본 것.
 
-```c
+```cpp
 static double f32tof64(const float f)
 {
     const unsigned long u32 = *(const unsigned long*)&f;
