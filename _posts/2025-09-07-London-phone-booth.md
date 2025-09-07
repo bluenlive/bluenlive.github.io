@@ -13,9 +13,9 @@ categories:
 빨간 부스라면 역시 런던 같긴 한데, 정확한 위치가 어디인지 궁금해졌다.\
 그래서 ChatGPT에게 물어봤다.
 
-```text
+<div style="background-color: #fefeb8; padding: 10px; border: 1px dashed #f3c534; font-size: 0.95em; margin-bottom: 1.2em;" markdown="1">
 영국 런던 사진으로 알고 있는데, 정확한 장소를 찾아서 알려줘
-```
+</div>
 
 <div style="padding: 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em;"><p style="text-align: center; margin-bottom: 0;"><span style="font-size: 1.111em;">
 <div markdown="1">
@@ -39,9 +39,9 @@ categories:
 이 정보를 가지고 **구글 지도**와 **구글 어스**를 직접 뒤져보니 찾기가 어려웠다.\
 그래서 다시 한 번 질문.
 
-```text
+<div style="background-color: #fefeb8; padding: 10px; border: 1px dashed #f3c534; font-size: 0.95em; margin-bottom: 1.2em;" markdown="1">
 구글 지도 좌표 찾아워
-```
+</div>
 
 <div style="padding: 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em;"><p style="text-align: center; margin-bottom: 0;"><span style="font-size: 1.111em;">
 <div markdown="1">
