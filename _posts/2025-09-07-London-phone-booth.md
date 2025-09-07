@@ -17,12 +17,10 @@ categories:
 영국 런던 사진으로 알고 있는데, 정확한 장소를 찾아서 알려줘
 </div>
 
-<div style="padding: 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em;"><p style="text-align: center; margin-bottom: 0;"><span style="font-size: 1.111em;">
-<div markdown="1">
+<div style="padding: 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em;" markdown="1">
 사진 속 장소는 영국 런던의 **Red Telephone Boxes(붉은 공중전화 부스)**가 있는 거리입니다.
 
-정확히는 런던 시내 중심부인 **법원가(Lincoln’s Inn Fields) 근처, High Holborn와 Chancery Lane 사이의 거리**입니다.\
-이 지역은 런던의 전통적인 **법조인 구역(Legal District)**으로, 고풍스러운 건물들과 함께 영국의 상징적인 빨간 전화박스들이 줄지어 배치된 곳으로 유명합니다.
+정확히는 런던 시내 중심부인 **법원가(Lincoln’s Inn Fields) 근처, High Holborn와 Chancery Lane 사이의 거리**입니다. 이 지역은 런던의 전통적인 **법조인 구역(Legal District)**으로, 고풍스러운 건물들과 함께 영국의 상징적인 빨간 전화박스들이 줄지어 배치된 곳으로 유명합니다.
 
 ### 주요 특징
 
@@ -34,7 +32,6 @@ categories:
 
 원하시면 제가 구체적인 **구글 지도 좌표**까지 찾아서 알려드릴까요?
 </div>
-</span></p></div>
 
 이 정보를 가지고 **구글 지도**와 **구글 어스**를 직접 뒤져보니 찾기가 어려웠다.\
 그래서 다시 한 번 질문.
@@ -43,8 +40,6 @@ categories:
 구글 지도 좌표 찾아줘
 </div>
 
-<!-- div style="padding: 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em;"><p style="text-align: center; margin-bottom: 0;"><span style="font-size: 1.111em;">
-<div markdown="1" -->
 <div style="padding: 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em;" markdown="1">
 사진 속의 위치는 아마도 **Covent Garden의 Broad Court**, Royal Opera House 맞은편에 있는 **빨간 공중전화 부스 다섯 대가 나란히 서 있는 거리**로 보입니다. 이곳은 런던 중심부에서 사진 찍기 좋은 명소 중 하나예요.
 
@@ -61,8 +56,6 @@ categories:
 따라서 이 사진 속 장소는 **Covent Garden, Broad Court (WC2B) 일대**, 즉 **51.5137° N, -0.1223° W** 부근으로 보시면 정확합니다.
 
 혹시 이곳과 비슷한 유명 빨간 전화 부스의 다른 명소(예: Parliament Square, St Paul’s Cathedral 등)에 대해서도 알고 싶으시면 언제든지 말씀해 주세요!
-<!-- /div>
-</span></p></div -->
 </div>
 
 **구글 어스**에서 해당 위치를 다시 찾아봤다.\
