@@ -40,11 +40,12 @@ categories:
 그래서 다시 한 번 질문.
 
 <div style="background-color: #fefeb8; padding: 10px; border: 1px dashed #f3c534; font-size: 0.95em; margin-bottom: 1.2em;" markdown="1">
-구글 지도 좌표 찾아워
+구글 지도 좌표 찾아줘
 </div>
 
-<div style="padding: 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em;"><p style="text-align: center; margin-bottom: 0;"><span style="font-size: 1.111em;">
-<div markdown="1">
+<!-- div style="padding: 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em;"><p style="text-align: center; margin-bottom: 0;"><span style="font-size: 1.111em;">
+<div markdown="1" -->
+<div style="padding: 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em;" markdown="1">
 사진 속의 위치는 아마도 **Covent Garden의 Broad Court**, Royal Opera House 맞은편에 있는 **빨간 공중전화 부스 다섯 대가 나란히 서 있는 거리**로 보입니다. 이곳은 런던 중심부에서 사진 찍기 좋은 명소 중 하나예요.
 
 특히, Waymarking 정보에 따르면 이 전화 부스들이 있는 정확한 좌표는 다음과 같습니다:
@@ -60,8 +61,9 @@ categories:
 따라서 이 사진 속 장소는 **Covent Garden, Broad Court (WC2B) 일대**, 즉 **51.5137° N, -0.1223° W** 부근으로 보시면 정확합니다.
 
 혹시 이곳과 비슷한 유명 빨간 전화 부스의 다른 명소(예: Parliament Square, St Paul’s Cathedral 등)에 대해서도 알고 싶으시면 언제든지 말씀해 주세요!
+<!-- /div>
+</span></p></div -->
 </div>
-</span></p></div>
 
 **구글 어스**에서 해당 위치를 다시 찾아봤다.\
 두둥! 저 곳이 맞는 것 같다!!!
