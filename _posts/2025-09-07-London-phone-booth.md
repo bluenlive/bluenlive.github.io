@@ -64,6 +64,7 @@ categories:
 ![image](</images/2025-09-07/earth1_Bs64_Q.png>){: .align-center}
 
 스트리트 뷰로 보면 더욱 명확해진다.\
-다음에 혹시나 런던을 가게 되면 이 곳에 반드시 가봐야겠다!!!
+다음에 혹시나 런던을 가게 되면 이 곳에 반드시 가봐야겠다!!!\
+ChatGPT 뭐야... 무서워...
 
 ![image](</images/2025-09-07/earth2_Bs64_Q.png>){: .align-center}
