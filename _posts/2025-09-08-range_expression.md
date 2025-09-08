@@ -49,7 +49,7 @@ $$\begin{align}
 i+m-1 & \le n-l-1\\
 i+m & \le n-l\\
 i+m & \lt n-l+1\\
-i & \lt n-m-l+1
+i & \lt (n-m-l+1)
 \end{align}$$
 
 이것을 C로 작성하면 아래와 같다.
