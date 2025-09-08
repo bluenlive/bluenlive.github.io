@@ -15,10 +15,10 @@ $$[0,n-1]$$
 
 그럼 $$i$$가 선회하는 최대 범위는 아래와 같다.
 
-$$\begin{align}
+$$\begin{align*}
 i & \le n-1\\
 i & \lt n\\
-\end{align}$$
+\end{align*}$$
 
 이것을 C로 작성한 것이 바로 흔하게 볼 수 있는 아래 한 줄.
 ```c
@@ -29,7 +29,7 @@ for (int i = 0; i < n; ++i)
 
 $$n$$개의 데이터가 있고, 이를 $$i$$로 순회하며 $$m$$개씩 처리하는 경우의 범위는 아래와 같다.
 
-$$\begin{align}
+$$\begin{align*}
 i+m-1 & \le n-1\\
 i+m & \le n\\
 i+m & \lt n+1\\
@@ -50,7 +50,7 @@ i+m-1 & \le n-l-1\\
 i+m & \le n-l\\
 i+m & \lt n-l+1\\
 i & \lt (n-m-l+1)
-\end{align}$$
+\end{align*}$$
 
 이것을 C로 작성하면 아래와 같다.
 ```c
