@@ -1,8 +1,8 @@
 ---
 layout: single
 #classes: wide
-title: "구라제거기(키보드 보안 프로그램 삭제) 7.45 업데이트"
-date: 2025-8-17 23:21:00 +0900
+title: "구라제거기(키보드 보안 프로그램 삭제) 7.50 업데이트"
+date: 2025-10-2 09:16:00 +0900
 categories:
   - HoaxEliminator
 tags: ["activex","nProtect","구라제거기","뱅킹","보안","안랩"]
@@ -40,7 +40,7 @@ PC에 설치된 프로그램들 중에 제거해야 될 프로그램들의 목�
 x86, x64 및 ARM64 버전이 함께 들어있는데, x64 윈도우 환경이라면 x64 버전을 추천한다.
 
 <div style="text-align: center;" markdown="1">
-[Download HoaxEliminator7.45.zip](</attachment/2025-08-17/HoaxEliminator7.45.zip>){: .btn .btn--info .btn--x-large}
+[Download HoaxEliminator7.50.zip](</attachment/2025-08-17/HoaxEliminator7.50.zip>){: .btn .btn--info .btn--x-large}
 <br>password꞉ <span style="color: red; font-size: 1.5em;"><b>teus.me</b></span>
 </div>
 
@@ -63,3 +63,8 @@ x86, x64 및 ARM64 버전이 함께 들어있는데, x64 윈도우 환경이라�
   * 라이브러리 업데이트
     * Google/Abseil 라이브러리를 20250512.1 버전(Abseil LTS branch, May 2025, Patch 1)으로 업데이트
     * Google/RE2 라이브러리를 2025.8.12 버전으로 업데이트
+
+* 2025.10.2: v7.50
+  * **HiDPI 환경에서 프로그램이 크래시** 되는 오류 수정
+  * Google/Abseil 라이브러리를 20250814.1 버전(Abseil LTS branch, August 2025, Patch 1 Latest)으로 업데이트
+  * 내부 이미지 처리 코드 전면 개정
