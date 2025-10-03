@@ -14,15 +14,15 @@ categories:
 Spline64 보간법을 적용하여 이미지 처리를 할 때도 LUT 테이블을 사용할 수 있다.
 
 ```cpp
-constexpr static float spline64filter(const float value) noexcept {
-    if (value < 1.0f)
-        return ((49.0f / 41.0f * (value)-6387.0f / 2911.0f) * (value)-3.0f / 2911.0f) * (value)+1.0f;
-    else if (value < 2.0f)
-        return ((-24.0f / 41.0f * (value - 1.0f) + 4032.0f / 2911.0f) * (value - 1.0f) - 2328.0f / 2911.0f) * (value - 1.0f);
-    else if (value < 3.0f)
-        return ((6.0f / 41.0f * (value - 2.0f) - 1008.0f / 2911.0f) * (value - 2.0f) + 582.0f / 2911.0f) * (value - 2.0f);
-    else if (value < 4.0f)
-        return ((-1.0f / 41.0f * (value - 3.0f) + 168.0f / 2911.0f) * (value - 3.0f) - 97.0f / 2911.0f) * (value - 3.0f);
+constexpr static float spline64filter(const float v) noexcept {
+    if (v < 1.0f)
+        return ((49.0f / 41.0f * (v) - 6387.0f / 2911.0f) * (v) - 3.0f / 2911.0f) * (v) + 1.0f;
+    else if (v < 2.0f)
+        return ((-24.0f / 41.0f * (v - 1.0f) + 4032.0f / 2911.0f) * (v - 1.0f) - 2328.0f / 2911.0f) * (v - 1.0f);
+    else if (v < 3.0f)
+        return ((6.0f / 41.0f * (v - 2.0f) - 1008.0f / 2911.0f) * (v - 2.0f) + 582.0f / 2911.0f) * (v - 2.0f);
+    else if (v < 4.0f)
+        return ((-1.0f / 41.0f * (v - 3.0f) + 168.0f / 2911.0f) * (v - 3.0f) - 97.0f / 2911.0f) * (v - 3.0f);
     else
         return 0.0f;
 }
@@ -57,15 +57,15 @@ static void SetSpline64Table() {
 constexpr int nResolutionSpline{ 512 };
 constexpr float nInvResolutionSpline{ 1.0f / nResolutionSpline };
 
-static constexpr float spline64filter(const float value) noexcept {
-    if (value < 1.0f)
-        return ((49.0f / 41 * (value)-6387.0f / 2911) * (value)-3.0f / 2911) * (value)+1;
-    else if (value < 2.0f)
-        return ((-24.0f / 41 * (value - 1) + 4032.0f / 2911) * (value - 1) - 2328.0f / 2911) * (value - 1);
-    else if (value < 3.0f)
-        return ((6.0f / 41 * (value - 2) - 1008.0f / 2911) * (value - 2) + 582.0f / 2911) * (value - 2);
-    else if (value < 4.0f)
-        return ((-1.0f / 41 * (value - 3) + 168.0f / 2911) * (value - 3) - 97.0f / 2911) * (value - 3);
+static constexpr float spline64filter(const float v) noexcept {
+    if (v < 1.0f)
+        return ((49.0f / 41 * (v) - 6387.0f / 2911) * (v) - 3.0f / 2911) * (v) + 1;
+    else if (v < 2.0f)
+        return ((-24.0f / 41 * (v - 1) + 4032.0f / 2911) * (v - 1) - 2328.0f / 2911) * (v - 1);
+    else if (v < 3.0f)
+        return ((6.0f / 41 * (v - 2) - 1008.0f / 2911) * (v - 2) + 582.0f / 2911) * (v - 2);
+    else if (v < 4.0f)
+        return ((-1.0f / 41 * (v - 3) + 168.0f / 2911) * (v - 3) - 97.0f / 2911) * (v - 3);
     return 0.0f;
 }
 
