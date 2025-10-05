@@ -15,16 +15,16 @@ Spline64 보간법을 적용하여 이미지 처리를 할 때도 LUT 테이블�
 
 ```cpp
 constexpr static float spline64filter(const float v) noexcept {
-  if (v < 1.0f)
-    return ((49.0f / 41.0f * (v) - 6387.0f / 2911.0f) * (v) - 3.0f / 2911.0f) * (v) + 1.0f;
-  else if (v < 2.0f)
-    return ((-24.0f / 41.0f * (v - 1.0f) + 4032.0f / 2911.0f) * (v - 1.0f) - 2328.0f / 2911.0f) * (v - 1.0f);
-  else if (v < 3.0f)
-    return ((6.0f / 41.0f * (v - 2.0f) - 1008.0f / 2911.0f) * (v - 2.0f) + 582.0f / 2911.0f) * (v - 2.0f);
-  else if (v < 4.0f)
-    return ((-1.0f / 41.0f * (v - 3.0f) + 168.0f / 2911.0f) * (v - 3.0f) - 97.0f / 2911.0f) * (v - 3.0f);
-  else
-    return 0.0f;
+    if (v < 1.0f)
+        return ((49.0f / 41.0f * (v) - 6387.0f / 2911.0f) * (v) - 3.0f / 2911.0f) * (v) + 1.0f;
+    else if (v < 2.0f)
+        return ((-24.0f / 41.0f * (v - 1.0f) + 4032.0f / 2911.0f) * (v - 1.0f) - 2328.0f / 2911.0f) * (v - 1.0f);
+    else if (v < 3.0f)
+        return ((6.0f / 41.0f * (v - 2.0f) - 1008.0f / 2911.0f) * (v - 2.0f) + 582.0f / 2911.0f) * (v - 2.0f);
+    else if (v < 4.0f)
+        return ((-1.0f / 41.0f * (v - 3.0f) + 168.0f / 2911.0f) * (v - 3.0f) - 97.0f / 2911.0f) * (v - 3.0f);
+    else
+        return 0.0f;
 }
 
 constexpr int nResolutionSpline{ 512 };
@@ -35,12 +35,12 @@ const float* tableSpline64{ &(vTableSpline64[0]) };
 static bool bTableS64_isset{ false };
 
 static void SetSpline64Table() {
-  if (!bTableS64_isset) {
-    for (int i = 0; i < 4 * nResolutionSpline + 1; ++i)
-      ((float*)tableSpline64)[i] = spline64filter(i * nInvResolutionSpline);
-  }
+    if (!bTableS64_isset) {
+        for (int i = 0; i < 4 * nResolutionSpline + 1; ++i)
+            ((float*)tableSpline64)[i] = spline64filter(i * nInvResolutionSpline);
+    }
 
-  bTableS64_isset = true;
+    bTableS64_isset = true;
 }
 ```
 
@@ -58,22 +58,22 @@ constexpr int nResolutionSpline{ 512 };
 constexpr float nInvResolutionSpline{ 1.0f / nResolutionSpline };
 
 constexpr static float spline64filter(const float v) noexcept {
-  if (v < 1.0f)
-    return ((49.0f / 41 * (v) - 6387.0f / 2911) * (v) - 3.0f / 2911) * (v) + 1;
-  else if (v < 2.0f)
-    return ((-24.0f / 41 * (v - 1) + 4032.0f / 2911) * (v - 1) - 2328.0f / 2911) * (v - 1);
-  else if (v < 3.0f)
-    return ((6.0f / 41 * (v - 2) - 1008.0f / 2911) * (v - 2) + 582.0f / 2911) * (v - 2);
-  else if (v < 4.0f)
-    return ((-1.0f / 41 * (v - 3) + 168.0f / 2911) * (v - 3) - 97.0f / 2911) * (v - 3);
-  return 0.0f;
+    if (v < 1.0f)
+        return ((49.0f / 41 * (v) - 6387.0f / 2911) * (v) - 3.0f / 2911) * (v) + 1;
+    else if (v < 2.0f)
+        return ((-24.0f / 41 * (v - 1) + 4032.0f / 2911) * (v - 1) - 2328.0f / 2911) * (v - 1);
+    else if (v < 3.0f)
+        return ((6.0f / 41 * (v - 2) - 1008.0f / 2911) * (v - 2) + 582.0f / 2911) * (v - 2);
+    else if (v < 4.0f)
+        return ((-1.0f / 41 * (v - 3) + 168.0f / 2911) * (v - 3) - 97.0f / 2911) * (v - 3);
+    return 0.0f;
 }
 
 constexpr static auto makeSpline64Table() {
-  std::array<float, 4 * nResolutionSpline + 1> arr{};
-  for (int i = 0; i <= 4 * nResolutionSpline; ++i)
-    arr[i] = spline64filter(i * nInvResolutionSpline);
-  return arr;
+    std::array<float, 4 * nResolutionSpline + 1> arr{};
+    for (int i = 0; i <= 4 * nResolutionSpline; ++i)
+        arr[i] = spline64filter(i * nInvResolutionSpline);
+    return arr;
 }
 constexpr static auto tableSpline64 = makeSpline64Table();
 ```
@@ -96,41 +96,41 @@ Lanczos 보간법은 `sinc` 함수를 사용하는데, 이 함수는 `sin()`을 
 
 ```cpp
 constexpr float horner_sin(float x) noexcept {
-  constexpr float PI_F = 3.14159265358979323846f;
-  constexpr float TWO_PI_F = 6.28318530717958647692f;
+    constexpr float PI_F = 3.14159265358979323846f;
+    constexpr float TWO_PI_F = 6.28318530717958647692f;
 
-  // --- 범위 축소: [-π, π] ---
-  while (x > PI_F)  x -= TWO_PI_F;
-  while (x < -PI_F)  x += TWO_PI_F;
+    // --- 범위 축소: [-π, π] ---
+    while (x > PI_F)  x -= TWO_PI_F;
+    while (x < -PI_F) x += TWO_PI_F;
 
-  const float x2 = x * x;
+    const float x2 = x * x;
 
-  // Horner’s method, 13차까지 포함
-  // sin(x) ≈ x * (1 - x²/6 + x⁴/120 - x⁶/5040 + x⁸/362880 - x¹⁰/39916800 + x¹²/6227020800)
-  constexpr float C1 = 1.0f / 6227020800.0f;
-  constexpr float C2 = -1.0f / 39916800.0f;
-  constexpr float C3 = 1.0f / 362880.0f;
-  constexpr float C4 = -1.0f / 5040.0f;
-  constexpr float C5 = 1.0f / 120.0f;
-  constexpr float C6 = -1.0f / 6.0f;
+    // Horner’s method, 13차까지 포함
+    // sin(x) ≈ x * (1 - x²/6 + x⁴/120 - x⁶/5040 + x⁸/362880 - x¹⁰/39916800 + x¹²/6227020800)
+    constexpr float C1 = 1.0f / 6227020800.0f;
+    constexpr float C2 = -1.0f / 39916800.0f;
+    constexpr float C3 = 1.0f / 362880.0f;
+    constexpr float C4 = -1.0f / 5040.0f;
+    constexpr float C5 = 1.0f / 120.0f;
+    constexpr float C6 = -1.0f / 6.0f;
 
-  return x * ((((((C1 * x2 + C2) * x2 + C3) * x2 + C4) * x2 + C5) * x2 + C6) * x2 + 1.0f);
+    return x * ((((((C1 * x2 + C2) * x2 + C3) * x2 + C4) * x2 + C5) * x2 + C6) * x2 + 1.0f);
 }
 
 constexpr static auto makeLanczosTable() {
-  std::array<float, (int)LANCZOS_RADIUS * nSamplingResolution + 1> arr{};
-  constexpr float step{ nInvSamplingResolution * PI_F };
-  constexpr float invRadius{ 1.0f / LANCZOS_RADIUS };
+    std::array<float, (int)LANCZOS_RADIUS * nSamplingResolution + 1> arr{};
+    constexpr float step{ nInvSamplingResolution * PI_F };
+    constexpr float invRadius{ 1.0f / LANCZOS_RADIUS };
 
-  arr[0] = 1.0f;
-  for (int i = 1; i <= (int)LANCZOS_RADIUS * nSamplingResolution; ++i) {
-    const float pi_i = i * step;
-    const float s1 = horner_sin(pi_i);
-    const float s2 = horner_sin(pi_i * invRadius);
-    const float inv_denom = 1.0f / (pi_i * pi_i);
-    arr[i] = (LANCZOS_RADIUS * s1 * s2) * inv_denom;
-  }
-  return arr;
+    arr[0] = 1.0f;
+    for (int i = 1; i <= (int)LANCZOS_RADIUS * nSamplingResolution; ++i) {
+        const float pi_i = i * step;
+        const float s1 = horner_sin(pi_i);
+        const float s2 = horner_sin(pi_i * invRadius);
+        const float inv_denom = 1.0f / (pi_i * pi_i);
+        arr[i] = (LANCZOS_RADIUS * s1 * s2) * inv_denom;
+    }
+    return arr;
 }
 constexpr static auto tableLanczos = makeLanczosTable();
 ```
@@ -151,35 +151,35 @@ $$Linear = \left\{ \begin{array}{cl}
 ```cpp
 // 5제곱근 (뉴턴-랩슨)
 constexpr float static fifth_root(float a, int iterations = 12) {
-  if (a <= 0.0f) return 0.0f;
-  float x = 1.0f;
-  for (int i = 0; i < iterations; ++i) {
-    // f(x) = x^5 - a → f'(x) = 5x^4
-    x = (4.0f * x + a / (x * x * x * x)) / 5.0f;
-  }
-  return x;
+    if (a <= 0.0f) return 0.0f;
+    float x = 1.0f;
+    for (int i = 0; i < iterations; ++i) {
+        // f(x) = x^5 - a → f'(x) = 5x^4
+        x = (4.0f * x + a / (x * x * x * x)) / 5.0f;
+    }
+    return x;
 }
 
 // -------------------- sRGB → Linear --------------------
 // x^2.4 = (x^2) * ( (x^2)^(1/5) )
 constexpr static float pow_2_4(float x) {
-  float x2 = x * x;
-  return x2 * fifth_root(x2);
+    float x2 = x * x;
+    return x2 * fifth_root(x2);
 }
 
 constexpr static float sRGBToLinear(float c) {
-  return (c <= 0.04045f)
-    ? (c / 12.92f)
-    : pow_2_4((c + 0.055f) / 1.055f);
+    return (c <= 0.04045f)
+        ? (c / 12.92f)
+        : pow_2_4((c + 0.055f) / 1.055f);
 }
 
 constexpr static auto makeSRGB2LinearLUT() {
-  std::array<float, 256> arr{};
-  for (int i = 0; i < 256; ++i) {
-    float c = static_cast<float>(i) / 255.0f;
-    arr[i] = sRGBToLinear(c);
-  }
-  return arr;
+    std::array<float, 256> arr{};
+    for (int i = 0; i < 256; ++i) {
+        float c = static_cast<float>(i) / 255.0f;
+        arr[i] = sRGBToLinear(c);
+    }
+    return arr;
 }
 constexpr static auto tableSRGB2Linear = makeSRGB2LinearLUT();
 ```
