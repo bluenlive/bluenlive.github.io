@@ -1,13 +1,13 @@
 ---
 layout: single
-title: "〈원 배틀 애프터 어나더〉꞉ 이런 걸 걸작이라고 부르기로 했어요"
+title: "〈원 배틀 애프터 어나더〉꞉ 이런 걸 우린 걸작이라고 부르기로 했어요"
 categories:
   - AnyMovies
 ---
 
-![image](</images/2025-10-21/poster_B_okl_s64.jpg>){: .align-center}
-
 ## 이 영화는…
+
+![image](</images/2025-10-21/poster_okl_s64.jpg>){: .align-center}
 
 <div class="quoteMachine">
   <div class="theQuoteLeft">
@@ -49,7 +49,7 @@ categories:
 
 영화 자막에는 **대위**, **대령**의 계급으로 표현되지만, 경찰 조직이므로 각각 **경위**, **총경** 정도로 번역하는 게 맞아 보인다.
 
-![image](</images/2025-10-21/police_okl_s64.jpg>){: .align-center}
+![image](</images/2025-10-21/sean.jpg>){: .align-center}
 
 무려 **숀 펜**이 연기하는데, 움직임 하나하나, 말투 하나하나가 모두 **재수가 없다**.\
 숀 펜이 아마도 **캐릭터에 대한 연구**를 끝까지 했을 거라는 생각이 그가 등장하는 모든 장면에서 느껴진다.\
@@ -140,6 +140,8 @@ categories:
 아마도, 데리고 가지 않았으면 록조에게 제일 먼저 잡혀갔을 것이 분명하다.
 
 ### 번역
+
+![image](</images/2025-10-21/police_okl_s64.jpg>){: .align-center}
 
 전체적으로 무난한 번역이지만, 경찰 계급과 군대 계급을 오용하는 부분은 좀 거슬렸다.\
 심지어 대사 중에 조직에서 군 출신이 얼마나 도움이 되었었는지를 얘기하는데, 이때 록조는 군인이 아니라는 뉘앙스를 품고 있었다.\
