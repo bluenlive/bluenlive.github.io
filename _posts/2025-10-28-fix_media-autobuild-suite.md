@@ -39,8 +39,8 @@ media-autobuild_suite\local64\lib\liblc3.a 파일
 ## LC3 라이브러리 배제
 
 그런데, LC3 라이브러리를 사용할 일이 없으므로 좀 더 화끈한 해결책을 쓸 수도 있다.\
-처음 실행할 때 FFmpeg의 옵션을 입력받는데, 여기서 바로 LC3 라이브러리를 배제하는 것이다.\
-하는 김에, 역시 사용하지 않는 OpenH264 라이브러리도 함께 배제한다.
+처음 실행할 때 ffmpeg의 옵션을 입력받는데, 여기서 바로 LC3 라이브러리를 배제하는 것이다.\
+하는 김에, 역시 사용하지 않는 **OpenH264** 라이브러리도 함께 배제하기로 했다.
 
 ``` text
 --disable-libopenh264 --disable-lc3
@@ -51,5 +51,5 @@ media-autobuild_suite\local64\lib\liblc3.a 파일
 
 ``` text
 --disable-liblc3
---disble-libopenh264
+--disable-libopenh264
 ```
