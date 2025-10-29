@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "media-autobuild_suite 빌드 실패 해결"
+title: "media-autobuild_suite 빌드 실패 해결법"
 date: 2025-10-28 15:45:00 +0900
 categories:
   - ITTalk
