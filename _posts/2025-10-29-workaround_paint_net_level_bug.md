@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Paint.NET level 필터 오류 우회법"
+title: "Paint.NET levels 필터 오류 우회법"
 date: 2025-10-29 23:18:00 +0900
 categories:
   - ITTalk
@@ -9,7 +9,7 @@ categories:
 [Paint.NET](https://getpaint.net/){:target="_blank"}은 굉장한 기능을 제공하는 무료 이미지 편집 도구이다.\
 기본 기능도 훌륭함은 물론, 사용자가 직접 필터를 만들어 적용할 수 있는 환경도 제공한다.
 
-그런데, 언제부터인가 level(수준) 기능을 적용하면 오동작을 보이기 시작했다.
+그런데, 언제부터인가 levels(수준) 기능을 적용하면 오동작을 보이기 시작했다.
 
 ![image](</images/2025-10-29/buggy_yes_okl_s64_Q.png>){: .align-center}
 
@@ -24,7 +24,7 @@ categories:
 
 ![image](</images/2025-10-29/config_B_okl_s64_Q.png>){: .align-center}
 
-이러면 아래와 같이 level 기능이 정상적으로 동작하는 것을 볼 수 있다.
+이러면 아래와 같이 levels 기능이 정상적으로 동작하는 것을 볼 수 있다.
 
 ![image](</images/2025-10-29/buggy_no_okl_s64_Q.png>){: .align-center}
 
