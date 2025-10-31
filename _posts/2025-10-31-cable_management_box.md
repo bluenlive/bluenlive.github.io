@@ -23,7 +23,7 @@ categories:
 
 ---
 
-지인을 만나서 이런 저런 얘길 나누다보니 답이 바로 코앞에 있었다.\
+트래킹 중에 지인을 만나서 이런 저런 얘길 나누다보니 답이 바로 코앞에 있었다.\
 멀티탭 정리함의 크기가 우리의 마음에 들지 않았던 원인[^1]부터, 관련 제품까지 모두 얘기를 들을 수 있었다.
 
 복귀한 뒤에 주문을 넣었고... 이윽고 도착.
@@ -58,6 +58,6 @@ categories:
 ![image](</images/2025-10-31/20251031_060309462_iOS_okl_s64.jpg>){: .align-center}
 
 [답](https://smartstore.naver.com/damoang-net/products/12103222483){:target="_blank"}이 이렇게나 가까이 있었던 걸 이제야 알았다니...\
-참고로, 본 제품 구매는 [네이버 스토어](https://smartstore.naver.com/damoang-net/products/12103222483){:target="_blank"}에서 할 수 있다.
+참고로, 본 제품은 [네이버 스토어](https://smartstore.naver.com/damoang-net/products/12103222483){:target="_blank"}에서 구매 할 수 있다.
 
 [^1]: 나라마다 전원 케이블/멀티탭 규격이 다르기 때문
