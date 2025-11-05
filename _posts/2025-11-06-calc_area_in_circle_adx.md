@@ -19,7 +19,7 @@ categories:
 ![image](</images/2025-11-06/wolframalpha_B_okl_s64_Q.png>){: .align-center}
 
 [Wolfram Alpha](https://www.wolframalpha.com/input?i=integral+from+2+to+3+of+sqrt%2825-x%5E2%29&lang=ko){:target="_blank"}를 통해 계산해보니 위와 같은 결과가 나왔다.\
-이 결과를 보면서 다음과 같은 부정적분 식을 알 수 있었다.
+이 결과를 보면서 다음과 같은 부정적분 식을 도출할 수 있었다.
 
   $$
   \int\sqrt{L^2-x^2}\,dx=\frac{x}{2}\sqrt{L^2-x^2}+L^2 \cdot \arctan\!\left(\frac{\sqrt{L^2-x^2}}{x + L}\right)+C
@@ -96,7 +96,7 @@ $$
   \int\sqrt{L^2-x^2}\,dx=\frac{x}{2}\sqrt{L^2-x^2}+\frac{L^2}{2}\arcsin\!\left(\frac{x}{L}\right)+C
   $$
 
-Wolfram Alpha의 결과와 이 식은 서로 달라 보이지만, 범위를 지정해서 결과를 계산해보면 결과가 같음을 확인할 수 있다.
+Wolfram Alpha의 결과와 이 식은 서로 달라 보이지만, 범위를 지정해서 계산해보면 결과가 같음을 확인할 수 있다.
 
 ---
 
