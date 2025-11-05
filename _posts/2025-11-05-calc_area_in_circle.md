@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "정사각형 내의 사분원을 n×n 분할한 각 블럭의 면적을 부정적분으로 정확히 계산"
+title: "정사각형 내의 사분원을 n×n 분할한 각 블럭의 면적을 적분으로 계산"
 date: 2025-11-05 22:20:00 +0900
 categories:
   - algorithm
