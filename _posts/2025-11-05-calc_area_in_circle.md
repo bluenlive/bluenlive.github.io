@@ -6,9 +6,9 @@ categories:
   - algorithm
 ---
 
-![image](</images/2025-11-05/checks_B_okl_s64_Q.png>){: .align-center}
+아래 그림과 같이 정사각형 내의 사분원을 $$n \times n$$ 분할한 각 블럭의 면적을 부정적분으로 정확히 계산하는 방법을 알아본다.
 
-위 그림과 같이 정사각형 내의 사분원을 $$n \times n$$ 분할한 각 블럭의 면적을 부정적분으로 정확히 계산하는 방법을 알아본다.
+![image](</images/2025-11-05/checks_B_okl_s64_Q.png>){: .align-center}
 
 짧게 말하면, 각 블럭의 면적은 사분원의 높이 함수 $$y(x)=\sqrt{L^2-x^2}$$를 블럭의 세로 구간 $$[y_0,y_1]$$으로 잘라낸 뒤 $$x$$ 방향으로 적분해 정확히 계산할 수 있다.
 
