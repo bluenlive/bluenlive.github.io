@@ -74,9 +74,11 @@ categories:
 
 ## 정규화(단위 면적의 최댓값을 1로)
 
-- **단위 면적의 최댓값:** 모든 블럭의 $$A_{i,j}$$ 중 최댓값을 $$A_{\max}$$라 두고
+위의 식은 사반원의 반지름을 1로 변환하여 계산하는 개념이다.\
+이를 단위 면적의 최댓값을 1로 계산하도록 바꾸려면 $$ n^2 $$ 을 곱해주면 된다.
+
   $$
-  A'_{i,j}=\frac{A_{i,j}}{A_{\max}}
+  A'_{i,j}=A_{i,j} \cdot n^2
   $$
 
 ---
@@ -132,26 +134,30 @@ int main() {
     int n = 6;        // 격자 분할 개수
     double L = 1.0;   // 정사각형 한 변의 길이
 
-    double areas[100][100]; // n<=100을 지원
-    double max_area = 0.0;
+    double *areas = (double *)malloc(sizeof(double) * n * n);
 
     // 모든 블럭의 정확한 면적을 계산
-    for (int j = 0; j < n; j++) {
-        for (int i = 0; i < n; i++) {
-            double a = block_area_exact(i, j, n, L);
-            areas[j][i] = a;
-            if (a > max_area) max_area = a;
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            double a = block_area_exact(j, i, n, L);
+            areas[i * n + j] = a;
         }
     }
 
+    double sum = 0;
     // 단위 면적의 최댓값을 1로 정규화하고 위에서부터 출력
-    for (int j = n - 1; j >= 0; j--) {
-        for (int i = 0; i < n; i++) {
-            double v = (max_area > 0.0) ? areas[j][i] / max_area : 0.0;
+    for (int i = n - 1; i >= 0; --i) {
+        for (int j = 0; j < n; ++j) {
+            double v = areas[i * n + j] * n * n;
             printf("%8.6f ", v);
+            sum += v;
         }
         printf("\n");
     }
+    printf("\nsum: %.12f\n", sum);
+    printf("calced area: %.12f\n", M_PI * n * n / 4.0);
+
+    free(areas);
     return 0;
 }
 ```
@@ -164,12 +170,14 @@ int main() {
 1.00000000 1.00000000 1.00000000 1.00000000 0.82859192 0.03177121 
 1.00000000 1.00000000 1.00000000 1.00000000 1.00000000 0.44508798 
 1.00000000 1.00000000 1.00000000 1.00000000 1.00000000 0.80181330 
-1.00000000 1.00000000 1.00000000 1.00000000 1.00000000 0.97210532
+1.00000000 1.00000000 1.00000000 1.00000000 1.00000000 0.97210532 
+
+sum: 28.274333882308
+calculated area: 28.274333882308
 ```
 
-위 결과에 나온 값을 모두 더하면 $$ 28.27433388 $$이 된다.\
-이는 사분원의 면적과 동일하다.
+위 결과에 나온 값을 모두 더한 값과, 계산에 의한 사분원의 면적이 동일하다는 것을 확인할 수 있다.
 
   $$
-  \frac{\pi \cdot 6^2}{4} = 28.274333882308139\ldots
+  \frac{\pi \cdot 6^2}{4} = 28.274333882308139146\ldots
   $$
