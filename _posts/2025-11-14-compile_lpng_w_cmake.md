@@ -53,8 +53,8 @@ libpng 역시 필요한 변수를 적절히 설정하고 아래를 실행하면 
 ```bash
 cmake -S %LIBPNG_SRC% -B %BUILD_X64% -G "Visual Studio 17 2022" -A x64 ^
   -DPNG_SHARED=OFF -DPNG_TESTS=OFF ^
-  -DZLIB_INCLUDE_DIR=%ZLIB_SRC%\_build_\lib\release\x64 ^
-  -DZLIB_LIBRARY=%ZLIB_SRC%\_build_\lib\release\x64\zlibstatic.lib ^
+  -DZLIB_INCLUDE_DIR=%ZLIB_SRC%/_build_/lib/release/x64 ^
+  -DZLIB_LIBRARY=%ZLIB_SRC%/_build_/lib/release/x64/zlibstatic.lib ^
   -DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded ^
   -DCMAKE_C_FLAGS="/arch:AVX2" ^
   -Wno-dev
@@ -66,13 +66,13 @@ cmake --build %BUILD_X64% --config Release
 ## 참고사항
 
 - static library로 빌드하려면 `*SHARD=OFF` 외에 `DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded`도 추가할 것
-  - 이 부분이 누락되면 CRT가 통일되지 않고, 빌드 옵션을 손 대야 함
+  - 이 부분이 누락되면 CRT가 통일되지 않고, 최종 빌드시 빌드 옵션을 손 대야 함
 - libpng가 내부적으로 사용하는 헤더도 함께 복사해야 함
   - pngdebug.h, pnginfo.h, pngpriv.h, pngstruct.h, pngtarget.h
+  - pnglibconf.h 는 없으면 pnglibconf.h.prebuilt를 이름을 바꿔 복사해야 함
 - libpng에서는 각 아키텍처 별 SIMD 여부를 확인하기 위한 `check.h`도 함께 복사해야 함
 - lib 파일이 /MD인지 /MT인지 확인하려면 VS 명령행에서 `dumpbin`을 사용할 것\
-결과에서 `LIBCMT`가 나오면 `/MT`, `MSVCRT`가 나오면 `/MD` 빌드임
-
+결과에서 `LIBCMT`가 나오면 `/MT`, `MSVCRT`가 나오면 `/MD` 빌드임\
 ```bash
 dumpbin /directives mozjpeg-static.lib | findstr DEFAULTLIB
 ```
