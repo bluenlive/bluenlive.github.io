@@ -7,7 +7,7 @@ categories:
 ---
 
 최근에 [libpng](https://github.com/pnggroup/libpng){:target="_blank"}는 1.8.0 beta 단계로 들어왔고, [zlib-ng](https://github.com/zlib-ng/zlib-ng/commits/develop/){:target="_blank"}는 2.3.0 RC1 단계로 들어왔다.\
-릴리즈 빌드가 나온 다음에 적용하는 것이 통상적이지만, 두 프로젝트 모두 이 정도면 적용할 수 있다고 보고 적용하기로 했다.
+릴리즈 빌드를 적용하는 것이 통상적이지만, 두 프로젝트 모두 이 정도면 적용할 수 있다고 보고 적용하기로 했다.
 
 그런데, 솔루션 파일을 VS2022에서 컴파일해보니 뭔가 잘 되지 않는다...
 
