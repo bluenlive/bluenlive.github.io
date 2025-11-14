@@ -33,7 +33,7 @@ categories:
 
 `SRC_DIR`과 `LIB_DIR`을 적절히 설정하고 아래의 명령을 실행하면 된다.
 
-```cmd
+```bash
 cmake -S %SRC_DIR% -B "%~dp0x64" -G "Visual Studio 17 2022" -A x64 ^
   -DZLIBNG_ENABLE_TESTS=OFF ^
   -DZLIB_COMPAT=ON ^
@@ -50,7 +50,7 @@ cmake --build "%~dp0x64" --config Release --target zlib-ng --parallel
 
 libpng 역시 필요한 변수를 적절히 설정하고 아래를 실행하면 된다.
 
-```cmd
+```bash
 cmake -S %LIBPNG_SRC% -B %BUILD_X64% -G "Visual Studio 17 2022" -A x64 ^
   -DPNG_SHARED=OFF -DPNG_TESTS=OFF ^
   -DZLIB_INCLUDE_DIR=%ZLIB_SRC%\_build_\lib\release\x64 ^
@@ -73,6 +73,6 @@ cmake --build %BUILD_X64% --config Release
 - lib 파일이 /MD인지 /MT인지 확인하려면 VS 명령행에서 `dumpbin`을 사용할 것\
 결과에서 `LIBCMT`가 나오면 `/MT`, `MSVCRT`가 나오면 `/MD` 빌드임
 
-```cmd
+```bash
 dumpbin /directives mozjpeg-static.lib | findstr DEFAULTLIB
 ```
