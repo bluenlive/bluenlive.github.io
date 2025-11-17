@@ -31,7 +31,7 @@ categories:
 다음으로 필요한 라이브러리는 [astral](https://pypi.org/project/astral/){:target="_blank"}이다.  
 다음과 같이 하면 간단하게 설치할 수 있다.
 
-```bash
+```batch
 pip install astral
 ```
 
