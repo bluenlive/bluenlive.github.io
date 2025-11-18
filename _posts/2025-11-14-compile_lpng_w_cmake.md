@@ -11,7 +11,7 @@ categories:
 
 그런데, 솔루션 파일을 VS2022에서 컴파일해보니 뭔가 잘 되지 않는다...
 
-```bash
+```batch
 1>png.c
 1>arm_init.c
 1>C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207\include\arm_neon.h(21,1): error C1189: #error:  This header is specific to ARM targets
