@@ -4,6 +4,11 @@ title: "Copilot에게 Paint.NET 메모리 덤프 분석시키기"
 date: 2025-11-20 21:51:00 +0900
 categories:
   - ITTalk
+toc: true
+toc_label: "Contents"
+#toc_icon: "cog"
+toc_icon: "book-open"
+toc_sticky: true
 ---
 
 [이전 글](/ittalk/workaround_paint_net_level_bug_2/)에서 언급한 우회법을 찾은 과정을 간략히 포스팅.
