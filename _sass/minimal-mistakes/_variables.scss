@@ -20,8 +20,59 @@
    src: url('/assets/fonts/NanumPen.woff') format('woff');
 }
 
-/* BLUEnLIVE / Source Code Pro */
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+/* BLUEnLIVE / Source Code Pro --> not used anymore */
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap'); */
+
+/* BLUEnLIVE / MonoplexNerd, https://noonnu.cc/font_page/981 */
+@font-face {
+    font-family: 'MonoplexNerd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-nerd@1.0/MonoplexKRNerd-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MonoplexNerd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-nerd@1.0/MonoplexKRNerd-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MonoplexNerd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-nerd@1.0/MonoplexKRNerd-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MonoplexNerd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-nerd@1.0/MonoplexKRNerd-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MonoplexNerd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-nerd@1.0/MonoplexKRNerd-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MonoplexNerd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-nerd@1.0/MonoplexKRNerd-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MonoplexNerd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-nerd@1.0/MonoplexKRNerd-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MonoplexNerd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-nerd@1.0/MonoplexKRNerd-Text.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
 
 /*
 $doc-font-size: 16px !default;
@@ -70,7 +121,7 @@ $calisto: "Calisto MT", serif !default;
 $garamond: Garamond, serif !default;
 
 /* Monospace - modern font stack */
-$monospace-code: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+$monospace-code: ui-monospace, 'Cascadia Code', 'MonoplexNerd', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 
 /* Handwritten - modern font stack */
 $handwritten: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
@@ -87,7 +138,7 @@ $emoji-native: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto C
 $serif: $default-serif !default;
 $sans-serif: 'Pretendard Variable', $default-sans-serif !default;
 $sans-serif-narrow: $sans-serif !default;
-$monospace: "Source Code Pro", /* Monaco, */ Consolas, "Lucida Console", monospace !default;
+$monospace: "MonoplexNerd", /* Monaco, */ Consolas, "Lucida Console", monospace !default;
 $title-san-serif: 'GmarketSans', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
 "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 
