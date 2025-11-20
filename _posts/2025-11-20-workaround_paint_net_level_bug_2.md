@@ -12,7 +12,7 @@ categories:
 
 ![image](</images/2025-11-20/workaround_B_okl_s64_Q.png>){: .align-center}
 
-그 화면에서 Paint.NET에 대해서 기본 설정을 `AMD Radeon(TM) Graphics`으로 하면 Paint.NET이 프리징 되는 문제를 피할 수 있다.
+Paint.NET의 기본 설정을 `AMD Radeon(TM) Graphics`으로 하면 Paint.NET의 프리징 문제를 피할 수 있다.
 
 Paint.NET에서 아래와 같이 HW 가속을 지정해도…
 
