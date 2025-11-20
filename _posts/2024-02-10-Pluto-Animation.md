@@ -49,6 +49,8 @@ categories:
 
 ![image](</images/2024-02-10b/pluto4.jpg>){: .align-center}
 
+---
+
 덧1. 물론 위의 짤은 패러디이고 원본 대사는 아래와 같음. 스포일링이긴 하지만 원본 짤도 워낙 유명해서 패스
 
 ![image](</images/2024-02-10b/pluto5.jpg>){: .align-center}
