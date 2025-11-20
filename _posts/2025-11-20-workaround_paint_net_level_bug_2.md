@@ -8,11 +8,11 @@ categories:
 
 [이전 글](/ittalk/workaround_paint_net_level_bug/)보다 더 발전된(?) 오류 우회법을 발견하여 포스팅.
 
-윈도우 설정에서 `시스템 > 디스플레이 > 그래픽`으로 이동하면 어플리케이션 별로 GPU 사용을 지정할 수 있다.
+윈도우의 설정에서 **시스템 > 디스플레이 > 그래픽**으로 이동하면 어플리케이션 별로 GPU 사용을 지정할 수 있다.
 
 ![image](</images/2025-11-20/workaround_B_okl_s64_Q.png>){: .align-center}
 
-Paint.NET의 기본 설정을 `AMD Radeon(TM) Graphics`으로 하면 Paint.NET의 프리징 문제를 피할 수 있다.
+Paint.NET의 기본 설정을 **AMD Radeon(TM) Graphics**으로 하면 Paint.NET의 프리징 문제를 피할 수 있다.
 
 Paint.NET에서 아래와 같이 HW 가속을 지정해도…
 
