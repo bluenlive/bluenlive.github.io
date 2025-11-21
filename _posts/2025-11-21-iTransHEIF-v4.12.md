@@ -44,7 +44,7 @@ categories:
   * UI 미세 조정
   * 파일명에 **%** 가 들어있는 경우에도 제대로 동작하도록 수정
   * 배치 파일 생성시 여러 줄로 생성해서 필요시 가독성 증대
-  * TOSS ID 에서 [Buy Me A Coffee](https://buymeacoffee.com/){:target="_blank"}로 변경
+  * TOSS 아이디 후원을 [Buy Me A Coffee](https://buymeacoffee.com/bluenlive){:target="_blank"}로 변경
   * [libjpeg-turbo](https://github.com/libjpeg-turbo/libjpeg-turbo){:target="_blank"}를 3.1.2로 업데이트(Aug 26, 2025)
   * [FFmpeg](http://ffmpeg.org/download.html){:target="_blank"}을 8.0[gyan.dev]으로 업데이트
   * [libpng](https://github.com/pnggroup/libpng){:target="_blank"}를 1.8.0.git(Nov 7, 2025)으로, [zlib-ng](https://github.com/zlib-ng/zlib-ng){:target="_blank"}를 2.3.0-rc2(Nov 18, 2025)로 업데이트
