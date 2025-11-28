@@ -26,7 +26,7 @@ categories:
 
 내가 쓰는 [MainConcept의 HEVC 인코더](https://www.mainconcept.com/ffmpeg){:target="_blank"}와 궁합이 가장 좋기도 하다.
 
-![image](</images/2024-12-01/nVidia RTX 5060Tis64.jpg>){: .align-center}
+![image](/images/2024-12-01/nVidia_RTX_5060Tis64.jpg){: .align-center}
 *Copilot이 그린 RTX 5060Ti 상상도*
 
 ## AMD RDNA4 Navi44
@@ -38,7 +38,7 @@ AMD는 차기 제품군(RDNA4)에 대해 Navi44와 Navi48 두 가지 칩만 계�
 
 RX 7700 XT에서 **미묘한 드라이버 안정성**과 **AV1 인코더 HW 오류**가 불만이었는데, 이번엔 어떨지 궁금하긴 하다.
 
-![image](</images/2024-12-01/AMD RDNA4 Navi44s64_Q.png>){: .align-center}
+![image](/images/2024-12-01/AMD_RDNA4_Navi44s64_Q.png){: .align-center}
 *Copilot이 그린 Navi44 상상도*
 
 ## intel 배틀메이지 B570
@@ -51,5 +51,5 @@ A750을 찍먹해보면서 **예상보다도 낮은 게임 성능**에도 불구
 내 입장에서는 가격이 셋 중 가장 싸다면 선택할 수도 있는 옵션.\
 반대로 가격이 가장 싸지 않으면 살 이유가 하나도 없는 제품이 될 것이다
 
-![image](</images/2024-12-01/Intel Battlemage graphics cards64.jpg>){: .align-center}
+![image](/images/2024-12-01/Intel_Battlemage_graphics_cards64.jpg){: .align-center}
 *Copilot이 그린 Intel Battlemage B570 상상도*

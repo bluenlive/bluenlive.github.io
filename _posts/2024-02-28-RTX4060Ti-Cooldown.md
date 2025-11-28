@@ -16,31 +16,31 @@ categories:
 
 당연한 얘기지만, 이 프로그램은 **전력 사용량**이 **매우 높음**으로 나온다.
 
-![image](</images/2024-02-28/processess64_Q.png>){: .align-center}
+![image](/images/2024-02-28/processess64_Q.png){: .align-center}
 
 그리고, **CPU**와 **GPU**를 골고루(?) 사용한다.  
 우선 CPU 점유율은 아래와 같다. GPU와 함께 사용함에도 점유율이 상당히 높다.
 
-![image](</images/2024-02-28/task_cpus64_Q.png>){: .align-center}
+![image](/images/2024-02-28/task_cpus64_Q.png){: .align-center}
 
 그런데, GPU 점유율은 생각보다 높지 않다.  
 그렇다면, [이전 글](/ittalk/RTX4060Ti-Undervolting/){:target="_blank"}에서 짚은 내용이 충분하지 않다는 뜻이다.
 
-![image](</images/2024-02-28/task_gpus64_Q.png>){: .align-center}
+![image](/images/2024-02-28/task_gpus64_Q.png){: .align-center}
 
 일단, [**MSI Afterburner**](https://www.msi.com/page/Afterburner){:target="_blank"}의 설정을 다시 한 번 확인했다.  
 특이한 내용은 없다.
 
-![image](</images/2024-02-28/msi_gpu_curve_Q.png>){: .align-center}
+![image](/images/2024-02-28/msi_gpu_curve_Q.png){: .align-center}
 
 이것만으론 부족하니 [**Ryzen Master**](https://www.amd.com/en/technologies/ryzen-master){:target="_blank"}를 통해 CPU의 최대 전력 사용량도 줄여보기로 했다.  
 **PPT**는 **110 W**, **TDC**는 **95 A**, **EDC**는 **140 A**로 설정했다.
 
-![image](</images/2024-02-28/ryzen_masters64_Q.png>){: .align-center}
+![image](/images/2024-02-28/ryzen_masters64_Q.png){: .align-center}
 
 그리고, **Windows 10**의 **전원 옵션**에서 **최대 프로세서 상태**를 99%로 설정했다.
 
-![image](</images/2024-02-28/cpusetting_B_Q.png>){: .align-center}
+![image](/images/2024-02-28/cpusetting_B_Q.png){: .align-center}
 
 마지막으로, 본체 커버를 분리해버렸다.  
 

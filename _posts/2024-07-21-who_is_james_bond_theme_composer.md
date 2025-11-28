@@ -6,7 +6,7 @@ categories:
 ---
 
 
-![image](</images/2024-07-21/1_gunbarrel.jpg>){: .align-center}
+![image](/images/2024-07-21/1_gunbarrel.jpg){: .align-center}
 *전설의 시작. [살인번호]의 오프닝 건배럴 시퀀스*
 
 007 영화의 상징 **건배럴 시퀀스**와 **제임스 본드 테마**의 위치는 〈스펙터(2015)〉에 와서야 제자리로 돌아왔다.  
@@ -19,7 +19,7 @@ categories:
 
 하지만, 이 음악의 작곡가는 **몬티 노먼**이다.
 
-![image](</images/2024-07-21/2_score.png>){: .align-center}
+![image](/images/2024-07-21/2_score.png){: .align-center}
 *By MONTY NORMAN*
 
 첫 007 영화인 〈살인번호〉를 제작하면서 제작진은 **작곡**을 몬티 노먼에게 맡긴다.  
@@ -37,7 +37,7 @@ categories:
 이렇게 해서 탄생한 음악이 우리가 알고 있는 제임스 본드 테마.  
 이러한 히스토리는 〈살인번호〉 오프닝에도 아래와 같이 표시되어있다.
 
-![image](</images/2024-07-21/3_drnotitle.jpg>){: .align-center}
+![image](/images/2024-07-21/3_drnotitle.jpg){: .align-center}
 *몬티 노먼이 작곡은 했지만 연주는 안 했음! 연주는 존 배리 느님이심!*
 
 존 배리의 음악을 마음에 들어한 제작진은 차기작인 〈위기일발〉부터 음악을 존 배리에게 전담시킨다.  

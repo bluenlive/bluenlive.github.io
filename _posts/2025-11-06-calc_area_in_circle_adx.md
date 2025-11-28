@@ -8,7 +8,7 @@ categories:
 
 이 글은 [이전 글](/algorithm/calc_area_in_circle/)의 일부 내용에 대한 부가적인 설명 글.
 
-![image](</images/2025-11-06/checks_B_okl_s64_Q.png>){: .align-center}
+![image](/images/2025-11-06/checks_B_okl_s64_Q.png){: .align-center}
 
 위 그림에서 진한 색으로 표시된 영역의 면적을 적분으로 계산해보고 싶었다.\
 프로그램으로 간단하게 계산하기 위해서는 근사해서 계산하는 방법이 있다.\
@@ -16,7 +16,7 @@ categories:
 
 ## Wolfram Alpha로 계산
 
-![image](</images/2025-11-06/wolframalpha_B_okl_s64_Q.png>){: .align-center}
+![image](/images/2025-11-06/wolframalpha_B_okl_s64_Q.png){: .align-center}
 
 [Wolfram Alpha](https://www.wolframalpha.com/input?i=integral+from+2+to+3+of+sqrt%2825-x%5E2%29&lang=ko){:target="_blank"}를 통해 계산해보니 위와 같은 결과가 나왔다.\
 이 결과를 보면서 다음과 같은 부정적분 식을 추정할 수 있었다.

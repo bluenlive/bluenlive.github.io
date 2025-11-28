@@ -13,7 +13,7 @@ categories:
 실제로 [모 쓰레기 영화 사이트](https://extmovie.com/){:target="_blank"}에서 실명을 확인해서 저격을 당한 적도 있었다.  
 (물론 **쓰레기**답게 운영자에게 제보했으나 씹힘)
 
-![image](</images/2024-08-08/coffee_512_173.png>){: .align-center}
+![image](/images/2024-08-08/coffee_512_173.png){: .align-center}
 
 하지만, 아쉽게도 2024년 8월 1일부로 TOSS ID 서비스가 종료되었다.
 

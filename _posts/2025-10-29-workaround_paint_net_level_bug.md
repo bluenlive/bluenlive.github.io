@@ -11,7 +11,7 @@ categories:
 
 그런데, 언제부터인가 levels(수준) 기능을 적용하면 오동작을 보이기 시작했다.
 
-![image](</images/2025-10-29/buggy_yes_okl_s64_Q.png>){: .align-center}
+![image](/images/2025-10-29/buggy_yes_okl_s64_Q.png){: .align-center}
 
 위 화면처럼 한쪽 그래프만 표시되지 않을 때도 있고, 때로는 좌우의 그래프가 모두 안 보이는 경우도 있다.\
 또한, 이 오류가 발생하고 나면 **프로그램 자체가 다운**되는 경우도 발생한다.
@@ -22,11 +22,11 @@ categories:
 일단 이 오류를 우회하는 방법은 의외로 간단(?)하다.\
 설정에서 **하드웨어 가속 기능을 끄면** 된다.
 
-![image](</images/2025-10-29/config_B_okl_s64_Q.png>){: .align-center}
+![image](/images/2025-10-29/config_B_okl_s64_Q.png){: .align-center}
 
 이러면 아래와 같이 levels 기능이 정상적으로 동작하는 것을 볼 수 있다.
 
-![image](</images/2025-10-29/buggy_no_okl_s64_Q.png>){: .align-center}
+![image](/images/2025-10-29/buggy_no_okl_s64_Q.png){: .align-center}
 
 ---
 

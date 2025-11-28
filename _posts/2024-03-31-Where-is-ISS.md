@@ -11,7 +11,7 @@ categories:
 국제우주정거장(International Space Station, ISS)은 지구 궤도를 도는 거대한 구조물이다.  
 여러 국가들이 협력하여 만든 것으로, 1998년 11월 20일에 처음으로 인공위성으로 발사되었다.
 
-![image](</images/2024-03-31b/STS-134_ISS_Bs64.jpg>){: .align-center}
+![image](/images/2024-03-31b/STS-134_ISS_Bs64.jpg){: .align-center}
 
 비행 고도는 약 400 km이며, 지구를 90분에 한 바퀴 돌고 있다.  
 7.5 km/s의 어마어마한 속도로 움직이고 있어, 하루에 16번의 일출과 일몰을 경험한다.

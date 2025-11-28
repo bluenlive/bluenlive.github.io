@@ -13,7 +13,7 @@ categories:
 그리고, 다른 제조사들에 비해 높은 드라이버 안정성도 역시 한몫 했다.\
 그러나...
 
-![image](</images/2025-02-09b/nvidiadriver_Bs64_Q.png>){: .align-center}
+![image](/images/2025-02-09b/nvidiadriver_Bs64_Q.png){: .align-center}
 *문제 덩어리 572.16 드라이버*
 
 최근에 메인보드 바이오스도 업데이트 되는 김에, 메인보드 바이오스, 드라이버 및 글카 드라이버를 업데이트 했다.\
@@ -27,7 +27,7 @@ categories:
 바로 이전 버전을 포함한 어떤 버전으로 롤백해도 아무런 문제가 발생하지 않았다.\
 그래서, **572.16 드라이버**를 삭제하고 **566.36 드라이버**를 설치했다.
 
-![image](</images/2025-02-09b/nvidia_old_Bs64_Q.png>){: .align-center}
+![image](/images/2025-02-09b/nvidia_old_Bs64_Q.png){: .align-center}
 *사랑과 우정의 상징 566.36 드라이버*
 
 좀 더 뒤져보니, 이게 나만의 문제가 아니라 세계적으로 벌어지는 이슈였다.

@@ -8,7 +8,7 @@ categories:
 
 아래 그림과 같이 정사각형 내의 사분원을 $$n \times n$$ 분할한 각 블럭의 면적을 부정적분으로 정확히 계산하는 방법 포스팅.
 
-![image](</images/2025-11-05/checks_B_okl_s64_Q.png>){: .align-center}
+![image](/images/2025-11-05/checks_B_okl_s64_Q.png){: .align-center}
 
 짧게 말하면, 각 블럭의 면적은 사분원의 높이 함수 $$y(x)=\sqrt{L^2-x^2}$$를 블럭의 세로 구간 $$[y_0,y_1]$$으로 잘라낸 뒤 $$x$$ 방향으로 적분해 정확히 계산할 수 있다.
 
@@ -178,7 +178,7 @@ calculated area: 28.274333882308
 
 이 결과는 위 그림의 각 블록의 면적이 아래와 같다는 것을 의미한다.
 
-![image](</images/2025-11-05/checks2_B_okl_s64_Q.png>){: .align-center}
+![image](/images/2025-11-05/checks2_B_okl_s64_Q.png){: .align-center}
 
 그리고, 위 결과에 나온 값을 모두 더한 값과, 계산에 의한 사분원의 면적이 동일하다는 것을 확인할 수 있다.
 

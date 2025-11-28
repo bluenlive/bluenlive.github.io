@@ -21,17 +21,17 @@ tags: ["Casino Royale", "James Bond"]
 이 분수대들은 식수원이기도 하고, 주요한 위치를 표시해주며, 각 분수대 위의 조각상은 저마다의 의미가 있다.\
 이 조각상은 Anna-Seiler-Brunnen(안나 자일러 분수)로 전 재산을 기부하여 병원을 지은 분을 기리는 곳.
 
-![image](</images/2025-05-15/008_IMG_9062s64.jpg>){: .align-center}
+![image](/images/2025-05-15/008_IMG_9062s64.jpg){: .align-center}
 
 이 곳은 Zytglogge(지트글로게)라는 이름의 시계탑.\
 스위스에서 가장 오래된 시계라고 한다.
 
-![image](</images/2025-05-15/025_IMG_9071s64.jpg>){: .align-center}
+![image](/images/2025-05-15/025_IMG_9071s64.jpg){: .align-center}
 
 시계탑의 반대쪽.\
 특정 시간이 되면 시계가 움직인다고 하는데, 실제로 보지는 못했다.
 
-![image](</images/2025-05-15/027_IMG_9072s64.jpg>){: .align-center}
+![image](/images/2025-05-15/027_IMG_9072s64.jpg){: .align-center}
 
 ---
 
@@ -41,23 +41,23 @@ tags: ["Casino Royale", "James Bond"]
 
 26세에 그가 살면서 상대성이론을 탄생시켰던 집은 지금 간단히 관광할 수 있게 되어있다.
 
-![image](</images/2025-05-15/056_IMG_9101s64.jpg>){: .align-center}
+![image](/images/2025-05-15/056_IMG_9101s64.jpg){: .align-center}
 
 입구에 들어서면 우리나라로 치면 거실 정도에 해당하는 공간은 아래와 같다.
 
-![image](</images/2025-05-15/041_IMG_9089s64.jpg>){: .align-center}
+![image](/images/2025-05-15/041_IMG_9089s64.jpg){: .align-center}
 
 아공... 어찌 목만 오셨소...
 
-![image](</images/2025-05-15/050_IMG_9095s64.jpg>){: .align-center}
+![image](/images/2025-05-15/050_IMG_9095s64.jpg){: .align-center}
 
 바로 그 기적의 해 1905년에 대한 간략한 설명.
 
-![image](</images/2025-05-15/052_IMG_9097s64.jpg>){: .align-center}
+![image](/images/2025-05-15/052_IMG_9097s64.jpg){: .align-center}
 
 그리고, 그 **악명**높은 **솔베이 회의** 사진 및 그의 여권...
 
-![image](</images/2025-05-15/053_IMG_9098s64.jpg>){: .align-center}
+![image](/images/2025-05-15/053_IMG_9098s64.jpg){: .align-center}
 *여기 있는 29명 중 아인슈타인, 마리 퀴리를 포함한 17명이 노벨상 수상자*
 
 ---
@@ -65,42 +65,42 @@ tags: ["Casino Royale", "James Bond"]
 베른을 상징하는 동물은 곰이다.\
 그래서 BärenPark(곰 공원)도 있다. 여기엔 물론 곰도 있고.
 
-![image](</images/2025-05-15/061_IMG_9104s64.jpg>){: .align-center}
+![image](/images/2025-05-15/061_IMG_9104s64.jpg){: .align-center}
 
 곰 공원을 따라 가보면 이렇게 구시가지를 볼 수 있다.
 
-![image](</images/2025-05-15/064_IMG_9082s64.jpg>){: .align-center}
+![image](/images/2025-05-15/064_IMG_9082s64.jpg){: .align-center}
 
 곰 공원 반대쪽으로 올라가면 Rosengarten Bern(베른 장미 공원)이 있다.\
 오르막길이 좀 빡세긴 하지만, 올라가면 멋진 경치를 볼 수 있다.
 
 일단 초입에서는 아인슈타인이 반겨준다.
 
-![image](</images/2025-05-15/097_IMG_9138s64.jpg>){: .align-center}
+![image](/images/2025-05-15/097_IMG_9138s64.jpg){: .align-center}
 
 장미 공원에는 편하게 누워서 쉴 수 있는 넓은 잔디밭도 있고, 식사를 즐길 수 있는 식당도 있다.\
 또, 이렇게 넓은 정원도 있다.
 
 그냥 편하게 쉬면서 유럽을 만끽할 수 있는 멋진 곳.
 
-![image](</images/2025-05-15/103_IMG_9144s64.jpg>){: .align-center}
+![image](/images/2025-05-15/103_IMG_9144s64.jpg){: .align-center}
 
 볼만큼 보고, 쉴만큼 쉰 뒤에 내려오면서 한 컷.\
 사진 우측 상단에 멀리 보이는 곳이 장미 공원이다.\
 밑에서 저길 보면서 뭐 하는 사람들일까 했었는데, 올라가보니 그게 다 우리같은 관광객이었...
 
-![image](</images/2025-05-15/109_IMG_9150s64.jpg>){: .align-center}
+![image](/images/2025-05-15/109_IMG_9150s64.jpg){: .align-center}
 
 Münzterrasse Bern(베른 전망 테라스) 쪽으로 오면 한적한 풍경을 즐길 수 있다.\
 베른의 상징인 곰도 한 마리 있고.
 
-![image](</images/2025-05-15/111_IMG_9152s64.jpg>){: .align-center}
+![image](/images/2025-05-15/111_IMG_9152s64.jpg){: .align-center}
 
 The Parliament Building(국회 의사당)도 근처에 있다.
 
-![image](</images/2025-05-15/118_IMG_9159s64.jpg>){: .align-center}
+![image](/images/2025-05-15/118_IMG_9159s64.jpg){: .align-center}
 
 주변을 보니 5월 7,8,9일에 영화 〈카지노 로얄〉의 콘서트를 연다는 포스터가 있다.\
 일정이 맞지 않아 볼 수 없다는 게 너무나 아쉽지만, 조용히 패스.
 
-![image](</images/2025-05-15/116_IMG_9157s64.jpg>){: .align-center}
+![image](/images/2025-05-15/116_IMG_9157s64.jpg){: .align-center}

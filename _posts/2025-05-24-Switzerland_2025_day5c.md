@@ -14,15 +14,15 @@ categories:
 유람선에 올라타자마자 콜라를 사왔는데, 마침 검표가 진행중이었다.\
 (여기 유람선은 탈 때 검표하지 않고, 출항 후에 검표함)
 
-![image](</images/2025-05-24c/IMG_9644s64.jpg>){: .align-center}
+![image](/images/2025-05-24c/IMG_9644s64.jpg){: .align-center}
 *뒤엔 폰에 저장된 표를 확인하시는 와잎좌님*
 
 검표가 끝난 뒤 와잎좌도 한 컷.
 
-![image](</images/2025-05-24c/IMG_9650s64.jpg>){: .align-center}
+![image](/images/2025-05-24c/IMG_9650s64.jpg){: .align-center}
 
 몇 군데의 기항지를 거친 뒤에 우리가 향하는 **Iseltwald(이젤발트)**가 눈 앞에 보인다.
 
-![image](</images/2025-05-24c/IMG_9653s64.jpg>){: .align-center}
+![image](/images/2025-05-24c/IMG_9653s64.jpg){: .align-center}
 
 이렇게 빨리 내리는 이유는...

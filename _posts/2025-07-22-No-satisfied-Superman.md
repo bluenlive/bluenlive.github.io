@@ -5,7 +5,7 @@ categories:
   - DCHero
 ---
 
-![image](</images/2025-07-22/Superman_logos64.jpg>){: .align-center}
+![image](/images/2025-07-22/Superman_logos64.jpg){: .align-center}
 
 최근에 공개된 영화 〈수퍼맨〉은 오랜만에 제목에 〈수퍼맨〉이 제대로 들어간 영화다.\
 물론 〈배트맨 대 수퍼맨: 저스티스의 시작〉이라는 영화가 있었지만... 이건 좀 **괴랄**하니 빼고...\
@@ -15,7 +15,7 @@ categories:
 심지어 육체적으로뿐만 아니라 정신적으로도 나약하다.\
 싸움을 끝내고 나서 “나 졸라 힘들어, 징징” 하는 수퍼맨이라니!!!
 
-![image](</images/2025-07-22/hards64.jpg>){: .align-center}
+![image](/images/2025-07-22/hards64.jpg){: .align-center}
 *난 놀고 있는 게 아니야... 힘들어... 징징징*
 
 인성이 선하다는 점만 제외하면 기존 수퍼맨들과 달라도 너무 다르다.
@@ -33,12 +33,12 @@ categories:
 이런 장면들은 감독의 의도는 알겠는데, 그렇더라도 **비웃음**이 날 지경이었다.\
 장난하는 것도 아니고 원...
 
-![image](</images/2025-07-22/cans64.jpg>){: .align-center}
+![image](/images/2025-07-22/cans64.jpg){: .align-center}
 *지구 최강인데, 인간을 지배하러 보냈다는 걸 알게 되자마자 뒤통수에 깡통을 던져? 감히?*
 
 이 영화에서는 폰트의 사용이나 음악이 클래식 시절을 대놓고 오마주하고 있다.
 
-![image](</images/2025-07-22/fonts64.jpg>){: .align-center}
+![image](/images/2025-07-22/fonts64.jpg){: .align-center}
 *〈수퍼맨 더 무비〉부터 사용된 바로 그 폰트 스타일*
 
 폰트도 폰트지만, 음악의 경우 아예 이 영화만을 위한 **별도의 테마곡을 만들지도 않았다**.\
@@ -47,7 +47,7 @@ categories:
 그런데, 막상 수퍼맨을 보면 가슴의 로고도 클래식과 다르고, 능력치는 너무나 디버프 되어있어 괴랄하기까지 하다.\
 고독의 요새 역시 분명히 클래식의 그것의 오마주인데, 뭔가 경박한 느낌이다.
 
-![image](</images/2025-07-22/fortresss64.jpg>){: .align-center}
+![image](/images/2025-07-22/fortresss64.jpg){: .align-center}
 
 크기가 저렇게 큰 요새라면 좀 천천히 움직여야 되지 않나?
 

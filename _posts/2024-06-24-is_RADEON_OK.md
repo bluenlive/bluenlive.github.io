@@ -50,13 +50,13 @@ categories:
 x264에 비해서 조금 더 나은 성능을 보여준다.  
 그런데, nvenc보다 살짝 뒤쳐진다.
 
-![image](</images/2024-06-24/1_H264s64_Q.png>){: .align-center}
+![image](/images/2024-06-24/1_H264s64_Q.png){: .align-center}
 
 다음은 **HEVC 인코딩** 결과이다.  
 nvenc보다 좀 더 나은 성능을 보여준다.  
 그런데, 다른 S/W 솔루션에 비해서는 조금 뒤쳐진다.
 
-![image](</images/2024-06-24/2_HEVCs64_Q.png>){: .align-center}
+![image](/images/2024-06-24/2_HEVCs64_Q.png){: .align-center}
 
 기대했던 건 역시 **AV1 인코딩**이었다.  
 SVT-AV1 보다는 살짝 떨어지지만, 충분히 훌륭한 성능을 보여준다.  
@@ -64,18 +64,18 @@ SVT-AV1 보다는 살짝 떨어지지만, 충분히 훌륭한 성능을 보여�
 
 하지만, 진짜 문제는 따로 있었는데...
 
-![image](</images/2024-06-24/3_AV1s64_Q.png>){: .align-center}
+![image](/images/2024-06-24/3_AV1s64_Q.png){: .align-center}
 *이 그래프만으론 훌륭해 보이지만, 이게 전부가 아님*
 
 RX 7700XT의 인코딩 결과끼리 **비교**해보면 아래와 같다.  
 꽤 상식적인 결과를 보여준다.  
 이 정도 성능이면 비디오 인코더로 사용하기에는 큰 무리가 없어 보인다.
 
-![image](</images/2024-06-24/4_AMFs64_Q.png>){: .align-center}
+![image](/images/2024-06-24/4_AMFs64_Q.png){: .align-center}
 
 비교 대상을 모두 그려보면 아래와 같다.
 
-![image](</images/2024-06-24/5_alls64_Q.png>){: .align-center}
+![image](/images/2024-06-24/5_alls64_Q.png){: .align-center}
 
 ## 하지만 진짜 문제는…
 
@@ -87,7 +87,7 @@ RX 7700XT의 인코딩 결과끼리 **비교**해보면 아래와 같다.
 나는 듀얼 모니터를 한 대는 세로로, 한 대는 가로로 사용한다.  
 그리고, 세로로 사용하는 모니터에는 마우스 커서가 아래와 같이 보인다.
 
-![image](</images/2024-06-24/20240624_130506400_iOSs64.jpg>){: .align-center}
+![image](/images/2024-06-24/20240624_130506400_iOSs64.jpg){: .align-center}
 *옆으로 드러누워버린 마우스 커서*
 
 이 문제는 조건에 따라서는 우회가 가능하다.  
@@ -99,7 +99,7 @@ RX 7700XT의 인코딩 결과끼리 **비교**해보면 아래와 같다.
 나 처럼 듀얼 모니터를 사용하는 경우에는 모니터 위치를 조절해야 한다.  
 그리고, 이걸 저장하려면... **“짜잔!”** 아래와 같은 오류가 발생한다.
 
-![image](</images/2024-06-24/fails64_Q.png>){: .align-center}
+![image](/images/2024-06-24/fails64_Q.png){: .align-center}
 *모니터 위치를 저장하다니 용서할 수 없다!*
 
 ### AV1 인코딩 H/W 오류

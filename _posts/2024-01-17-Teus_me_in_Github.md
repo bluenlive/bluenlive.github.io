@@ -30,6 +30,6 @@ categories:
 더 늦어지기 전에 블로그 본진을 [깃허브](https://github.com){:target="_blank"}로 옮기기로 했다.  
 기존 블로그에 있던 포스팅들을 모두 옮기는 것은 아니며, 기존 블로그에 대한 링크도 만들어두었다.
 
-![image](</images/2024-01-17a/teusme_blog.png>){: .align-center}
+![image](/images/2024-01-17a/teusme_blog.png){: .align-center}
 
 기존 블로그에 더 이상의 업데이트는 하지 않고, 새로운 프로그램들은 여기에 올릴 예정.

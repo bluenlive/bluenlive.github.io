@@ -6,7 +6,7 @@ categories:
   - etc
 ---
 
-![image](</images/2025-01-05/babel2s64.jpg>){: .align-center}
+![image](/images/2025-01-05/babel2s64.jpg){: .align-center}
 *요코야마 미츠테루의 걸작 코믹스 《바벨2세》 오프닝*
 
 > 공동번역 개정판 성경\
@@ -44,7 +44,7 @@ categories:
 
 이 다큐멘터리에 따르면 실제 바벨탑의 모양과 크기는 다음과 같다.
 
-![image](</images/2025-01-05/babel_reals64.jpg>){: .align-center}
+![image](/images/2025-01-05/babel_reals64.jpg){: .align-center}
 *최첨단 컴퓨터가 바벨2세를 지켜주던 바로 그 탑*
 
 이 위치는 구글 어스에서 손쉽게 찾을 수 있다.\
@@ -53,13 +53,13 @@ categories:
 
 구글 어스로 볼 수 있는 대략의 위치는 아래와 같다.
 
-![image](</images/2025-01-05/earth_01s64.jpg>){: .align-center}
+![image](/images/2025-01-05/earth_01s64.jpg){: .align-center}
 
 조금 더 들어가보면 아래와 같은 모습을 볼 수 있다.\
 왼쪽에 흐르는 강이 **유프라테스 강**이다.\
 오른쪽에 보이는 사각형이 바로 **에테멘앙키(바벨탑)**의 터로 추정되는 곳이다.
 
-![image](</images/2025-01-05/earth_02s64.jpg>){: .align-center}
+![image](/images/2025-01-05/earth_02s64.jpg){: .align-center}
 *왼쪽의 강이 학교에서 배운 유프라테스 강*
 
 ---

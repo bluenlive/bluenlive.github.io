@@ -102,7 +102,7 @@ Giscus를 사용하는 것이 합리적이라 판단. [이 글](https://univdev.
 유의사항: 이 날짜는 **UTC 기준**으로, **오전 9시 이전엔 전일 날짜**를 써야만 정상적으로 블로그에 표시됨.  
 포스팅 어플은 기존에 사용하던 [Visual Studio Code](https://code.visualstudio.com/){:target="_blank"}를 사용.
 
-![image](</images/2024-01-18/githubblog.png>){: .align-center}
+![image](/images/2024-01-18/githubblog.png){: .align-center}
 
 ## 5. 기타
 

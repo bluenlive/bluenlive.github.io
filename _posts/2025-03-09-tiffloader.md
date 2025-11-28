@@ -11,7 +11,7 @@ categories:
 TIFF 포맷을 다루기 위해선 역시 [LibTIFF](https://gitlab.com/libtiff/libtiff/){:target="_blank"}를 사용하는 것이 가장 보편적이다.\
 그런데, 읽기 기능만을 사용하기 위해선 읽기에 특화된 [tiffloader](https://github.com/MalcolmMcLean/tiffloader){:target="_blank"}도 상당히 쓸만하다.
 
-![image](</images/2025-03-09/tiffloader_Bs64_Q.png>){: .align-center}
+![image](/images/2025-03-09/tiffloader_Bs64_Q.png){: .align-center}
 
 ```text
 TIFF loader, by Malcolm McLean

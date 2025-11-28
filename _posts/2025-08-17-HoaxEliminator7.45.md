@@ -40,7 +40,7 @@ PC에 설치된 프로그램들 중에 제거해야 될 프로그램들의 목�
 x86, x64 및 ARM64 버전이 함께 들어있는데, x64 윈도우 환경이라면 x64 버전을 추천한다.
 
 <div style="text-align: center;" markdown="1">
-[Download HoaxEliminator7.52.zip](</attachment/2025-08-17/HoaxEliminator7.52.zip>){: .btn .btn--info .btn--x-large}
+[Download HoaxEliminator7.52.zip](/attachment/2025-08-17/HoaxEliminator7.52.zip){: .btn .btn--info .btn--x-large}
 <br>password꞉ <span style="color: red; font-size: 1.5em;"><b>teus.me</b></span>
 </div>
 

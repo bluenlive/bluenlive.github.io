@@ -8,14 +8,14 @@ categories:
 
 ## Cumming 책 4.3. The Range Equation
 
-![image](</images/2025-02-28/CummingCover_Bs64.jpg>){: .align-center}
+![image](/images/2025-02-28/CummingCover_Bs64.jpg){: .align-center}
 
 Cumming과 Wong의 명저인 《digital processing of SAR》를 구현하다 적용한 최적화 하나.
 
 Doppler rate를 계산하기 위해서는 radar velocity(effective velocity) $$ V_r $$을 계산해야 한다.\
 그리고, 이를 계산하려면 지상에서 빔이 이동하는 속도 $$ V_g $$를 계산해야 한다.
 
-![image](</images/2025-02-28/Cumming_Bs64_Q.png>){: .align-center}
+![image](/images/2025-02-28/Cumming_Bs64_Q.png){: .align-center}
 
 위 그림에서 위성의 위치 $$ C $$를 알면 $$ V_s $$를 알 수 있다.\
 그리고, $$ C $$와 빔 벡터를 통해 지표면과의 접점 $$ B $$를 알 수 있다.\

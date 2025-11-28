@@ -7,7 +7,7 @@ categories:
 
 요즘 〈파묘〉에 이어 〈듄2〉까지 오랜만에 극장에서 볼만한 영화가 나와 행복하다...
 
-![image](</images/2024-03-15/may_Bs64.jpg>){: .align-center}
+![image](/images/2024-03-15/may_Bs64.jpg){: .align-center}
 *May thy knife chip and shatter!*
 
 〈듄2〉를 몇 번 보다보니 이룰란 공주가 기록하는 장면에서 웃긴 장면을 보았다.  
@@ -15,7 +15,7 @@ categories:
 
 > Hidden by sandstorms which stretch a thousand *miles* across the equator.
 
-![image](</images/2024-03-15/dune-2-princess-irulan_Bs64.jpg>){: .align-center}
+![image](/images/2024-03-15/dune-2-princess-irulan_Bs64.jpg){: .align-center}
 *기록 전문가 이룰란 공주*
 
 비록 천조국에선 지금도 임페리얼 단위를 사용하고 있지만, 국제 표준은 엄연히 **미터법**이다.  

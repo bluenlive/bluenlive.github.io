@@ -8,7 +8,7 @@ categories:
 
 윈도우 잠금 화면으로 런던으로 추측되는 곳의 전화 부스가 표시됐다.
 
-![image](</images/2025-09-07/london_s_Bs64_Q.png>){: .align-center}
+![image](/images/2025-09-07/london_s_Bs64_Q.png){: .align-center}
 
 빨간 부스라면 역시 런던 같긴 한데, 정확한 위치가 어디인지 궁금해졌다.\
 그래서 ChatGPT에게 물어봤다.
@@ -61,10 +61,10 @@ categories:
 **구글 어스**에서 해당 위치를 다시 찾아봤다.\
 두둥! 저 곳이 맞는 것 같다!!!
 
-![image](</images/2025-09-07/earth1_Bs64_Q.png>){: .align-center}
+![image](/images/2025-09-07/earth1_Bs64_Q.png){: .align-center}
 
 스트리트 뷰로 보면 더욱 명확해진다.\
 다음에 혹시나 런던을 가게 되면 이 곳에 반드시 가봐야겠다!!!\
 ChatGPT 뭐야... 무서워...
 
-![image](</images/2025-09-07/earth2_Bs64_Q.png>){: .align-center}
+![image](/images/2025-09-07/earth2_Bs64_Q.png){: .align-center}

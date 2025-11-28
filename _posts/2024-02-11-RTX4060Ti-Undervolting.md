@@ -18,10 +18,10 @@ RTX 4060 Ti는 [MSI Afterburner](https://www.msi.com/page/Afterburner){:target="
 
 프로그램 실행 화면은 아래와 같고...
 
-![image](</images/2024-02-11/msi1_B_Q.png>){: .align-center}
+![image](/images/2024-02-11/msi1_B_Q.png){: .align-center}
 
 **Curve Editor**를 통해 조정한 값은 아래와 같다.
 
-![image](</images/2024-02-11/msi2_B_Q.png>){: .align-center}
+![image](/images/2024-02-11/msi2_B_Q.png){: .align-center}
 
 이렇게 하니 AI 모델을 돌리는 도중에도 컴퓨터가 다운되는 일이 없어졌다. 만세!

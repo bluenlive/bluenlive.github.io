@@ -31,7 +31,7 @@ toc_sticky: true
 
 그런데, 한편으로 이 대사는 〈터미네이터2〉에서 **사라 코너**의 대사를 패러디한 것이기도 하다.
 
-![image](</images/2024-08-11/Terminator2s64.jpg>){: .align-center}
+![image](/images/2024-08-11/Terminator2s64.jpg){: .align-center}
 *인간 몸에는 215개의 뼈가 있고 그 중 한 개가 부러진 것 뿐이지롱*
 
 ## 감히 그 입에!!!
@@ -48,7 +48,7 @@ Get my country's name out of your fucking mouth!
 
 이 대사는 **윌 ~~스매시~~스미스**가 **2002년 아카데미 시상식**에서 했던 미친 짓을 비꼬는 대사다.
 
-![image](</images/2024-08-11/WillSmashs64.jpg>){: .align-center}
+![image](/images/2024-08-11/WillSmashs64.jpg){: .align-center}
 *Keep my wife's name out of your fucking mouth!*
 
 ## 웬 헐크?
@@ -56,7 +56,7 @@ Get my country's name out of your fucking mouth!
 데드풀이 다양한 울버린의 변종을 찾아다니는데, 그 중엔 헐크랑 싸우는 울버린도 있다.  
 1974년에 발매된 《인크레더블 헐크》 180화에서 **헐크를 추적하는 캐나다 요원**으로 처음 나왔기 때문에 등장한 장면.
 
-![image](</images/2024-08-11/s-l1200_Bs64.jpg>){: .align-center}
+![image](/images/2024-08-11/s-l1200_Bs64.jpg){: .align-center}
 *이 표지는 181화임*
 
 ## MJ라고 부르라고?
@@ -64,7 +64,7 @@ Get my country's name out of your fucking mouth!
 보이드에서 데드풀은 카산드라 노바에게 자신은 **마블 지쟈쓰**이며 **MJ**라고 불러도 된다는 드립을 친다.  
 여기서 MJ는 물론 스파이더맨의 여친 **Mary Jane**을 의미하기도 하지만, x약인 **마리x나**를 의미하기도 한다.
 
-![image](</images/2024-08-11/Spider-Man-Mary-Jane-Kisss64.jpg>){: .align-center}
+![image](/images/2024-08-11/Spider-Man-Mary-Jane-Kisss64.jpg){: .align-center}
 
 ## 5명의 퍼니셔?
 
@@ -87,7 +87,7 @@ Get my country's name out of your fucking mouth!
 블레이드의 저 대사는 물론 2025년에 개봉 예정인 **〈블레이드〉 리부트**를 두고 친 드립이다.  
 그런데, 그 앞의 데드풀의 대사도 역시 드립. 데드풀 영화 및 드라마 시리즈는 **4명**이 연기했었기 때문.
 
-![image](</images/2024-08-11/purnisherss64.jpg>){: .align-center}
+![image](/images/2024-08-11/purnisherss64.jpg){: .align-center}
 
 ## Either you die a hero...
 
@@ -101,9 +101,9 @@ He died a hero!!
   </div>
 </div>
 
-![image](</images/2024-08-11/nicepool-topaz-denoises64.jpg>){: .align-center}
+![image](/images/2024-08-11/nicepool-topaz-denoises64.jpg){: .align-center}
 
 이 대사는 물론 〈다크나이트〉의 바로 그 명대사를 패러디한 것이다.
 
-![image](</images/2024-08-11/heros64.jpg>){: .align-center}
+![image](/images/2024-08-11/heros64.jpg){: .align-center}
 *Either you die a hero, or live long enough to see yourself become the villain*

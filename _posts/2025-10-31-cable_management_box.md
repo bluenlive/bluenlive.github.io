@@ -2,7 +2,7 @@
 layout: single
 title: "조아상사 멀티탭 정리함 사용기"
 categories:
-  - JamesBond
+  - etc
 ---
 
 많이들 사용하지만, 대부분 불만을 가진 제품 중 하나가 멀티탭 정리함 일 것이다... 아마도...\
@@ -11,12 +11,12 @@ categories:
 몇 년 전 이사 오면서 멀티탭 정리함을 구매했었다.\
 아무리 찾아도 내 맘에 딱 드는 건 없고, 어째저째 뒤져서 좀 큰 놈을 사서 사용해왔었다.
 
-![image](</images/2025-10-31/20251031_051433770_iOS_okl_s64.jpg>){: .align-center}
+![image](/images/2025-10-31/20251031_051433770_iOS_okl_s64.jpg){: .align-center}
 
 일단 넓이가 넓은 게 없어서 최대한 높은 걸 샀었다.\
 그런데 또 뚜껑이 밀폐가 되지 않아 고리를 사서 달았...
 
-![image](</images/2025-10-31/20251031_051504548_iOS_okl_s64.jpg>){: .align-center}
+![image](/images/2025-10-31/20251031_051504548_iOS_okl_s64.jpg){: .align-center}
 
 크기는 뭐 마음에 딱 들지는 않아도 이리저리 테트리스 좀 하다 보니까 겨우 들어는 갔다.\
 하지만, 사진 오른쪽에 보이듯이 어댑터 하나는 넣지 못하고 밖으로 빼고 쓰고 있었다.
@@ -28,21 +28,21 @@ categories:
 
 복귀한 뒤에 주문을 넣었고... 이윽고 도착.
 
-![image](</images/2025-10-31/20251031_051645906_iOS_okl_s64.jpg>){: .align-center}
+![image](/images/2025-10-31/20251031_051645906_iOS_okl_s64.jpg){: .align-center}
 
 박스를 열고 나니 영롱한 자태가 빛을 발한다.
 
-![image](</images/2025-10-31/20251031_051944321_iOS_okl_s64.jpg>){: .align-center}
+![image](/images/2025-10-31/20251031_051944321_iOS_okl_s64.jpg){: .align-center}
 
 그렇다. 이렇게 뚜껑을 고정시킬 수 있어야 한다.\
 역시 뚜껑은 **하이모**(응???).
 
-![image](</images/2025-10-31/20251031_052053216_iOS_okl_s64.jpg>){: .align-center}
+![image](/images/2025-10-31/20251031_052053216_iOS_okl_s64.jpg){: .align-center}
 
 옮겨 담기 전에 크기를 간단히 비교해보면 아래와 같다.\
 **높이는 살짝 낮고 넓이는 좀 넓은데**, 실제로 담아보면 체감되는 **차이가 크다**.
 
-![image](</images/2025-10-31/20251031_052155179_iOS_okl_s64.jpg>){: .align-center}
+![image](/images/2025-10-31/20251031_052155179_iOS_okl_s64.jpg){: .align-center}
 
 대충 담기만 했는데 모든 게 다 들어간다.\
 사진으로는 잘 티가 안 나는데, 멀티탭 2개도 테트리스 해가며 우겨넣을 필요 없이 **편안하게 넣을 수 있다**.
@@ -51,12 +51,12 @@ categories:
 어댑터를 멀티탭 위쪽으로 쌓을 필요가 없어 안심이 된다.\
 심지어 어댑터도 2개가 다 들어갔다.
 
-![image](</images/2025-10-31/20251031_055028922_iOS_okl_s64.jpg>){: .align-center}
+![image](/images/2025-10-31/20251031_055028922_iOS_okl_s64.jpg){: .align-center}
 *어댑터 2개를 쌓았는데, 전원 케이블이 더 길었으면 쌓을 필요도 없었음*
 
 이래저래 내부도 잘 정리하고, 외부까지 마무리한 결과.
 
-![image](</images/2025-10-31/20251031_060309462_iOS_okl_s64.jpg>){: .align-center}
+![image](/images/2025-10-31/20251031_060309462_iOS_okl_s64.jpg){: .align-center}
 
 [답](https://smartstore.naver.com/damoang-net/products/12103222483){:target="_blank"}이 이렇게나 가까이 있었던 걸 이제야 알았다니...\
 참고로, 본 제품은 [네이버 스토어](https://smartstore.naver.com/damoang-net/products/12103222483){:target="_blank"}에서 구매 할 수 있다.

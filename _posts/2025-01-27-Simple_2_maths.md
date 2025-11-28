@@ -8,7 +8,7 @@ categories:
 인터넷 커뮤니티에 재미있는 수학 문제가 올라왔다.\
 재미있어 보여 한번 풀어봤다.
 
-![image](</images/2025-01-27/math1_Bs64.jpg>){: .align-center}
+![image](/images/2025-01-27/math1_Bs64.jpg){: .align-center}
 
 1개, 2개, 3개... 씩 그룹 지어 생각하면 쉽게 풀 수 있다.\
 $$\begin{align}
@@ -25,7 +25,7 @@ $$\begin{align}
 
 ---
 
-![image](</images/2025-01-27/math2_Bs64.jpg>){: .align-center}
+![image](/images/2025-01-27/math2_Bs64.jpg){: .align-center}
 
 정육면체를 그림과 같이 쌓을 때, 사용되는 전체 정육면체의 개수를 구하는 문제이다.
 

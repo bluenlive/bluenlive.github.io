@@ -31,7 +31,7 @@ toc_sticky: true
 이 작품에 대한 기본적인 지식은 《명화 속 흥미로운 과학이야기》라는 책에서 얻었음을 미리 밝힌다.
 </b></span></p></div>
 
-![image](</images/2025-04-24/A_Sunday_on_La_Grande_Jatte,1884_Bs64s64.jpg>){: .align-center}
+![image](/images/2025-04-24/A_Sunday_on_La_Grande_Jatte,1884_Bs64s64.jpg){: .align-center}
 *쇠라의 걸작 《그랑드자트 섬의 일요일 오후》*
 
 ## 간략한 작품 소개
@@ -97,7 +97,7 @@ toc_sticky: true
 미술가들은 치열하게 당대의 과학을 우선적으로 받아들여 화폭에 담으려고 노력했었다.\
 그 결과가 우리가 걸작(masterpiece)이라고 부르는 작품들이다.
 
-![image](</images/2025-04-24/book_Bs64s64.jpg>){: .align-center}
+![image](/images/2025-04-24/book_Bs64s64.jpg){: .align-center}
 *명화 속 흥미로운 과학이야기 | 이명옥 지음 | 시공사 펴냄*
 
 ## ChatGPT야 그림 그려줘
@@ -107,36 +107,36 @@ toc_sticky: true
 
 ### 지브리 스타일
 
-![image](</images/2025-04-24/g_Ghiblis64.jpg>){: .align-center}
+![image](/images/2025-04-24/g_Ghiblis64.jpg){: .align-center}
 
 ### 아니메 스타일
 
-![image](</images/2025-04-24/g_Animes64.jpg>){: .align-center}
+![image](/images/2025-04-24/g_Animes64.jpg){: .align-center}
 
 ### 일본 만화 스타일
 
-![image](</images/2025-04-24/g_Comicbooks64.jpg>){: .align-center}
+![image](/images/2025-04-24/g_Comicbooks64.jpg){: .align-center}
 
 ### 픽사 스타일
 
-![image](</images/2025-04-24/g_Pixars64.jpg>){: .align-center}
+![image](/images/2025-04-24/g_Pixars64.jpg){: .align-center}
 
 ### 8비트 게임 스타일
 
-![image](</images/2025-04-24/g_Pixel_Games64.jpg>){: .align-center}
+![image](/images/2025-04-24/g_Pixel_Games64.jpg){: .align-center}
 
 ### 폴리곤 스타일
 
-![image](</images/2025-04-24/g_Low_Poly_3Ds64.jpg>){: .align-center}
+![image](/images/2025-04-24/g_Low_Poly_3Ds64.jpg){: .align-center}
 
 ### 3D Voxel 스타일
 
-![image](</images/2025-04-24/g_3d_Voxels64.jpg>){: .align-center}
+![image](/images/2025-04-24/g_3d_Voxels64.jpg){: .align-center}
 
 ### 〈아바타〉 스타일
 
-![image](</images/2025-04-24/g_Avatars64.jpg>){: .align-center}
+![image](/images/2025-04-24/g_Avatars64.jpg){: .align-center}
 
 ### 그래피티 스타일
 
-![image](</images/2025-04-24/g_Graphitys64.jpg>){: .align-center}
+![image](/images/2025-04-24/g_Graphitys64.jpg){: .align-center}

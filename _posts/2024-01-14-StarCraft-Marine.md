@@ -20,7 +20,7 @@ categories:
 
 그러던, 2023년의 어느 날 한 유저가 개발한 **《StarCraft꞉ Marine》**이라는 이름의 팬 메이드 게임이 공개되었다.
 
-![image](</images/2024-01-14/starcraftmarine1.jpg>){: .align-center}
+![image](/images/2024-01-14/starcraftmarine1.jpg){: .align-center}
 
 이 게임은 **《스타크래프트: 고스트》**의 데모와는 별 관련은 없지만, 여러모로 그 게임을 연상시킨다.  
 스타크래프트 세계관을 배경으로 하는 FPS 장르로서 아무래도 당연한 것이기도 하다.  
@@ -35,7 +35,7 @@ categories:
 직접 플레이를 해보니, 적절한 난이도에 상당한 재미를 느낄 수 있었다.  
 사용된 배경음악부터 총기 사운드까지, 스타크래프트의 분위기를 잘 살려냈다.
 
-![image](</images/2024-01-14/starcraftmarine2.jpg>){: .align-center}
+![image](/images/2024-01-14/starcraftmarine2.jpg){: .align-center}
 *하지만, 죽었죠?*
 
 이 게임은 아래의 링크에서 간단한 설명과 함께 다운로드 받을 수 있다.  

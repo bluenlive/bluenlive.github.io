@@ -10,11 +10,11 @@ categories:
 
 드디어 영혼의 듀오, **데드풀과 울버린**이 만났다.  
 
-![image](</images/2024-07-27b/deadpool-wolverine-ryan-reynolds-hugh-jackman-topaz-enhance-2xs64.jpg>){: .align-center}
+![image](/images/2024-07-27b/deadpool-wolverine-ryan-reynolds-hugh-jackman-topaz-enhance-2xs64.jpg){: .align-center}
 
 〈데드풀〉(2016)때부터 둘의 듀오를 외쳤으니 무려 8년 만에 이루어진 만남이다.  
 
-![image](</images/2024-07-27b/Deadpool.2016s64.jpg>){: .align-center}
+![image](/images/2024-07-27b/Deadpool.2016s64.jpg){: .align-center}
 *‘풀버린’과 발음이 비슷한 그 사람의 마스크*
 
 〈데드풀〉 영화가 언제나 그렇듯, 이 영화는 힐링 팩터의 두 주인공이 **피 튀기는 액션**을 보여주는 **막장 코미디** 영화다.  
@@ -24,17 +24,17 @@ categories:
 디즈니 소속이 되면서 팬들이 우려했던 점을 완전히 씻어내겠다는 의지가 느껴진다.  
 심지어 바네사와의 로맨스를 살짝 뒤로 미루면서까지 성인 등급의 **액션**을 특히 강조했다.
 
-![image](</images/2024-07-27b/DP&Wolvy_20240727_120911.162s64.jpg>){: .align-center}
+![image](/images/2024-07-27b/DP&Wolvy_20240727_120911.162s64.jpg){: .align-center}
 *여전히 바네사는 사랑하는 거 같은데...*
 
 두 주연 캐릭터들은 때로는 서로 싸우면서, 때로는 협심하면서 **무자비한 액션**을 보여준다.
 
-![image](</images/2024-07-27b/DP&Wolvy_20240727_121521.334s64.jpg>){: .align-center}
+![image](/images/2024-07-27b/DP&Wolvy_20240727_121521.334s64.jpg){: .align-center}
 *버디 무비의 정석 구조를 따라감*
 
 그런데, 이 영화는 과연 예고편에서 얘기한 것처럼 **마블의 구세주**가 될 것인가...?
 
-![image](</images/2024-07-27b/jesus-s64.jpg>){: .align-center}
+![image](/images/2024-07-27b/jesus-s64.jpg){: .align-center}
 *I am Marvel Jesus*
 
 데드풀은 **마블의 구세주**가 되기 힘든 포지션이다.  
@@ -46,7 +46,7 @@ categories:
 
 오히려 이 영화에서 집중하는 것은 (액션 외에도) 폭스 시절의 캐릭터들에 대한 **헌정**이다.
 
-![image](</images/2024-07-27b/DP&Wolvy_20240727_121344.223s64.jpg>){: .align-center}
+![image](/images/2024-07-27b/DP&Wolvy_20240727_121344.223s64.jpg){: .align-center}
 *무너진 20세기 폭스라니!!*
 
 영화에서 데드풀을 맡았던 배우는 **라이언 레이놀즈** 한 명이다.  
@@ -64,14 +64,14 @@ MCU에서 제작이 확정된 〈블레이드〉는 예전의 그 〈블레이�
 이 점을 느낄 수 있는 또 하나는 음악이다.  
 기존 〈엑스멘〉 시리즈의 음악을 편곡한 음악이 꽤 사용되었다.
 
-![image](</images/2024-07-27b/DP&Wolvy_20240727_121413.278s64.jpg>){: .align-center}
+![image](/images/2024-07-27b/DP&Wolvy_20240727_121413.278s64.jpg){: .align-center}
 *마침내 늙은 폴 러드 앞에 있는 많은 폭스 소속 캐릭터들*
 
 마블이 〈엔드게임〉 이후 심각하게 망가진 점 중 하나는 무의미한 **PC**의 주입이었다.  
 흑인 여자 도둑이 토니 스타크의 설계도를 **훔쳐서** 뭔가를 만들어놓고는 **“난 천재니까 가능하다”** 따위나 심으려는 게 MCU의 수준이었다.  
 우주에서 가장 힘이 센 캐릭터라면서 온 우주에 해악만 끼치고 다니는 **캡틴 마블**도 그렇고.
 
-![image](</images/2024-07-27b/DP&Wolvy_20240727_121447.041s64.jpg>){: .align-center}
+![image](/images/2024-07-27b/DP&Wolvy_20240727_121447.041s64.jpg){: .align-center}
 *여성 빌런의 바람직한 능력 발휘*
 
 이 영화에선 그런 멍청한 여자를 등장시키지 않는다.  
@@ -83,17 +83,17 @@ MCU에서 제작이 확정된 〈블레이드〉는 예전의 그 〈블레이�
 
 덧1. 알려있듯이, 이 영화에서 울버린은 최초로 노란 쫄쫄이를 입었다.
 
-![image](</images/2024-07-27b/DP&Wolvy_20240727_121315.140s64.jpg>){: .align-center}
+![image](/images/2024-07-27b/DP&Wolvy_20240727_121315.140s64.jpg){: .align-center}
 *노란 쫄쫄이에 3개의 클로*
 
 이건 무려 〈엑스멘〉 1편에서부터 입고 싶었으나 입지 못했던 것이다.
 
-![image](</images/2024-07-27b/X-Men_2000_Bs64.jpg>){: .align-center}
+![image](/images/2024-07-27b/X-Men_2000_Bs64.jpg){: .align-center}
 *노란 스판덱스라도 입고 싶어?*
 
 덧2. 데드풀 답게 수많은 패러디와 말장난이 있는데, 다른 세계관의 퓨리오사까지 나올 줄이야...
 
-![image](</images/2024-07-27b/DP&Wolvy_20240727_121426.619s64.jpg>){: .align-center}
+![image](/images/2024-07-27b/DP&Wolvy_20240727_121426.619s64.jpg){: .align-center}
 *퓨리...오사?*
 
 덧3. 제대로 작별했음에도 또 등장한 캐릭터들도 있었다. 레이디 데스스트라이크, 아자젤 등등...

@@ -26,12 +26,12 @@ Wi-Fi가 내 생각만큼 **쉽게 차단될 리가 없다**는 얘기였다.
 
 마침 남는 TP-Link AC1750에 dd-wrt를 깔아둔 게 있어서 테스트를 해보기로 했다.
 
-![image](</images/2024-02-25b/AC1750s64.jpg>){: .align-center}
+![image](/images/2024-02-25b/AC1750s64.jpg){: .align-center}
 *언제나 하나쯤 남아있는 공유기*
 
 게다가, 마침 친구 숙소의 옆옆방에 다른 친구가 있어 그 친구의 공유기를 통해 테스트 할 수 있었다.
 
-![image](</images/2024-02-25b/letsdoit.jpg>){: .align-center}
+![image](/images/2024-02-25b/letsdoit.jpg){: .align-center}
 *기다렸다는 듯이 옆옆방을 친구가 쓰고 있었음*
 
 ## 실험 설정
@@ -40,49 +40,49 @@ Wi-Fi가 내 생각만큼 **쉽게 차단될 리가 없다**는 얘기였다.
 여기에 대한 내 생각은 콘크리트 벽 2개를 **전파가 가로지르지 못하기 때문**이라는 것.  
 하지만, Oh는 **철판 등으로 인해 전파가 차단**되었을 뿐, 위치만 잘 잡으면 될 거라는 얘기였다.
 
-![image](</images/2024-02-25b/rooms_Bs64_Q.png>){: .align-center}
+![image](/images/2024-02-25b/rooms_Bs64_Q.png){: .align-center}
 
 Oh의 말이 맞다면 M의 공유기와 추가 공유기를 잘만 배치하면 Wi-Fi가 연결될 거라는 얘기...  
 추가 공유기를 Bridge 모드로 설정하면 되는지 여부를 확인할 수 있다.
 
 일단 추가 공유기를 **Client Bridge** 모드로 설정했다.
 
-![image](</images/2024-02-25b/image2_Q.png>){: .align-center}
+![image](/images/2024-02-25b/image2_Q.png){: .align-center}
 
 다음은 Wireless / Basic Settings 설정.
 
-![image](</images/2024-02-25b/image3_Q.png>){: .align-center}
+![image](/images/2024-02-25b/image3_Q.png){: .align-center}
 
 새로 사용할 SSID를 적절히 지정한다.
 
-![image](</images/2024-02-25b/image4_Q.png>){: .align-center}
+![image](/images/2024-02-25b/image4_Q.png){: .align-center}
 
 그리고는 M의 공유기와 연결할 수 있도록 정보를 입력한다.  
 참고로, subnet mask는 M의 공유기와 동일하게 입력하고, Gateway는 M의 공유기의 IP를 입력한다.  
 아래 화면의 **24**는 **255.255.255.0과 동일**한 의미이다.
 
-![image](</images/2024-02-25b/image5s64_Q.png>){: .align-center}
+![image](/images/2024-02-25b/image5s64_Q.png){: .align-center}
 
 다음은 Wireless / Wireless Security 설정.  
 역시 M의 공유기와 동일한 설정을 해야 한다.
 
-![image](</images/2024-02-25b/image7_Q.png>){: .align-center}
+![image](/images/2024-02-25b/image7_Q.png){: .align-center}
 
 같은 탭에서 새로 사용하는 SSID 쪽의 설정도 확인한다.  
 M의 공유기와 동일하게 설정하는 것이 여러모로 편하다.
 
-![image](</images/2024-02-25b/image8_Q.png>){: .align-center}
+![image](/images/2024-02-25b/image8_Q.png){: .align-center}
 
 마지막으로 Setup / Advanced Routing 설정.  
 operating Mode를 Router로 설정한다.
 
 여기까지 하고 **Apply Settings**를 누르면 설정된다.  
 
-![image](</images/2024-02-25b/image9_Q.png>){: .align-center}
+![image](/images/2024-02-25b/image9_Q.png){: .align-center}
 
 팁 하나. Status / Wireless 탭에서 **Site Survey**를 누르면 주변 Wi-Fi를 확인할 수 있다.
 
-![image](</images/2024-02-25b/image11_Q.png>){: .align-center}
+![image](/images/2024-02-25b/image11_Q.png){: .align-center}
 
 ## 실험 결과
 

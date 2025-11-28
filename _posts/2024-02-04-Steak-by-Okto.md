@@ -10,36 +10,36 @@ categories:
 
 바게트 빵을 준비해놓으라고 해서 준비했다.
 
-![image](</images/2024-02-04a/20240127_005450041_iOSs64.jpg>){: .align-center}
+![image](/images/2024-02-04a/20240127_005450041_iOSs64.jpg){: .align-center}
 
 스테이크 재료는 이미 잘 준비해서 왔고, 집에선 쿠킹 호일로 싸서 굽는 과정만 진행.
 
-![image](</images/2024-02-04a/20240127_023248626_iOSs64.jpg>){: .align-center}
+![image](/images/2024-02-04a/20240127_023248626_iOSs64.jpg){: .align-center}
 
 고기를 굽고 자르는 모습은 언제나 아름답지만 초상권이 더 중요하니까 패스.
 
-![image](</images/2024-02-04a/20240127_023307232_iOSs64.jpg>){: .align-center}
+![image](/images/2024-02-04a/20240127_023307232_iOSs64.jpg){: .align-center}
 
 접시에 담은 자태는 이러하다.
 
-![image](</images/2024-02-04a/20240127_023433495_iOSs64.jpg>){: .align-center}
+![image](/images/2024-02-04a/20240127_023433495_iOSs64.jpg){: .align-center}
 
 다음 접시용...
 
-![image](</images/2024-02-04a/20240127_023441737_iOSs64.jpg>){: .align-center}
+![image](/images/2024-02-04a/20240127_023441737_iOSs64.jpg){: .align-center}
 *고기는 언제나 옳음*
 
 컴파운드 버터를 올리고 통후추를 갈아서 뿌리는 위대하고 아름다운 순간.
 
-![image](</images/2024-02-04a/20240127_023726980_iOSs64.jpg>){: .align-center}
+![image](/images/2024-02-04a/20240127_023726980_iOSs64.jpg){: .align-center}
 
 이렇게 거의 완성된 모습에...
 
-![image](</images/2024-02-04a/20240127_023733996_iOSs64.jpg>){: .align-center}
+![image](/images/2024-02-04a/20240127_023733996_iOSs64.jpg){: .align-center}
 
 바게트 빵을 올리니 완전히 완성됨.
 
-![image](</images/2024-02-04a/20240127_023833950_iOSs64.jpg>){: .align-center}
+![image](/images/2024-02-04a/20240127_023833950_iOSs64.jpg){: .align-center}
 *나도 빵을 사는 것으로 뭔가 기여했다는 뜻*
 
 해피 뉴 이어!

@@ -22,7 +22,7 @@ categories:
 이 과정에서 **마우스 커서 파일을 만들어주는 프로그램을 간단히 만들어** 적용했다.  
 그런데, **PNG 포맷의 커서 파일을 링킹할 수 없다**는 문제가 발생해 이를 또 우회했다.
 
-![image](</images/2024-04-22/notepad2_B_Q.png>){: .align-center}
+![image](/images/2024-04-22/notepad2_B_Q.png){: .align-center}
 *왼쪽에 정상적으로 표시되는 찬란한 커서*
 
 ## API와 레지스트리를 이용한 해결책
@@ -37,5 +37,5 @@ Scintilla/Notepad2-mod 본진에서는 이와는 다른 방향으로 진행하�
 그런데, 결국 [방법을 찾아내고야 말았다](https://github.com/zufuliu/notepad2/commit/185311d3ac339f473ee7a8eb8dfe8d0e301b7f35){:target="_blank"}.  
 간단히 요약하면 **레지스트리에서 커서 파일의 정보까지 읽어서** 처리하는 것이다.
 
-![image](</images/2024-04-22/notepad2_again_B_Q.png>){: .align-center}
+![image](/images/2024-04-22/notepad2_again_B_Q.png){: .align-center}
 *그래, 순정 커서가 예쁘게 나와야지*

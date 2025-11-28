@@ -20,23 +20,23 @@ categories:
 
 다리로 가는 도중에 꽤 괜찮은 뷰포인트가 있어 일단 한 컷.
 
-![image](</images/2025-05-18b/IMG_9383s64.jpg>){: .align-center}
+![image](/images/2025-05-18b/IMG_9383s64.jpg){: .align-center}
 
 전술했듯이, 파라마운트 영화사의 로고는 마테호른이 아니다.\
 마테호른을 기반으로 한 디자인은 초콜렛 Toblerone(토블론) 쪽이다.\
 이 초콜렛은 베른이 본진인데, 그래서 로고 안에 곰이 숨어있는 것이라고 한다.
 
-![image](</images/2025-05-18b/IMG_9385s64.jpg>){: .align-center}
+![image](/images/2025-05-18b/IMG_9385s64.jpg){: .align-center}
 *토블론 초콜릿 샷을 찍어야 마테호른에 대한 예의지*
 
 교회 다리에서 인증샷 한 컷.
 
-![image](</images/2025-05-18b/IMG_9396s64.jpg>){: .align-center}
+![image](/images/2025-05-18b/IMG_9396s64.jpg){: .align-center}
 
 역시 교회 다리에서 한 컷.\
 마테호른이 아닌 다른 방향의 풍경도 훌륭하다.\
 오른쪽에 보이는 묘지는 《산악인의 묘지》라 불린다고 한다.
 
-![image](</images/2025-05-18b/IMG_9401s64.jpg>){: .align-center}
+![image](/images/2025-05-18b/IMG_9401s64.jpg){: .align-center}
 
 체르마트에서 여유를 좀 즐긴 뒤 우리가 향한 곳은...

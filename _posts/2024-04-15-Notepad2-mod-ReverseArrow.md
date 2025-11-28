@@ -49,7 +49,7 @@ Error RC2176: old DIB in ReverseArrow.cur; pass it through SDKPAINT
 
 그래서 일단 BMP 포맷의 커서를 링킹한 뒤, 이를 [Resource Hacker](https://www.angusj.com/resourcehacker/){:target="_blank"}로 PNG 커서로 교체했다.
 
-![image](</images/2024-04-15/notepad2_B_Q.png>){: .align-center}
+![image](/images/2024-04-15/notepad2_B_Q.png){: .align-center}
 *왼쪽에 정상적으로 표시되는 찬란한 커서*
 
 ## API와 레지스트리를 이용한 해결책

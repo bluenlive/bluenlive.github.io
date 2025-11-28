@@ -17,7 +17,7 @@ categories:
 
 여권을 한번 받은 기록이 있으면 재발급 신청은 **온라인**으로 간단하게 처리 가능하다.
 
-![image](</images/2024-05-06/Scan1s64.jpg>){: .align-center}
+![image](/images/2024-05-06/Scan1s64.jpg){: .align-center}
 *물론 와잎좌의 여권도 재발급 받음*
 
 스위스 여행이 처음은 아니지만, 그래도 가급적 최신 정보를 가지고 가면 좋을 것 같다.\
@@ -36,13 +36,13 @@ categories:
 ```
 
 메일을 보내면 약 1주일 뒤에 아래와 같은 발송처에서 메일이 도착한다.
-![image](</images/2024-05-06/Scan5s64.jpg>){: .align-center}
+![image](/images/2024-05-06/Scan5s64.jpg){: .align-center}
 
 들어있는 품목은 아래와 같다.
-![image](</images/2024-05-06/Scan3s64.jpg>){: .align-center}
+![image](/images/2024-05-06/Scan3s64.jpg){: .align-center}
 *스위스 관광 가이드북*
 
-![image](</images/2024-05-06/Scan4s64.jpg>){: .align-center}
+![image](/images/2024-05-06/Scan4s64.jpg){: .align-center}
 *스위스 트래블 지도*
 
 ---

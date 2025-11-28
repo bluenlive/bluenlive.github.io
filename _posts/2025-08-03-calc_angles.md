@@ -11,7 +11,7 @@ categories:
 오일러 회전을 연속적으로 계산할 때, $$roll$$, $$pitch$$, $$yaw$$ 순서로 계산할 때와 역순으로 계산할 때는 결과가 다르다.\
 아래 그림에서 $$beam1(= +z)$$을 $$beam2$$로 회전변환 할 때 $$\theta$$각과 $$\phi$$각을 적용하는 순서에 따라 결과가 다르다는 뜻.
 
-![image](</images/2025-08-03/graph_B_Q.png>){: .align-center}
+![image](/images/2025-08-03/graph_B_Q.png){: .align-center}
 *이 그림에서는 고각($$\theta$$)을 먼저 계산하는 느낌으로 표현되었음*
 
 게다가, 어떤 각을 먼저 계산하든, 회전 결과 $$beam2$$를 $$beam1$$과 비교하면 둘 사이의 각은 의도한 $$\theta$$, $$\phi$$각과 다르다.\

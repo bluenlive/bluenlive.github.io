@@ -11,57 +11,57 @@ categories:
 **Brienz(브리엔츠)**는 브리엔츠 호수 동쪽 끝자락에 있는 아름다운 마을이다.\
 이 곳은 호숫가를 산책하는 것만으로도 커다란 만족감을 느낄 수 있는 곳이다.
 
-![image](</images/2025-05-25b/02_IMG_9718s64.jpg>){: .align-center}
+![image](/images/2025-05-25b/02_IMG_9718s64.jpg){: .align-center}
 
 서쪽으로 가는 것으로 방향을 정하고 산책로를 따라 걸어가기로 했다.\
 일단 아름다운 브리엔츠 호수와 주변 경관을 만끽하며 한참을 걷다보니 쉬었다 가라고 썬베드가 놓여있다.\
 일단 휴식.
 
-![image](</images/2025-05-25b/07_IMG_9238s64.jpg>){: .align-center}
+![image](/images/2025-05-25b/07_IMG_9238s64.jpg){: .align-center}
 
 앞에서 보면 위와 같이 흔한 잠 자는 아저씨지만...\
 뒤에서 보면 아래와 같이 자연 속에서 여유를 만끽하는 모습이 된다.
 
-![image](</images/2025-05-25b/08_IMG_9239s64.jpg>){: .align-center}
+![image](/images/2025-05-25b/08_IMG_9239s64.jpg){: .align-center}
 *낮잠을 자려면 적어도 이런 환경은 되는 곳에서 자야지...*
 
 잠시 휴식을 취한 뒤 정신을 차리고 한 컷.
 
-![image](</images/2025-05-25b/18_IMG_9730s64.jpg>){: .align-center}
+![image](/images/2025-05-25b/18_IMG_9730s64.jpg){: .align-center}
 
 쉴만큼 쉰 뒤에 다시 가던 길을 더 가보니 여기도 탁구대가 보인다.\
 탁구 애호가님 한 컷.
 
-![image](</images/2025-05-25b/25_IMG_9737s64.jpg>){: .align-center}
+![image](/images/2025-05-25b/25_IMG_9737s64.jpg){: .align-center}
 
 좀 더 가보니 여름철 물놀이에 특화된 곳이 보인다.\
 지금도 충분히 더운데 지금 들어가면 안 되나...
 
-![image](</images/2025-05-25b/30_IMG_9742s64.jpg>){: .align-center}
+![image](/images/2025-05-25b/30_IMG_9742s64.jpg){: .align-center}
 
 대충 여기까지만 오고 다시 돌아가기로 하면서 마지막으로 인증샷 한 방.
 
-![image](</images/2025-05-25b/37_IMG_9749s64.jpg>){: .align-center}
+![image](/images/2025-05-25b/37_IMG_9749s64.jpg){: .align-center}
 
 돌아가다 보니 아까 잠시 쉬었던 썬베드가 보인다.\
 감사의 인사를 보내고 이동.
 
-![image](</images/2025-05-25b/41_IMG_9753s64.jpg>){: .align-center}
+![image](/images/2025-05-25b/41_IMG_9753s64.jpg){: .align-center}
 *안녕. 덕분에 잘 쉬었어.*
 
 갈 때는 제대로 보지 못했는데, 오면서 보니 이런 작품이 눈에 들어왔다.\
 우리처럼 하이킹 하시는 할아부지인가보다...
 
-![image](</images/2025-05-25b/45_IMG_9757s64.jpg>){: .align-center}
+![image](/images/2025-05-25b/45_IMG_9757s64.jpg){: .align-center}
 *아무리 뒤져봐도 정체를 알 수 없는 작품*
 
 좀 더 가보니 스위스의 시인 **알베르트 슈트라이히(Albert Streich)**를 기리는 작품이 보인다.\
 브리엔츠 방언으로 시와 전설을 집필하여 이 지역 문화를 보존하는데 기여하신 문학인이라고 한다.
 
-![image](</images/2025-05-25b/51_IMG_9763s64.jpg>){: .align-center}
+![image](/images/2025-05-25b/51_IMG_9763s64.jpg){: .align-center}
 *The late Albert Streich, 1897–1960*
 
 브리엔츠에서 마지막 샷을 찍은 뒤 브리엔츠 역으로 향했다.\
 인터라켄으로 빨리 가려면 역시 **기차**다...
 
-![image](</images/2025-05-25b/55_IMG_9767s64.jpg>){: .align-center}
+![image](/images/2025-05-25b/55_IMG_9767s64.jpg){: .align-center}

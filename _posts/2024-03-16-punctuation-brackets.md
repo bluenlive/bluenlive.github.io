@@ -16,7 +16,7 @@ categories:
 
 이 규칙을 적용하는 게 **불편해서 사용하지 않았**는데, [PowerToys](https://learn.microsoft.com/ko-kr/windows/powertoys/install){:target="_blank"}를 이용하면 이를 **쉽게 적용**할 수 있다.  
 
-![image](</images/2024-03-16/powertoys_Bs64_Q.png>){: .align-center}
+![image](/images/2024-03-16/powertoys_Bs64_Q.png){: .align-center}
 
 바로 PowerToys의 **“Keyboard Manager”**를 사용하는 것이다.  
 이 기능을 사용하면 키보드 입력을 다른 키로 변경하거나, 특정 키 입력 시 다른 문구를 입력하도록 설정할 수 있다.

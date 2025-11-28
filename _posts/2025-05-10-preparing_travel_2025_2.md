@@ -9,12 +9,12 @@ categories:
 
 **스위스 여행**을 출발할 날짜가 다가오면서 구체적인 준비사항들을 챙기기 시작했다.
 
-![image](</images/2025-05-10a/april_Bs64.jpg>){: .align-center}
+![image](/images/2025-05-10a/april_Bs64.jpg){: .align-center}
 
 **출국은 4월 26일**, **입국은 5월 4일에 이륙하고 5일에 착륙** 예정이다.\
 큰 틀에서 방문할 코스는 다 잡았고, 대부분의 코스는 **스위스 트래블 패스**로 이동할 수 있다.
 
-![image](</images/2025-05-10a/travel_Bs64.jpg>){: .align-center}
+![image](/images/2025-05-10a/travel_Bs64.jpg){: .align-center}
 *킹왕짱 만능인 스위스 트래블 패스*
 
 숙소는 몽땅 **에어비앤비**로 예약했다.\
@@ -22,4 +22,4 @@ categories:
 
 대부분의 큰 비용은 카드를 이용할 예정이고, 현찰은 만약을 대비해서 100 CHF만 가져가기로 했다.
 
-![image](</images/2025-05-10a/IMG_8982_Bs64.jpg>){: .align-center}
+![image](/images/2025-05-10a/IMG_8982_Bs64.jpg){: .align-center}

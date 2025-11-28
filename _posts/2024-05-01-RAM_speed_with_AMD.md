@@ -16,7 +16,7 @@ CPU 제조사인 AMD와 메인보드 제조사에서는 **이를 명시하고 �
 내 CPU는 **AMD Ryzen 5900X** 이다.  
 AMD 홈페이지에 명시된 [Ryzen 5900X의 스펙](https://www.amd.com/en/products/cpu/amd-ryzen-9-5900x){:target="_blank"}은 아래와 같다.
 
-![image](</images/2024-05-01a/ryzen5900xs64_Q.png>){: .align-center}
+![image](/images/2024-05-01a/ryzen5900xs64_Q.png){: .align-center}
 *Up to 3200MT/s에 주목*
 
 여기서 봐야 할 것은 스펙 상으로는 메모리 속도를 최대 **3200MT/s (DDR4 3200)까지 지원**한다는 것이다.  
@@ -28,7 +28,7 @@ AMD 홈페이지에 명시된 [Ryzen 5900X의 스펙](https://www.amd.com/en/pro
 
 아래 목록은 [ASRock의 B550M Steel Legend의 메모리 QVL](https://www.asrock.com/mb/AMD/B550M%20Steel%20Legend/index.asp#MemoryVM){:target="_blank"}이다.
 
-![image](</images/2024-05-01a/memory_with_MB_Bs64_Q.png>){: .align-center}
+![image](/images/2024-05-01a/memory_with_MB_Bs64_Q.png){: .align-center}
 
 내가 사용하는 메모리는 **TeamGroup DDR4 3600 32GB(Hynix)**이다.  
 목록에는 같은 라인업의 메모리가 있는데, **32GB**가 아니라 **16GB**까지만 있다.
@@ -38,7 +38,7 @@ AMD 홈페이지에 명시된 [Ryzen 5900X의 스펙](https://www.amd.com/en/pro
 이 정도 상황이면 일단 3600으로 설정해도 된다고 생각했다.  
 그래서, 바이오스에서 XMP 프로파일을 적용하여 3600MT/s로 사용하고 있었다.
 
-![image](</images/2024-05-01a/20240325_144246600_iOSs64.jpg>){: .align-center}
+![image](/images/2024-05-01a/20240325_144246600_iOSs64.jpg){: .align-center}
 
 그리고, 평소에는 아무 문제가 없었다.  
 **평소에는**...
@@ -69,7 +69,7 @@ CPU에선 **3200을 명시**했고, 메인보드 제조사 쪽 목록엔 **3600�
 
 그런데, AMD 홈페이지에는 [ZEN4 CPU에서는 DDR5-5200까지 지원](https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-9-7950x3d.html){:target="_blank"}한다고 명시되어 있다.
 
-![image](</images/2024-05-01a/DDR5_B_Q.png>){: .align-center}
+![image](/images/2024-05-01a/DDR5_B_Q.png){: .align-center}
 *ZEN4 CPU에서는 DDR5-5200이 최대 속도*
 
 ZEN4 시스템을 갖고 있지 않아서 직접 확인해볼 순 없지만, **메모리 속도**는 반드시 확인해봐야 할 것이다.  

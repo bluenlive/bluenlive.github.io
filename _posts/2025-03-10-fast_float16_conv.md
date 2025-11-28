@@ -89,10 +89,10 @@ static float memreadieee754f16(unsigned char* mem, int bigendian)
 IEEE 754는 당연하게도 서로 비슷한 구조로 되어있다.\
 MSB가 부호, 그 다음이 exponent(지수), 마지막으로 fraction(가수)이다.
 
-![image](</images/2025-03-10/float16.png>){: .align-center}
+![image](/images/2025-03-10/float16.png){: .align-center}
 *float16*
 
-![image](</images/2025-03-10/float32.png>){: .align-center}
+![image](/images/2025-03-10/float32.png){: .align-center}
 *float*
 
 여기서, 지수는 offset과 함께 정의되어 있다는 점만 고려하면 간단히 변환이 가능하다.\

@@ -11,7 +11,7 @@ SRT 자막 관리 도우미 SRTier를 5.25로 업데이트했다.
 
 자막 속성을 선택적으로 없애는 기능을 추가했고 반모음 오타 수정 기능을 추가했다.
 
-![image](</images/2024-09-08/srtier_B_Q.png>){: .align-center}
+![image](/images/2024-09-08/srtier_B_Q.png){: .align-center}
 
 이 프로그램의 주요 기능은 아래와 같다.
 
@@ -76,7 +76,7 @@ SRT 자막 관리 도우미 SRTier를 5.25로 업데이트했다.
 이 프로그램은 아래 링크에서 다운받을 수 있다.
 
 <div style="text-align: center;" markdown="1">
-[Download SRTier v5.25.rar](</attachment/2024-09-08/SRTier v5.25.rar>){: .btn .btn--info .btn--x-large}
+[Download SRTier_v5.25.rar](/attachment/2024-09-08/SRTier_v5.25.rar){: .btn .btn--info .btn--x-large}
 <br>password꞉ <span style="color: red; font-size: 1.5em;"><b>teus.me</b></span>
 </div>
 

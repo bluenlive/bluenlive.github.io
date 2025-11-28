@@ -43,7 +43,7 @@ toc_sticky: true
 
 ## 영화의 주제를 상징적으로 보여주는 장면들
 
-![image](</images/2024-01-11/ct11s64.jpg>){: .align-center}
+![image](/images/2024-01-11/ct11s64.jpg){: .align-center}
 *우산과 개를 데리고 있는 함장?*
 
 램지 함장은 언제나 **개**를 데리고 다니며 비가 오면 **우산**을 쓴다.  
@@ -52,7 +52,7 @@ toc_sticky: true
 하지만, 오류라기 보다는 램지 함장의 **성격**을 단적으로 보여주는 장면이라 해석하는 게 합당하다.  
 한편으론 그가 틀린 판단을 할 수 있음을 상징한다.
 
-![image](</images/2024-01-11/ct12s64.jpg>){: .align-center}
+![image](/images/2024-01-11/ct12s64.jpg){: .align-center}
 *the true enemy is war itself*
 
 > “In my humble opinion, in the nuclear world the true enemy is war itself.”  
@@ -62,19 +62,19 @@ toc_sticky: true
 그렇다. 핵미사일이 날아가는 자체가 진정한 적이다.  
 날아가는 순간 **"러시아는 개객끼, 미쿡은 좋은 나라"** 따윈 그냥 먼 **역사속의 얘기**가 되는 것이다.
 
-![image](</images/2024-01-11/ct13s64.jpg>){: .align-center}
+![image](/images/2024-01-11/ct13s64.jpg){: .align-center}
 *이러한 장교들의 모습은 대한민국에선 볼 수 없음*
 
 함장과 부장의 규정과 합리적 판단에 근거한 언쟁 장면은 영화 전체의 주제를 함축하는 장면이다.  
 더욱이, 이 전까지 둘의 소소한 의견 불일치를 통한 **긴장감**은 이 장면에서 **폭발**하기 시작한다.
 
-![image](</images/2024-01-11/ct14s64.jpg>){: .align-center}
+![image](/images/2024-01-11/ct14s64.jpg){: .align-center}
 *조함권 인계 중*
 
 부당하게 지휘권을 뺏기는 상황에도 절차에 따라 조함권을 인계하는 헌터 부장.  
 한편으론 그가 끝까지 옳았음을 상징하기도 한다.
 
-![image](</images/2024-01-11/ct15s64.jpg>){: .align-center}
+![image](/images/2024-01-11/ct15s64.jpg){: .align-center}
 *Mr. Hunter has the con.*
 
 정확한 전보가 수신된 후 램지 함장은 끝까지 자신의 행동에 대해 책임을 진다.  
@@ -86,7 +86,7 @@ toc_sticky: true
 대한민국의 모든 영화와 영화 번역은 이걸 **1번 마이크**라고 한다.  
 한두번은 실수지만, 여러번은 실력이다. 그냥 **무식**한 거다.
 
-![image](</images/2024-01-11/ct16s64.jpg>){: .align-center}
+![image](/images/2024-01-11/ct16s64.jpg){: .align-center}
 *You were right, I was wrong.*
 
 램지 함장의 성격을 최종정리하는 장면.  
@@ -96,7 +96,7 @@ toc_sticky: true
 
 ## 0.001% 아쉬운 오류들
 
-![image](</images/2024-01-11/ct17s64.jpg>){: .align-center}
+![image](/images/2024-01-11/ct17s64.jpg){: .align-center}
 *Conglatulations, Mr. Hunter*
 
 앨라배마 함에 전입할 때 부사관인 주임원사(Chief)가 그에게 “Mr. Hunter”라고 부른다.  
@@ -109,7 +109,7 @@ toc_sticky: true
 결코 그렇게 부르지 않고, **“XO takes the con”**이라고 한다.  
 우리나라 해군에선 **“지금부터 부장이 조함한다”**고 하고.
 
-![image](</images/2024-01-11/ct18s64.jpg>){: .align-center}
+![image](/images/2024-01-11/ct18s64.jpg){: .align-center}
 *Japan Sea? 어허허허… 이 놈이…*
 
 오하이오급 잠수함 앨라배마 함에는 **트라이던트-II D-5 24기**가 탑재되어있다.  
@@ -117,7 +117,7 @@ toc_sticky: true
 그런데, 러시아 쪽 반란의 배경은 **블라디보스톡**이다.  
 그 곳을 중심으로 사거리를 찍어보면, 앨라배마 함은 전혀 러시아 부근으로 갈 필요가 없었다.
 
-![image](</images/2024-01-11/ct19s64.jpg>){: .align-center}
+![image](/images/2024-01-11/ct19s64.jpg){: .align-center}
 *Trident II D-5의 사거리는 11,300km 이상*
 
 블라디보스톡에서 태평양 쪽으로 11,300km을 찍어보면 미국 근처가 된다.  
@@ -136,19 +136,19 @@ toc_sticky: true
 참고로, Executive Officer(XO)는 부장이 올바른 번역이다.  
 하지만, (모든 영화가 그렇듯이) 부함장, 부관이란 번역만 혼용된다.
 
-![image](</images/2024-01-11/ct22s64.jpg>){: .align-center}
+![image](/images/2024-01-11/ct22s64.jpg){: .align-center}
 *소나 화면은 결코 이렇지 않음. 이건 레이다 화면임*
 
 러시아의 아쿨라 급과 싸울 때 보여주는 소나 화면은 사실 명백한 **레이다** 화면이다.  
 게다가, 어뢰의 위치, 침로, 속력 등은 소나로는 알기 힘들다.
 
-![image](</images/2024-01-11/ct23s64.jpg>){: .align-center}
+![image](/images/2024-01-11/ct23s64.jpg){: .align-center}
 *진짜 소나 화면. 같은 영화의 다른 장면임*
 
 웃긴 건 다른 장면에선 이렇게 뭔가 워터폴스러운 소나 장면이 나왔다는 것이다.  
 게다가, 소나 당무자가 **같은 사람**이다. ㅎ
 
-![image](</images/2024-01-11/ct24s64.jpg>){: .align-center}
+![image](/images/2024-01-11/ct24s64.jpg){: .align-center}
 *Snapshot 2 and 4… 뭔가 애매하게 이상함*
 
 어뢰 2 발을 동시에 발사하는 것을 **스냅샷(snapshot)**이라고 한다.  
@@ -160,18 +160,18 @@ toc_sticky: true
 
 ## 영화에서 은유하는 인종차별 코드
 
-![image](</images/2024-01-11/ct25s64.jpg>){: .align-center}
+![image](/images/2024-01-11/ct25s64.jpg){: .align-center}
 
 영화의 제목은 **Crimson Tide…** 우리 말로 하면 **붉은 조류**다.  
 그런데, 이 영화에서 붉은 조류는 등장하지 않는다.  
 붉으스레한 장면이 나오는 부분은 사실상 이 부분이 유일하다.
 
-![image](</images/2024-01-11/Alabama_Crimson_Tide_logo.png>){: .align-center}
+![image](/images/2024-01-11/Alabama_Crimson_Tide_logo.png){: .align-center}
 
 사실, Crimson Tide는 앨라배마 대학교의 미식축구팀 이름이다.  
 그런데, 이 앨라배마 주가 옛날에 유명한 것이 하나 있었는데, 그게 **인종차별**이다.
 
-![image](</images/2024-01-11/ct26s64.jpg>){: .align-center}
+![image](/images/2024-01-11/ct26s64.jpg){: .align-center}
 *미해군에서 이런 훈련 시키면 영창 감*
 
 승함하기 전 버스에서 보급관 도허티 대위가 대원을 훈련시키는 장면이 있다.  
@@ -184,7 +184,7 @@ toc_sticky: true
 
 더 한심한 것은 그 대위가 고작 묻는 것이 (위반한 규정 조항 따위가 아니라) 영화 배우 이름이다.
 
-![image](</images/2024-01-11/ct27s64.jpg>){: .align-center}
+![image](/images/2024-01-11/ct27s64.jpg){: .align-center}
 *흑인 장교는 단 3명*
 
 장교들의 구성을 보면 흑인 장교는 세 명이다.  
@@ -194,7 +194,7 @@ toc_sticky: true
 즉, 한편으론 백인 장교들 사이에 낀 흑인 장교의 고군분투를 의미한다는 것이다.  
 (더구나 웨스터가드 대위는 램지 함장 편임)
 
-![image](</images/2024-01-11/ct28s64.jpg>){: .align-center}
+![image](/images/2024-01-11/ct28s64.jpg){: .align-center}
 *"N∗gro"? Are you f∗∗king crazy?*
 
 구금된 함장이 부장의 인사기록을 찾아보는 장면에서는 이상한 표현이 눈에 띈다.  
@@ -205,7 +205,7 @@ toc_sticky: true
 잘못 알려진 거 하나는 함장이 싫어하는 이유가 하버드 출신에 함정근무 경험이 없기 때문이란 것.  
 그런데, 대위 때만 잠수함 5척, 소령 달고도 1척에서 근무했다.
 
-![image](</images/2024-01-11/ct29s64.jpg>){: .align-center}
+![image](/images/2024-01-11/ct29s64.jpg){: .align-center}
 *A year at… excuse me, Harvard?*
 
 게다가, 영화 앞부분에 명확히 언급되는대로 그는 **1년**간 **하버드에서 공부**했다는 것이다.  

@@ -9,7 +9,7 @@ categories:
 아래 사진은 [SciTechDaily](https://scitechdaily.com/incredible-photograph-captures-space-station-as-it-transited-the-waning-gibbous-moon/){:target="_blank"}에 올라온 사진이다.  
 인터넷에서는 이처럼 **ISS가 달 위를 지나가는 장면**을 촬영한 사진을 가끔 볼 수 있다.
 
-![image](</images/2024-04-07/Moon-Over-ISS-777x740_Bs64.jpg>){: .align-center}
+![image](/images/2024-04-07/Moon_Over_ISS_777x740_Bs64.jpg){: .align-center}
 
 파이썬의 라이브러리들을 활용하면 ISS의 위치도, 달의 위치도 꽤 쉽게 알 수 있는데...  
 그렇다면 ISS가 달 위를 언제 지나가는지 알 수 있을까?
@@ -291,7 +291,7 @@ plt.show()
 
 시간에 따른 사잇각의 그래프는 아래와 같다.  
 
-![image](</images/2024-04-07/figure_Bs64_Q.png>){: .align-center}
+![image](/images/2024-04-07/figure_Bs64_Q.png){: .align-center}
 *04-08 10 바로 왼쪽의 최저점이 위에 적은 4.69도*
 
 관측이 가능한 시간이 나오더라도 유지되는 시간은 **1초 미만**으로 극히 짧다.  

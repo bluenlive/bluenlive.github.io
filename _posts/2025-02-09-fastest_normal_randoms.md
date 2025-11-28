@@ -280,7 +280,7 @@ Box-Muller 알고리즘을 IPP로 구현하는 방식의 경우 몇 가지 아�
 모든 알고리즘에서 평균, 왜도, 첨도 모두 0.01 미만이며, 표준편차 역시 1에 가까운 값을 보였다.\
 한편, 동작 시간은 아래와 같았다.
 
-![image](</images/2025-02-09c/float_Bs64_Q.png>){: .align-center}
+![image](/images/2025-02-09c/float_Bs64_Q.png){: .align-center}
 
 위의 그래프에서 볼 수 있듯이, C++11의 random을 사용한 경우가 가장 느리고, AVX-512를 사용한 경우가 가장 빨랐다.\
 동작 속도의 차이는 무려 **25배 이상**이었다. (**Ryzen 9700X** 만세)\
@@ -301,7 +301,7 @@ Box-Muller 알고리즘을 IPP로 구현하는 방식의 경우 몇 가지 아�
 역시 평균, 왜도, 첨도 모두 0.01 미만이었으며, 표준편차는 1에 가까웠다.\
 동작 시간은 아래와 같았다.
 
-![image](</images/2025-02-09c/double_Bs64_Q.png>){: .align-center}
+![image](/images/2025-02-09c/double_Bs64_Q.png){: .align-center}
 
 double에서는 AVX를 활용한 구현은 적용하지 않았다.\
 C++11의 random을 사용한 경우가 가장 느리고, Box-Muller를 IPP로 구현한 것이 가장 빨랐다.\

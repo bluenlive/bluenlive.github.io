@@ -8,19 +8,19 @@ categories:
 
 쿵푸허슬은 2004년에 개봉한 주성치 감독의 영화다.  
 
-![image](</images/2024-02-12a/posters64.jpg>){: .align-center}
+![image](/images/2024-02-12a/posters64.jpg){: .align-center}
 
 ## 김용과 주성치
 
 이 영화는 《신조협려》를 포함한 김용 작가의 작품들을 패러디한다.  
 김용 작가와 친분이 있던 주성치는 **저작권료를 지불**하고 사용했으며, 김용 작가는 이 저작권료를 **동남아 지진 피해지역에 기부**했다.
 
-![image](</images/2024-02-12a/cover2s64.jpg>){: .align-center}
+![image](/images/2024-02-12a/cover2s64.jpg){: .align-center}
 *내 청춘의 한 자락, 고려원 불법번역판 《신조협려》*
 
 항룡십팔장, 구양신공, 일양지, 독고구검 등은 모두 김용 유니버스의 무공들.
 
-![image](</images/2024-02-12a/bookss64.jpg>){: .align-center}
+![image](/images/2024-02-12a/bookss64.jpg){: .align-center}
 *천수신권은 김용 유니버스의 무공이 아님*
 
 ## 번역은 쓰레기
@@ -29,13 +29,13 @@ categories:
 무려 파리스와 헬레네... 드립을 당했던 두 주인공은 **양과**와 **소용녀**셨고...  
 참고로, 이 두 이름은 큰 사랑을 받았던 **《신조협려》**의 두 주인공.
 
-![image](</images/2024-02-12a/couples64.jpg>){: .align-center}
+![image](/images/2024-02-12a/couples64.jpg){: .align-center}
 *정식 자막: '트로이'로 치면 패리스와 헬렌!*
 
 화운사신의 대사들은 모두 **품위 있는 고수**의 대사인데 이 번역 역시 쓰레기.  
 아니 애초에 이 이름을 **야수**로 번역할 때부터 안드로메다로...
 
-![image](</images/2024-02-12a/4wordss64.jpg>){: .align-center}
+![image](/images/2024-02-12a/4wordss64.jpg){: .align-center}
 *정식 자막: 살벌한 쿵푸 세계에선 스피드가 생명이지*
 
 ## 원추의 소용녀
@@ -43,12 +43,12 @@ categories:
 소용녀로 분한 원추(元秋)는 일찌기 〈007 황금총을 가지 사나이〉에 등장했었다.  
 1985년에 은퇴했다가 주성치의 간곡한 요청으로 복귀한 작품이 〈쿵푸허슬〉.
 
-![image](</images/2024-02-12a/tmwggs64.jpg>){: .align-center}
+![image](/images/2024-02-12a/tmwggs64.jpg){: .align-center}
 *오른쪽이 원추(元秋)*
 
 예전에 〈용쟁호투〉에서 이소룡의 여동생 역을 맡았던 모영(茅瑛)으로 착각했던 기억이...
 
-![image](</images/2024-02-12a/etd1s64.jpg>){: .align-center}
+![image](/images/2024-02-12a/etd1s64.jpg){: .align-center}
 
 ## 양소룡의 화운사신
 
@@ -56,8 +56,8 @@ categories:
 태권도를 수련했었고, 발차기 능력이 훌륭했다.  
 개인 사정으로 영화에 출연하지 못했다가 복귀한 작품이 〈쿵푸허슬〉.
 
-![image](</images/2024-02-12a/yangs64.jpg>){: .align-center}
+![image](/images/2024-02-12a/yangs64.jpg){: .align-center}
 
 〈용쟁호투〉에서 볼로 역을 맡았던 양사(楊斯)와 상당히 비슷한 외모를 갖고 있다.
 
-![image](</images/2024-02-12a/etd2s64.jpg>){: .align-center}
+![image](/images/2024-02-12a/etd2s64.jpg){: .align-center}

@@ -32,7 +32,7 @@ categories:
 
 그러다, 2주일이 지난 후...
 
-![image](</images/2024-06-11/alphago_B_Q.png>){: .align-center}
+![image](/images/2024-06-11/alphago_B_Q.png){: .align-center}
 *드디어 퇴마 성공 이라니!*
 
 드디어 퇴마를 이루어냈다!

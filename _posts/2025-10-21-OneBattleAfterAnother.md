@@ -7,7 +7,7 @@ categories:
 
 ## 이 영화는…
 
-![image](</images/2025-10-21/poster_okl_s64.jpg>){: .align-center}
+![image](/images/2025-10-21/poster_okl_s64.jpg){: .align-center}
 
 <div class="quoteMachine">
   <div class="theQuoteLeft">
@@ -34,7 +34,7 @@ categories:
 
 ### 밥 퍼거슨(팻 캘훈, 게토 팻, 로켓맨)
 
-![image](</images/2025-10-21/dicaprio.jpg>){: .align-center}
+![image](/images/2025-10-21/dicaprio.jpg){: .align-center}
 
 밥은 혁명가 쪽 재능은 없어보이지만, 미국의 체제에 대한 **비판의식**을 갖고 있는 인물.\
 아마도 혁명에 가담하지 않았으면, 그냥 적절히 비판의식 가진 **흔한 엔지니어**였을 것 같다.
@@ -49,7 +49,7 @@ categories:
 
 영화 자막에는 **대위**, **대령**의 계급으로 표현되지만, 경찰 조직이므로 각각 **경위**, **총경** 정도로 번역하는 게 맞아 보인다.
 
-![image](</images/2025-10-21/sean.jpg>){: .align-center}
+![image](/images/2025-10-21/sean.jpg){: .align-center}
 
 무려 **숀 펜**이 연기하는데, 움직임 하나하나, 말투 하나하나가 모두 **재수가 없다**.\
 숀 펜이 아마도 **캐릭터에 대한 연구**를 끝까지 했을 거라는 생각이 그가 등장하는 모든 장면에서 느껴진다.\
@@ -59,7 +59,7 @@ categories:
 
 ### 퍼피디아 베벌리힐스
 
-![image](</images/2025-10-21/perfidia_okl_s64.jpg>){: .align-center}
+![image](/images/2025-10-21/perfidia_okl_s64.jpg){: .align-center}
 
 혁명 단체의 리더이고, **혁명의 피가 끓는다**지만, 사실 그냥 **쾌락**만을 추구하는 **이기주의자**.\
 이름 자체가 배신을 의미하기도 하고, 성은 뭔가 혁명과는 거리가 멀어야 하는 **베벌리힐스**다.
@@ -75,7 +75,7 @@ categories:
 
 ### 윌라 퍼거슨(샬린 캘훈)
 
-![image](</images/2025-10-21/willa_okl_s64.jpg>){: .align-center}
+![image](/images/2025-10-21/willa_okl_s64.jpg){: .align-center}
 
 가장 이상한 부모들에게서 태어난, 가장 멀쩡한 인물.\
 애초에 **윌라가 제정신인 지점이 이 영화의 가장 큰 판타지**라 느껴질 수 있을 만큼 온 세상이 억까하는 캐릭터다.
@@ -87,7 +87,7 @@ categories:
 
 ### 세르히오 생 카를로스(사부님)
 
-![image](</images/2025-10-21/benecio2_okl_s64.jpg>){: .align-center}
+![image](/images/2025-10-21/benecio2_okl_s64.jpg){: .align-center}
 *예고편에선 웃겨보이지만, 막상 극장에서 보면 간지 폭풍임*
 
 재미있게도, 이 인물이 없었더라도 플롯에 거의 지장을 주지 않는[^1] 캐릭터.\
@@ -96,7 +96,7 @@ categories:
 라틴계 이민자들을 숨겨주고 탈출시키는 일을 몰래 하고 있으며, 그들의 정신적 지주이다.\
 **"You know what freedom is?" / "No fear."**라는 그의 대사는 여러모로 큰 울림을 준다.
 
-![image](</images/2025-10-21/ninja.jpg>){: .align-center}
+![image](/images/2025-10-21/ninja.jpg){: .align-center}
 *닌자… 아카데미…*
 
 도장 이름에 **닌자**가 들어가서 좀 웃기고, 도장 벽에 적혀있는 **한글**도 뭔가 어색하다.\
@@ -107,7 +107,7 @@ categories:
 백인 우월주의자들을 모두 집대성한 모임.\
 같은 백인임에도 유태인을 배척하는 모습까지 모든 면에서 **완벽한 극우주의자** 모임이다.
 
-![image](</images/2025-10-21/killer_okl_s64.jpg>){: .align-center}
+![image](/images/2025-10-21/killer_okl_s64.jpg){: .align-center}
 
 모든 행정기관을 지배하는 수준의 조사 능력을 갖고 있고, 필요에 따라서는 **회원 후보자도 살해**하는 냉혹함도 갖고 있다.\
 체제라는 것을 유지하기 위해서 어떠한 더러운 짓까지도 할 수 있는지를 상징적으로 보여준다.\
@@ -118,7 +118,7 @@ categories:
 
 ### 베드퍼드 포레스트 훈장
 
-![image](</images/2025-10-21/lockjaw_okl_s64.jpg>){: .align-center}
+![image](/images/2025-10-21/lockjaw_okl_s64.jpg){: .align-center}
 
 스티븐 록조가 퍼피디아의 배신을 통해 조직을 소탕함으로써 받는 훈장.\
 **KKK단 창설자의 이름**을 딴 훈장으로 물론 실제로는 존재하지 않는다.
@@ -144,7 +144,7 @@ categories:
 
 ### 번역
 
-![image](</images/2025-10-21/police_okl_s64.jpg>){: .align-center}
+![image](/images/2025-10-21/police_okl_s64.jpg){: .align-center}
 
 전체적으로 무난한 번역이지만, 경찰 계급과 군대 계급을 오용하는 부분은 좀 거슬렸다.\
 심지어 조직에서 군 출신이 얼마나 도움이 되었었는지를 얘기하는데, 록조가 군인이 아니라는 뉘앙스를 품으며 말한다.\
