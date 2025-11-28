@@ -51,7 +51,7 @@ categories:
   * [HEIF 확장](https://www.microsoft.com/store/productId/9PMMSR1CGPWG?ocid=pdpshare){:target="_blank"} 및 [HEVC 확장](https://www.microsoft.com/store/productId/9NMZLZ57R3T7?ocid=pdpshare){:target="_blank"} 링크 주소 수정
 
 * 2024.5.1꞉ v4.04
-  * 내부적으로 시간 계산시 GetTickCount64()를 완전히 배제
+  * 내부적으로 시간 계산시 `GetTickCount64()`를 완전히 배제
   * [FFmpeg](http://ffmpeg.org/download.html){:target="_blank"}을 7.0\[gyan.dev\]로 업데이트
   * [libpng](https://github.com/pnggroup/libpng){:target="_blank"}를 1.6.43(Feb 23, 2024)으로 업데이트
   * [mp4box](https://github.com/gpac/gpac){:target="_blank"}를 2.4(April 17, 2024)로 업데이트
