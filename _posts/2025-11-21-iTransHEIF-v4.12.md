@@ -42,7 +42,7 @@ categories:
 
 * 2025.11.21꞉ v4.12
   * UI 미세 조정
-  * 파일명에 **%** 가 들어있는 경우에도 제대로 동작하도록 수정
+  * 파일명에 `%` 가 들어있는 경우에도 제대로 동작하도록 수정
   * 배치 파일 생성시 여러 줄로 생성해서 필요시 가독성 증대
   * TOSS 아이디 후원을 [Buy Me A Coffee](https://buymeacoffee.com/bluenlive){:target="_blank"}로 변경
   * [libjpeg-turbo](https://github.com/libjpeg-turbo/libjpeg-turbo){:target="_blank"}를 3.1.2로 업데이트(Aug 26, 2025)
