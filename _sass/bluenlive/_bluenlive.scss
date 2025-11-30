@@ -87,7 +87,7 @@ ul[class^="bluebox-"],
 ol[class^="bluebox-"],
 [class^="bluebox-"] ul,
 [class^="bluebox-"] ol {
-    margin: 0;
+  margin: 0;
   padding-left: 1.2em !important;
   list-style-position: inside !important;
 }
@@ -119,6 +119,8 @@ ul[class^="bluebox-"] li,
 [class^="bluebox-"] ol li p,
 ol[class^="bluebox-"] li p {
   font-size: 0.95em;
+  display: inline;
+  margin: 0;
 }
 
 /* 박스 내에 제목이 있는 경우 */
