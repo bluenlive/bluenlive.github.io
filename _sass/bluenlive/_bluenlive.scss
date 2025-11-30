@@ -70,15 +70,15 @@ ol[class^="bluebox-"],
 [class^="bluebox-"] ul,
 [class^="bluebox-"] ol {
   margin: 0;
-  padding-left: 2.2em; /* 번호 영역 확보 */
+  padding-left: 2em; /* 번호 영역 확보 */
   list-style-position: outside; /* 번호를 li 바깥에 표시 */
 }
 
 /* li 항목 */
 [class^="bluebox-"] li {
   margin-bottom: 0.4em;
-  text-indent: -1.6em; /* 첫 줄은 번호 옆으로 당김 */
-  padding-left: 1.6em; /* 전체 들여쓰기 */
+  text-indent: -1.4em; /* 첫 줄은 번호 옆으로 당김 */
+  padding-left: 1.4em; /* 전체 들여쓰기 */
 }
 
 /* 문단 */
