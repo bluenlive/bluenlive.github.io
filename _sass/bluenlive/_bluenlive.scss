@@ -25,10 +25,14 @@
  * 배경색 별 박스
  ******************/
 
-/* 공통 박스 스타일 */
+/* 공통 박스 스타일#1 */
 @mixin bluebox-base {
   padding: 0.8em 10px;
   margin-bottom: 1.2em;
+}
+
+/* 공통 박스 스타일#2: font size */
+@mixin bluebox-base-font {
   font-size: 0.92em;
 }
 
@@ -49,11 +53,13 @@
 /* 회색 박스 */
 .bluebox-gray {
   @include bluebox-base;
+  @include bluebox-base-font;
   @include bluebox-color(#eeeeee, #c1c1c1);
 }
 
 blockquote.bluebox-gray-blocks {
   @include bluebox-base;
+  @include bluebox-base-font;
   @include bluebox-blockquote-clean;
   @include bluebox-color(#eeeeee, #c1c1c1);
 }
@@ -61,11 +67,13 @@ blockquote.bluebox-gray-blocks {
 /* 파란색 박스 */
 .bluebox-blue {
   @include bluebox-base;
+  @include bluebox-base-font;
   @include bluebox-color(#e6f0ff, #99c2ff);
 }
 
 blockquote.bluebox-blue-blocks {
   @include bluebox-base;
+  @include bluebox-base-font;
   @include bluebox-color(#e6f0ff, #99c2ff);
   @include bluebox-blockquote-clean;
 }
@@ -73,11 +81,13 @@ blockquote.bluebox-blue-blocks {
 /* 빨간색 박스 */
 .bluebox-red {
   @include bluebox-base;
+  @include bluebox-base-font;
   @include bluebox-color(#ffe6e6, #ff9999);
 }
 
 blockquote.bluebox-red-blocks {
   @include bluebox-base;
+  @include bluebox-base-font;
   @include bluebox-color(#ffe6e6, #ff9999);
   @include bluebox-blockquote-clean;
 }
@@ -85,17 +95,20 @@ blockquote.bluebox-red-blocks {
 /* 리스트 */
 ul[class^="bluebox-"],
 ol[class^="bluebox-"] {
+  @include bluebox-base-font;
   margin: 0;
   padding-left: 1.2em !important;
   list-style-position: inside !important;
 }
 
 [class^="bluebox-"] li {
+  @include bluebox-base-font;
   margin-bottom: 0.4em;
 }
 
 /* 문단 */
 [class^="bluebox-"] p {
+  @include bluebox-base-font;
   margin: 0 0 0.25em 0;
   padding-left: 1.0em;
   line-height: 1.5;
