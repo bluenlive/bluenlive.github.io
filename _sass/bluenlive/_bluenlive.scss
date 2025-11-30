@@ -45,6 +45,18 @@
   border: 1px dashed #c1c1c1;
 }
 
+/* 아래 적용할 스타일들 내에서 ul, ol이 밖으로 벗어나는 것을 방지함 */
+[class*="box-"][class$="-blocks"] ul,
+[class*="box-"][class$="-blocks"] ol {
+  margin: 0;
+  padding-left: 1.2em;
+  list-style-position: inside;
+}
+
+[class*="box-"][class$="-blocks"] li {
+  margin-bottom: 0.4em;
+}
+
 /**
  * 단일 문단용 박스
  */
