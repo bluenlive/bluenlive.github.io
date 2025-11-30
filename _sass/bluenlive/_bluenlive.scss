@@ -25,66 +25,42 @@
  * 배경색 별 박스
  ******************/
 
-/* 블록 인용 줄 제거(공통) */
-@mixin bluebox-blockquote-clean {
-  border-left: none !important;
-  margin-left: 0 !important;
-  padding-left: 0 !important;
-}
-
-/* 공통 박스 스타일 */
-@mixin bluebox-base {
-  padding: 0.8em 10px;   /* 상하단 + 좌우 여백 */
+/* 단일 문단 박스 */
+.bluebox-gray {
+  padding: 0.8em 10px;
   margin-bottom: 1.2em;
   font-size: 0.95em;
-}
-
-/* 색상별 박스 */
-@mixin bluebox-gray-color {
   background-color: #eeeeee;
   border: 1px dashed #c1c1c1;
 }
 
-/**
- * 리스트 스타일 (ul/ol 모두 적용)
- */
-/* 모든 bluebox에 공통 적용 */
+/* 여러 문단 박스 */
+blockquote.bluebox-gray-blocks {
+  padding: 0.8em 10px;
+  margin-bottom: 1.2em;
+  font-size: 0.95em;
+  background-color: #eeeeee;
+  border: 1px dashed #c1c1c1;
+
+  /* blockquote 기본 스타일 제거 */
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  font-style: normal !important;
+  color: inherit !important;
+}
+
+/* 리스트 스타일 */
 ul.bluebox-gray,
 ol.bluebox-gray,
 ul.bluebox-gray-blocks,
 ol.bluebox-gray-blocks {
   margin: 0;
-  padding-left: 1.2em!important;
-  list-style-position: inside!important;
+  padding-left: 1.2em !important;
+  list-style-position: inside !important;
 }
 
 .bluebox-gray li,
 .bluebox-gray-blocks li {
   margin-bottom: 0.4em;
-}
-
-/* 박스 안 blockquote를 일반 문단처럼 보이게 */
-.bluebox-gray-blocks blockquote {
-  margin: 0;              /* 기본 들여쓰기 제거 */
-  padding: 0;             /* 내부 여백 제거 */
-  border: none;           /* 왼쪽 줄 제거 */
-  font-style: normal;     /* 기울임 해제 */
-  color: inherit;         /* 글자색 박스와 동일하게 */
-}
-
-/**
- * 단일 문단용 박스
- */
-.bluebox-gray {
-  @include bluebox-base;
-  @include bluebox-gray-color;
-}
-
-/**
- * 여러 문단용 박스 (blockquote 기반)
- */
-.box-gray-blocks {
-  @include bluebox-base;
-  @include bluebox-gray-color;
-  @include bluebox-blockquote-clean;
 }
