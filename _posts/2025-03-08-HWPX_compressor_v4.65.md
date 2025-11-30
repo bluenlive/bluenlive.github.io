@@ -32,10 +32,9 @@ PNGquant를 선택하는 자동 옵션도 있음
 
 이 프로그램은 아래 링크에서 다운받을 수 있으며, **avx2**가 지원되는 CPU[^2]에서만 동작한다.
 
-<div style="text-align: center;" markdown="1">
-[Download HWPX_Image_Shrinker_v4.70.rar](/attachment/2025-03-08/HWPX_Image_Shrinker_v4.70.rar){: .btn .btn--info .btn--x-large}
-<br>password꞉ <span style="color: red; font-size: 1.5em;"><b>teus.me</b></span>
-</div>
+{% include bluenlive/download-box.html
+   file="/attachment/2025-03-08/HWPX_Image_Shrinker_v4.70.rar"
+   password="teus.me" %}
 
 ## 히스토리
 

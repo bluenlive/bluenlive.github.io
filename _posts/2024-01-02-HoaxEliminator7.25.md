@@ -45,10 +45,9 @@ PC에 설치된 프로그램들 중에 제거해야 될 프로그램들의 목�
 이 프로그램은 아래 링크에서 다운받을 수 있다.\
 x86과 x64 버전이 함께 들어있는데, 64비트 환경이라면 x64 버전을 추천한다.
 
-<div style="text-align: center;" markdown="1">
-[Download HoaxEliminator7.32.zip](/attachment/2024-01-02/HoaxEliminator7.32.zip){: .btn .btn--info .btn--x-large}
-<br>password꞉ <span style="color: red; font-size: 1.5em;"><b>teus.me</b></span>
-</div>
+{% include bluenlive/download-box.html
+   file="/attachment/2024-01-02/HoaxEliminator7.32.zip"
+   password="teus.me" %}
 
 ## 히스토리
 

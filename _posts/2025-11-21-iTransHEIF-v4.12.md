@@ -33,10 +33,10 @@ categories:
 
 변환기는 아래 링크에서 다운받을 수 있으며, 별도의 설치 프로그램 따위는 없다.
 
-<div style="text-align: center;" markdown="1">
-[Download iTransHEIF_v4.12.rar](/attachment/2025-11-21b/iTransHEIF_v4.12.rar){: .btn .btn--info .btn--x-large}
-<br>64bit only / password꞉ <span style="color: red; font-size: 1.5em;"><b>teus.me</b></span>
-</div>
+{% include bluenlive/download-box.html
+   file="/attachment/2025-11-21b/iTransHEIF_v4.12.rar"
+   description="64bit only"
+   password="teus.me" %}
 
 ## 히스토리
 
