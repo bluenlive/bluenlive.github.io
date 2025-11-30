@@ -1,0 +1,23 @@
+/* ==========================================================================
+   markdown 내에서 <div> 태그 등을 통해 구현했던 내용들에서
+   <div> 태그를 없애기 위해 만든 커스텀 스타일
+   ========================================================================== */
+
+/**
+ * 다운로드 박스
+ */
+
+.download-box {
+  text-align: center;
+  background-color: #fff8e1;
+  border: 1px dashed #e0a800;
+  padding: 1em;
+  font-size: 0.95em;
+  margin-bottom: 1.2em;
+}
+
+.password {
+  color: red;
+  font-size: 1.5em;
+  font-weight: bold;
+}
