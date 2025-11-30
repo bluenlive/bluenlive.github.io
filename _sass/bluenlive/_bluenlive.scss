@@ -34,11 +34,8 @@
 
 /* blockquote 기본 스타일 제거 */
 @mixin bluebox-blockquote-clean {
-  /*margin: 0 !important;
-  padding: 0 !important;
-  font-style: normal !important;*/
-  border: none !important;
-  color: inherit !important;
+  margin-left: 0 !important;   /* 기본 들여쓰기 제거 */
+  padding-left: 0 !important;  /* 내부 여백 제거 */
 }
 
 /* 색상별 스타일 */
