@@ -8,12 +8,9 @@
  */
 
 .download-box {
-  text-align: center;
-  background-color: #fff8e1;
-  border: 1px dashed #e0a800;
-  padding: 1em;
-  font-size: 0.95em;
-  margin-bottom: 1.2em;
+  text-align: center;   /* 가운데 정렬만 */
+  font-size: 0.95em;    /* 글자 크기만 조금 줄임 */
+  margin-bottom: 1.2em; /* 아래쪽 여백 */
 }
 
 .password {
