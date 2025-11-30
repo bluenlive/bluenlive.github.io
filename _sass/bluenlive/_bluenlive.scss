@@ -84,8 +84,10 @@ blockquote.bluebox-red-blocks {
 
 /* 리스트 */
 ul[class^="bluebox-"],
-ol[class^="bluebox-"] {
-  margin: 0;
+ol[class^="bluebox-"],
+[class^="bluebox-"] ul,
+[class^="bluebox-"] ol {
+    margin: 0;
   padding-left: 1.2em !important;
   list-style-position: inside !important;
 }
@@ -104,17 +106,19 @@ ol[class^="bluebox-"] {
 /* 리스트, 문단의 글자 크기는 별도로 지정 */
 /* 1. 문단의 폰트 크기 */
 [class^="bluebox-"] p {
-  font-size: 0.92em;
+  font-size: 0.95em;
 }
 
 /* 2. ul 안의 li 항목 폰트 크기 */
-ul[class^="bluebox-"] li {
-  font-size: 0.92em;
+ul[class^="bluebox-"] li,
+[class^="bluebox-"] ul li {
+  font-size: 0.95em;
 }
 
 /* 3. ol 안의 li 내부 p의 폰트 크기 (p보다 구체적이므로 우선 적용) */
+[class^="bluebox-"] ol li p,
 ol[class^="bluebox-"] li p {
-  font-size: 0.92em;
+  font-size: 0.95em;
 }
 
 /* 박스 내에 제목이 있는 경우 */
