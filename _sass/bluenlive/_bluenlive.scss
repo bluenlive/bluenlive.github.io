@@ -119,8 +119,10 @@ ul[class^="bluebox-"] li,
 [class^="bluebox-"] ol li p,
 ol[class^="bluebox-"] li p {
   font-size: 0.95em;
-  display: inline;
+  display: inline-block;   /* 인라인처럼 붙이면서 블록 성격 유지 */
   margin: 0;
+  padding-left: 0.5em;     /* 번호 옆에 여백 추가 */
+  text-indent: -0.5em;     /* 첫 줄은 번호 옆으로 당기고 */
 }
 
 /* 박스 내에 제목이 있는 경우 */
