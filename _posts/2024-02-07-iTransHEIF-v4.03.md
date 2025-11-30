@@ -40,15 +40,15 @@ categories:
 
 ## 히스토리
 
-* 2024.2.7꞉ v4.03
-  * 스레드 생성 코드 개선
-  * [FFmpeg](http://ffmpeg.org/download.html){:target="_blank"}을 6.1.1\[gyan.dev\]로 업데이트
-  * [libjpeg-turbo](https://github.com/libjpeg-turbo/libjpeg-turbo){:target="_blank"}를 3.0.2로 업데이트(Jan 23, 2024)
-  * [libpng](https://github.com/pnggroup/libpng){:target="_blank"}를 1.6.42(Jan 30, 2024)로, [zlib-ng](https://github.com/zlib-ng/zlib-ng){:target="_blank"}를 2.1.6(Jan 11, 2024)으로 업데이트
-  * [HEIF 확장](https://www.microsoft.com/store/productId/9PMMSR1CGPWG?ocid=pdpshare){:target="_blank"} 및 [HEVC 확장](https://www.microsoft.com/store/productId/9NMZLZ57R3T7?ocid=pdpshare){:target="_blank"} 링크 주소 수정
+- 2024.2.7꞉ v4.03
+  - 스레드 생성 코드 개선
+  - [FFmpeg](http://ffmpeg.org/download.html){:target="_blank"}을 6.1.1\[gyan.dev\]로 업데이트
+  - [libjpeg-turbo](https://github.com/libjpeg-turbo/libjpeg-turbo){:target="_blank"}를 3.0.2로 업데이트(Jan 23, 2024)
+  - [libpng](https://github.com/pnggroup/libpng){:target="_blank"}를 1.6.42(Jan 30, 2024)로, [zlib-ng](https://github.com/zlib-ng/zlib-ng){:target="_blank"}를 2.1.6(Jan 11, 2024)으로 업데이트
+  - [HEIF 확장](https://www.microsoft.com/store/productId/9PMMSR1CGPWG?ocid=pdpshare){:target="_blank"} 및 [HEVC 확장](https://www.microsoft.com/store/productId/9NMZLZ57R3T7?ocid=pdpshare){:target="_blank"} 링크 주소 수정
 
-* 2024.5.1꞉ v4.04
-  * 내부적으로 시간 계산시 `GetTickCount64()`를 완전히 배제
-  * [FFmpeg](http://ffmpeg.org/download.html){:target="_blank"}을 7.0\[gyan.dev\]로 업데이트
-  * [libpng](https://github.com/pnggroup/libpng){:target="_blank"}를 1.6.43(Feb 23, 2024)으로 업데이트
-  * [mp4box](https://github.com/gpac/gpac){:target="_blank"}를 2.4(April 17, 2024)로 업데이트
+- 2024.5.1꞉ v4.04
+  - 내부적으로 시간 계산시 `GetTickCount64()`를 완전히 배제
+  - [FFmpeg](http://ffmpeg.org/download.html){:target="_blank"}을 7.0\[gyan.dev\]로 업데이트
+  - [libpng](https://github.com/pnggroup/libpng){:target="_blank"}를 1.6.43(Feb 23, 2024)으로 업데이트
+  - [mp4box](https://github.com/gpac/gpac){:target="_blank"}를 2.4(April 17, 2024)로 업데이트
