@@ -34,7 +34,7 @@
 
 /* 공통 박스 스타일 */
 @mixin bluebox-base {
-  padding: 0 10px 10px 10px;
+  padding: 0.8em 10px;   /* 상하단 + 좌우 여백 */
   margin-bottom: 1.2em;
   font-size: 0.95em;
 }
@@ -48,17 +48,20 @@
 /**
  * 리스트 스타일 (ul/ol 모두 적용)
  */
-[class^="bluebox-"] ul,
-[class^="bluebox-"] ol {
+/* 모든 bluebox에 공통 적용 */
+ul.bluebox-gray,
+ol.bluebox-gray,
+ul.bluebox-gray-blocks,
+ol.bluebox-gray-blocks {
   margin: 0;
   padding-left: 1.2em;
   list-style-position: inside;
 }
 
-[class^="bluebox-"] li {
+.bluebox-gray li,
+.bluebox-gray-blocks li {
   margin-bottom: 0.4em;
 }
-
 
 /**
  * 단일 문단용 박스
@@ -69,7 +72,7 @@
 }
 
 /**
- * 여러 문단용 박스
+ * 여러 문단용 박스 (blockquote 기반)
  */
 .box-gray-blocks {
   @include bluebox-base;
