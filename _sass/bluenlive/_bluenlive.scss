@@ -66,9 +66,7 @@
 
 /* 리스트 */
 ul[class^="bluebox-"],
-ol[class^="bluebox-"],
-[class^="bluebox-"] ul,
-[class^="bluebox-"] ol {
+ol[class^="bluebox-"] {
   margin: 0;
   padding-left: 2em; /* 번호 영역 확보 */
   list-style-position: outside; /* 번호를 li 바깥에 표시 */
@@ -95,14 +93,12 @@ ol[class^="bluebox-"],
 }
 
 /* 2. ul 안의 li 항목 폰트 크기 */
-ul[class^="bluebox-"] li,
-[class^="bluebox-"] ul li {
+ul[class^="bluebox-"] li {
   font-size: 0.95em;
 }
 
 /* 3. ol 안의 li 내부 p의 폰트 크기 (p보다 구체적이므로 우선 적용) */
-[class^="bluebox-"] ol li p,
-ol[class^="bluebox-"] li p {
+ol[class^="bluebox-"] li {
   font-size: 0.95em;
-  margin: 0;
+  /* margin: 0; */
 }
