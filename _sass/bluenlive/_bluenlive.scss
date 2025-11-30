@@ -68,15 +68,16 @@
 ul[class^="bluebox-"],
 ol[class^="bluebox-"] {
   margin: 0;
-  padding-left: 2em; /* 번호 영역 확보 */
+  padding-left: 2.2em; /* 번호 영역 확보 */
   list-style-position: outside; /* 번호를 li 바깥에 표시 */
 }
 
 /* li 항목 */
 [class^="bluebox-"] li {
-  margin-bottom: 0.4em;
-  text-indent: 0.1em; /* 첫 줄은 번호 옆으로 당김 */
-  padding-left: 0.4em; /* 전체 들여쓰기 */
+  margin-bottom: 0.3em;
+  text-indent: 0.0em; /* 첫 줄은 번호 옆으로 당김 */
+  padding-left: 0.7em; /* 전체 들여쓰기 */
+  font-size: 0.95em;
 }
 
 /* 문단 */
@@ -88,17 +89,23 @@ ol[class^="bluebox-"] {
 
 /* 리스트, 문단의 글자 크기는 별도로 지정 */
 /* 1. 문단의 폰트 크기 */
+/*
 [class^="bluebox-"] p {
   font-size: 0.95em;
 }
+*/
 
 /* 2. ul 안의 li 항목 폰트 크기 */
+/*
 ul[class^="bluebox-"] li {
   font-size: 0.95em;
 }
+*/
 
 /* 3. ol 안의 li 내부 p의 폰트 크기 (p보다 구체적이므로 우선 적용) */
+/*
 ol[class^="bluebox-"] li {
   font-size: 0.95em;
   /* margin: 0; */
 }
+*/
