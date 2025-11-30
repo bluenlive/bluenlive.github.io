@@ -20,16 +20,13 @@ categories:
 
 이 프로그램은 이전 버전과 마찬가지로 HEIF를 jpeg/png로 변환해주며 **성능도 안정성도 더욱 향상되었다**.
 
-<div style="background-color: #eeeeee; padding: 0 10px 10px 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em; font-size: 0.95em;" markdown="1">
-
+{: .bluebox-gray}
 1. **\*\*ICC Profile\*\***, **\*\*Exif\*\*** 등을 모두 제대로 읽어내어 변환
 2. 파일의 시간 정보를 Exif와 동일하게 맞춰줌
 3. 타일 방식이 아니라 AniGIF처럼 여러 장의 이미지가 들어있는 경우 각각의 이미지 파일로 추출
 4. [libjpeg-turbo](https://github.com/libjpeg-turbo/libjpeg-turbo){:target="_blank"} 및 [zlib-ng](https://github.com/zlib-ng/zlib-ng){:target="_blank"}이 적용된 [libpng](https://github.com/glennrp/libpng){:target="_blank"}를 활용하여 아주 빠른 속도로 저장
 5. **png 파일에도 Exif 정보를 함께 저장**
 6. 깊이 정보가 함께 있는 아이폰/아이패드 사진이라면 **깊이 정보**도 **별도의 파일**로 저장
-
-</div>
 
 변환기는 아래 링크에서 다운받을 수 있으며, 별도의 설치 프로그램 따위는 없다.
 
