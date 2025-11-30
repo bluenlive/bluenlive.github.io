@@ -77,8 +77,8 @@ ol[class^="bluebox-"],
 /* li 항목 */
 [class^="bluebox-"] li {
   margin-bottom: 0.4em;
-  text-indent: 0.5em; /* 첫 줄은 번호 옆으로 당김 */
-  padding-left: 0.2em; /* 전체 들여쓰기 */
+  text-indent: 0.1em; /* 첫 줄은 번호 옆으로 당김 */
+  padding-left: 0.4em; /* 전체 들여쓰기 */
 }
 
 /* 문단 */
