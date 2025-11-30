@@ -26,50 +26,53 @@
  ******************/
 
 /* 블록 인용 줄 제거(공통) */
-@mixin blockquote-clean {
+@mixin bluebox-blockquote-clean {
   border-left: none !important;
   margin-left: 0 !important;
   padding-left: 0 !important;
 }
 
 /* 공통 박스 스타일 */
-@mixin box-base {
+@mixin bluebox-base {
   padding: 0 10px 10px 10px;
   margin-bottom: 1.2em;
   font-size: 0.95em;
 }
 
 /* 색상별 박스 */
-@mixin box-gray-color {
+@mixin bluebox-gray-color {
   background-color: #eeeeee;
   border: 1px dashed #c1c1c1;
 }
 
-/* 아래 적용할 스타일들 내에서 ul, ol이 밖으로 벗어나는 것을 방지함 */
-[class*="box-"][class$="-blocks"] ul,
-[class*="box-"][class$="-blocks"] ol {
+/**
+ * 리스트 스타일 (ul/ol 모두 적용)
+ */
+[class^="bluebox-"] ul,
+[class^="bluebox-"] ol {
   margin: 0;
   padding-left: 1.2em;
   list-style-position: inside;
 }
 
-[class*="box-"][class$="-blocks"] li {
+[class^="bluebox-"] li {
   margin-bottom: 0.4em;
 }
+
 
 /**
  * 단일 문단용 박스
  */
-.box-gray {
-  @include box-base;
-  @include box-gray-color;
+.bluebox-gray {
+  @include bluebox-base;
+  @include bluebox-gray-color;
 }
 
 /**
  * 여러 문단용 박스
  */
 .box-gray-blocks {
-  @include box-base;
-  @include box-gray-color;
-  @include blockquote-clean;
+  @include bluebox-base;
+  @include bluebox-gray-color;
+  @include bluebox-blockquote-clean;
 }
