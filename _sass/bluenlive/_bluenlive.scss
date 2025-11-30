@@ -25,24 +25,15 @@
  * 배경색 별 박스
  ******************/
 
-/* 단일 문단 박스 */
-.bluebox-gray {
+/* 공통 박스 스타일 */
+@mixin bluebox-base {
   padding: 0.8em 10px;
   margin-bottom: 1.2em;
   font-size: 0.95em;
-  background-color: #eeeeee;
-  border: 1px dashed #c1c1c1;
 }
 
-/* 여러 문단 박스 */
-blockquote.bluebox-gray-blocks {
-  padding: 0.8em 10px;
-  margin-bottom: 1.2em;
-  font-size: 0.95em;
-  background-color: #eeeeee;
-  border: 1px dashed #c1c1c1;
-
-  /* blockquote 기본 스타일 제거 */
+/* blockquote 기본 스타일 제거 */
+@mixin bluebox-blockquote-clean {
   margin: 0 !important;
   padding: 0 !important;
   border: none !important;
@@ -50,17 +41,62 @@ blockquote.bluebox-gray-blocks {
   color: inherit !important;
 }
 
-/* 리스트 스타일 */
-ul.bluebox-gray,
-ol.bluebox-gray,
-ul.bluebox-gray-blocks,
-ol.bluebox-gray-blocks {
+/* 색상별 스타일 */
+@mixin bluebox-color($bg, $border) {
+  background-color: $bg;
+  border: 1px dashed $border;
+}
+
+/* 회색 박스 */
+.bluebox-gray {
+  @include bluebox-base;
+  @include bluebox-color(#eeeeee, #c1c1c1);
+}
+
+blockquote.bluebox-gray-blocks {
+  @include bluebox-base;
+  @include bluebox-color(#eeeeee, #c1c1c1);
+  @include bluebox-blockquote-clean;
+}
+
+/* 파란색 박스 */
+.bluebox-blue {
+  @include bluebox-base;
+  @include bluebox-color(#e6f0ff, #99c2ff);
+}
+
+blockquote.bluebox-blue-blocks {
+  @include bluebox-base;
+  @include bluebox-color(#e6f0ff, #99c2ff);
+  @include bluebox-blockquote-clean;
+}
+
+/* 빨간색 박스 */
+.bluebox-red {
+  @include bluebox-base;
+  @include bluebox-color(#ffe6e6, #ff9999);
+}
+
+blockquote.bluebox-red-blocks {
+  @include bluebox-base;
+  @include bluebox-color(#ffe6e6, #ff9999);
+  @include bluebox-blockquote-clean;
+}
+
+/* 리스트 */
+ul[class^="bluebox-"],
+ol[class^="bluebox-"] {
   margin: 0;
   padding-left: 1.2em !important;
   list-style-position: inside !important;
 }
 
-.bluebox-gray li,
-.bluebox-gray-blocks li {
+[class^="bluebox-"] li {
   margin-bottom: 0.4em;
+}
+
+/* 문단 */
+[class^="bluebox-"] p {
+  margin: 0 0 0.6em 0;
+  line-height: 1.5;
 }
