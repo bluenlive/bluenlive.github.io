@@ -36,6 +36,8 @@
 @mixin bluebox-blockquote-clean {
   margin-left: 0 !important;   /* 기본 들여쓰기 제거 */
   padding-left: 0 !important;  /* 내부 여백 제거 */
+  margin: 0 0 1.2em 0;
+  font-style: normal !important;
 }
 
 /* 색상별 스타일 */
