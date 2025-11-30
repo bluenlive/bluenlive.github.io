@@ -100,3 +100,13 @@ ol[class^="bluebox-"] {
   padding-left: 1.0em;
   line-height: 1.5;
 }
+
+/* 박스 내에 제목이 있는 경우 */
+[class^="bluebox-"] h1,
+[class^="bluebox-"] h2,
+[class^="bluebox-"] h3,
+[class^="bluebox-"] h4,
+[class^="bluebox-"] h5,
+[class^="bluebox-"] h6 {
+  margin: 0.5em 0 0.5em 0.7em;
+}
