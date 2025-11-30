@@ -9,9 +9,14 @@
 
  .download-box {
   text-align: center;
-  font-size: 0.95em;
-  margin: 0.8em 0;   /* 위아래 여백 */
+  font-size: 0.95em!important;
+  margin: 0.8em 0!important;   /* 위아래 여백 */
   line-height: 1.2;  /* 줄 간격 조금 붙임 */
+}
+
+.download-box br {
+  line-height: 1;    /* <br> 줄바꿈은 더 붙여 보이게 */
+  margin: 0;         /* 불필요한 여백 제거 */
 }
 
 .password {
