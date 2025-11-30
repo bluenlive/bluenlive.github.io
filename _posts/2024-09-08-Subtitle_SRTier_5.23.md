@@ -15,7 +15,7 @@ SRT 자막 관리 도우미 SRTier를 5.25로 업데이트했다.
 
 이 프로그램의 주요 기능은 아래와 같다.
 
-<div style="background-color: #eeeeee; padding: 0 10px 10px 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em; font-size: 0.95em;" markdown="1">
+{: .box-gray}
 - **SRT 교정**: SRT 파일을 읽은 뒤 오류를 수정한 뒤 다시 기록하거나 시간을 조정함
 - **자막 변환**: SAMI/SSA/ASS 자막을 SRT로 변환, SRT 자막을 SAMI로 변환
 - **텍스트 추출**: SRT 자막에서 텍스트만 추출
@@ -23,11 +23,10 @@ SRT 자막 관리 도우미 SRTier를 5.25로 업데이트했다.
 - **XML/ass 등 수정**: XML 포맷의 챕터 및 ass 역시 자막과 동일한 기준으로 시간을 조정해줌
 - **mpls → txt**: 블루레이 MPLS 파일에서 챕터 정보를 추출해줌
 - **sup → srt 추출**: SUP 포맷의 자막 파일에서 시간 정보가 기록된 빈 srt 파일을 추출해줌
-</div>
 
 조금 더 상세히 보면 기능들은 이렇다.
 
-<div style="background-color: #d8e8fb; padding: 0 10px 10px 10px; border: 1px dashed #79a5e4; margin-bottom: 1.2em; font-size: 0.95em;" markdown="1">
+{: .box-gray}
 1. **SRT 교정**  
 - OCR 과정에서 **따옴표가 잘못 인식**된 경우나 **I(i)를 l(L)로 잘못 인식**된 경우를 수정  
 - OCR 과정에서 **숫자 사이에 불필요한 공백**이 들어간 경우 수정  
@@ -68,10 +67,9 @@ SRT 자막 관리 도우미 SRTier를 5.25로 업데이트했다.
 7. **sup → srt 추출**  
 - SUP 포맷의 자막 파일에서 SRT 파일을 추출  
 - 내용은 없고 시간값만 기록된 파일을 기록함  
-※ SUP 파일은 이미지 파일이라 자막 내용을 추출하지는 못함
-
+※ SUP 파일은 이미지 파일이라 자막 내용을 추출하지는 못함  
+  
 **※ 1, 2, 3번 기능은 모두 파일 단위 및 폴더 단위로 적용 가능**
-</div>
 
 이 프로그램은 아래 링크에서 다운받을 수 있다.
 

@@ -1,11 +1,11 @@
-/* ==========================================================================
+/* ===========================================================
    markdown 내에서 <div> 태그 등을 통해 구현했던 내용들에서
    <div> 태그를 없애기 위해 만든 커스텀 스타일
-   ========================================================================== */
+   =========================================================== */
 
-/**
+/*****************
  * 다운로드 박스
- */
+ *****************/
 
  .download-box {
   text-align: center;
@@ -18,4 +18,46 @@
   color: red;
   font-size: 1.5em;
   font-weight: bold;
+}
+
+
+/******************
+ * 배경색 별 박스
+ ******************/
+
+/* 블록 인용 줄 제거(공통) */
+@mixin blockquote-clean {
+  border-left: none !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* 공통 박스 스타일 */
+@mixin box-base {
+  padding: 0 10px 10px 10px;
+  margin-bottom: 1.2em;
+  font-size: 0.95em;
+}
+
+/* 색상별 박스 */
+@mixin box-gray-color {
+  background-color: #eeeeee;
+  border: 1px dashed #c1c1c1;
+}
+
+/**
+ * 단일 문단용 박스
+ */
+.box-gray {
+  @include box-base;
+  @include box-gray-color;
+}
+
+/**
+ * 여러 문단용 박스
+ */
+.box-gray-blocks {
+  @include box-base;
+  @include box-gray-color;
+  @include blockquote-clean;
 }
