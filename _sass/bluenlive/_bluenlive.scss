@@ -34,10 +34,10 @@
 
 /* blockquote 기본 스타일 제거 */
 @mixin bluebox-blockquote-clean {
-  margin: 0 !important;
+  /*margin: 0 !important;
   padding: 0 !important;
+  font-style: normal !important;*/
   border: none !important;
-  font-style: normal !important;
   color: inherit !important;
 }
 
