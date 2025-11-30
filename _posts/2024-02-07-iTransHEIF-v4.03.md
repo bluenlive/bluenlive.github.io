@@ -23,7 +23,7 @@ categories:
 
 이 프로그램은 이전 버전과 마찬가지로 HEIF를 jpeg/png로 변환해주며 **성능도 안정성도 더욱 향상되었다**.
 
-{: .bluebox-gray-blocks}
+{: .bluebox-gray}
 1. **ICC Profile**, **Exif** 등을 모두 제대로 읽어내어 변환
 2. 파일의 시간 정보를 Exif와 동일하게 맞춰줌
 3. 타일 방식이 아니라 AniGIF처럼 여러 장의 이미지가 들어있는 경우 각각의 이미지 파일로 추출
