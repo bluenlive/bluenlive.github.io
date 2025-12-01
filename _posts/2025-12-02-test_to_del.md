@@ -8,8 +8,7 @@ categories:
 
 삭제할 내용입니다
 
-{: .quoteMachine}
-{: .theQuote}
+{: .quoteMachine .center}
 > They call me…  
 > Mister Tiibs
 
@@ -18,8 +17,7 @@ categories:
 
 ---
 
-{: .quoteMachine}
-{: .theQuoteLeft}
+{: .quoteMachine .left}
 > They call me…  
 > Mister Tiibs
 
@@ -28,34 +26,9 @@ categories:
 
 ---
 
-{: .quoteMachine}
-{: .theQuoteLeft}
+{: .quoteMachine .left}
 > They call me…  
 > Mister Tiibs
-
----
-
-> They call me…  
-> Mister Tiibs
-{: .quoteMachine .theQuote}
-
-- hello
-{: .quoteAuthor}
-
----
-
-> They call me…  
-> Mister Tiibs
-{: .quoteMachine .theQuoteLeft}
-
-- hello
-{: .quoteAuthor}
-
----
-
-> They call me…  
-> Mister Tiibs
-{: .quoteMachine .theQuoteLeft}
 
 ---
 

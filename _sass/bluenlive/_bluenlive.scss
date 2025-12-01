@@ -168,24 +168,28 @@ ol[class^="bluebox-"] {
 
   blockquote {
     @include bluebox-blockquote-clean;
-    position: relative;
     font-size: 1.05em;
-  }
+    position: relative;
 
-  .quotationMark {
-    position: absolute;
-    font-size: 2em;
-    color: #aaa;
-  }
+    /* 왼쪽 따옴표 */
+    &::before {
+      content: "“";
+      font-size: 2em;
+      color: #aaa;
+      position: absolute;
+      left: -0.6em;
+      top: -0.2em;
+    }
 
-  .quotationMark--left {
-    left: -0.6em;
-    top: -0.2em;
-  }
-
-  .quotationMark--right {
-    right: -0.6em;
-    bottom: -0.2em;
+    /* 오른쪽 따옴표 */
+    &::after {
+      content: "”";
+      font-size: 2em;
+      color: #aaa;
+      position: absolute;
+      right: -0.6em;
+      bottom: -0.2em;
+    }
   }
 
   .quoteAuthor {
@@ -197,11 +201,11 @@ ol[class^="bluebox-"] {
 }
 
 /* 가운데 정렬 */
-.theQuote {
+.quoteMachine.center blockquote {
   text-align: center;
 }
 
 /* 왼쪽 정렬 */
-.theQuoteLeft {
+.quoteMachine.left blockquote {
   text-align: left;
 }
