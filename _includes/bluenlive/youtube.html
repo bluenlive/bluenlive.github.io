@@ -1,0 +1,10 @@
+<iframe
+  width="{{ include.width | default: '640' }}"
+  height="{{ include.height | default: '360' }}"
+  src="https://www.youtube-nocookie.com/embed/{{ include.id }}{{ include.params | default: '?controls=0' }}"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+{% if include.note %}
+<p><em>{{ include.note }}</em></p>
+{% endif %}
