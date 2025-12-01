@@ -20,6 +20,14 @@
   font-weight: bold;
 }
 
+/*****************
+ * 각주 영역
+ *****************/
+
+.footnotes
+{
+    font-size: 0.92em;
+}
 
 /******************
  * 배경색 별 박스
@@ -55,7 +63,12 @@
 /* history용 아주 옅은 회색 박스 */
 .bluebox-history {
   @include bluebox-base;
-  @include bluebox-color(#fafafa, transparent);
+  background: linear-gradient(
+    to bottom,
+    rgba(250, 250, 250, 1),
+    rgba(250, 250, 250, 0)
+  );
+  border: transparent;
 }
 
 /* 파란색 박스 */
@@ -99,3 +112,4 @@ ol[class^="bluebox-"] {
   font-size: 1.0em;
   margin-left: -1.0em;
 }
+
