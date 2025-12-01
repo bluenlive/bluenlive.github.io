@@ -54,35 +54,36 @@ x86과 x64 버전이 함께 들어있는데, 64비트 환경이라면 x64 버전
 
 ## 히스토리
 
-* 2024.7.6: v7.34
-  * UI 수정 준비
-  * 대상 프로그램 추가
-    * So∗∗Ca∗∗ Sec∗∗∗Web Mul∗∗ Brow∗∗∗ Pack∗∗∗
-    * We∗Cu∗∗
-    * weh∗∗∗ag∗∗∗
-    * BG∗
-    * Inz∗∗Fo∗∗ ∗.∗
-    * Docul∗∗∗ Rea∗∗∗
-  * 라이브러리 업데이트
-    * Google/RE2 라이브러리를 2024.7.2 버전으로 업데이트
+{: .bluebox-history}
+- 2024.7.6: v7.34
+  - UI 수정 준비
+  - 대상 프로그램 추가
+    - So∗∗Ca∗∗ Sec∗∗∗Web Mul∗∗ Brow∗∗∗ Pack∗∗∗
+    - We∗Cu∗∗
+    - weh∗∗∗ag∗∗∗
+    - BG∗
+    - Inz∗∗Fo∗∗ ∗.∗
+    - Docul∗∗∗ Rea∗∗∗
+  - 라이브러리 업데이트
+    - Google/RE2 라이브러리를 2024.7.2 버전으로 업데이트
 
-* 2024.7.7: v7.35
-  * 잘못된 첨부 파일 교체
+- 2024.7.7: v7.35
+  - 잘못된 첨부 파일 교체
 
-* 2025.4.6: v7.42
-  * 아이콘 변경
-  * TOSS ID 에서 Buy Me A Coffee로 변경
-  * 대상 프로그램 추가
-    * Bo∗∗L∗∗ - Bo∗∗L∗∗ for Desk∗∗∗
-    * Relev∗∗∗Knowle∗∗∗
-    * Prem∗∗∗Opin∗∗∗
-    * yessearc∗∗∗ Uninst∗∗∗
-    * NE∗∗ 인∗∗ 로∗∗ 프로∗∗
-    * 스∗∗공동∗∗
-  * 대상 프로그램 삭제
-    * Ht∗∗T∗U∗∗Brid∗∗
-  * 라이브러리 업데이트
-    * LZ4 업데이트: v1.10.0 - Multicores edition
-    * Google/Abseil 라이브러리를 20250127.1 버전(Abseil LTS branch, January 2025, Patch 1)으로 업데이트
-  * 스펙터 완화 옵션 제거
-  * 진입접 (wWinMainCRTStartup) 옵션 제거
+- 2025.4.6: v7.42
+  - 아이콘 변경
+  - TOSS ID 에서 Buy Me A Coffee로 변경
+  - 대상 프로그램 추가
+    - Bo∗∗L∗∗ - Bo∗∗L∗∗ for Desk∗∗∗
+    - Relev∗∗∗Knowle∗∗∗
+    - Prem∗∗∗Opin∗∗∗
+    - yessearc∗∗∗ Uninst∗∗∗
+    - NE∗∗ 인∗∗ 로∗∗ 프로∗∗
+    - 스∗∗공동∗∗
+  - 대상 프로그램 삭제
+    - Ht∗∗T∗U∗∗Brid∗∗
+  - 라이브러리 업데이트
+    - LZ4 업데이트: v1.10.0 - Multicores edition
+    - Google/Abseil 라이브러리를 20250127.1 버전(Abseil LTS branch, January 2025, Patch 1)으로 업데이트
+  - 스펙터 완화 옵션 제거
+  - 진입접 (wWinMainCRTStartup) 옵션 제거

@@ -51,40 +51,41 @@ x86과 x64 버전이 함께 들어있는데, 64비트 환경이라면 x64 버전
 
 ## 히스토리
 
-* 2024.1.1: v7.25
-  * 대상 프로그램 추가
-    * Char∗∗∗ Eng∗∗∗
-    * Cl∗∗∗Pl∗∗ 2.∗
-    * s∗∗Tr∗∗∗
-    * S∗∗In∗∗
+{: .bluebox-history}
+- 2024.1.1: v7.25
+  - 대상 프로그램 추가
+    - Char∗∗∗ Eng∗∗∗
+    - Cl∗∗∗Pl∗∗ 2.∗
+    - s∗∗Tr∗∗∗
+    - S∗∗In∗∗
 
-* 2024.1.27: v7.27
-  * 대상 프로그램 추가
-    * Sm∗∗∗AIB∗∗∗ St∗∗∗U∗
-  * 라이브러리 업데이트
-    * Google/RE2를 2024.2.1 버전으로 업데이트
-    * Google/Abseil을 20240116.0 버전(Abseil LTS branch, Jan 2024)으로 업데이트
-  * 프로그램에 표시되는 링크 주소 변경
+- 2024.1.27: v7.27
+  - 대상 프로그램 추가
+    - Sm∗∗∗AIB∗∗∗ St∗∗∗U∗
+  - 라이브러리 업데이트
+    - Google/RE2를 2024.2.1 버전으로 업데이트
+    - Google/Abseil을 20240116.0 버전(Abseil LTS branch, Jan 2024)으로 업데이트
+  - 프로그램에 표시되는 링크 주소 변경
 
-* 2024.4.5: v7.30
-  * 라이브러리 업데이트
-    * Google/RE2를 2024.4.1 버전으로 업데이트
+- 2024.4.5: v7.30
+  - 라이브러리 업데이트
+    - Google/RE2를 2024.4.1 버전으로 업데이트
 
-* 2024.4.14: v7.31
-  * 대상 프로그램 추가
-    * Tr∗∗∗Docum∗∗∗V∗.∗ Cli∗∗∗ for Wind∗∗∗ Ag∗∗∗ Non-Act∗∗∗ X ∗.∗.∗.∗
-    * TSX∗∗Tool∗∗∗ ∗.∗.∗.∗
-    * TSX∗∗Tool∗∗∗
-    * T∗Tool∗∗∗
-    * REDBC Tr∗∗∗W∗∗ Cont∗∗∗
-    * Fi∗∗G∗∗∗
-  * 라이브러리 업데이트
-    * Google/Abseil을 20240116.2 버전(Abseil LTS branch, Jan 2024, Patch 2)으로 업데이트
+- 2024.4.14: v7.31
+  - 대상 프로그램 추가
+    - Tr∗∗∗Docum∗∗∗V∗.∗ Cli∗∗∗ for Wind∗∗∗ Ag∗∗∗ Non-Act∗∗∗ X ∗.∗.∗.∗
+    - TSX∗∗Tool∗∗∗ ∗.∗.∗.∗
+    - TSX∗∗Tool∗∗∗
+    - T∗Tool∗∗∗
+    - REDBC Tr∗∗∗W∗∗ Cont∗∗∗
+    - Fi∗∗G∗∗∗
+  - 라이브러리 업데이트
+    - Google/Abseil을 20240116.2 버전(Abseil LTS branch, Jan 2024, Patch 2)으로 업데이트
 
-* 2024.5.1: v7.32
-  * 대상 프로그램 추가
-    * Tra∗∗Arm∗∗ Vie∗∗∗
-    * Se∗∗T∗∗ NXS
-    * C∗∗∗B2B ExE∗∗∗
-  * 라이브러리 업데이트
-    * Google/RE2를 2024.5.1 버전으로 업데이트
+- 2024.5.1: v7.32
+  - 대상 프로그램 추가
+    - Tra∗∗Arm∗∗ Vie∗∗∗
+    - Se∗∗T∗∗ NXS
+    - C∗∗∗B2B ExE∗∗∗
+  - 라이브러리 업데이트
+    - Google/RE2를 2024.5.1 버전으로 업데이트

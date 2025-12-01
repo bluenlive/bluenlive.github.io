@@ -38,18 +38,19 @@ PNGquant를 선택하는 자동 옵션도 있음
 
 ## 히스토리
 
-* 2025.3.8꞉ v4.65
-  * 처리 대상 이미지 포맷에 **TIFF** 추가
-  * [libzip](https://github.com/nih-at/libzip/){:target="_blank"}을 1.11.2로 업데이트 (2024.12.22)
-  * JpegQ를 상하 키보드로 조절할 수 있도록 수정
+{: .bluebox-history}
+- 2025.3.8꞉ v4.65
+  - 처리 대상 이미지 포맷에 **TIFF** 추가
+  - [libzip](https://github.com/nih-at/libzip/){:target="_blank"}을 1.11.2로 업데이트 (2024.12.22)
+  - JpegQ를 상하 키보드로 조절할 수 있도록 수정
 
-* 2025.11.6꞉ v4.70
-  * 파일명에 `%` 가 들어있는 경우에도 제대로 동작하도록 수정
-  * 툴팁 색을 Oklab 기반으로 튜닝
-  * 내부 라이브러리 업데이트
-    * [mozJPEG](https://github.com/mozilla/mozjpeg){:target="_blank"}을 v5.0.0.dev(Jun 24, 2025)로 업데이트
-    * [libpng](https://github.com/pnggroup/libpng){:target="_blank"}를 1.6.50(July 2, 2025)로, [zlib-ng](https://github.com/zlib-ng/zlib-ng){:target="_blank"}를 2.2.5(Aug 7, 2025)으로 업데이트
-    * [libimagequant](https://pngquant.org/){:target="_blank"}를 4.5.0으로 업데이트 (2025.7.30)
+- 2025.11.6꞉ v4.70
+  - 파일명에 `%` 가 들어있는 경우에도 제대로 동작하도록 수정
+  - 툴팁 색을 Oklab 기반으로 튜닝
+  - 내부 라이브러리 업데이트
+    - [mozJPEG](https://github.com/mozilla/mozjpeg){:target="_blank"}을 v5.0.0.dev(Jun 24, 2025)로 업데이트
+    - [libpng](https://github.com/pnggroup/libpng){:target="_blank"}를 1.6.50(July 2, 2025)로, [zlib-ng](https://github.com/zlib-ng/zlib-ng){:target="_blank"}를 2.2.5(Aug 7, 2025)으로 업데이트
+    - [libimagequant](https://pngquant.org/){:target="_blank"}를 4.5.0으로 업데이트 (2025.7.30)
 
 [^1]: 이 포맷이 한글과 컴퓨터에서 권장하는 포맷이기도 하고, 저장 속도도 빠르며 저장 안정성도 높음
 [^2]: 일부 구형 x64 CPU에서는 avx2를 지원하지 않음에 유의할 것

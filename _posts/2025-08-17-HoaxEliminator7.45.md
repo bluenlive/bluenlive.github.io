@@ -45,34 +45,35 @@ x86, x64 및 ARM64 버전이 함께 들어있는데, x64 윈도우 환경이라�
 
 ## 히스토리
 
-* 2025.8.17: v7.45
-  * 실행 환경에 **ARM64** 추가
-    * native ARM64 뿐만 아니라 x86/x64 on ARM64 환경도 고려
-    * Boot camp / 지문인식장치 관련 기능은 **ARM64 환경에서 동작하지 않음**
-  * 대상 프로그램 추가
-    * Mic∗∗so∗∗
-    * Memo∗∗keep∗∗
-    * mi∗∗ne∗∗
-    * mic∗∗_spons∗∗13
-    * Myencr∗∗∗
-    * Wind∗∗∗ Sm∗∗∗ Favor∗∗∗
-    * wem∗∗∗ 1.2.0
-    * ISignP∗∗∗_PKI_4_3_2_1
-    * ISign+ W∗∗ Cry∗∗∗ 1.1
-  * 라이브러리 업데이트
-    * Google/Abseil 라이브러리를 20250512.1 버전(Abseil LTS branch, May 2025, Patch 1)으로 업데이트
-    * Google/RE2 라이브러리를 2025.8.12 버전으로 업데이트
+{: .bluebox-history}
+- 2025.8.17: v7.45
+  - 실행 환경에 **ARM64** 추가
+    - native ARM64 뿐만 아니라 x86/x64 on ARM64 환경도 고려
+    - Boot camp / 지문인식장치 관련 기능은 **ARM64 환경에서 동작하지 않음**
+  - 대상 프로그램 추가
+    - Mic∗∗so∗∗
+    - Memo∗∗keep∗∗
+    - mi∗∗ne∗∗
+    - mic∗∗_spons∗∗13
+    - Myencr∗∗∗
+    - Wind∗∗∗ Sm∗∗∗ Favor∗∗∗
+    - wem∗∗∗ 1.2.0
+    - ISignP∗∗∗_PKI_4_3_2_1
+    - ISign+ W∗∗ Cry∗∗∗ 1.1
+  - 라이브러리 업데이트
+    - Google/Abseil 라이브러리를 20250512.1 버전(Abseil LTS branch, May 2025, Patch 1)으로 업데이트
+    - Google/RE2 라이브러리를 2025.8.12 버전으로 업데이트
 
-* 2025.10.2: v7.50
-  * **HiDPI 환경에서 프로그램이 크래시** 되는 오류 수정
-  * Google/Abseil 라이브러리를 20250814.1 버전(Abseil LTS branch, August 2025, Patch 1 Latest)으로 업데이트
-  * 내부 이미지 처리 코드 전면 개정
+- 2025.10.2: v7.50
+  - **HiDPI 환경에서 프로그램이 크래시** 되는 오류 수정
+  - Google/Abseil 라이브러리를 20250814.1 버전(Abseil LTS branch, August 2025, Patch 1 Latest)으로 업데이트
+  - 내부 이미지 처리 코드 전면 개정
 
-* 2025.10.2: v7.52
-  * 내부 압축 라이브러리를 LZ4에서 Zstandard로 변경 준비
-  * 삭제되지 않은 인증키를 보여주는 항목 추가
-    * Cross∗∗∗∗_Tr∗∗∗_Ro∗∗_CA
-    * Delf∗∗∗-CA
-    * Verap∗∗∗-CA
-    * Dre∗∗secur∗∗∗ ROOT CA
-    * Sm∗∗∗AIB∗PC-CA-SHA∗∗∗
+- 2025.10.2: v7.52
+  - 내부 압축 라이브러리를 LZ4에서 Zstandard로 변경 준비
+  - 삭제되지 않은 인증키를 보여주는 항목 추가
+    - Cross∗∗∗∗_Tr∗∗∗_Ro∗∗_CA
+    - Delf∗∗∗-CA
+    - Verap∗∗∗-CA
+    - Dre∗∗secur∗∗∗ ROOT CA
+    - Sm∗∗∗AIB∗PC-CA-SHA∗∗∗
