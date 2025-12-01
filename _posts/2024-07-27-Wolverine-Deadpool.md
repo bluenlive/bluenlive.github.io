@@ -6,7 +6,8 @@ categories:
   - MarvelHero
 ---
 
-<div style="background-color: #fedec7; padding: 10px; border: 1px dashed #fe8943; margin-bottom: 1.2em;"><p style="text-align: center; margin-bottom: 0;"><b><span style="color: #980000; font-size: 1.222em;">주의! 스포일러가 포함된 글입니다</span></b></p></div>
+{: .bluebox-spoiler}
+주의! 스포일러가 포함된 글입니다
 
 드디어 영혼의 듀오, **데드풀과 울버린**이 만났다.  
 
