@@ -1,6 +1,6 @@
 <div class="quoteMachine">
   <div class="{% if include.align == 'center' %}theQuote{% else %}theQuoteLeft{% endif %}">
-    <blockquote>
+    <blockquote><span class="quotationMark quotationMark--left"></span>
       {% if include.content %}
         {% if include.content.first %}
           {%- for line in include.content -%}
@@ -10,7 +10,7 @@
           {{ include.content }}
         {% endif %}
       {% endif %}
-    </blockquote>
+      <span class="quotationMark quotationMark--right"></span></blockquote>
   </div>
   {% if include.author %}
     <div class="quoteAuthor">
