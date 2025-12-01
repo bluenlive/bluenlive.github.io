@@ -7,7 +7,7 @@ categories:
   - iDevice
 ---
 
-<div style="border-style: dashed; border-width: 1px; border-color: #79a5e4; background-color: #dbe8fb; padding: 10px;"><p style="text-align: center; margin-bottom: 0;"><span style="font-size: 1.111em;"><b><a href="/idevice/iTransHEIF-v4.12/">새 버전</a>이 나왔습니다. <a href="/idevice/iTransHEIF-v4.12/">새 버전</a>을 사용해주시기 바랍니다.</b></span></p></div><p><br /></p>
+{% include bluenlive/new-version.html url="/idevice/iTransHEIF-v4.12/" %}
 
 ## 소개 및 다운로드
 
