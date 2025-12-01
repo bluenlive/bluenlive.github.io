@@ -1,34 +1,29 @@
 ---
 layout: single
 title: "삭제할 내용 테스트"
-date: 2025-12-03 08:00:00 +0900
+date: 2025-12-02 08:00:00 +0900
 categories:
   - MyProgram
 ---
 
 삭제할 내용입니다
 
-{: .quoteMachine .center}
-> They call me…  
-> Mister Tiibs
-
-{: .quoteAuthor}
-- hello
+{% include bluenlive/quote.html
+   align="center"
+   author="hello"
+   content='["They call me…", "Mister Tiibs", "추가 줄도 가능"]' %}
 
 ---
 
-{: .quoteMachine .left}
-> They call me…  
-> Mister Tiibs
-
-{: .quoteAuthor}
-- hello
+{% include bluenlive/quote.html
+   author="hello"
+   content='["They call me…", "Mister Tiibs", "추가 줄도 가능"]' %}
 
 ---
 
-{: .quoteMachine .left}
-> They call me…  
-> Mister Tiibs
+{% include bluenlive/quote.html
+   align="left"
+   content='한 줄만 써보자' %}
 
 ---
 
