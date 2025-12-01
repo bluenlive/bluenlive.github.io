@@ -1,7 +1,7 @@
 <iframe
   width="{{ include.width | default: '640' }}"
   height="{{ include.height | default: '360' }}"
-  src="https://www.youtube-nocookie.com/embed/{{ include.id }}{{ include.params | default: '?controls=0' }}"
+  src="https://www.youtube-nocookie.com/embed/{{ include.id }}{% if include.params == nil %}?controls=0{% elsif include.params == '' %}{% else %}?{{ include.params }}{% endif %}"
   frameborder="0"
   allowfullscreen>
 </iframe>
