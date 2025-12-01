@@ -105,7 +105,7 @@ ol[class^="bluebox-"] {
 /* 파란색 박스 */
 .bluebox-blue {
   @include bluebox-base;
-  @include bluebox-color(#e6f0ff, #99c2ff);
+  @include bluebox-color(#DBE8FB, #79A5E4);
 }
 
 /* 빨간색 박스 */

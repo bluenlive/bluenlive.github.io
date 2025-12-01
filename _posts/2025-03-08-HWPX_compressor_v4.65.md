@@ -20,15 +20,12 @@ categories:
 
 이 버전에서 수정된 사항들은 아래와 같다.
 
-<div style="background-color: #DBE8FB; padding: 10px; border: 1px dashed #79A5E4; margin-bottom: 1.2em;"><p style="text-align: center; margin-bottom: 0;"><span style="font-size: 1.111em;">
-<div markdown="1">
+{: .bluebox-blue}
 - **TIFF** 압축 기능 추가  
 기존의 BMP와 동일한 규칙으로 png와 jpeg 변환을 알아서 선택하여 적절한 방식으로 재압축함  
 PNGquant를 선택하는 자동 옵션도 있음
 - 64비트 버전만 배포
 - JpegQ 조절시 상하 키보드로도 조절 가능하도록 수정
-</div>
-</span></p></div>
 
 이 프로그램은 아래 링크에서 다운받을 수 있으며, **avx2**가 지원되는 CPU[^2]에서만 동작한다.
 
