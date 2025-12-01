@@ -13,9 +13,8 @@ categories:
 빨간 부스라면 역시 런던 같긴 한데, 정확한 위치가 어디인지 궁금해졌다.\
 그래서 ChatGPT에게 물어봤다.
 
-<div style="background-color: #fefeb8; padding: 10px; border: 1px dashed #f3c534; font-size: 0.95em; margin-bottom: 1.2em;" markdown="1">
+{: .bluebox-yellow}
 영국 런던 사진으로 알고 있는데, 정확한 장소를 찾아서 알려줘
-</div>
 
 <div style="padding: 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em;" markdown="1">
 사진 속 장소는 영국 런던의 **Red Telephone Boxes(붉은 공중전화 부스)**가 있는 거리입니다.
@@ -36,9 +35,8 @@ categories:
 이 정보를 가지고 **구글 지도**와 **구글 어스**를 직접 뒤져보니 찾기가 어려웠다.\
 그래서 다시 한 번 질문.
 
-<div style="background-color: #fefeb8; padding: 10px; border: 1px dashed #f3c534; font-size: 0.95em; margin-bottom: 1.2em;" markdown="1">
+{: .bluebox-yellow}
 구글 지도 좌표 찾아줘
-</div>
 
 <div style="padding: 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em;" markdown="1">
 사진 속의 위치는 아마도 **Covent Garden의 Broad Court**, Royal Opera House 맞은편에 있는 **빨간 공중전화 부스 다섯 대가 나란히 서 있는 거리**로 보입니다. 이곳은 런던 중심부에서 사진 찍기 좋은 명소 중 하나예요.

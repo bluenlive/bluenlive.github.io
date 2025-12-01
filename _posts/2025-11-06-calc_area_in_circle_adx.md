@@ -27,9 +27,8 @@ categories:
 
 ## MS Copilot (GPT-5) 활용
 
-<div style="background-color: #fefeb8; padding: 10px; border: 1px dashed #f3c534; font-size: 0.95em; margin-bottom: 1.2em;" markdown="1">
+{: .bluebox-yellow}
 sqrt(L^2 - x^2)의 부정적분을 계산해줘. L은 상수이고, x에 대해서 계산해줘.
-</div>
 
 이 질문에 대해 MS Copilot은 다음과 같은 답을 내놓았다.
 
