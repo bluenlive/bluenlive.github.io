@@ -36,9 +36,9 @@
 .YouTube-note {
   display: block;
   text-align: center;
-  font-size: .8rem;
-  color: light-grey;
-  margin-top: -0.5em;      /* 위쪽으로 붙임 여백 */
+  font-size: .8rem!important;
+  color: light-grey!important;
+  margin: -0.5em 0 -0.5em 0!important;      /* 위쪽으로 붙임 여백 */
 }
 
 /******************
