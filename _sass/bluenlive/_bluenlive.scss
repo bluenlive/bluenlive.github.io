@@ -33,14 +33,14 @@
  * 배경색 별 박스
  ******************/
 
-/* 공통 박스 스타일 */
+/* 공통 박스 스타일 (내부용) */
 @mixin bluebox-base {
   padding: 0.8em 10px;
   margin-bottom: 1.2em;
   font-size: 0.92em;
 }
 
-/* blockquote 기본 스타일 제거 */
+/* blockquote 기본 스타일 제거 (내부용) */
 @mixin bluebox-blockquote-clean {
   margin-left: 0 !important;   /* 기본 들여쓰기 제거 */
   padding-left: 0 !important;  /* 내부 여백 제거 */
@@ -48,11 +48,42 @@
   font-style: normal;
 }
 
-/* 색상별 스타일 */
+/* 색상별 스타일 (내부용) */
 @mixin bluebox-color($bg, $border) {
   background-color: $bg;
   border: 1px dashed $border;
 }
+
+/* 리스트 (내부용) */
+ul[class^="bluebox-"],
+ol[class^="bluebox-"] {
+  margin: 0;
+  padding-left: 2.2em; /* 번호 영역 확보 */
+  list-style-position: outside; /* 번호를 li 바깥에 표시 */
+}
+
+/* li 항목 (내부용) */
+[class^="bluebox-"] li {
+  margin-bottom: 0.3em;
+  text-indent: 0.0em; /* 첫 줄은 번호 옆으로 당김 */
+  padding-left: 0.7em; /* 전체 들여쓰기 */
+  font-size: 0.95em;
+}
+
+/* 문단 (내부용) */
+[class^="bluebox-"] p {
+  margin: 0 0 0.25em 0;
+  line-height: 1.5;
+  font-size: 0.95em;
+}
+
+/* nesting 된 경우 너무 작아지는 거 방지 (내부용) */
+[class^="bluebox-"] li ul li
+{
+  font-size: 1.0em;
+  margin-left: -1.0em;
+}
+
 
 /* 회색 박스 */
 .bluebox-gray {
@@ -83,33 +114,11 @@
   @include bluebox-color(#ffe6e6, #ff9999);
 }
 
-/* 리스트 */
-ul[class^="bluebox-"],
-ol[class^="bluebox-"] {
-  margin: 0;
-  padding-left: 2.2em; /* 번호 영역 확보 */
-  list-style-position: outside; /* 번호를 li 바깥에 표시 */
+/* 새 버전 알림 박스 */
+.bluebox-newversion {
+  @include bluebox-base;                // 공통 박스 기본 스타일
+  @include bluebox-color(#dbe8fb, #79a5e4); // 색상 믹스인으로 배경/테두리 지정
+  text-align: center;                   // 텍스트 가운데 정렬
+  font-size: 1.111em;                   // 글자 크기 조정
+  font-weight: bold;                    // 굵게 표시
 }
-
-/* li 항목 */
-[class^="bluebox-"] li {
-  margin-bottom: 0.3em;
-  text-indent: 0.0em; /* 첫 줄은 번호 옆으로 당김 */
-  padding-left: 0.7em; /* 전체 들여쓰기 */
-  font-size: 0.95em;
-}
-
-/* 문단 */
-[class^="bluebox-"] p {
-  margin: 0 0 0.25em 0;
-  line-height: 1.5;
-  font-size: 0.95em;
-}
-
-/* nesting 된 경우 너무 작아지는 거 방지 */
-[class^="bluebox-"] li ul li
-{
-  font-size: 1.0em;
-  margin-left: -1.0em;
-}
-
