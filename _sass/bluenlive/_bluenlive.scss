@@ -52,6 +52,12 @@
   @include bluebox-color(#eeeeee, #c1c1c1);
 }
 
+/* history용 아주 옅은 회색 박스 */
+.bluebox-history {
+  @include bluebox-base;
+  @include bluebox-color(#f5f5f5, transparent);
+}
+
 /* 파란색 박스 */
 .bluebox-blue {
   @include bluebox-base;

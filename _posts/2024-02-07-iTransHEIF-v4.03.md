@@ -40,6 +40,7 @@ categories:
 
 ## 히스토리
 
+{: .bluebox-history}
 - 2024.2.7꞉ v4.03
   - 스레드 생성 코드 개선
   - [FFmpeg](http://ffmpeg.org/download.html){:target="_blank"}을 6.1.1\[gyan.dev\]로 업데이트
