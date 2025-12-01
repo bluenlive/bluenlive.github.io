@@ -26,7 +26,7 @@ gallery2:
 
 유튜브 《이강민의 잡지사》에서 1980년대까지도 **강원도 탄광촌에서는 개봉관**이 있었다는 얘기를 들었다.\
 
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/oKbo5XDQU7s?controls=0&start=1320&end=1380" frameborder="0" allowfullscreen></iframe>
+{% include bluenlive/youtube.html id="oKbo5XDQU7s" params="controls=0&start=1320&end=1380" %}
 
 그 때만해도 **탄광촌에서는 개도 만원짜리를 물고 다닌다**는 얘기가 들리던 시절이었다.\
 이후 이 얘기는 석탄 산업이 축소되고, 조선업이 발달하면서 **거제도에서는 개도 만원짜리를 물고 다닌다**로 변형됐다.

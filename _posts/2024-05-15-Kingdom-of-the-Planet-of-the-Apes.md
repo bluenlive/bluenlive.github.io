@@ -18,7 +18,7 @@ categories:
 제작 초기에는 시리즈의 리부트가 아니냐는 소문이 있었지만, 결국은 시리즈의 연작으로 결정되었다.  
 하지만, 이 영화의 지향점은 심각할 정도로 명확하다. 1968년 개봉한 〈혹성탈출〉의 **리메이크 아닌 리메이크**.
 
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/jTgNhvNhcP4?controls=0" frameborder="0" allowfullscreen></iframe>
+{% include bluenlive/youtube.html id="jTgNhvNhcP4" %}
 
 ## 오마주에 함몰
 

@@ -16,7 +16,7 @@ categories:
 ![image](/images/2024-02-12b/deadpool_Bs64.jpg){: .align-center}
 *폭망해가는 마블의 유일한 구세주(들)*
 
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/hU05_Rkm8qE?controls=0" frameborder="0" allowfullscreen></iframe>
+{% include bluenlive/youtube.html id="hU05_Rkm8qE" %}
 
 <div class="quoteMachine">
   <div class="theQuote">

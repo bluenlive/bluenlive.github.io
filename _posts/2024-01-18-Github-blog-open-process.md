@@ -25,7 +25,7 @@ Ruby와 Jekyll을 설치하여 로컬에서 블로그를 개발한 뒤, 깃허�
 나는 간단하게 **Minimal Mistakes** 테마를 fork하여 블로그를 개설했다.  
 세부 절차는 아래 유튜브 영상을 참고.
 
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/--MMmHbSH9k?controls=0" frameborder="0" allowfullscreen></iframe>
+{% include bluenlive/youtube.html id="--MMmHbSH9k" %}
 
 ## 2. 테마 및 디자인 설정
 

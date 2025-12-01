@@ -13,15 +13,15 @@ AI가 모창하는 노래 컨텐츠는 이제 너무 많이 나와 식상해졌�
 심지어 한국어를 부를 때 일부 어눌한 발음도 느껴진다... ㄷㄷㄷ
 
 우선 한국어 Full 버전.
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/m_TDGMga86Q?controls=0" frameborder="0" allowfullscreen></iframe>
+{% include bluenlive/youtube.html id="m_TDGMga86Q" %}
 
 다음은 4개 국어 버전.
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/0Cyfg5qlgyY?controls=0" frameborder="0" allowfullscreen></iframe>
+{% include bluenlive/youtube.html id="0Cyfg5qlgyY" %}
 
 이건 〈에반게리온〉 구 극장판 OST, 《오라 달콤한 죽음이여》
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/EhBDUyKqesA?controls=0" frameborder="0" allowfullscreen></iframe>
+{% include bluenlive/youtube.html id="EhBDUyKqesA" %}
 
 ---
 
 덧. 뽀나스: 《사건의 지평선》
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/6vmYrQOtX1g?controls=0" frameborder="0" allowfullscreen></iframe>
+{% include bluenlive/youtube.html id="6vmYrQOtX1g" %}

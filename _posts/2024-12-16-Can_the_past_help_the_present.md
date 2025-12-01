@@ -17,4 +17,4 @@ categories:
   </div>
 </div>
 
-<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/yL9eRIFQJGE?controls=0" frameborder="0" allowfullscreen></iframe>
+{% include bluenlive/youtube.html id="yL9eRIFQJGE" %}
