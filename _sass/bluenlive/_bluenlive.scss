@@ -157,3 +157,51 @@ ol[class^="bluebox-"] {
   font-weight: bold!important;
 }
 
+/******************
+ * 인용문 박스
+ ******************/
+
+/* 공통 인용문 박스 */
+.quoteMachine {
+  margin: 1.2em 0;
+  position: relative;
+
+  blockquote {
+    @include bluebox-blockquote-clean;
+    position: relative;
+    font-size: 1.05em;
+  }
+
+  .quotationMark {
+    position: absolute;
+    font-size: 2em;
+    color: #aaa;
+  }
+
+  .quotationMark--left {
+    left: -0.6em;
+    top: -0.2em;
+  }
+
+  .quotationMark--right {
+    right: -0.6em;
+    bottom: -0.2em;
+  }
+
+  .quoteAuthor {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    text-align: right;
+    color: #666;
+  }
+}
+
+/* 가운데 정렬 */
+.theQuote {
+  text-align: center;
+}
+
+/* 왼쪽 정렬 */
+.theQuoteLeft {
+  text-align: left;
+}
