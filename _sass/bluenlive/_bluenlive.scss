@@ -55,7 +55,7 @@
 /* history용 아주 옅은 회색 박스 */
 .bluebox-history {
   @include bluebox-base;
-  @include bluebox-color(#f5f5f5, transparent);
+  @include bluebox-color(#fafafa, transparent);
 }
 
 /* 파란색 박스 */
@@ -91,4 +91,11 @@ ol[class^="bluebox-"] {
   margin: 0 0 0.25em 0;
   line-height: 1.5;
   font-size: 0.95em;
+}
+
+/* nesting 된 경우 너무 작아지는 거 방지 */
+[class^="bluebox-"] li ul li
+{
+  font-size: 1.0em;
+  margin-left: -1.0em;
 }
