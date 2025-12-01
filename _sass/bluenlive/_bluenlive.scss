@@ -132,6 +132,12 @@ ol[class^="bluebox-"] {
   @include bluebox-color(#fedec7, #fe8943);
 }
 
+/* 투명 박스 */
+.bluebox-transparent {
+  @include bluebox-base;
+  @include bluebox-color(transparent, #c1c1c1);
+}
+
 /* 새 버전 알림 박스 */
 .bluebox-newversion {
   @include bluebox-base;                // 공통 박스 기본 스타일

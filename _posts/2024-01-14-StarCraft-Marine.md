@@ -26,9 +26,8 @@ categories:
 스타크래프트 세계관을 배경으로 하는 FPS 장르로서 아무래도 당연한 것이기도 하다.  
 (3개 종족을 모두 구현하려는 목표를 가졌지만) 현재는 테란만 구현되어 있는 점도 한몫 하는 것 같다.
 
-<div style="padding: 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em;"><p style="margin-bottom: 0;"><span style="font-size: 1.05em;"><b>
+{: .bluebox-transparent}
 《스타크래프트: 고스트》 시네마틱에서 고스트에게 빈정거리는 마린을 생각하면 뭔가 웃긴 지점이기도 함
-</b></span></p></div>
 
 {% include bluenlive/youtube.html id="Dflu0cRGD5I" %}
 

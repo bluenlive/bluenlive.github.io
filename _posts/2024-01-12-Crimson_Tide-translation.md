@@ -53,15 +53,13 @@ toc_sticky: true
 
 위의 번역은 놀랍게도 아래의 원문을 번역한 것이다.
 
-<div style="padding: 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em;"><p style="margin-bottom: 0;"><span style="font-size: 1.05em;"><b>
+{: .bluebox-transparent}
 The threats come as a response to the US involvement in Chechnya and are not considered idle.
-</b></span></p></div>
 
 그러니까 대략 아래와 같은 내용이다.
 
-<div style="padding: 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em;"><p style="margin-bottom: 0;"><span style="font-size: 1.05em;"><b>
+{: .bluebox-transparent}
 이는 미국이 체첸 사태에 개입한 것에 대한 대응으로 나온 것으로 결코 무시할 수 없다 보여집니다.
-</b></span></p></div>
 
 체첸을 **체크냐**라고 적은 건 그냥 애교 수준이다.
 

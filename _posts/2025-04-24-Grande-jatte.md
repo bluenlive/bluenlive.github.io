@@ -27,9 +27,8 @@ toc_sticky: true
 
 <div style="border-style: dashed; border-width: 1px; border-color: #9fd331; background-color: #e7fdb5; padding: 10px;"><p style="text-align: center; margin-bottom: 0;"><span style="font-size: 1.1em;"><b><a href="https://zockr.tistory.com/225" target="_blank">이전 블로그(ZockrWorld)</a>에 올렸던 글을, 리뉴얼차 현 블로그로 옮겨 재작성한 글입니다</b></span></p></div><p><br /></p>
 
-<div style="padding: 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em;"><p style="margin-bottom: 0;"><span style="font-size: 1.05em;"><b>
+{: .bluebox-transparent}
 이 작품에 대한 기본적인 지식은 《명화 속 흥미로운 과학이야기》라는 책에서 얻었음을 미리 밝힌다.
-</b></span></p></div>
 
 ![image](/images/2025-04-24/A_Sunday_on_La_Grande_Jatte,1884_Bs64s64.jpg){: .align-center}
 *쇠라의 걸작 《그랑드자트 섬의 일요일 오후》*
