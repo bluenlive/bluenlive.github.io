@@ -13,7 +13,7 @@
           {% assign safe_content = include.content | replace: '||', '§PIPE§' %}
           {% assign lines = safe_content | split:"|" %}
           {%- for line in lines -%}
-            {{ line | replace: '§PIPE§','|' | markdownify | strip_newlines }}{% unless forloop.last %}<br/>{% endunless %}
+            {{ line | replace: '§PIPE§','|' | markdownify | remove: '<p>' | remove: '</p>' }}{% unless forloop.last %}<br/>{% endunless %}
           {%- endfor -%}
         {% endif %}
       {% endif %}
