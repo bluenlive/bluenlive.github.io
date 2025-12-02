@@ -1,0 +1,130 @@
+/*********************************************************
+ * _contents.scss / 본문 스타일용 scss
+ * =======================================================
+ * <div> 태그를 markdown으로 구현하기 위한 커스텀 스타일
+ * 및 본문 스타일 보강용
+ * assets/css/main.scss 에서 import
+ * 구성: [다운로드 박스, YouTube 영상 주석, 본문 스타일]
+ *********************************************************/
+
+/***---------------------------------------------------
+ * 다운로드 박스
+ * ----------------------------------------------------
+ * 다운로드 아이콘 및 password
+ ***---------------------------------------------------*/
+
+ .download-box {
+  text-align: center;
+  font-size: 0.95em!important;
+  margin: 0.8em 0!important;   /* 위아래 여백 */
+  line-height: 1.2;  /* 줄 간격 조금 붙임 */
+}
+
+.password {
+  color: red;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+/***---------------------------------------------------
+ * YouTube 영상 주석 영역
+ ***---------------------------------------------------*/
+
+.YouTube-note {
+  display: block;
+  text-align: center;
+  font-size: .8rem!important;
+  color: grey!important;
+  margin: -0.5em 0 0 0!important;      /* 위쪽으로 붙임 여백 */
+}
+
+
+/***---------------------------------------------------
+ * 본문 스타일
+ * ----------------------------------------------------
+ * 본문 스타일을 보강하기 위한 부분
+ ***---------------------------------------------------*/
+
+/* ---------------------------------------------------
+ * 본문 하단 여백 증가
+ * --------------------------------------------------- */
+
+ .page__content {
+  margin-bottom: 0.75em;
+ }
+
+/* ---------------------------------------------------
+ * 각주 영역
+ * --------------------------------------------------- */
+
+.footnotes
+{
+    font-size: 0.92em;
+}
+
+/* ---------------------------------------------------
+ * 기타 등등
+ * --------------------------------------------------- */
+
+.bmc-btn {
+  height: 48px!important;
+}
+
+img.bmac {
+    max-width: 100%;
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+    transition: opacity .1s ease-out;
+    -moz-transition: opacity .1s ease-out;
+    -webkit-transition: opacity .1s ease-out;
+    -o-transition: opacity .1s ease-out;
+}
+
+img.bmac:hover {
+    opacity: 0.70;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+    transition: opacity .5s ease-out;
+    -moz-transition: opacity .5s ease-out;
+    -webkit-transition: opacity .5s ease-out;
+    -o-transition: opacity .5s ease-out;
+}
+
+img + em {
+  display: block;
+  text-align: center;
+  font-size: .8rem;
+  color: grey;
+}
+
+hr.scissors {
+  padding: 0;
+  padding-top: 1px;
+  margin-top: 12px;
+  margin-bottom: 11px;
+  border: none;
+  border-top: 1px dashed #8c8b8b;
+  color: #333;
+  width: 99%;
+  text-align: left;
+  background-image: none;
+  height: 5px;
+  overflow:visible;
+}
+
+hr.scissors::after {
+  z-index: 99;
+  content: '\002701';
+  background: #ffffff;
+  display: inline-block;
+  position: relative;
+  top : -15px;
+  left: 40px;
+  padding: 0 0.25em;
+  color: #8c8b8b;
+  font-size: 18px;
+}
+
+.clear {
+  clear: both;
+}
