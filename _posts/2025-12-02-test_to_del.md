@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "삭제할 내용 테스트"
-date: 2025-12-02 08:00:00 +0900
+date: 2025-12-03 08:00:00 +0900
 categories:
   - MyProgram
 ---

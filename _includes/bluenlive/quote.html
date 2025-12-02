@@ -4,7 +4,7 @@
       {% if include.content %}
         {% if include.content.first %}
           {%- for line in include.content -%}
-            {{ line }}<br/>
+            {{ line }}{% unless forloop.last %}<br/>{% endunless %}
           {%- endfor -%}
         {% else %}
           {{ include.content }}
