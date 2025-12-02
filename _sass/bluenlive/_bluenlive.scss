@@ -170,22 +170,12 @@ ol[class^="bluebox-"] {
   margin-left: -1.0em;
 }
 
+/**** 적용을 위한 색상 박스 ****/
 
 /* 회색 박스 */
 .bluebox-gray {
   @include bluebox-base;
   @include bluebox-color(#eeeeee, #c1c1c1);
-}
-
-/* history용 아주 옅은 회색 박스 */
-.bluebox-history {
-  @include bluebox-base;
-  background: linear-gradient(
-    to bottom,
-    rgba(250, 250, 250, 1),
-    rgba(250, 250, 250, 0)
-  );
-  border: transparent;
 }
 
 /* 파란색 박스 */
@@ -200,10 +190,28 @@ ol[class^="bluebox-"] {
   @include bluebox-color(#fefeb8, #f3c534);
 }
 
-/* 빨간색 박스 */
-.bluebox-red {
+/* 오렌지색 박스 */
+.bluebox-orange {
   @include bluebox-base;
   @include bluebox-color(#fedec7, #fe8943);
+}
+
+/* 분홍색 박스 */
+.bluebox-pink {
+  @include bluebox-base;
+  @include bluebox-color(#FFE4F4, #E38FBC);
+}
+
+/* 초록색 박스 */
+.bluebox-green {
+  @include bluebox-base;
+  @include bluebox-color(#caeece, #80b888);
+}
+
+/* 갈색 박스 */
+.bluebox-brown {
+  @include bluebox-base;
+  @include bluebox-color(#E6D8C9, #B4997E);
 }
 
 /* 투명 박스 */
@@ -211,6 +219,8 @@ ol[class^="bluebox-"] {
   @include bluebox-base;
   @include bluebox-color(transparent, #c1c1c1);
 }
+
+/**** 적용을 위한 용도별 박스 ****/
 
 /* 새 버전 알림 박스 */
 .bluebox-newversion {
@@ -229,4 +239,15 @@ ol[class^="bluebox-"] {
   color: #980000!important;
   font-size: 1.222em!important;
   font-weight: bold!important;
+}
+
+/* history용 아주 옅은 회색 박스 */
+.bluebox-history {
+  @include bluebox-base;
+  background: linear-gradient(
+    to bottom,
+    rgba(250, 250, 250, 1),
+    rgba(250, 250, 250, 0)
+  );
+  border: transparent;
 }
