@@ -50,10 +50,6 @@ categories:
 
 이렇게 많은 음식들을 끝내 다 먹어치우고 나왔다.
 
-<div class="quoteMachine">
-  <div class="theQuote">
-    <blockquote><span class="quotationMark quotationMark--left"></span>
-행복한 25주년!!!
-    <span class="quotationMark quotationMark--right"></span></blockquote>
-  </div>
-</div>
+{% include bluenlive/quote.html
+   align="center"
+   content="행복한 25주년!!!" %}

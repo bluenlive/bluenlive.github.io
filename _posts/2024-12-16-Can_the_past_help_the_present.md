@@ -6,15 +6,7 @@ categories:
   - books
 ---
 
-<div class="quoteMachine">
-  <div class="theQuoteLeft">
-    <blockquote><span class="quotationMark quotationMark--left"></span >
-현재가 과거를 도울 수 있는가?<br />
-산 자가 죽은 자를 구할 수 있는가?<br /><br />
-과거가 현재를 도울 수 있는가?<br />
-죽은 자가 산 자를 구할 수 있는가?
-    <span class="quotationMark quotationMark--right"></span ></blockquote>
-  </div>
-</div>
+{% include bluenlive/quote.html
+   content="현재가 과거를 도울 수 있는가?|산 자가 죽은 자를 구할 수 있는가?||과거가 현재를 도울 수 있는가?|죽은 자가 산 자를 구할 수 있는가?" %}
 
 {% include bluenlive/youtube.html id="yL9eRIFQJGE" %}

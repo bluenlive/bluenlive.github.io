@@ -98,16 +98,8 @@ tags: ["Bohemian Rhapsody", "Queen"]
 시옹 성은 바이런의 시 《시옹의 죄수(The Prisoner of Chillon)》로도 잘 알려져있다.\
 자유를 옹호하던 수도사로서 6년 간 감금되었던 프랑수아 보니바르(François Bonivard)를 만난 뒤 쓴 시다.
 
-<div class="quoteMachine">
-  <div class="theQuoteLeft">
-    <blockquote><span class="quotationMark quotationMark--left"></span >
-"Eternal Spirit of the chainless Mind!<br />
-Brightest in dungeons, Liberty! thou art..."<br />
-"쇠사슬 없는 정신의 영원한 영혼이여!<br />
-가장 어두운 감옥 속에서조차 가장 빛나는 존재, 그것은 바로 자유로다!"
-    <span class="quotationMark quotationMark--right"></span ></blockquote>
-  </div>
-</div>
+{% include bluenlive/quote.html
+   content='"Eternal Spirit of the chainless Mind!|Brightest in dungeons, Liberty! thou art..."|"쇠사슬 없는 정신의 영원한 영혼이여!|가장 어두운 감옥 속에서조차 가장 빛나는 존재, 그것은 바로 자유로다!"' %}
 
 ![image](/images/2025-05-17/115_IMG_9292s64.jpg){: .align-center}
 *지하감옥과 교수형대가 있는 아름다운 시옹 성*

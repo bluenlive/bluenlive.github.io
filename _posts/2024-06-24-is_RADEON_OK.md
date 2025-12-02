@@ -36,13 +36,8 @@ categories:
 
 그리고 테스트를 수행해보니... **10bit 인코딩을 지원하지 않는다**.
 
-<div class="quoteMachine">
-  <div class="theQuoteLeft">
-    <blockquote><span class="quotationMark quotationMark--left"></span >
-아니, 리사 수 누님 이게 뭡니까?
-    <span class="quotationMark quotationMark--right"></span ></blockquote>
-  </div>
-</div>
+{% include bluenlive/quote.html
+   content="아니, 리사 수 누님 이게 뭡니까?" %}
 
 일단 당황스러움을 뒤로 하고 테스트를 수행했다.
 
@@ -117,10 +112,5 @@ AV1으로 인코딩 하는 경우 화면의 우측과 하단에 **블랙 바가 
 
 H.264나 HEVC 처럼 metadata에 crop 정보를 기록할 수도 없다.
 
-<div class="quoteMachine">
-  <div class="theQuoteLeft">
-    <blockquote><span class="quotationMark quotationMark--left"></span >
-AMD 라데온은 아직도 쓸만해지기는 멀었다.
-    <span class="quotationMark quotationMark--right"></span ></blockquote>
-  </div>
-</div>
+{% include bluenlive/quote.html
+   content="AMD 라데온은 아직도 쓸만해지기는 멀었다." %}

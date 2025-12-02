@@ -9,13 +9,8 @@ categories:
 
 ![image](/images/2025-10-21/poster_okl_s64.jpg){: .align-center}
 
-<div class="quoteMachine">
-  <div class="theQuoteLeft">
-    <blockquote><span class="quotationMark quotationMark--left"></span>
-"Every revolution begins by fighting the system—and ends with the revolutionaries fighting each other."
-    <span class="quotationMark quotationMark--right"></span></blockquote>
-  </div>
-</div>
+{% include bluenlive/quote.html
+   content='"Every revolution begins by fighting the system—and ends with the revolutionaries fighting each other."' %}
 
 〈원 배틀 애프터 어나더〉는 해석하면 〈끊임 없이 이어지는 전투〉라는 뜻이다.\
 이 영화는 그야말로 끊임 없이 이어지는 투쟁을 담은 영화다.\

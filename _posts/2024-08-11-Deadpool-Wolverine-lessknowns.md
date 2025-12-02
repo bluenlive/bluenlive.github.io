@@ -38,13 +38,9 @@ toc_sticky: true
 
 데드풀이 캐나다를 언급하는 TVA 요원에게 **감히 내 나라 이름을 입에 담지 말라**고 말한다.
 
-<div class="quoteMachine">
-  <div class="theQuote">
-    <blockquote><span class="quotationMark quotationMark--left"></span >
-Get my country's name out of your fucking mouth!
-    <span class="quotationMark quotationMark--right"></span ></blockquote>
-  </div>
-</div>
+{% include bluenlive/quote.html
+   align="center"
+   content="Get my country's name out of your fucking mouth!" %}
 
 이 대사는 **윌 ~~스매시~~스미스**가 **2002년 아카데미 시상식**에서 했던 미친 짓을 비꼬는 대사다.
 
@@ -68,21 +64,13 @@ Get my country's name out of your fucking mouth!
 
 ## 5명의 퍼니셔?
 
-<div class="quoteMachine">
-  <div class="theQuote">
-    <blockquote><span class="quotationMark quotationMark--left"></span >
-어느 퍼니셔? 5명인가 됐잖아?
-    <span class="quotationMark quotationMark--right"></span ></blockquote>
-  </div>
-</div>
+{% include bluenlive/quote.html
+   align="center"
+   content="어느 퍼니셔? 5명인가 됐잖아?" %}
 
-<div class="quoteMachine">
-  <div class="theQuote">
-    <blockquote><span class="quotationMark quotationMark--left"></span >
-블레이드는 하나 뿐이었지
-    <span class="quotationMark quotationMark--right"></span ></blockquote>
-  </div>
-</div>
+{% include bluenlive/quote.html
+   align="center"
+   content="블레이드는 하나 뿐이었지" %}
 
 블레이드의 저 대사는 물론 2025년에 개봉 예정인 **〈블레이드〉 리부트**를 두고 친 드립이다.  
 그런데, 그 앞의 데드풀의 대사도 역시 드립. 데드풀 영화 및 드라마 시리즈는 **4명**이 연기했었기 때문.
@@ -93,13 +81,9 @@ Get my country's name out of your fucking mouth!
 
 **제4의 벽**은 넘지만, **재생 능력은 갖추지 못했던** 나이스풀이 죽을 때 데드풀이 외친다.
 
-<div class="quoteMachine">
-  <div class="theQuote">
-    <blockquote><span class="quotationMark quotationMark--left"></span >
-He died a hero!!
-    <span class="quotationMark quotationMark--right"></span ></blockquote>
-  </div>
-</div>
+{% include bluenlive/quote.html
+   align="center"
+   content="He died a hero!!" %}
 
 ![image](/images/2024-08-11/nicepool-topaz-denoises64.jpg){: .align-center}
 

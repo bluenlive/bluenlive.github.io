@@ -35,10 +35,6 @@ categories:
 1. 572.16 드라이버는 **RTX 50xx 시리즈**를 대상으로 나온 드라이버이나 거기서는 **화면 인식 문제** 발생
 2. 572.16 드라이버는 **RTX 40xx 시리즈**에서도 **화면 인식 문제** 발생
 
-<div class="quoteMachine">
-  <div class="theQuote">
-    <blockquote><span class="quotationMark quotationMark--left"></span >
-황 회장... 너 이럴래?
-    <span class="quotationMark quotationMark--right"></span ></blockquote>
-  </div>
-</div>
+{% include bluenlive/quote.html
+   align="center"
+   content="황 회장... 너 이럴래?" %}

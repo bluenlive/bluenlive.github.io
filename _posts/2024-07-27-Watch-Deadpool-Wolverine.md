@@ -23,10 +23,6 @@ categories:
 ![image](/images/2024-07-27a/20240724_102257648_iOSs64.jpg){: .align-center}
 *먹고 싶었던 건 치미창가였으나...*
 
-<div class="quoteMachine">
-  <div class="theQuote">
-    <blockquote><span class="quotationMark quotationMark--left"></span >
-Let's Fucking Go!
-    <span class="quotationMark quotationMark--right"></span ></blockquote>
-  </div>
-</div>
+{% include bluenlive/quote.html
+   align="center"
+   content="Let's Fucking Go!" %}

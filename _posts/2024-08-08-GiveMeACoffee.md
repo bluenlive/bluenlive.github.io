@@ -19,11 +19,6 @@ categories:
 
 이에 따라, [Buy Me A Coffee](https://buymeacoffee.com/bluenlive){:target="_blank"}로 후원 시스템을 변경하게 되었다.
 
-<div class="quoteMachine">
-  <div class="theQuote">
-    <blockquote><span class="quotationMark quotationMark--left"></span >
-TOSS ID로 후원해주신 분들께 감사드립니다.<br/>
-앞으로도 열심히 달려가겠습니다!
-    <span class="quotationMark quotationMark--right"></span ></blockquote>
-  </div>
-</div>
+{% include bluenlive/quote.html
+   align="center"
+   content="TOSS ID로 후원해주신 분들께 감사드립니다.|앞으로도 열심히 달려가겠습니다!" %}
