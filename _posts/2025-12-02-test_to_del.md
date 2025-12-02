@@ -11,13 +11,13 @@ categories:
 {% include bluenlive/quote.html
    align="center"
    author="hello"
-   content="They call me…,Mister Tiibs,추가 줄도 가능" %}
+   content=['They call me…','Mister Tiibs','추가 줄도 가능'] %}
 
 ---
 
 {% include bluenlive/quote.html
    author="hello"
-   content="They call me…,Mister Tiibs,'추가,줄도,가능'" %}
+   content=['They call me…','Mister Tiibs','추가,줄도,가능'] %}
 
 ---
 
