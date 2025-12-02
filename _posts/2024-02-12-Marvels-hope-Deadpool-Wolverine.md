@@ -18,10 +18,6 @@ categories:
 
 {% include bluenlive/youtube.html id="hU05_Rkm8qE" %}
 
-<div class="quoteMachine">
-  <div class="theQuote">
-    <blockquote><span class="quotationMark quotationMark--left"></span >
-마블은 망해도 <b>데드풀</b>은 영원하리!
-    <span class="quotationMark quotationMark--right"></span ></blockquote>
-  </div>
-</div>
+{% include bluenlive/quote.html
+   align="center"
+   content="마블은 망해도 **데드풀**은 영원하리!" %}
