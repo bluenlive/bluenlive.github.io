@@ -89,7 +89,4 @@ operating Mode를 Router로 설정한다.
 된다. 그것도 **꽤 잘 된다**.  
 역시 전문가의 말을 들어야 하는 거구만.
 
-<div style="position: relative; display: inline-block; padding: 15px 45px 15px 15px; margin: 5px 0; border: 1px solid #f8f861; border-left: 30px solid #f8f861; border-bottom-right-radius: 60px 10px; word-break: break-all; background: #ffff88; background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); background: -webkit-gradient(linear, left top, right bottom, color-stop(81%, #ffff88), color-stop(82%, #ffff88), color-stop(82%, #ffff88), color-stop(100%, #ffffc6)); background: -webkit-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); background: -o-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); background: -ms-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); background: linear-gradient(135deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff88', endColorstr='#ffffc6', GradientType=1); margin-bottom: 1.2em;"><p style="margin-bottom: 0;"><span style="font-family: 'NanumPen', 'Noto Sans Kr', sans-serif; font-size: 1.6em; color: #555;"><b>
-Supported by Oh
-</b></span></p></div>
-
+{% include bluenlive/postit.html content="Supported by Oh" %}

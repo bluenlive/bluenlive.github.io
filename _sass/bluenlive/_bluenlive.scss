@@ -98,7 +98,8 @@ div.rgyPostIt:hover::after {
 }
 
 div.rgyPostIt > p {
-  padding: 5px 0 !important;
+  padding: 0 !important;
+  margin: 0.5em 0;
 }
 
 div.rgyPostIt > p::before {

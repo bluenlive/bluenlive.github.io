@@ -47,6 +47,4 @@ categories:
 다시 말하면, NM과 m 모두 **지구**라는 **행성의 크기**에 기반한 단위인 것이다.  
 그렇다면, 우주 시대에선 Mile 단위가 더 적합한 것은 아닐까?
 
-<div style="position: relative; display: inline-block; padding: 15px 45px 15px 15px; margin: 5px 0; border: 1px solid #f8f861; border-left: 30px solid #f8f861; border-bottom-right-radius: 60px 10px; word-break: break-all; background: #ffff88; background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); background: -webkit-gradient(linear, left top, right bottom, color-stop(81%, #ffff88), color-stop(82%, #ffff88), color-stop(82%, #ffff88), color-stop(100%, #ffffc6)); background: -webkit-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); background: -o-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); background: -ms-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); background: linear-gradient(135deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff88', endColorstr='#ffffc6', GradientType=1); margin-bottom: 1.2em;"><p style="margin-bottom: 0;"><span style="font-family: 'NanumPen', 'Noto Sans Kr', sans-serif; font-size: 2em; color: #555;"><b>
-믿으면 골룸
-</b></span></p></div>
+{% include bluenlive/postit.html content="믿으면 골룸" %}
