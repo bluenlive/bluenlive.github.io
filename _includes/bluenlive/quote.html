@@ -15,9 +15,11 @@
       {% endif %}
       <span class="quotationMark quotationMark--right"></span></blockquote>
   </div>
-  {% if include.author %}
-    <div class="quoteAuthor">
+  <div class="quoteAuthor">
+    {% if include.author %}
       - {{ include.author }}
-    </div>
-  {% endif %}
+    {% else %}
+      {{ "" }}
+    {% endif %}
+  </div>
 </div>
