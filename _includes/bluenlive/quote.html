@@ -7,7 +7,14 @@
             {{ line }}{% unless forloop.last %}<br/>{% endunless %}
           {%- endfor -%}
         {% else %}
-          {{ include.content }}
+          {% comment %}
+            문자열일 경우: 먼저 || 를 임시 토큰으로 치환 → split → 다시 | 로 복원
+          {% endcomment %}
+          {% assign safe_content = include.content | replace: '||', '§PIPE§' %}
+          {% assign lines = safe_content | split:"|" %}
+          {%- for line in lines -%}
+            {{ line | replace: '§PIPE§', '|' }}{% unless forloop.last %}<br/>{% endunless %}
+          {%- endfor -%}
         {% endif %}
       {% endif %}
       <span class="quotationMark quotationMark--right"></span></blockquote>
