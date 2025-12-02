@@ -4,7 +4,7 @@
       {% if include.content %}
         {% if include.content.first %}
           {%- for line in include.content -%}
-            {{ line }}{% unless forloop.last %}<br/>{% endunless %}
+            {{ line | markdownify | strip_newlines }}{% unless forloop.last %}<br/>{% endunless %}
           {%- endfor -%}
         {% else %}
           {% comment %}
@@ -13,7 +13,7 @@
           {% assign safe_content = include.content | replace: '||', '§PIPE§' %}
           {% assign lines = safe_content | split:"|" %}
           {%- for line in lines -%}
-            {{ line | replace: '§PIPE§', '|' }}{% unless forloop.last %}<br/>{% endunless %}
+            {{ line | replace: '§PIPE§','|' | markdownify | strip_newlines }}{% unless forloop.last %}<br/>{% endunless %}
           {%- endfor -%}
         {% endif %}
       {% endif %}
