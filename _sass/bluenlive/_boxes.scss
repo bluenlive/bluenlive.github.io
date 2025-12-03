@@ -352,25 +352,20 @@ div.rgyPostIt > p > a {
   color: #b58900;
 }
 
-/* 답변 박스: blockquote 전체에 적용 */
-blockquote.ai-answer {
-  background: #f0f4ff;
+.ai-answer {
+  background: #f0f4ff; /* 연한 파랑 */
   border: 1px solid #c1c1c1;
-  padding: 6px 12px;
+  padding: 6px 12px; /* 상하 여백 줄임 */
   margin-bottom: 1.2em;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: relative;
 }
-blockquote.ai-answer::before {
+
+.ai-answer::before {
   content: "🤖 답변";
   display: block;
   font-weight: 600;
   margin-bottom: 4px;
   color: #3b5998;
 }
-
-/* blockquote 기본 들여쓰기 제거 */
-blockquote.ai-answer > :first-child { margin-top: 0; }
-blockquote.ai-answer > :last-child { margin-bottom: 0; }
-blockquote.ai-answer { margin-left: 0; }
-blockquote.ai-answer p { margin: 0.6em 0; }
