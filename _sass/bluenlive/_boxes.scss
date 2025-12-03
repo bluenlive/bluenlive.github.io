@@ -388,12 +388,12 @@ div.rgyPostIt > p > a {
   line-height: 1.5; /* 본문과 동일하게 맞추기 */
 }
 
-.ai-answer .katex,
-.ai-answer .MathJax {
+.ai-answer0 .katex,
+.ai-answer0 .MathJax {
   margin-right: 0.25em; /* 글자와 살짝 간격 확보 */
 }
 
-.ai-answer0 .katex,
-.ai-answer0 .MathJax {
+.ai-answer .katex,
+.ai-answer .MathJax {
   vertical-align: middle; /* 글자와 수식 baseline 맞추기 */
 }
