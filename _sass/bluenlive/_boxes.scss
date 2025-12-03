@@ -331,3 +331,24 @@ div.rgyPostIt > p::before {
 div.rgyPostIt > p > a {
   color: #555;
 }
+
+/* 테스트 */
+
+.qa-question {
+  background: #fffbe6; /* 연한 노란색 */
+  border-left: 4px solid #f5c518; /* 강조 색 */
+  padding: 12px 16px;
+  margin-bottom: 1.2em;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.qa-answer {
+  background: #f0f4ff; /* 연한 파랑 */
+  border: 1px solid #c1c1c1;
+  padding: 12px 16px;
+  margin-bottom: 1.2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
