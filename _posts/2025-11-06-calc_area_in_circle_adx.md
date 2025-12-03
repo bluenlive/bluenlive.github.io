@@ -32,7 +32,7 @@ sqrt(L^2 - x^2)의 부정적분을 계산해줘. L은 상수이고, x에 대해�
 
 이 질문에 대해 MS Copilot은 다음과 같은 답을 내놓았다.
 
-{% include bluenlive/ai-answer-open.html %}
+<div class="ai-answer" markdown="1">
 좋은 질문이에요! 우리가 풀고자 하는 적분은  
 
 $$
@@ -87,7 +87,7 @@ $$
 $$
 \int \sqrt{L^2 - x^2}\, dx = \frac{x}{2}\sqrt{L^2 - x^2} + \frac{L^2}{2}\arcsin\!\left(\frac{x}{L}\right) + C
 $$
-{% include bluenlive/ai-answer-close.html %}
+</div>
 
 여기서 다음과 같은 부정적분 식을 알 수 있다.
 
