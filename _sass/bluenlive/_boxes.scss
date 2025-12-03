@@ -342,6 +342,7 @@ div.rgyPostIt > p > a {
   border-radius: 6px;
   font-weight: 500;
   position: relative;
+  font-size: 0.95em; /* 질문은 살짝 줄임 */
 }
 
 .ai-question::before {
@@ -360,6 +361,18 @@ div.rgyPostIt > p > a {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   position: relative;
+  font-size: 0.88em;   /* 전체 글자 크기 줄임 */
+  line-height: 1.5;
+
+  /* 코드 블록과 인라인 코드 */
+  pre, code {
+    font-size: 0.88em; /* 본문과 동일하게 줄임 */
+  }
+
+  /* 수식(MathJax/KaTeX) */
+  .math, .katex, .MathJax {
+    font-size: 0.88em; /* 수식도 동일하게 줄임 */
+  }
 }
 
 .ai-answer::before {
