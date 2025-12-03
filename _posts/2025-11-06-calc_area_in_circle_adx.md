@@ -102,11 +102,9 @@ Wolfram Alpha의 결과와 이 식은 서로 달라 보이지만, 범위를 지�
 덧. 이 글과 [앞 글](/algorithm/calc_area_in_circle/) 모두 핵심적인 내용들은 AI를 통해 작성한 글들임
 
 <div class="qa-question" markdown="1">
-❓ **질문**  
 여기에 질문 내용을 작성합니다.
 </div>
 
 <div class="qa-answer" markdown="1">
-🤖 **답변**  
 여기에 Copilot의 답변을 작성합니다.
 </div>

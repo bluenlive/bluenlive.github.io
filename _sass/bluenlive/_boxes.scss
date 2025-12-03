@@ -336,19 +336,36 @@ div.rgyPostIt > p > a {
 
 .qa-question {
   background: #fffbe6; /* 연한 노란색 */
-  border-left: 4px solid #f5c518; /* 강조 색 */
-  padding: 12px 16px;
+  border-left: 4px solid #f5c518;
+  padding: 6px 12px; /* 상하 여백 줄임 */
   margin-bottom: 1.2em;
   border-radius: 6px;
   font-weight: 500;
+  position: relative;
+}
+
+.qa-question::before {
+  content: "❓ 질문";
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #b58900;
 }
 
 .qa-answer {
   background: #f0f4ff; /* 연한 파랑 */
   border: 1px solid #c1c1c1;
-  padding: 12px 16px;
+  padding: 6px 12px; /* 상하 여백 줄임 */
   margin-bottom: 1.2em;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: relative;
 }
 
+.qa-answer::before {
+  content: "🤖 답변";
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #3b5998;
+}
