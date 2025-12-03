@@ -150,17 +150,18 @@ ol[class^="bluebox-"] {
 .bluebox-recon {
   @include bluebox-base;
   @include bluebox-color(#e7fdb5, #9fd331);
+  margin-bottom: 1.5em;
 
   p {
     text-align: center;
     margin-bottom: 0;
 
     span {
-      font-size: 1.1em;
+      font-size: 1.25em;
 
       b {
         a {
-          color: inherit;
+          color: #022e51!important;
           text-decoration: none;
 
           &:hover {
