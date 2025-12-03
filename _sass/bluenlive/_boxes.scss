@@ -117,7 +117,7 @@ ol[class^="bluebox-"] {
  * 실제 적용을 위한 색상별 박스
  * --------------------------------------------------- */
 
-/* 새 버전 알림 박스 */
+/* 새 버전 알림 박스, bluenlive/new-version.html 에서 사용 */
 .bluebox-newversion {
   @include bluebox-base;                // 공통 박스 기본 스타일
   @include bluebox-color(#dbe8fb, #79a5e4); // 색상 믹스인으로 배경/테두리 지정
@@ -126,7 +126,7 @@ ol[class^="bluebox-"] {
   font-weight: bold!important;          // 굵게 표시
 }
 
-/* 스포일러 경고 박스 */
+/* 스포일러 경고 및 빡칠 때 박스, {: .bluebox-spoiler} 로 사용 */
 .bluebox-spoiler {
   @include bluebox-base;                // 공통 박스 스타일
   @include bluebox-color(#fedec7, #fe8943); // 배경색과 테두리 색상
@@ -136,7 +136,7 @@ ol[class^="bluebox-"] {
   font-weight: bold!important;
 }
 
-/* history용 아주 옅은 회색 박스 */
+/* history용 아주 옅은 회색 박스, {: .bluebox-history} 로 사용 */
 .bluebox-history {
   @include bluebox-base;
   background: linear-gradient(
@@ -147,6 +147,7 @@ ol[class^="bluebox-"] {
   border: transparent;
 }
 
+/* 전 블로그 재구성 알림 박스, bluenlive/reconstruction.html 에서 사용 */
 .bluebox-recon {
   @include bluebox-base;
   @include bluebox-color(#e7fdb5, #9fd331);

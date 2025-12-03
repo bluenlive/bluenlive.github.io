@@ -6,9 +6,8 @@ categories:
   - algorithm
 ---
 
-<div style="background-color: #fedec7; padding: 10px; border: 1px dashed #fe8943; margin-bottom: 1.2em;"><p style="text-align: center; margin-bottom: 0;"><span style="font-size: 1.111em;"><b>
-<span style="color: #980000;">파이썬으로 텍스트 파일을 읽다 문제가 터져서 빡치는 바람에 쓴 글.</span>
-</b></span></p></div>
+{: .bluebox-spoiler}
+파이썬으로 텍스트 파일을 읽다 문제가 터져서 빡치는 바람에 쓴 글.
 
 ## 사소한 시작
 

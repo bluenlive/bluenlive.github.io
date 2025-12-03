@@ -25,7 +25,11 @@ toc_icon: "book-open"
 toc_sticky: true
 ---
 
-<div style="border-style: dashed; border-width: 1px; border-color: #9fd331; background-color: #e7fdb5; padding: 10px;"><p style="text-align: center; margin-bottom: 0;"><span style="font-size: 1.1em;"><b><a href="https://zockr.tistory.com/225" target="_blank">이전 블로그(ZockrWorld)</a>에 올렸던 글을, 리뉴얼차 현 블로그로 옮겨 재작성한 글입니다</b></span></p></div><p><br /></p>
+{% include bluenlive/reconstruction.html
+   url="https://zockr.tistory.com/225"
+   link_text="이전 블로그(ZockrWorld)"
+   message="에 올렸던 글을, 리뉴얼차 현 블로그로 옮겨 재작성한 글입니다"
+%}
 
 {: .bluebox-transparent}
 이 작품에 대한 기본적인 지식은 《명화 속 흥미로운 과학이야기》라는 책에서 얻었음을 미리 밝힌다.
