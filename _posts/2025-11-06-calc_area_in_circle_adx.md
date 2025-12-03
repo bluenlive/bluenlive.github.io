@@ -32,62 +32,61 @@ sqrt(L^2 - x^2)의 부정적분을 계산해줘. L은 상수이고, x에 대해�
 
 이 질문에 대해 MS Copilot은 다음과 같은 답을 내놓았다.
 
-{::options class="ai-answer"}
-좋은 질문이에요! 우리가 풀고자 하는 적분은  
-
-$$
-\int \sqrt{L^2 - x^2}\, dx
-$$
-
-입니다. 여기서 $$ L $$은 상수입니다.  
-
----
-
-### 풀이 과정 ✨
-
-1. **삼각 치환**  
-   $$ x = L \sin \theta $$ 라고 두면,
-
-   $$
-   dx = L \cos \theta \, d\theta, \quad \sqrt{L^2 - x^2} = \sqrt{L^2 - L^2 \sin^2 \theta} = L \cos \theta
-   $$
-
-   따라서 적분은
-
-   $$
-   \int \sqrt{L^2 - x^2}\, dx = \int (L \cos \theta)(L \cos \theta \, d\theta) = L^2 \int \cos^2 \theta \, d\theta
-   $$
-
-2. **삼각함수 제곱 적분**  
-   $$\cos^2 \theta = \tfrac{1}{2}(1 + \cos 2\theta)$$ 이므로,
-
-   $$\begin{align*}
-   L^2 \int \cos^2 \theta \, d\theta & = \frac{L^2}{2} \int (1 + \cos 2\theta)\, d\theta\\
-   & = \frac{L^2}{2} \left( \theta + \frac{1}{2}\sin 2\theta \right) + C
-   \end{align*}$$
-
-3. **원래 변수로 복원**  
-   $$\theta = \arcsin\left(\tfrac{x}{L}\right)$$ 이고,
-
-   $$
-   \sin 2\theta = 2 \sin \theta \cos \theta = \frac{2x}{L} \cdot \frac{\sqrt{L^2 - x^2}}{L} = \frac{2x \sqrt{L^2 - x^2}}{L^2}
-   $$
-
-   따라서,
-
-   $$
-   \frac{L^2}{2} \left( \theta + \frac{1}{2}\sin 2\theta \right)
-   = \frac{L^2}{2} \arcsin\left(\frac{x}{L}\right) + \frac{x}{2}\sqrt{L^2 - x^2}
-   $$
-
----
-
-### 최종 결과 ✅
-
-$$
-\int \sqrt{L^2 - x^2}\, dx = \frac{x}{2}\sqrt{L^2 - x^2} + \frac{L^2}{2}\arcsin\!\left(\frac{x}{L}\right) + C
-$$
-{:/options}
+{: .ai-answer}
+>좋은 질문이에요! 우리가 풀고자 하는 적분은  
+>
+>$$
+>\int \sqrt{L^2 - x^2}\, dx
+>$$
+>
+>입니다. 여기서 $$ L $$은 상수입니다.  
+>
+>---
+>
+>### 풀이 과정 ✨
+>
+>1. **삼각 치환**  
+>   $$ x = L \sin \theta $$ 라고 두면,
+>
+>   $$
+>   dx = L \cos \theta \, d\theta, \quad \sqrt{L^2 - x^2} = \sqrt{L^2 - L^2 \sin^2 \theta} = L \cos \theta
+>   $$
+>
+>   따라서 적분은
+>
+>   $$
+>   \int \sqrt{L^2 - x^2}\, dx = \int (L \cos \theta)(L \cos \theta \, d\theta) = L^2 \int \cos^2 \theta \, d\theta
+>   $$
+>
+>2. **삼각함수 제곱 적분**  
+>   $$\cos^2 \theta = \tfrac{1}{2}(1 + \cos 2\theta)$$ 이므로,
+>
+>   $$\begin{align*}
+>   L^2 \int \cos^2 \theta \, d\theta & = \frac{L^2}{2} \int (1 + \cos 2\theta)\, d\theta\\
+>   & = \frac{L^2}{2} \left( \theta + \frac{1}{2}\sin 2\theta \right) + C
+>   \end{align*}$$
+>
+>3. **원래 변수로 복원**  
+>   $$\theta = \arcsin\left(\tfrac{x}{L}\right)$$ 이고,
+>
+>   $$
+>   \sin 2\theta = 2 \sin \theta \cos \theta = \frac{2x}{L} \cdot \frac{\sqrt{L^2 - x^2}}{L} = \frac{2x \sqrt{L^2 - x^2}}{L^2}
+>   $$
+>
+>   따라서,
+>
+>   $$
+>   \frac{L^2}{2} \left( \theta + \frac{1}{2}\sin 2\theta \right)
+>   = \frac{L^2}{2} \arcsin\left(\frac{x}{L}\right) + \frac{x}{2}\sqrt{L^2 - x^2}
+>   $$
+>
+>---
+>
+>### 최종 결과 ✅
+>
+>$$
+>\int \sqrt{L^2 - x^2}\, dx = \frac{x}{2}\sqrt{L^2 - x^2} + \frac{L^2}{2}\arcsin\!\left(\frac{x}{L}\right) + C
+>$$
 
 여기서 다음과 같은 부정적분 식을 알 수 있다.
 
