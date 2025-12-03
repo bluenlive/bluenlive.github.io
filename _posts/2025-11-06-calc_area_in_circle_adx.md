@@ -27,12 +27,12 @@ categories:
 
 ## MS Copilot (GPT-5) 활용
 
-{: .bluebox-yellow}
+{: .ai-question}
 sqrt(L^2 - x^2)의 부정적분을 계산해줘. L은 상수이고, x에 대해서 계산해줘.
 
 이 질문에 대해 MS Copilot은 다음과 같은 답을 내놓았다.
 
-<div style="padding: 10px; border: 1px dashed #c1c1c1; margin-bottom: 1.2em;" markdown="1">
+{: .ai-answer}
 좋은 질문이에요! 우리가 풀고자 하는 적분은  
 
 $$
@@ -87,7 +87,7 @@ $$
 $$
 \int \sqrt{L^2 - x^2}\, dx = \frac{x}{2}\sqrt{L^2 - x^2} + \frac{L^2}{2}\arcsin\!\left(\frac{x}{L}\right) + C
 $$
-</div>
+{: .ai-answer}
 
 여기서 다음과 같은 부정적분 식을 알 수 있다.
 
@@ -100,11 +100,3 @@ Wolfram Alpha의 결과와 이 식은 서로 달라 보이지만, 범위를 지�
 ---
 
 덧. 이 글과 [앞 글](/algorithm/calc_area_in_circle/) 모두 핵심적인 내용들은 AI를 통해 작성한 글들임
-
-<div class="qa-question" markdown="1">
-여기에 질문 내용을 작성합니다.
-</div>
-
-<div class="qa-answer" markdown="1">
-여기에 Copilot의 답변을 작성합니다.
-</div>

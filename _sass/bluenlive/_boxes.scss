@@ -334,7 +334,7 @@ div.rgyPostIt > p > a {
 
 /* 테스트 */
 
-.qa-question {
+.ai-question {
   background: #fffbe6; /* 연한 노란색 */
   border-left: 4px solid #f5c518;
   padding: 6px 12px; /* 상하 여백 줄임 */
@@ -344,7 +344,7 @@ div.rgyPostIt > p > a {
   position: relative;
 }
 
-.qa-question::before {
+.ai-question::before {
   content: "❓ 질문";
   display: block;
   font-weight: 600;
@@ -352,7 +352,7 @@ div.rgyPostIt > p > a {
   color: #b58900;
 }
 
-.qa-answer {
+.ai-answer {
   background: #f0f4ff; /* 연한 파랑 */
   border: 1px solid #c1c1c1;
   padding: 6px 12px; /* 상하 여백 줄임 */
@@ -362,7 +362,7 @@ div.rgyPostIt > p > a {
   position: relative;
 }
 
-.qa-answer::before {
+.ai-answer::before {
   content: "🤖 답변";
   display: block;
   font-weight: 600;
