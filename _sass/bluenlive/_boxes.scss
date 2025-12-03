@@ -342,7 +342,7 @@ div.rgyPostIt > p > a {
   border-radius: 6px;
   font-weight: 500;
   position: relative;
-  font-size: 0.97em; /* 질문은 살짝 줄임 */
+  font-size: 0.975em; /* 질문은 살짝 줄임 */
 }
 
 .ai-question::before {
@@ -361,17 +361,17 @@ div.rgyPostIt > p > a {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   position: relative;
-  font-size: 0.92em;   /* 전체 글자 크기 줄임 */
+  font-size: 0.95em;   /* 전체 글자 크기 줄임 */
   line-height: 1.5;
 
   /* 코드 블록과 인라인 코드 */
   pre, code {
-    font-size: 0.92em; /* 본문과 동일하게 줄임 */
+    font-size: 0.95em; /* 본문과 동일하게 줄임 */
   }
 
   /* 수식(MathJax/KaTeX) */
   .math, .katex, .MathJax {
-    font-size: 0.92em; /* 수식도 동일하게 줄임 */
+    font-size: 0.95em; /* 수식도 동일하게 줄임 */
   }
 }
 
@@ -383,13 +383,13 @@ div.rgyPostIt > p > a {
   color: #3b5998;
 }
 
-.ai-answer .katex,
-.ai-answer .MathJax {
+.ai-answer0 .katex,
+.ai-answer0 .MathJax {
   line-height: 1.5; /* 본문과 동일하게 맞추기 */
 }
 
-.ai-answer0 .katex,
-.ai-answer0 .MathJax {
+.ai-answer .katex,
+.ai-answer .MathJax {
   margin-right: 0.25em; /* 글자와 살짝 간격 확보 */
 }
 
