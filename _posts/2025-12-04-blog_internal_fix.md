@@ -20,4 +20,4 @@ categories:
 - 인용구 박스, 다운로드 박스 역시 `Liquid`로 구현
 - AI 질문 답별 박스 별도 스타일 지정하고 `Liquid`로 구현
 - Postit 효과 박스 `Liquid`로 구현
-- Youtube Embedded 영역은 순정의 `\{% include video \%}`로 변환
+- Youtube Embedded 영역은 순정의 `{% include video %}`로 변환
