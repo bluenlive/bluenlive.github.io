@@ -29,15 +29,17 @@ FPO는 HEIF/JPEG의 Exif 정보 중 촬영일자 정보를 읽어 **파일명을
 - **멀티코어 환경에서 이미지를 동시에 변환**(v5.1a부터)
 - JPEG 파일을 읽을 때 노이즈(JPEG Artifacts)를 제거하는 옵션 추가([jpeg-quantsmooth](https://github.com/ilyakurdyukov/jpeg-quantsmooth){:target="_blank"} 적용)
 - Exif에 기록된 촬영일자 순으로 파일명 수정
-- Exif 정보가 없는 경우 파일 날짜 활용
+  - Exif 정보가 없는 경우 파일 날짜 활용
+- Exif의 날짜 정보 활용
+  - Exif 날짜를 촬영일자로 수정
+  - 파일 날짜를 Exif 날짜로 변경
+  - 사용자 선택시 파일명에서 날짜 및 시간 추출도 가능
 - 텍스트 데이터를 통한 Exif 생성
 - JPEG 외에 PNG / GIF / WebP / MKV / MP4 / MOV / AVI까지 파일명 수정하며,  
 PNG / WebP / MP4 / MOV / MKV는 파일 내에 태깅된 날짜 정보 활용함
-- 사용자 선택시 PNG를 JPEG로 변환
-- PNG/JPEG 재압축 및 리사이징
-- Exif 날짜를 촬영일자로 수정
-- 파일 날짜를 Exif 날짜로 변경
-- 옵션 지정시 파일명에서 날짜 및 시간 추출
+- 사용자가 선택하면 PNG를 JPEG로 변환 가능
+- PNG/JPEG 재압축 및 리샘플링
+  - 리샘플링 시 sRGB, Linear, Oklab 색공간 선택 가능
 - jpeg 라이브러리로 [mozjpeg](https://github.com/mozilla/mozjpeg/){:target="_blank"} 사용
 - 유니코드 완벽 지원
 
@@ -52,13 +54,6 @@ PNG / WebP / MP4 / MOV / MKV는 파일 내에 태깅된 날짜 정보 활용함
 ## 히스토리
 
 {: .bluebox-history}
-- 2024.1.28꞉ v9.01 공개
-  - 인텔 IPP 라이브러리를 사용하도록 수정 (이로 인해 x86 지원 종료)
-  - JPEG comment를 제대로 읽고 쓰지 못하는 오류 수정
-  - jpeg-quantsmooth 오류 수정꞉ 세로 크기가 DCTSIZE의 배수가 아닐 때 이미지가 깨지는 오류
-  - 파일에서 날짜를 읽을 때 최근에 변경된 날짜를 읽도록 수정
-  - libpng를 Jan 25, 2024(1.6.41)로, zlib-ng를 2.1.6(Jan 11, 2024)으로 업데이트
-
 - 2025.12.4: v9.24 공개
   - 아이콘 변경 및 UI 미세 튜닝
   - TOSS 아이디 후원을 [Buy Me A Coffee](https://buymeacoffee.com/bluenlive){:target="_blank"}로 변경
