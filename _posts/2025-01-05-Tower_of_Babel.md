@@ -40,7 +40,7 @@ categories:
 
 이러한 내용을 포함한 바벨탑의 실제 위치를 다룬 EBS 다큐멘터리를 소개한다.
 
-{% include bluenlive/youtube.html id="hU05_Rkm8qE" params="controls=0&start=1983" %}
+{% include video id="hU05_Rkm8qE?start=1983" provider="youtube" %}
 
 이 다큐멘터리에 따르면 실제 바벨탑의 모양과 크기는 다음과 같다.
 

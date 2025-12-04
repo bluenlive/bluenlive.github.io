@@ -36,7 +36,7 @@ categories:
 
 ## 애니메이션 〈플루토〉
 
-{% include bluenlive/youtube.html id="x7gmQ82HUck" %}
+{% include video id="x7gmQ82HUck" provider="youtube" %}
 
 애니 〈플루토〉는 이러한 원작을 그야말로 거의 그대로 애니메이션으로 다시 그려낸 작품이다.  
 이 작품은 **원작의 연출과 컷을 거의 그대로 반영**했고, 구성 역시 **원작의 여덟 권과 동일하게 총 8화**로 구성됐다.  

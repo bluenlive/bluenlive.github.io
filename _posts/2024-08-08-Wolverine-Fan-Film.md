@@ -11,4 +11,4 @@ categories:
 이 분이 얼마 전 **WOLVERINE 팬 무비**를 유튜브에 공개하셨다.  
 한글 자막도 달려있다. 닥치고 추천!
 
-{% include bluenlive/youtube.html id="xM5pep-vwo0" %}
+{% include video id="xM5pep-vwo0" provider="youtube" %}

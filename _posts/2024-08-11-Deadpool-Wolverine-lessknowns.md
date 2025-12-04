@@ -17,12 +17,12 @@ toc_sticky: true
 이전 포스팅에서도 언급했지만, 관리 목적상(?) 다시 한 번 소개.  
 〈데드풀과 울버린〉 오프닝을 장식하는 NSYNC의 《Bye Bye Bye》는 〈엑스멘2〉에 등장했었다.
 
-{% include bluenlive/youtube.html id="YbIizLQr380" %}
+{% include video id="YbIizLQr380" provider="youtube" %}
 
 울버린이 운전할 때 노래가 나오자마자 끄는 장면에서 **울버린이 그 노래를 싫어하는** 것을 알 수 있다.  
 심지어 이 노래를 켜는 건 다름 아닌 **파이로**.
 
-{% include bluenlive/youtube.html id="9AdF-yOJ0c8" params="controls=0&start=34&end=42" %}
+{% include video id="9AdF-yOJ0c8?start=34&end=42" provider="youtube" %}
 
 ## 인간의 뼈는 206개? 207개? 215개?
 

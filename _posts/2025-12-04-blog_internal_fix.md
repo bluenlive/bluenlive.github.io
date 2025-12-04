@@ -14,10 +14,10 @@ categories:
 이번에 수정한 부분은 아래와 같다.
 
 {: .bluebox-blue}
-- 색상 박스 스타일 통일 및 색상 기준 명명
-- 용도별 박스 스타일 통일
-- 용도별 박스는 `Liquid`로 기술하여 소스 가독성 증대
-- 인용구 박스, 다운로드 박스 역시 `Liquid`로 기술
-- AI 질문 답별 박스 별도 스타일 지정하고 `Liquid`로 기술
-- Youtube Embedded 영역 `Liquid`로 기술
-- Postit 효과 박스 `Liquid`로 기술
+- 색상 박스 스타일 재구성하여 통일 및 색상 기준으로 이름 붙임
+- 용도별 박스 스타일 재구성하여 통일
+- 용도별 박스는 `Liquid`로 구현하여 소스 가독성 증대
+- 인용구 박스, 다운로드 박스 역시 `Liquid`로 구현
+- AI 질문 답별 박스 별도 스타일 지정하고 `Liquid`로 구현
+- Postit 효과 박스 `Liquid`로 구현
+- Youtube Embedded 영역은 순정의 `{% include video}`로 변환

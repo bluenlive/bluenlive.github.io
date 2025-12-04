@@ -11,7 +11,7 @@ categories:
 이 게임은 첫 공개 때 이미 플레이 가능한 데모를 보여줄 정도여서 수많은 기대를 모았다.  
 심지어, 그 시절은 《스타크래프트》의 인지도가 정점에 달했던 시기였다.
 
-{% include bluenlive/youtube.html id="DHQVsejt_bE" %}
+{% include video id="DHQVsejt_bE" provider="youtube" %}
 
 하지만, 놀랍게도 이 게임은 그대로 흐지부지 되다 영원히 개발이 중단되었다.  
 **스타크래프트**라는 IP의 인지도를 생각하면 도저히 이해할 수 없는 일이었다.
@@ -29,7 +29,7 @@ categories:
 {: .bluebox-transparent}
 《스타크래프트: 고스트》 시네마틱에서 고스트에게 빈정거리는 마린을 생각하면 뭔가 웃긴 지점이기도 함
 
-{% include bluenlive/youtube.html id="Dflu0cRGD5I" %}
+{% include video id="Dflu0cRGD5I" provider="youtube" %}
 
 직접 플레이를 해보니, 적절한 난이도에 상당한 재미를 느낄 수 있었다.  
 사용된 배경음악부터 총기 사운드까지, 스타크래프트의 분위기를 잘 살려냈다.

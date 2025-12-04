@@ -14,7 +14,7 @@ GPU를 많이 사용하게 되니, 가끔씩 컴퓨터가 다운되는 경우가
 RTX 4060 Ti는 [MSI Afterburner](https://www.msi.com/page/Afterburner){:target="_blank"}로 손쉽게 언더볼팅을 할 수 있다.
 상세한 방법은 아래 영상을 참조.
 
-{% include bluenlive/youtube.html id="1tPXy3SCpDE" note="Undervolting with MSI Afterburner" %}
+{% include video id="1tPXy3SCpDE" provider="youtube" %}
 
 프로그램 실행 화면은 아래와 같고...
 

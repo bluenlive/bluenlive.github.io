@@ -25,14 +25,14 @@ categories:
 첫 007 영화인 〈살인번호〉를 제작하면서 제작진은 **작곡**을 몬티 노먼에게 맡긴다.  
 노먼은 자신이 작곡했던 뮤지컬 《비스워스 씨를 위한 집(A House for Mr. Biswas)》의 《Good Sign, Bad Sign》을 주제곡으로 써먹기로 한다.
 
-{% include bluenlive/youtube.html id="g6EuzGhIyRQ" %}
+{% include video id="g6EuzGhIyRQ" provider="youtube" %}
 
 하지만, 제작진은 이 음악이 그닥 마음에 들지 않았는지 **편곡과 연주**를 존 배리 오케스트라에게 맡긴다.
 
 문제는 시간도 충분히 주지 않았는데다 존 배리는 007 소설이나 영화에 대해 아무 것도 몰랐다는 것.  
 어쨌거나, 존 배리는 이전 자신이 작곡했던 음악들을 조금씩 활용해서 편곡 및 연주를 해낸다.
 
-{% include bluenlive/youtube.html id="Ozso9-jgsco" %}
+{% include video id="Ozso9-jgsco" provider="youtube" %}
 
 이렇게 해서 탄생한 음악이 우리가 알고 있는 제임스 본드 테마.  
 이러한 히스토리는 〈살인번호〉 오프닝에도 아래와 같이 표시되어있다.

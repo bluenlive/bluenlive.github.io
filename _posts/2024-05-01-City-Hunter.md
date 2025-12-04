@@ -37,7 +37,7 @@ categories:
 
 그리고, 드디어 **원작의 코드**를 제대로 살린 영화가 나왔다.
 
-{% include bluenlive/youtube.html id="NJubPRpDX8I" %}
+{% include video id="NJubPRpDX8I" provider="youtube" %}
 
 이 영화는 원작의 **하드보일드 액션**을 추구한다.  
 동시에 만화가 그랬듯이, 코믹 요소를 적절히 섞었다.

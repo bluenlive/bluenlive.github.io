@@ -13,14 +13,14 @@ categories:
 이 사진은 1907년 9월 25일 영국인 F.A. 맥켄지가 촬영한 것으로, 그의 책 《Tragedy of Korea》에 실렸다.\
 드라마 〈미스터 션샤인〉에서도 오마주 되었던 바로 그 사진이다.
 
-{% include bluenlive/youtube.html id="IxOYmpkzpz4" %}
+{% include video id="IxOYmpkzpz4" provider="youtube" %}
 
 ## 이복재 선생님의 추적
 
 의병 연구자이신 이복재 선생님은 주변 지역을 수십 차례 조사한 결과 위 사진의 촬영지를 찾아내셨다.\
 **양평군 양평읍 오빈리 398-14번지 6번 국도변**이었다.
 
-{% include bluenlive/youtube.html id="H24y5JZNFZA" %}
+{% include video id="H24y5JZNFZA" provider="youtube" %}
 
 지금은 남한강의 물줄기도 다소 바뀌고, 산의 모양도 바뀌었지만, 그래도 그 때의 그 곳을 찾아내신 것이다.
 
