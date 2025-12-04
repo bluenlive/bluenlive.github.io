@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "블로그 내부 구성 보강"
+date: 2025-11-28 16:30:00 +0900
 categories:
   - blog
 ---
