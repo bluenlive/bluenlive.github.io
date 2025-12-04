@@ -11,4 +11,4 @@ categories:
 
 {% include bluenlive/youtube.html id="yL9eRIFQJGE" %}
 
-{% raw %}{% include video id="yL9eRIFQJGE" provider="youtube" %}{% endraw %}
+{% include video id="yL9eRIFQJGE" provider="youtube" %}
