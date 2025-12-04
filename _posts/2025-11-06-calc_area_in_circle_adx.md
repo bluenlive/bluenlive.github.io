@@ -88,7 +88,6 @@ $$
 \int \sqrt{L^2 - x^2}\, dx = \frac{x}{2}\sqrt{L^2 - x^2} + \frac{L^2}{2}\arcsin\!\left(\frac{x}{L}\right) + C
 $$
 {% endcapture %}
-
 {% include bluenlive/ai-answer.html content=answer %}
 
 여기서 다음과 같은 부정적분 식을 알 수 있다.

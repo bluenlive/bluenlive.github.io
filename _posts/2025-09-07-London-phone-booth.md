@@ -31,7 +31,6 @@ categories:
 
 원하시면 제가 구체적인 **구글 지도 좌표**까지 찾아서 알려드릴까요?
 {% endcapture %}
-
 {% include bluenlive/ai-answer.html content=answer1 %}
 
 이 정보를 가지고 **구글 지도**와 **구글 어스**를 직접 뒤져보니 찾기가 어려웠다.\
@@ -57,7 +56,6 @@ categories:
 
 혹시 이곳과 비슷한 유명 빨간 전화 부스의 다른 명소(예: Parliament Square, St Paul’s Cathedral 등)에 대해서도 알고 싶으시면 언제든지 말씀해 주세요!
 {% endcapture %}
-
 {% include bluenlive/ai-answer.html content=answer1 %}
 
 **구글 어스**에서 해당 위치를 다시 찾아봤다.\
