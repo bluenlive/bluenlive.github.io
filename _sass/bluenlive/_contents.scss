@@ -13,16 +13,24 @@
  * 다운로드 아이콘 및 password
  ***---------------------------------------------------*/
 
- .download-box a {
+ .download-box {
+  text-align: center;              /* 영역 전체 가운데 정렬 */
+  margin: 1.2em auto;
+  line-height: 1.4;
+}
+
+.download-box a {
   display: inline-block;
-  padding: 0.8em 1.6em;
+  padding: 0.9em 1.8em;
   border-radius: 6px;
   background-color: #ffffff;
   border: 2px solid #2f5ca8;
   color: #2f5ca8;
+  font-size: 1.1em;
   font-weight: 700;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
 
   &:hover {
     background-color: #2f5ca8;
