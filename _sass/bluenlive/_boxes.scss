@@ -20,8 +20,9 @@
 
 /* 공통 박스 스타일 */
 @mixin bluebox-base {
-  padding: 1.1em 14px;
-  margin-bottom: 1.6em;
+  padding: 1.1em 14px 0.8em 14px;
+  margin-top: 0.7em!important;
+  margin-bottom: 1.15em!important;
   font-size: 0.95em;
   border-radius: 6px;
   border-left: 6px solid; /* 왼쪽 강조선 */
@@ -34,7 +35,6 @@
   border-color: $accent;
   background: linear-gradient(to right, lighten($bg, 8%), $bg);
 }
-
 
 /* 리스트 */
 ul[class^="bluebox-"],

@@ -14,17 +14,36 @@
  ***---------------------------------------------------*/
 
  .download-box {
+  display: inline-block;          /* 박스 크기를 텍스트에 맞게 */
   text-align: center;
-  font-size: 0.95em!important;
-  margin: 0.8em 0!important;   /* 위아래 여백 */
-  line-height: 1.2;  /* 줄 간격 조금 붙임 */
+  font-size: 0.95em;
+  margin: 1em auto;               /* 위아래 여백 + 가운데 정렬 */
+  line-height: 1.4;
+  padding: 0.6em 1.2em;           /* 버튼처럼 여백 */
+  border-radius: 6px;             /* 둥근 모서리 */
+  background: linear-gradient(to right, #79a5e4, #4a7bd0); /* 파란색 그라데이션 */
+  color: #fff;                    /* 글자 흰색 */
+  font-weight: 600;
+  text-decoration: none;          /* 링크일 경우 밑줄 제거 */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* 은은한 그림자 */
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background: linear-gradient(to right, #4a7bd0, #2f5ca8); /* hover 시 진한 파랑 */
+    transform: translateY(-2px); /* 살짝 위로 올라가는 효과 */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
 }
 
+/* 비밀번호 표시 */
 .password {
-  color: red;
-  font-size: 1.5em;
+  color: #d32f2f;       /* 좀 더 세련된 빨강 */
+  font-size: 1.2em;     /* 너무 크지 않게 조정 */
   font-weight: bold;
+  margin-top: 0.5em;
+  display: block;
 }
+
 
 
 /***---------------------------------------------------
