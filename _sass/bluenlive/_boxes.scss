@@ -30,7 +30,7 @@
 }
 
 /* 색상별 스타일 */
-@mixin bluebox-color($bg, $border) {
+@mixin bluebox-color($bg, $accent) {
   border-color: $accent;
   background: linear-gradient(to right, lighten($bg, 8%), $bg);
 }
