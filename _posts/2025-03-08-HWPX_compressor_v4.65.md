@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "한/글(HWPX) 파일 압축기(HIS) 4.70 업데이트"
-date: 2025-11-6 23:22:00 +0900
+title: "한/글(HWPX) 파일 압축기(HIS) 4.76 업데이트"
+date: 2025-12-5 21:52:00 +0900
 categories:
   - MyProgram
 ---
@@ -9,7 +9,7 @@ categories:
 잊혀질만 하면 업데이트하던 한/글 파일 압축기를 이번에도 정말 오랜만에(**2년**만에... ㄷㄷㄷ) 업데이트했다.\
 우리나라 특성상 이 프로그램을 완전히 벗어나는 건 쉽지 않다.
 
-![image](/images/2025-03-08/hwpx_B_okl_s64_Q.png){: .align-center}
+![image](/images/2025-12-05a/HIS_B_okl_s64_Q.png){: .align-center}
 *드디어 TIFF를 지원!*
 
 읽고 압축할 수 있는 파일 포맷에 TIFF를 추가했다.\
@@ -30,7 +30,7 @@ PNGquant를 선택하는 자동 옵션도 있음
 이 프로그램은 아래 링크에서 다운받을 수 있으며, **avx2**가 지원되는 CPU[^2]에서만 동작한다.
 
 {% include bluenlive/download-box.html
-   file="/attachment/2025-03-08/HWPX_Image_Shrinker_v4.70.rar"
+   file="/attachment/2025-12-05/HWPX_Image_Shrinker_v4.76.rar"
    password="teus.me" %}
 
 ## 히스토리
@@ -46,8 +46,19 @@ PNGquant를 선택하는 자동 옵션도 있음
   - 툴팁 색을 Oklab 기반으로 튜닝
   - 내부 라이브러리 업데이트
     - [mozJPEG](https://github.com/mozilla/mozjpeg){:target="_blank"}을 v5.0.0.dev(Jun 24, 2025)로 업데이트
-    - [libpng](https://github.com/pnggroup/libpng){:target="_blank"}를 1.6.50(July 2, 2025)로, [zlib-ng](https://github.com/zlib-ng/zlib-ng){:target="_blank"}를 2.2.5(Aug 7, 2025)으로 업데이트
+    - [libpng](https://github.com/pnggroup/libpng){:target="_blank"}를 1.6.50(July 2, 2025)로 업데이트
+    - [zlib-ng](https://github.com/zlib-ng/zlib-ng){:target="_blank"}를 2.2.5(Aug 7, 2025)으로 업데이트
     - [libimagequant](https://pngquant.org/){:target="_blank"}를 4.5.0으로 업데이트 (2025.7.30)
+
+- 2025.12.5꞉ v4.76
+  - Taskbar progress 와 더불어 progress bar도 함께 표시하도록 UI 수정
+  - 생성되는 임시 배치 파일을 가독성을 높이도록 수정
+  - 임시 로그 파일을 markdown 형식에 부합하도록 수정
+  - HWPML 파일 처리시 zlib으로 압축된 파일을 잘못 처리하던 오류 수정
+  - 내부 라이브러리 업데이트
+    - [libpng](https://github.com/pnggroup/libpng){:target="_blank"}를 1.8.0.git(Dec 4, 2025)으로 업데이트
+    - [zlib-ng](https://github.com/zlib-ng/zlib-ng){:target="_blank"}를 2.3.2(dev 4, 2025)로 업데이트
+    - [libzip](https://github.com/nih-at/libzip/){:target="_blank"}을 1.11.4로 업데이트 (2025.11.7)
 
 [^1]: 이 포맷이 한글과 컴퓨터에서 권장하는 포맷이기도 하고, 저장 속도도 빠르며 저장 안정성도 높음
 [^2]: 일부 구형 x64 CPU에서는 avx2를 지원하지 않음에 유의할 것
