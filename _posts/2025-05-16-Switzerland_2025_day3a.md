@@ -2,7 +2,7 @@
 layout: single
 #classes: wide
 title: "2025년 스위스 여행 3일차꞉ 프레디 머큐리가 사랑했던 몽트뢰"
-date: 2025-5-16 22:46:00 +0900
+date: 2025-5-16 23:46:00 +0900
 categories:
   - travel2025
 tags: ["Bohemian Rhapsody", "Queen"]
