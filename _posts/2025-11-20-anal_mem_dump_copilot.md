@@ -132,8 +132,7 @@ start             end                 module name
 
 충돌 원인을 Copilot에게 분석 시킨 내용의 주요 부분은 아래와 같다.
 
----
-
+{% capture answer_anal %}
 덤프에서 이미 **Direct3D/Direct2D 리소스 해제 과정**에서 예외가 발생한 걸 확인했는데, 말씀하신 것처럼 **GPU 가속을 켜면 오류가 발생하고 끄면 발생하지 않는다**는 건 문제의 원인이 **GPU 리소스 관리**에 있다는 걸 강하게 뒷받침합니다.
 
 ### 📌 의미하는 바
@@ -164,15 +163,14 @@ start             end                 module name
 - 사용자 입장에서는 **GPU 드라이버 업데이트**나 **Paint.NET 최신 버전 적용**으로 해결될 가능성이 있다  
 
 👉 즉, 덤프와 증상(“GPU 가속 시만 오류”)을 합치면, **특정 효과의 GPU 리소스 관리 코드에 문제가 있거나 GPU 드라이버와의 호환성 문제**라는 결론을 도출할 수 있습니다.  
-
----
+{% endcapture %}
+{% include bluenlive/ai-answer.html content=answer_anal %}
 
 ## Copilot: kv
 
 호출 스택 결과를 Copilot에게 분석 시킨 내용의 주요 부분은 아래와 같다.
 
----
-
+{% capture answer_kv %}
 ### 📌 kv 결과에서 알 수 있는 것
 
 1. **상위 프레임 (00–03)**  
@@ -212,15 +210,14 @@ kv 결과를 통해 알 수 있는 건:
 - 최종적으로 **Paint.NET의 DeviceContext.SetTarget 호출 중** 예외가 발생  
 
 즉, kv 결과는 “어떤 함수 흐름에서 오류가 발생했는지”를 보여주며, **GPU 가속 경로에서만 발생하는 이유**를 잘 설명해줍니다.  
-
----
+{% endcapture %}
+{% include bluenlive/ai-answer.html content=answer_kv %}
 
 ## Copilot: lm
 
 로드된 모듈 목록을 Copilot에게 분석 시킨 내용의 주요 부분은 아래와 같다.
 
----
-
+{% capture answer_lm %}
 ### 📌 주요 관찰
 
 1. **DirectX/그래픽 관련 모듈**
@@ -251,15 +248,14 @@ kv 결과를 통해 알 수 있는 건:
 - 따라서 개발자 입장에서는 **GPU 드라이버와 Paint.NET GPU 가속 모듈의 상호작용**을 집중적으로 확인해야 합니다.
 
 👉 요약하면: 이 마지막 파트는 **GPU 가속 경로에서 DirectX/드라이버 모듈이 로드·언로드된 상태**를 보여주며, 오류가 GPU 가속을 켰을 때만 발생하는 이유를 다시 확인시켜줍니다.  
-
----
+{% endcapture %}
+{% include bluenlive/ai-answer.html content=answer_lm %}
 
 ## 분석 및 해석 추가
 
 여기에 부가적으로 시스템 구성을 얘기하며 **추가적인 대처 방안을 요구**한 결과를 아래와 같이 볼 수 있었다.
 
----
-
+{% capture answer_etc %}
 ### Dual‑GPU environment implications
 
 두 GPU가 동시에 있는 환경(AMD iGPU + NVIDIA RTX 4070S)에서는 DirectX/D2D/D3D11 경로가 어떤 어댑터를 선택했는지, 그리고 런타임 중 어댑터 전환이나 드라이버 개입이 있었는지가 안정성에 크게 영향을 줍니다. 지금 덤프의 “로드/언로드된 드라이버” 흔적은 혼재된 드라이버 환경에서 어댑터 선택·해제 타이밍이 꼬였을 가능성을 뒷받침합니다.
@@ -292,7 +288,7 @@ kv 결과를 통해 알 수 있는 건:
 - **2. 최신 드라이버/Windows 업데이트**를 적용하고 다시 테스트.
 - **3. 외장 모니터를 RTX에 연결**해 dGPU 경로 강제.
 - **4. 문제가 사라지면** 멀티‑GPU 라우팅/어댑터 불일치가 원인이었던 것으로 판단. 개발자에게 “Adapter pinning” 제안을 함께 전달.
-
----
+{% endcapture %}
+{% include bluenlive/ai-answer.html content=answer_etc %}
 
 이러한 긴 대화를 통해 윈도우의 설정에서 **시스템 > 디스플레이 > 그래픽**에서 설정하는 방안을 찾을 수 있었다.
