@@ -320,17 +320,20 @@ div.rgyPostIt:hover::after {
 }
 
 div.rgyPostIt > p {
-  padding: 0 !important;
+  position: relative;           /* 아이콘 기준점 */
+  padding-left: 25px!important; /* 아이콘 공간 확보 */
   margin: 0.5em 0;
 }
 
 div.rgyPostIt > p::before {
   content: "\f198";
-  margin-right: 7px;
+  position: absolute;
+  left: 0;
+  top: 0.2em;
   font-family: "FontAwesome";
   font-weight: normal;
   font-size: 20px;
-  vertical-align: middle;
+  color: #555;
 }
 
 div.rgyPostIt > p > a {
