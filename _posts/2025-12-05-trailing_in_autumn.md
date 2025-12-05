@@ -99,7 +99,7 @@ categories:
 
 {% include video id="gdWraXKgimE" provider="youtube" %}
 
-{% include bluenlive/postit.html content="1. 산악 여행을 트래킹(tracking)이라고 생각하는 경우가 많은데, **트레킹(trekking)**이 맞는 표현임|2. 그런데, 트레킹은 산악 행군에 가깝고 내가 한 도보여행은 **트레일링(trailing)**이 맞음" %}
+{% include bluenlive/postit.html content="① 산악 여행을 트래킹(tracking)이라고 생각할 수 있은데, **트레킹(trekking)**이 맞는 표현임|② 그런데, 트레킹은 산악 행군에 가깝고 이 도보여행은 **트레일링(trailing)**이 맞음" %}
 
 [^1]: 이천중리택지개발지구
 [^2]: 이천쌀문화축제

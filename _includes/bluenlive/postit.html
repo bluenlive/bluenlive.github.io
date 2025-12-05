@@ -3,34 +3,12 @@
     {% if include.content %}
       {% if include.content.first %}
         {%- for line in include.content -%}
-          {{ line 
-             | markdownify 
-             | remove: '<p>' 
-             | remove: '</p>' 
-             | remove: '<ul>' 
-             | remove: '</ul>' 
-             | remove: '<ol>' 
-             | remove: '</ol>' 
-             | remove: '<li>' 
-             | remove: '</li>' 
-             | strip_newlines }}
-          {% unless forloop.last %}<br/>{% endunless %}
+          {{ line | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}{% unless forloop.last %}<br/>{% endunless %}
         {%- endfor -%}
       {% else %}
         {% assign lines = include.content | split:"|" %}
         {%- for line in lines -%}
-          {{ line 
-             | markdownify 
-             | remove: '<p>' 
-             | remove: '</p>' 
-             | remove: '<ul>' 
-             | remove: '</ul>' 
-             | remove: '<ol>' 
-             | remove: '</ol>' 
-             | remove: '<li>' 
-             | remove: '</li>' 
-             | strip_newlines }}
-          {% unless forloop.last %}<br/>{% endunless %}
+          {{ line | markdownify | remove: '<p>' | remove: '</p>' | strip_newlines }}{% unless forloop.last %}<br/>{% endunless %}
         {%- endfor -%}
       {% endif %}
     {% endif %}
