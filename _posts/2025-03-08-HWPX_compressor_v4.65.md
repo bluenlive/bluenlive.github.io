@@ -38,7 +38,7 @@ PNGquant를 선택하는 자동 옵션도 있음
 {: .bluebox-history}
 - 2025.3.8꞉ v4.65
   - 처리 대상 이미지 포맷에 **TIFF** 추가
-  - [libzip](https://github.com/nih-at/libzip/){:target="_blank"}을 1.11.2로 업데이트 (2024.12.22)
+  - [libzip](https://github.com/nih-at/libzip/){:target="_blank"}을 1.11.2(2024.12.22)로 업데이트
   - JpegQ를 상하 키보드로 조절할 수 있도록 수정
 
 - 2025.11.6꞉ v4.70
@@ -58,7 +58,7 @@ PNGquant를 선택하는 자동 옵션도 있음
   - 내부 라이브러리 업데이트
     - [libpng](https://github.com/pnggroup/libpng){:target="_blank"}를 1.8.0.git(Dec 4, 2025)으로 업데이트
     - [zlib-ng](https://github.com/zlib-ng/zlib-ng){:target="_blank"}를 2.3.2(dev 4, 2025)로 업데이트
-    - [libzip](https://github.com/nih-at/libzip/){:target="_blank"}을 1.11.4로 업데이트 (2025.11.7)
+    - [libzip](https://github.com/nih-at/libzip/){:target="_blank"}을 1.11.4(2025.11.7)로 업데이트
 
 [^1]: 이 포맷이 한글과 컴퓨터에서 권장하는 포맷이기도 하고, 저장 속도도 빠르며 저장 안정성도 높음
 [^2]: 일부 구형 x64 CPU에서는 avx2를 지원하지 않음에 유의할 것
