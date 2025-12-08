@@ -49,7 +49,7 @@ categories:
 
 - 2025.12.8꞉ v4.14
   - UI 미세 조정
-    - `Windows 10` 문구를 `Windows 11`로 변경
-  - 병렬 실행 개수 축소
+    - **Windows 10** 문구를 **Windows 11**로 변경
+  - 병렬 처리 개수 축소
   - [FFmpeg](http://ffmpeg.org/download.html){:target="_blank"}을 8.0.1\[gyan.dev\]로 업데이트
   - [libpng](https://github.com/pnggroup/libpng){:target="_blank"}를 1.8.0.git(Dec 8, 2025)으로, [zlib-ng](https://github.com/zlib-ng/zlib-ng){:target="_blank"}를 2.3.2(Dec 8, 2025)로 업데이트
