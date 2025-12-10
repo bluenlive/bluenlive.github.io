@@ -100,11 +100,14 @@ Box-Muller 알고리즘은 가장 널리 사용되는 정규분포 난수 생성
 
 정교한 증명은 쉽지 않지만, 정리된 내용은 기적적으로 단순하다.
 
+{% capture algo0 %}
 균등분포 난수 $$ u \left(0,1\right], v \left[0,1\right] $$를 생성하고, 다음과 같이 변환한다.\
 (여기서 u가 0이 될 수 없는 것은 $$\ln u$$가 발산하기 때문)\
 $$\begin{align} x = \sqrt{-2\ln u} \cos\left(2\pi v\right) \end{align}$$\
 $$\begin{align} y = \sqrt{-2\ln u} \sin\left(2\pi v\right) \end{align}$$\
 이렇게 생성된 $$ x $$와 $$ y $$는 서로 독립이고, 표준 정규분포 $$\begin{align} \mathcal{N} \left(0, 1 \right) \end{align}$$를 따른다.
+{% endcapture %}
+{% include bluenlive/algorithm.html content=algo0 %}
 
 ## C++로 Box-Muller 알고리즘 구현
 

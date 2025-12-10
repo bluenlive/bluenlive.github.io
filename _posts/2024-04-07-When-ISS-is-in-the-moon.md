@@ -40,14 +40,12 @@ from skyfield.api import load
 from datetime import timedelta
 from astral import moon
 
-
 def get_iss_object_skyfield():
     satellites = load.tle_file(url='https://live.ariss.org/iss.txt', reload=True)
 
     iss = satellites[0]
 
     return iss
-
 
 def get_moon_rise_moon_set(location, tm):
     try:
@@ -160,6 +158,7 @@ def calc_angle_between(azimuth1, zenith1, azimuth2, zenith2):
 
 실제로 구현해야 할 내용은 다음과 같다.
 
+{: .algorithm}
 - 주어진 날짜의 달이 뜨고 지는 시간 계산
 - 이 시간에 대해 달의 방위 계산
 - 이 시간에 대해 ISS의 위치 계산
