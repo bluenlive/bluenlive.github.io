@@ -10,6 +10,8 @@ categories:
 
 제곱근의 알고리즘을 얘기하려면 이 알고리즘을 먼저 얘기해야 한다.
 
+{% capture algo0 %}
+
 ### 문제 설정
 
 $$\sqrt{x}$$를 직접 함수로 두면 반복식에 제곱근이 계속 등장해 비효율적이므로, **근 찾기 문제**로 바꿔 접근한다.
@@ -45,6 +47,9 @@ $$
 빠르게 $$\sqrt{2} \approx 1.414213\cdots$$에 수렴한다.
 
 이 방식은 놀랍게도 바빌로니아[^1]의 방식이나, 헤론의 방식[^2]과 사실상 일치한다.
+
+{% endcapture %}
+{% include bluenlive/algorithm.html content=algo0 %}
 
 ## 최신 CPU에 적용된 sqrt()
 
