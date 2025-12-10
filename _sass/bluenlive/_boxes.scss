@@ -365,15 +365,20 @@ div.rgyPostIt > p > a {
   font-weight: 500;
   position: relative;
   font-size: 0.98em; /* 질문은 살짝 줄임 */
+  
+  li {
+    margin-left: 1em!important;
+  }
+
+  &::before {
+    content: "❓ 질문";
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #b58900;
+  }
 }
 
-.ai-question::before {
-  content: "❓ 질문";
-  display: block;
-  font-weight: 600;
-  margin-bottom: 4px;
-  color: #b58900;
-}
 
 /* ---------------------------------------------------
  * AI 답변용 스타일
@@ -401,20 +406,26 @@ div.rgyPostIt > p > a {
   .math, .katex, .MathJax {
     font-size: 0.95em; /* 본문과 동일하게 줄임 */
   }
+
+  .katex,
+  .MathJax {
+    margin-right: 0.25em; /* 글자와 살짝 간격 확보 */
+  }
+
+  li {
+    margin-left: 1em!important;
+  }
+
+  &::before {
+    content: "🤖 답변";
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #3b5998;
+  }
 }
 
-.ai-answer::before {
-  content: "🤖 답변";
-  display: block;
-  font-weight: 600;
-  margin-bottom: 4px;
-  color: #3b5998;
-}
 
-.ai-answer .katex,
-.ai-answer .MathJax {
-  margin-right: 0.25em; /* 글자와 살짝 간격 확보 */
-}
 
 /* ---------------------------------------------------
  * 알고리즘 기술용 스타일
@@ -441,9 +452,13 @@ div.rgyPostIt > p > a {
   .math, .katex, .MathJax {
     font-size: 0.98em; /* 본문과 동일하게 */
   }
-}
 
-.algorithm .katex,
-.algorithm .MathJax {
-  margin-right: 0.25em; /* 글자와 살짝 간격 확보 */
+  .katex,
+  .MathJax {
+    margin-right: 0.25em; /* 글자와 살짝 간격 확보 */
+  }
+
+  li {
+    margin-left: 1em!important;
+  }
 }
