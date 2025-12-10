@@ -10,17 +10,20 @@ categories:
 
 제곱근의 알고리즘을 얘기하려면 이 알고리즘을 먼저 얘기해야 한다.
 
-{% capture algo0 %}
-
 ### 문제 설정
 
+{% capture algo0 %}
 $$\sqrt{x}$$를 직접 함수로 두면 반복식에 제곱근이 계속 등장해 비효율적이므로, **근 찾기 문제**로 바꿔 접근한다.
 
 $$
 y^2 = x \quad \Rightarrow \quad f(y) = y^2 - x = 0
 $$
+{% endcapture %}
+{% include bluenlive/algorithm.html content=algo0 %}
 
 ### 뉴턴-랩슨 공식
+
+{% capture algo1 %}
 뉴턴-랩슨 반복식은 다음과 같다.
 
 $$
@@ -35,9 +38,12 @@ $$
 $$
 y_{n+1} = \frac{1}{2}\left(y_n + \frac{x}{y_n}\right)
 $$
+{% endcapture %}
+{% include bluenlive/algorithm.html content=algo1 %}
 
 ### $$\sqrt{2}$$ 계산
 
+{% capture algo2 %}
 - 초기값 $$y_0 = 1$$
 - 반복 계산:
   - $$y_1 = \tfrac{1}{2}(1 + 2/1) = 1.5$$
@@ -47,9 +53,8 @@ $$
 빠르게 $$\sqrt{2} \approx 1.414213\cdots$$에 수렴한다.
 
 이 방식은 놀랍게도 바빌로니아[^1]의 방식이나, 헤론의 방식[^2]과 사실상 일치한다.
-
 {% endcapture %}
-{% include bluenlive/algorithm.html content=algo0 %}
+{% include bluenlive/algorithm.html content=algo2 %}
 
 ## 최신 CPU에 적용된 sqrt()
 

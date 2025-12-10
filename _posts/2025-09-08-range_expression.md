@@ -10,6 +10,7 @@ for() 문 쓰면서 생각난 간단한 내용을 기술함.
 
 ## 기본형
 
+{% capture algo0 %}
 $$n$$개의 데이터가 있고, 이를 $$i$$로 순회하는 경우 순회하는 범위는 다음과 같다.\
 $$[0,n-1]$$
 
@@ -19,6 +20,8 @@ $$\begin{align*}
 i & \le n-1\\
 i & \lt n\\
 \end{align*}$$
+{% endcapture %}
+{% include bluenlive/algorithm.html content=algo0 %}
 
 이것을 C로 작성한 것이 바로 흔하게 볼 수 있는 아래 한 줄.
 ```c
@@ -27,6 +30,7 @@ for (int i = 0; i < n; ++i)
 
 ## 데이터를 m개 단위로 처리
 
+{% capture algo1 %}
 $$n$$개의 데이터가 있고, 이를 $$i$$로 순회하며 $$m$$개씩 처리하는 경우의 범위는 아래와 같다.
 
 $$\begin{align}
@@ -35,6 +39,8 @@ i+m & \le n\\
 i & \le n-m\\
 i & \lt (n-m+1)\\
 \end{align}$$
+{% endcapture %}
+{% include bluenlive/algorithm.html content=algo1 %}
 
 이것을 C로 작성하면 아래와 같다.
 ```c
@@ -43,6 +49,7 @@ for (int i = 0; i < n - m + 1; i += m)
 
 ## 데이터를 m개 단위로 처리하며 마지막에 l개를 남김
 
+{% capture algo2 %}
 $$n$$개의 데이터가 있고, 이를 $$i$$로 순회하며 $$m$$개씩 처리하되, 마지막에 $$l$$개를 남기는 경우의 범위는 아래와 같다.
 
 $$\begin{align}
@@ -51,6 +58,8 @@ i+m & \le n-l\\
 i & \le n-m-l\\
 i & \lt (n-m-l+1)
 \end{align}$$
+{% endcapture %}
+{% include bluenlive/algorithm.html content=algo2 %}
 
 이것을 C로 작성하면 아래와 같다.
 ```c
