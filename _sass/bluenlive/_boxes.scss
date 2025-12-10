@@ -379,6 +379,9 @@ div.rgyPostIt > p > a {
   }
 }
 
+ul.ai-question {
+  padding-top: 0.8em;
+}
 
 /* ---------------------------------------------------
  * AI 답변용 스타일
@@ -425,6 +428,9 @@ div.rgyPostIt > p > a {
   }
 }
 
+ul.ai-answer {
+  padding-top: 0.8em;
+}
 
 
 /* ---------------------------------------------------
@@ -461,4 +467,8 @@ div.rgyPostIt > p > a {
   li {
     margin-left: 1em!important;
   }
+}
+
+ul.algorithm {
+  padding-top: 0.8em;
 }
