@@ -35,6 +35,7 @@ $$\begin{align}
 
 그런데, 생각을 조금만 바꿔보면 이러한 근사를 생략했을 때 오히려 더 빠르고 정확한 계산을 할 수 있다.
 
+{% capture algo0 %}
 두 벡터 $$ \overrightarrow{a} $$, $$ \overrightarrow{b} $$가 있을 때 두 벡터 사이의 각도 $$ \theta $$는 아래와 같이 계산된다.\
 $$\begin{align}
 \cos \theta = \frac {\overrightarrow{a} \cdot \overrightarrow{b}}{\left\| \overrightarrow{a} \right\| \cdot \left\| \overrightarrow{b} \right\|}
@@ -50,6 +51,8 @@ $$\begin{align}
 $$\begin{align}
 \sin \theta = \sqrt {1 - \frac {\left ( \overrightarrow{a} \cdot \overrightarrow{b} \right )^2}{\left ( \left\| \overrightarrow{a} \right\| \cdot \left\| \overrightarrow{b} \right\| \right )^2}}
 \end{align}$$
+{% endcapture %}
+{% include bluenlive/algorithm.html content=algo0 %}
 
 ## 파이썬에서의 활용 #1
 

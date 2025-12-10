@@ -10,6 +10,7 @@ categories:
 
 다음와 같은 두 개의 쿼터니언이 있을 때
 
+{% capture algo0 %}
 $$
 q_1 = (a_1, b_1, c_1, d_1) \quad\text{(w, x, y, z 순서)}
 $$
@@ -17,9 +18,12 @@ $$
 $$
 q_2 = (a_2, b_2, c_2, d_2)
 $$
+{% endcapture %}
+{% include bluenlive/algorithm.html content=algo0 %}
 
 이 두 쿼터니언의 **Hamilton 곱** $$q = q_1 \times q_2$$는 다음과 같이 정의된다.
 
+{: .algorithm}
 $$
 \begin{aligned}
 a &= a_1 a_2 - b_1 b_2 - c_1 c_2 - d_1 d_2 \\

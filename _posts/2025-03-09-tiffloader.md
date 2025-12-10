@@ -49,12 +49,14 @@ for(i=0;i< *width * *height;i++)
 처음 봤을 때 한참을 들여다봤던 부분이다.\
 `buff[i*4+3]`에는 불투명도가 저장돼있는데, 이게 이런 식으로 계산되면 안 되는데...?
 
+{: .algorithm}
 $$\begin{align}
 {Color}_{final}=Color\times\frac{alpha}{255}+Bkgr\times\frac{255-alpha}{255}
 \end{align}$$
 
 이 코드에서 의미하는 상황은 $$Bkgr = 255$$ 이므로...
 
+{: .algorithm}
 $$\begin{align}
 {Color}_{final}=Color\times\frac{alpha}{255}+255-alpha
 \end{align}$$
