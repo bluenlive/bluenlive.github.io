@@ -26,4 +26,4 @@ categories:
 ![trekking course](/images/2025-12-09/20251201_123459955_iOS_okl_s64.jpg){: .align-center}
 *2,110원의 압박*
 
-{% include bluenlive/postit.html content="동전 교환 할 때는 은행 가기 전에 교환 가능 요일은 확인해야 한다" %}
+{% include bluenlive/postit.html content="동전 교환 할 때는 은행 가기 전에 교환 가능 요일을 확인해야 한다" %}
