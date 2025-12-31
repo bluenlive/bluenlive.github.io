@@ -1,17 +1,17 @@
 ---
 layout: single
-title: "SRT 자막 관리 도우미 SRTier v5.25 공개"
-date: 2025-2-16 11:21:00 +0900
+title: "SRT 자막 관리 도우미 SRTier v5.30 공개"
+date: 2025-12-31 11:59:00 +0900
 categories:
   - MyProgram
 ---
 
 
-SRT 자막 관리 도우미 SRTier를 5.25로 업데이트했다.
+SRT 자막 관리 도우미 SRTier를 5.30으로 업데이트했다.
 
 자막 속성을 선택적으로 없애는 기능을 추가했고 반모음 오타 수정 기능을 추가했다.
 
-![image](/images/2024-09-08/srtier_B_Q.png){: .align-center}
+![image](/images/2025-12-31/srtier_B_okl_s64_Q.png){: .align-center}
 
 이 프로그램의 주요 기능은 아래와 같다.
 
@@ -74,7 +74,8 @@ SRT 자막 관리 도우미 SRTier를 5.25로 업데이트했다.
 이 프로그램은 아래 링크에서 다운받을 수 있다.
 
 {% include bluenlive/download-box.html
-   file="/attachment/2024-09-08/SRTier_v5.25.rar"
+   file="/attachment/2025-12-31/SRTier_v5.30.rar"
+   description="64bit only"
    password="teus.me" %}
 
 ## 히스토리
@@ -88,6 +89,11 @@ SRT 자막 관리 도우미 SRTier를 5.25로 업데이트했다.
 - 2025.2.16꞉ v5.25 공개
   - SAMI → SRT 변환 시 언어가 하나만 있으면 파일명에 언어를 추가하지 않도록 수정
   - TOSS 아이디 후원을 [Buy Me A Coffee](https://buymeacoffee.com/bluenlive){:target="_blank"}로 변경
+
+- 2025.12.31꞉ v5.30 공개
+  - **자막 시간이 겹칠 때**의 처리를 **3가지 옵션에서 선택**할 수 있도록 수정
+  - 처리된 파일명에 `\ (...)` 대신 `.(...)` 를 붙이도록 수정
+  - 내부 이미지 처리 코드 개선 (LUT 생성을 컴파일 타임에 수행)
 
 [^2]: 첫 줄엔 대쉬가 없는데 둘째 줄에 있거나, 대쉬가 한 번만 등장하는 경우 등
 [^3]: 많은 미디어 재생기에서 이를 지원함
