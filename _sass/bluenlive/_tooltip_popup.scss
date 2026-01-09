@@ -7,30 +7,29 @@
  *********************************************************/
 
  .footnote-tooltip {
-  cursor: help;
-  color: #007acc;
   position: relative;
-  text-decoration: underline dotted; /* 각주 느낌 강조 */
+  color: #007acc;
+  text-decoration: underline dotted;
+  cursor: default; /* 물음표 커서 제거 */
 }
 
 .footnote-tooltip:hover::after {
-  content: attr(title);
+  content: attr(data-tooltip); /* title 대신 data-tooltip 사용 */
   position: absolute;
-  background: #222;          /* 더 어두운 배경 */
-  color: #f9f9f9;            /* 밝은 글자색 */
-  padding: 6px 10px;         /* 여백 확대 */
-  border-radius: 6px;        /* 둥근 모서리 */
-  font-size: 0.9em;          /* 글자 크기 조정 */
+  background: #222;
+  color: #f9f9f9;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.9em;
   line-height: 1.4;
-  white-space: normal;       /* 긴 텍스트 줄바꿈 허용 */
-  width: max-content;        /* 내용에 맞게 크기 자동 조정 */
-  max-width: 250px;          /* 너무 길지 않게 제한 */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25); /* 그림자 효과 */
-
-  top: 100%;                 /* 링크 바로 아래에 표시 */
-  left: 50%;                 /* 링크 중앙 기준 */
-  transform: translateX(-50%); /* 중앙 정렬 */
-  margin-top: 6px;           /* 링크와 약간 간격 */
+  white-space: normal;
+  width: max-content;
+  max-width: 250px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 6px;
   z-index: 100;
 }
 
