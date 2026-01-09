@@ -142,3 +142,23 @@ hr.scissors::after {
 .clear {
   clear: both;
 }
+
+.footnote-tooltip {
+  cursor: help;
+  color: #007acc;
+  position: relative;
+}
+
+.footnote-tooltip:hover::after {
+  content: attr(title);
+  position: absolute;
+  background: #333;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 4px;
+  top: -35px;
+  left: 0;
+  white-space: nowrap;
+  font-size: 0.85em;
+  z-index: 100;
+}

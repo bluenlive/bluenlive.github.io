@@ -26,3 +26,20 @@
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // 모든 각주 링크를 찾아서
+    document.querySelectorAll('a[href^="#fn"]').forEach(function(link) {
+      const id = link.getAttribute('href').substring(1); // fn1 같은 ID
+      const footnote = document.getElementById(id);
+      if (footnote) {
+        // footnote 텍스트를 추출해서 title 속성으로 추가
+        const text = footnote.innerText.trim();
+        link.setAttribute('title', text);
+        link.classList.add('footnote-tooltip');
+      }
+    });
+  });
+  </script>
+  
