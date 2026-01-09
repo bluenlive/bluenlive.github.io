@@ -16,22 +16,37 @@
 .footnote-tooltip:hover::after {
   content: attr(data-tooltip);
   position: absolute;
-  background: #fef6e4;   /* 밝고 부드러운 크림색 */
-  color: #333;           /* 어두운 글자색 */
-  padding: 8px 12px;
+  background: #fef6e4;
+  color: #333;
+  padding: 10px 14px;
   border-radius: 8px;
-  font-size: 1.05em;     /* 글자 크기 조금 더 키움 */
+  font-size: 1.05em;
   line-height: 1.5;
-  white-space: pre-line; /* 줄바꿈 유지 */
-  width: max-content;
-  max-width: 280px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  white-space: pre-line;
 
+  width: auto;
+  min-width: 200px;
+  max-width: 80vw;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  margin-top: 8px;
+  z-index: 100;
+
+  /* 기본 위치: 중앙 */
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 8px;
-  z-index: 100;
 }
 
+/* 위치 조정: 오른쪽 */
+.footnote-tooltip[style*="--tooltip-align:right"]:hover::after {
+  left: auto;
+  right: 0;
+  transform: none;
+}
 
+/* 위치 조정: 왼쪽 */
+.footnote-tooltip[style*="--tooltip-align:left"]:hover::after {
+  left: 0;
+  transform: none;
+}

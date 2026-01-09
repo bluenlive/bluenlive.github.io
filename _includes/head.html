@@ -34,12 +34,41 @@
       const footnote = document.getElementById(id);
       if (footnote) {
         let text = footnote.innerText.trim();
-        // 줄바꿈 기호(↩) 제거, 줄바꿈 자체는 유지
-        text = text.replace(/↩/g, '').trim();
-        link.removeAttribute('title'); // 기본 브라우저 툴팁 제거
-        link.setAttribute('data-tooltip', text); // 커스텀 툴팁용 속성
+        text = text.replace(/↩/g, '').trim(); // 줄바꿈 기호 제거
+        link.removeAttribute('title');
+        link.setAttribute('data-tooltip', text);
         link.classList.add('footnote-tooltip');
       }
+    });
+
+    // 툴팁 위치 자동 조정
+    document.querySelectorAll('.footnote-tooltip').forEach(function(link) {
+      link.addEventListener('mouseenter', function() {
+        const tooltipText = link.getAttribute('data-tooltip');
+        if (!tooltipText) return;
+
+        // 임시로 툴팁 요소 생성
+        const tooltip = document.createElement('div');
+        tooltip.className = 'tooltip-temp';
+        tooltip.innerText = tooltipText;
+        document.body.appendChild(tooltip);
+
+        const rect = tooltip.getBoundingClientRect();
+        const linkRect = link.getBoundingClientRect();
+
+        // 화면 오른쪽을 넘어가면 왼쪽으로 표시
+        if (rect.right > window.innerWidth) {
+          link.style.setProperty('--tooltip-align', 'right');
+        }
+        // 화면 왼쪽을 넘어가면 오른쪽으로 표시
+        else if (rect.left < 0) {
+          link.style.setProperty('--tooltip-align', 'left');
+        } else {
+          link.style.setProperty('--tooltip-align', 'center');
+        }
+
+        document.body.removeChild(tooltip);
+      });
     });
   });
 </script>
