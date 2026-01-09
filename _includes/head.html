@@ -37,29 +37,28 @@
         link.removeAttribute("title");
         link.setAttribute("data-tooltip", text);
         link.classList.add("footnote-tooltip");
-
-        // 툴팁 생성
+  
         link.addEventListener("mouseenter", function () {
           const tooltip = document.createElement("div");
           tooltip.className = "tooltip-popup";
           tooltip.innerText = text;
           document.body.appendChild(tooltip);
-
+  
           const linkRect = link.getBoundingClientRect();
           const tooltipRect = tooltip.getBoundingClientRect();
-
+  
           let left = linkRect.left + linkRect.width / 2 - tooltipRect.width / 2;
           let top = linkRect.bottom + 8;
-
+  
           // 화면 밖으로 나가지 않게 조정
           left = Math.max(8, Math.min(left, window.innerWidth - tooltipRect.width - 8));
-
+  
           tooltip.style.left = `${left}px`;
           tooltip.style.top = `${top}px`;
-
+  
           link._tooltip = tooltip;
         });
-
+  
         link.addEventListener("mouseleave", function () {
           if (link._tooltip) {
             document.body.removeChild(link._tooltip);
@@ -69,4 +68,5 @@
       }
     });
   });
-</script>
+  </script>
+  
