@@ -29,11 +29,12 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('a[href^="#fn"]').forEach(function (link) {
+    // 본문 각주 번호만 선택 (sup 안에 있는 링크)
+    document.querySelectorAll('sup a[href^="#fn"]').forEach(function (link) {
       const id = link.getAttribute("href").substring(1);
       const footnote = document.getElementById(id);
       if (!footnote) return;
-  
+
       const text = footnote.innerText.trim().replace(/↩/g, "");
       link.removeAttribute("title");
       link.setAttribute("data-tooltip", text);
