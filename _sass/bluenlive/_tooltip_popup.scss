@@ -10,26 +10,28 @@
   position: relative;
   color: #007acc;
   text-decoration: underline dotted;
-  cursor: default; /* 물음표 커서 제거 */
+  cursor: default;
 }
 
 .footnote-tooltip:hover::after {
-  content: attr(data-tooltip); /* title 대신 data-tooltip 사용 */
+  content: attr(data-tooltip);
   position: absolute;
-  background: #222;
-  color: #f9f9f9;
-  padding: 6px 10px;
-  border-radius: 6px;
-  font-size: 0.9em;
-  line-height: 1.4;
-  white-space: normal;
+  background: #fef6e4;   /* 밝고 부드러운 크림색 */
+  color: #333;           /* 어두운 글자색 */
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 1.05em;     /* 글자 크기 조금 더 키움 */
+  line-height: 1.5;
+  white-space: pre-line; /* 줄바꿈 유지 */
   width: max-content;
-  max-width: 250px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  max-width: 280px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 6px;
+  margin-top: 8px;
   z-index: 100;
 }
+
 

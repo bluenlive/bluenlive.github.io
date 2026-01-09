@@ -33,8 +33,10 @@
       const id = link.getAttribute('href').substring(1);
       const footnote = document.getElementById(id);
       if (footnote) {
-        const text = footnote.innerText.trim();
-        link.removeAttribute('title'); // 기본 툴팁 제거
+        let text = footnote.innerText.trim();
+        // 줄바꿈 기호(↩) 제거, 줄바꿈 자체는 유지
+        text = text.replace(/↩/g, '').trim();
+        link.removeAttribute('title'); // 기본 브라우저 툴팁 제거
         link.setAttribute('data-tooltip', text); // 커스텀 툴팁용 속성
         link.classList.add('footnote-tooltip');
       }
