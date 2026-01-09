@@ -28,47 +28,45 @@
 {% endif %}
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll('a[href^="#fn"]').forEach(function(link) {
-      const id = link.getAttribute('href').substring(1);
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('a[href^="#fn"]').forEach(function (link) {
+      const id = link.getAttribute("href").substring(1);
       const footnote = document.getElementById(id);
       if (footnote) {
-        let text = footnote.innerText.trim();
-        text = text.replace(/↩/g, '').trim(); // 줄바꿈 기호 제거
-        link.removeAttribute('title');
-        link.setAttribute('data-tooltip', text);
-        link.classList.add('footnote-tooltip');
+        let text = footnote.innerText.trim().replace(/↩/g, "");
+        link.removeAttribute("title");
+        link.setAttribute("data-tooltip", text);
+        link.classList.add("footnote-tooltip");
+
+        // 툴팁 생성
+        link.addEventListener("mouseenter", function () {
+          const tooltip = document.createElement("div");
+          tooltip.className = "tooltip-popup";
+          tooltip.innerText = text;
+          document.body.appendChild(tooltip);
+
+          const linkRect = link.getBoundingClientRect();
+          const tooltipRect = tooltip.getBoundingClientRect();
+
+          let left = linkRect.left + linkRect.width / 2 - tooltipRect.width / 2;
+          let top = linkRect.bottom + 8;
+
+          // 화면 밖으로 나가지 않게 조정
+          left = Math.max(8, Math.min(left, window.innerWidth - tooltipRect.width - 8));
+
+          tooltip.style.left = `${left}px`;
+          tooltip.style.top = `${top}px`;
+
+          link._tooltip = tooltip;
+        });
+
+        link.addEventListener("mouseleave", function () {
+          if (link._tooltip) {
+            document.body.removeChild(link._tooltip);
+            link._tooltip = null;
+          }
+        });
       }
-    });
-
-    // 툴팁 위치 자동 조정
-    document.querySelectorAll('.footnote-tooltip').forEach(function(link) {
-      link.addEventListener('mouseenter', function() {
-        const tooltipText = link.getAttribute('data-tooltip');
-        if (!tooltipText) return;
-
-        // 임시로 툴팁 요소 생성
-        const tooltip = document.createElement('div');
-        tooltip.className = 'tooltip-temp';
-        tooltip.innerText = tooltipText;
-        document.body.appendChild(tooltip);
-
-        const rect = tooltip.getBoundingClientRect();
-        const linkRect = link.getBoundingClientRect();
-
-        // 화면 오른쪽을 넘어가면 왼쪽으로 표시
-        if (rect.right > window.innerWidth) {
-          link.style.setProperty('--tooltip-align', 'right');
-        }
-        // 화면 왼쪽을 넘어가면 오른쪽으로 표시
-        else if (rect.left < 0) {
-          link.style.setProperty('--tooltip-align', 'left');
-        } else {
-          link.style.setProperty('--tooltip-align', 'center');
-        }
-
-        document.body.removeChild(tooltip);
-      });
     });
   });
 </script>
