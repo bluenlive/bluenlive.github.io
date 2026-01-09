@@ -7,25 +7,28 @@
  *********************************************************/
 
  .tooltip-popup {
-  position: absolute;         /* 문서 기준 좌표 */
-  background: #fef6e4;        /* 밝고 부드러운 배경 */
+  position: absolute;
+  /* 그라데이션 배경: 위쪽은 밝고 아래쪽은 조금 더 따뜻한 색 */
+  background: linear-gradient(135deg, #fef6e4 0%, #fceec0 100%);
   color: #333;
   padding: 12px 16px;
-  border-radius: 8px;
-  font-size: 0.95em;
-  line-height: 1.6;
-  white-space: pre-line;      /* 줄바꿈 유지 */
+  border-radius: 10px;       /* 둥근 모서리 조금 더 강조 */
+  font-size: 0.875em;         /* 본문 툴팁 글자 크기 줄임 */
+  line-height: 1.5;
+  white-space: pre-line;
   min-width: 250px;
-  max-width: 90vw;            /* 화면의 90%까지 확장 */
-  box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+  max-width: 90vw;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* 그림자도 조금 더 부드럽게 */
   z-index: 1000;
+  transition: opacity 0.2s ease, transform 0.2s ease; /* 부드러운 애니메이션 */
 }
 
 @media (max-width: 600px) {
   .tooltip-popup {
-    font-size: 1.05em;
+    font-size: 0.9em;
     min-width: 180px;
     max-width: 95vw;
   }
 }
+
 
