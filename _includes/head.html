@@ -32,40 +32,71 @@
     document.querySelectorAll('a[href^="#fn"]').forEach(function (link) {
       const id = link.getAttribute("href").substring(1);
       const footnote = document.getElementById(id);
-      if (footnote) {
-        let text = footnote.innerText.trim().replace(/↩/g, "");
-        link.removeAttribute("title");
-        link.setAttribute("data-tooltip", text);
-        link.classList.add("footnote-tooltip");
+      if (!footnote) return;
   
-        link.addEventListener("mouseenter", function () {
-          const tooltip = document.createElement("div");
-          tooltip.className = "tooltip-popup";
-          tooltip.innerText = text;
-          document.body.appendChild(tooltip);
+      const text = footnote.innerText.trim().replace(/↩/g, "");
+      link.removeAttribute("title");
+      link.setAttribute("data-tooltip", text);
+      link.classList.add("footnote-tooltip");
   
-          const linkRect = link.getBoundingClientRect();
-          const tooltipRect = tooltip.getBoundingClientRect();
+      function placeTooltip(tooltip, linkRect) {
+        // 먼저 보이지 않게 만든 뒤 크기 측정
+        tooltip.style.visibility = "hidden";
+        tooltip.style.left = "0px";
+        tooltip.style.top = "0px";
   
-          let left = linkRect.left + linkRect.width / 2 - tooltipRect.width / 2;
-          let top = linkRect.bottom + 8;
+        const tooltipRect = tooltip.getBoundingClientRect();
   
-          // 화면 밖으로 나가지 않게 조정
-          left = Math.max(8, Math.min(left, window.innerWidth - tooltipRect.width - 8));
+        // 뷰포트 좌표 + 문서 스크롤 보정
+        let left =
+          linkRect.left +
+          linkRect.width / 2 -
+          tooltipRect.width / 2 +
+          window.scrollX;
+        let top = linkRect.bottom + 8 + window.scrollY;
   
-          tooltip.style.left = `${left}px`;
-          tooltip.style.top = `${top}px`;
+        // 좌우 가장자리 보호
+        left = Math.max(8 + window.scrollX, Math.min(left, window.scrollX + window.innerWidth - tooltipRect.width - 8));
   
-          link._tooltip = tooltip;
-        });
-  
-        link.addEventListener("mouseleave", function () {
-          if (link._tooltip) {
-            document.body.removeChild(link._tooltip);
-            link._tooltip = null;
-          }
-        });
+        tooltip.style.left = `${left}px`;
+        tooltip.style.top = `${top}px`;
+        tooltip.style.visibility = "visible";
       }
+  
+      function showTooltip() {
+        const tooltip = document.createElement("div");
+        tooltip.className = "tooltip-popup";
+        tooltip.innerText = text;
+        document.body.appendChild(tooltip);
+  
+        const linkRect = link.getBoundingClientRect();
+        // 레이아웃 안정화를 위해 다음 프레임에서 배치
+        requestAnimationFrame(() => placeTooltip(tooltip, linkRect));
+  
+        // 스크롤/리사이즈 시 재배치
+        function reposition() {
+          const rect = link.getBoundingClientRect();
+          placeTooltip(tooltip, rect);
+        }
+        link._tooltip = tooltip;
+        link._reposition = reposition;
+        window.addEventListener("scroll", reposition, { passive: true });
+        window.addEventListener("resize", reposition);
+      }
+  
+      function hideTooltip() {
+        if (link._tooltip) {
+          window.removeEventListener("scroll", link._reposition);
+          window.removeEventListener("resize", link._reposition);
+          document.body.removeChild(link._tooltip);
+          link._tooltip = null;
+          link._reposition = null;
+        }
+      }
+  
+      link.addEventListener("mouseenter", showTooltip);
+      link.addEventListener("mouseleave", hideTooltip);
+      link.addEventListener("blur", hideTooltip); // 키보드 포커스 이탈 대비
     });
   });
   </script>
