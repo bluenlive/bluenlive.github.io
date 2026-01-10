@@ -5,6 +5,7 @@
  * 및 본문 스타일 보강용
  * assets/css/main.scss 에서 import
  * 구성: [다운로드 박스, 본문 스타일]
+ * 그 외 footnote, footnotes 속성도 여기서 변경함
  *********************************************************/
 
 /***---------------------------------------------------
@@ -141,4 +142,12 @@ hr.scissors::after {
 
 .clear {
   clear: both;
+}
+
+.footnote {
+  color: #474A4C;
+}
+
+.footnotes {
+  color: #474A4C;
 }
