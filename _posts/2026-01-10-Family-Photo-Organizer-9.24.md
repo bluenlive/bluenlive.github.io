@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "사진 정리 툴 FPO(Family Photo Organizer) 9.27 업데이트"
-date: 2025-1-10 22:50:00 +0900
+date: 2026-1-10 22:50:00 +0900
 categories:
   - MyProgram
 ---
@@ -48,7 +48,7 @@ PNG / WebP / MP4 / MOV / MKV는 파일 내에 태깅된 날짜 정보 활용함
 이 프로그램은 아래 링크에서 다운받을 수 있다.
 
 {% include bluenlive/download-box.html
-   file="/attachment/2026-01-10a/FPO_v9.27.rar"
+   file="/attachment/2026-01-10b/FPO_v9.27.rar"
    password="teus.me" %}
 
 ## 히스토리
