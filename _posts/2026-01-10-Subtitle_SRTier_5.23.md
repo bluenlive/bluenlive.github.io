@@ -1,13 +1,13 @@
 ---
 layout: single
-title: "SRT 자막 관리 도우미 SRTier v5.30 공개"
+title: "SRT 자막 관리 도우미 SRTier v5.31 공개"
 date: 2026-1-10 23:20:00 +0900
 categories:
   - MyProgram
 ---
 
 
-SRT 자막 관리 도우미 SRTier를 5.30으로 업데이트했다.
+SRT 자막 관리 도우미 SRTier를 5.31로 업데이트했다.
 
 자막 속성을 선택적으로 없애는 기능을 추가했고 반모음 오타 수정 기능을 추가했다.
 
