@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "사진 정리 툴 FPO(Family Photo Organizer) 9.24 업데이트"
-date: 2025-12-04 18:45:00 +0900
+title: "사진 정리 툴 FPO(Family Photo Organizer) 9.27 업데이트"
+date: 2025-1-10 22:50:00 +0900
 categories:
   - MyProgram
 ---
@@ -13,14 +13,14 @@ categories:
 그런데, PC에선 **파일명 순**인 경우가 일반적이다.  
 이런 식이다보니 촬영시간 순서는 알기 힘들고 **카메라 기종 순**으로 파일을 보게 되는 경우가 대부분이다.
 
-![image](/images/2025-12-04a/pics1_B_Q.png){: .align-center}
+![image](/images/2026-01-10b/pics1_B_Q.png){: .align-center}
 *피쳐폰 - 똑딱이 - 작티 순 정렬...*
 
 FPO는 HEIF/JPEG의 Exif 정보 중 촬영일자 정보를 읽어 **파일명을 수정**하고, 최대한 **파일 크기를 줄여준다**.  
 [mozjpeg](https://github.com/mozilla/mozjpeg/){:target="_blank"}를 활용해서 파일 크기를 더 줄이고, 추가로 **resample**을 적용해서 사진 크기도 축소시켜준다.  
 또한, 사진과 함께 저장된 PNG, WebP, avi, mp4 등의 다양한 미디어 자료들도 함께 파일명을 수정해준다.
 
-![image](/images/2025-12-04a/pics2_B_Q.png){: .align-center}
+![image](/images/2026-01-10b/pics2_B_Q.png){: .align-center}
 *촬영날짜/시간 순 정렬 완료!*
 
 이 프로그램의 상세한 기능은 아래와 같다.
@@ -43,12 +43,12 @@ PNG / WebP / MP4 / MOV / MKV는 파일 내에 태깅된 날짜 정보 활용함
 - jpeg 라이브러리로 [mozjpeg](https://github.com/mozilla/mozjpeg/){:target="_blank"} 사용
 - 유니코드 완벽 지원
 
-![image](/images/2025-12-04a/FPO_B_okl_s64_Q.png){: .align-center}
+![image](/images/2026-01-10b/FPO_B_okl_s64_Q.png){: .align-center}
 
 이 프로그램은 아래 링크에서 다운받을 수 있다.
 
 {% include bluenlive/download-box.html
-   file="/attachment/2025-12-04a/FPO_v9.24.rar"
+   file="/attachment/2026-01-10a/FPO_v9.27.rar"
    password="teus.me" %}
 
 ## 히스토리
@@ -70,4 +70,10 @@ PNG / WebP / MP4 / MOV / MKV는 파일 내에 태깅된 날짜 정보 활용함
   - 이미지 라이브러리 업데이트
     - mozJPEG(x64) v5.0.0.dev 업데이트 (Jun 24, 2025)
     - libpng(x64) 1.8.0.git 업데이트 (Nov 25, 2025)
-    - zlib-ng를 2.3.2 업데이트 (dev 4, 2025)
+    - zlib-ng를 2.3.2(dev) 업데이트
+
+- 2026.1.10: v9.27 공개
+  - HEIF/JPEG/PNG 에서 ICCP 처리시 64KB 이상인 경우도 정상 처리하도록 수정
+  - 이미지 라이브러리 업데이트
+    - libpng(x64) 1.8.0.git 업데이트 (Dec 8, 2025)
+    - zlib-ng를 2.3.2 업데이트 (Dec 8, 2025)
