@@ -22,4 +22,4 @@ categories:
 
 뭔가 2% 부족해보여서 이걸 [grok](https://grok.com/){:target="_blank"}에 넣어보니 꽤 그럴싸한 영상을 만들어준다.
 
-{% include video id="HBknwV2fZI8" provider="youtube" %}
+{% include video id="sHm43OxBm54" provider="youtube" %}
