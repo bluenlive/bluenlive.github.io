@@ -89,7 +89,7 @@ Tagged date                              : 1995-06-28 16:32:56 UTC
 원본 비디오를 최신 코덱으로 변환하면서 오디오를 강제변환하면 된다.
 
 ```bat
-ffmpeg -i CHAPTER1.MOV -c:v libx264 -c:a aac -ar 44100 -b:a 256k -async 1 "CHAPTER1.mp4"
+ffmpeg -i "CHAPTER1.MOV" -c:v libx264 -c:a aac -ar 44100 -b:a 256k -async 1 "CHAPTER1.mp4"
 ```
 
 기본적으로는 이렇게 `-async 1` 옴션만 추가하면 잘라붙인 오디오를 깔끔하게 정리해준다.
