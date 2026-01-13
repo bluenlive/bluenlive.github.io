@@ -89,7 +89,7 @@ Tagged date                              : 1995-06-28 16:32:56 UTC
 원본 비디오를 최신 코덱으로 변환하면서 오디오를 강제변환하면 된다.
 
 ```bat
-ffmpeg -i CHAPTER1.MOV -c:v libx264 -c:a aac -ar 44100 -b:a 256k -async 1 CHAPTER1.mp4
+ffmpeg -i CHAPTER1.MOV -c:v libx264 -c:a aac -ar 44100 -b:a 256k -async 1 "CHAPTER1.mp4"
 ```
 
 기본적으로는 이렇게 `-async 1` 옴션만 추가하면 잘라붙인 오디오를 깔끔하게 정리해준다.
@@ -106,8 +106,8 @@ ffmpeg -i CHAPTER1.MOV -c:v libx264 -c:a aac -ar 44100 -b:a 256k -async 1 CHAPTE
 일단 이 영상의 각 오디오 패킷의 시간 등을 정확히 확인해본다.
 
 ```bat
-ffprobe -select_streams v -show_packets -of csv=p=0 CHAPTER1.MOV > CHAPTER1.v.csv
-ffprobe -select_streams a -show_packets -of csv=p=0 CHAPTER1.MOV > CHAPTER1.a.csv
+ffprobe -select_streams v -show_packets -of csv=p=0 "CHAPTER1.MOV" > "CHAPTER1.v.csv"
+ffprobe -select_streams a -show_packets -of csv=p=0 "CHAPTER1.MOV" > "CHAPTER1.a.csv"
 ```
 
 이렇게 실행하면 비디오/오디오에 대해 각각 아래와 같은 파일을 만들어준다.\
@@ -160,7 +160,7 @@ duration 0.501
 ```
 
 ```bat
-ffmpeg -f concat -i frames.txt -vsync vfr output.mp4
+ffmpeg -f concat -i "frames.txt" -vsync vfr "output.mp4"
 ```
 
 다음 단계로 앞에서 생성한 csv 파일을 이용해서 이 데이터를 생성해서 변환해볼 예정.

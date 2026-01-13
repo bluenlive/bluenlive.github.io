@@ -20,7 +20,7 @@ categories:
 이렇게 원하는 내용만으로 빌드하려면 일단은 통상적인 빌드 과정을 먼저 거쳐야 한다.\
 최신 버전을 다운받은 뒤 다음과 같이 실행하면 된다.
 
-```bash
+```dos
 media-autobuild_suite.bat
 ```
 
