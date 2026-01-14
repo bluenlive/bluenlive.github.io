@@ -26,7 +26,7 @@ AI를 활용해서 비디오 품질도 끌어올리는 요즘 시기에 한번 �
 
 동영상의 정보는 아래와 같다.
 
-```text
+{% highlight text hl_lines="15 35 42-44" %}
 General
 Complete name                            : H:\encoding_ai\LQ\CHAPTER1.MOV
 Format                                   : QuickTime
@@ -63,7 +63,7 @@ Audio
 ID                                       : 2
 Format                                   : PCM
 Format settings                          : Little / Unsigned
-Codec ID                                 : raw 
+Codec ID                                 : raw
 Duration                                 : 14 min 8 s
 Source duration                          : 14 min 8 s
 Bit rate mode                            : Constant
@@ -76,7 +76,7 @@ Source stream size                       : 9.00 MiB (8%)
 Language                                 : English
 Encoded date                             : 1995-05-15 11:58:17 UTC
 Tagged date                              : 1995-06-28 16:32:56 UTC
-```
+{% endhighlight %}
 
 무려 30년 전에 만들어진 **Cinepak**과 **8 bits, 1 channel 오디오**로 저장된 고색창연한 동영상이다.\
 오디오의 샘플링 레이트는 듣도 보도 못한 **11,127Hz**이다.
