@@ -18,7 +18,7 @@ categories:
 
 그런데...
 
-{% highlight ruby hl_lines="4" %}
+{% highlight text %}
 codec_type,stream_index,pts,pts_time,dts,dts_time,duration,duration_time,size,pos,flags
 (생략)
 video,0,41700,69.500000,41700,69.500000,60,0.100000,6532,9738127,___
