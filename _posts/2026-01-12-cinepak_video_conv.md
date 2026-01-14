@@ -26,7 +26,7 @@ AI를 활용해서 비디오 품질도 끌어올리는 요즘 시기에 한번 �
 
 동영상의 정보는 아래와 같다.
 
-{% highlight ini hl_lines="15 35 42 43 44" %}
+{% highlight bash hl_lines="15 35 42 43 44" %}
 General
 Complete name                            : H:\encoding_ai\LQ\CHAPTER1.MOV
 Format                                   : QuickTime
