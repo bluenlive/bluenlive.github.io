@@ -18,6 +18,7 @@ categories:
 
 그런데...
 
+{% include code-header.html %}
 {% highlight ruby linenos=table hl_lines="4" %}
 codec_type,stream_index,pts,pts_time,dts,dts_time,duration,duration_time,size,pos,flags
 (생략)

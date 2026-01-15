@@ -155,3 +155,34 @@ hr.scissors::after {
 .highlight .hll {
   background-color: #ffffcc!important; /* 강조 색상, 이 기능은 왜 동작하지 않을까? */
 }
+
+.code-header {
+  position: relative;
+  top: 50px;
+  right: 10px;
+  z-index: 1;
+}
+
+.copy-code-button {
+  float: right;
+  cursor: pointer;
+  background-color: $code-background-color;
+  padding: 5px 5px;
+  border-radius: 5px;
+  width: 30px;
+  height: 35px;
+  margin-top: -40px;
+  border: none;
+}
+
+.copy-code-button:focus {
+  outline: none;
+}
+
+.copy-code-button:hover {
+  background-color: #0f1214;
+}
+
+.copy-code-image {
+  filter: invert(1);
+}
