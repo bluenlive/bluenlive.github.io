@@ -18,7 +18,6 @@ categories:
 
 그런데...
 
-{% include code-header.html %}
 {% highlight ruby linenos=table hl_lines="4" %}
 codec_type,stream_index,pts,pts_time,dts,dts_time,duration,duration_time,size,pos,flags
 (생략)
@@ -37,6 +36,8 @@ video,0,41803,69.671667,41803,69.671667,60,0.100000,3744,9767323,___
 아마도, 잘라붙이는 과정에서 깔끔하게 날리지 못한 결과인 것 같다.
 
 `ffmpeg`으로 VFR[^1]로 재인코딩 하기 위해서는 정확한 프레임 정보가 기록된 아래와 같은 텍스트 파일을 만들어야 한다.
+
+{% include code-header.html %}
 
 ```text
 file 'frame0.png'
