@@ -153,5 +153,5 @@ hr.scissors::after {
 }
 
 .highlight .hll {
-  background-color: #ffffcc; /* 강조 색상 */
+  background-color: #ffffcc!important; /* 강조 색상, 이 기능은 왜 동작하지 않을까? */
 }
