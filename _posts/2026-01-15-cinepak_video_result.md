@@ -20,7 +20,8 @@ Topas Video는 결코 **저렴한 프로그램은 아니지만**, 일단 돌려�
 
 {% include video id="Qgljti1ZthQ" provider="youtube" %}
 
-이 영상을 **Starlight 모델**로 돌리면 결과는 아래와 같다.
+이 영상을 **Starlight 모델**로 돌리면 결과는 아래와 같다.\
+하는 김에 프레임률 역시 **24FPS**로 두 배 뻥튀기 했다.
 
 {% include video id="_taMYI5IR-Q" provider="youtube" %}
 
