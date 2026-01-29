@@ -2,7 +2,7 @@
 layout: single
 #classes: wide
 title: "멍청했던(?) PC 고장 수리"
-date: 2026-01-29 20:08:00 +0900
+date: 2026-01-29 19:10:00 +0900
 categories:
   - ITTalk
 ---
