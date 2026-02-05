@@ -47,6 +47,9 @@ categories:
 덧2. 이 때 VDP의 한계는 물론 MSX만의 문제가 아니라 **모든 환경에서 공통적으로 발생**함.\
 **Apple \]\[**와 **TRS-80 Color Computer**의 한계에 대한 고찰은 아래 영상에서 확인 가능.
 
+덧3. 위의 로고 색은 정확히 말하면 MSX1에 적용된 게 아니라 MSX2에 적용된 것임.
+MSX1 말기에 칼라 로고가 사용되긴 했으나, **VDP의 한계로 비슷한 색**이 적용됨.
+
 {% include video id="Ethx539pjRI" provider="youtube" %}
 
 [^1]: Konami는 당시에 MSX 게임에 그야말로 진심이었음
