@@ -55,4 +55,4 @@ x86, x64 및 ARM64 버전이 함께 들어있는데, x64 윈도우 환경이라�
     - Google/RE2 라이브러리 2026.1.23 (re2: remove unnecessary & in MutexLock usage) 반영
     - Google/Abseil 라이브러리를 20260107.0 버전(Abseil LTS branch, January 2026)으로 업데이트 및\
       2026.2.6 (Correctly define ABSL_UNREACHABLE when Abseil Hardened Fast is enabled) 반영
-  - Ma∗∗An∗ 제거시 제작사 uninstaller를 추가로 실행하도록 보강
+  - Ma∗∗An∗ 탐색 범위를 확대하고, 제거시 제작사 uninstaller를 추가로 실행하도록 보강
