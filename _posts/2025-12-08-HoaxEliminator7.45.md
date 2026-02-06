@@ -8,6 +8,8 @@ categories:
 tags: ["activex","nProtect","구라제거기","뱅킹","보안","안랩"]
 ---
 
+{% include bluenlive/new-version.html url="/hoaxeliminator/HoaxEliminator7.55/" %}
+
 PC 뱅킹의 주적은 **PC 뱅킹 프로그램**이다.
 
 PC 뱅킹을 하고 나면 컴퓨터가 미친 듯이 느려지기 때문이다.\
