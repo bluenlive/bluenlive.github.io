@@ -49,6 +49,7 @@ PNG / WebP / MP4 / MOV / MKV는 파일 내에 태깅된 날짜 정보 활용함
 
 {% include bluenlive/download-box.html
    file="/attachment/2026-02-13b/FPO_v9.31.rar"
+   description="64bit only"
    password="teus.me" %}
 
 ## 히스토리
@@ -65,7 +66,7 @@ PNG / WebP / MP4 / MOV / MKV는 파일 내에 태깅된 날짜 정보 활용함
   - 리샘플링 라이브러리 전면 재작성
     - 인텔 IPP 라이브러리 배제
     - 리샘플링 라이브러리를 SIMD로 직접 구현
-      - SSE2, AVX2, AVX512 별로 각각 구현
+      - CPU only, AVX2, AVX512 별로 각각 구현
     - 리샘플링 색공간을 sRGB, Linear, Oklab 3가지에서 선택 가능하도록 수정
   - 이미지 라이브러리 업데이트
     - mozJPEG(x64) v5.0.0.dev 업데이트 (Jun 24, 2025)

@@ -31,6 +31,7 @@ PNGquant를 선택하는 자동 옵션도 있음
 
 {% include bluenlive/download-box.html
    file="/attachment/2026-02-13c/HWPX_Image_Shrinker_v4.81.rar"
+   description="64bit only"
    password="teus.me" %}
 
 ## 히스토리
@@ -67,7 +68,7 @@ PNGquant를 선택하는 자동 옵션도 있음
   - 리샘플링 라이브러리 전면 재작성
     - 인텔 IPP 라이브러리 배제
     - 리샘플링 라이브러리를 SIMD로 직접 구현
-      - SSE2, AVX2, AVX512 별로 각각 구현
+      - CPU only, AVX2, AVX512 별로 각각 구현
     - 리샘플링 색공간을 sRGB, Linear, Oklab 3가지에서 선택 가능하도록 수정
   - HEIF/JPEG/PNG 에서 ICCP 처리시 64KB 이상인 경우도 정상 처리하도록 수정
   - 내부 라이브러리 업데이트
