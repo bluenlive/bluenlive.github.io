@@ -195,7 +195,7 @@ hr.scissors::after {
 .series-notif {
   padding: 12px 15px;
   margin: 20px 0;
-  font-size: 0.95rem;
+  font-size: 0.9rem; /* 글자 크기 축소 (0.95rem -> 0.9rem) */
   border-left: 4px solid #444;
   background-color: #f8f9fa;
   color: #555;
@@ -233,7 +233,7 @@ hr.scissors::after {
 
 .series-list-title {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.95rem; /* 글자 크기 축소 (1rem -> 0.95rem) */
   margin-bottom: 15px;
   color: #333;
 }
@@ -245,9 +245,10 @@ hr.scissors::after {
 }
 
 .series-index-list li {
-  font-size: 0.9rem;
-  padding: 6px 0;
+  font-size: 0.85rem; /* 글자 크기 축소 (0.9rem -> 0.85rem) */
+  padding: 6px 10px; /* 하이라이트 시 여백을 위해 좌우 패딩 추가 */
   border-bottom: 1px solid #fafafa;
+  border-radius: 4px; /* 하이라이트 모서리 둥글게 */
 }
 
 .series-index-list li:last-child {
@@ -260,14 +261,17 @@ hr.scissors::after {
   font-family: monospace;
 }
 
+/* 현재 읽고 있는 글 강조 스타일 */
 .current-post {
-  background-color: #fff9e6; /* 현재 읽고 있는 글 강조 */
-  padding-left: 10px !important;
-  border-radius: 4px;
+  /* 기존 노란색(#fff9e6)에서 밝은 프러시안 블루 계열로 변경 */
+  background-color: #e8f1f8; 
+  font-weight: 500; /* 살짝 두껍게 */
 }
 
+/* 현재글 태그 스타일 */
 .curr-tag {
   font-size: 0.75rem;
-  color: #e67e22;
+  color: #0056b3; /* 태그 색상도 블루 계열로 맞춤 */
   font-weight: bold;
+  margin-left: 5px;
 }
