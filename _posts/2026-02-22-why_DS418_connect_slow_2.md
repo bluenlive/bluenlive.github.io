@@ -5,6 +5,8 @@ title: "시놀로지 속도 이슈 #2꞉ 2.5Gbps라는 꿈"
 date: 2026-2-22 09:44:00 +0900
 categories:
   - ITTalk
+series: "Synology_NAS_Speed_Issue"
+series_title: "시놀로지 NAS 접속 속도 이슈"
 ---
 
 ## 3. 욕심: 1Gbps도 부족하다. 2.5Gbps로 가자ǃ

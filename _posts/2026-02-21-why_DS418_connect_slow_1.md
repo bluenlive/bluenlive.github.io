@@ -5,6 +5,8 @@ title: "시놀로지 속도 이슈 #1꞉ 왜 100Mbps인가?"
 date: 2026-2-21 23:59:00 +0900
 categories:
   - ITTalk
+series: "Synology_NAS_Speed_Issue"
+series_title: "시놀로지 NAS 접속 속도 이슈"
 ---
 
 ## 1. 발단: 왜 NAS 파일 복사 속도가 왜 100Mbps(11MB/s)밖에 안 나올까?
