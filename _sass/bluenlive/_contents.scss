@@ -191,9 +191,41 @@ hr.scissors::after {
  * 여러편이 시리즈로 작성된 글 스타일
  * --------------------------------------------------- */
 
-/* 접이식 스타일 */
+/* 1. 상/하단 공통 박스 스타일 (원래 스타일 복구) */
+.series-notif {
+  padding: 12px 15px;
+  margin: 20px 0;
+  font-size: 0.9rem; /* 본문보다 살짝 작은 크기 */
+  border-left: 4px solid #444; /* 왼쪽 강조선 */
+  background-color: #f8f9fa; /* 연한 회색 배경 */
+  color: #555;
+}
+
+.series-notif a {
+  font-weight: bold;
+  color: #0076df;
+  text-decoration: none;
+}
+
+.series-notif a:hover {
+  text-decoration: underline;
+}
+
+.series-label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* 2. 하단 시리즈 영역 레이아웃 */
+.series-footer {
+  margin-top: 50px;
+  border-top: 1px dashed #ddd;
+  padding-top: 10px;
+}
+
+/* 3. 접이식 리스트 스타일 */
 .series-list-details {
-  margin-top: 20px;
+  margin-top: 10px;
   border: 1px solid #eee;
   border-radius: 8px;
   background-color: #fff;
@@ -201,22 +233,19 @@ hr.scissors::after {
 }
 
 .series-list-title {
-  padding: 15px 20px;
+  padding: 12px 15px;
   font-weight: bold;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #333;
   cursor: pointer;
-  list-style: none; /* 기본 화살표 숨기기 */
+  list-style: none;
   background-color: #fafafa;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* 화살표 커스텀 (필요시) */
-.series-list-title::-webkit-details-marker {
-  display: none;
-}
+.series-list-title::-webkit-details-marker { display: none; }
 
 .summary-hint {
   font-size: 0.75rem;
@@ -224,28 +253,37 @@ hr.scissors::after {
   font-weight: normal;
 }
 
-.series-list-details[open] .summary-hint {
-  display: none; /* 펼쳐지면 힌트 숨김 */
-}
-
-.series-list-details[open] .series-list-title {
-  border-bottom: 1px solid #eee;
-}
-
-/* 내부 컨테이너 여백 조정 */
 .series-list-container {
-  padding: 15px 20px;
-  border: none; /* 중복 테두리 제거 */
-  margin-top: 0;
+  padding: 10px 15px;
+}
+
+.series-index-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .series-index-list li {
-  font-size: 0.85rem;
+  font-size: 0.85rem; /* 리스트 글자 크기 더 축소 */
   padding: 5px 10px;
+  border-bottom: 1px solid #fafafa;
 }
 
-/* 현재글 프러시안 블루 하이라이트 유지 */
+.post-num {
+  color: #999;
+  margin-right: 8px;
+  font-family: monospace;
+}
+
+/* 4. 현재글 하이라이트 (프러시안 블루 계열) */
 .current-post {
-  background-color: #e8f1f8;
-  font-weight: 500;
+  background-color: #e8f1f8; /* 밝은 프러시안 블루 */
+  border-radius: 4px;
+}
+
+.curr-tag {
+  font-size: 0.75rem;
+  color: #004d99;
+  font-weight: bold;
+  margin-left: 5px;
 }

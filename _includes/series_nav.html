@@ -11,25 +11,30 @@
     {% endfor %}
 
     {% if include.position == "top" %}
+      {% comment %} 상단: 이전 글 안내 박스 {% endcomment %}
       {% if prev_idx >= 0 %}
         <div class="series-notif series-top">
           <span class="series-label">이전 글:</span>
-          <a href="{{ series_posts[prev_idx].url }}">{{ series_posts[prev_idx].title }}</a>에서 이어지는 글입니다.
+          <a href="{{ series_posts[prev_idx].url }}">{{ series_posts[prev_idx].title }}</a>에서 이어지는 글
         </div>
       {% endif %}
 
     {% elsif include.position == "bottom" %}
+      {% comment %} 하단 영역 시작 {% endcomment %}
       <div class="series-footer">
+        
+        {% comment %} 다음 글 안내 박스 (기존 스타일 복구) {% endcomment %}
         {% if next_idx < series_posts.size %}
           <div class="series-notif series-bottom">
             <span class="series-label">다음 글:</span>
-            <a href="{{ series_posts[next_idx].url }}">{{ series_posts[next_idx].title }}</a>(으)로 이어집니다.
+            <a href="{{ series_posts[next_idx].url }}">{{ series_posts[next_idx].title }}</a>(으)로 이어짐
           </div>
         {% endif %}
 
+        {% comment %} 접이식 시리즈 리스트 {% endcomment %}
         <details class="series-list-details" {% if series_posts.size <= 5 %}open{% endif %}>
           <summary class="series-list-title">
-            📂 {{ page.series_title | default: "시리즈 목록" }} (총 {{ series_posts.size }}부)
+            <span>📂 {{ page.series_title | default: "시리즈 목록" }} ({{ series_posts.size }}부)</span>
             <span class="summary-hint">클릭하여 전체 보기</span>
           </summary>
           <div class="series-list-container">
