@@ -2,7 +2,6 @@
   {% assign series_posts = site.posts | where: "series", page.series | sort: "date" %}
   
   {% if series_posts.size > 1 %}
-    {% comment %} 현재 포스트 위치 계산 {% endcomment %}
     {% for post in series_posts %}
       {% if post.url == page.url %}
         {% assign curr_idx = forloop.index0 %}
@@ -12,39 +11,42 @@
     {% endfor %}
 
     {% if include.position == "top" %}
-      {% comment %} 1. 본문 상단: 이전 글 안내 {% endcomment %}
       {% if prev_idx >= 0 %}
         <div class="series-notif series-top">
           <span class="series-label">이전 글:</span>
-          <a href="{{ series_posts[prev_idx].url }}">{{ series_posts[prev_idx].title }}</a>에서 이어지는 글
+          <a href="{{ series_posts[prev_idx].url }}">{{ series_posts[prev_idx].title }}</a>에서 이어지는 글입니다.
         </div>
       {% endif %}
 
     {% elsif include.position == "bottom" %}
-      {% comment %} 2. 본문 하단: 다음 글 안내 및 시리즈 목록 {% endcomment %}
       <div class="series-footer">
         {% if next_idx < series_posts.size %}
           <div class="series-notif series-bottom">
             <span class="series-label">다음 글:</span>
-            <a href="{{ series_posts[next_idx].url }}">{{ series_posts[next_idx].title }}</a>(으)로 이어짐
+            <a href="{{ series_posts[next_idx].url }}">{{ series_posts[next_idx].title }}</a>(으)로 이어집니다.
           </div>
         {% endif %}
 
-        <div class="series-list-container">
-          <p class="series-list-title">📂 {{ page.series_title | default: "시리즈 목록" }} (총 {{ series_posts.size }}부)</p>
-          <ul class="series-index-list">
-            {% for s_post in series_posts %}
-              <li class="{% if s_post.url == page.url %}current-post{% endif %}">
-                <span class="post-num">{{ forloop.index }}.</span>
-                {% if s_post.url == page.url %}
-                  <strong>{{ s_post.title }}</strong> <span class="curr-tag">(현재글)</span>
-                {% else %}
-                  <a href="{{ s_post.url }}">{{ s_post.title }}</a>
-                {% endif %}
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
+        <details class="series-list-details" {% if series_posts.size <= 5 %}open{% endif %}>
+          <summary class="series-list-title">
+            📂 {{ page.series_title | default: "시리즈 목록" }} (총 {{ series_posts.size }}부)
+            <span class="summary-hint">클릭하여 전체 보기</span>
+          </summary>
+          <div class="series-list-container">
+            <ul class="series-index-list">
+              {% for s_post in series_posts %}
+                <li class="{% if s_post.url == page.url %}current-post{% endif %}">
+                  <span class="post-num">{{ forloop.index }}.</span>
+                  {% if s_post.url == page.url %}
+                    <strong>{{ s_post.title }}</strong> <span class="curr-tag">(현재글)</span>
+                  {% else %}
+                    <a href="{{ s_post.url }}">{{ s_post.title }}</a>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </details>
       </div>
     {% endif %}
   {% endif %}

@@ -191,87 +191,61 @@ hr.scissors::after {
  * 여러편이 시리즈로 작성된 글 스타일
  * --------------------------------------------------- */
 
-/* 시리즈 공통 알림 스타일 (상/하단) */
-.series-notif {
-  padding: 12px 15px;
-  margin: 20px 0;
-  font-size: 0.9rem; /* 글자 크기 축소 (0.95rem -> 0.9rem) */
-  border-left: 4px solid #444;
-  background-color: #f8f9fa;
-  color: #555;
-}
-
-.series-notif a {
-  font-weight: bold;
-  color: #0076df;
-  text-decoration: none;
-}
-
-.series-notif a:hover {
-  text-decoration: underline;
-}
-
-.series-label {
-  font-weight: bold;
-  margin-right: 5px;
-}
-
-/* 하단 시리즈 리스트 컨테이너 */
-.series-footer {
-  margin-top: 50px;
-  border-top: 1px dashed #ddd;
-  padding-top: 20px;
-}
-
-.series-list-container {
-  background-color: #fff;
-  border: 1px solid #eee;
-  padding: 20px;
-  border-radius: 8px;
+/* 접이식 스타일 */
+.series-list-details {
   margin-top: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
 }
 
 .series-list-title {
+  padding: 15px 20px;
   font-weight: bold;
-  font-size: 0.95rem; /* 글자 크기 축소 (1rem -> 0.95rem) */
-  margin-bottom: 15px;
+  font-size: 0.95rem;
   color: #333;
+  cursor: pointer;
+  list-style: none; /* 기본 화살표 숨기기 */
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.series-index-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
+/* 화살표 커스텀 (필요시) */
+.series-list-title::-webkit-details-marker {
+  display: none;
+}
+
+.summary-hint {
+  font-size: 0.75rem;
+  color: #999;
+  font-weight: normal;
+}
+
+.series-list-details[open] .summary-hint {
+  display: none; /* 펼쳐지면 힌트 숨김 */
+}
+
+.series-list-details[open] .series-list-title {
+  border-bottom: 1px solid #eee;
+}
+
+/* 내부 컨테이너 여백 조정 */
+.series-list-container {
+  padding: 15px 20px;
+  border: none; /* 중복 테두리 제거 */
+  margin-top: 0;
 }
 
 .series-index-list li {
-  font-size: 0.85rem; /* 글자 크기 축소 (0.9rem -> 0.85rem) */
-  padding: 6px 10px; /* 하이라이트 시 여백을 위해 좌우 패딩 추가 */
-  border-bottom: 1px solid #fafafa;
-  border-radius: 4px; /* 하이라이트 모서리 둥글게 */
+  font-size: 0.85rem;
+  padding: 5px 10px;
 }
 
-.series-index-list li:last-child {
-  border-bottom: none;
-}
-
-.post-num {
-  color: #999;
-  margin-right: 10px;
-  font-family: monospace;
-}
-
-/* 현재 읽고 있는 글 강조 스타일 */
+/* 현재글 프러시안 블루 하이라이트 유지 */
 .current-post {
-  /* 기존 노란색(#fff9e6)에서 밝은 프러시안 블루 계열로 변경 */
-  background-color: #e8f1f8; 
-  font-weight: 500; /* 살짝 두껍게 */
-}
-
-/* 현재글 태그 스타일 */
-.curr-tag {
-  font-size: 0.75rem;
-  color: #0056b3; /* 태그 색상도 블루 계열로 맞춤 */
-  font-weight: bold;
-  margin-left: 5px;
+  background-color: #e8f1f8;
+  font-weight: 500;
 }
