@@ -15,9 +15,18 @@
       {% endif %}
       <span class="quotationMark quotationMark--right"></span></blockquote>
   </div>
+
   <div class="quoteAuthor">
     {% if include.author %}
-      - {{ include.author }}
+      - 
+      {% if include.author_url %}
+        <a href="{{ include.author_url }}" 
+           {% if include.new_window %}target="_blank" rel="noopener noreferrer"{% endif %}>
+          {{ include.author }}
+        </a>
+      {% else %}
+        {{ include.author }}
+      {% endif %}
     {% else %}
       {{ "&nbsp;" }}
     {% endif %}
