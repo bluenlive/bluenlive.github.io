@@ -11,7 +11,6 @@
     {% endfor %}
 
     {% if include.position == "top" %}
-      {% comment %} 상단: 이전 글 안내 박스 {% endcomment %}
       {% if prev_idx >= 0 %}
         <div class="series-notif series-top">
           <span class="series-label">이전 글:</span>
@@ -20,10 +19,7 @@
       {% endif %}
 
     {% elsif include.position == "bottom" %}
-      {% comment %} 하단 영역 시작 {% endcomment %}
       <div class="series-footer">
-        
-        {% comment %} 다음 글 안내 박스 (기존 스타일 복구) {% endcomment %}
         {% if next_idx < series_posts.size %}
           <div class="series-notif series-bottom">
             <span class="series-label">다음 글:</span>
@@ -31,11 +27,13 @@
           </div>
         {% endif %}
 
-        {% comment %} 접이식 시리즈 리스트 {% endcomment %}
         <details class="series-list-details" {% if series_posts.size <= 5 %}open{% endif %}>
           <summary class="series-list-title">
             <span>📂 {{ page.series_title | default: "시리즈 목록" }} ({{ series_posts.size }}부)</span>
-            <span class="summary-hint">클릭하여 전체 보기</span>
+            <span class="summary-hint">
+              <span class="hint-open">➕ 클릭하여 펼치기</span>
+              <span class="hint-close">➖ 클릭하여 접기</span>
+            </span>
           </summary>
           <div class="series-list-container">
             <ul class="series-index-list">
