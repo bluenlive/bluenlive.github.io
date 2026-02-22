@@ -186,3 +186,88 @@ hr.scissors::after {
 .copy-code-image {
   filter: invert(1);
 }
+
+/* ---------------------------------------------------
+ * 여러편이 시리즈로 작성된 글 스타일
+ * --------------------------------------------------- */
+
+/* 시리즈 공통 알림 스타일 (상/하단) */
+.series-notif {
+  padding: 12px 15px;
+  margin: 20px 0;
+  font-size: 0.95rem;
+  border-left: 4px solid #444;
+  background-color: #f8f9fa;
+  color: #555;
+}
+
+.series-notif a {
+  font-weight: bold;
+  color: #0076df;
+  text-decoration: none;
+}
+
+.series-notif a:hover {
+  text-decoration: underline;
+}
+
+.series-label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* 하단 시리즈 리스트 컨테이너 */
+.series-footer {
+  margin-top: 50px;
+  border-top: 1px dashed #ddd;
+  padding-top: 20px;
+}
+
+.series-list-container {
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.series-list-title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.series-index-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.series-index-list li {
+  font-size: 0.9rem;
+  padding: 6px 0;
+  border-bottom: 1px solid #fafafa;
+}
+
+.series-index-list li:last-child {
+  border-bottom: none;
+}
+
+.post-num {
+  color: #999;
+  margin-right: 10px;
+  font-family: monospace;
+}
+
+.current-post {
+  background-color: #fff9e6; /* 현재 읽고 있는 글 강조 */
+  padding-left: 10px !important;
+  border-radius: 4px;
+}
+
+.curr-tag {
+  font-size: 0.75rem;
+  color: #e67e22;
+  font-weight: bold;
+}
