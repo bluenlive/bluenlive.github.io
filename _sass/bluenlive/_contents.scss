@@ -187,6 +187,19 @@ hr.scissors::after {
   filter: invert(1);
 }
 
+u {
+  text-decoration: underline;
+  text-underline-offset: 4px; /* 밑줄을 글자에서 살짝 띄워 가독성 향상 */
+  text-decoration-thickness: 1px;
+}
+
+mark {
+  background-color: #fff3bf; /* 부드러운 하이라이트 색상 */
+  color: inherit;
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+}
+
 /* ---------------------------------------------------
  * 여러편이 시리즈로 작성된 글 스타일
  * --------------------------------------------------- */
@@ -263,14 +276,26 @@ hr.scissors::after {
 }
 
 .series-index-list li {
+  display: flex;
+  align-items: baseline; /* 번호와 제목의 수평 라인을 맞춤 */
   font-size: 0.85rem;
-  padding: 5px 10px;
+  padding: 6px 10px;
   border-bottom: 1px solid #fafafa;
 }
 
 .series-index-list li:last-child { border-bottom: none; }
 
-.post-num { color: #999; margin-right: 8px; font-family: monospace; }
+.post-num {
+  /* 이질적인 monospace를 버리고 제목 글꼴을 따름 */
+  font-family: inherit; 
+  font-weight: 700;    /* 숫자를 약간 두껍게 하여 가시성 확보 */
+  color: #004d99;      /* 프러시안 블루 계열로 포인트 */
+  margin-right: 12px;
+  font-size: 0.85rem;
+  display: inline-block;
+  width: 22px;         /* 숫자가 바뀌어도 제목 시작 위치를 일정하게 유지 */
+  text-align: right;   /* 숫자를 오른쪽 정렬하여 깔끔하게 배치 */
+}
 
 /* 5. 현재글 프러시안 블루 하이라이트 (Oklab 기준 밝은 톤) */
 .current-post {
@@ -283,4 +308,9 @@ hr.scissors::after {
   color: #0056b3;
   font-weight: bold;
   margin-left: 5px;
+}
+
+/* 현재 글일 때 번호 색상 반전 (선택 사항) */
+.current-post .post-num {
+  color: #0076df;
 }
