@@ -3,5 +3,11 @@
   "MD022": false,
   "MD029": false,
   "MD032": false,
-  "MD034": false
+  "MD034": false,
+  "MD033": {
+    "allowed_elements": [
+      "u",
+      "mark"
+    ]
+  }
 }
