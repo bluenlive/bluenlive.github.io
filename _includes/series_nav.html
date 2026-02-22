@@ -16,7 +16,7 @@
       {% if prev_idx >= 0 %}
         <div class="series-notif series-top">
           <span class="series-label">이전 글:</span>
-          <a href="{{ series_posts[prev_idx].url }}">{{ series_posts[prev_idx].title }}</a>에서 이어지는 글입니다.
+          <a href="{{ series_posts[prev_idx].url }}">{{ series_posts[prev_idx].title }}</a>에서 이어지는 글
         </div>
       {% endif %}
 
@@ -26,7 +26,7 @@
         {% if next_idx < series_posts.size %}
           <div class="series-notif series-bottom">
             <span class="series-label">다음 글:</span>
-            <a href="{{ series_posts[next_idx].url }}">{{ series_posts[next_idx].title }}</a>(으)로 이어집니다.
+            <a href="{{ series_posts[next_idx].url }}">{{ series_posts[next_idx].title }}</a>(으)로 이어짐
           </div>
         {% endif %}
 
