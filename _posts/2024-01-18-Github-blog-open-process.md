@@ -106,4 +106,4 @@ Giscus를 사용하는 것이 합리적이라 판단. [이 글](https://univdev.
 
 ## 5. 기타
 
-Minimal Mistakes 테마의 디렉토리 구조는 [이 글](https://jiwanm.github.io/blog/jekyll-directory-structure/){:target="_blank"}을 참고하면 된다.
+Minimal Mistakes 테마의 디렉터리 구조는 [이 글](https://jiwanm.github.io/blog/jekyll-directory-structure/){:target="_blank"}을 참고하면 된다.
