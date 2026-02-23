@@ -19,7 +19,7 @@ categories:
 
 {% include video id="Dnaorqo6krg" provider="youtube" %}
 
-그런데, **2015년** Orbcomm-2 미션에서 SpaceX는 로켓을 수직으로 착륙시켜 회수하는 것을 인류 역사상 최초로 해낸다.\
+그런데, **2015년** SpaceX는 Orbcomm-2 미션에서 인류 역사상 최초로 로켓을 **수직으로 착륙시켜 회수**해낸다.\
 〈두번산다〉의 그 장면을 실제로 해낸 것이다.
 
 {% include video id="KgaWHnY2Ph8" provider="youtube" %}
@@ -31,4 +31,4 @@ categories:
 
 {% include bluenlive/quote.html
    align="center"
-   content="그렇다면 SpaceX의 실체는 SPECTRE였던 것인가?" %}
+   content="그렇다면 SpaceX의 실체는|SPECTRE였던 것인가?" %}
