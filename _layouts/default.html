@@ -41,6 +41,7 @@
         const walker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT, {
           acceptNode: node => {
             const p = node.parentElement.tagName.toLowerCase();
+            // code, pre 태그 안은 절대 건드리지 않습니다.
             return ['code', 'pre', 'script', 'style'].includes(p) ? 
                    NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
           }
@@ -50,17 +51,18 @@
         while(node = walker.nextNode()) {
           const originalText = node.nodeValue;
           
-          // C++ 연산자와 절대 겹치지 않는 조합들
+          // 1. (--)와 Kramdown이 바꾼 긴 대시(\u2013)를 모두 대응합니다.
+          // 2. 혹시나 해서 (---)가 바뀐 더 긴 대시(\u2014)도 추가했습니다.
           const replacedText = originalText
-            .replace(/-->/g, '⟶')   // p -> a 와 겹치지 않음
-            .replace(/==>/g, '⟹')   // == 연산자와 겹치지 않음
-            .replace(/>>>/g, '➤');  // cin >> x 와 겹치지 않음
+            .replace(/(--|\u2013|\u2014)>/g, '⟶') 
+            .replace(/==>/g, '⟹')
+            .replace(/>>>/g, '➤'); // C++ cin >> 과 겹치지 않게 >>> 사용
           
           if (originalText !== replacedText) {
             node.nodeValue = replacedText;
           }
         }
       })();
-      </script>
-    </body>
+    </script>
+   </body>
 </html>
