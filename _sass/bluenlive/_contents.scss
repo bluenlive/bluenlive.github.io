@@ -311,18 +311,19 @@ mark {
 
 /* ---------------------------------------------------
  * 문장의 끝에 자투리로 쓸만한 글 스타일
- * [글 내용]{: desc}
+ * *글 내용*{: desc}
  * --------------------------------------------------- */
 
 /* 공통 스타일을 각 클래스에 직접 포함 */
 .desc, .comment {
-  font-size: 0.85em;
-  opacity: 0.65;
-  margin-left: 6px;
-  font-weight: normal;
+  font-size: 0.9em!important;
+  opacity: 0.8!important;
+  margin-left: 2px!important;
+  font-weight: normal!important;
   font-style: normal!important;
+  display: inline-block;
 }
 
 .comment {
-  font-family: var(--code-font-family);
+  font-family: var(--code-font-family), Consolas, monospace !important;
 }
