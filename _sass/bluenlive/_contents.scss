@@ -286,7 +286,6 @@ mark {
 .series-index-list li:last-child { border-bottom: none; }
 
 .post-num {
-  /* 이질적인 monospace를 버리고 제목 글꼴을 따름 */
   font-family: inherit; 
   color: #004d99;      /* 프러시안 블루 계열로 포인트 */
   margin-right: 12px;
@@ -307,4 +306,22 @@ mark {
   color: #0056b3;
   font-weight: bold;
   margin-left: 5px;
+}
+
+
+/* ---------------------------------------------------
+ * 문장의 끝에 자투리로 쓸만한 글 스타일
+ * [글 내용]{: desc}
+ * --------------------------------------------------- */
+
+/* 공통 스타일을 각 클래스에 직접 포함 */
+.desc, .comment {
+  font-size: 0.85em;
+  opacity: 0.65;
+  margin-left: 6px;
+  font-weight: normal;
+}
+
+.comment {
+  font-family: var(--code-font-family);
 }
