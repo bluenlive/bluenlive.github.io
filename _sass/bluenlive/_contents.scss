@@ -320,6 +320,7 @@ mark {
   opacity: 0.65;
   margin-left: 6px;
   font-weight: normal;
+  font-style: normal; /* 추가: 마크다운의 기울임 효과를 무시함 */
 }
 
 .comment {
