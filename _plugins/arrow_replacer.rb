@@ -2,32 +2,34 @@
 Jekyll::Hooks.register :documents, :pre_render do |doc|
   next unless doc.extname == ".md"
 
-  # 현재 처리 중인 파일 로그
-  puts ">> [ArrowReplacer] Target: #{doc.relative_path}"
+  puts ">> [ArrowReplacer] Safe-Processing: #{doc.relative_path}"
 
-  # 변환 전 원본 보관
-  original = doc.content.dup
-
-  # 1. 등호 화살표 (가장 안전)
-  doc.content.gsub!('==>', ' ⟹ ')
-
-  # 2. 대시 화살표 (SmartyPants가 바꾼 특수 대시 – 포함)
-  # 일반 대시(-->), 긴 대시(–>), 더 긴 대시(—>) 모두 대응
-  doc.content.gsub!(/(--|\u2013|\u2014)>/, ' ⟶ ')
-
-  # 3. 꺽쇠 화살표 (SmartyPants가 바꾼 » 포함)
-  # >>>, >>, »>, » 모두 대응
-  doc.content.gsub!(/(>>>|>>|\u00BB>|\u00BB)/, ' ➤ ')
-
-  # 치환 결과 확인 로그
-  if original != doc.content
-    puts "   [Success] Arrows replaced in #{doc.relative_path}"
+  # 1. 보호 구역 격리 (Masking)
+  # 코드 블록, 인라인 코드, 주석을 찾아 순서대로 배열에 저장하고 본문에서는 임시 표커로 대체합니다.
+  protected_blocks = []
+  doc.content = doc.content.gsub(/(^```.*?^```|^~~~.*?^~~~|`.*?`|)/m) do |match|
+    placeholder = "##BLOCK_#{protected_blocks.length}##"
+    protected_blocks << match
+    placeholder
   end
 
-  # 제목도 동일하게 처리
+  # 2. 안전 구역 화살표 치환 (수치가 검증된 로직)
+  # 이제 본문에는 '진짜 텍스트'만 남았으므로 안심하고 치환합니다.
+  doc.content.gsub!(/==\u003E/, ' ⟹ ')
+  doc.content.gsub!(/(?:--|\u2013|\u2014)>/, ' ⟶ ')
+  doc.content.gsub!(/(?:>>>|>>|\u00BB\u003E|\u00BB)/, ' ➤ ')
+
+  # 3. 보호 구역 복구 (Unmasking)
+  protected_blocks.each_with_index do |block, i|
+    doc.content.gsub!("##BLOCK_#{i}##", block)
+  end
+
+  # 제목(Title) 처리 (제목에는 코드 블록이 올 일이 거의 없으므로 단순 치환)
   if doc.data['title']
-    doc.data['title'].gsub!(/(--|\u2013|\u2014)>/, ' ⟶ ')
-    doc.data['title'].gsub!('==>', ' ⟹ ')
-    doc.data['title'].gsub!(/(>>>|>>|\u00BB)/, ' ➤ ')
+    title = doc.data['title']
+    title.gsub!(/==\u003E/, ' ⟹ ')
+    title.gsub!(/(?:--|\u2013|\u2014)>/, ' ⟶ ')
+    title.gsub!(/(?:>>>|>>|\u00BB)/, ' ➤ ')
+    doc.data['title'] = title
   end
 end
