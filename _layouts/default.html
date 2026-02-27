@@ -33,32 +33,5 @@
     </div>
 
     {% include scripts.html %}
-    <script>
-      (function() {
-        const content = document.querySelector('.initial-content'); 
-        if (!content) return;
-      
-        const walker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT, {
-          acceptNode: node => {
-            const p = node.parentElement.tagName.toLowerCase();
-            return ['code', 'pre', 'script', 'style'].includes(p) ? 
-                   NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT;
-          }
-        });
-      
-        let node;
-        while(node = walker.nextNode()) {
-          const originalText = node.nodeValue;
-          const replacedText = originalText
-            .replace(/(--|\u2013|\u2014)>/g, '⟶') 
-            .replace(/==>/g, '⟹')
-            .replace(/>>>/g, '➤');
-          
-          if (originalText !== replacedText) {
-            node.nodeValue = replacedText;
-          }
-        }
-      })();
-    </script>
    </body>
 </html>
