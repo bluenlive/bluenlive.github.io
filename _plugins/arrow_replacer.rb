@@ -1,39 +1,43 @@
 # _plugins/arrow_replacer.rb
 Jekyll::Hooks.register :documents, :pre_render do |doc|
-  # 마크다운 파일만 처리
+  # 마크다운 파일이 아니면 건너뜁니다.
   next unless doc.extname == ".md"
 
-  puts ">> [ArrowReplacer] Scanning: #{doc.relative_path}"
-  
-  # 정규표현식 보강: 대시류, 등호, 꺽쇠/인용구류를 모두 포함
-  # \u2013(–), \u2014(—), \u00BB(»)
-  regex = /(^```.*?^```|^~~~.*?^~~~|`.*?`|)|(==>|[--–—]{1,2}>|[>»]{2,3}>?|\u00BB)/m
+  # 1. 원본 내용 백업 및 로그 출력
+  content = doc.content
+  puts ">> [ArrowReplacer] Analyzing: #{doc.relative_path} (#{content.length} chars)"
 
-  new_content = doc.content.gsub(regex) do |match|
-    if $1 # 코드 블록이나 주석 영역
+  # 2. 정규표현식 (유니코드 이스케이프 사용으로 인코딩 문제 차단)
+  # \u2013: – (En-dash), \u2014: — (Em-dash), \u00BB: » (Double angle quote)
+  # 기호 조합: -->, –>, —>, ==>, >>>, >>, »>, »
+  regex = /(^```.*?^```|^~~~.*?^~~~|`.*?`|)|((?:--|\u2013|\u2014)>|==\u003E|(?:>>>|>>|\u00BB\u003E|\u00BB))/m
+
+  # 3. 변환 수행 및 결과 로그 확인
+  match_count = 0
+  new_content = content.gsub(regex) do |match|
+    if $1 # 무시 영역
       match
     else
+      match_count += 1
       found = $2
-      # 어떤 기호를 찾았는지 로그에 찍습니다. (Actions 로그에서 확인 가능)
-      puts "   [Match Found] '#{found}' in #{doc.relative_path}"
+      puts "   [Found] '#{found}' in #{doc.relative_path}" # 어떤 기호가 걸렸는지 로그로 확인
       
       case found
-      when /==>/
-        ' ⟹ '
-      when /[--–—]{1,2}>/
+      when /--|\u2013|\u2014/ # 대시류 + >
         ' ⟶ '
-      when /[>»]{2,3}/, "\u00BB"
+      when /==\u003E/          # ==>
+        ' ⟹ '
+      when />>|\u00BB/         # >> 또는 »
         ' ➤ '
       else
         match
       end
     end
   end
-  
-  doc.content = new_content
 
-  # 제목(Title) 처리
-  if doc.data['title']
-    doc.data['title'] = doc.data['title'].gsub(regex) { |m| $1 ? m : (m =~ /==>/ ? ' ⟹ ' : (m =~ /[--–—]/ ? ' ⟶ ' : ' ➤ ')) }
+  # 4. 변경 사항 적용
+  if match_count > 0
+    doc.content = new_content
+    puts "   [Done] Replaced #{match_count} arrows."
   end
 end
