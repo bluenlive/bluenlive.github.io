@@ -3,7 +3,7 @@ Jekyll::Hooks.register :documents, :pre_render do |doc|
   next unless doc.extname == ".md"
 
   # 1. 본문을 토큰 단위로 분할 (코드 블록, Liquid 태그, 인라인 코드 격리)
-  # 정규표현식은 오직 '분리'를 위해서만 사용합니다.
+  # 정규표현식은 오직 '분리'를 위해서만 사용됨
   tokens = doc.content.split(/(^```.*?^```|\{%.*?%\}|\{\{.*?\}\}|`.*?`)/m)
 
   tokens.map! do |token|
