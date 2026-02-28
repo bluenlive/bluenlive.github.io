@@ -315,7 +315,7 @@ mark {
  * --------------------------------------------------- */
 
 /* 공통 스타일을 각 클래스에 직접 포함 */
-.desc, .comment {
+.desc, .desc_comment {
   font-size: 0.925em!important;
   opacity: 0.7!important;
   margin-left: 2px!important;
@@ -324,6 +324,6 @@ mark {
   display: inline-block;
 }
 
-.comment {
+.desc_comment {
   font-family: var(--code-font-family), Consolas, monospace !important;
 }

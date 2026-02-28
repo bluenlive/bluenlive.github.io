@@ -15,8 +15,8 @@ Jekyll::Hooks.register :documents, :post_render do |doc|
       # 3. 일반 영역: 인라인 HTML 태그(<a> 등)가 포함된 상태에서 치환 수행
       res = part.dup
       
-      # 4중 콜론 (comment) - /m 옵션을 주어 태그가 여러 줄에 걸쳐 있어도 대응
-      res.gsub!(/(?<!:):{4}(?!:)(.+?)(?<!:):{4}(?!:)/m, '<span class="comment">\1</span>')
+      # 4중 콜론 (desc_comment) - /m 옵션을 주어 태그가 여러 줄에 걸쳐 있어도 대응
+      res.gsub!(/(?<!:):{4}(?!:)(.+?)(?<!:):{4}(?!:)/m, '<span class="desc_comment">\1</span>')
       
       # 3중 콜론 (desc)
       res.gsub!(/(?<!:):{3}(?!:)(.+?)(?<!:):{3}(?!:)/m, '<span class="desc">\1</span>')
@@ -28,7 +28,7 @@ Jekyll::Hooks.register :documents, :post_render do |doc|
   # 제목(Title) 처리 (제목에는 보통 블록 태그가 없으므로 단순 치환)
   if doc.data['title']
     t = doc.data['title'].dup
-    t.gsub!(/(?<!:):{4}(?!:)(.+?)(?<!:):{4}(?!:)/, '<span class="comment">\1</span>')
+    t.gsub!(/(?<!:):{4}(?!:)(.+?)(?<!:):{4}(?!:)/, '<span class="desc_comment">\1</span>')
     t.gsub!(/(?<!:):{3}(?!:)(.+?)(?<!:):{3}(?!:)/, '<span class="desc">\1</span>')
     doc.data['title'] = t
   end
