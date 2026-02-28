@@ -1,47 +1,34 @@
 # _plugins/custom_emphasis.rb
+
+# 1. 마크다운 렌더링 전: 언더스코어를 안전한 임시 표커로 치환
 Jekyll::Hooks.register :documents, :pre_render do |doc|
   next unless doc.extname == ".md"
 
-  # 1. 보호 구역 격리 (Masking)
-  # 코드 블록, 인라인 코드, HTML 주석, 수학 공식($$), Liquid 태그 등을 보호함
+  # 보호 구역 격리 (코드 블록 등)
   protected_items = []
   protection_regex = /(^```.*?^```|^~~~.*?^~~~|`.*?`||\$\$.*?\$\$|\{%.*?%\}|\{\{.*?\}\})/m
+  doc.content = doc.content.gsub(protection_regex) { |m| placeholder = "@@SAFE_#{protected_items.length}@@"; protected_items << m; placeholder }
 
-  doc.content = doc.content.gsub(protection_regex) do |match|
-    placeholder = "CE_SAFE_ZONE_#{protected_items.length}_"
-    protected_items << match
-    placeholder
-  end
+  # 정규표현식 개선: (?<!\w)와 (?!\w)를 사용하여 단어 중간의 _는 보호하고, 
+  # 백슬래시(\)나 대괄호([)가 뒤에 와도 정확히 인식하도록 수정
+  double_regex = /(?<!\w)__(?=\S)(.+?)(?<=\S)__(?!\w)/
+  single_regex = /(?<!\w)_(?=\S)(.+?)(?<=\S)_(?!\w)/
 
-  # 2. 커스텀 강조 규칙 적용 (Kramdown의 엄격한 규칙 모사)
-  
-  # [규칙 1] __double__ -> <span class="comment">
-  # - 조건: 앞이 공백/줄시작이고 뒤가 공백/구두점/줄끝이어야 함 (Intra-word 방지)
-  # - 조건: 시작 직후와 종료 직전은 공백이 아니어야 함 (__ word __ 는 무효)
-  double_regex = /(?<=^|\s)__(?=\S)(.+?)(?<=\S)__(?=$|\s|[.,!?;:])/
-  doc.content.gsub!(double_regex) do
-    content = $1
-    "<span class=\"comment\">#{content}</span>"
-  end
+  # 임시 이름표로 변환 (Jekyll의 렌더링 방해 금지)
+  doc.content.gsub!(double_regex, '⦗COMMENT_START⦘\1⦗COMMENT_END⦘')
+  doc.content.gsub!(single_regex, '⦗DESC_START⦘\1⦗DESC_END⦘')
 
-  # [규칙 2] _single_ -> <span class="desc">
-  # - 조건: 위와 동일하며, 반드시 더블 언더스코어 처리 후에 실행되어야 함
-  single_regex = /(?<=^|\s)_(?=\S)(.+?)(?<=\S)_(?=$|\s|[.,!?;:])/
-  doc.content.gsub!(single_regex) do
-    content = $1
-    "<span class=\"desc\">#{content}</span>"
-  end
+  # 보호 구역 복구
+  protected_items.each_with_index { |orig, i| doc.content.gsub!("@@SAFE_#{i}@@", orig) }
+end
 
-  # 3. 보호 구역 복구 (Unmasking)
-  protected_items.each_with_index do |original_content, i|
-    doc.content.gsub!("CE_SAFE_ZONE_#{i}_", original_content)
-  end
+# 2. 마크다운 렌더링 후: 임시 표커를 최종 HTML 태그로 변환
+Jekyll::Hooks.register :documents, :post_render do |doc|
+  next unless doc.extname == ".md"
 
-  # 제목(Title) 처리 - 제목은 보통 구조가 단순하므로 직접 처리
-  if doc.data['title']
-    title = doc.data['title'].dup
-    title.gsub!(double_regex) { "<span class=\"comment\">#{$1}</span>" }
-    title.gsub!(single_regex) { "<span class=\"desc\">#{$1}</span>" }
-    doc.data['title'] = title
-  end
+  # ⦗ ⦘ 기호는 일반적인 본문에 거의 쓰이지 않는 특수 기호입니다.
+  doc.output.gsub!('⦗COMMENT_START⦘', '<span class="comment">')
+  doc.output.gsub!('⦗COMMENT_END⦘', '</span>')
+  doc.output.gsub!('⦗DESC_START⦘', '<span class="desc">')
+  doc.output.gsub!('⦗DESC_END⦘', '</span>')
 end
