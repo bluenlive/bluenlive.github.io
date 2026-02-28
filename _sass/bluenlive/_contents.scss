@@ -328,8 +328,8 @@ mark {
 }
 
 .desc_comment {
-  font-family: $monospace !important;
-  color: #6a737d;
-  word-break: break-all;   /* 긴 코드 주석이 잘리지 않게 방지 */
-  border-bottom: 1px solid #ececec; /* 아주 연한 밑줄로 가독성 추가 */
+  font-family: $monospace!important;
+  color: #6a737d!important;
+  word-break: break-all!important;
+  border-bottom: 1px solid #ececec!important;
 }
