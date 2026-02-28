@@ -1,4 +1,4 @@
-name: Deploy Jekyll with Custom Plugins
+name: Deploy Jekyll (+Manual)
 
 on:
   push:
