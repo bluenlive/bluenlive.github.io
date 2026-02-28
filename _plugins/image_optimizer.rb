@@ -2,26 +2,28 @@
 Jekyll::Hooks.register :documents, :post_render do |doc|
   next unless doc.extname == ".md"
 
+  image_count = 0
   doc.output.gsub!(/<img\s+([^>]+)>/) do |match|
-    attrs_str = $1.dup
+    attributes = $1.dup
+    image_count += 1
     
-    # 1. Lazy Loading: 중복 확인 후 안전하게 끝에 추가
-    unless attrs_str.include?('loading=')
-      attrs_str << ' loading="lazy"'
+    # 1. 첫 두 장은 즉시 로드(eager), 그 이후부터는 레이지 로드(lazy)
+    if image_count <= 2
+      attributes.sub!(/loading=["'][^"']+["']/, '') # 기존 lazy 속성 제거
+      attributes << ' loading="eager"'
+    elsif !attributes.include?('loading=')
+      attributes << ' loading="lazy"'
     end
 
-    # 2. Align Center: 정렬 속성이 아예 없을 때만 추가
-    # 정규표현식으로 align- 관련 클래스가 있는지 정밀 검사
-    unless attrs_str =~ /class=["'][^"']*(align-left|align-right|align-center)[^"']*["']/
-      if attrs_str =~ /class=["']([^"']+)["']/
-        # 기존 클래스가 있으면 맨 뒤에 추가 (기존 클래스 유지)
-        attrs_str.sub!(/class=(["'])([^"']+)\1/, "class=\\1\\2 align-center\\1")
+    # 2. 중앙 정렬 자동화 (기존 로직 유지)
+    unless attributes =~ /class=["'][^"']*(align-left|align-right|align-center)[^"']/
+      if attributes =~ /class=["']([^"']+)["']/
+        attributes.sub!(/class=["']([^"']+)["']/, 'class="\1 align-center"')
       else
-        # 클래스 속성 자체가 없으면 새로 생성
-        attrs_str << ' class="align-center"'
+        attributes << ' class="align-center"'
       end
     end
 
-    "<img #{attrs_str.strip}>"
+    "<img #{attributes}>"
   end
 end
