@@ -2,20 +2,20 @@
 Jekyll::Hooks.register :documents, :post_render do |doc|
   next unless doc.extname == ".md"
 
-  # 1. 보호 블록 정의 (이 태그 내부의 내용은 절대 건드리지 않습니다)
-  # pre, code, script, style, math 블록을 통째로 캡처하여 분리합니다.
-  protected_block_regex = /(<(pre|code|script|style|math)[^>]*>.*?<\/\2>)/mi
+  # 1. 보호 블록 정의 (비캡처 그룹 ?: 을 사용하여 태그 이름 유출 방지)
+  # <a> 태그 등 인라인 태그는 쪼개지 않고 통째로 처리하기 위해 블록 태그만 지정합니다.
+  protected_block_regex = /(<(?:pre|code|script|style|math)[^>]*>.*?<\/(?:pre|code|script|style|math)>)/mi
 
-  # 2. 전체 출력을 보호 블록 단위로만 쪼갭니다. (<a> 태그 등은 쪼개지 않고 일반 텍스트에 포함됨)
+  # 2. 전체 출력을 보호 블록 단위로 쪼개어 처리
   doc.output = doc.output.split(protected_block_regex).map do |part|
     if part =~ protected_block_regex
-      # 보호 구역이면 그대로 반환
+      # <pre>나 <script> 등 보호 구역은 그대로 반환
       part
     else
-      # 3. 일반 영역: 인라인 HTML 태그(<a> 등)가 포함된 상태에서 치환 수행
+      # 일반 영역에서만 :::(desc)와 :::: (desc_comment) 치환
       res = part.dup
       
-      # 4중 콜론 (desc_comment) - /m 옵션을 주어 태그가 여러 줄에 걸쳐 있어도 대응
+      # 4중 콜론 (desc_comment)
       res.gsub!(/(?<!:):{4}(?!:)(.+?)(?<!:):{4}(?!:)/m, '<span class="desc_comment">\1</span>')
       
       # 3중 콜론 (desc)
@@ -25,7 +25,7 @@ Jekyll::Hooks.register :documents, :post_render do |doc|
     end
   end.join
 
-  # 제목(Title) 처리 (제목에는 보통 블록 태그가 없으므로 단순 치환)
+  # 제목(Title) 처리
   if doc.data['title']
     t = doc.data['title'].dup
     t.gsub!(/(?<!:):{4}(?!:)(.+?)(?<!:):{4}(?!:)/, '<span class="desc_comment">\1</span>')
