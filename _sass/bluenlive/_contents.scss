@@ -317,13 +317,19 @@ mark {
 /* 공통 스타일을 각 클래스에 직접 포함 */
 .desc, .desc_comment {
   font-size: 0.925em!important;
-  opacity: 0.7!important;
   margin-left: 2px!important;
   font-weight: normal!important;
   font-style: normal!important;
   display: inline-block;
 }
 
+.desc {
+  opacity: 0.7!important;
+}
+
 .desc_comment {
-  font-family: var(--code-font-family), Consolas, monospace !important;
+  font-family: $monospace !important;
+  color: #6a737d;
+  word-break: break-all;   /* 긴 코드 주석이 잘리지 않게 방지 */
+  border-bottom: 1px solid #ececec; /* 아주 연한 밑줄로 가독성 추가 */
 }
