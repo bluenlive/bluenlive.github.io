@@ -11,7 +11,7 @@ SRT 자막 관리 도우미 SRTier를 5.31로 업데이트했다.
 
 자막 속성을 선택적으로 없애는 기능을 추가했고 반모음 오타 수정 기능을 추가했다.
 
-![image](/images/2026-01-10c/srtier_B_okl_s64_Q.png){: .align-center}
+![image](/images/2026-01-10c/srtier_B_okl_s64_Q.png)
 
 이 프로그램의 주요 기능은 아래와 같다.
 

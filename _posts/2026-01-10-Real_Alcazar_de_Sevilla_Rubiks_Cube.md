@@ -9,7 +9,7 @@ categories:
 
 지인이 스페인 **세비야 알카사르 궁전**(레알 알카사르 / **Real Alcázar de Sevilla**)에서 사온 **루빅스 큐브**를 선물로 줬다.
 
-![image](/images/2026-01-10/20251213_044455371_iOS_okl_s64.jpg){: .align-center}
+![image](/images/2026-01-10/20251213_044455371_iOS_okl_s64.jpg)
 *세비야 알카사르 궁전(Real Alcázar de Sevilla) 루빅스 큐브*
 
 포장을 열기 전에는 각 면이 종이 스티커로 붙어있다고 생각했는데, 각 면에 제대로 인쇄된 **고급** 루빅스 큐브였다.\
@@ -20,7 +20,7 @@ categories:
 
 포장 안에는 각 면의 문양에 대해서도 간단한 설명이 동봉되어 있었다.
 
-![image](/images/2026-01-10/20260110_083228737_iOS_okl_s64.jpg){: .align-center}
+![image](/images/2026-01-10/20260110_083228737_iOS_okl_s64.jpg)
 *큐브 각 면에 대한 설명*
 
 | 순번 | 문양 설명 | 원본 위치 | 시대/해당 군주 |
@@ -48,7 +48,7 @@ categories:
 맨 첫 사진 큐브의 윗면이 표의 4번인 **카를 5세의 방 천장 장식**에 해당한다.\
 천장을 실제로 찍은 사진은 다음과 같다.
 
-![image](/images/2026-01-10/sevilla_alcazar_3427_okl_s64.jpg){: .align-center}
+![image](/images/2026-01-10/sevilla_alcazar_3427_okl_s64.jpg)
 *[카를 5세 방 천정](https://www.voyagevirtuel.net/andalousie/pages/sevilla_alcazar_3427.php)*
 
 참고로, 무데하르 궁전 타일과 카를 5세 천장의 문양은 다음과 같은 의미를 갖는다고 한다.

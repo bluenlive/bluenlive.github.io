@@ -49,7 +49,7 @@ hevcOutVideoNew failed
 
 오류 내역을 정리해서 **버그 리포팅**을 했고, 답장을 받았다.
 
-![image](/images/2026-01-23/mc_encoder_B_okl_s64_Q.png){: .align-center}
+![image](/images/2026-01-23/mc_encoder_B_okl_s64_Q.png)
 
 메일의 골자는 다음과 같다.
 

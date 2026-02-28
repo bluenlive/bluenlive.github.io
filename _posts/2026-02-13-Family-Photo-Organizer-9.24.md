@@ -13,14 +13,14 @@ categories:
 그런데, PC에선 **파일명 순**인 경우가 일반적이다.  
 이런 식이다보니 촬영시간 순서는 알기 힘들고 **카메라 기종 순**으로 파일을 보게 되는 경우가 대부분이다.
 
-![image](/images/2026-02-13b/pics1_B_Q.png){: .align-center}
+![image](/images/2026-02-13b/pics1_B_Q.png)
 *피쳐폰 - 똑딱이 - 작티 순 정렬...*
 
 FPO는 HEIF/JPEG의 Exif 정보 중 촬영일자 정보를 읽어 **파일명을 수정**하고, 최대한 **파일 크기를 줄여준다**.  
 [mozjpeg](https://github.com/mozilla/mozjpeg/)를 활용해서 파일 크기를 더 줄이고, 추가로 **resample**을 적용해서 사진 크기도 축소시켜준다.  
 또한, 사진과 함께 저장된 PNG, WebP, avi, mp4 등의 다양한 미디어 자료들도 함께 파일명을 수정해준다.
 
-![image](/images/2026-02-13b/pics2_B_Q.png){: .align-center}
+![image](/images/2026-02-13b/pics2_B_Q.png)
 *촬영날짜/시간 순 정렬 완료!*
 
 이 프로그램의 상세한 기능은 아래와 같다.
@@ -43,7 +43,7 @@ PNG / WebP / MP4 / MOV / MKV는 파일 내에 태깅된 날짜 정보 활용함
 - jpeg 라이브러리로 [mozjpeg](https://github.com/mozilla/mozjpeg/) 사용
 - 유니코드 완벽 지원
 
-![image](/images/2026-02-13b/FPO_B_okl_s64_Q.png){: .align-center}
+![image](/images/2026-02-13b/FPO_B_okl_s64_Q.png)
 
 이 프로그램은 아래 링크에서 다운받을 수 있다.
 

@@ -9,7 +9,7 @@ categories:
 잊혀질만 하면 업데이트하던 한/글 파일 압축기를 이번에도 정말 오랜만에 업데이트했다.\
 우리나라 특성상 이 프로그램을 완전히 벗어나는 건 쉽지 않다.
 
-![image](/images/2026-02-13c/HIS_B_okl_s64_Q.png){: .align-center}
+![image](/images/2026-02-13c/HIS_B_okl_s64_Q.png)
 *드디어 TIFF를 지원!*
 
 읽고 압축할 수 있는 파일 포맷에 TIFF를 추가했다.\

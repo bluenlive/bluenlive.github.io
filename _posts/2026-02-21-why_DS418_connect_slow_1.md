@@ -16,13 +16,13 @@ series_title: "시놀로지 NAS 접속 속도 이슈"
 
 그러다 며칠 전 뭔가 느낌이 이상해서 파일 복사 속도를 보니 **100Mbps** 정도였다.
 
-![image](/images/2026-02-21/100Mbps_okl_s64_Q.png){: .align-center}
+![image](/images/2026-02-21/100Mbps_okl_s64_Q.png)
 *Holy mother… 100메가…*
 
 **NAS** 쪽을 확인해보니 링크 속도가 **1Gbps**로 나온다.\
 그렇다면 범인은 PC다.
 
-![image](/images/2026-02-21/eth100_Q.png){: .align-center}
+![image](/images/2026-02-21/eth100_Q.png)
 *이걸 왜 눈치 못 챘지?*
 
 **PC**의 링크 속도가 **100Mbps**로 되어있었던 것이다.\
@@ -33,7 +33,7 @@ Cat.6라고 적어뒀지만 실상은 **Cat.6이 아니었던** 것이다.
 
 케이블을 **다른 Cat.6 케이블로 교체**하자 링크 속도 문제가 해결됐다.
 
-![image](/images/2026-02-21/eth1000_Q.png){: .align-center}
+![image](/images/2026-02-21/eth1000_Q.png)
 *반갑다 1000Mbps*
 
 ## 2. 전개: 링크는 1Gbps인데, SFTP 속도는 왜 이래?
@@ -41,7 +41,7 @@ Cat.6라고 적어뒀지만 실상은 **Cat.6이 아니었던** 것이다.
 케이블을 교체한 후 링크는 1Gbps가 되었다.\
 그런데, 파일을 복사해보니 전송 속도는 여전히 **500Mbps** 수준에 머물고 있다.
 
-![image](/images/2026-02-21/500Mbps_okl_s64_Q.png){: .align-center}
+![image](/images/2026-02-21/500Mbps_okl_s64_Q.png)
 *저기… 킹깐만요… 킹받네…*
 
 이 폴더는 NAS에서 **SFTP**로 설정한 디렉터리를 [RaiDrive](https://www.raidrive.com/)로 연결한 곳이다.\
@@ -55,7 +55,7 @@ Cat.6라고 적어뒀지만 실상은 **Cat.6이 아니었던** 것이다.
 SFTP는 안전하지만 좀 비효율적으로 암호화를 수행한다.\
 이걸 일단 범인으로 추정하고 **WebDAV(HTTPS/TLS)**로 연동해봤다.
 
-![image](/images/2026-02-21/1Gbps_okl_s64_Q.png){: .align-center}
+![image](/images/2026-02-21/1Gbps_okl_s64_Q.png)
 *그렇지! 이거지!*
 
 드디어 **1Gbps**로 파일을 읽고 쓰는 것을 확인했다.\
