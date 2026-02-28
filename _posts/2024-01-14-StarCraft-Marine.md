@@ -41,4 +41,4 @@ categories:
 링크의 홈페이지에도 고지되어 있듯이, 이 게임은 블리자드의 공식 게임이 아니다.  
 부디 모든 일이 잘 풀려서 공식 게임으로 출시되었으면 하는 바람이다.
 
-제작자 홈페이지: [StarCraft꞉ Marine](https://j-jlucas.github.io/PlaySCM){:target="_blank"}
+제작자 홈페이지: [StarCraft꞉ Marine](https://j-jlucas.github.io/PlaySCM)

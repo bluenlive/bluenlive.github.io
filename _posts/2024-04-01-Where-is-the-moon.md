@@ -20,15 +20,15 @@ categories:
 
 ## 해와 달의 위치를 인터넷으로 간단히 알아보기
 
-[Time and Date](https://www.timeanddate.com/astronomy/south-korea/seoul){:target="_blank"}와 같은 사이트를 이용하면 간단하게 해와 달의 위치를 알 수 있다.  
-[한국천문연구원](https://astro.kasi.re.kr/life/pageView/6){:target="_blank"}에서는 다양한 정보도 제공한다.
+[Time and Date](https://www.timeanddate.com/astronomy/south-korea/seoul)와 같은 사이트를 이용하면 간단하게 해와 달의 위치를 알 수 있다.  
+[한국천문연구원](https://astro.kasi.re.kr/life/pageView/6)에서는 다양한 정보도 제공한다.
 
 ## 파이썬 프로그램으로 알아보기
 
 일단 관측자의 위치를 알아야 한다.  
-[MAPS.ie](https://www.maps.ie/coordinates.html){:target="_blank"}와 같은 사이트를 이용하면 간단하게 위도와 경도를 알 수 있다.
+[MAPS.ie](https://www.maps.ie/coordinates.html)와 같은 사이트를 이용하면 간단하게 위도와 경도를 알 수 있다.
 
-다음으로 필요한 라이브러리는 [astral](https://pypi.org/project/astral/){:target="_blank"}이다.  
+다음으로 필요한 라이브러리는 [astral](https://pypi.org/project/astral/)이다.  
 다음과 같이 하면 간단하게 설치할 수 있다.
 
 ```batch

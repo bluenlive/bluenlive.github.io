@@ -6,7 +6,7 @@ categories:
   - ITTalk
 ---
 
-[**media-autobuild_suite**](https://github.com/m-ab-s/media-autobuild_suite){:target="_blank"}를 이용하면 [ffmpeg](https://ffmpeg.org/){:target="_blank"}를 원하는 대로 빌드할 수 있다.
+[**media-autobuild_suite**](https://github.com/m-ab-s/media-autobuild_suite)를 이용하면 [ffmpeg](https://ffmpeg.org/)를 원하는 대로 빌드할 수 있다.
 
 하지만, 말이 쉽지 **ffmpeg을 원하는대로 모든 인코더를 지원하도록** 빌드하는 건 쉬운 일이 아니다.\
 [이전 글](/ittalk/fix_media-autobuild-suite/)에서도 살짝 얘기했지만, 빌드에 실패하는 경우가 꽤 많다.

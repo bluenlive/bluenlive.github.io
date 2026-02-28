@@ -47,7 +47,7 @@ toc_sticky: true
 *우산과 개를 데리고 있는 함장?*
 
 램지 함장은 언제나 **개**를 데리고 다니며 비가 오면 **우산**을 쓴다.  
-이건 규정에 완전히 어긋나는 행동이며, imdb에는 이 장면이 **오류**라고 되어있다. ([개](http://www.imdb.com/title/tt0112740/trivia?tab=gf&item=gf0923692){:target="_blank"}, [우산](http://www.imdb.com/title/tt0112740/trivia?tab=gf&item=gf0923692){:target="_blank"})
+이건 규정에 완전히 어긋나는 행동이며, imdb에는 이 장면이 **오류**라고 되어있다. ([개](http://www.imdb.com/title/tt0112740/trivia?tab=gf&item=gf0923692), [우산](http://www.imdb.com/title/tt0112740/trivia?tab=gf&item=gf0923692))
 
 하지만, 오류라기 보다는 램지 함장의 **성격**을 단적으로 보여주는 장면이라 해석하는 게 합당하다.  
 한편으론 그가 틀린 판단을 할 수 있음을 상징한다.

@@ -20,15 +20,15 @@ series_title: "시놀로지 NAS 접속 속도 이슈"
 *너는 이미 질러져 있다!*
 
 이 어댑터는 **RTL8156B**를 기반으로 하는 2.5GbE USB 어댑터다.\
-왜 이걸 또 샀냐면... [해당 드라이버가 업데이트](https://github.com/bb-qq/r8152){:target="_blank"} 되었기 때문.
+왜 이걸 또 샀냐면... [해당 드라이버가 업데이트](https://github.com/bb-qq/r8152) 되었기 때문.
 
-그리고, 이번 업데이트는 [송신 큐의 timeout을 수정](https://github.com/bb-qq/r8152/commit/b6a96ccb711339852694b11fc49c8c65eb16f60c){:target="_blank"}했다고 하니 뭔가 될 것 같았다.\
+그리고, 이번 업데이트는 [송신 큐의 timeout을 수정](https://github.com/bb-qq/r8152/commit/b6a96ccb711339852694b11fc49c8c65eb16f60c)했다고 하니 뭔가 될 것 같았다.\
 설치해서 사용해보니, 장시간 사용에도 별다른 문제가 없었다.\
 드디어 **드라이버의 문제가 해결**된 것 같았다.
 
 ## 4. 난관: 그래도 테스트는 제대로 해봐야지
 
-네트워크 대역폭을 제대로 테스트 하고 싶으면 [iPerf](https://iperf.fr/iperf-download.php){:target="_blank"}를 사용하면 된다.\
+네트워크 대역폭을 제대로 테스트 하고 싶으면 [iPerf](https://iperf.fr/iperf-download.php)를 사용하면 된다.\
 NAS 쪽에서 서버 모드로 실행하고 윈도우 쪽에서 클라이언트 모드로 실행하면 간편하게 할 수 있다.
 
 시놀로지 쪽에서 이를 설치하려면 `SynoCli Monitor Tools`를 설치하면 간단하게 활용 가능하다.

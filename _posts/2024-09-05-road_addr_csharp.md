@@ -16,7 +16,7 @@ categories:
 이 서비스를 사용하기 위해서는 API 키가 필요하다.  
 국가주소정보시스템에서 API 키를 발급받아야 한다.
 
-[국가주소정보시스템 API신청하기](https://business.juso.go.kr/addrlink/openApi/apiReqst.do){:target="_blank"}에 접속해서 API 키를 발급받는다.  
+[국가주소정보시스템 API신청하기](https://business.juso.go.kr/addrlink/openApi/apiReqst.do)에 접속해서 API 키를 발급받는다.  
 이 때 반드시 **검색API**를 신청해야 한다.
 
 ![image](/images/2024-09-05/apis64_Q.png){: .align-center}

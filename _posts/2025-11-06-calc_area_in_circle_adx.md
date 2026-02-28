@@ -18,7 +18,7 @@ categories:
 
 ![image](/images/2025-11-06/wolframalpha_B_okl_s64_Q.png){: .align-center}
 
-[Wolfram Alpha](https://www.wolframalpha.com/input?i=integral+from+2+to+3+of+sqrt%2825-x%5E2%29&lang=ko){:target="_blank"}를 통해 계산해보니 위와 같은 결과가 나왔다.\
+[Wolfram Alpha](https://www.wolframalpha.com/input?i=integral+from+2+to+3+of+sqrt%2825-x%5E2%29&lang=ko)를 통해 계산해보니 위와 같은 결과가 나왔다.\
 이 결과를 보면서 다음과 같은 부정적분 식을 추정할 수 있었다.
 
   $$

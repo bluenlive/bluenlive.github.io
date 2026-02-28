@@ -6,7 +6,7 @@ categories:
   - algorithm
 ---
 
-아래 사진은 [SciTechDaily](https://scitechdaily.com/incredible-photograph-captures-space-station-as-it-transited-the-waning-gibbous-moon/){:target="_blank"}에 올라온 사진이다.  
+아래 사진은 [SciTechDaily](https://scitechdaily.com/incredible-photograph-captures-space-station-as-it-transited-the-waning-gibbous-moon/)에 올라온 사진이다.  
 인터넷에서는 이처럼 **ISS가 달 위를 지나가는 장면**을 촬영한 사진을 가끔 볼 수 있다.
 
 ![image](/images/2024-04-07/Moon_Over_ISS_777x740_Bs64.jpg){: .align-center}
@@ -31,7 +31,7 @@ ISS는 TLE를 통해 위치를 알 수 있는데, TLE는 특성상 며칠 지나
 
 ISS의 TLE를 얻는 방식은 이전 포스팅에서 다룬 것과 같다.
 
-그 외에 달에 대한 정보를 알아내려면 [astral 라이브러리](https://pypi.org/project/astral/){:target="_blank"}를 사용하면 된다.  
+그 외에 달에 대한 정보를 알아내려면 [astral 라이브러리](https://pypi.org/project/astral/)를 사용하면 된다.  
 이 라이브러리를 사용하면 관측자의 위치를 기준으로 해와 달의 위치는 물론 **뜨고 지는 시간**도 알 수 있다.  
 날짜에 따라선 달이 뜨거나 지는 시간이 없는 경우가 있으므로 이를 고려해야 한다.
 
@@ -138,7 +138,7 @@ def calc_azimuth_zenith(my_llh, iss_xyz):
 {% endhighlight %}
 
 마지막으로 필요한 함수는 방위와 천정각이 주어졌을 때 **두 점 사이의 각**을 계산하는 함수다.  
-처음엔 크기가 1인 벡터를 사용해 만들었는데, [copilot](https://github.com/features/copilot){:target="_blank"} 님이 간단한 방식을 제안해주심.
+처음엔 크기가 1인 벡터를 사용해 만들었는데, [copilot](https://github.com/features/copilot) 님이 간단한 방식을 제안해주심.
 
 {% highlight python linenos %}
 def calc_angle_between(azimuth1, zenith1, azimuth2, zenith2):

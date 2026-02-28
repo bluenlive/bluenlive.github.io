@@ -6,7 +6,7 @@ categories:
   - blog
 ---
 
-본 블로그는 [깃허브](https://github.com){:target="_blank"}의 **깃허브 페이지** 서비스에서 돌아간다.\
+본 블로그는 [깃허브](https://github.com)의 **깃허브 페이지** 서비스에서 돌아간다.\
 이 서비스는 알려져있다시피 Kramdown을 이용하여 Markdown 형식의 데이터를 HTML로 생성하는 방식이다.
 
 `<div>` 등의 html 태그도 쓸 수 있고, 지금까지 태그를 적극적으로 사용해왔었다.\

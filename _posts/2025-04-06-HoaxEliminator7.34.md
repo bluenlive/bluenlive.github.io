@@ -16,22 +16,22 @@ PC 뱅킹을 하고 나면 컴퓨터가 미친 듯이 느려지기 때문이다.
 **키보드 보안 프로그램**을 필두로 컴퓨터를 느려지게 만드는 악의 무리들이 너무나 많다.\
 전통의 명가(?) **nProte∗∗** 부터 컴퓨터 발목잡기의 거목 **안∗ 온라인 시큐∗∗**, 그 외에도 수많은 잡 구라들…
 
-[KISA에서 I사 보안모듈 프로그램에 문제가 있다고 발표](http://www.etnews.com/20161130000139){:target="_blank"}할 정도로 **완성도가 엉망**인 경우도 있다.\
-**보안 취약점을 갖고있는 보안 프로그램**이라니… 무슨 [열림교회 닫힘](https://www.google.com/search?q=열림교회+닫힘){:target="_blank"}도 아니고…
+[KISA에서 I사 보안모듈 프로그램에 문제가 있다고 발표](http://www.etnews.com/20161130000139)할 정도로 **완성도가 엉망**인 경우도 있다.\
+**보안 취약점을 갖고있는 보안 프로그램**이라니… 무슨 [열림교회 닫힘](https://www.google.com/search?q=열림교회+닫힘)도 아니고…
 
 더군다나 이런 프로그램들은 몰래 설치가 되는 것도 아니고 아예 **(강제로) 동의를 받아** 설치된다.\
 마치 건물 철거 강제 집행하면서 동의서 서명당하는 기분이다.
 
-게다가 [보안 전문가인 블라디미르 팔란트 씨의 글](https://github.com/alanleedev/KoreaSecurityApps/blob/main/03_weakening_tls_protection.md){:target="_blank"}에 따르면 이 과정에서 설치된 루트 인증서를 제대로 삭제하지도 않는다.
+게다가 [보안 전문가인 블라디미르 팔란트 씨의 글](https://github.com/alanleedev/KoreaSecurityApps/blob/main/03_weakening_tls_protection.md)에 따르면 이 과정에서 설치된 루트 인증서를 제대로 삭제하지도 않는다.
 
 그래서 간단히 만들었다.\
 설치 프로그램 목록에서 이러한 **백해무익한 쓰레기들을 찾아서 한방에 제거**해주는 프로그램.
 
 7.34부터는 디자인을 수정하고 있다.\
-아이콘을 포함한 디자인은 **현역 광고 감독**님이신 [LSM](http://www.leeseungmin.com/){:target="_blank"}님께서 지원해주시고 계신다.\
+아이콘을 포함한 디자인은 **현역 광고 감독**님이신 [LSM](http://www.leeseungmin.com/)님께서 지원해주시고 계신다.\
 이 프로그램은 Win32 API의 기능만을 사용하기 때문에 디자인에 대한 제약이 있지만, 최대한 노력해주고 계신다.
 
-그리고, 7.17부터 띄웠던 [토스 아이디](https://toss.me/bluenlive){:target="_blank"}는 서비스 종료로 [Buy Me A Coffee](https://buymeacoffee.com/bluenlive){:target="_blank"}로 변경되었다.
+그리고, 7.17부터 띄웠던 [토스 아이디](https://toss.me/bluenlive)는 서비스 종료로 [Buy Me A Coffee](https://buymeacoffee.com/bluenlive)로 변경되었다.
 
 ![image](/images/2025-04-06/hoax_Bs64_Q.png){: .align-center}
 *창의 디자인은 지속적으로 바뀔 예정*

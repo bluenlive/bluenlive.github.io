@@ -49,7 +49,7 @@ categories:
 천장을 실제로 찍은 사진은 다음과 같다.
 
 ![image](/images/2026-01-10/sevilla_alcazar_3427_okl_s64.jpg){: .align-center}
-*[카를 5세 방 천정](https://www.voyagevirtuel.net/andalousie/pages/sevilla_alcazar_3427.php){:target="_blank"}*
+*[카를 5세 방 천정](https://www.voyagevirtuel.net/andalousie/pages/sevilla_alcazar_3427.php)*
 
 참고로, 무데하르 궁전 타일과 카를 5세 천장의 문양은 다음과 같은 의미를 갖는다고 한다.
 - 무데하르 타일: 이슬람과 기독교 양식이 융합된 기하학적·자연적 문양. 반복과 대칭을 통해 영원성, 조화, 신성함을 상징

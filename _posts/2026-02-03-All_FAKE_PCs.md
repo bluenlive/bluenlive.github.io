@@ -12,7 +12,7 @@ categories:
 
 그래서 새로 PC를 구매하려는 지인들에게도 **저렴한 미니 PC**를 추천해주고 있었다.
 
-그런데, [유튜브 뻘짓 연구소](https://www.youtube.com/@BullsLab){:target="_blank"}의 영상 하나를 보고 깜짝 놀랐다.
+그런데, [유튜브 뻘짓 연구소](https://www.youtube.com/@BullsLab)의 영상 하나를 보고 깜짝 놀랐다.
 
 {% include video id="5a83G733fco" provider="youtube" %}
 

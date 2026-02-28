@@ -10,7 +10,7 @@ categories:
 프로젝션 타입이 아닌 **클리어 타입**이라 **합법적**으로 달 수 있는 LED 헤드라이트가 없었기 때문.
 
 몇년 전부터 관련 제품들을 뒤져봤고, 심지어 **경찰**에도 문의해봤지만 해결책이 없었다.\
-그러다 최근(2023년 12월) [브라비오](https://bravio.co.kr/product/detail.html?product_no=98&cate_no=24&display_group=1){:target="_blank"}에서 장착 가능한 LED 헤드라이트를 발매했다.
+그러다 최근(2023년 12월) [브라비오](https://bravio.co.kr/product/detail.html?product_no=98&cate_no=24&display_group=1)에서 장착 가능한 LED 헤드라이트를 발매했다.
 
 후다닥 취급점을 찾아 주문했고, 이제 드디어 내 차에도 LED 헤드라이트가 달렸다.
 

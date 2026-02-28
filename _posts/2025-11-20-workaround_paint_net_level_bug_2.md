@@ -26,4 +26,4 @@ Paint.NET에서 아래와 같이 HW 가속을 지정해도…
 
 덧1. **윈도우 설정에서 NVIDIA를 지정하면 프리징** 됨
 
-덧2. 이 내용은 [PDN 포럼](https://forums.getpaint.net/topic/134088-paintnet-issues-with-levels/page/2/#findComment-648254){:target="_blank"}에도 제보 완료함
+덧2. 이 내용은 [PDN 포럼](https://forums.getpaint.net/topic/134088-paintnet-issues-with-levels/page/2/#findComment-648254)에도 제보 완료함

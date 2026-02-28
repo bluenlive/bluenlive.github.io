@@ -8,7 +8,7 @@ categories:
 #tags: ["Euler"]
 ---
 
-툰 호수 유람선에서 **Spiez(슈피츠)**에서 내린 이유는 [예전](https://teus.tistory.com/572){:target="_blank"}에 왔던 곳이기 때문이었다.
+툰 호수 유람선에서 **Spiez(슈피츠)**에서 내린 이유는 [예전](https://teus.tistory.com/572)에 왔던 곳이기 때문이었다.
 
 ![image](/images/2025-05-24b/IMGP2980s64.jpg){: .align-center}
 *15년 전의 우리 꼬꼬마들*

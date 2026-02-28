@@ -9,7 +9,7 @@ categories:
 [이전 포스팅](/algorithm/road_addr_csharp/)을 쓰면서 간단히 예제 삼아 만들어본 **도로명 주소 검색 앱**을 소개한다.
 
 이 앱에는 API 키가 포함되어 있지 않으며, 사용자가 직접 키를 발급받아야 한다.  
-[국가주소정보시스템 API신청하기](https://business.juso.go.kr/addrlink/openApi/apiReqst.do){:target="_blank"}에 접속해서 **검색API**로 발급받으면 된다.
+[국가주소정보시스템 API신청하기](https://business.juso.go.kr/addrlink/openApi/apiReqst.do)에 접속해서 **검색API**로 발급받으면 된다.
 
 ![image](/images/2024-09-05/apis64_Q.png){: .align-center}
 *검색API*

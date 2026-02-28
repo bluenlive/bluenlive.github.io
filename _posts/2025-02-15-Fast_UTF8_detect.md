@@ -12,7 +12,7 @@ categories:
 ## 사소한 시작
 
 발단은 사소했다.\
-[Spetral Python](https://www.spectralpython.net/){:target="_blank"}이라는 라이브러리를 사용하는데, 파일을 읽지 못하고 예외가 발생했다.
+[Spetral Python](https://www.spectralpython.net/)이라는 라이브러리를 사용하는데, 파일을 읽지 못하고 예외가 발생했다.
 
 Spectral 데이터는 텍스트 포맷의 ENVY 파일과 바이너리 포맷으로 구성되어 있다.\
 이 중 ENVY 파일을 읽을 때 문제가 발생한 것.\
@@ -38,10 +38,10 @@ ANSI 포맷으로 변환하는 것으로 간단하게 종료.
 모든 포맷을 다 지원하지 않더라도, 최소한 ANSI와 UTF-8 정도는 쉽게 처리할 수 있어야 한다는 얘기다.
 
 깃허브를 조금만 뒤져보면 이 점에 열정을 쏟은 사람들을 쉽게 볼 수 있다.\
-[lemire/fastvalidate-utf-8](https://github.com/lemire/fastvalidate-utf-8){:target="_blank"}는 오래 전부터 이런 작업을 했었다.\
+[lemire/fastvalidate-utf-8](https://github.com/lemire/fastvalidate-utf-8)는 오래 전부터 이런 작업을 했었다.\
 그리고, 이미 이것도 느리다고 SIMD를 사용한 라이브러리들도 나왔다.\
-[zwegner/faster-utf8-validator](https://github.com/zwegner/faster-utf8-validator){:target="_blank"}에서는 SSE4.1/AVX2를 사용하여 더 빠르게 UTF-8을 검증한다.\
-이것도 부족한지 [simdutf/simdutf](https://github.com/simdutf/simdutf){:target="_blank"}에서는 수많은 SIMD 기술들을 다 동원한다.
+[zwegner/faster-utf8-validator](https://github.com/zwegner/faster-utf8-validator)에서는 SSE4.1/AVX2를 사용하여 더 빠르게 UTF-8을 검증한다.\
+이것도 부족한지 [simdutf/simdutf](https://github.com/simdutf/simdutf)에서는 수많은 SIMD 기술들을 다 동원한다.
 
 즉, UTF-8 검증은 이제 어려운 기술도 아니고, 뭔가를 스스로 만들어야 되는 기술도 아니다.\
 그런데, **파이썬은 대체 왜 저런 수준**인 걸까...

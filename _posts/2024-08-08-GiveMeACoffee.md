@@ -10,14 +10,14 @@ categories:
 
 계좌로 후원해주시는 분들께는 감사하면서도, 실명이 노출된다는 점이 **부담**스러웠다.
 
-실제로 [모 쓰레기 영화 사이트](https://extmovie.com/){:target="_blank"}에서 실명을 확인해서 저격을 당한 적도 있었다.  
+실제로 [모 쓰레기 영화 사이트](https://extmovie.com/)에서 실명을 확인해서 저격을 당한 적도 있었다.  
 (물론 **쓰레기**답게 운영자에게 제보했으나 씹힘)
 
 ![image](/images/2024-08-08/coffee_512_173.png){: .align-center}
 
 하지만, 아쉽게도 2024년 8월 1일부로 TOSS ID 서비스가 종료되었다.
 
-이에 따라, [Buy Me A Coffee](https://buymeacoffee.com/bluenlive){:target="_blank"}로 후원 시스템을 변경하게 되었다.
+이에 따라, [Buy Me A Coffee](https://buymeacoffee.com/bluenlive)로 후원 시스템을 변경하게 되었다.
 
 {% include bluenlive/quote.html
    align="center"

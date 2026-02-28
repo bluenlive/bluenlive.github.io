@@ -18,7 +18,7 @@ categories:
 *피쳐폰 - 똑딱이 - 작티 순 정렬...*
 
 FPO는 HEIF/JPEG의 Exif 정보 중 촬영일자 정보를 읽어 **파일명을 수정**하고, 최대한 **파일 크기를 줄여준다**.  
-[mozjpeg](https://github.com/mozilla/mozjpeg/){:target="_blank"}를 활용해서 파일 크기를 더 줄이고, 추가로 **resample**을 적용해서 사진 크기도 축소시켜준다.  
+[mozjpeg](https://github.com/mozilla/mozjpeg/)를 활용해서 파일 크기를 더 줄이고, 추가로 **resample**을 적용해서 사진 크기도 축소시켜준다.  
 또한, 사진과 함께 저장된 PNG, WebP, avi, mp4 등의 다양한 미디어 자료들도 함께 파일명을 수정해준다.
 
 ![image](/images/2024-01-28/pics2.png){: .align-center}
@@ -28,7 +28,7 @@ FPO는 HEIF/JPEG의 Exif 정보 중 촬영일자 정보를 읽어 **파일명을
 
 {: .bluebox-yellow}
 - **멀티코어 환경에서 이미지를 동시에 변환**(v5.1a부터)
-- JPEG 파일을 읽을 때 노이즈(JPEG Artifacts)를 제거하는 옵션 추가([jpeg-quantsmooth](https://github.com/ilyakurdyukov/jpeg-quantsmooth){:target="_blank"} 적용)
+- JPEG 파일을 읽을 때 노이즈(JPEG Artifacts)를 제거하는 옵션 추가([jpeg-quantsmooth](https://github.com/ilyakurdyukov/jpeg-quantsmooth) 적용)
 - Exif에 기록된 촬영일자 순으로 파일명 수정
 - Exif 정보가 없는 경우 파일 날짜 활용
 - 텍스트 데이터를 통한 Exif 생성
@@ -39,7 +39,7 @@ PNG / WebP / MP4 / MOV / MKV는 파일 내에 태깅된 날짜 정보 활용함
 - Exif 날짜를 촬영일자로 수정
 - 파일 날짜를 Exif 날짜로 변경
 - 옵션 지정시 파일명에서 날짜 및 시간 추출
-- jpeg 라이브러리로 [mozjpeg](https://github.com/mozilla/mozjpeg/){:target="_blank"} 사용
+- jpeg 라이브러리로 [mozjpeg](https://github.com/mozilla/mozjpeg/) 사용
 - 유니코드 완벽 지원
 
 ![image](/images/2024-01-28/FPO.png){: .align-center}

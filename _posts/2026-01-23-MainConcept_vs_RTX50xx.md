@@ -6,7 +6,7 @@ categories:
   - media
 ---
 
-나는 HEVC 인코더로 [MainConcept의 HEVC 인코더](https://www.mainconcept.com/ffmpeg){:target="_blank"}를 사용한다.\
+나는 HEVC 인코더로 [MainConcept의 HEVC 인코더](https://www.mainconcept.com/ffmpeg)를 사용한다.\
 이 인코더를 몇 년을 사용해오고 있는데, 인코딩 성능이 상당히 만족스럽다.\
 **NVidia GPU의 HW와 SW를 병행해서 적용**하여 성능과 품질 두 마리 토끼를 잡은 인코더다.
 

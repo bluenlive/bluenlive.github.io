@@ -11,8 +11,8 @@ categories:
 
 비디오를 완벽하게 재인코딩 하려면 모든 프레임을 다 추출한 뒤에 각 프레임의 시간을 지정하면 된다.
 
-각 프레임을 하나씩 추출하는 최적의 도구는 [VirtualDub2](https://sourceforge.net/p/vdfiltermod/wiki/Home/){:target="_blank"}이다.\
-원조 [VirtualDub](https://www.virtualdub.org/){:target="_blank"}를 훌륭하게 계승한 이 프로그램은 전 프레임을 이미지로 손쉽게 저장해준다.
+각 프레임을 하나씩 추출하는 최적의 도구는 [VirtualDub2](https://sourceforge.net/p/vdfiltermod/wiki/Home/)이다.\
+원조 [VirtualDub](https://www.virtualdub.org/)를 훌륭하게 계승한 이 프로그램은 전 프레임을 이미지로 손쉽게 저장해준다.
 
 그리고, 프로그램을 하나 만들어서 `ffprobe`로 추출한 프레임 정보를 지정하면 큰 준비는 끝이다.
 

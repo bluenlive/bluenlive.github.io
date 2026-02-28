@@ -14,7 +14,7 @@ categories:
 [한글 맞춤법](https://www.law.go.kr/%ED%96%89%EC%A0%95%EA%B7%9C%EC%B9%99/%ED%95%9C%EA%B8%80%EB%A7%9E%EC%B6%A4%EB%B2%95)에는 다른 표기법을 정의하고 있다.  
 요약하자면, 책의 제목은 겹낫표(『 』)와 겹화살괄호(《 》), 예술 작품은 홑낫표(「 」)와 홑화살괄호(〈 〉)로 표기하는 것.
 
-이 규칙을 적용하는 게 **불편해서 사용하지 않았**는데, [PowerToys](https://learn.microsoft.com/ko-kr/windows/powertoys/install){:target="_blank"}를 이용하면 이를 **쉽게 적용**할 수 있다.  
+이 규칙을 적용하는 게 **불편해서 사용하지 않았**는데, [PowerToys](https://learn.microsoft.com/ko-kr/windows/powertoys/install)를 이용하면 이를 **쉽게 적용**할 수 있다.  
 
 ![image](/images/2024-03-16/powertoys_Bs64_Q.png){: .align-center}
 

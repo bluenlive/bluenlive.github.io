@@ -9,7 +9,7 @@ categories:
 올해 출시될 그래픽 카드 중 뭘 구매할지 고민을 하고 있었다.\
 그러다가 예상보다 더 지저분한 상황이 예상되어 깔끔하게 포기하고 **RTX 4070s**를 구매했다.
 
-제조사를 인텔이나 AMD로 바꾸지 않은 것은, [MainConcept의 HEVC 인코더](https://www.mainconcept.com/ffmpeg){:target="_blank"}와 궁합도 한몫 했다.\
+제조사를 인텔이나 AMD로 바꾸지 않은 것은, [MainConcept의 HEVC 인코더](https://www.mainconcept.com/ffmpeg)와 궁합도 한몫 했다.\
 그리고, 다른 제조사들에 비해 높은 드라이버 안정성도 역시 한몫 했다.\
 그러나...
 

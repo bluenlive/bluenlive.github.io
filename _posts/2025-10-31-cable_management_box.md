@@ -58,7 +58,7 @@ categories:
 
 ![image](/images/2025-10-31/20251031_060309462_iOS_okl_s64.jpg){: .align-center}
 
-[답](https://smartstore.naver.com/damoang-net/products/12103222483){:target="_blank"}이 이렇게나 가까이 있었던 걸 이제야 알았다니...\
-참고로, 본 제품은 [네이버 스토어](https://smartstore.naver.com/damoang-net/products/12103222483){:target="_blank"}에서 구매 할 수 있다.
+[답](https://smartstore.naver.com/damoang-net/products/12103222483)이 이렇게나 가까이 있었던 걸 이제야 알았다니...\
+참고로, 본 제품은 [네이버 스토어](https://smartstore.naver.com/damoang-net/products/12103222483)에서 구매 할 수 있다.
 
 [^1]: 나라마다 전원 케이블/멀티탭 규격이 다르기 때문

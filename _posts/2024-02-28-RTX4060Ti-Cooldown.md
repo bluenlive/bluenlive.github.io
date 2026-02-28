@@ -6,8 +6,8 @@ categories:
   - ITTalk
 ---
 
-[이전 글](/ittalk/RTX4060Ti-Undervolting/){:target="_blank"}에서 언더볼팅을 통한 시스템 안정성을 얘기했었다.  
-그런데, [Topaz Video AI](https://www.topazlabs.com/topaz-video-ai){:target="_blank"}를 쓰다보니, 언더볼팅을 하고 나서도 컴퓨터가 **또 다운**되는 경우가 생겼다.
+[이전 글](/ittalk/RTX4060Ti-Undervolting/)에서 언더볼팅을 통한 시스템 안정성을 얘기했었다.  
+그런데, [Topaz Video AI](https://www.topazlabs.com/topaz-video-ai)를 쓰다보니, 언더볼팅을 하고 나서도 컴퓨터가 **또 다운**되는 경우가 생겼다.
 
 해외 포럼을 찾아보니 다행히(?) 나만의 문제는 아니고, 다양한 원인과 해결책들이 제시되었다.  
 제작사에선 알기는 알면서도 왠지 미온적으로 대응하는 느낌이었고...
@@ -24,16 +24,16 @@ categories:
 ![image](/images/2024-02-28/task_cpus64_Q.png){: .align-center}
 
 그런데, GPU 점유율은 생각보다 높지 않다.  
-그렇다면, [이전 글](/ittalk/RTX4060Ti-Undervolting/){:target="_blank"}에서 짚은 내용이 충분하지 않다는 뜻이다.
+그렇다면, [이전 글](/ittalk/RTX4060Ti-Undervolting/)에서 짚은 내용이 충분하지 않다는 뜻이다.
 
 ![image](/images/2024-02-28/task_gpus64_Q.png){: .align-center}
 
-일단, [**MSI Afterburner**](https://www.msi.com/page/Afterburner){:target="_blank"}의 설정을 다시 한 번 확인했다.  
+일단, [**MSI Afterburner**](https://www.msi.com/page/Afterburner)의 설정을 다시 한 번 확인했다.  
 특이한 내용은 없다.
 
 ![image](/images/2024-02-28/msi_gpu_curve_Q.png){: .align-center}
 
-이것만으론 부족하니 [**Ryzen Master**](https://www.amd.com/en/technologies/ryzen-master){:target="_blank"}를 통해 CPU의 최대 전력 사용량도 줄여보기로 했다.  
+이것만으론 부족하니 [**Ryzen Master**](https://www.amd.com/en/technologies/ryzen-master)를 통해 CPU의 최대 전력 사용량도 줄여보기로 했다.  
 **PPT**는 **110 W**, **TDC**는 **95 A**, **EDC**는 **140 A**로 설정했다.
 
 ![image](/images/2024-02-28/ryzen_masters64_Q.png){: .align-center}

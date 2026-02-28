@@ -5,7 +5,7 @@ categories:
   - blog
 ---
 
-[티스토리](https://tistory.com){:target="_blank"}에 블로그 둥지를 튼 지도 16년이 넘는 시간이 흘렀다.
+[티스토리](https://tistory.com)에 블로그 둥지를 튼 지도 16년이 넘는 시간이 흘렀다.
 
 그 기간 동안 **bluenlive.net**, **zoc.kr**, **teus.me** 등 여러 도메인을 사용했었다.  
 티스토리 블로그에서 bbcode를 댓글창에 구현하기도 했고, 블로그 2개를 별도로 운영하기도 했다.  
@@ -25,9 +25,9 @@ categories:
 하지만, 그래도 카카오는 **대기업** 아닌가?  
 무슨 대기업이 사용자의 쌈짓돈을 뜯어가려는 건지 모르겠다.
 
-여기에 카카오는 [모든 서비스를 재검토](https://www.etnews.com/20231113000269){:target="_blank"}한다고 한다.
+여기에 카카오는 [모든 서비스를 재검토](https://www.etnews.com/20231113000269)한다고 한다.
 
-더 늦어지기 전에 블로그 본진을 [깃허브](https://github.com){:target="_blank"}로 옮기기로 했다.  
+더 늦어지기 전에 블로그 본진을 [깃허브](https://github.com)로 옮기기로 했다.  
 기존 블로그에 있던 포스팅들을 모두 옮기는 것은 아니며, 기존 블로그에 대한 링크도 만들어두었다.
 
 ![image](/images/2024-01-17a/teusme_blog.png){: .align-center}

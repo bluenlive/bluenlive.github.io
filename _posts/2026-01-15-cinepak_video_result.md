@@ -7,7 +7,7 @@ categories:
 ---
 
 [이전 글](/media/cinepak_video_conv2/)에서 일일이 변환한 결과를 AI를 활용해서 화질을 개선해봤다.\
-사용된 프로그램은 그 유명한 [Topaz Video](https://www.topazlabs.com/topaz-video){:target="_blank"}.
+사용된 프로그램은 그 유명한 [Topaz Video](https://www.topazlabs.com/topaz-video).
 
 일단 **그 난리**를 치면서 변환한 원본은 아래와 같다.\
 아주 오래된 **cinepak** 코덱 답게 원본의 화질은 대단히 거칠다.\

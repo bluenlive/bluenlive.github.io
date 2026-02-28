@@ -6,7 +6,7 @@ categories:
   - media
 ---
 
-[MainConcept의 HEVC 인코더](https://www.mainconcept.com/ffmpeg){:target="_blank"}는 **불법 복제 방지 솔루션**으로 **CodeMeter**를 사용한다.\
+[MainConcept의 HEVC 인코더](https://www.mainconcept.com/ffmpeg)는 **불법 복제 방지 솔루션**으로 **CodeMeter**를 사용한다.\
 이 인코더를 몇 년을 사용해왔는데, 인코딩 성능이 여전히 훌륭하다.
 
 그런데, 얼마 전부터 **CodeMeter 서비스**가 중단되어 인코딩이 진행되지 않는 현상이 종종 발생했다.

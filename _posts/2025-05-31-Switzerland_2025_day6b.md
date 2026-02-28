@@ -8,7 +8,7 @@ categories:
 #tags: ["Euler"]
 ---
 
-[예전](https://teus.tistory.com/581){:target="_blank"}에 왔던 기억을 되살리며, 기차를 타고 라우터브루넨으로 이동했다.\
+[예전](https://teus.tistory.com/581)에 왔던 기억을 되살리며, 기차를 타고 라우터브루넨으로 이동했다.\
 그 땐 **크리스티나 호텔**에서 묵기도 했는데, 차창 밖으로 그 호텔이 보여서 한 컷.
 
 ![image](/images/2025-05-31/03_IMG_9816s64.jpg){: .align-center}

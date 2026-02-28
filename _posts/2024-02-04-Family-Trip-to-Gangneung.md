@@ -78,7 +78,7 @@ categories:
 
 ![image](/images/2024-02-04b/20240203_090025252_iOSs64.jpg){: .align-center}
 
-삼숙이라고 불리는 이 생선의 진짜 이름은 **[삼세기](https://species.nibr.go.kr/digital/enc/viewSpeciesOther.do?ktsn=120000058238&menu_type=story&contType=S&seq_no=34104){:target="_blank"}**.  
+삼숙이라고 불리는 이 생선의 진짜 이름은 **[삼세기](https://species.nibr.go.kr/digital/enc/viewSpeciesOther.do?ktsn=120000058238&menu_type=story&contType=S&seq_no=34104)**.  
 요즘은 잡히는 양이 많지 않아 많이 주문하기 힘들다.
 
 ![image](/images/2024-02-04b/20240203_090032631_iOSs64.jpg){: .align-center}

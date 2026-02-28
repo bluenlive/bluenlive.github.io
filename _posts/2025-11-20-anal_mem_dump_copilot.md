@@ -15,7 +15,7 @@ toc_sticky: true
 
 ## 메모리 덤프
 
-[PDN 포럼](https://forums.getpaint.net/topic/134088-paintnet-issues-with-levels/page/2/#findComment-648154){:target="_blank"}에서 이 문제를 얘기하다 **메모리 덤프**를 보내란 요청을 받았다.
+[PDN 포럼](https://forums.getpaint.net/topic/134088-paintnet-issues-with-levels/page/2/#findComment-648154)에서 이 문제를 얘기하다 **메모리 덤프**를 보내란 요청을 받았다.
 
 메모리 덤프는 **작업 관리자**에서 생성하면 된다.
 

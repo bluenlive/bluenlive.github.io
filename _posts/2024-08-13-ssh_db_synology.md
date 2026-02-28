@@ -13,7 +13,7 @@ NAS라는 장비의 특성상 전 세계에서 접속을 시도하는 **해커**
 DB에 별 데이터가 없으면 모르겠지만, 중요한 자료들이 많다면 **보안**에 신경을 써야 한다.
 
 SSL을 통해 접속하는 것은 아마도 불가능한 것 같다.  
-[인터넷을 찾아보면](https://serverfault.com/questions/1091164/establishing-ssl-with-mariadb10-on-synology){:target="_blank"} **SSL을 사용할 수 없도록** 컴파일된 것이라는 글도 보인다.
+[인터넷을 찾아보면](https://serverfault.com/questions/1091164/establishing-ssl-with-mariadb10-on-synology) **SSL을 사용할 수 없도록** 컴파일된 것이라는 글도 보인다.
 
 하지만, **SSH**를 통해 접속하는 것은 가능하다.  
 

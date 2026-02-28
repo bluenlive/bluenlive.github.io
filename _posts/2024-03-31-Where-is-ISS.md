@@ -32,10 +32,10 @@ categories:
 
 ISS를 비롯한 우주 물체의 위치를 파악하는 방법은 여러 가지가 있다.
 
-가장 간단하게는 [Heavens-Above](https://heavens-above.com){:target="_blank"}와 같은 웹사이트를 이용하는 것이다.  
+가장 간단하게는 [Heavens-Above](https://heavens-above.com)와 같은 웹사이트를 이용하는 것이다.  
 괜찮은 방법이지만, 파악된 위치를 바탕으로 다른 계산을 하기 어렵다.
 
-또 다른 단순한 방법은 [Open Notify](http://open-notify.org/Open-Notify-API/ISS-Location-Now/){:target="_blank"}와 같은 API를 이용하는 것이다.  
+또 다른 단순한 방법은 [Open Notify](http://open-notify.org/Open-Notify-API/ISS-Location-Now/)와 같은 API를 이용하는 것이다.  
 이 곳의 API를 이용하면, ISS의 현재 위치를 알 수 있다.  
 하지만, 고도 정보가 나오지 않고, 위치 정보 역시 정확도가 떨어진다.
 
@@ -50,13 +50,13 @@ ISS를 비롯한 우주 물체의 위치를 파악하는 방법은 여러 가지
 }
 ```
 
-좀 더 정석적인 방법은 [TLE(Two-Line Element Set)](https://celestrak.org/NORAD/documentation/tle-fmt.php){:target="_blank"}를 이용하여 계산 하는 것이다.  
+좀 더 정석적인 방법은 [TLE(Two-Line Element Set)](https://celestrak.org/NORAD/documentation/tle-fmt.php)를 이용하여 계산 하는 것이다.  
 TLE는 위성의 궤도를 정의하는 데 사용되는 데이터 포맷이다.  
-이 파일은 [CelesTrak](https://celestrak.com){:target="_blank"}과 같은 사이트에서 다운로드할 수 있다.
+이 파일은 [CelesTrak](https://celestrak.com)과 같은 사이트에서 다운로드할 수 있다.
 
 TLE 파일을 이용하면, ISS의 위치를 시간별로 추적할 수도 있다.  
 TLE에서 1차 변환한 위치는 ECI 좌표계로 나오기 때문에, 이를 ECEF 좌표계로 변환해야 한다.  
-이 변환을 한번에 해주는 라이브러리로는 [PyEphem](https://pypi.org/project/ephem/){:target="_blank"}, [Skyfield](https://pypi.org/project/skyfield/){:target="_blank"} 등이 있다.
+이 변환을 한번에 해주는 라이브러리로는 [PyEphem](https://pypi.org/project/ephem/), [Skyfield](https://pypi.org/project/skyfield/) 등이 있다.
 
 ## PyEphem을 이용한 ISS 위치 계산
 
@@ -94,7 +94,7 @@ def get_iss_position_ephem():
     return iss_object_ephem, time_now
 {% endhighlight %}
 
-그런데, [PyEphem의 소스 중 earthsat.c](https://github.com/brandon-rhodes/pyephem/blob/master/libastro/earthsat.c){:target="_blank"}를 보면, 이상한 점이 하나 눈에 띈다.  
+그런데, [PyEphem의 소스 중 earthsat.c](https://github.com/brandon-rhodes/pyephem/blob/master/libastro/earthsat.c)를 보면, 이상한 점이 하나 눈에 띈다.  
 여기서 도출된 ECEF 좌표는 **WGS84 좌표계가 아니다**.  
 심지어 코드나 주석에 언급되는 **WGS66도 아니다**.
 
@@ -118,7 +118,7 @@ def InvGetSubSatPoint(Lat, Long, Alt):
 
 이렇게 하면 간단하게 **ECEF 직교좌표**를 얻을 수 있다.
 
-여담이지만, 전술한 [Open Notify](http://open-notify.org/Open-Notify-API/ISS-Location-Now/){:target="_blank"}의 API도 이 방법을 사용한다.  
+여담이지만, 전술한 [Open Notify](http://open-notify.org/Open-Notify-API/ISS-Location-Now/)의 API도 이 방법을 사용한다.  
 그것도 마지막에 기술한 직교좌표 변환은 빼고.  
 따라서, 여기서 얻은 좌표에서 **위도는 정확도가 많이 떨어진다**.
 
@@ -185,6 +185,6 @@ WGS84 latitude -6.2373 N longitude 152.1915 E elevation 422381.6 m
 
 덧2. ISS의 위치를 실시간으로 확인할 수 있는 사이트들은 아래와 같다.
 
-- [Heavens-Above](https://heavens-above.com){:target="_blank"}
-- [N2YO](https://www.n2yo.com){:target="_blank"}
-- [NASA](https://spotthestation.nasa.gov){:target="_blank"}
+- [Heavens-Above](https://heavens-above.com)
+- [N2YO](https://www.n2yo.com)
+- [NASA](https://spotthestation.nasa.gov)

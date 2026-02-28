@@ -44,7 +44,7 @@ Cat.6라고 적어뒀지만 실상은 **Cat.6이 아니었던** 것이다.
 ![image](/images/2026-02-21/500Mbps_okl_s64_Q.png){: .align-center}
 *저기… 킹깐만요… 킹받네…*
 
-이 폴더는 NAS에서 **SFTP**로 설정한 디렉터리를 [RaiDrive](https://www.raidrive.com/){:target="_blank"}로 연결한 곳이다.\
+이 폴더는 NAS에서 **SFTP**로 설정한 디렉터리를 [RaiDrive](https://www.raidrive.com/)로 연결한 곳이다.\
 즉, 원인으로 추정할 수 있는 곳들이 다음과 같은 것이다.
 
 {: .bluebox-blue}

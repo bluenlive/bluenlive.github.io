@@ -88,7 +88,7 @@ SRT 자막 관리 도우미 SRTier를 5.31로 업데이트했다.
 
 - 2025.2.16꞉ v5.25 공개
   - SAMI → SRT 변환 시 언어가 하나만 있으면 파일명에 언어를 추가하지 않도록 수정
-  - TOSS 아이디 후원을 [Buy Me A Coffee](https://buymeacoffee.com/bluenlive){:target="_blank"}로 변경
+  - TOSS 아이디 후원을 [Buy Me A Coffee](https://buymeacoffee.com/bluenlive)로 변경
 
 - 2025.12.31꞉ v5.30 공개
   - **자막 시간이 겹칠 때**의 처리를 **3가지 옵션에서 선택**할 수 있도록 수정
