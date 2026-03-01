@@ -200,22 +200,25 @@ ol[class^="bluebox-"] {
   margin-bottom: 0.1em;
 }
 
+.theQuote, .theQuoteLeft, .quoteAuthor{
+  color: rgb(44, 62, 80);
+}
+
+.theQuote, .theQuoteLeft{
+  font-size: 1.55em;
+}
+
 .theQuote{
   text-align: center;
-  font-size: 30px;
-  color: rgb(44, 62, 80);
 }
 
 .theQuoteLeft{
   text-align: left;
-  font-size: 30px;
-  color: rgb(44, 62, 80);
 }
 
 .quoteAuthor{
   text-align: right;
-  font-size: 20px;
-  color: rgb(44, 62, 80);
+  font-size: 1.175em;
   margin-top: -0.1em;
   margin-bottom: 1.5em;
 }
@@ -226,7 +229,7 @@ ol[class^="bluebox-"] {
 
 .quotationMark--left::before,
 .quotationMark--right::before {
-  font-size: 60px;
+  font-size: 2.25em;
   font-weight: 600;
   position: absolute;
   top: -15px;
