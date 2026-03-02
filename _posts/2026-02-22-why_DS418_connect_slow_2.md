@@ -65,9 +65,8 @@ Connecting to host 172.∗∗.∗.∗∗∗, port 5201
 [  5]   1.01-2.01   sec   114 MBytes   949 Mbits/sec
 [  5]   2.01-3.00   sec   112 MBytes   949 Mbits/sec
 [  5]   3.00-4.01   sec   114 MBytes   950 Mbits/sec
-[  5]   4.01-5.00   sec   112 MBytes   950 Mbits/sec
                         ⋮
-[  5] 295.00-296.01 sec   114 MBytes   950 Mbits/sec
+                        ⋮
 [  5] 296.01-297.01 sec   112 MBytes   949 Mbits/sec
 [  5] 297.01-298.01 sec   114 MBytes   949 Mbits/sec
 [  5] 298.01-299.01 sec   113 MBytes   950 Mbits/sec
@@ -78,7 +77,6 @@ Connecting to host 172.∗∗.∗.∗∗∗, port 5201
 [  5]   0.00-300.03 sec  33.1 GBytes   946 Mbits/sec                  receiver
 
 iperf Done.
-PS C:\Users\bluen>
 ```
 
 이 얼마나 아름다운 결과인가...!!\
@@ -114,7 +112,7 @@ Reverse mode, remote host 172.∗∗.∗.∗∗∗ is sending
 ```
 
 그렇다...\
-**NAS에서 PC**로 대량의 데이터를 보내는 건 **실패**한 것이다.
+**NAS에서 PC**로 대량의 데이터를 보내는 건 **2초만에 실패**한 것이다.
 
 이후 NAS 측에서 `ethtool`로 다양한 튜닝을 해봤지만, 결론은 동일했다.\
 **1Gbps를 꽉 채운 데이터를 보내는 건 실패**한다는 것.
