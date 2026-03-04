@@ -81,6 +81,28 @@ layout: default
             </nav>
           </aside>
         {% endif %}
+        
+        {% if page.reconstructed %}
+        <div class="bluebox-recon">
+          <p>
+            <span>
+              <b>
+                <a href="{{ page.reconstructed.url }}" target="_blank">{{ page.reconstructed.link_text }}</a>{{ page.reconstructed.message }}
+              </b>
+            </span>
+          </p>
+        </div>
+        {% endif %}
+
+        {% if page.new_version_url %}
+        <div class="bluebox-newversion">
+          <p>
+            <a href="{{ page.new_version_url }}"><b>새 버전</b></a>이 나왔습니다. 
+            <a href="{{ page.new_version_url }}"><b>새 버전</b></a>을 사용해주시기 바랍니다.
+          </p>
+        </div>
+        {% endif %}
+        
         {% include series_nav.html position="top" %}
         {{ content }}
         {% include series_nav.html position="bottom" %}

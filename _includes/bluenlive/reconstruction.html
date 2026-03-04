@@ -1,1 +1,11 @@
-<div class="bluebox-recon"><p><span><b><a href="{{ include.url }}" target="_blank" class="recon-link" data-text="{{ include.link_text }}"></a><span class="recon-msg" data-text="{{ include.message }}"></span></b></span></p></div><style>.recon-link::before{content:attr(data-text)}.recon-msg::before{content:attr(data-text)}</style>
+{% if page.url == post.url or page.layout == "post" %}
+<div class="bluebox-recon">
+  <p>
+    <span>
+      <b>
+        <a href="{{ include.url }}" target="_blank">{{ include.link_text }}</a>{{ include.message }}
+      </b>    
+    </span>
+  </p>
+</div>
+{% endif %}
