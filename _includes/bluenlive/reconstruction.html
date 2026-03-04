@@ -1,15 +1,5 @@
-{% capture notice_content %}
-<div class="bluebox-recon">
-  <p>
-    <span>
-      <b>
-        <a href="{{ include.url }}" target="_blank">{{ include.link_text }}</a>{{ include.message }}
-      </b>
-    </span>
-  </p>
-</div>
-{% endcapture %}
+{% assign notice_html = '<div class="bluebox-recon"><p><span><b><a href="' | append: include.url | append: '" target="_blank">' | append: include.link_text | append: '</a>' | append: include.message | append: '</b></span></p></div>' %}
 
 {% if page.url %}
-  {{ notice_content }}
+  {{ notice_html }}
 {% endif %}
