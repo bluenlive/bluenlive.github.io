@@ -1,20 +1,18 @@
+<div style="display:none; font-size:0; line-height:0;">
+  {{ include.message | truncate: 1 }} </div>
+
 <div id="recon-box-{{ include.url | slugify }}"></div>
 
 <script>
 (function() {
   const target = document.getElementById('recon-box-{{ include.url | slugify }}');
   if (target) {
-    const html = `
+    target.innerHTML = `
       <div class="bluebox-recon">
-        <p>
-          <span>
-            <b>
-              <a href="{{ include.url }}" target="_blank">{{ include.link_text }}</a>{{ include.message }}
-            </b>
-          </span>
-        </p>
+        <p><span><b>
+          <a href="{{ include.url }}" target="_blank">{{ include.link_text }}</a>{{ include.message }}
+        </b></span></p>
       </div>`;
-    target.innerHTML = html;
   }
 })();
 </script>
