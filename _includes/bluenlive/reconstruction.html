@@ -1,5 +1,9 @@
-{% assign notice_html = '<div class="bluebox-recon"><p><span><b><a href="' | append: include.url | append: '" target="_blank">' | append: include.link_text | append: '</a>' | append: include.message | append: '</b></span></p></div>' %}
-
-{% if page.url %}
-  {{ notice_html }}
-{% endif %}
+<div class="bluebox-recon">
+  <p>
+    <span>
+      <b>
+        <a href="{{ include.url }}" target="_blank">{{ include.link_text }}</a>&#x12;&#x12;&#x12;{{ include.message | replace: "이전 블로그", "&#x1210;&#x110C;&#x1165;&#x11AB; &#x1107;&#x1173;&#x1131;&#x1165;&#x1100;&#x1173;" }}
+      </b>
+    </span>
+  </p>
+</div>
