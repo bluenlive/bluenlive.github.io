@@ -1,11 +1,16 @@
-<div class="bluebox-recon-wrapper" style="position: relative; padding-top: 80px; margin-bottom: 20px;">
-  <div class="bluebox-recon" style="position: absolute; top: 0; left: 0; width: 100%;">
-    <p>
-      <span>
-        <b>
-          <a href="{{ include.url }}" target="_blank">{{ include.link_text }}</a>{{ include.message }}
-        </b>
-      </span>
-    </p>
-  </div>
+<style>
+  /* Jekyll은 이 안의 텍스트를 절대 읽지 못합니다 */
+  .bluebox-recon-text-{{ include.url | slugify }}::before {
+    content: "{{ include.link_text }}{{ include.message }}";
+  }
+</style>
+
+<div class="bluebox-recon">
+  <p>
+    <span>
+      <b>
+        <a href="{{ include.url }}" target="_blank" class="bluebox-recon-text-{{ include.url | slugify }}"></a>
+      </b>
+    </span>
+  </p>
 </div>
