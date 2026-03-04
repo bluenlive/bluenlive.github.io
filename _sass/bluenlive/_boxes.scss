@@ -160,7 +160,7 @@ ol[class^="bluebox-"] {
   font-weight: bold!important;          // 굵게 표시
 }
 
-/* 전 블로그 재구성 알림 박스, bluenlive/reconstruction.html 에서 사용 */
+/* 전 블로그 재구성 알림 박스, reconstruction message 에서 사용 */
 .bluebox-recon {
   @include bluebox-base;
   @include bluebox-color(#e7fdb5, #9fd331);

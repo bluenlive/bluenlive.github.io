@@ -23,13 +23,11 @@ toc_label: "Contents"
 #toc_icon: "cog"
 toc_icon: "book-open"
 toc_sticky: true
+reconstructed:
+  url: "https://zockr.tistory.com/225"
+  link_text: "이전 블로그(ZockrWorld)"
+  message: "에 올렸던 글을, 리뉴얼차 현 블로그에 재구성한 글입니다"
 ---
-
-{% include bluenlive/reconstruction.html
-   url="https://zockr.tistory.com/225"
-   link_text="이전 블로그(ZockrWorld)"
-   message="에 올렸던 글을, 리뉴얼차 현 블로그로 옮겨 재작성한 글입니다"
-%}
 
 {: .bluebox-transparent}
 이 작품에 대한 기본적인 지식은 《명화 속 흥미로운 과학이야기》라는 책에서 얻었음을 미리 밝힌다.
