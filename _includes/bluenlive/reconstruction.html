@@ -1,16 +1,20 @@
-<style>
-  /* Jekyll은 이 안의 텍스트를 절대 읽지 못합니다 */
-  .bluebox-recon-text-{{ include.url | slugify }}::before {
-    content: "{{ include.link_text }}{{ include.message }}";
-  }
-</style>
+<div id="recon-box-{{ include.url | slugify }}"></div>
 
-<div class="bluebox-recon">
-  <p>
-    <span>
-      <b>
-        <a href="{{ include.url }}" target="_blank" class="bluebox-recon-text-{{ include.url | slugify }}"></a>
-      </b>
-    </span>
-  </p>
-</div>
+<script>
+(function() {
+  const container = document.getElementById('recon-box-{{ include.url | slugify }}');
+  if (container) {
+    const boxHtml = `
+      <div class="bluebox-recon">
+        <p>
+          <span>
+            <b>
+              <a href="{{ include.url }}" target="_blank">{{ include.link_text }}</a>{{ include.message }}
+            </b>
+          </span>
+        </p>
+      </div>`;
+    container.innerHTML = boxHtml;
+  }
+})();
+</script>
