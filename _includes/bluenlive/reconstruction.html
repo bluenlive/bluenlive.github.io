@@ -1,4 +1,4 @@
-{% if page.url == post.url or page.layout == "post" %}
+{% capture notice_content %}
 <div class="bluebox-recon">
   <p>
     <span>
@@ -8,4 +8,8 @@
     </span>
   </p>
 </div>
+{% endcapture %}
+
+{% if page.url %}
+  {{ notice_content }}
 {% endif %}
