@@ -2,7 +2,7 @@
 layout: single
 #classes: wide
 title: "시험 포스팅 (삭제 예정)"
-date: 2026-3-5 23:25 +0900
+date: 2026-3-6 23:25 +0900
 categories:
   - ITTalk
 ---
