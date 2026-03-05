@@ -25,13 +25,20 @@
       {% endif %}
     </h2>
     {% include page__meta.html type=include.type %}
+    {% if post.excerpt.size > 150 %}
+      {% assign cleaned = post.excerpt %}
+    {% else %}
+      {% assign cleaned = post.content %}
+    {% endif %}
+    
+    {% assign cleaned = cleaned | markdownify | replace: '</p>', ' ' | replace: '</li>', ' ' | strip_html | strip_newlines %}
+    
+    {% assign open_bracket = "{:" %}
+    {% assign close_bracket = "}" %}
+    {% assign cleaned = cleaned | replace: open_bracket, "" | replace: close_bracket, "" %}
+    
     <p class="archive__item-excerpt" itemprop="description">
-      {% assign raw_content = "" %}
-      {% if post.excerpt.size > 150 %}
-        {% assign raw_content = post.excerpt %}
-      {% else %}
-        {% assign raw_content = post.content %}
-      {% endif %}
-      {{ raw_content | markdownify | replace: '</p>', ' ' | replace: '</li>', ' ' | strip_html | strip_newlines | replace: '{:', '' | replace: '}', '' | truncate: 160 }}
-    </p>  </article>
+      {{ cleaned | truncate: 160 }}
+    </p>
+  </article>
 </div>
