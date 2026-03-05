@@ -3,9 +3,8 @@ layout: single
 title: "사진 정리 툴 FPO(Family Photo Organizer) 9.01 업데이트"
 categories:
   - MyProgram
+new_version_url: "/myprogram/Family-Photo-Organizer-9.24/"
 ---
-
-{% include bluenlive/new-version.html url="/myprogram/Family-Photo-Organizer-9.24/" %}
 
 이제 DSLR 이외의 수많은 장비들이 카메라의 자리를 대신하고 있다.  
 이러다보니, 여행을 가서 찍은 사진을 모아보면 의외로 **정리가 쉽지 않다**.

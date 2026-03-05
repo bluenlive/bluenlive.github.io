@@ -5,9 +5,8 @@ date: 2024-5-1
 last_modified_at: 2024-5-1
 categories:
   - iDevice
+new_version_url: "/idevice/iTransHEIF-v4.12/"
 ---
-
-{% include bluenlive/new-version.html url="/idevice/iTransHEIF-v4.12/" %}
 
 ## 소개 및 다운로드
 

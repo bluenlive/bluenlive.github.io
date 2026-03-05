@@ -151,7 +151,7 @@ ol[class^="bluebox-"] {
   border: transparent;
 }
 
-/* 새 버전 알림 박스, bluenlive/new-version.html 에서 사용 */
+/* 새 버전 알림 박스, new_version_url 에서 사용 */
 .bluebox-newversion {
   @include bluebox-base;                // 공통 박스 기본 스타일
   @include bluebox-color(#dbe8fb, #79a5e4); // 색상 믹스인으로 배경/테두리 지정

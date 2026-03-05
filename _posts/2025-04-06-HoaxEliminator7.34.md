@@ -6,9 +6,8 @@ date: 2025-4-6 22:35:00 +0900
 categories:
   - HoaxEliminator
 tags: ["activex","nProtect","구라제거기","뱅킹","보안","안랩"]
+new_version_url: "/hoaxeliminator/HoaxEliminator7.45/"
 ---
-
-{% include bluenlive/new-version.html url="/hoaxeliminator/HoaxEliminator7.45/" %}
 
 PC 뱅킹의 주적은 **PC 뱅킹 프로그램**이다.
 
