@@ -48,26 +48,14 @@
   margin: 0 !important; 
 }
 
-/* BLUEnLIVE */
+/* BLUEnLIVE [ */
 .site-logo {
   display: inline-block;
   height: 42px !important;
   width: 127px !important; /* 이미지 너비와 일치 */
   overflow: hidden;        /* 혹시 모를 픽셀 오차 방지 */
 }
-
-/*
-.masthead__inner-container {
-  height: 42px !important;
-  display: flex;
-  align-items: center;     /* 메뉴와 로고의 수직 중앙 정렬 * /
-}
-
-.masthead {
-  padding: 0.5rem 0 !important; /* 위아래 여백을 최소화하여 42px에 가깝게 유지 * /
-}
-*/
-/* BLUEnLIVE */
+/* BLUEnLIVE ] */
 
 .site-title {
   display: -webkit-box;
