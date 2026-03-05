@@ -26,11 +26,12 @@
     </h2>
     {% include page__meta.html type=include.type %}
     <p class="archive__item-excerpt" itemprop="description">
+      {% assign raw_content = "" %}
       {% if post.excerpt.size > 150 %}
-        {{ post.excerpt | strip_html | truncate: 160 }}
+        {% assign raw_content = post.excerpt %}
       {% else %}
-        {{ post.content | strip_html | strip_newlines | truncate: 160 }}
+        {% assign raw_content = post.content %}
       {% endif %}
-    </p>
-  </article>
+      {{ raw_content | markdownify | replace: '</p>', ' ' | replace: '</li>', ' ' | strip_html | strip_newlines | replace: '{:', '' | replace: '}', '' | truncate: 160 }}
+    </p>  </article>
 </div>
