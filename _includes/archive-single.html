@@ -25,7 +25,6 @@
       {% endif %}
     </h2>
     {% include page__meta.html type=include.type %}
-    <!-- { % if post.excerpt % }<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{ % endif % } BLUEnLIVE -->
     <p class="archive__item-excerpt" itemprop="description">
       {% if post.excerpt.size > 150 %}
         {{ post.excerpt | strip_html | truncate: 160 }}
