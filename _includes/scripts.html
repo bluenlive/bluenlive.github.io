@@ -26,3 +26,18 @@
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var elms = document.getElementsByClassName('splide');
+    for (var i = 0; i < elms.length; i++) {
+      new Splide(elms[i], {
+        type   : 'loop',
+        drag   : 'free',
+        snap   : true,
+        autoplay: true,
+      }).mount();
+    }
+  });
+</script>
