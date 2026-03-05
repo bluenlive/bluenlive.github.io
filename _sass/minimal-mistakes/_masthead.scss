@@ -40,8 +40,11 @@
 
 .site-logo img {
   /* max-height: 2rem; BLUEnLIVE*/
-  max-height: 42px !important; /* 가드레일을 42px로 새로 설정 */
-  height: auto !important;     /* 가로세로 비율 유지 */  
+  height: 42px !important;
+  max-height: 42px !important;
+  width: auto !important;
+  padding: 0 !important;   /* 여백 제거 */
+  margin: 0 !important; 
 }
 
 .site-title {
