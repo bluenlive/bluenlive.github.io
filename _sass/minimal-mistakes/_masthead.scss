@@ -14,7 +14,8 @@
   &__inner-wrap {
     @include clearfix;
     margin-inline: auto;
-    padding: 1em;
+    /* padding: 1em; BLUEnLIVE */
+    padding: 0.5em 1em 0.5em 1em;
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -39,7 +40,7 @@
 }
 
 .site-logo img {
-  /* max-height: 2rem; BLUEnLIVE*/
+  /* max-height: 2rem; BLUEnLIVE */
   height: 42px !important;
   max-height: 42px !important;
   width: auto !important;
@@ -55,15 +56,17 @@
   overflow: hidden;        /* 혹시 모를 픽셀 오차 방지 */
 }
 
+/*
 .masthead__inner-container {
   height: 42px !important;
   display: flex;
-  align-items: center;     /* 메뉴와 로고의 수직 중앙 정렬 */
+  align-items: center;     /* 메뉴와 로고의 수직 중앙 정렬 * /
 }
 
 .masthead {
-  padding: 0.5rem 0 !important; /* 위아래 여백을 최소화하여 42px에 가깝게 유지 */
+  padding: 0.5rem 0 !important; /* 위아래 여백을 최소화하여 42px에 가깝게 유지 * /
 }
+*/
 /* BLUEnLIVE */
 
 .site-title {
