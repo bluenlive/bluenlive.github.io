@@ -5,19 +5,6 @@ date: 2025-4-24 21:38:00 +0900
 categories:
   - ITTalk
 tags: ["CMYK","걸작","손더하임","쇠라","스위니 토드","신인상주의"]
-gallery1:
-  - url: /images/2025-04-24/o_catss64.jpg
-    image_path: /images/2025-04-24/o_catss64.jpg
-  - url: /images/2025-04-24/o_inspired1s64.jpg
-    image_path: /images/2025-04-24/o_inspired1s64.jpg
-  - url: /images/2025-04-24/o_inspired2s64.jpg
-    image_path: /images/2025-04-24/o_inspired2s64.jpg
-  - url: /images/2025-04-24/o_lego_likes64.jpg
-    image_path: /images/2025-04-24/o_lego_likes64.jpg
-  - url: /images/2025-04-24/o_singularts64.jpg
-    image_path: /images/2025-04-24/o_singularts64.jpg
-  - url: /images/2025-04-24/o_winters64.jpg
-    image_path: /images/2025-04-24/o_winters64.jpg
 toc: true
 toc_label: "Contents"
 #toc_icon: "cog"
@@ -49,7 +36,7 @@ reconstructed:
 이 작품은 워낙 유명해서 작품의 이름은 모르더라도 (게다가 워낙 길기도 길고) 그림 자체를 모르는 사람은 없을 것이다.\
 워낙 편안한 그림이라 그림을 잘 모르는 평범한 사람들도 쉽게 볼 수 있는 작품이며, 수많은 형태(다른 스타일의 그림은 물론, 뮤지컬(그것도 스위니 토드의 작가인 **손더하임**의 뮤지컬), 동상 등등 너무나 많아서 다 열거도 되지 못할만큼의)로 재생산되었고, 작품성도 인정받았으며, 미술 교과서에도 등장한다.
 
-{% include gallery id="gallery1" %}
+{% include bnl_slider.html images="/images/2025-04-24/o_catss64.jpg, /images/2025-04-24/o_inspired1s64.jpg, /images/2025-04-24/o_inspired2s64.jpg, /images/2025-04-24/o_lego_likes64.jpg, /images/2025-04-24/o_singularts64.jpg, /images/2025-04-24/o_winters64.jpg" %}
 
 ## 컴퓨터 계에 미친 영향
 

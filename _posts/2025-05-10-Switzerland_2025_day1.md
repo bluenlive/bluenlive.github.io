@@ -5,23 +5,6 @@ title: "2025년 스위스 여행 1일차꞉ 스위스 이동"
 date: 2025-5-10 22:19:00 +0900
 categories:
   - travel2025
-gallery1:
-  - url: /images/2025-05-10b/03_IMG_9020s64.jpg
-    image_path: /images/2025-05-10b/03_IMG_9020s64.jpg
-    alt: "스위스의 라거 맥주 Quöllfrisch"
-    title: "스위스의 라거 맥주 Quöllfrisch"
-  - url: /images/2025-05-10b/04_IMG_9022s64.jpg
-    image_path: /images/2025-05-10b/04_IMG_9022s64.jpg
-    alt: "밥을 원했으나 우리 앞에서 딱 끊어져 받은 파스타"
-    title: "밥을 원했으나 우리 앞에서 딱 끊어져 받은 파스타"
-  - url: /images/2025-05-10b/05_IMG_9024s64.jpg
-    image_path: /images/2025-05-10b/05_IMG_9024s64.jpg
-    alt: "간식은 하겐다즈와 신라면…"
-    title: "간식은 하겐다즈와 신라면…"
-  - url: /images/2025-05-10b/06_IMG_9031s64.jpg
-    image_path: /images/2025-05-10b/06_IMG_9031s64.jpg
-    alt: "착륙 전 마지막 식사"
-    title: "착륙 전 마지막 식사"
 tags: ["식사","Quöllfrisch","새우깡","신라면"]
 ---
 
@@ -38,7 +21,7 @@ tags: ["식사","Quöllfrisch","새우깡","신라면"]
 
 **약 14시간**의 긴 비행은 식사와 간식과 함께 하며 버티고...
 
-{% include gallery id="gallery1" %}
+{% include bnl_slider.html images="/images/2025-05-10b/03_IMG_9020s64.jpg | 스위스의 라거 맥주 Quöllfrisch, /images/2025-05-10b/04_IMG_9022s64.jpg | 밥을 원했으나 우리 앞에서 딱 끊어져 받은 파스타, /images/2025-05-10b/05_IMG_9024s64.jpg | 간식은 하겐다즈와 신라면…, /images/2025-05-10b/06_IMG_9031s64.jpg | 착륙 전 마지막 식사" %}
 
 도착할 무렵이 되어 밖을 보니 뭔가 경치가 막 좋을 것 같다.
 
