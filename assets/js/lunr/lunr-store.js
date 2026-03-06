@@ -14,31 +14,37 @@ var store = [
       {%- else -%}
         {%- assign teaser = site.teaser -%}
       {%- endif -%}
+
+      {%- comment %} 검색용: 특수문자가 제거된 제목 생성 {% endcomment -%}
+      {%- assign search_title = doc.title | 
+        replace: '〈', ' ' | replace: '〉', ' ' | 
+        replace: '《', ' ' | replace: '》', ' ' | 
+        replace: '(', ' ' | replace: ')', ' ' | 
+        replace: '[', ' ' | replace: ']', ' ' | 
+        replace: '【', ' ' | replace: '】', ' ' | 
+        replace: ',', ' ' | replace: '.', ' ' | 
+        replace: ':', ' ' | replace: '꞉', ' ' | 
+        replace: '/', ' ' -%}
+
       {
-        "title": {{ doc.title | replace: '〈', ' ' | replace: '〉', ' ' | replace: '《', ' ' | replace: '》', ' ' | replace: '꞉', ' ' | replace: ':', ' ' | jsonify }},
+        "title": {{ doc.title | jsonify }},
         "excerpt":
+          {%- capture excerpt_text -%}
+            {{ search_title }} {{ doc.content | newline_to_br |
+              replace:"<br />", " " |
+              replace:"</p>", " " |
+              replace:"</h1>", " " |
+              replace:"</h2>", " " |
+              replace:"</h3>", " " |
+              replace:"</h4>", " " |
+              replace:"</h5>", " " |
+              replace:"</h6>", " "|
+              strip_html | strip_newlines }}
+          {%- endcapture -%}
           {%- if site.search_full_content == true -%}
-            {{ doc.content | newline_to_br |
-              replace:"<br />", " " |
-              replace:"</p>", " " |
-              replace:"</h1>", " " |
-              replace:"</h2>", " " |
-              replace:"</h3>", " " |
-              replace:"</h4>", " " |
-              replace:"</h5>", " " |
-              replace:"</h6>", " "|
-            strip_html | strip_newlines | jsonify }},
+            {{ excerpt_text | jsonify }},
           {%- else -%}
-            {{ doc.content | newline_to_br |
-              replace:"<br />", " " |
-              replace:"</p>", " " |
-              replace:"</h1>", " " |
-              replace:"</h2>", " " |
-              replace:"</h3>", " " |
-              replace:"</h4>", " " |
-              replace:"</h5>", " " |
-              replace:"</h6>", " "|
-            strip_html | strip_newlines | truncatewords: 50 | jsonify }},
+            {{ excerpt_text | truncatewords: 150 | jsonify }},
           {%- endif -%}
         "categories": {{ doc.categories | jsonify }},
         "tags": {{ doc.tags | jsonify }},
@@ -52,33 +58,39 @@ var store = [
     {%- if forloop.last -%}
       {%- assign l = true -%}
     {%- endif -%}
+
+    {%- comment %} 검색용: 특수문자가 제거된 제목 생성 {% endcomment -%}
+    {%- assign search_title = doc.title | 
+      replace: '〈', ' ' | replace: '〉', ' ' | 
+      replace: '《', ' ' | replace: '》', ' ' | 
+      replace: '(', ' ' | replace: ')', ' ' | 
+      replace: '[', ' ' | replace: ']', ' ' | 
+      replace: '【', ' ' | replace: '】', ' ' | 
+      replace: ',', ' ' | replace: '.', ' ' | 
+      replace: ':', ' ' | replace: '꞉', ' ' | 
+      replace: '/', ' ' -%}
+
   {
-    "title": {{ doc.title | replace: '〈', ' ' | replace: '〉', ' ' | replace: '《', ' ' | replace: '》', ' ' | replace: '꞉', ' ' | replace: ':', ' ' | jsonify }},
+    "title": {{ doc.title | jsonify }},
     "excerpt":
-        {%- if site.search_full_content == true -%}
-          {{ doc.content | newline_to_br |
-            replace:"<br />", " " |
-            replace:"</p>", " " |
-            replace:"</h1>", " " |
-            replace:"</h2>", " " |
-            replace:"</h3>", " " |
-            replace:"</h4>", " " |
-            replace:"</h5>", " " |
-            replace:"</h6>", " "|
-          strip_html | strip_newlines | jsonify }},
-        {%- else -%}
-          {{ doc.content | newline_to_br |
-            replace:"<br />", " " |
-            replace:"</p>", " " |
-            replace:"</h1>", " " |
-            replace:"</h2>", " " |
-            replace:"</h3>", " " |
-            replace:"</h4>", " " |
-            replace:"</h5>", " " |
-            replace:"</h6>", " "|
-          strip_html | strip_newlines | truncatewords: 50 | jsonify }},
-        {%- endif -%}
-      "url": {{ doc.url | absolute_url | jsonify }}
+      {%- capture excerpt_text -%}
+        {{ search_title }} {{ doc.content | newline_to_br |
+          replace:"<br />", " " |
+          replace:"</p>", " " |
+          replace:"</h1>", " " |
+          replace:"</h2>", " " |
+          replace:"</h3>", " " |
+          replace:"</h4>", " " |
+          replace:"</h5>", " " |
+          replace:"</h6>", " "|
+          strip_html | strip_newlines }}
+      {%- endcapture -%}
+      {%- if site.search_full_content == true -%}
+        {{ excerpt_text | jsonify }},
+      {%- else -%}
+        {{ excerpt_text | truncatewords: 150 | jsonify }},
+      {%- endif -%}
+    "url": {{ doc.url | absolute_url | jsonify }}
   }{%- unless forloop.last and l -%},{%- endunless -%}
   {%- endfor -%}
 {%- endif -%}]
