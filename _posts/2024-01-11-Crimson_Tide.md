@@ -193,7 +193,7 @@ toc_sticky: true
 게다가, 영화 앞부분에 명확히 언급되는대로 그는 **1년**간 **하버드에서 공부**했다는 것이다.  
 물론, 이 부분에서 램지 함장은 그를 왠지 **아니꼽게 바라본다**는 느낌을 물씬 풍긴다.
 
-{% include bnl_slider.html images="/images/2024-01-11/ct30s64.jpg | 이게 필요한가, /images/2024-01-11/ct31s64.jpg | 이게 필요한 건가" %}
+{% include bnl_slider.html images="/images/2024-01-11/ct30s64.jpg, /images/2024-01-11/ct31s64.jpg" %}
 
 함장과 부장이 설전을 벌이는 내용 중에도 재미있는 것이 하나 나온다.  
 리파자너(Lipizzaner) 종이 포르투갈 산인가 스페인 산인가 하는 내용이다.  

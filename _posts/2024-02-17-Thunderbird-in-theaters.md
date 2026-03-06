@@ -4,24 +4,6 @@ layout: single
 title: "〈우뢰매〉로 확인한 80년대 강원도 개봉관 일정"
 categories:
   - MovieTalk
-gallery1:
-  - url: /images/2024-02-17/thunder3as64.jpg
-    image_path: /images/2024-02-17/thunder3as64.jpg
-    alt: "8월 25일까지의 상영을 동시개봉이라 표기"
-    title: "8월 25일까지의 상영을 동시개봉이라 표기"
-  - url: /images/2024-02-17/thunder3bs64.jpg
-    image_path: /images/2024-02-17/thunder3bs64.jpg
-    alt: "강원도의 개봉일이 8월 1일에 시작됨"
-    title: "강원도의 개봉일이 8월 1일에 시작됨"
-gallery2:
-  - url: /images/2024-02-17/thunder4as64.jpg
-    image_path: /images/2024-02-17/thunder4as64.jpg
-    alt: "12월 19일부터의 상영을 동시개봉이라 표기"
-    title: "12월 19일부터의 상영을 동시개봉이라 표기"
-  - url: /images/2024-02-17/thunder4bs64.jpg
-    image_path: /images/2024-02-17/thunder4bs64.jpg
-    alt: "강원도의 개봉일이 12월 19일에 시작됨"
-    title: "강원도의 개봉일이 12월 19일에 시작됨"
 ---
 
 유튜브 《이강민의 잡지사》에서 1980년대까지도 **강원도 탄광촌에서는 개봉관**이 있었다는 얘기를 들었다.\
@@ -39,14 +21,14 @@ TV 광고의 캡쳐본을 보내주셨음을 감사드린다.
 **8월 25일까지**의 상영을 **동시개봉**이라 표기했는데, 강원도에선 **8월 1일부터 11일까지 극장별로 개봉**을 시작했다.\
 이 시기면 이미 석탄 산업이 축소된 이후였지만, 여전히 개봉 일정은 여전히 서울과 동일했다.
 
-{% include gallery id="gallery1" %}
+{% include bnl_slider.html images="/images/2024-02-17/thunder3as64.jpg | 8월 25일까지의 상영을 동시개봉이라 표기, /images/2024-02-17/thunder3bs64.jpg | 강원도의 개봉일이 8월 1일에 시작됨" %}
 
 다음은 4편인 〈외계에서 온 우뢰매 4탄 썬더V출동〉(1989)의 개봉 일정이다.
 
 **12월 19일부터**의 상영을 **동시개봉**이라 표기했는데, 강원도 주요 극장에선 **같은 스케줄**로 상영을 시작했다.\
 **울산은 12월 26일**부터 시작했는데, 이는 강원도와는 다른 스케줄이다.
 
-{% include gallery id="gallery2" %}
+{% include bnl_slider.html images="/images/2024-02-17/thunder4as64.jpg | 12월 19일부터의 상영을 동시개봉이라 표기, /images/2024-02-17/thunder4bs64.jpg | 강원도의 개봉일이 12월 19일에 시작됨" %}
 
 당시 **경남러**였던 나는 서울 친구가 〈언터처블〉(1987)을 본 뒤 놀러와서 영화 개봉일정을 얘기했던 기억이 난다.\
 그 때도 아직 우리 동네 극장에선 개봉이 **2주 가량** 남았었던 것 같다.
