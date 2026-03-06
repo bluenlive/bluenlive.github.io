@@ -4,6 +4,7 @@ layout: single
 title: "팬 메이드 FPS 게임 《StarCraft꞉ Marine》"
 categories:
   - game
+tags: ["StarCraft","Marine"]
 ---
 
 20년도 더 지난 2002년 무렵, 블리자드는 **《스타크래프트꞉ 고스트》**라는 FPS 게임을 개발하고 있었다.

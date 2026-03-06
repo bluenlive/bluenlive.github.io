@@ -462,7 +462,8 @@ lunr.tokenizer = function (obj, metadata) {
  * @static
  * @see lunr.tokenizer
  */
-lunr.tokenizer.separator = /[\s\-]+/
+/* lunr.tokenizer.separator = /[\s\-]+/ BLUEnLIVE */
+lunr.tokenizer.separator = /[\s\-\《\》\:\/\[\]\(\)\【\】]+/
 /*!
  * lunr.Pipeline
  * Copyright (C) 2020 Oliver Nightingale
