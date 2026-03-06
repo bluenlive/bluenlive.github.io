@@ -19,6 +19,6 @@ categories:
 
 이에 따라, [Buy Me A Coffee](https://buymeacoffee.com/bluenlive)로 후원 시스템을 변경하게 되었다.
 
-{% include bluenlive/quote.html
+{% include bnl_quote.html
    align="center"
    content="TOSS ID로 후원해주신 분들께 감사드립니다.|앞으로도 열심히 달려가겠습니다!" %}

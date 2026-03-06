@@ -22,7 +22,7 @@ categories:
 
 그런데 꽂아놓은 **USB 케이블**을 보니 뭔가 느낌이 쎄했다.
 
-{% include bluenlive/quote.html
+{% include bnl_quote.html
    align="center"
    content="케이블이 하나 더 있는 거 같은데?" %}
 

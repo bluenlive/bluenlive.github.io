@@ -23,6 +23,6 @@ categories:
 ![image](/images/2024-07-27a/20240724_102257648_iOSs64.jpg)
 *먹고 싶었던 건 치미창가였으나...*
 
-{% include bluenlive/quote.html
+{% include bnl_quote.html
    align="center"
    content="Let's Fucking Go!" %}

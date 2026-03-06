@@ -32,7 +32,7 @@ categories:
 
 아래 링크에서 다운받을 수 있다.
 
-{% include bluenlive/download-box.html
+{% include bnl_download-box.html
    file="/attachment/2024-09-07/RoadAddress.rar"
    password="teus.me" %}
 

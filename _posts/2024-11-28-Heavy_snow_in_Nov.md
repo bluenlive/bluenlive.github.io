@@ -24,4 +24,4 @@ categories:
 다른 루트도 확인해볼 겸 밖에 걸어나가 보니, 운전을 할 상태가 아니었다.\
 마음을 고쳐먹고 바로 **연차 신청**을 했다.
 
-{% include bluenlive/postit.html content="안전이 제일 중요합니다!" %}
+{% include bnl_postit.html content="안전이 제일 중요합니다!" %}

@@ -53,4 +53,4 @@ categories:
 
 역시 아프면 괴롭다.
 
-{% include bluenlive/postit.html content="이번에도 결론은: 아프지 맙시다." %}
+{% include bnl_postit.html content="이번에도 결론은: 아프지 맙시다." %}

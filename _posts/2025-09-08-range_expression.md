@@ -21,7 +21,7 @@ i & \le n-1\\
 i & \lt n\\
 \end{align*}$$
 {% endcapture %}
-{% include bluenlive/algorithm.html content=algo0 %}
+{% include bnl_algorithm.html content=algo0 %}
 
 이것을 C로 작성한 것이 바로 흔하게 볼 수 있는 아래 한 줄.
 ```c
@@ -40,7 +40,7 @@ i & \le n-m\\
 i & \lt (n-m+1)\\
 \end{align}$$
 {% endcapture %}
-{% include bluenlive/algorithm.html content=algo1 %}
+{% include bnl_algorithm.html content=algo1 %}
 
 이것을 C로 작성하면 아래와 같다.
 ```c
@@ -59,7 +59,7 @@ i & \le n-m-l\\
 i & \lt (n-m-l+1)
 \end{align}$$
 {% endcapture %}
-{% include bluenlive/algorithm.html content=algo2 %}
+{% include bnl_algorithm.html content=algo2 %}
 
 이것을 C로 작성하면 아래와 같다.
 ```c

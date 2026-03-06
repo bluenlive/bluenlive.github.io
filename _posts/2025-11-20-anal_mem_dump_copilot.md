@@ -164,7 +164,7 @@ start             end                 module name
 
 👉 즉, 덤프와 증상(“GPU 가속 시만 오류”)을 합치면, **특정 효과의 GPU 리소스 관리 코드에 문제가 있거나 GPU 드라이버와의 호환성 문제**라는 결론을 도출할 수 있습니다.  
 {% endcapture %}
-{% include bluenlive/ai-answer.html content=answer_anal %}
+{% include bnl_ai-answer.html content=answer_anal %}
 
 ## Copilot: kv
 
@@ -211,7 +211,7 @@ kv 결과를 통해 알 수 있는 건:
 
 즉, kv 결과는 “어떤 함수 흐름에서 오류가 발생했는지”를 보여주며, **GPU 가속 경로에서만 발생하는 이유**를 잘 설명해줍니다.  
 {% endcapture %}
-{% include bluenlive/ai-answer.html content=answer_kv %}
+{% include bnl_ai-answer.html content=answer_kv %}
 
 ## Copilot: lm
 
@@ -249,7 +249,7 @@ kv 결과를 통해 알 수 있는 건:
 
 👉 요약하면: 이 마지막 파트는 **GPU 가속 경로에서 DirectX/드라이버 모듈이 로드·언로드된 상태**를 보여주며, 오류가 GPU 가속을 켰을 때만 발생하는 이유를 다시 확인시켜줍니다.  
 {% endcapture %}
-{% include bluenlive/ai-answer.html content=answer_lm %}
+{% include bnl_ai-answer.html content=answer_lm %}
 
 ## 분석 및 해석 추가
 
@@ -289,6 +289,6 @@ kv 결과를 통해 알 수 있는 건:
 - **3. 외장 모니터를 RTX에 연결**해 dGPU 경로 강제.
 - **4. 문제가 사라지면** 멀티‑GPU 라우팅/어댑터 불일치가 원인이었던 것으로 판단. 개발자에게 “Adapter pinning” 제안을 함께 전달.
 {% endcapture %}
-{% include bluenlive/ai-answer.html content=answer_etc %}
+{% include bnl_ai-answer.html content=answer_etc %}
 
 이러한 긴 대화를 통해 윈도우의 설정에서 **시스템 > 디스플레이 > 그래픽**에서 설정하는 방안을 찾을 수 있었다.

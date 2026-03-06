@@ -171,7 +171,7 @@ ffmpeg -f concat -i "frames.txt" -vsync vfr "output.mp4"
 
 다음 단계로 앞에서 생성한 csv 파일을 이용해서 이 데이터를 생성해서 변환해볼 예정.
 
-{% include bluenlive/quote.html
+{% include bnl_quote.html
    align="center"
    content="그런데, 이 영상 그냥 유튜브 뒤지면 고화질 버전이 있을 것 같은데?" %}
 

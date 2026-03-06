@@ -18,6 +18,6 @@ categories:
 
 {% include video id="hU05_Rkm8qE" provider="youtube" %}
 
-{% include bluenlive/quote.html
+{% include bnl_quote.html
    align="center"
    content="마블은 망해도 **데드풀**은 영원하리!" %}

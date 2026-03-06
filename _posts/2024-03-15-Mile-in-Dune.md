@@ -47,4 +47,4 @@ categories:
 다시 말하면, NM과 m 모두 **지구**라는 **행성의 크기**에 기반한 단위인 것이다.  
 그렇다면, 우주 시대에선 Mile 단위가 더 적합한 것은 아닐까?
 
-{% include bluenlive/postit.html content="믿으면 골룸" %}
+{% include bnl_postit.html content="믿으면 골룸" %}

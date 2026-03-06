@@ -99,7 +99,7 @@ categories:
 
 {% include video id="gdWraXKgimE" provider="youtube" %}
 
-{% include bluenlive/postit.html content="① 산악 여행을 트래킹(tracking)이라고 생각할 수 있는데, **트레킹(trekking)**이 맞는 표현임|② 그런데, 트레킹은 산악 행군에 가깝고 이 도보여행은 **트레일링(trailing)**이 맞음|③ 어쨌거나 도보여행을 계획할 때 하루에 7시간은 무리라는 결론" %}
+{% include bnl_postit.html content="① 산악 여행을 트래킹(tracking)이라고 생각할 수 있는데, **트레킹(trekking)**이 맞는 표현임|② 그런데, 트레킹은 산악 행군에 가깝고 이 도보여행은 **트레일링(trailing)**이 맞음|③ 어쨌거나 도보여행을 계획할 때 하루에 7시간은 무리라는 결론" %}
 
 [^1]: 이천중리택지개발지구
 [^2]: 이천쌀문화축제

@@ -73,7 +73,7 @@ SRT 자막 관리 도우미 SRTier를 5.31로 업데이트했다.
 
 이 프로그램은 아래 링크에서 다운받을 수 있다.
 
-{% include bluenlive/download-box.html
+{% include bnl_download-box.html
    file="/attachment/2026-01-10c/SRTier_v5.31.rar"
    description="64bit only"
    password="teus.me" %}

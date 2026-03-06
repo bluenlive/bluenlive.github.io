@@ -26,7 +26,7 @@ categories:
 - **사분원:** $$x^2+y^2\le L^2,\; x\ge 0,\; y\ge 0$$
 - **블럭 $$ (i,j) $$:** $$x\in[x_0,x_1]=[i\Delta,(i+1)\Delta],\quad y\in[y_0,y_1]=[j\Delta,(j+1)\Delta]$$
 {% endcapture %}
-{% include bluenlive/algorithm.html content=algo0 %}
+{% include bnl_algorithm.html content=algo0 %}
 
 ## 블럭 면적의 정확한 적분식
 
@@ -74,7 +74,7 @@ categories:
 
 이 식을 그대로 코드로 옮기면 정확한 면적을 계산할 수 있다.
 {% endcapture %}
-{% include bluenlive/algorithm.html content=algo1 %}
+{% include bnl_algorithm.html content=algo1 %}
 
 ## 정규화(단위 면적의 최댓값을 1로)
 
@@ -86,7 +86,7 @@ categories:
   A'_{i,j}=A_{i,j} \cdot n^2
   $$
 {% endcapture %}
-{% include bluenlive/algorithm.html content=algo2 %}
+{% include bnl_algorithm.html content=algo2 %}
 
 ## C 코드(부정적분으로 정확히 계산)
 

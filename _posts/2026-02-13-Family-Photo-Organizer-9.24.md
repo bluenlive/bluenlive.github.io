@@ -47,7 +47,7 @@ PNG / WebP / MP4 / MOV / MKV는 파일 내에 태깅된 날짜 정보 활용함
 
 이 프로그램은 아래 링크에서 다운받을 수 있다.
 
-{% include bluenlive/download-box.html
+{% include bnl_download-box.html
    file="/attachment/2026-02-13b/FPO_v9.31.rar"
    description="64bit only"
    password="teus.me" %}

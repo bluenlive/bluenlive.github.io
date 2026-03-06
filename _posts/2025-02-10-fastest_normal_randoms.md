@@ -107,7 +107,7 @@ $$\begin{align} x = \sqrt{-2\ln u} \cos\left(2\pi v\right) \end{align}$$\
 $$\begin{align} y = \sqrt{-2\ln u} \sin\left(2\pi v\right) \end{align}$$\
 이렇게 생성된 $$ x $$와 $$ y $$는 서로 독립이고, 표준 정규분포 $$\begin{align} \mathcal{N} \left(0, 1 \right) \end{align}$$를 따른다.
 {% endcapture %}
-{% include bluenlive/algorithm.html content=algo0 %}
+{% include bnl_algorithm.html content=algo0 %}
 
 ## C++로 Box-Muller 알고리즘 구현
 

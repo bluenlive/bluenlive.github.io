@@ -9,7 +9,7 @@ categories:
 
 ![image](/images/2025-10-21/poster_okl_s64.jpg)
 
-{% include bluenlive/quote.html
+{% include bnl_quote.html
    content='"Every revolution begins by fighting the system—and ends with the revolutionaries fighting each other."' %}
 
 〈원 배틀 애프터 어나더〉는 해석하면 〈끊임 없이 이어지는 전투〉라는 뜻이다.\

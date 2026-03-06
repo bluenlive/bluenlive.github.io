@@ -38,7 +38,7 @@ toc_sticky: true
 
 데드풀이 캐나다를 언급하는 TVA 요원에게 **감히 내 나라 이름을 입에 담지 말라**고 말한다.
 
-{% include bluenlive/quote.html
+{% include bnl_quote.html
    align="center"
    content="Get my country's name out of your fucking mouth!" %}
 
@@ -64,11 +64,11 @@ toc_sticky: true
 
 ## 5명의 퍼니셔?
 
-{% include bluenlive/quote.html
+{% include bnl_quote.html
    align="center"
    content="어느 퍼니셔? 5명인가 됐잖아?" %}
 
-{% include bluenlive/quote.html
+{% include bnl_quote.html
    align="center"
    content="블레이드는 하나 뿐이었지" %}
 
@@ -81,7 +81,7 @@ toc_sticky: true
 
 **제4의 벽**은 넘지만, **재생 능력은 갖추지 못했던** 나이스풀이 죽을 때 데드풀이 외친다.
 
-{% include bluenlive/quote.html
+{% include bnl_quote.html
    align="center"
    content="He died a hero!!" %}
 

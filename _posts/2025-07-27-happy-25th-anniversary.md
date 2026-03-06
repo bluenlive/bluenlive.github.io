@@ -50,6 +50,6 @@ categories:
 
 이렇게 많은 음식들을 끝내 다 먹어치우고 나왔다.
 
-{% include bluenlive/quote.html
+{% include bnl_quote.html
    align="center"
    content="행복한 25주년!!!" %}

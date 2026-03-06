@@ -20,10 +20,10 @@ categories:
 미리 정확하게 확인하지 않은 스스로를 탓하면서도...\
 혹시나 하는 마음으로 은행으로 들어가서 교환이 가능한지 물어봤다.
 
-{% include bluenlive/quote.html
+{% include bnl_quote.html
    content="동전이 그것밖에 없어요?|그냥 해드릴게요" %}
 
 ![trekking course](/images/2025-12-09/20251201_123459955_iOS_okl_s64.jpg)
 *2,110원의 압박*
 
-{% include bluenlive/postit.html content="동전 교환 할 때는 은행 가기 전에 교환 가능 요일을 확인해야 한다" %}
+{% include bnl_postit.html content="동전 교환 할 때는 은행 가기 전에 교환 가능 요일을 확인해야 한다" %}

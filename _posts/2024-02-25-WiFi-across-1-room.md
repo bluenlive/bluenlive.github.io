@@ -89,4 +89,4 @@ operating Mode를 Router로 설정한다.
 된다. 그것도 **꽤 잘 된다**.  
 역시 전문가의 말을 들어야 하는 거구만.
 
-{% include bluenlive/postit.html content="Supported by Oh" %}
+{% include bnl_postit.html content="Supported by Oh" %}

@@ -19,7 +19,7 @@ $$
 y^2 = x \quad \Rightarrow \quad f(y) = y^2 - x = 0
 $$
 {% endcapture %}
-{% include bluenlive/algorithm.html content=algo0 %}
+{% include bnl_algorithm.html content=algo0 %}
 
 ### 뉴턴-랩슨 공식
 
@@ -39,7 +39,7 @@ $$
 y_{n+1} = \frac{1}{2}\left(y_n + \frac{x}{y_n}\right)
 $$
 {% endcapture %}
-{% include bluenlive/algorithm.html content=algo1 %}
+{% include bnl_algorithm.html content=algo1 %}
 
 ### $$\sqrt{2}$$ 계산
 
@@ -52,7 +52,7 @@ $$
 
 빠르게 $$\sqrt{2} \approx 1.414213\cdots$$에 수렴한다.
 {% endcapture %}
-{% include bluenlive/algorithm.html content=algo2 %}
+{% include bnl_algorithm.html content=algo2 %}
 
 이 방식은 놀랍게도 바빌로니아[^1]의 방식이나, 헤론의 방식[^2]과 사실상 일치한다.
 

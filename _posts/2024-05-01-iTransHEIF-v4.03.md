@@ -32,7 +32,7 @@ new_version_url: "/idevice/iTransHEIF-v4.12/"
 
 변환기는 아래 링크에서 다운받을 수 있으며, 별도의 설치 프로그램 따위는 없다.
 
-{% include bluenlive/download-box.html
+{% include bnl_download-box.html
    file="/attachment/2024-02-07/iTransHEIF_v4.04.rar"
    description="64bit only"
    password="teus.me" %}

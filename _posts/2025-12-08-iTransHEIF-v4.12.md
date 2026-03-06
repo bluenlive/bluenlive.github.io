@@ -30,7 +30,7 @@ categories:
 
 변환기는 아래 링크에서 다운받을 수 있으며, 별도의 설치 프로그램 따위는 없다.
 
-{% include bluenlive/download-box.html
+{% include bnl_download-box.html
    file="/attachment/2025-12-08/iTransHEIF_v4.14.rar"
    description="64bit only"
    password="teus.me" %}

@@ -29,6 +29,6 @@ categories:
 
 {% include video id="RYUr-5PYA7s" provider="youtube" %}
 
-{% include bluenlive/quote.html
+{% include bnl_quote.html
    align="center"
    content="그렇다면 SpaceX의 실체는|SPECTRE였던 것인가?" %}

@@ -52,7 +52,7 @@ $$\begin{align}
 \sin \theta = \sqrt {1 - \frac {\left ( \overrightarrow{a} \cdot \overrightarrow{b} \right )^2}{\left ( \left\| \overrightarrow{a} \right\| \cdot \left\| \overrightarrow{b} \right\| \right )^2}}
 \end{align}$$
 {% endcapture %}
-{% include bluenlive/algorithm.html content=algo0 %}
+{% include bnl_algorithm.html content=algo0 %}
 
 ## 파이썬에서의 활용 #1
 

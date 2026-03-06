@@ -23,4 +23,4 @@ categories:
 - 온 몸이 아픔
 - 소화가 잘 안 됨
 
-{% include bluenlive/postit.html content="오늘의 결론: 아프지 맙시다." %}
+{% include bnl_postit.html content="오늘의 결론: 아프지 맙시다." %}
