@@ -15,7 +15,7 @@ var store = [
         {%- assign teaser = site.teaser -%}
       {%- endif -%}
 
-      {%- comment %} 검색용: 특수문자가 제거된 제목 생성 {% endcomment -%}
+      {%- comment %} 1. 검색용: 특수문자가 제거된 제목 생성 {% endcomment -%}
       {%- assign search_title = doc.title | 
         replace: '〈', ' ' | replace: '〉', ' ' | 
         replace: '《', ' ' | replace: '》', ' ' | 
@@ -25,12 +25,15 @@ var store = [
         replace: ',', ' ' | replace: '.', ' ' | 
         replace: ':', ' ' | replace: '꞉', ' ' | 
         replace: '/', ' ' -%}
+      
+      {%- comment %} 2. 검색 엔진만 읽을 수 있도록 태그 필드에 제목 키워드 통합 {% endcomment -%}
+      {%- assign search_tags = doc.tags | join: " " | append: " " | append: search_title | split: " " | uniq -%}
 
       {
         "title": {{ doc.title | jsonify }},
         "excerpt":
-          {%- capture excerpt_text -%}
-            {{ search_title }} {{ doc.content | newline_to_br |
+          {%- if site.search_full_content == true -%}
+            {{ doc.content | newline_to_br |
               replace:"<br />", " " |
               replace:"</p>", " " |
               replace:"</h1>", " " |
@@ -39,15 +42,21 @@ var store = [
               replace:"</h4>", " " |
               replace:"</h5>", " " |
               replace:"</h6>", " "|
-              strip_html | strip_newlines }}
-          {%- endcapture -%}
-          {%- if site.search_full_content == true -%}
-            {{ excerpt_text | jsonify }},
+              strip_html | strip_newlines | jsonify }},
           {%- else -%}
-            {{ excerpt_text | truncatewords: 150 | jsonify }},
+            {{ doc.content | newline_to_br |
+              replace:"<br />", " " |
+              replace:"</p>", " " |
+              replace:"</h1>", " " |
+              replace:"</h2>", " " |
+              replace:"</h3>", " " |
+              replace:"</h4>", " " |
+              replace:"</h5>", " " |
+              replace:"</h6>", " "|
+              strip_html | strip_newlines | truncatewords: 50 | jsonify }},
           {%- endif -%}
         "categories": {{ doc.categories | jsonify }},
-        "tags": {{ doc.tags | jsonify }},
+        "tags": {{ search_tags | jsonify }},
         "url": {{ doc.url | relative_url | jsonify }},
         "teaser": {{ teaser | relative_url | jsonify }}
       }{%- unless forloop.last and l -%},{%- endunless -%}
@@ -59,37 +68,39 @@ var store = [
       {%- assign l = true -%}
     {%- endif -%}
 
-    {%- comment %} 검색용: 특수문자가 제거된 제목 생성 {% endcomment -%}
+    {%- comment %} 페이지 검색용 제목 생성 {% endcomment -%}
     {%- assign search_title = doc.title | 
       replace: '〈', ' ' | replace: '〉', ' ' | 
       replace: '《', ' ' | replace: '》', ' ' | 
-      replace: '(', ' ' | replace: ')', ' ' | 
-      replace: '[', ' ' | replace: ']', ' ' | 
-      replace: '【', ' ' | replace: '】', ' ' | 
-      replace: ',', ' ' | replace: '.', ' ' | 
-      replace: ':', ' ' | replace: '꞉', ' ' | 
-      replace: '/', ' ' -%}
+      replace: '꞉', ' ' | replace: ':', ' ' -%}
 
   {
     "title": {{ doc.title | jsonify }},
     "excerpt":
-      {%- capture excerpt_text -%}
-        {{ search_title }} {{ doc.content | newline_to_br |
-          replace:"<br />", " " |
-          replace:"</p>", " " |
-          replace:"</h1>", " " |
-          replace:"</h2>", " " |
-          replace:"</h3>", " " |
-          replace:"</h4>", " " |
-          replace:"</h5>", " " |
-          replace:"</h6>", " "|
-          strip_html | strip_newlines }}
-      {%- endcapture -%}
-      {%- if site.search_full_content == true -%}
-        {{ excerpt_text | jsonify }},
-      {%- else -%}
-        {{ excerpt_text | truncatewords: 150 | jsonify }},
-      {%- endif -%}
+        {%- if site.search_full_content == true -%}
+          {{ doc.content | newline_to_br |
+            replace:"<br />", " " |
+            replace:"</p>", " " |
+            replace:"</h1>", " " |
+            replace:"</h2>", " " |
+            replace:"</h3>", " " |
+            replace:"</h4>", " " |
+            replace:"</h5>", " " |
+            replace:"</h6>", " "|
+            strip_html | strip_newlines | jsonify }},
+        {%- else -%}
+          {{ doc.content | newline_to_br |
+            replace:"<br />", " " |
+            replace:"</p>", " " |
+            replace:"</h1>", " " |
+            replace:"</h2>", " " |
+            replace:"</h3>", " " |
+            replace:"</h4>", " " |
+            replace:"</h5>", " " |
+            replace:"</h6>", " "|
+            strip_html | strip_newlines | truncatewords: 50 | jsonify }},
+        {%- endif -%},
+    "tags": {{ search_title | split: " " | jsonify }},
     "url": {{ doc.url | absolute_url | jsonify }}
   }{%- unless forloop.last and l -%},{%- endunless -%}
   {%- endfor -%}
