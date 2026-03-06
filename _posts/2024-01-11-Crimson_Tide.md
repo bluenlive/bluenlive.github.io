@@ -5,24 +5,6 @@ title: "〈크림슨 타이드〉에 숨겨진 인종차별 코드"
 categories:
   - ActionAdventure
 tags: ["Lipizzaner","덴젤 워싱턴","인종차별","진 해크만","크림슨 타이드","토니 스콧"]
-gallery1:
-  - url: /images/2024-01-11/ct20s64.jpg
-    image_path: /images/2024-01-11/ct20s64.jpg
-    alt: "기관장이 아니라 주임원사이고 금줄이 틀렸음"
-    title: "기관장이 아니라 주임원사이고 금줄이 틀렸음"
-  - url: /images/2024-01-11/ct21s64.jpg
-    image_path: /images/2024-01-11/ct21s64.jpg
-    alt: "이 금줄은 맞음"
-    title: "이 금줄은 맞음"
-gallery2:
-  - url: /images/2024-01-11/ct30s64.jpg
-    image_path: /images/2024-01-11/ct30s64.jpg
-    #alt: "이게 필요한가"
-    #title: "이게 필요한가"
-  - url: /images/2024-01-11/ct31s64.jpg
-    image_path: /images/2024-01-11/ct31s64.jpg
-    #alt: "이게 필요한 건가"
-    #title: "이게 필요한 건가"
 toc: true
 toc_label: "Contents"
 #toc_icon: "cog"
@@ -123,7 +105,7 @@ toc_sticky: true
 블라디보스톡에서 태평양 쪽으로 11,300km을 찍어보면 미국 근처가 된다.  
 즉, 미국 영해에 있거나 미국에서 가까운 공해상에서 충분히 발사할 수 있었다.
 
-{% include gallery id="gallery1" %}
+{% include bnl_slider.html images="/images/2024-01-11/ct20s64.jpg | 기관장이 아니라 주임원사이고 금줄이 틀렸음, /images/2024-01-11/ct21s64.jpg | 이 금줄은 맞음" %}
 
 대원들 앞에서 소리를 지르는 이 사람의 직책은 “Chief of the Boat”(주임원사/부사관)이다.  
 그런데, 공식 자막엔 무려 기관장(장교)으로 되어있다.
@@ -211,7 +193,7 @@ toc_sticky: true
 게다가, 영화 앞부분에 명확히 언급되는대로 그는 **1년**간 **하버드에서 공부**했다는 것이다.  
 물론, 이 부분에서 램지 함장은 그를 왠지 **아니꼽게 바라본다**는 느낌을 물씬 풍긴다.
 
-{% include gallery id="gallery2" %}
+{% include bnl_slider.html images="/images/2024-01-11/ct30s64.jpg | 이게 필요한가, /images/2024-01-11/ct31s64.jpg | 이게 필요한 건가" %}
 
 함장과 부장이 설전을 벌이는 내용 중에도 재미있는 것이 하나 나온다.  
 리파자너(Lipizzaner) 종이 포르투갈 산인가 스페인 산인가 하는 내용이다.  
