@@ -38,15 +38,11 @@
 </div>
 
 <style>
-  /* 슬라이더 전체와 다음 문단 사이의 간격 (기존 이미지와 유사한 수준으로 축소) */
-  .splide-container { 
-    margin-bottom: 1.5rem !important; 
-  }
+  /* 슬라이더 전체와 다음 문단 사이의 간격 */
+  .splide-container { margin-bottom: 1.5rem !important; }
 
-  /* 캡션과 밀착시키기 위해 슬라이더 엔진의 하단 기본 여백 제거 */
-  .splide { 
-    margin-bottom: 0 !important; 
-  }
+  /* 캡션과 밀착시키기 위해 하단 기본 여백 제거 */
+  .splide { margin-bottom: 0 !important; }
 
   .slider-image-container { position: relative; text-align: center; }
   .splide__slide img { max-height: 500px; width: auto; display: block; margin: 0 auto; }
@@ -57,7 +53,7 @@
     padding: 6px 12px; text-align: center; position: absolute; bottom: 0; width: 100%;
   }
 
-  /* 일진 님이 원하시던 기존 img+em 스타일 재현 (간격 2px 적용) */
+  /* 일진 님이 맞추신 img+em 스타일 간격 적용 */
   .slider-global-caption {
     display: block !important;
     text-align: center;
@@ -74,6 +70,13 @@
     var elms = document.getElementsByClassName('splide');
     for ( var i = 0; i < elms.length; i++ ) {
       var splideElement = elms[i];
+      
+      // [핵심 버그 픽스] 이미 마운트된 슬라이더는 건너뜁니다.
+      if (splideElement.getAttribute('data-mounted') === 'true') {
+        continue;
+      }
+      splideElement.setAttribute('data-mounted', 'true');
+
       var sType = splideElement.getAttribute('data-s-type');
       var sSpeed = parseInt(splideElement.getAttribute('data-s-speed'));
       var sInterval = parseInt(splideElement.getAttribute('data-s-interval'));
