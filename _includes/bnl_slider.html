@@ -5,11 +5,13 @@
 {% assign global_title = include.title | default: "" %}
 
 <div class="splide-container">
-  <section class="splide" 
+  {% comment %} [스텔스 모드] 테마 스크립트가 인식하지 못하도록 임시 클래스(bnl-splide)를 부여하고 숨겨둡니다. {% endcomment %}
+  <section class="bnl-splide" 
            aria-label="Image Slider"
            data-s-type="{{ s_type }}"
            data-s-speed="{{ s_speed }}"
-           data-s-interval="{{ s_interval }}">
+           data-s-interval="{{ s_interval }}"
+           style="visibility: hidden;">
     <div class="splide__track">
       <ul class="splide__list">
         {% assign items = include.images | split: "," %}
@@ -18,7 +20,6 @@
           {% assign img_url = parts[0] | strip %}
           {% assign img_caption = parts[1] | strip %}
           
-          {% comment %} 빈 공백이나 줄바꿈으로 인한 유령 슬라이드 방지 {% endcomment %}
           {% if img_url != "" %}
           <li class="splide__slide">
             <div class="slider-image-container">
@@ -34,7 +35,7 @@
     </div>
   </section>
 
-  {% comment %} 전체 슬라이드 하단 캡션 {% endcomment %}
+  {% comment %} 전체 슬라이드 하단 캡션 (2px 간격 유지) {% endcomment %}
   {% if global_title != "" %}
     <em class="slider-global-caption">{{ global_title }}</em>
   {% endif %}
@@ -64,37 +65,31 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var elms = document.querySelectorAll('.splide');
-    for ( var i = 0; i < elms.length; i++ ) {
-      var splideElement = elms[i];
-      
-      // [방어 1] 블로그 테마 등에서 이미 엔진을 돌려버린 경우 (is-initialized 감지) 건너뛰기
-      if (splideElement.classList.contains('is-initialized') || splideElement.getAttribute('data-mounted') === 'true') {
-        continue;
+    // [비동기 실행] 테마의 전역 스크립트가 먼저 지나가도록 0.1초(100ms) 양보합니다.
+    setTimeout(function() {
+      var elms = document.querySelectorAll('.bnl-splide');
+      for ( var i = 0; i < elms.length; i++ ) {
+        var splideElement = elms[i];
+        
+        // 테마 스크립트가 지나간 후, CSS 적용을 위해 splide 클래스를 복구하고 화면에 띄웁니다.
+        splideElement.classList.add('splide');
+        splideElement.style.visibility = 'visible';
+
+        var sType = splideElement.getAttribute('data-s-type');
+        var sSpeed = parseInt(splideElement.getAttribute('data-s-speed'));
+        var sInterval = parseInt(splideElement.getAttribute('data-s-interval'));
+        var isAutoplay = sInterval > 0;
+
+        new Splide( splideElement, {
+          type: sType,
+          speed: sSpeed,
+          autoplay: isAutoplay,
+          interval: isAutoplay ? sInterval : 0,
+          pauseOnHover: true,
+          arrows: true,
+          pagination: true,
+        } ).mount();
       }
-
-      // [방어 2] 혹시라도 다른 스크립트 충돌로 가짜 복제본(Clone)이 생겨 있다면 강제 삭제
-      var clones = splideElement.querySelectorAll('.splide__slide--clone');
-      for (var j = 0; j < clones.length; j++) {
-        clones[j].parentNode.removeChild(clones[j]);
-      }
-
-      splideElement.setAttribute('data-mounted', 'true');
-
-      var sType = splideElement.getAttribute('data-s-type');
-      var sSpeed = parseInt(splideElement.getAttribute('data-s-speed'));
-      var sInterval = parseInt(splideElement.getAttribute('data-s-interval'));
-      var isAutoplay = sInterval > 0;
-
-      new Splide( splideElement, {
-        type: sType,
-        speed: sSpeed,
-        autoplay: isAutoplay,
-        interval: isAutoplay ? sInterval : 0,
-        pauseOnHover: true,
-        arrows: true,
-        pagination: true,
-      } ).mount();
-    }
+    }, 100);
   });
 </script>
