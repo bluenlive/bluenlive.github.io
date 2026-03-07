@@ -18,6 +18,8 @@
           {% assign img_url = parts[0] | strip %}
           {% assign img_caption = parts[1] | strip %}
           
+          {% comment %} 빈 공백이나 줄바꿈으로 인한 유령 슬라이드 방지 {% endcomment %}
+          {% if img_url != "" %}
           <li class="splide__slide">
             <div class="slider-image-container">
               <img src="{{ img_url }}" alt="{{ img_caption }}">
@@ -26,6 +28,7 @@
               {% endif %}
             </div>
           </li>
+          {% endif %}
         {% endfor %}
       </ul>
     </div>
@@ -38,22 +41,16 @@
 </div>
 
 <style>
-  /* 슬라이더 전체와 다음 문단 사이의 간격 */
   .splide-container { margin-bottom: 1.5rem !important; }
-
-  /* 캡션과 밀착시키기 위해 하단 기본 여백 제거 */
   .splide { margin-bottom: 0 !important; }
-
   .slider-image-container { position: relative; text-align: center; }
   .splide__slide img { max-height: 500px; width: auto; display: block; margin: 0 auto; }
   
-  /* 개별 이미지 내부 캡션 (오버레이) */
   .splide__caption {
     background: rgba(0, 0, 0, 0.6); color: #fff; font-size: 0.85rem;
     padding: 6px 12px; text-align: center; position: absolute; bottom: 0; width: 100%;
   }
 
-  /* 일진 님이 맞추신 img+em 스타일 간격 적용 */
   .slider-global-caption {
     display: block !important;
     text-align: center;
@@ -67,14 +64,21 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var elms = document.getElementsByClassName('splide');
+    var elms = document.querySelectorAll('.splide');
     for ( var i = 0; i < elms.length; i++ ) {
       var splideElement = elms[i];
       
-      // [핵심 버그 픽스] 이미 마운트된 슬라이더는 건너뜁니다.
-      if (splideElement.getAttribute('data-mounted') === 'true') {
+      // [방어 1] 블로그 테마 등에서 이미 엔진을 돌려버린 경우 (is-initialized 감지) 건너뛰기
+      if (splideElement.classList.contains('is-initialized') || splideElement.getAttribute('data-mounted') === 'true') {
         continue;
       }
+
+      // [방어 2] 혹시라도 다른 스크립트 충돌로 가짜 복제본(Clone)이 생겨 있다면 강제 삭제
+      var clones = splideElement.querySelectorAll('.splide__slide--clone');
+      for (var j = 0; j < clones.length; j++) {
+        clones[j].parentNode.removeChild(clones[j]);
+      }
+
       splideElement.setAttribute('data-mounted', 'true');
 
       var sType = splideElement.getAttribute('data-s-type');
