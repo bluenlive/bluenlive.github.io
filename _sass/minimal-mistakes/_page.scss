@@ -67,6 +67,7 @@ body {
 .page__title {
   margin-top: 0;
   line-height: 1;
+  text-wrap: balance; /* BLUEnLIVE */
 
   a {
     color: $text-color;
@@ -110,11 +111,13 @@ body {
   li,
   dl {
     font-size: 1em;
-  }
+    text-wrap: pretty;       /* BLUEnLIVE 추가: 마지막 줄 홀대 방지 */
+    letter-spacing: -0.01em; /* BLUEnLIVE 추가: 자간 미세 조절 */  }
 
   /* BLUEnLIVE: shrink font size for lists */
   ul, ol, dl {
     font-size: 0.96em!important;
+    text-wrap: pretty;
   }
 
   /* paragraph indents */
