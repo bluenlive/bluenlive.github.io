@@ -1,10 +1,10 @@
-{% comment %} 기본값 설정 및 파라미터 수신 {% endcomment %}
+{% comment %} 파라미터 수신 및 기본값 설정 {% endcomment %}
 {% assign s_type = include.type | default: "loop" %}
 {% assign s_speed = include.speed | default: 400 %}
 {% assign s_interval = include.interval | default: 0 | plus: 0 %}
 {% assign global_title = include.title | default: "" %}
 
-<div class="splide-container" style="margin-bottom: 2rem;">
+<div class="splide-container">
   <section class="splide" 
            aria-label="Image Slider"
            data-s-type="{{ s_type }}"
@@ -19,8 +19,8 @@
           {% assign img_caption = parts[1] | strip %}
           
           <li class="splide__slide">
-            <div class="slider-image-container" style="position: relative; text-align: center;">
-              <img src="{{ img_url }}" alt="{{ img_caption }}" style="max-height: 500px; width: auto; display: block; margin: 0 auto;">
+            <div class="slider-image-container">
+              <img src="{{ img_url }}" alt="{{ img_caption }}">
               {% if img_caption != "" %}
                 <div class="splide__caption">{{ img_caption }}</div>
               {% endif %}
@@ -31,26 +31,34 @@
     </div>
   </section>
 
-  {% comment %} 전체 슬라이드에 대한 하단 캡션 (기존 img+em 스타일 활용) {% endcomment %}
+  {% comment %} 전체 슬라이드 하단 캡션 (밀착형) {% endcomment %}
   {% if global_title != "" %}
-    <div style="text-align: center; margin-top: 10px;">
-      <em style="display: block; font-style: normal;">{{ global_title }}</em>
-    </div>
+    <em class="slider-global-caption">{{ global_title }}</em>
   {% endif %}
 </div>
 
 <style>
-  /* 개별 이미지 내부 캡션 (기존 유지) */
+  /* 컨테이너 및 슬라이더 본체 여백 제거 */
+  .splide-container { margin-bottom: 2.5rem; } /* 다음 문단과의 거리 */
+  .splide { margin-bottom: 0 !important; } /* 캡션과 밀착시키기 위해 하단 여백 제거 */
+
+  .slider-image-container { position: relative; text-align: center; }
+  .splide__slide img { max-height: 500px; width: auto; display: block; margin: 0 auto; }
+  
+  /* 개별 이미지 내부 오버레이 캡션 */
   .splide__caption {
     background: rgba(0, 0, 0, 0.6); color: #fff; font-size: 0.85rem;
     padding: 6px 12px; text-align: center; position: absolute; bottom: 0; width: 100%;
   }
-  /* 슬라이더 하단 em 태그가 기존 테마 CSS를 타도록 강제 */
-  .splide-container em {
-    color: gray;
-    font-size: .8rem;
+
+  /* img + em 스타일을 복사 */
+  .slider-global-caption {
+    display: block !important;
     text-align: center;
-    display: block;
-    margin-top: 5px;
+    font-size: .8rem;
+    color: gray;
+    font-style: normal;
+    margin-top: 6px !important; /* 이미지와 캡션 사이의 미세한 간격만 유지 */
+    line-height: 1.5;
   }
 </style>
