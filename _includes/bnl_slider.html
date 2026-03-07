@@ -5,7 +5,7 @@
 {% assign global_title = include.title | default: "" %}
 
 <div class="splide-container">
-  {% comment %} [스텔스 모드] 테마 스크립트가 인식하지 못하도록 임시 클래스(bnl-splide)를 부여하고 숨겨둡니다. {% endcomment %}
+  {% comment %} 테마 스크립트 충돌 방지용 임시 클래스(bnl-splide) {% endcomment %}
   <section class="bnl-splide" 
            aria-label="Image Slider"
            data-s-type="{{ s_type }}"
@@ -35,7 +35,7 @@
     </div>
   </section>
 
-  {% comment %} 전체 슬라이드 하단 캡션 (2px 간격 유지) {% endcomment %}
+  {% comment %} 전체 슬라이드 하단 캡션 {% endcomment %}
   {% if global_title != "" %}
     <em class="slider-global-caption">{{ global_title }}</em>
   {% endif %}
@@ -47,9 +47,23 @@
   .slider-image-container { position: relative; text-align: center; }
   .splide__slide img { max-height: 500px; width: auto; display: block; margin: 0 auto; }
   
+  /* [수정됨] 캡션 배경 하단을 넓혀서 점(Dots)이 들어갈 '안전 지대'를 만듭니다 */
   .splide__caption {
-    background: rgba(0, 0, 0, 0.6); color: #fff; font-size: 0.85rem;
-    padding: 6px 12px; text-align: center; position: absolute; bottom: 0; width: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    color: #fff; 
+    font-size: 0.85rem;
+    padding: 8px 12px 28px 12px; /* 하단 패딩을 28px로 늘려 텍스트를 위로 올림 */
+    text-align: center; 
+    position: absolute; 
+    bottom: 0; 
+    width: 100%;
+    box-sizing: border-box; /* 패딩이 전체 너비에 포함되도록 강제 */
+  }
+
+  /* [수정됨] 점들이 캡션 배경 안쪽 하단에 깔끔하게 정렬되도록 위치 고정 */
+  .splide__pagination {
+    bottom: 6px !important; 
+    z-index: 10;
   }
 
   .slider-global-caption {
@@ -64,32 +78,38 @@
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // [비동기 실행] 테마의 전역 스크립트가 먼저 지나가도록 0.1초(100ms) 양보합니다.
-    setTimeout(function() {
-      var elms = document.querySelectorAll('.bnl-splide');
-      for ( var i = 0; i < elms.length; i++ ) {
-        var splideElement = elms[i];
-        
-        // 테마 스크립트가 지나간 후, CSS 적용을 위해 splide 클래스를 복구하고 화면에 띄웁니다.
-        splideElement.classList.add('splide');
-        splideElement.style.visibility = 'visible';
+  // [수정됨] include가 100번 호출되어도, 스크립트 실행은 단 1번만 일어나도록 '전역 플래그' 설정
+  if (typeof window.bnlSliderInitialized === 'undefined') {
+    window.bnlSliderInitialized = true;
 
-        var sType = splideElement.getAttribute('data-s-type');
-        var sSpeed = parseInt(splideElement.getAttribute('data-s-speed'));
-        var sInterval = parseInt(splideElement.getAttribute('data-s-interval'));
-        var isAutoplay = sInterval > 0;
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(function() {
+        // 페이지 내의 모든 슬라이더를 한 번에 찾아서 각각 가동합니다.
+        var elms = document.querySelectorAll('.bnl-splide');
+        for ( var i = 0; i < elms.length; i++ ) {
+          var splideElement = elms[i];
+          
+          // 임시 클래스를 원래대로 복구하고 화면에 노출
+          splideElement.classList.remove('bnl-splide');
+          splideElement.classList.add('splide');
+          splideElement.style.visibility = 'visible';
 
-        new Splide( splideElement, {
-          type: sType,
-          speed: sSpeed,
-          autoplay: isAutoplay,
-          interval: isAutoplay ? sInterval : 0,
-          pauseOnHover: true,
-          arrows: true,
-          pagination: true,
-        } ).mount();
-      }
-    }, 100);
-  });
+          var sType = splideElement.getAttribute('data-s-type');
+          var sSpeed = parseInt(splideElement.getAttribute('data-s-speed'));
+          var sInterval = parseInt(splideElement.getAttribute('data-s-interval'));
+          var isAutoplay = sInterval > 0;
+
+          new Splide( splideElement, {
+            type: sType,
+            speed: sSpeed,
+            autoplay: isAutoplay,
+            interval: isAutoplay ? sInterval : 0,
+            pauseOnHover: true,
+            arrows: true,
+            pagination: true,
+          } ).mount();
+        }
+      }, 100);
+    });
+  }
 </script>
