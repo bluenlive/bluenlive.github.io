@@ -1,40 +1,64 @@
-{% comment %} 기본값 설정 {% endcomment %}
+{% comment %} 기본값 설정 및 파라미터 수신 {% endcomment %}
 {% assign s_type = include.type | default: "loop" %}
 {% assign s_speed = include.speed | default: 400 %}
 {% assign s_interval = include.interval | default: 0 | plus: 0 %}
+{% assign global_title = include.title | default: "" %}
 
-<section class="splide" 
-         aria-label="Image Slider"
-         data-s-type="{{ s_type }}"
-         data-s-speed="{{ s_speed }}"
-         data-s-interval="{{ s_interval }}">
-  <div class="splide__track">
-    <ul class="splide__list">
-      {% assign items = include.images | split: "," %}
-      {% for item in items %}
-        {% assign parts = item | split: "|" %}
-        {% assign img_url = parts[0] | strip %}
-        {% assign img_caption = parts[1] | strip %}
-        
-        <li class="splide__slide">
-          <div class="slider-image-container">
-            <img src="{{ img_url }}" alt="{{ img_caption }}">
-            {% if img_caption != "" %}
-              <div class="splide__caption">{{ img_caption }}</div>
-            {% endif %}
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
+<figure class="splide-container">
+  <section class="splide" 
+           aria-label="Image Slider"
+           data-s-type="{{ s_type }}"
+           data-s-speed="{{ s_speed }}"
+           data-s-interval="{{ s_interval }}">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% assign items = include.images | split: "," %}
+        {% for item in items %}
+          {% assign parts = item | split: "|" %}
+          {% assign img_url = parts[0] | strip %}
+          {% assign img_caption = parts[1] | strip %}
+          
+          <li class="splide__slide">
+            <div class="slider-image-container">
+              <img src="{{ img_url }}" alt="{{ img_caption }}">
+              {% if img_caption != "" %}
+                <div class="splide__caption">{{ img_caption }}</div>
+              {% endif %}
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  {% comment %} 전체 슬라이드에 대한 하단 캡션 추가 {% endcomment %}
+  {% if global_title != "" %}
+    <figcaption class="splide-global-title">
+      {{ global_title }}
+    </figcaption>
+  {% endif %}
+</figure>
 
 <style>
-  .splide { margin-bottom: 2.5rem; }
-  .slider-image-container { position: relative; text-align: center; background: #f9f9f9; }
+  .splide-container { margin-bottom: 3rem; }
+  .slider-image-container { position: relative; text-align: center; background: #f9f9f9; border-radius: 4px; overflow: hidden; }
   .splide__slide img { max-height: 500px; width: auto; display: block; margin: 0 auto; }
+  
+  /* 개별 이미지 캡션 (이미지 하단 오버레이) */
   .splide__caption {
-    background: rgba(0, 0, 0, 0.6); color: #fff; font-size: 0.9rem;
-    padding: 8px 15px; text-align: center; position: absolute; bottom: 0; width: 100%;
+    background: rgba(0, 0, 0, 0.65); color: #fff; font-size: 0.85rem;
+    padding: 6px 12px; text-align: center; position: absolute; bottom: 0; width: 100%;
+    backdrop-filter: blur(2px);
+  }
+
+  /* 슬라이드 전체 하단 캡션 스타일 */
+  .splide-global-title {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #555;
+    border-top: 1px solid #eee;
+    padding-top: 8px;
   }
 </style>
