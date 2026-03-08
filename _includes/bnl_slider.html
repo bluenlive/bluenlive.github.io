@@ -74,6 +74,24 @@
         margin-top: 2px !important; 
         line-height: 1.5;
       }
+
+      .slider-wrapper .slide-item {
+          flex: 0 0 100% !important; /* 축소/확대 없이 정확히 100% 너비 고정 */
+          max-width: 100% !important;
+          margin: 0 !important;      /* 외부 margin 간섭 완벽 차단 */
+          padding: 0 !important;     /* 외부 padding 간섭 완벽 차단 */
+          box-sizing: border-box !important;
+      }
+
+      .slider-wrapper img {
+          width: 100% !important;
+          max-width: 100% !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          border: none !important;
+          display: block !important;
+          box-sizing: border-box !important;
+      }      
     </style>
     <script>
       // include가 여러번 호출되어도, 스크립트 실행은 단 1번만 일어나도록 '전역 플래그' 설정
