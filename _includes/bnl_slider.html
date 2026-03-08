@@ -47,7 +47,7 @@
   .slider-image-container { position: relative; text-align: center; }
   .splide__slide img { max-height: 500px; width: auto; display: block; margin: 0 auto; }
   
-  /* [수정됨] 캡션 배경 하단을 넓혀서 점(Dots)이 들어갈 '안전 지대'를 만듭니다 */
+  /* 캡션 배경 하단을 넓혀서 점(Dots)이 들어갈 '안전 지대'를 만듦 */
   .splide__caption {
     background: rgba(0, 0, 0, 0.6); 
     color: #fff; 
@@ -60,7 +60,7 @@
     box-sizing: border-box; /* 패딩이 전체 너비에 포함되도록 강제 */
   }
 
-  /* [수정됨] 점들이 캡션 배경 안쪽 하단에 깔끔하게 정렬되도록 위치 고정 */
+  /* 점들이 캡션 배경 안쪽 하단에 깔끔하게 정렬되도록 위치 고정 */
   .splide__pagination {
     bottom: 6px !important; 
     z-index: 10;
@@ -78,7 +78,7 @@
 </style>
 
 <script>
-  // [수정됨] include가 100번 호출되어도, 스크립트 실행은 단 1번만 일어나도록 '전역 플래그' 설정
+  // include가 여러번 호출되어도, 스크립트 실행은 단 1번만 일어나도록 '전역 플래그' 설정
   if (typeof window.bnlSliderInitialized === 'undefined') {
     window.bnlSliderInitialized = true;
 
