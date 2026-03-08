@@ -4,15 +4,15 @@
 {% assign s_interval = include.interval | default: 0 | plus: 0 %}
 {% assign global_title = include.title | default: "" %}
 
-{%- capture bnl_slider_html -%}
+{%- capture slider_html -%}
 <div class="splide-container">
   {% comment %} 테마 스크립트 충돌 방지용 임시 클래스(bnl-splide) {% endcomment %}
   <section class="bnl-splide" 
-            aria-label="Image Slider"
-            data-s-type="{{ s_type }}"
-            data-s-speed="{{ s_speed }}"
-            data-s-interval="{{ s_interval }}"
-            style="visibility: hidden;">
+           aria-label="Image Slider"
+           data-s-type="{{ s_type }}"
+           data-s-speed="{{ s_speed }}"
+           data-s-interval="{{ s_interval }}"
+           style="visibility: hidden;">
     <div class="splide__track">
       <ul class="splide__list">
         {% assign items = include.images | split: "," %}
@@ -89,18 +89,18 @@
   }
 </style>
 <script>
-  // include가 여러번 호출되어도, 스크립트 실행은 단 1번만 일어나도록 '전역 플래그' 설정
+  /* include가 여러번 호출되어도, 스크립트 실행은 단 1번만 일어나도록 '전역 플래그' 설정 */
   if (typeof window.bnlSliderInitialized === 'undefined') {
     window.bnlSliderInitialized = true;
 
     document.addEventListener('DOMContentLoaded', function () {
       setTimeout(function() {
-        // 페이지 내의 모든 슬라이더를 한 번에 찾아서 각각 가동합니다.
+        /* 페이지 내의 모든 슬라이더를 한 번에 찾아서 각각 가동합니다. */
         var elms = document.querySelectorAll('.bnl-splide');
         for ( var i = 0; i < elms.length; i++ ) {
           var splideElement = elms[i];
           
-          // 임시 클래스를 원래대로 복구하고 화면에 노출
+          /* 임시 클래스를 원래대로 복구하고 화면에 노출 */
           splideElement.classList.remove('bnl-splide');
           splideElement.classList.add('splide');
           splideElement.style.visibility = 'visible';
@@ -125,4 +125,4 @@
   }
 </script>
 {%- endcapture -%}
-{{- bnl_slider_html | strip_newlines -}}
+{{- slider_html | strip_newlines -}}
