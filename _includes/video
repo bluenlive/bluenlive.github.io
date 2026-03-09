@@ -16,9 +16,12 @@
 {% endcapture %}
 {% assign video_src = video_src | strip %}
 
-    <!-- Courtesy of embedresponsively.com -->
+{%- capture video_html -%}
+{% comment %} Courtesy of embedresponsively.com {% endcomment %}
 {% unless video_src == "" %}
-    <div class="responsive-video-container">
-      <iframe src="{{ video_src }}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
+  <div class="responsive-video-container">
+    <iframe src="{{ video_src }}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
 {% endunless %}
+{%- endcapture -%}
+{{- video_html | strip_newlines -}}
