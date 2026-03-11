@@ -1,6 +1,7 @@
 {% capture video_id %}{{ include.id }}{% endcapture %}
 {% capture video_provider %}{{ include.provider }}{% endcapture %}
 {% capture video_danmaku %}{{ include.danmaku | default: 0 }}{% endcapture %}
+{% assign video_title = include.title | default: "" %}
 
 {% capture video_src %}
   {% case video_provider %}
@@ -19,8 +20,24 @@
 {%- capture video_html -%}
 {% comment %} Courtesy of embedresponsively.com {% endcomment %}
 {% unless video_src == "" %}
-    <div class="responsive-video-container">
-      <iframe src="{{ video_src }}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
+    <div class="video-outer-wrapper">
+      <div class="responsive-video-container">
+        <iframe src="{{ video_src }}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      {% if video_title != "" %}
+        <em class="slider-global-caption">{{ video_title }}</em>
+        <style>
+          .slider-global-caption {
+            display: block !important;
+            text-align: center;
+            font-size: .8rem;
+            color: gray;
+            font-style: normal;
+            margin-top: 2px !important; 
+            line-height: 1.5;
+          }
+        </style>
+      {% endif %}
     </div>
 {% endunless %}
 {%- endcapture -%}
