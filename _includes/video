@@ -33,7 +33,7 @@
             font-size: .8rem;
             color: gray;
             font-style: normal;
-            margin-top: 0px !important; 
+            margin-top: -0.6rem !important; 
             line-height: 1.5;
           }
         </style>
