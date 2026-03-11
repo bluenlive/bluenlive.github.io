@@ -25,15 +25,15 @@
         <iframe src="{{ video_src }}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
       </div>
       {% if video_title != "" %}
-        <em class="slider-global-caption">{{ video_title }}</em>
+        <em class="video-caption">{{ video_title }}</em>
         <style>
-          .slider-global-caption {
+          .video-caption {
             display: block !important;
             text-align: center;
             font-size: .8rem;
             color: gray;
             font-style: normal;
-            margin-top: 2px !important; 
+            margin-top: 0px !important; 
             line-height: 1.5;
           }
         </style>
