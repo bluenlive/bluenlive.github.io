@@ -15,7 +15,9 @@
            style="visibility: hidden;">
     <div class="splide__track">
       <ul class="splide__list">
-        {% assign items = include.images | split: "," %}
+        {% comment %} '\,' 와 '\|' 를 HTML 엔티티 기호로 치환하여 분리 오류 방지 {% endcomment %}
+        {% assign safe_images = include.images | replace: "\,", "&#44;" | replace: "\|", "&#124;" %}
+        {% assign items = safe_images | split: "," %}
         {% for item in items %}
           {% assign parts = item | split: "|" %}
           {% assign img_url = parts[0] | strip %}
