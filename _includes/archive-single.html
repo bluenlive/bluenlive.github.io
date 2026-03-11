@@ -30,13 +30,13 @@
     {% else %}
       {% assign cleaned = post.content %}
     {% endif %}
-    
+
     {% assign cleaned = cleaned | markdownify | replace: '</p>', ' ' | replace: '</li>', ' ' | strip_html | strip_newlines %}
-    
+
     {% assign open_bracket = "{:" %}
     {% assign close_bracket = "}" %}
-    {% assign cleaned = cleaned | replace: open_bracket, "" | replace: close_bracket, "" %}
-    
+    {% assign cleaned = cleaned | replace: open_bracket, "" | replace: close_bracket, "" | remove: "::::" | remove: ":::" %}
+
     <p class="archive__item-excerpt" itemprop="description">
       {{ cleaned | truncate: 160 }}
     </p>
