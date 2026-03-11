@@ -334,3 +334,12 @@ mark {
   word-break: break-all!important;
   border-bottom: 1px solid #ececec!important;
 }
+
+
+/* ---------------------------------------------------
+ * ~~취소선~~ 의 투명도 지정
+ * --------------------------------------------------- */
+
+del {
+  opacity: 0.4;
+}
