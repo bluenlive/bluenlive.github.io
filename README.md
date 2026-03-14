@@ -32,7 +32,7 @@ Minimal Mistakes is a flexible two-column Jekyll theme, perfect for building per
 
 ## Skins (color variations)
 
-This theme comes in nine different skins (in addition to the default one).
+This theme comes in 11 different skins (in addition to the default one).
 
 | `air`                                                                                                                                                                                 | `contrast`                                                                                                                                                                                           | `dark`                                                                                                                                                                                   |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -46,6 +46,9 @@ This theme comes in nine different skins (in addition to the default one).
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![aqua skin](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/aqua-skin-archive-large.png) | [![neon skin](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/neon-skin-archive-large.png) | [![plum skin](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive.png)](https://mmistakes.github.io/minimal-mistakes/assets/images/plum-skin-archive-large.png) |
 
+| `catppuccin_latte` | `catppuccin_mocha` |
+| --- | --- |
+| ![catppuccin_latte skin](./assets/images/catppuccin_latte-skin-archive-large.png) | ![catppuccin_mocha skin](./assets/images/catppuccin_mocha-skin-archive-large.png) |
 ## Demo pages
 
 | Name                                            | Description                                                   |
@@ -122,7 +125,7 @@ To install:
    bundle
    ```
 
-4. Add `remote_theme: "mmistakes/minimal-mistakes@4.27.3"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
+4. Add `remote_theme: "mmistakes/minimal-mistakes@4.28.0"` to your `_config.yml` file. Remove any other `theme:` or `remote_theme:` entry.
 
 <!--
   Dev note: The version number is currently hard-coded in these files:

@@ -5,7 +5,7 @@ permalink: "/docs/history/"
 excerpt: Change log of enhancements and bug fixes made to the theme.
 sidebar:
   nav: docs
-last_modified_at: '2025-08-31T11:43:03+08:00'
+last_modified_at: '2026-03-11T15:33:49+08:00'
 toc: false
 ---
 
@@ -15,12 +15,30 @@ toc: false
 -->
 
 {% raw %}
-## Unreleased
+## [4.28.0](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.28.0)
 
 ### Enhancements
 
 - Updated Traditional Chinese translation [#5250](https://github.com/mmistakes/minimal-mistakes/issues/5250)
 - Add built-in support for jekyll-gfm-admonitions [#5312](https://github.com/mmistakes/minimal-mistakes/issues/5312)
+- Add Latte and Mocha skins from Catppuccin project [#5341](https://github.com/mmistakes/minimal-mistakes/issues/5341)
+- Add support for Swetrix, a GDPR-compliant analytics provider [#5344](https://github.com/mmistakes/minimal-mistakes/issues/5344)
+- Support resolving `ui-text` using `page.locale` when available [#5439](https://github.com/mmistakes/minimal-mistakes/issues/5439)
+- Add `aria-label` to all nav elements for WCAG compliance [#5442](https://github.com/mmistakes/minimal-mistakes/issues/5442)
+- Add IndieWeb microformat support and configurable footer `rel` attribute [#5443](https://github.com/mmistakes/minimal-mistakes/issues/5443)
+- Add `og:image:alt` and `twitter:image:alt` support [#5444](https://github.com/mmistakes/minimal-mistakes/issues/5444)
+- Add `fediverse:creator` meta tag for link preview attribution [#5445](https://github.com/mmistakes/minimal-mistakes/issues/5445)
+- Update hardcoded icon classes for Font Awesome 6 [#5446](https://github.com/mmistakes/minimal-mistakes/issues/5446)
+- Add missing brand-color rules for newer social platforms [#5447](https://github.com/mmistakes/minimal-mistakes/issues/5447)
+- Add custom sidebar content hook [#5448](https://github.com/mmistakes/minimal-mistakes/issues/5448)
+- Add config toggle to suppress taxonomy display on posts [#5449](https://github.com/mmistakes/minimal-mistakes/issues/5449)
+- Minor changes to the PR auto labeling GitHub Actions workflow
+
+Special thanks to @bexelbie for their contributions in this release.
+
+### Bug Fixes
+
+- Fix some social icon colors and missing Korean translations [#5103](https://github.com/mmistakes/minimal-mistakes/issues/5103)
 
 ## [4.27.3](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.3)
 

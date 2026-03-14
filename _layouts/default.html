@@ -1,18 +1,19 @@
 ---
 ---
+{%- assign locale = page.locale | default: layout.locale | default: site.locale %}
 
 <!doctype html>
 {% include copyright.html %}
-<html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
+<html lang="{{ locale | replace: "_", "-" | default: "en" }}" class="no-js">
   <head>
-    {% include head.html %}
+    {% include head.html locale=locale %}
     {% include head/custom.html %}
     <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="bluenlive" data-description="Support me on Buy me a coffee!" data-message="간편하게 커피값 후원하기" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
-    {% include_cached skip-links.html %}
-    {% include_cached masthead.html %}
+    {% include_cached skip-links.html locale=locale %}
+    {% include_cached masthead.html locale=locale %}
 
     <div class="initial-content">
       {{ content }}
@@ -21,17 +22,17 @@
 
     {% if site.search == true %}
       <div class="search-content">
-        {% include_cached search/search_form.html %}
+        {% include_cached search/search_form.html locale=locale %}
       </div>
     {% endif %}
 
     <div id="footer" class="page__footer">
       <footer>
         {% include footer/custom.html %}
-        {% include_cached footer.html %}
+        {% include_cached footer.html locale=locale %}
       </footer>
     </div>
 
-    {% include scripts.html %}
-   </body>
+    {% include scripts.html locale=locale %}
+  </body>
 </html>

@@ -83,6 +83,9 @@ _Example:_ `locale: "en-US"` sets the `lang` attribute for the site to the _Unit
 
 Properly setting the locale is important for associating localized text found in the [**UI Text**]({{ "/docs/ui-text/" | relative_url }}) data file. An improper match will cause parts of the UI to disappear (eg. button labels, section headings, etc).
 
+**Note:** Localization can also be overridden per page by specifying `locale` in the front matter.
+{: .notice--info}
+
 **Note:** The theme comes with localized text in English (`en`, `en-US`, `en-GB`). If you change `locale` in `_config.yml` to something else, most of the UI text will go blank. Be sure to add the corresponding locale key and translated text to `_data/ui-text.yml` to avoid this.
 {: .notice--warning}
 
@@ -795,6 +798,18 @@ And if I assign `@mmistakes` as an author account it will appear in the Twitter 
 **Note**: You need to validate cards are working and have Twitter [approve Player Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/player-card) before they begin showing up.
 {: .notice--warning}
 
+##### Fediverse creator
+
+If the site author (or a per-page author override) has a `fediverse` value set, a `<meta name="fediverse:creator">` tag is emitted. This enables "by @user@instance" attribution on Mastodon, Pixelfed, Flipboard, and other fediverse platforms — the same role `twitter:creator` plays for Twitter Cards.
+
+The value is set in the `author` block of `_config.yml` (or in `_data/authors.yml` for multi-author sites):
+
+```yaml
+author:
+  name: "Your Name"
+  fediverse: "@you@instance.social"
+```
+
 ##### Facebook Open Graph
 
 If you have a Facebook ID or publisher page add them:
@@ -821,7 +836,10 @@ For pages that don't have a `header.image` assigned in their YAML Front Matter, 
 
 ```yaml
 og_image: /assets/images/site-logo.png
+og_image_alt: "Site logo"
 ```
+
+`og_image_alt` sets the default alt text for `og:image:alt` and `twitter:image:alt` meta tags. This can be overridden per-page with `page.header.og_image_alt` in the YAML Front Matter. If no alt text is set, the tags are omitted.
 
 {% include figure
    image_path="/assets/images/mm-twitter-card-summary-image.jpg"
@@ -910,6 +928,7 @@ author:
   avatar   : "/assets/images/bio-photo.jpg"
   bio      : "My awesome biography constrained to a sentence or two goes here."
   location : "Somewhere, USA"
+  fediverse: "@you@instance.social"
 ```
 
 Author links are all optional, include the ones you want visible under the `author.links` array.
@@ -917,7 +936,7 @@ Author links are all optional, include the ones you want visible under the `auth
 | Name      | Description                                                                                           |
 | --------- | ----------------------------------------------------------------------------------------------------- |
 | **label** | Link label (e.g. `"Twitter"`)                                                                         |
-| **icon**  | [Font Awesome icon](https://fontawesome.com/v6/search) classes (e.g. `"fab fa-fw fa-twitter-square"`) |
+| **icon**  | [Font Awesome icon](https://fontawesome.com/v6/search) classes (e.g. `"fab fa-fw fa-square-x-twitter"`) |
 | **url**   | Link URL (e.g. `"https://twitter.com/mmistakes"`)                                                     |
 
 ```yaml
@@ -931,7 +950,7 @@ author:
       icon: "fas fa-fw fa-link"
       url: "https://mademistakes.com"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-square-x-twitter"
       url: "https://twitter.com/mmistakes"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -947,21 +966,23 @@ To customize the author sidebar, read the full [layout documentation]({{ "/docs/
 
 Footer links can be added under the `footer.links` array.
 
-| Name      | Description                                                                                           |
-| --------- | ----------------------------------------------------------------------------------------------------- |
-| **label** | Link label (e.g. `"Twitter"`)                                                                         |
-| **icon**  | [Font Awesome icon](https://fontawesome.com/v6/search) classes (e.g. `"fab fa-fw fa-twitter-square"`) |
-| **url**   | Link URL (e.g. `"https://twitter.com/mmistakes"`)                                                     |
+| Name      | Description                                                                                                                                                   |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **label** | Link label (e.g. `"Twitter"`)                                                                                                                                 |
+| **icon**  | [Font Awesome icon](https://fontawesome.com/v6/search) classes (e.g. `"fab fa-fw fa-square-x-twitter"`)                                                         |
+| **url**   | Link URL (e.g. `"https://twitter.com/mmistakes"`)                                                                                                             |
+| **rel**   | Optional [link relation](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel) appended to the default `nofollow noopener noreferrer` (e.g. `"me"` for [IndieWeb web sign-in](https://indieweb.org/How_to_set_up_web_sign-in_on_your_own_domain)) |
 
 ```yaml
 footer:
   links:
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fab fa-fw fa-square-x-twitter"
       url: "https://twitter.com/mmistakes"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/mmistakes"
+      rel: "me"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/mmistakes"
@@ -1178,6 +1199,12 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+```
+
+To hide the tag and category lists displayed on each post, set `show_taxonomy: false` in `_config.yml`. The taxonomy archive pages themselves are unaffected — only the per-post lists are suppressed.
+
+```yaml
+show_taxonomy: false
 ```
 
 Which would create category and tag links in the breadcrumbs and page meta like: `/categories/#foo` and `/tags/#foo`.
