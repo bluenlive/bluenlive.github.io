@@ -12,9 +12,9 @@ categories:
 하지만, 이제 그만 해야겠다는 생각이 들어 **WebP**로 넘어가기로 했다.\
 넘어가는 김에 사진을 WebP 및 HEIF로 인코딩 해서 **용량 대비 품질**을 비교해보기로 했다.
 
-비교 방법은 사진 여러장을 같은 기준으로 인코딩 한 뒤 [PSNR-HVS-M](https://ponomarenko.info/psnrhvsm.htm)[^1]과 [SSIM](https://tiabet.tistory.com/entry/SSIM-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%92%88%EC%A7%88-%ED%8F%89%EA%B0%80-%EC%A7%80%ED%91%9C-%EC%A0%95%EB%A6%AC)[^2]을 계산해서 용량 대비 품질을 정량적으로 비교하는 것.
+비교 방법은 사진 여러장을 같은 기준으로 인코딩 한 뒤 [PSNR-HVS-M](https://ponomarenko.info/psnrhvsm.htm)[^1]과 [SSIM](https://tiabet.tistory.com/entry/SSIM-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%92%88%EC%A7%88-%ED%8F%89%EA%B0%80-%EC%A7%80%ED%91%9C-%EC%A0%95%EB%A6%AC)[^2]을 계산해서 용량 대비 품질을 정량적으로 비교하는 것이다.
 
-WebP는 물론 [구글에서 공개한 라이브러리](https://github.com/webmproject/libwebp)를 사용하면 되고, HEIF는 WIC를 이용한 인코딩과 [libheif](https://github.com/strukturag/libheif)+[x265](https://x265.readthedocs.io/en/master/)를 모두 적용해봤다.
+WebP는 물론 [구글에서 공개한 라이브러리](https://github.com/webmproject/libwebp)를 사용했고, HEIF는 WIC를 이용한 인코딩과 [libheif](https://github.com/strukturag/libheif)+[x265](https://x265.readthedocs.io/en/master/)를 각각 적용했다.
 
 그런데, 오픈 소스 쪽(x265)은 결과가 놀라웠다.\
 WIC-HEIF에 비해 **PSNR-HVS-M**이 심각하게 낮다.\
@@ -24,7 +24,7 @@ WIC-HEIF에 비해 **PSNR-HVS-M**이 심각하게 낮다.\
 *뭘 해도 20dB 부근에서 헤매는 x265 진영, 이 값은 33dB를 하한선으로 보는 게 일반적임*
 
 **SSIM** 역시도 마찬가지로 심각하게 낮다.\
-이 정도면 **오픈 소스를 활용한 HEIF 압축은 포기**하는 것이 좋다.
+이 정도면 **오픈 소스를 활용한 HEIF 압축은 포기**하는 것이 좋다.\
 더군다나 x265 쪽은 **라이선스 문제**까지 엮여있어 프로그램을 배포하는 것도 주의가 필요하다.
 
 ![image](/images/2026-03-20/compare2_okl_s64_Q.webp)
@@ -45,7 +45,7 @@ WIC-HEIF에 비해 **PSNR-HVS-M**이 심각하게 낮다.\
 
 ![image](/images/2026-03-20/compare4_okl_s64_Q.webp)
 
-결론적으로 WebP와 HEIF(WIC)는 구조적인 면에서 용량 대비 차이는 거의 없으며, 세부 디테일은 WebP가 좀 높다는 것.\
+결론적으로 WebP와 HEIF(WIC)는 **구조적인 면**에서 용량 대비 차이는 **거의 없고**, **세부 디테일**은 **WebP가 좀 높다**.\
 그리고, **WebP**로 압축할 때 품질(fidelity)는 **88이** 용량이 작으면서도 품질이 훌륭한 **sweet spot**이라는 결론.
 
 [^1]: Peak Signal-to-Noise Ratio with HVS and Masking, PSNR에 인간 시각 특성(HVS)을 반영한 지표. 단위는 dB.
