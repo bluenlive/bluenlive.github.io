@@ -1,130 +1,66 @@
-{% comment %} 파라미터 수신 및 기본값 설정 {% endcomment %}
-{% assign s_type = include.type | default: "loop" %}
-{% assign s_speed = include.speed | default: 400 %}
-{% assign s_interval = include.interval | default: 0 | plus: 0 %}
-{% assign global_title = include.title | default: "" %}
+{%- assign s_type = include.type | default: "loop" -%}
+{%- assign s_speed = include.speed | default: 400 -%}
+{%- assign s_interval = include.interval | default: 0 | plus: 0 -%}
+{%- assign global_title = include.title | default: "" -%}
 
 {%- capture slider_html -%}
 <div class="splide-container">
-  {% comment %} 테마 스크립트 충돌 방지용 임시 클래스(bnl-splide) {% endcomment %}
-  <section class="bnl-splide" 
-           aria-label="Image Slider"
-           data-s-type="{{ s_type }}"
-           data-s-speed="{{ s_speed }}"
-           data-s-interval="{{ s_interval }}"
-           style="visibility: hidden;">
-    <div class="splide__track">
-      <ul class="splide__list">
-        {% comment %} '\,' 와 '\|' 를 HTML 엔티티 기호로 치환하여 분리 오류 방지 {% endcomment %}
-        {% assign safe_images = include.images | replace: "\,", "&#44;" | replace: "\|", "&#124;" %}
-        {% assign items = safe_images | split: "," %}
-        {% for item in items %}
-          {% assign parts = item | split: "|" %}
-          {% assign img_url = parts[0] | strip %}
-          {% assign img_caption = parts[1] | strip %}
-          
-          {% if img_url != "" %}
-          <li class="splide__slide">
-            <div class="slider-image-container">
-              <img src="{{ img_url }}" alt="{{ img_caption }}">
-              {% if img_caption != "" %}
-                <div class="splide__caption">{{ img_caption }}</div>
-              {% endif %}
-            </div>
-          </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-  </section>
-
-  {% comment %} 전체 슬라이드 하단 캡션 {% endcomment %}
-  {% if global_title != "" %}
-    <em class="slider-global-caption">{{ global_title }}</em>
-  {% endif %}
+<section class="bnl-splide" aria-label="Image Slider" data-s-type="{{ s_type }}" data-s-speed="{{ s_speed }}" data-s-interval="{{ s_interval }}" style="visibility: hidden;">
+<div class="splide__track">
+<ul class="splide__list">
+{%- assign safe_images = include.images | replace: "\,", "&#44;" | replace: "\|", "&#124;" -%}
+{%- assign items = safe_images | split: "," -%}
+{%- for item in items -%}
+{%- assign parts = item | split: "|" -%}
+{%- assign img_url = parts[0] | strip -%}
+{%- assign img_caption = parts[1] | strip -%}
+{%- if img_url != "" -%}
+<li class="splide__slide">
+<div class="slider-image-container">
+<img src="{{ img_url }}" alt="{{ img_caption }}">
+{%- if img_caption != "" -%}<div class="splide__caption">{{ img_caption }}</div>{%- endif -%}
+</div>
+</li>
+{%- endif -%}
+{%- endfor -%}
+</ul>
+</div>
+</section>
+{%- if global_title != "" -%}<em class="slider-global-caption">{{ global_title }}</em>{%- endif -%}
 </div>
 <style>
-  .splide-container { margin-bottom: 0.7rem !important; }
-  .splide { margin-bottom: 0 !important; }
-  .slider-image-container { position: relative; text-align: center; }
-  .splide__slide img { max-height: 500px; width: auto; display: block; margin: 0 auto; }
-  
-  /* 캡션 배경 하단을 넓혀서 점(Dots)이 들어갈 '안전 지대'를 만듦 */
-  .splide__caption {
-    background: rgba(0, 0, 0, 0.6); 
-    color: #fff; 
-    font-size: 0.85rem;
-    padding: 8px 12px 28px 12px; /* 하단 패딩을 28px로 늘려 텍스트를 위로 올림 */
-    text-align: center; 
-    position: absolute; 
-    bottom: 0; 
-    width: 100%;
-    box-sizing: border-box; /* 패딩이 전체 너비에 포함되도록 강제 */
-  }
-
-  /* 점들이 캡션 배경 안쪽 하단에 깔끔하게 정렬되도록 위치 고정 */
-  .splide__pagination {
-    bottom: 6px !important; 
-    z-index: 10;
-  }
-
-  .slider-global-caption {
-    display: block !important;
-    text-align: center;
-    font-size: .8rem;
-    color: gray;
-    font-style: normal;
-    margin-top: 2px !important; 
-    line-height: 1.5;
-  }
-
-  .splide__list {
-      margin: 0 !important;
-      padding: 0 !important;
-  }
-
-  .splide__slide {
-      margin: 0 !important;
-      padding: 0 !important;
-      border: none !important;
-      box-sizing: border-box !important;
-  }
+.splide-container { margin-bottom: 0.7rem !important; }
+.splide { margin-bottom: 0 !important; }
+.slider-image-container { position: relative; text-align: center; }
+.splide__slide img { max-height: 500px; width: auto; display: block; margin: 0 auto; }
+.splide__caption { background: rgba(0, 0, 0, 0.6); color: #fff; font-size: 0.85rem; padding: 8px 12px 28px 12px; text-align: center; position: absolute; bottom: 0; width: 100%; box-sizing: border-box; }
+.splide__pagination { bottom: 6px !important; z-index: 10; }
+.slider-global-caption { display: block !important; text-align: center; font-size: .8rem; color: gray; font-style: normal; margin-top: 2px !important; line-height: 1.5; }
+.splide__list, .splide__slide { margin: 0 !important; padding: 0 !important; border: none !important; box-sizing: border-box !important; }
 </style>
 <script>
-  /* include가 여러번 호출되어도, 스크립트 실행은 단 1번만 일어나도록 '전역 플래그' 설정 */
-  if (typeof window.bnlSliderInitialized === 'undefined') {
-    window.bnlSliderInitialized = true;
-
-    document.addEventListener('DOMContentLoaded', function () {
-      setTimeout(function() {
-        /* 페이지 내의 모든 슬라이더를 한 번에 찾아서 각각 가동합니다. */
-        var elms = document.querySelectorAll('.bnl-splide');
-        for ( var i = 0; i < elms.length; i++ ) {
-          var splideElement = elms[i];
-          
-          /* 임시 클래스를 원래대로 복구하고 화면에 노출 */
-          splideElement.classList.remove('bnl-splide');
-          splideElement.classList.add('splide');
-          splideElement.style.visibility = 'visible';
-
-          var sType = splideElement.getAttribute('data-s-type');
-          var sSpeed = parseInt(splideElement.getAttribute('data-s-speed'));
-          var sInterval = parseInt(splideElement.getAttribute('data-s-interval'));
-          var isAutoplay = sInterval > 0;
-
-          new Splide( splideElement, {
-            type: sType,
-            speed: sSpeed,
-            autoplay: isAutoplay,
-            interval: isAutoplay ? sInterval : 0,
-            pauseOnHover: true,
-            arrows: true,
-            pagination: true,
-          } ).mount();
-        }
-      }, 100);
-    });
-  }
+if (typeof window.bnlSliderInitialized === 'undefined') {
+window.bnlSliderInitialized = true;
+document.addEventListener('DOMContentLoaded', function () {
+setTimeout(function() {
+var elms = document.querySelectorAll('.bnl-splide');
+for ( var i = 0; i < elms.length; i++ ) {
+var splideElement = elms[i];
+splideElement.classList.remove('bnl-splide');
+splideElement.classList.add('splide');
+splideElement.style.visibility = 'visible';
+var sType = splideElement.getAttribute('data-s-type');
+var sSpeed = parseInt(splideElement.getAttribute('data-s-speed'));
+var sInterval = parseInt(splideElement.getAttribute('data-s-interval'));
+var isAutoplay = sInterval > 0;
+new Splide( splideElement, {
+type: sType, speed: sSpeed, autoplay: isAutoplay, interval: isAutoplay ? sInterval : 0,
+pauseOnHover: true, arrows: true, pagination: true,
+} ).mount();
+}
+}, 100);
+});
+}
 </script>
 {%- endcapture -%}
 {{- slider_html | strip_newlines -}}
