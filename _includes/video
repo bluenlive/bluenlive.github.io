@@ -1,44 +1,21 @@
-{% capture video_id %}{{ include.id }}{% endcapture %}
-{% capture video_provider %}{{ include.provider }}{% endcapture %}
-{% capture video_danmaku %}{{ include.danmaku | default: 0 }}{% endcapture %}
-{% assign video_title = include.title | default: "" %}
+{%- assign video_id = include.id -%}
+{%- assign video_provider = include.provider -%}
+{%- assign video_danmaku = include.danmaku | default: 0 -%}
+{%- assign video_title = include.title | default: "" -%}
 
-{% capture video_src %}
-  {% case video_provider %}
-  {% when "vimeo" %}
-    https://player.vimeo.com/video/{{ video_id }}?dnt=true
-  {% when "youtube" %}
-    https://www.youtube-nocookie.com/embed/{{ video_id }}
-  {% when "google-drive" %}
-    https://drive.google.com/file/d/{{ video_id }}/preview
-  {% when "bilibili" %}
-    https://player.bilibili.com/player.html?bvid={{ video_id }}&page=1&as_wide=1&high_quality=1&danmaku={{ video_danmaku }}
-  {% endcase %}
-{% endcapture %}
-{% assign video_src = video_src | strip %}
+{%- case video_provider -%}
+  {%- when "vimeo" -%}
+    {%- assign video_src = "https://player.vimeo.com/video/" | append: video_id | append: "?dnt=true" -%}
+  {%- when "youtube" -%}
+    {%- assign video_src = "https://www.youtube-nocookie.com/embed/" | append: video_id -%}
+  {%- when "google-drive" -%}
+    {%- assign video_src = "https://drive.google.com/file/d/" | append: video_id | append: "/preview" -%}
+  {%- when "bilibili" -%}
+    {%- assign video_src = "https://player.bilibili.com/player.html?bvid=" | append: video_id | append: "&page=1&as_wide=1&high_quality=1&danmaku=" | append: video_danmaku -%}
+  {%- else -%}
+    {%- assign video_src = "" -%}
+{%- endcase -%}
 
-{%- capture video_html -%}
-{% comment %} Courtesy of embedresponsively.com {% endcomment %}
-{% unless video_src == "" %}
-    <div class="video-outer-wrapper">
-      <div class="responsive-video-container">
-        <iframe src="{{ video_src }}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
-      {% if video_title != "" %}
-        <em class="video-caption">{{ video_title }}</em>
-        <style>
-          .video-caption {
-            display: block !important;
-            text-align: center;
-            font-size: .8rem;
-            color: gray;
-            font-style: normal;
-            margin-top: -0.6rem !important; 
-            line-height: 1.5;
-          }
-        </style>
-      {% endif %}
-    </div>
-{% endunless %}
-{%- endcapture -%}
-{{- video_html | strip_newlines -}}
+{%- if video_src != "" -%}
+<div class="video-outer-wrapper"><div class="responsive-video-container"><iframe src="{{ video_src }}" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe></div>{% if video_title != "" %}<em class="video-caption">{{ video_title }}</em><style>.video-caption { display: block !important; text-align: center; font-size: .8rem; color: gray; font-style: normal; margin-top: -0.6rem !important; line-height: 1.5; }</style>{% endif %}</div>
+{%- endif -%}
