@@ -14,7 +14,7 @@ categories:
 1-2초의 장음이 아니라 아예 **10-20초 정도 비명**을 지르는 비프음을 냈다.\
 그리고는 다시 정상적으로 부팅은 되었다.
 
-![image](/images/2026-01-29/b550m_B_okl_s64_Q.png)
+![image](/images/2026-01-29/b550m_B_okl_s64_Q.webp)
 *세컨 PC 메인보드는 ASRock B550M Steel Legend*
 
 보통 이런 희한한 음은 BIOS/UEFI가 정상동작 한 뒤에 **케이스 냉각팬 고장** 같은 2차적 문제에서 발생한다.\
@@ -28,6 +28,6 @@ categories:
 
 PC 조립 작업을 하면서 엉뚱하게 세컨 PC의 **USB 케이블을 아래와 같이** 꽂은 게 원인이었다.
 
-![image](/images/2026-01-29/connection_B_okl_s64_Q.png)
+![image](/images/2026-01-29/connection_B_okl_s64_Q.webp)
 
 USB 포트는 전력 인입 보호회로가 없는 경우에는 USB 칩이 타버릴 수도 있지만, 다행히 **안전장치**가 되어 있었고, **필사적으로 알렸으나** 내가 말을 늦게 알아들었던 것...
