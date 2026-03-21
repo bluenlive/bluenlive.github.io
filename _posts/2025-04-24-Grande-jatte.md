@@ -19,7 +19,7 @@ reconstructed:
 {: .bluebox-transparent}
 이 작품에 대한 기본적인 지식은 《명화 속 흥미로운 과학이야기》라는 책에서 얻었음을 미리 밝힌다.
 
-![image](/images/2025-04-24/A_Sunday_on_La_Grande_Jatte,1884_Bs64s64.jpg)
+![image](/images/2025-04-24/A_Sunday_on_La_Grande_Jatte,1884_Bs64s64.webp)
 *쇠라의 걸작 《그랑드자트 섬의 일요일 오후》*
 
 ## 간략한 작품 소개
@@ -36,7 +36,7 @@ reconstructed:
 이 작품은 워낙 유명해서 작품의 이름은 모르더라도 (게다가 워낙 길기도 길고) 그림 자체를 모르는 사람은 없을 것이다.\
 워낙 편안한 그림이라 그림을 잘 모르는 평범한 사람들도 쉽게 볼 수 있는 작품이며, 수많은 형태(다른 스타일의 그림은 물론, 뮤지컬(그것도 스위니 토드의 작가인 **손더하임**의 뮤지컬), 동상 등등 너무나 많아서 다 열거도 되지 못할만큼의)로 재생산되었고, 작품성도 인정받았으며, 미술 교과서에도 등장한다.
 
-{% include bnl_slider.html images="/images/2025-04-24/o_catss64.jpg, /images/2025-04-24/o_inspired1s64.jpg, /images/2025-04-24/o_inspired2s64.jpg, /images/2025-04-24/o_lego_likes64.jpg, /images/2025-04-24/o_singularts64.jpg, /images/2025-04-24/o_winters64.jpg" %}
+{% include bnl_slider.html images="/images/2025-04-24/o_catss64.webp, /images/2025-04-24/o_inspired1s64.webp, /images/2025-04-24/o_inspired2s64.webp, /images/2025-04-24/o_lego_likes64.webp, /images/2025-04-24/o_singularts64.webp, /images/2025-04-24/o_winters64.webp" %}
 
 ## 컴퓨터 계에 미친 영향
 
@@ -83,7 +83,7 @@ reconstructed:
 미술가들은 치열하게 당대의 과학을 우선적으로 받아들여 화폭에 담으려고 노력했었다.\
 그 결과가 우리가 걸작(masterpiece)이라고 부르는 작품들이다.
 
-![image](/images/2025-04-24/book_Bs64s64.jpg)
+![image](/images/2025-04-24/book_Bs64s64.webp)
 *명화 속 흥미로운 과학이야기 | 이명옥 지음 | 시공사 펴냄*
 
 ## ChatGPT야 그림 그려줘
@@ -93,36 +93,36 @@ reconstructed:
 
 ### 지브리 스타일
 
-![image](/images/2025-04-24/g_Ghiblis64.jpg)
+![image](/images/2025-04-24/g_Ghiblis64.webp)
 
 ### 아니메 스타일
 
-![image](/images/2025-04-24/g_Animes64.jpg)
+![image](/images/2025-04-24/g_Animes64.webp)
 
 ### 일본 만화 스타일
 
-![image](/images/2025-04-24/g_Comicbooks64.jpg)
+![image](/images/2025-04-24/g_Comicbooks64.webp)
 
 ### 픽사 스타일
 
-![image](/images/2025-04-24/g_Pixars64.jpg)
+![image](/images/2025-04-24/g_Pixars64.webp)
 
 ### 8비트 게임 스타일
 
-![image](/images/2025-04-24/g_Pixel_Games64.jpg)
+![image](/images/2025-04-24/g_Pixel_Games64.webp)
 
 ### 폴리곤 스타일
 
-![image](/images/2025-04-24/g_Low_Poly_3Ds64.jpg)
+![image](/images/2025-04-24/g_Low_Poly_3Ds64.webp)
 
 ### 3D Voxel 스타일
 
-![image](/images/2025-04-24/g_3d_Voxels64.jpg)
+![image](/images/2025-04-24/g_3d_Voxels64.webp)
 
 ### 〈아바타〉 스타일
 
-![image](/images/2025-04-24/g_Avatars64.jpg)
+![image](/images/2025-04-24/g_Avatars64.webp)
 
 ### 그래피티 스타일
 
-![image](/images/2025-04-24/g_Graphitys64.jpg)
+![image](/images/2025-04-24/g_Graphitys64.webp)

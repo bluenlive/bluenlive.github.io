@@ -32,7 +32,7 @@ PC 뱅킹을 하고 나면 컴퓨터가 미친 듯이 느려지기 때문이다.
 
 그리고, 7.17부터 띄웠던 [토스 아이디](https://toss.me/bluenlive)는 서비스 종료로 [Buy Me A Coffee](https://buymeacoffee.com/bluenlive)로 변경되었다.
 
-![image](/images/2025-04-06/hoax_Bs64_Q.png)
+![image](/images/2025-04-06/hoax_Bs64_Q.webp)
 *창의 디자인은 지속적으로 바뀔 예정*
 
 이 프로그램을 실행하면 위와 같은 화면이 나온다.
