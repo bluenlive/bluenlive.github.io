@@ -18,7 +18,7 @@ new_version_url: "/idevice/iTransHEIF-v4.12/"
 [Windows 10/10의 HEIF 확장](https://www.microsoft.com/store/productId/9PMMSR1CGPWG?ocid=pdpshare) 및 [HEVC 확장](https://www.microsoft.com/store/productId/9NMZLZ57R3T7?ocid=pdpshare)을 활용해서 **더욱 빨라진** HEIF→JPEG/PNG 변환기를 공개한다.  
 오픈소스 프로그램만을 활용하며, 다중코어를 활용해 빠르게 변환하는 기존의 기능도 더욱 안정화시켰다.
 
-![image](/images/2024-02-07/iTransHEIF_B_Q.png)
+![image](/images/2024-05-01d/iTransHEIF_B_Q.webp)
 
 이 프로그램은 이전 버전과 마찬가지로 HEIF를 jpeg/png로 변환해주며 **성능도 안정성도 더욱 향상되었다**.
 
@@ -33,7 +33,7 @@ new_version_url: "/idevice/iTransHEIF-v4.12/"
 변환기는 아래 링크에서 다운받을 수 있으며, 별도의 설치 프로그램 따위는 없다.
 
 {% include bnl_download-box.html
-   file="/attachment/2024-02-07/iTransHEIF_v4.04.rar"
+   file="/attachment/2024-05-01b/iTransHEIF_v4.04.rar"
    description="64bit only"
    password="teus.me" %}
 
