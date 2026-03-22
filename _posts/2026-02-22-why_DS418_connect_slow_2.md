@@ -16,7 +16,7 @@ series_title: "시놀로지 NAS 접속 속도 이슈"
 
 그 어댑터는 다른 용도로 이미 사용해버렸는데, 정신을 차려보니 손에 또 하나가 있었다.
 
-![image](/images/2026-02-22/USB2.5_okl_s64_Q.png)
+![image](/images/2026-02-22/USB2.5_okl_s64_Q.webp)
 *너는 이미 질러져 있다!*
 
 이 어댑터는 **RTL8156B**를 기반으로 하는 2.5GbE USB 어댑터다.\
@@ -33,7 +33,7 @@ NAS 쪽에서 서버 모드로 실행하고 윈도우 쪽에서 클라이언트 
 
 시놀로지 쪽에서 이를 설치하려면 `SynoCli Monitor Tools`를 설치하면 간단하게 활용 가능하다.
 
-![image](/images/2026-02-22/packages_B_okl_s64_Q.png)
+![image](/images/2026-02-22/packages_B_okl_s64_Q.webp)
 
 윈도우는 아래 명령으로 설치할 수 있다.
 
