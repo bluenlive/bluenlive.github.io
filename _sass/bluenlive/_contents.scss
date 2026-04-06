@@ -67,8 +67,9 @@
 
     // 비밀번호 색상도 함께 흐리게 처리 (선택 사항)
     .password {
-      color: #aaa; 
-      text-decoration: line-through; /* 만료된 느낌을 위해 취소선 추가 가능 */
+      color: #bbb !important;     /* 흐린 회색 */
+      text-shadow: none;          /* 그림자 효과가 있다면 제거 */
+      font-weight: 500;           /* 너무 굵지 않게 조절 */
     }
     
     // 전체적인 텍스트 색상 조정
