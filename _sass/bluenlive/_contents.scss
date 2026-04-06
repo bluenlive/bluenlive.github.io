@@ -14,71 +14,42 @@
  * 다운로드 아이콘 및 password
  ***---------------------------------------------------*/
 
-.download-box {
-  text-align: center;
+ .download-box {
+  text-align: center;              /* 영역 전체 가운데 정렬 */
   margin: 1.2em auto;
   line-height: 1.4;
+}
 
-  // 공통 버튼 스타일 (a와 span 모두에 적용)
-  .download-btn {
-    display: inline-block;
-    padding: 0.9em 1.8em;
-    border-radius: 6px;
-    background-color: #ffffff;
-    border: 2px solid #2f5ca8;
-    color: #2f5ca8;
-    font-size: 1.15em;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
-    margin-bottom: 0.15em;
+.download-box a {
+  display: inline-block;
+  padding: 0.9em 1.8em;
+  border-radius: 6px;
+  background-color: #ffffff;
+  border: 2px solid #2f5ca8;
+  color: #2f5ca8;
+  font-size: 1.15em;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  margin-bottom: 0.15em;
 
-    &:hover {
-      background-color: #2f5ca8;
-      color: #ffffff;
-      transform: translateY(-2px);
-      box-shadow: 0 5px 12px rgba(0,0,0,0.18);
-    }
-
-    &:active {
-      transform: translateY(1px);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    }
+  &:hover {
+    background-color: #2f5ca8;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.18);
   }
 
-  // 비활성화 상태 스타일
-  &.disabled {
-    .download-btn {
-      border-color: #ccc;     /* 회색 테두리 */
-      color: #999;            /* 회색 글자 */
-      background-color: #f5f5f5; /* 연회색 배경 */
-      cursor: default;        /* 커서 변화 방지 */
-      box-shadow: none;       /* 그림자 제거 혹은 약하게 */
-      
-      // 호버 및 클릭 효과 무력화
-      &:hover, &:active {
-        background-color: #f5f5f5;
-        color: #999;
-        transform: none;
-        box-shadow: none;
-      }
-    }
-
-    // 비밀번호 색상도 함께 흐리게 처리 (선택 사항)
-    .password {
-      color: #aaa; 
-      text-decoration: line-through; /* 만료된 느낌을 위해 취소선 추가 가능 */
-    }
-    
-    // 전체적인 텍스트 색상 조정
-    color: #999;
+  &:active {
+    transform: translateY(1px); /* 클릭 시 아래로 눌린 듯 */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* 그림자 줄여서 눌린 느낌 */
   }
 }
 
-/* 기존 password 스타일 유지 */
+/* 비밀번호 표시 */
 .password {
-  color: #d32f2f;
+  color: #d32f2f;       /* 강한 빨강 */
   font-size: 1.3em;
   font-weight: bold;
   margin-top: 0.6em;
