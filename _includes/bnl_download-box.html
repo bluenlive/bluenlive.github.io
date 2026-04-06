@@ -1,14 +1,29 @@
-<div class="download-box">
-    <a href="{{ include.file }}">
+<div class="download-box {% if include.disabled %}disabled{% endif %}">
+  {% if include.disabled %}
+    <span class="download-btn">
       Download 
       {% if include.filename and include.filename != "" %}
         {{ include.filename }}
       {% else %}
         {{ include.file | split:'/' | last }}
       {% endif %}
-    </a><br>
-    {% if include.description and include.description != "" %}
-      {{ include.description }} /
-    {% endif %}
-    password: <span class="password">{{ include.password }}</span>
+    </span>
+  {% else %}
+    <a href="{{ include.file }}" class="download-btn">
+      Download 
+      {% if include.filename and include.filename != "" %}
+        {{ include.filename }}
+      {% else %}
+        {{ include.file | split:'/' | last }}
+      {% endif %}
+    </a>
+  {% endif %}
+  
+  <br>
+  
+  {% if include.description and include.description != "" %}
+    {{ include.description }} /
+  {% endif %}
+  
+  password: <span class="password">{{ include.password }}</span>
 </div>
