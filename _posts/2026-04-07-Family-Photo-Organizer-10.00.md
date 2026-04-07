@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "사진 정리 툴 FPO(Family Photo Organizer) 9.31 업데이트"
+title: "사진 정리 툴 FPO(Family Photo Organizer) 10.00 업데이트"
 date: 2026-4-7 08:45:00 +0900
 categories:
   - MyProgram
