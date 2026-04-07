@@ -46,7 +46,7 @@ PNG / WebP / MP4 / MOV / MKV는 파일 내에 태깅된 날짜 정보 활용함
 
 ![image](/images/2026-02-13b/FPO_B_okl_s64_Q.webp)
 
-이 프로그램은 아래 링크에서 다운받을 수 있다.
+~~이 프로그램은 아래 링크에서 다운받을 수 있다.~~
 
 {% include bnl_download-box.html
    file="/attachment/2026-02-13b/FPO_v9.31.rar"

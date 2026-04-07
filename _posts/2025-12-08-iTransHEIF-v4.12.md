@@ -29,7 +29,7 @@ new_version_url: "/idevice/iTransHEIF-v5.00/"
 5. **png 파일에도 Exif 정보를 함께 저장**
 6. 깊이 정보가 함께 있는 아이폰/아이패드 사진이라면 **깊이 정보**도 **별도의 파일**로 저장
 
-변환기는 아래 링크에서 다운받을 수 있으며, 별도의 설치 프로그램 따위는 없다.
+~~변환기는 아래 링크에서 다운받을 수 있으며, 별도의 설치 프로그램 따위는 없다.~~
 
 {% include bnl_download-box.html
    file="/attachment/2025-12-08/iTransHEIF_v4.14.rar"

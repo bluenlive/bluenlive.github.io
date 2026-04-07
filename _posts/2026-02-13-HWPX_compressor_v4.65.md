@@ -28,7 +28,7 @@ PNGquant를 선택하는 자동 옵션도 있음
 - 64비트 버전만 배포
 - JpegQ 조절시 상하 키보드로도 조절 가능하도록 수정
 
-이 프로그램은 아래 링크에서 다운받을 수 있으며, **AVX2**가 지원되는 CPU[^2]에서만 동작한다.
+~~이 프로그램은 아래 링크에서 다운받을 수 있으며, **AVX2**가 지원되는 CPU[^2]에서만 동작한다.~~
 
 {% include bnl_download-box.html
    file="/attachment/2026-02-13c/HWPX_Image_Shrinker_v4.81.rar"
