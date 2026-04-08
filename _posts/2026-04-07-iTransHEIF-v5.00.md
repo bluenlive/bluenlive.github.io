@@ -13,7 +13,8 @@ categories:
 
 하지만, 그래도 아직은 **jpeg/png로 변환**해야 하는 경우가 종종 발생한다.
 
-[Windows 11의 HEIF 확장](https://www.microsoft.com/store/productId/9PMMSR1CGPWG?ocid=pdpshare) 및 [HEVC 확장](https://www.microsoft.com/store/productId/9NMZLZ57R3T7?ocid=pdpshare)을 활용해서 **더욱 빨라진** HEIF→JPEG/PNG 변환기를 공개한다.\
+[libheif](https://github.com/strukturag/libheif) 및 [libde265](https://github.com/strukturag/libde265)를 활용해서 **더더욱 빨라진** HEIF→JPEG/PNG 변환기를 공개한다.\
+물론 [Windows 11의 HEIF 확장](https://www.microsoft.com/store/productId/9PMMSR1CGPWG?ocid=pdpshare) 및 [HEVC 확장](https://www.microsoft.com/store/productId/9NMZLZ57R3T7?ocid=pdpshare)을 활용하는 기능도 여전히 제공한다.\
 오픈소스 프로그램만을 활용하며, 다중코어를 활용해 빠르게 변환하는 기존의 기능도 더욱 안정화시켰다.
 
 ![image](/images/2026-04-07e/iTransHEIF_okl_s64_Q.webp)
