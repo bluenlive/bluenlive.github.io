@@ -2,7 +2,7 @@
 layout: single
 #classes: wide
 title: "구라제거기(키보드 보안 프로그램 삭제) 7.56 업데이트"
-date: 2026-4-15 14:00:00 +0900
+date: 2026-4-15 16:02:00 +0900
 categories:
   - HoaxEliminator
 tags: ["activex","nProtect","구라제거기","뱅킹","보안","안랩"]
