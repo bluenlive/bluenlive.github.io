@@ -12,7 +12,7 @@ categories:
 문득 초글링 때 접했던 1983년작 MSX 게임 **'어드벤-츄타(Adven'chuta!)'**가 생각났다.\
 대충 기억한 제목은 **어드밴-튜터[^1]**였는데, **[유튜브](https://www.youtube.com/watch?v=Owjf59KSYHo)**를 뒤져보니 정확한 제목을 알 수 있었다.
 
-제작사의 **자작곡**이지만 왠지 《The Entertainer》을 연상시키는 음악을 듣다 보니 그 때의 기억들이 하나씩 떠올랐다.
+제작사의 **자작곡**이지만 왠지 《The Entertainer》를 연상시키는 음악을 듣다 보니 그 때의 기억들이 하나씩 떠올랐다.
 
 ![image](/images/2026-04-23/advanchuta_B_okl_s64_Q.webp)
 
