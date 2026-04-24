@@ -1,14 +1,14 @@
 require 'fastimage'
 
-# 시점을 :post_convert로 변경하여 본문 내용만 타겟팅합니다.
+# 시점을 :post_convert로 변경하여 본문 내용만 타겟팅.
 Jekyll::Hooks.register :documents, :post_convert do |doc|
-  # 마크다운 파일에서 변환된 내용만 대상으로 합니다.
+  # 마크다운 파일에서 변환된 내용만 대상으로 함.
   next unless doc.extname == ".md"
 
   image_count = 0
 
-  # doc.output 대신 doc.content를 직접 수정합니다.
-  # 이 시점의 doc.content는 레이아웃이 적용되기 전의 순수 본문 HTML입니다.
+  # doc.output 대신 doc.content를 직접 수정함.
+  # 이 시점의 doc.content는 레이아웃이 적용되기 전의 순수 본문 HTML임.
   doc.content.gsub!(/<img\s+([^>]+)>/) do |match|
     attributes = $1.dup
     image_count += 1
