@@ -45,9 +45,12 @@ Jekyll::Hooks.register :documents, :post_render do |doc|
       attributes << ' loading="lazy"'
     end
 
-    # 3. 중앙 정렬 자동화 (Minimal Mistakes 테마 스타일 호환)
-    # 이미 정렬 클래스가 있는지 확인하고, 없으면 align-center를 추가합니다.
-    unless attributes =~ /class=["'][^"']*(align-left|align-right|align-center)[^"']*["']/
+    # 3. 중앙 정렬 자동화 (사이드바 아바타 u-photo는 제외)
+    # 이미 정렬 클래스가 있거나, 아바타 이미지(u-photo)인 경우 제외합니다.
+    is_avatar = attributes.include?('u-photo')
+    has_alignment = attributes =~ /class=["'][^"']*(align-left|align-right|align-center)[^"']*["']/
+
+    unless is_avatar || has_alignment
       if attributes =~ /class=["']([^"']+)["']/
         # 기존 클래스가 있다면 뒤에 추가
         attributes.sub!(/class=["']([^"']+)["']/, 'class="\1 align-center"')
