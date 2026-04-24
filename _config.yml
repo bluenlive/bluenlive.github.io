@@ -116,6 +116,7 @@ analytics:
 author:
   name             : "BLUEnLIVE"
   avatar           : "/assets/images/avatar_vacanrex.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar_align: left
   bio              : "구라제거기의 고향입니다"
   location         : "Another time,<br/>&nbsp; &nbsp; &nbsp; another place"
   email            :

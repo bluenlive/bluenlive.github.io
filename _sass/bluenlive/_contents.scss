@@ -399,29 +399,3 @@ mark {
 del {
   opacity: 0.4;
 }
-
-
-// 사이드바 아바타 및 프로필을 모든 화면에서 왼쪽 정렬로 고정 (2026.4.25)
-.author__profile {
-  @include breakpoint($large) {
-    text-align: left !important; // 가운데 정렬 강제 해제
-
-    .author__avatar {
-      margin-left: 0;
-      margin-right: auto;
-
-      img {
-        // 데스크탑에서 아바타가 너무 커 보인다면 아래 수치를 조절하세요
-        width: 110px; 
-      }
-    }
-
-    .author__content {
-      padding-left: 0; // 왼쪽 여백 초기화
-      
-      .author__name {
-        margin-top: 10px;
-      }
-    }
-  }
-}
