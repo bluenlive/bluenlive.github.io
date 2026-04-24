@@ -399,17 +399,3 @@ mark {
 del {
   opacity: 0.4;
 }
-
-/* 레이아웃 종류에 상관없이 사이드바 프로필 왼쪽 정렬 */
-.author__profile {
-  text-align: left !important;
-
-  .author__avatar {
-    margin-left: 0 !important;
-    margin-right: auto !important;
-    
-    img {
-      margin: 0 !important; // align-center의 흔적을 완전히 제거
-    }
-  }
-}
