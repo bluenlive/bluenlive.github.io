@@ -6,7 +6,7 @@ categories:
   - books
 ---
 
-[이전 포스팅](/game/Advenchuta)을 쓰면서 예전 기억을 복기하다 보니 [월간 마이크로 소프트웨어](https://www.imaso.co.kr/)와 관련된 많은 기억이 떠올랐다.\
+[Adven'chuta! 포스팅](/game/Advenchuta)을 쓰면서 예전 기억을 복기하다 보니 [《월간 마이크로 소프트웨어》](https://www.imaso.co.kr/)와 관련된 많은 기억이 떠올랐다.\
 초글링 때 재미있게 읽던 잡지였는데, 시대가 변함에 따라 현재는 **정간**된 상태.
 
 혹시나 하는 기대로 [국립중앙도서관](https://www.nl.go.kr/)을 방문하니, 이 잡지들이 보관되어 있었다!\
