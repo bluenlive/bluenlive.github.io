@@ -4,6 +4,7 @@ title: "MSX용 모니터 프로그램이란 무엇이었나?"
 date: 2026-5-2 11:26:00 +0900
 categories:
   - ITTalk
+tags: ["국립중앙도서관","월간","마이크로","소프트웨어", "MSX", "모니터"]
 ---
 
 [Adven'chuta! 포스팅](/game/Advenchuta)을 쓰면서 **MSX 기계어 입력 프로그램**을 언급했었다.
