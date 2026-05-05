@@ -45,16 +45,19 @@ AGI는 철저하게 **벡터(Vector) 방식**을 지향했었다.
 * **방식 1. 실시간 좌표 투영: agi-upscale (eviltrout)**
   * [Robin Ward](https://eviltrout.com/)라는 분이 [Ruby를 이용하는 업스케일링 코드](https://github.com/eviltrout/agi-upscale)를 깃허브에 공개했다.\
 ![image](/images/2026-05-05/kq1-sd_okl_s64.webp)
+*원본 해상도*
 ![image](/images/2026-05-05/kq1-hd_okl_s64.webp)
+*agi-upsacle 결과*
   * 핵심 내용은 **좌표계를 고해상도 좌표계에 재투영 한 뒤에 매끄러운 외곽선을 복원**했다는 것이다.
-  * 상세한 기술적 설명은 유튜브 영상을 참고하면 된다.\
+  * 상세한 기술적 설명은 유튜브 영상을 참고하면 된다.
 {% include video id="sclZDCjUVvI" provider="youtube" %}
 
 * **방식 2. 알고리즘 기반 스마트 스케일링: agi-up (OldManYellsAtCode1)**
   * 위의 컨텐츠에 영감을 받은 [OldManYellsAtCode1](https://github.com/OldManYellsAtCode1)라는 분이 [좀 더 개선한 방식](https://github.com/OldManYellsAtCode1/agi-up)을 깃허브에 공개했다.\
 ![image](/images/2026-05-05/kq1-omyac_okl_s64.webp)
+*agi-up 결과*
   * 주요 개선 사항은 **픽셀 간의 연결성을 분석하여 부드러운 곡선으로 재구성**하는 것이다.
-  * 상세한 기술적 설명은 유튜브 영상을 참고하면 된다.\
+  * 상세한 기술적 설명은 유튜브 영상을 참고하면 된다.
 {% include video id="gERlCbMprlqfOuoH" provider="youtube" %}
 
 ## 4. 마무리: 클래식 기술이 던지는 영감
