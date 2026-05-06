@@ -57,4 +57,4 @@ BLUEnLIVE 님이 생명 게임에 대한 정말 재미있는 글을 써주셔서
 <br/>[https://xkcd.com/2293/](https://xkcd.com/2293/)
 </div>
 
-덧. [xkcd](https://xkcd.com/2293/)에서 올린 저 패턴은 실제로 동작하는 패턴임. 다시 한 번 R.I.P.
+덧. [XKCD](https://xkcd.com/2293/)에서 올린 저 패턴은 실제로 동작하는 패턴임. 다시 한 번 R.I.P.
