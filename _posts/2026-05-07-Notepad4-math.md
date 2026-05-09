@@ -32,7 +32,7 @@ categories:
 
 {: .bluebox-blue}
 * 직접 수식 해석을 구현하지 않고 Chakra를 활용
-* 결과를 다시 문자열로 변환할 때는 `propsys.dll`의 `VariantToString`을 활용
+* 결과를 문자열로 변환할 때는 `toString()` 메소드 활용 후 `propsys.dll`의 `VariantToString` 사용[^1]
 * **수식 계산**과 **JS의 표현식 평가**를 함수 하나로 처리
   * JS의 표현식을 평가할 때 수식을 사용하려면 `Math.`를 사용하고
   * 수식 계산 기능은 `with(Math)`를 내부적으로 붙이는 방식으로 구현
@@ -91,10 +91,21 @@ void EditCalculateExpr(int menu) {
         if (menu == CMD_CALCULATE_EXPR) {
           context.lineStart = 1;
           pszBuf += iSelCount;
-          wsprintf(pszBuf, L"with(Math){eval(\n%s)}", pszTextW);
+          wsprintf(pszBuf, L"with(Math){\n%s}", pszTextW);
         }
         hr = scriptParse->ParseScriptText(pszBuf, nullptr, nullptr, nullptr, 0, 0, SCRIPTTEXT_ISEXPRESSION, &result, nullptr);
         if (SUCCEEDED(hr)) {
+          if (result.vt == VT_DISPATCH) { // call result object's toString() method
+            IDispatch * const dispatch = result.pdispVal;
+            LPWSTR toString = const_cast<LPWSTR>(L"toString");
+            DISPID dispId;
+            hr = dispatch->GetIDsOfNames(IID_NULL, &toString, 1, LOCALE_USER_DEFAULT, &dispId);
+            if (SUCCEEDED(hr)) {
+              DISPPARAMS params{};
+              hr = dispatch->Invoke(dispId, IID_NULL, LOCALE_USER_DEFAULT, DISPATCH_METHOD, &params, &result, nullptr, nullptr);
+              if (!SUCCEEDED(hr)) {}
+            }
+          }
           pszTextW[0] = L'\0';
           iSelCount = iSelCount*2 + padding;
           hr = pfnVariantToString(result, pszTextW, static_cast<UINT>(iSelCount));
@@ -129,6 +140,7 @@ void EditCalculateExpr(int menu) {
 ![image](/images/2026-05-07/notepad4_B_Q.webp)
 *식 계산 메뉴는 도구-선택영역에 대하여 에 위치함*
 
-이에 따라 `Excel`의 일부 식에 대한 구현도 제거되고, `cbrt()`[^1] 함수도 제거.
+이에 따라 `Excel`의 일부 식에 대한 구현도 제거되고, `cbrt()`[^2] 함수도 제거.
 
-[^1]: C 기본 라이브러리에 포함된 세제곱근 함수
+[^1]: 최초 구현시에는 `toString()` 없이 처리했다가 이후 이 부분이 추가됨
+[^2]: C 기본 라이브러리에 포함된 세제곱근 함수
