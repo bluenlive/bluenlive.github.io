@@ -44,13 +44,13 @@ static const GUID CLSID_Chakra = // {1b7cd997-e5ff-4932-a7a6-2a9e636da385}
 void EditCalculateExpr(int menu) {
   Sci_Position iSelCount = SciCall_GetSelTextLength();
 
-    // (생략)
+  // (생략)
 
   using VariantToStringSig = HRESULT (WINAPI *)(REFVARIANT varIn, PWSTR pszBuf, UINT cchBuf);
   HMODULE hDLL = LoadLibraryExW(L"propsys.dll", nullptr, kSystemLibraryLoadFlags);
   static VariantToStringSig pfnVariantToString = DLLFunction<VariantToStringSig>(hDLL, "VariantToString");
 
-    // (생략 및 일부 간략화)
+  // (생략 및 일부 간략화)
 
   IActiveScript *activeScript = nullptr;
   HRESULT hr = CoCreateInstance(CLSID_Chakra, nullptr, CLSCTX_INPROC_SERVER, IID_IActiveScript, AsPPVArgs(&activeScript));
