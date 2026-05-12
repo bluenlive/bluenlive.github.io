@@ -53,6 +53,7 @@ categories:
 
 {: .bluebox-blue}
 * 이 변환은 KSSM to Unicode가 아니라 **KSSM to UHC**로 구현
+  * 이를 처리하기 위해 `WideCharToMultiByte()` 함수를 활용함
 * 초성, 중성, 종성이 단독으로 나오는 경우는 단위 자모로 변환
 * 초성, 종성만 나오거나 중성, 종성만 나오는 경우에는 각각의 단위 자모로 변환
 
