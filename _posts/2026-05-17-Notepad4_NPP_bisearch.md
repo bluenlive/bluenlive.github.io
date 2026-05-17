@@ -155,7 +155,6 @@ static constexpr int bisearch_modern(const int ucs, std::span<const interval> ta
 
 ```cpp
 [](const struct interval& i, int val)
-
 ```
 
 **"첫 번째 인자는 배열에서 꺼낸 데이터 원소(Left), 두 번째 인자는 사용자가 찾으려는 키값(Right)"** 순서여야 한다.
@@ -165,17 +164,17 @@ static constexpr int bisearch_modern(const int ucs, std::span<const interval> ta
 
 ### ③ 왜 `std::end()`하고만 비교할까?
 
-목표 값이 배열의 첫 번째 값보다 작으면 `lower_bound`는 정상 포인터인 `std::begin()`을 반환하므로 메모리 참조가 안전하다.\
+목표 값이 배열의 첫 번째 값보다 작으면 `lower_bound`는 정상 포인터인 `std::begin()`을 반환, 메모리 참조가 안전하다.\
 반면, 배열의 모든 값보다 크면 배열 밖의 허공인 `std::end()`를 반환하며, 이때 무작정 접근하면 **크래시**가 난다.
 
 기존 수제 코드에서 `if ((ucs < table[0].first) || (ucs > table[max].last))`로 앞뒤 경계를 수동 차단했던 예외 처리가, STL에서는 `it != table + max + 1`로 최소한의 우측 안전선만 확보해 준 뒤, 안전 구역 안에서 `ucs >= it->first`라는 논리 검사로 구간 포함 여부를 판정하는 형태로 전환된 것이다.
 
 ## 맺음말
 
-실제 이러한 수정으로 얻어지는 동작 성능의 개선이나 바이너리 크기의 감소 등은 없다.\
+실제 이러한 수정으로 얻어지는 동작 성능의 증감이나 바이너리 크기의 변화 등은 없다.\
 성능도 대동소이하고, 실행파일의 크기는 완전히 동일했다.
 
-그렇다면 **더 깔끔한 코드**를 위해 STL를 쓰는 편이 더 낫다.\
+그렇다면 **더 깔끔한 코드**를 위해 STL를 쓰는 편이 더 낫겠다.\
 그런데, 이거 대체 왜 일일이 짰던 거였지?[^1]
 
 [^1]: 글 쓰다가 기억났는데, 원래 저 부분의 소스는 C++가 아니라 **C언어**로 작성된 부분이었기 때문임
