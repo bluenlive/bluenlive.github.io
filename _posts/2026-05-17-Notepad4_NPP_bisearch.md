@@ -131,7 +131,7 @@ static constexpr bool bisearch_modern(const int ucs, std::span<const interval> t
 
 `std::lower_bound`가 내부적으로 돌아가는 규칙들을 들여다보자.
 
-### ① 람다 조건식이 `i.last < val` 이나 `m.key < key` (작다) 인 이유
+### ① 람다 조건식이 `i.last < val` (작다) 인 이유
 
 `lower_bound`는 "크거나 같은 첫 번째 지점"을 찾는데 수식은 '작다(`<`)'를 쓴다.\
 이 조건식은 **"루프를 끝낼 조건"**이 아니라 **"오른쪽으로 계속 탐색을 진행할 조건"**이기 때문이다.
