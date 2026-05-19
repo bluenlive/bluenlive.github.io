@@ -69,4 +69,10 @@ categories:
 | 18 | 현재 날짜/시간 추가 기능 수정 | 미구현 | |
 | 19 | 로그 파일 인식 | 미구현 | |
 
+지원되는 환경은 다음과 같으며, 이는 **Notepad++와 동일**하다.
+
+{: .bluebox-green}
+* CPU: x64, x86, ARM64
+* OS꞉ Windows 8.1, 10, 11
+
 이 플러그인의 소스는 [깃허브](https://github.com/bluenlive/NPP_Notepad4)에서 볼 수 있으며, [여기](https://github.com/bluenlive/NPP_Notepad4/releases)에서 다운받을 수 있다.
