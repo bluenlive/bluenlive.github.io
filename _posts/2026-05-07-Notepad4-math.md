@@ -135,7 +135,7 @@ void EditCalculateExpr(int menu) {
 기존 버전에서는 전술했듯이, [tinyexpr-plusplus](https://github.com/Blake-Madden/tinyexpr-plusplus)를 활용하여 구현했었다.\
 단축키는 `Ctrl+Enter`로 지정해서 수식 뒤에서 `Ctrl+Enter`를 누르면 결과를 붙이도록 했다.
 
-이제 이 기능을 제거하고 순정품의 수식 계산 기능만 적용할 예정.
+이제 **이 기능을 제거**하고 순정품의 수식 계산 기능만 적용할 예정.
 
 ![image](/images/2026-05-07/notepad4_B_Q.webp)
 *식 계산 메뉴는 도구-선택영역에 대하여 에 위치함*
