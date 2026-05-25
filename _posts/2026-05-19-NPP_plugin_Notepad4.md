@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Notepad++에서 Notepad4 기능을 지원을 위한 플러그인 v1.00 공개"
+title: "Notepad++에서 Notepad4 기능 지원을 위한 플러그인 v1.00 공개"
 date: 2026-05-19 17:29:00 +0900
 categories:
   - Notepad4
