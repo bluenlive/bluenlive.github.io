@@ -1,10 +1,9 @@
 ---
 layout: single
-title: "Notepad++에서 Notepad4 기능을 지원을 위한 플러그인 v1.00 공개"
-date: 2026-05-19 17:29:00 +0900
+title: "Notepad++에서 Notepad4 기능을 지원을 위한 플러그인 v1.01 업데이트"
+date: 2026-05-25 22:29:00 +0900
 categories:
   - Notepad4
-new_version_url: "/notepad4/NPP_plugin_Notepad4_1.01/"
 ---
 
 [Notepad++](https://notepad-plus-plus.org/)는 [Notepad4](https://github.com/zufuliu/notepad4)에 비해 **다중 탭**과 **플러그인 기능**으로 무장한 **만능 도구**이다.
@@ -43,7 +42,7 @@ new_version_url: "/notepad4/NPP_plugin_Notepad4_1.01/"
 
 이 기능들 중에 일단 메뉴를 통해 접근할 수 있는 기능들을 구현해 공개한다.
 
-![image](/images/2026-05-19a/NPP_B_okl_s64_Q.webp)
+![image](/images/2026-05-25/NPP_B_okl_s64_Q.webp)
 *일단 메뉴로 구현할 수 있는 기능부터 구현*
 
 위에 정리된 기능 중에 구현된 기능 등은 아래 표에서 확인할 수 있다.
@@ -61,7 +60,7 @@ new_version_url: "/notepad4/NPP_plugin_Notepad4_1.01/"
 | 9 | **HTML 등에서 주석 삭제** | 구현 완료 | |
 | 10 | ~~저장시 암호 설정~~ | 이미 구현돼있음 | [NppCrypt](https://github.com/JetNpp/NppCrypt) |
 | 11 | ~~젠코딩~~ | 이미 구현돼있음 | [npp](https://github.com/emmetio/npp/issues/19#issuecomment-383800041) 또는 jN Notepad++ Plugin |
-| 12 | find/replace 에 즐겨 쓰는 Boost 정규식 기록 추가 | 미구현 | |
+| 12 | **find/replace 에 즐겨 쓰는 Boost 정규식 프리셋 검색 기능 추가** | 구현 완료 | |
 | 13 | lexer 추가 | 미구현 (Srt, TLE) | 이미 구현돼있음 (SRecord, IntelHex, TekExHex) |
 | 14 | 마크다운 lexer 수정 | 미구현 | |
 | 15 | C/C++ lexer 수정 | 미구현 | |
@@ -77,3 +76,11 @@ new_version_url: "/notepad4/NPP_plugin_Notepad4_1.01/"
 * OS꞉ Windows 8.1, 10, 11
 
 이 플러그인의 소스는 [깃허브](https://github.com/bluenlive/NPP_Notepad4)에서 볼 수 있으며, [여기](https://github.com/bluenlive/NPP_Notepad4/releases)에서 다운받을 수 있다.
+
+## 히스토리
+
+{: .bluebox-history}
+* 2026.5.25꞉ 1.01 공개
+  * 정규식 프리셋 추가: 즐겨 쓰는 정규식 패턴들을 적용해서 검색할 수 있는 정규식 프리셋 검색 기능 추가
+    * 정규식에 주석 추가로 가독성 증대
+  * UI 메뉴 구조 최적화: 루트 메뉴를 차지하던 플러그인 위치를 편집(Edit) 등 하위 메뉴로 이동
