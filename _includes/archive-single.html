@@ -43,15 +43,8 @@
     {% assign cleaned = cleaned | replace: open_bracket, "" | replace: close_bracket, "" | remove: "::::" | remove: ":::" %}
 
     {% comment %} 4. 연속된 여러 개의 줄바꿈(엔터)을 하나로 압축하고 양끝 공백을 정리 {% endcomment %}
-    {% assign cleaned = cleaned | replace: "
-  ", "
-" | replace: "
-
-", "
-" | replace: "
-
-", "
-" | strip %}
+    {% assign cleaned = cleaned | newline_to_br | replace: "<br />\n<br />", "<br />" | replace: "<br />", "
+" %}
 
     <p class="archive__item-excerpt" itemprop="description" style="white-space: pre-line;">
       {{ cleaned | truncate: 160 }}
