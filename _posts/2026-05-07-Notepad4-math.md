@@ -8,7 +8,7 @@ categories:
 
 ## 메모장에도 수식 계산 기능이 있으면 좋잖아?
 
-정확히 3년 전에 [Notepad2-mod에 수식 기능을 추가하는 아이디어](https://github.com/zufuliu/notepad4/discussions/631)를 건의했었다.
+정확히 3년 전에 [Notepad2-mod에 수식 기능을 추가하는 아이디어](https://github.com/zufuliu/notepad4/discussions/631)[^0]를 건의했었다.
 
 필요하다는 얘기도 있었지만, 이 기능을 구현하면 **실행파일의 크기가 너무 커진다**는 문제가 있었다.\
 본 블로그에서 배포하는 버전은 화끈하게 [tinyexpr-plusplus](https://github.com/Blake-Madden/tinyexpr-plusplus)를 적용했었다.\
@@ -142,5 +142,6 @@ void EditCalculateExpr(int menu) {
 
 이에 따라 `Excel`의 일부 식에 대한 구현도 제거되고, `cbrt()`[^2] 함수도 제거.
 
+[^0]: 현재는 Notepad4(메모장4)로 이름이 변경됨
 [^1]: 최초 구현시에는 `toString()` 없이 처리했다가 이후 이 부분이 추가됨
 [^2]: C 기본 라이브러리에 포함된 세제곱근 함수
