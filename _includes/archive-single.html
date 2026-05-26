@@ -26,20 +26,23 @@
       {% endif %}
     </h2>
     {% include page__meta.html locale=locale type=include.type %}
-    {% if post.excerpt.size > 150 %}
-      {% assign cleaned = post.excerpt %}
+{% comment %} 1. 본문과 요약에서 HTML 태그 및 줄바꿈을 먼저 제거하여 순수 텍스트만 추출 {% endcomment %}
+    {% assign pure_excerpt = post.excerpt | strip_html | strip_newlines %}
+    {% assign pure_content = post.content | strip_html | strip_newlines %}
+
+    {% comment %} 2. 순수 텍스트 기준으로 글자 수를 판단하여 가져옴 {% endcomment %}
+    {% if pure_excerpt.size > 150 %}
+      {% assign cleaned = pure_excerpt %}
     {% else %}
-      {% assign cleaned = post.content %}
+      {% assign cleaned = pure_content %}
     {% endif %}
 
-    {% assign cleaned = cleaned | markdownify | replace: '</p>', ' ' | replace: '</li>', ' ' | strip_html | strip_newlines %}
-
+    {% comment %} 3. 특수문자 치환 및 공백 제거 로직을 수행 {% endcomment %}
     {% assign open_bracket = "{:" %}
     {% assign close_bracket = "}" %}
-    {% assign cleaned = cleaned | replace: open_bracket, "" | replace: close_bracket, "" | remove: "::::" | remove: ":::" %}
+    {% assign cleaned = cleaned | replace: open_bracket, "" | replace: close_bracket, "" | remove: "::::" | remove: ":::" | strip %}
 
     <p class="archive__item-excerpt" itemprop="description">
       {{ cleaned | truncate: 160 }}
-    </p>
-  </article>
+    </p>  </article>
 </div>
