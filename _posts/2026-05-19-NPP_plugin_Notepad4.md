@@ -60,7 +60,7 @@ new_version_url: "/notepad4/NPP_plugin_Notepad4_1.01/"
 | 8 | **HTML/XML 태그 삭제** | 구현 완료 | |
 | 9 | **HTML 등에서 주석 삭제** | 구현 완료 | |
 | 10 | ~~저장시 암호 설정~~ | 이미 구현돼있음 | [NppCrypt](https://github.com/JetNpp/NppCrypt) |
-| 11 | ~~젠코딩~~ | 이미 구현돼있음 | [npp](https://github.com/emmetio/npp/issues/19#issuecomment-383800041) 또는 jN Notepad++ Plugin |
+| 11 | ~~젠코딩~~ | 이미 구현돼있음[^1]} | [npp](https://github.com/emmetio/npp/issues/19#issuecomment-383800041) 또는 jN Notepad++ Plugin |
 | 12 | find/replace 에 즐겨 쓰는 Boost 정규식 기록 추가 | 미구현 | |
 | 13 | lexer 추가 | 미구현 (Srt, TLE) | 이미 구현돼있음 (SRecord, IntelHex, TekExHex) |
 | 14 | 마크다운 lexer 수정 | 미구현 | |
@@ -77,3 +77,5 @@ new_version_url: "/notepad4/NPP_plugin_Notepad4_1.01/"
 * OS꞉ Windows 8.1, 10, 11
 
 이 플러그인의 소스는 [깃허브](https://github.com/bluenlive/NPP_Notepad4)에서 볼 수 있으며, [여기](https://github.com/bluenlive/NPP_Notepad4/releases)에서 다운받을 수 있다.
+
+[^1]: 파이썬 버전이 아닌 C++ 버전을 구현할지 고민 중임
