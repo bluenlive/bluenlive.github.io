@@ -49,15 +49,15 @@ tags: ["Lorem Ipsum","100년의 미스터리"]
 기원전 45년, 키케로가 남긴 《최고 선악론(De Finibus Bonorum et Malorum)》 제1권 10장 32절의 원문과 그 의미를 소개한다.
 
 {: .bluebox-blue}
-> **[라틴어 원문]**
-> "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. **Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit**, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+> **[라틴어 원문]**\
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. **Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit**, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
 
 {: .bluebox-green}
-> **[한국어 번역]** *(1914년 H. 래컴의 영어 번역본 기준)*
-> "하지만 나는 쾌락을 비난하고 고통을 찬양하는 이 모든 잘못된 생각이 어떻게 생겨났는지 설명해야만 한다. 나는 그 체계의 완전한 전말을 밝히고, 진리의 위대한 개척자이자 인간 행복의 설계자가 남긴 실제 가르침을 설명하고자 한다.
-> 쾌락 그 자체가 쾌락이라는 이유만으로 이를 거부하거나 싫어하고 회피하는 사람은 아무도 없다. 다만 쾌락을 이성적으로 추구하는 방법을 모르는 이들이 결국 극심한 고통이라는 결과를 마주하게 되기 때문이다.
-> **마찬가지로, 고통 그 자체가 고통이라는 이유만으로 이를 사랑하거나 추구하고 얻기를 바라는 사람 또한 존재하지 않는다** *(Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet...)*, 다만 노역과 고통을 통해 어떤 커다란 쾌락을 얻을 수 있는 상황이 때때로 발생하기 때문이다.
-> 사소한 예를 들자면, 우리 중 그 어떤 이익도 얻지 못하는데 고된 육체적 운동을 시작하는 사람이 어디 있겠나? 반대로, 아무런 불쾌한 결과도 뒤따르지 않는 쾌락을 즐기기로 선택한 사람이나, 결과적으로 아무런 쾌락도 낳지 못하는 고통을 회피하는 사람을 비난할 권리가 과연 누구에게 있겠나?"
+> **[한국어 번역]** *(1914년 H. 래컴의 영어 번역본 기준)*\
+"하지만 나는 쾌락을 비난하고 고통을 찬양하는 이 모든 잘못된 생각이 어떻게 생겨났는지 설명해야만 한다. 나는 그 체계의 완전한 전말을 밝히고, 진리의 위대한 개척자이자 인간 행복의 설계자가 남긴 실제 가르침을 설명하고자 한다.\
+쾌락 그 자체가 쾌락이라는 이유만으로 이를 거부하거나 싫어하고 회피하는 사람은 아무도 없다. 다만 쾌락을 이성적으로 추구하는 방법을 모르는 이들이 결국 극심한 고통이라는 결과를 마주하게 되기 때문이다.\
+**마찬가지로, 고통 그 자체가 고통이라는 이유만으로 이를 사랑하거나 추구하고 얻기를 바라는 사람 또한 존재하지 않는다** *(Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet...)*, 다만 노역과 고통을 통해 어떤 커다란 쾌락을 얻을 수 있는 상황이 때때로 발생하기 때문이다.\
+사소한 예를 들자면, 우리 중 그 어떤 이익도 얻지 못하는데 고된 육체적 운동을 시작하는 사람이 어디 있겠나? 반대로, 아무런 불쾌한 결과도 뒤따르지 않는 쾌락을 즐기기로 선택한 사람이나, 결과적으로 아무런 쾌락도 낳지 못하는 고통을 회피하는 사람을 비난할 권리가 과연 누구에게 있겠나?"
 
 위 원문에서 굵게 표시한 "do**lorem ipsum**" 부분이 인쇄 조판과 편집의 역사를 거치며 변형되어 오늘날 우리가 아는 'Lorem Ipsum'이 되었다. \
 인간의 본질적인 행복과 쾌락, 고통을 논하던 깊이 있는 철학적 문장이 현대 디자인의 뼈대를 지탱하는 텍스트가 된 것이다.
