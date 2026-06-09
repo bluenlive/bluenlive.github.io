@@ -5,6 +5,7 @@ title: "나에게 주는 연말 선물은 RTX 4070 Super"
 date: 2024-12-27 10:47:00 +0900
 categories:
   - ITTalk
+tags: ["RTX", "Ryzen", "4070", "4070s"]
 ---
 
 그래픽 카드를 뭘 살 지에 대한 고민을 [지난 포스팅](/ittalk/Next_Gen_GPU/)에서 짧게 얘기했었다.

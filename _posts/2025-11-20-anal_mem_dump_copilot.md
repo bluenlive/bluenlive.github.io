@@ -4,6 +4,7 @@ title: "Copilot에게 Paint.NET 메모리 덤프 분석시키기"
 date: 2025-11-20 21:51:00 +0900
 categories:
   - ITTalk
+tags: ["RTX", "4070", "4070s"]
 toc: true
 toc_label: "Contents"
 #toc_icon: "cog"

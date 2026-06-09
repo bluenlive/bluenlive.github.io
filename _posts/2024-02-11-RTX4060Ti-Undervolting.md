@@ -4,6 +4,7 @@ layout: single
 title: "RTX 4060 Ti 언더볼팅"
 categories:
   - ITTalk
+tags: ["RTX"]
 ---
 
 게임을 하지 않는 나로서는 언더볼팅을 통해 그래픽카드의 성능을 끌어낼 큰 이유가 없었다.  

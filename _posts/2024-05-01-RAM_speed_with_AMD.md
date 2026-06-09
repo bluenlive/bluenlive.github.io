@@ -1,9 +1,10 @@
-.png---
+---
 layout: single
 #classes: wide
 title: "AMD CPU의 안전한 메모리 속도는?"
 categories:
   - ITTalk
+tags: ["Ryzen", "QVL"]
 ---
 
 인텔이든 AMD든 어떤 CPU를 사용하든 사용할 수 있는 메모리의 속도는 제한이 있다.  

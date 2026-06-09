@@ -4,6 +4,7 @@ title: "Paint.NET levels 필터 오류 우회법"
 date: 2025-10-29 23:18:00 +0900
 categories:
   - ITTalk
+tags: ["RTX", "Ryzen", "4070", "4070s"]
 ---
 
 [Paint.NET](https://getpaint.net/)은 굉장한 기능을 제공하는 무료 이미지 편집 도구이다.\

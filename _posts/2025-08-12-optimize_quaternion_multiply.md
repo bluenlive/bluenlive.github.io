@@ -4,6 +4,7 @@ title: "쿼터니언 곱을 SIMD를 활용하여 최적화 해보자"
 date: 2025-08-12 20:42:00 +0900
 categories:
   - algorithm
+tags: ["Ryzen"]
 ---
 
 ## 쿼터니언의 곱셈

@@ -4,6 +4,7 @@ layout: single
 title: "RTX 4060 Ti 시스템 온도와의 싸움 2차전"
 categories:
   - ITTalk
+tags: ["RTX", "Ryzen"]
 ---
 
 [이전 글](/ittalk/RTX4060Ti-Undervolting/)에서 언더볼팅을 통한 시스템 안정성을 얘기했었다.  

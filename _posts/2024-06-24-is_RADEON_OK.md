@@ -4,6 +4,7 @@ layout: single
 title: "AMD 라데온은 이제는 쓸만해졌는가?"
 categories:
   - ITTalk
+tags: ["AV1", "RTX"]
 ---
 
 요즘 CPU의 대세는 AMD Ryzen 시리즈이다.  
