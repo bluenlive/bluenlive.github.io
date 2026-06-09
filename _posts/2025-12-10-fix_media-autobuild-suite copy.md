@@ -4,11 +4,12 @@ title: "media-autobuild_suite로 FDK AAC 인코더 빌드하기"
 date: 2025-12-10 20:55:00 +0900
 categories:
   - ITTalk
+tags: ["ffmpeg"]
 ---
 
-[**media-autobuild_suite**](https://github.com/m-ab-s/media-autobuild_suite)를 이용하면 [ffmpeg](https://ffmpeg.org/)를 원하는 대로 빌드할 수 있다.
+[**media-autobuild_suite**](https://github.com/m-ab-s/media-autobuild_suite)를 이용하면 [FFmpeg](https://ffmpeg.org/)를 원하는 대로 빌드할 수 있다.
 
-하지만, 말이 쉽지 **ffmpeg을 원하는대로 모든 인코더를 지원하도록** 빌드하는 건 쉬운 일이 아니다.\
+하지만, 말이 쉽지 **FFmpeg을 원하는대로 모든 인코더를 지원하도록** 빌드하는 건 쉬운 일이 아니다.\
 [이전 글](/ittalk/fix_media-autobuild-suite/)에서도 살짝 얘기했지만, 빌드에 실패하는 경우가 꽤 많다.
 
 모든 게 가능하도록 빌드하는 것보단 **필요한 인코더만 빌드**하고, 배포판과의 **파이프라인으로 인코딩** 하는 게 효율적이다.

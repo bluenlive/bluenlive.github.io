@@ -5,6 +5,7 @@ date: 2024-5-1
 last_modified_at: 2024-5-1
 categories:
   - iDevice
+tags: ["ffmpeg"]
 new_version_url: "/idevice/iTransHEIF-v4.12/"
 ---
 

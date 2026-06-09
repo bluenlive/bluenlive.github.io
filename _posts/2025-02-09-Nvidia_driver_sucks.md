@@ -4,7 +4,7 @@ title: "엉망진창 Nvidia 드라이버"
 date: 2025-2-9 16:55:00 +0900
 categories:
   - ITTalk
-tags: ["RTX", "4070", "4070s"]
+tags: ["RTX", "4070", "4070s", "ffmpeg"]
 ---
 
 올해 출시될 그래픽 카드 중 뭘 구매할지 고민을 하고 있었다.\

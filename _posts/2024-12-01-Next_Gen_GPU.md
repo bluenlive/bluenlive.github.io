@@ -4,7 +4,7 @@ layout: single
 title: "다음 그래픽 카드는 무엇으로 사야 하는가"
 categories:
   - ITTalk
-tags: ["AV1", "RTX", "5060Ti", "RDNA4", "B570"]
+tags: ["AV1", "RTX", "5060Ti", "RDNA4", "B570", "ffmpeg"]
 ---
 
 현재 사용하고 있는 그래픽 카드는 RTX 4060이다.

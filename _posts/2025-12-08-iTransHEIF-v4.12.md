@@ -4,6 +4,7 @@ title: "아주 빠른 HEIF 이미지 변환기 iTrans HEIF 4.14 업데이트"
 date: 2025-12-08 22:06:00 +0900
 categories:
   - iDevice
+tags: ["ffmpeg"]
 new_version_url: "/idevice/iTransHEIF-v5.00/"
 ---
 

@@ -4,11 +4,12 @@ title: "media-autobuild_suite 빌드 실패 해결법"
 date: 2025-10-28 15:45:00 +0900
 categories:
   - ITTalk
+tags: ["ffmpeg"]
 ---
 
 [media-autobuild_suite](https://github.com/m-ab-s/media-autobuild_suite) 빌드를 실패했다가 해결했는데, 해결법을 까먹지 않으려 포스팅.
 
-[ffmpeg](https://ffmpeg.org/)은 공개된 버전만으로도 엄청난 기능들을 제공하는 이 바닥 끝판왕이다.\
+[FFmpeg](https://ffmpeg.org/)은 공개된 버전만으로도 엄청난 기능들을 제공하는 이 바닥 끝판왕이다.\
 그런데, 직접 빌드해서 사용하면 한발짝 더 나가서 더 많은 기능을 사용할 수 있다.\
 이 빌드를 손쉽게 할 수 있도록 도와주는 프로젝트가 바로 **media-autobuild_suite**이다.
 

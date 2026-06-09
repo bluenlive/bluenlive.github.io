@@ -4,6 +4,7 @@ title: "CodeMeter 서비스가 왜 죽지?"
 date: 2025-3-30 01:28:00 +0900
 categories:
   - media
+tags: ["ffmpeg"]
 ---
 
 [MainConcept의 HEVC 인코더](https://www.mainconcept.com/ffmpeg)는 **불법 복제 방지 솔루션**으로 **CodeMeter**를 사용한다.\
