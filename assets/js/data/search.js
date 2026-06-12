@@ -11,7 +11,7 @@ permalink: /assets/js/data/search.js
     "categories": {{ post.categories | join: ', ' | jsonify }},
     "tags": {{ post.tags | join: ', ' | jsonify }},
     "date": {{ post.date | jsonify }},
-    "content": {{ post.content | strip_html | strip_newlines | replace: ' ', ' ' | string_escape | jsonify }}
+    "content": {{ post.content | strip_html | strip_newlines | escape_once | jsonify }}
   }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

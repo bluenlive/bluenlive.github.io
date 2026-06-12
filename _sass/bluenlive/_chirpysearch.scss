@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Minimal Mistakes 맞춤형 Chirpy 검색 스타일 (메뉴 겹침 및 높이 보정 최종본)
+   Minimal Mistakes 맞춤형 Chirpy 검색 스타일
    ========================================================================== */
 
 /* 검색 영역 전체 레이아웃 - 메뉴와 같은 선상에 배치되며 자연스럽게 정렬 */
@@ -15,25 +15,42 @@
 
 #search-container {
   display: flex;
-  align-items: center;
+  align-items: center;        /* 내부 요소들을 수직 정중앙 정렬 */
+  justify-content: center;
   background: #f2f3f5;
   border: 1px solid #dbdee2;
   border-radius: 4px;
-  padding: 4px 8px;           /* 헤더 높이에 영향을 주지 않도록 슬림화 */
-  width: 100%;
+  padding: 5px 10px;
+  height: 34px;               /* 검색창 전체 높이를 고정하여 안정감 부여 */
+  box-sizing: border-box;
+
+  .search-icon {
+    color: #8a909a;
+    display: flex;
+    align-items: center;      /* 돋보기 아이콘 자체를 수직 중앙 정렬 */
+    margin-right: 2px;
+  }
 
   input#search-input {
     border: none !important;
     background: transparent !important;
     box-shadow: none !important;
     width: 100%;
-    padding: 2px 5px !important;
+    padding: 0 5px !important; /* 위아래 패딩을 제로로 만들어 들뜸 현상 제거 */
+    height: 100% !important;   /* 부모 컨테이너 높이를 꽉 채워 중앙 정렬 유도 */
     font-size: 14px;
+    line-height: 24px !important; /* 글꼴 고유 높이를 정밀 조율 */
+    color: #333;
     outline: none;
+    display: flex;
+    align-items: center;
   }
   
-  .search-icon, #search-cleaner {
+  #search-cleaner {
     color: #8a909a;
+    display: flex;
+    align-items: center;      /* X 버튼 수직 중앙 정렬 유지 */
+    cursor: pointer;
   }
 }
 
