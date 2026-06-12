@@ -36,14 +36,23 @@
     background: transparent !important;
     box-shadow: none !important;
     width: 100%;
-    padding: 0 5px !important; /* 위아래 패딩을 제로로 만들어 들뜸 현상 제거 */
-    height: 100% !important;   /* 부모 컨테이너 높이를 꽉 채워 중앙 정렬 유도 */
+    
+    /* 상하 패딩을 0으로 밀어버리고 중요한 높이 기준값 강제 지정 */
+    padding: 0 5px !important; 
+    height: 24px !important;       /* 컨테이너 내부에서 텍스트가 가질 순수 영역 */
+    line-height: 24px !important;  /* 글자 높이와 영역 높이를 일치시켜 정중앙 유도 */
     font-size: 14px;
-    line-height: 24px !important; /* 글꼴 고유 높이를 정밀 조율 */
     color: #333;
     outline: none;
-    display: flex;
-    align-items: center;
+
+    /* IE 및 브라우저별 플레이스홀더 고유 패딩/마진 초기화 */
+    &::placeholder {
+      line-height: 24px !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      color: #8a909a;
+      opacity: 1; /* 파이어폭스 등 일부 브라우저 투명도 흐림 방지 */
+    }
   }
   
   #search-cleaner {
