@@ -1,0 +1,106 @@
+/* ==========================================================================
+   Minimal Mistakes 맞춤형 Chirpy 검색 스타일 (메뉴 겹침 및 높이 보정 최종본)
+   ========================================================================== */
+
+/* 검색 영역 전체 레이아웃 - 메뉴와 같은 선상에 배치되며 자연스럽게 정렬 */
+#search-wrapper {
+  display: inline-flex;       /* 메뉴 리스트와 나란히 흐르도록 설정 */
+  vertical-align: middle;     /* 메뉴 텍스트와 수직 중앙 정렬 */
+  position: relative;
+  width: 100%;
+  max-width: 220px;           /* 메뉴판 공간을 해치지 않는 슬림한 너비 */
+  margin-left: 20px;          /* 왼쪽 마지막 메뉴와의 안전거리 확보 */
+  z-index: 2000;
+}
+
+#search-container {
+  display: flex;
+  align-items: center;
+  background: #f2f3f5;
+  border: 1px solid #dbdee2;
+  border-radius: 4px;
+  padding: 4px 8px;           /* 헤더 높이에 영향을 주지 않도록 슬림화 */
+  width: 100%;
+
+  input#search-input {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    width: 100%;
+    padding: 2px 5px !important;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .search-icon, #search-cleaner {
+    color: #8a909a;
+  }
+}
+
+/* 최근 포스트를 밀지 않고 공중에 띄우는 결과 레이어 설정 */
+#search-result-wrapper {
+  position: absolute;
+  top: 100%;
+  left: auto;
+  right: 0;                   /* 입력창 오른쪽 끝에 딱 맞춰 떨어지도록 설정 */
+  width: 350px;               /* 결과창이 좁아지지 않도록 독립적 너비 부여 */
+  background: #ffffff !important;
+  border: 1px solid #d2d6dc;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 5px;
+  padding: 15px;
+  max-height: 350px;
+  overflow-y: auto;
+  z-index: 3000;
+  
+  display: none; /* 평소에는 숨김 */
+}
+
+/* 결과 리스트(li)가 내부에 생기면 자동으로 상자를 화면에 표시 */
+#search-results:has(li) ~ #search-result-wrapper,
+#search-result-wrapper:has(ul#search-results li) {
+  display: block !important;
+}
+
+ul#search-results {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .search-result-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #f2f3f5;
+    
+    a {
+      font-weight: bold;
+      color: #222;
+      text-decoration: none;
+      font-size: 14px;
+      &:hover { color: #0056b3; }
+    }
+    .search-meta {
+      font-size: 11px;
+      color: #8a909a;
+      margin-top: 2px;
+    }
+  }
+  .no-result {
+    padding: 10px 0;
+    color: #8a909a;
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+/* 모바일 및 좁은 화면에서의 반응형 레이아웃 대응 */
+@media (max-width: 768px) {
+  #search-wrapper {
+    display: flex;
+    max-width: 100%;
+    margin: 0.5rem 0;
+  }
+  #search-result-wrapper {
+    width: 100%;
+  }
+}

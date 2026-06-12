@@ -6,7 +6,8 @@ search: false
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
-@import "bluenlive/contents"; // 내가 만든 커스텀 스타일 #1
-@import "bluenlive/boxes";    // 내가 만든 커스텀 스타일 #2
-@import "bluenlive/tooltip_popup"; // 내가 만든 커스텀 스타일 #3
+@import "minimal-mistakes";         // main partials
+@import "bluenlive/contents";       // 내가 만든 커스텀 스타일 #1
+@import "bluenlive/boxes";          // 내가 만든 커스텀 스타일 #2
+@import "bluenlive/tooltip_popup";  // 내가 만든 커스텀 스타일 #3
+@import "bluenlive/chirpysearch";   // Chirpy 스타일 search

@@ -14,7 +14,7 @@
         </a>
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
-<!-- dropdown BLUEnLIVE -->
+<!-- dropdown BLUEnLIVE [ -->
             {% assign class = nil %}
             {% if page.url contains link.url %}
                 {% assign class = 'active' %}
@@ -35,7 +35,7 @@
                     <a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
                 </li>
             {% endif %}
-<!-- dropdown BLUEnLIVE -->
+<!-- dropdown BLUEnLIVE ] -->
           {%- endfor -%}
         </ul>
         {% if site.search == true %}
@@ -51,5 +51,28 @@
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
+<!-- search BLUEnLIVE [ -->
+  <div id="search-wrapper" class="d-flex align-items-center">
+    <div id="search-container">
+      <i class="fas fa-search search-icon"></i>
+      <input
+        type="text"
+        id="search-input"
+        class="form-control"
+        autocomplete="off"
+        placeholder="검색어를 입력하세요..."
+      >
+      <i class="fas fa-times-circle" id="search-cleaner"></i>
+    </div>
+    
+    <div id="search-result-wrapper" class="d-none">
+      <div class="d-flex justify-content-between font-weight-light border-bottom pb-2 mb-3">
+        <span>검색 결과</span>
+        <span id="search-hints"></span>
+      </div>
+      <ul id="search-results" class="list-unstyled"></ul>
+    </div>
+  </div>
+<!-- search BLUEnLIVE ] -->
   </div>
 </div>

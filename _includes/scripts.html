@@ -51,3 +51,25 @@
     }
   });
 </script>
+
+<script src="{{ '/assets/js/utils/simple-jekyll-search.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/utils/search-display.js' | relative_url }}"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var searchInput = document.getElementById('search-input');
+    var resultsContainer = document.getElementById('search-results');
+    
+    if (searchInput && resultsContainer) {
+      SimpleJekyllSearch({
+        searchInput: searchInput,
+        resultsContainer: resultsContainer,
+        json: "{{ '/assets/js/data/search.js' | relative_url }}",
+        searchResultTemplate: '<li class="search-result-item"><a href="{url}">{title}</a><div class="search-meta"><span class="search-date">{date}</span></div></li>',
+        noResultsText: '<li class="no-result">검색 결과가 없습니다.</li>',
+        limit: 10,
+        fuzzy: false
+      });
+    }
+  });
+</script>
