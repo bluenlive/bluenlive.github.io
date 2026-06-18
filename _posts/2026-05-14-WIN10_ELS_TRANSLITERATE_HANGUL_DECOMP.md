@@ -62,7 +62,6 @@ std::wstring DecomposeHangulELS(const std::wstring& input) {
     MappingFreeServices(pServiceInfo);
     return result;
 }
-
 ```
 
 ## 3. ELS의 숨겨진 디테일: 'ㄳ'은 쪼개고 'ㄲ'은 놔둠
