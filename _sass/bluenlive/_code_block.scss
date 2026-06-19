@@ -218,3 +218,15 @@
  .code-block-wrapper tr.hll td {
    background-color: #fffbdd !important;
  }
+
+ /* =======================================================
+ * 6. 테마 의존성 잔상 제거 (반응형 스크롤 힌트 소거)
+ * ======================================================= */
+.code-block-wrapper table::before,
+.code-block-wrapper table::after,
+.code-block-wrapper pre::before,
+.code-block-wrapper pre::after,
+.code-block-wrapper td::before,
+.code-block-wrapper td::after {
+  content: none !important;
+}

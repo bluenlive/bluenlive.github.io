@@ -76,7 +76,7 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    // Jekyll/Minimal Mistakes가 생성하는 최상위 코드 블록 컨테이너들을 모두 수집합니다.
+    // Jekyll/Minimal Mistakes가 생성하는 최상위 코드 블록 컨테이너들을 모두 수집
     var codeBlocks = document.querySelectorAll('.highlighter-rouge, figure.highlight, div.highlight');
 
     codeBlocks.forEach(function (block) {
@@ -135,9 +135,18 @@
       copyBtn.innerText = 'Copy';
 
       copyBtn.addEventListener('click', function () {
-        var targetPre = block.querySelector('.rouge-code pre') || block.querySelector('pre');
+        var targetPre = block.querySelector('td.code pre') || 
+                        block.querySelector('td.rouge-code pre') || 
+                        block.querySelector('pre');
+                        
         var codeElement = targetPre.querySelector('code');
         var textToCopy = codeElement ? codeElement.innerText : targetPre.innerText;
+
+        // 레이아웃용으로 넣었던 폭 없는 공백(\u200B)을 제거하여 순수한 빈 줄로 복사되도록 정돈
+        textToCopy = textToCopy.replace(/\u200B/g, '');
+
+        // [핀포인트 추가] 하일라이팅 미적용 블록 끝에 붙어오는 불필요한 맨 마지막 줄바꿈(\n)을 제거하여 일관성 유지
+        textToCopy = textToCopy.replace(/\r?\n$/, '');
 
         navigator.clipboard.writeText(textToCopy).then(function () {
           copyBtn.innerText = 'Copied!';
@@ -152,7 +161,7 @@
       });
       header.appendChild(copyBtn);
 
-      // 5. 생성한 헤더와 원본 블록을 wrapper 내부로 순서대로 집어넣습니다.
+      // 5. 생성한 헤더와 원본 블록을 wrapper 내부로 순서대로 집어넣음
       wrapper.appendChild(header);
       wrapper.appendChild(block);
 
@@ -197,10 +206,14 @@
 
           var wrappedCode = codeLines.map(function (line, index) {
             var currentLineNum = (index + 1).toString();
+            
+            // 빈 줄(\r 또는 완전 공백)일 때 높이 정보가 상실되어 행이 뒤틀리는 현상 방지
+            var displayLine = (line === '' || line === '\r') ? '&#8203;' : line;
+
             if (targetLines.indexOf(currentLineNum) !== -1) {
-              return '<span class="hll" style="display: block !important; background-color: #fffbdd !important; width: 100% !important; margin: 0 -0.6rem !important; padding: 0 0.6rem !important;">' + line + '</span>';
+              return '<span class="hll" style="display: block !important; background-color: #fffbdd !important; width: 100% !important; margin: 0 -0.6rem !important; padding: 0 0.6rem !important;">' + displayLine + '</span>';
             }
-            return '<span class="ln-normal" style="display: block !important;">' + line + '</span>';
+            return '<span class="ln-normal" style="display: block !important;">' + displayLine + '</span>';
           });
           targetInner.innerHTML = wrappedCode.join('');
         }

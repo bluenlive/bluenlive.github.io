@@ -90,8 +90,6 @@ Tagged date                              : 1995-06-28 16:32:56 UTC
 이런 경우는 **FFmpeg**을 활용하면 꽤 잘 변환할 수 있다.\
 원본 비디오를 최신 코덱으로 변환하면서 오디오를 강제변환하면 된다.
 
-{% include code-header.html %}
-
 ```bat
 ffmpeg -i "CHAPTER1.MOV" -c:v libx264 -c:a aac -ar 44100 -b:a 256k -async 1 "CHAPTER1.mp4"
 ```
@@ -108,8 +106,6 @@ ffmpeg -i "CHAPTER1.MOV" -c:v libx264 -c:a aac -ar 44100 -b:a 256k -async 1 "CHA
 오디오를 수작업으로 변환하기로 했다.
 
 일단 이 영상의 각 오디오 패킷의 시간 등을 정확히 확인해본다.
-
-{% include code-header.html %}
 
 ```bat
 ffprobe -select_streams v -show_packets -of csv=p=0 "CHAPTER1.MOV" > "CHAPTER1.v.csv"
@@ -164,8 +160,6 @@ file 'frame2.png'
 duration 0.501
 (생략)
 ```
-
-{% include code-header.html %}
 
 ```bat
 ffmpeg -f concat -i "frames.txt" -vsync vfr "output.mp4"
