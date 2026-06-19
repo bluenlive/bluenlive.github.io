@@ -76,45 +76,46 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    // > 선택자를 사용하여 최상위 .highlight 디비전만 정확히 선택합니다.
-    var codeBlocks = document.querySelectorAll('.highlighter-rouge > .highlight');
+    // Jekyll/Minimal Mistakes가 생성하는 최상위 코드 블록 컨테이너들을 모두 수집합니다.
+    var codeBlocks = document.querySelectorAll('.highlighter-rouge, figure.highlight, div.highlight');
 
-    codeBlocks.forEach(function (highlightDiv) {
-      // 행 번호 테이블 내부 또는 일반 구조에서 pre 태그를 찾습니다.
-      var pre = highlightDiv.querySelector('.rouge-code pre') || highlightDiv.querySelector('pre');
+    codeBlocks.forEach(function (block) {
+      // 중복 래핑 방지
+      if (block.closest('.code-block-wrapper')) return;
+
+      var pre = block.querySelector('pre');
       if (!pre) return;
 
-      // 중복 실행 방지 안전장치
-      if (highlightDiv.querySelector('.code-block-header')) return;
-
+      // 1. 최외곽을 감싸는 깨끗한 wrapper 생성 및 구조 배치
       var wrapper = document.createElement('div');
       wrapper.className = 'code-block-wrapper';
-      highlightDiv.parentNode.insertBefore(wrapper, highlightDiv);
-      wrapper.appendChild(highlightDiv);
+      block.parentNode.insertBefore(wrapper, block);
 
+      // 2. 상단 헤더 바 생성
       var header = document.createElement('div');
       header.className = 'code-block-header';
 
-      var container = highlightDiv.closest('.highlighter-rouge');
+      // 3. 언어 추출 및 소문자 확장자 포맷 적용 (.ext)
       var langName = 'code';
-      if (container) {
-        var match = container.className.match(/language-([^\s]+)/);
-        if (match) {
-          langName = '.' + match[1].toLowerCase();
-        }
+      var match = block.className.match(/language-([^\s]+)/) || 
+                  (block.querySelector('[class*="language-"]') && block.querySelector('[class*="language-"]').className.match(/language-([^\s]+)/));
+      if (match) {
+        langName = '.' + match[1].toLowerCase();
       }
       var langSpan = document.createElement('span');
       langSpan.className = 'code-block-lang';
       langSpan.innerText = langName;
       header.appendChild(langSpan);
 
+      // 4. 복사 버튼 생성
       var copyBtn = document.createElement('button');
       copyBtn.className = 'code-block-copy-btn';
       copyBtn.innerText = 'Copy';
 
       copyBtn.addEventListener('click', function () {
-        var codeElement = pre.querySelector('code');
-        var textToCopy = codeElement ? codeElement.innerText : pre.innerText;
+        var targetPre = block.querySelector('.rouge-code pre') || block.querySelector('pre');
+        var codeElement = targetPre.querySelector('code');
+        var textToCopy = codeElement ? codeElement.innerText : targetPre.innerText;
 
         navigator.clipboard.writeText(textToCopy).then(function () {
           copyBtn.innerText = 'Copied!';
@@ -129,8 +130,9 @@
       });
       header.appendChild(copyBtn);
 
-      // 헤더 바를 최상위 요소의 맨 앞에 삽입합니다.
-      highlightDiv.insertBefore(header, highlightDiv.firstChild);
+      // 5. 생성한 헤더와 원본 블록을 wrapper 내부로 순서대로 집어넣습니다.
+      wrapper.appendChild(header);
+      wrapper.appendChild(block);
     });
   });
 </script>

@@ -33,8 +33,8 @@ tags: []
 
 ```html
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css" media="all">
-	<script src=""></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+    <script src=""></script>
 </head>
 ```
 
@@ -42,8 +42,8 @@ tags: []
 
 ```html
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
-	<script src=""></script>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <script src=""></script>
 </head>
 ```
 
@@ -71,8 +71,8 @@ tags: []
 
 ```html
 <form action="">
-	<input type="text" name="" id="">
-	<input type="hidden" name="">
+    <input type="text" name="" id="">
+    <input type="hidden" name="">
 </form>
 ```
 
@@ -80,8 +80,8 @@ tags: []
 
 ```html
 <form action="">
-	<input type="text" name="" id="" />
-	<input type="hidden" name="" />
+    <input type="text" name="" id="" />
+    <input type="hidden" name="" />
 </form>
 ```
 
@@ -122,7 +122,7 @@ tags: []
 
 ```html
 <video autoplay controls loop>
-	<source src="" type="">
+    <source src="" type="">
 </video>
 ```
 
@@ -130,7 +130,7 @@ tags: []
 
 ```html
 <video autoplay="autoplay" controls="controls" loop="loop">
-	<source src="" type="" />
+    <source src="" type="" />
 </video>
 ```
 
@@ -156,16 +156,16 @@ tags: []
 
 ```html
 <table>
-	<tr>
-		<td>
-			<thead>
-				<tr>
-					<th></th>
-					<th></th>
-				</tr>
-			</thead>
-		</td>
-	</tr>
+    <tr>
+        <td>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+        </td>
+    </tr>
 </table>
 ```
 
@@ -178,15 +178,15 @@ tags: []
 
 ```html
 <div id="page">
-	<div class="logo"></div>
-	<ul class="nav">
-		<li>
-			<div class="item"></div>
-		</li>
-		<li>
-			<div class="item"></div>
-		</li>
-	</ul>
+    <div class="logo"></div>
+    <ul class="nav">
+        <li>
+            <div class="item"></div>
+        </li>
+        <li>
+            <div class="item"></div>
+        </li>
+    </ul>
 </div>
 ```
 
@@ -226,9 +226,9 @@ tags: []
 
 ```xml
 <user>
-	<name />
-	<age />
-	<gender />
+    <name />
+    <age />
+    <gender />
 </user>
 ```
 
@@ -248,8 +248,8 @@ tags: []
 
 ```xml
 <response>
-	<status>200</status>
-	<message>SUCCESS</message>
+    <status>200</status>
+    <message>SUCCESS</message>
 </response>
 ```
 
@@ -260,14 +260,14 @@ tags: []
 
 ```xml
 <bookstore>
-	<book>
-		<title />
-		<author />
-	</book>
-	<book>
-		<title />
-		<author />
-	</book>
+    <book>
+        <title />
+        <author />
+    </book>
+    <book>
+        <title />
+        <author />
+    </book>
 </bookstore>
 ```
 
@@ -289,11 +289,11 @@ tags: []
 
 ```xml
 <maven>
-	<dependency>
-		<groupId />
-		<artifactId />
-		<version />
-	</dependency>
+    <dependency>
+        <groupId />
+        <artifactId />
+        <version />
+    </dependency>
 </maven>
 ```
 
@@ -304,9 +304,9 @@ tags: []
 
 ```xml
 <record>
-	<field />
-	<field />
-	<field />
+    <field />
+    <field />
+    <field />
 </record>
 ```
 
@@ -317,10 +317,10 @@ tags: []
 
 ```xml
 <rss>
-	<channel>
-		<title>TEUS</title>
-		<link>https://teus.me</link>
-	</channel>
+    <channel>
+        <title>TEUS</title>
+        <link>https://teus.me</link>
+    </channel>
 </rss>
 ```
 
@@ -331,12 +331,12 @@ tags: []
 
 ```xml
 <root>
-	<header>
-		<id />
-	</header>
-	<content>
-		<body />
-	</content>
+    <header>
+        <id />
+    </header>
+    <content>
+        <body />
+    </content>
 </root>
 ```
 
@@ -347,8 +347,8 @@ tags: []
 
 ```xml
 <div id="catalog">
-	<div class="product" />
-	<div class="product" />
+    <div class="product" />
+    <div class="product" />
 </div>
 ```
 
