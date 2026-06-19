@@ -86,6 +86,28 @@
       var pre = block.querySelector('pre');
       if (!pre) return;
 
+      // =======================================================
+      // 백틱 기본(행번호 없음) 상태에서 data-linenos="true" 속성이 있을 때 테이블 구조로 동적 변환
+      // =======================================================
+      var modeContainer = block.hasAttribute('data-linenos') ? block : block.closest('[data-linenos]');
+      var hasLinenosAttr = modeContainer && modeContainer.getAttribute('data-linenos') === 'true';
+
+      if (hasLinenosAttr && !block.querySelector('table')) {
+        var codeElem = pre.querySelector('code') || pre;
+        var codeLines = codeElem.innerHTML.split('\n');
+        if (codeLines.length > 1 && codeLines[codeLines.length - 1] === '') codeLines.pop();
+        
+        var gutterNumbers = [];
+        for (var i = 1; i <= codeLines.length; i++) {
+          gutterNumbers.push(i);
+        }
+        
+        pre.innerHTML = '<table class="rouge-table"><tbody><tr>' +
+                         '<td class="rouge-gutter gl"><pre class="lineno">' + gutterNumbers.join('\n') + '</pre></td>' +
+                         '<td class="rouge-code"><pre>' + codeLines.join('\n') + '</pre></td>' +
+                         '</tr></tbody></table>';
+      }
+
       // 1. 최외곽을 감싸는 깨끗한 wrapper 생성 및 구조 배치
       var wrapper = document.createElement('div');
       wrapper.className = 'code-block-wrapper';
@@ -133,6 +155,71 @@
       // 5. 생성한 헤더와 원본 블록을 wrapper 내부로 순서대로 집어넣습니다.
       wrapper.appendChild(header);
       wrapper.appendChild(block);
+
+      // =======================================================
+      // 외부 div 또는 IAL 속성을 감지하여 연속 범위 행 강조 수행
+      // =======================================================
+      var hlContainer = block.hasAttribute('data-hl-lines') ? block : 
+                        (block.closest('[data-hl-lines]') || wrapper.closest('[data-hl-lines]'));
+      
+      if (hlContainer) {
+        var hlAttr = hlContainer.getAttribute('data-hl-lines');
+        var targetLines = [];
+
+        if (hlAttr) {
+          var tokens = hlAttr.match(/\d+\s*(?:-|\.\.)\s*\d+|\d+/g);
+          if (tokens) {
+            tokens.forEach(function (token) {
+              var rangeMatch = token.match(/^(\d+)\s*(?:-|\.\.)\s*(\d+)$/);
+              if (rangeMatch) {
+                var start = parseInt(rangeMatch[1], 10);
+                var end = parseInt(rangeMatch[2], 10);
+                if (start <= end) {
+                  for (var i = start; i <= end; i++) {
+                    targetLines.push(i.toString());
+                  }
+                }
+              } else {
+                targetLines.push(token.trim());
+              }
+            });
+          }
+        }
+
+        var codeTd = block.querySelector('td.code pre') || block.querySelector('td.rouge-code pre') || block.querySelector('pre');
+        var gutterTd = block.querySelector('td.gutter pre') || block.querySelector('td.rouge-gutter pre') || block.querySelector('td.linenos pre');
+
+        // 1. 본문 코드 영역 강조 레이어 주입
+        if (codeTd) {
+          var targetInner = codeTd.querySelector('code') || codeTd;
+          var codeLines = targetInner.innerHTML.split('\n');
+          if (codeLines.length > 1 && codeLines[codeLines.length - 1] === '') codeLines.pop(); 
+
+          var wrappedCode = codeLines.map(function (line, index) {
+            var currentLineNum = (index + 1).toString();
+            if (targetLines.indexOf(currentLineNum) !== -1) {
+              return '<span class="hll" style="display: block !important; background-color: #fffbdd !important; width: 100% !important; margin: 0 -0.6rem !important; padding: 0 0.6rem !important;">' + line + '</span>';
+            }
+            return '<span class="ln-normal" style="display: block !important;">' + line + '</span>';
+          });
+          targetInner.innerHTML = wrappedCode.join('');
+        }
+
+        // 2. 좌측 행 번호 영역 강조색 동기화
+        if (gutterTd) {
+          var gutterLines = gutterTd.innerHTML.split('\n');
+          if (gutterLines.length > 1 && gutterLines[gutterLines.length - 1] === '') gutterLines.pop();
+
+          var wrappedGutter = gutterLines.map(function (line, index) {
+            var currentLineNum = (index + 1).toString();
+            if (targetLines.indexOf(currentLineNum) !== -1) {
+              return '<span class="hll-gutter" style="display: block !important; background-color: #fffbdd !important; margin: 0 -0.3rem 0 -0.5rem !important; padding: 0 0.3rem 0 0.5rem !important;">' + line + '</span>';
+            }
+            return '<span class="ln-gutter-normal" style="display: block !important;">' + line + '</span>';
+          });
+          gutterTd.innerHTML = wrappedGutter.join('');
+        }
+      }
     });
   });
 </script>

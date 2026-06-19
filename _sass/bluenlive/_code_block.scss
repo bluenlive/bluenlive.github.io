@@ -109,22 +109,22 @@
  /* =======================================================
   * 3. 폰트 및 줄바꿈 균일화 (정확한 수직 줄 맞춤 집행)
   * ======================================================= */
-/* 외곽 pre와 td 셀에만 글자 크기 비율을 적용 */
-.page__content .code-block-wrapper pre,
-.page__content .code-block-wrapper td,
-.code-block-wrapper pre,
-.code-block-wrapper td {
-  font-size: 0.97em !important; /* 원래 본문 크기 대비 비율 (예: 95%), 100%는 inherit */
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
-  line-height: 1.5 !important;   
-}
-
-/* 내부 code 태그가 글자 크기를 중첩해서 작게 만들지 않도록 차단 */
-.page__content .code-block-wrapper code,
-.code-block-wrapper code {
-  font-size: inherit !important; 
-  font-family: inherit !important;
-}
+ /* 외곽 pre와 td 셀에만 글자 크기 비율을 적용 */
+ .page__content .code-block-wrapper pre,
+ .page__content .code-block-wrapper td,
+ .code-block-wrapper pre,
+ .code-block-wrapper td {
+   font-size: 0.97em !important; /* 원래 본문 크기 대비 비율, 100%는 그냥 inherit 사용 */
+   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+   line-height: 1.5 !important;   
+ }
+ 
+ /* 내부 code 태그가 글자 크기를 중첩해서 작게 만들지 않도록 차단 */
+ .page__content .code-block-wrapper code,
+ .code-block-wrapper code {
+   font-size: inherit !important; 
+   font-family: inherit !important;
+ }
  
  /* =======================================================
   * 4. 이중 유격 유발 요소 박멸 (핀포인트 리셋)
@@ -159,11 +159,22 @@
    white-space: nowrap !important;
    padding: 0.4rem 0.3rem 0.4rem 0.5rem !important; /* 상하 여백 0.4rem 고정 */
    text-align: right !important;
-   opacity: 0.4 !important;
+   color: #57606a !important;        /* GitHub 폰트 컬러 적용 (취향에 따라 #4a5568 선택 가능) */
+   opacity: 0.85 !important;        /* 기존 0.4에서 0.85로 대폭 올려 흐릿함 개선 */
    background-color: #f6f8fa !important;
    border-right: 1px solid #e1e4e8 !important;
    user-select: none !important;
    vertical-align: top !important;
+   text-overflow: clip !important;
+   overflow: visible !important;
+ }
+ 
+ /* 행 번호 내부 pre 태그의 말줄임표(.. 잔상) 현상 차단 */
+ .code-block-wrapper td.gutter pre,
+ .code-block-wrapper td.rouge-gutter pre,
+ .code-block-wrapper td.linenos pre {
+   overflow: visible !important;
+   text-overflow: clip !important;
  }
  
  /* 우측 실제 소스 코드 영역 */
@@ -191,4 +202,19 @@
    background-color: #ffffff !important;
    display: block !important;
    overflow-x: auto !important;
+ }
+ 
+ /* =======================================================
+  * 6. 리퀴드 태그 특정 행 강조 기능 (hl_lines / .hll) 대응
+  * ======================================================= */
+ /* 행 번호 영역(gutter)과 코드 영역(code) 내부의 강조 행 배경색 설정 */
+ .code-block-wrapper .hll {
+   background-color: #fffbdd !important; /* 은은한 노란색 강조 */
+   display: block !important;
+   width: 100% !important;
+ }
+ 
+ /* 테이블 행(tr) 자체에 hll이 걸리는 경우 대응 */
+ .code-block-wrapper tr.hll td {
+   background-color: #fffbdd !important;
  }

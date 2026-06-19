@@ -19,7 +19,8 @@ tags: ["ffmpeg"]
 
 그런데...
 
-{% highlight ruby linenos=table hl_lines="4" %}
+{: data-hl-lines="4"}
+{% highlight ruby linenos=table %}
 codec_type,stream_index,pts,pts_time,dts,dts_time,duration,duration_time,size,pos,flags
 (생략)
 video,0,41700,69.500000,41700,69.500000,60,0.100000,6532,9738127,___
