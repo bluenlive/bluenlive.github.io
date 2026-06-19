@@ -73,3 +73,64 @@
     }
   });
 </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // > 선택자를 사용하여 최상위 .highlight 디비전만 정확히 선택합니다.
+    var codeBlocks = document.querySelectorAll('.highlighter-rouge > .highlight');
+
+    codeBlocks.forEach(function (highlightDiv) {
+      // 행 번호 테이블 내부 또는 일반 구조에서 pre 태그를 찾습니다.
+      var pre = highlightDiv.querySelector('.rouge-code pre') || highlightDiv.querySelector('pre');
+      if (!pre) return;
+
+      // 중복 실행 방지 안전장치
+      if (highlightDiv.querySelector('.code-block-header')) return;
+
+      var wrapper = document.createElement('div');
+      wrapper.className = 'code-block-wrapper';
+      highlightDiv.parentNode.insertBefore(wrapper, highlightDiv);
+      wrapper.appendChild(highlightDiv);
+
+      var header = document.createElement('div');
+      header.className = 'code-block-header';
+
+      var container = highlightDiv.closest('.highlighter-rouge');
+      var langName = 'code';
+      if (container) {
+        var match = container.className.match(/language-([^\s]+)/);
+        if (match) {
+          langName = '.' + match[1].toLowerCase();
+        }
+      }
+      var langSpan = document.createElement('span');
+      langSpan.className = 'code-block-lang';
+      langSpan.innerText = langName;
+      header.appendChild(langSpan);
+
+      var copyBtn = document.createElement('button');
+      copyBtn.className = 'code-block-copy-btn';
+      copyBtn.innerText = 'Copy';
+
+      copyBtn.addEventListener('click', function () {
+        var codeElement = pre.querySelector('code');
+        var textToCopy = codeElement ? codeElement.innerText : pre.innerText;
+
+        navigator.clipboard.writeText(textToCopy).then(function () {
+          copyBtn.innerText = 'Copied!';
+          copyBtn.classList.add('copied');
+          setTimeout(function () {
+            copyBtn.innerText = 'Copy';
+            copyBtn.classList.remove('copied');
+          }, 2000);
+        }).catch(function (err) {
+          console.error('코드 복사 실패:', err);
+        });
+      });
+      header.appendChild(copyBtn);
+
+      // 헤더 바를 최상위 요소의 맨 앞에 삽입합니다.
+      highlightDiv.insertBefore(header, highlightDiv.firstChild);
+    });
+  });
+</script>

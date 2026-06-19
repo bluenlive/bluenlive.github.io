@@ -1,7 +1,7 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 search: false
 ---
+/* Only the main Sass file needs front matter (the dashes are enough) */
 
 @charset "utf-8";
 
@@ -11,3 +11,4 @@ search: false
 @import "bluenlive/boxes";          // 내가 만든 커스텀 스타일 #2
 @import "bluenlive/tooltip_popup";  // 내가 만든 커스텀 스타일 #3
 @import "bluenlive/chirpysearch";   // Chirpy 스타일 search
+@import "bluenlive/code_block";     // Code Block 스타일 보강

@@ -1,0 +1,106 @@
+/*********************************************************
+ * _code_block.scss / 본문 스타일용 scss
+ * =======================================================
+ * 본문 내 Rouge 문법 강조(Syntax Highlighting) 및
+ * 코드 블록의 레이아웃을 확장하기 위한 커스텀 스타일
+ * assets/css/main.scss 에서 import
+ * 구성: [코드 블록 컨테이너, 상단 헤더 바, 복사 버튼]
+ * 그 외 소문자 파일 확장자(.ext) 표시 및 테마별 여백 속성도 여기서 변경함
+ *********************************************************/
+
+/***---------------------------------------------------
+ * 코드 블록 기능 추가용 스타일
+ * ----------------------------------------------------
+ * 제목줄 추가 및 COPY 버튼
+ ***---------------------------------------------------*/
+
+/* 코드 블록 전체를 감싸는 컨테이너 */
+.code-block-wrapper {
+  position: relative;
+  margin-bottom: 1.5em;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #d1d5da;
+}
+
+/* 상단 레이아웃 바 (슬림 버전) */
+.code-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e2e6ea;
+  padding: 0.25rem 1rem;
+  font-size: 0.75rem;
+  color: #444d56;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  border-bottom: 1px solid #d1d5da;
+  user-select: none;
+}
+
+/* 언어 표시 텍스트 */
+.code-block-lang {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+/* 복사 버튼 스타일 */
+.code-block-copy-btn {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: #586069;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.code-block-copy-btn:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+  color: #24292e;
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.code-block-copy-btn.copied {
+  background-color: #2ea44f;
+  border-color: #2ea44f;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* =======================================================
+ * 행 번호(Line Numbers) 활성화 및 기존 테마 스타일 간섭 제어
+ * ======================================================= */
+.code-block-wrapper .highlight {
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.code-block-wrapper .highlight table {
+  margin: 0 !important;
+  width: 100%;
+  border: none !important;
+}
+
+.code-block-wrapper .highlight td {
+  padding: 0 !important;
+  border: none !important;
+}
+
+/* 행 번호 열(Gutter) 영역 설정 */
+.code-block-wrapper .highlight .gutter,
+.code-block-wrapper .highlight .gl {
+  user-select: none;
+  padding-right: 0.75rem !important;
+  padding-left: 0.5rem !important;
+  text-align: right;
+  opacity: 0.5;
+}
+
+/* 내부 pre 태그 여백 및 테두리 강제 초기화 */
+.code-block-wrapper pre {
+  margin: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
