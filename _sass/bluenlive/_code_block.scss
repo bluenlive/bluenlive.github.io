@@ -114,7 +114,7 @@
  .page__content .code-block-wrapper td,
  .code-block-wrapper pre,
  .code-block-wrapper td {
-   font-size: 0.97em !important; /* 원래 본문 크기 대비 비율, 100%는 그냥 inherit 사용 */
+   font-size: 0.97em !important; /* 원래 본문 크기 대비 비율, 기본 100%는 inherit를 사용 */
    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
    line-height: 1.5 !important;   
  }
@@ -127,7 +127,7 @@
  }
  
  /* =======================================================
-  * 4. 이중 유격 유발 요소 박멸 (핀포인트 리셋)
+  * 4. 이중 유격 유발 요소 박멸
   * ======================================================= */
  /* 테이블을 내부에 포함하고 있는 최외곽 pre 태그의 여백을 완전히 지움 */
  .page__content .code-block-wrapper pre:has(table),
@@ -159,8 +159,8 @@
    white-space: nowrap !important;
    padding: 0.4rem 0.3rem 0.4rem 0.5rem !important; /* 상하 여백 0.4rem 고정 */
    text-align: right !important;
-   color: #57606a !important;        /* GitHub 폰트 컬러 적용 (취향에 따라 #4a5568 선택 가능) */
-   opacity: 0.85 !important;        /* 기존 0.4에서 0.85로 대폭 올려 흐릿함 개선 */
+   color: #57606a !important;        /* GitHub 폰트 컬러 적용 */
+   opacity: 0.85 !important;         /* 불투명도 조절로 흐릿함 대폭 개선 */
    background-color: #f6f8fa !important;
    border-right: 1px solid #e1e4e8 !important;
    user-select: none !important;
@@ -218,15 +218,15 @@
  .code-block-wrapper tr.hll td {
    background-color: #fffbdd !important;
  }
-
+ 
  /* =======================================================
- * 6. 테마 의존성 잔상 제거 (반응형 스크롤 힌트 소거)
- * ======================================================= */
-.code-block-wrapper table::before,
-.code-block-wrapper table::after,
-.code-block-wrapper pre::before,
-.code-block-wrapper pre::after,
-.code-block-wrapper td::before,
-.code-block-wrapper td::after {
-  content: none !important;
-}
+  * 7. 테마 의존성 잔상 제거 (반응형 스크롤 힌트 소거)
+  * ======================================================= */
+ .code-block-wrapper table::before,
+ .code-block-wrapper table::after,
+ .code-block-wrapper pre::before,
+ .code-block-wrapper pre::after,
+ .code-block-wrapper td::before,
+ .code-block-wrapper td::after {
+   content: none !important;
+ }
