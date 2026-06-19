@@ -115,7 +115,7 @@
  .code-block-wrapper pre,
  .code-block-wrapper td {
    font-size: 0.97em !important; /* 원래 본문 크기 대비 비율, 기본 100%는 inherit를 사용 */
-   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+   font-family: 'Cascadia Code', 'MonoplexNerd', Menlo, Consolas, 'DejaVu Sans Mono', monospace !important;
    line-height: 1.5 !important;   
  }
  
