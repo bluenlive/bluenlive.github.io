@@ -9,7 +9,8 @@ categories:
 ## 들어가기에 앞서…
 
 기존 Notepad4에 구현했던 Zen-coding을 전면 개조해서 [TinyEmmet](https://www.google.com/search?q=/ittalk/TinyEmmet/)을 만들었다.\
-기존 Zen-coding은 JS로 만들어진 소스의 흐름을 거의 그대로 따라가며 옮겼었지만, 이번 TinyEmmet은 구조를 완전히 뒤엎고 현대화된 코딩 방식을 적용했다.
+기존 Zen-coding은 JS로 만들어진 소스의 흐름을 거의 그대로 따라가며 옮겼었지만, 이번 TinyEmmet은 구조를 완전히 뒤엎고 현대화된 코딩 방식을 적용했다.\
+이 기능은 [Notepad4 r6196](notepad4/Notepad4-r6196/)부터 적용된다.
 
 이 과정에서 사용자 인터페이스(UI)도 대폭 수정했다.\
 단순히 다이얼로그만 띄우던 레거시 방식에 추가하여, 입력 맥락을 스스로 분석해 다이얼로그 없이 그 자리에서 즉각 변환하는 기능도 지원한다.\
