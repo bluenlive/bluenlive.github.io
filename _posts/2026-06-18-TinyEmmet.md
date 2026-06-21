@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "레거시 C++ Zen Coding 엔진을 Modern C++ 기반의 TinyEmmet으로 대공사"
+title: "Legacy C++의 Zen Coding을 Modern C++의 TinyEmmet으로 공사"
 date: 2026-6-18 18:18:00 +0900
 categories:
   - ITTalk
