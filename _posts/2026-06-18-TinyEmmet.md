@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Legacy C++의 Zen Coding을 Modern C++의 TinyEmmet으로 공사"
+title: "Legacy C++의 Zen Coding을 Modern C++의 TinyEmmet으로 개조"
 date: 2026-6-18 18:18:00 +0900
 categories:
   - ITTalk
