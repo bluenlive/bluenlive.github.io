@@ -4,7 +4,7 @@ title: "한/글(HWPX) 파일 압축기(HIS) 4.81 업데이트"
 date: 2026-2-13 11:47:00 +0900
 categories:
   - MyProgram
-new_version_url: "/myprogram/HWPX_compressor_v5.00/"
+new_ver_app_url: "/myprogram/HWPX_compressor_v5.00/"
 ---
 
 잊혀질만 하면 업데이트하던 한/글 파일 압축기를 이번에도 정말 오랜만에 업데이트했다.\

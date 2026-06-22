@@ -4,6 +4,7 @@ title: "Notepad4에 적용된 TinyEmmet 간단 사용법"
 date: 2026-06-22 00:05:00 +0900
 categories:
   - Notepad4
+new_ver_post_url: "/notepad4/TinyEmmet_in_Notepad4_v_11/"
 ---
 
 ## 들어가기에 앞서…

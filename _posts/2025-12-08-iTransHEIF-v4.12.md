@@ -5,7 +5,7 @@ date: 2025-12-08 22:06:00 +0900
 categories:
   - iDevice
 tags: ["ffmpeg"]
-new_version_url: "/idevice/iTransHEIF-v5.00/"
+new_ver_app_url: "/idevice/iTransHEIF-v5.00/"
 ---
 
 ## 소개 및 다운로드

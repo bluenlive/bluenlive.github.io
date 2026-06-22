@@ -96,11 +96,20 @@ layout: default
         </div>
         {% endif %}
 
-        {% if page.new_version_url %}
+        {% if page.new_ver_app_url %}
         <div class="bluebox-newversion">
           <p>
-            <a href="{{ page.new_version_url }}">새 버전</a>이 나왔습니다. 
-            <a href="{{ page.new_version_url }}">새 버전</a>을 사용해주시기 바랍니다.
+            <a href="{{ page.new_ver_app_url }}">새 버전</a>이 나왔습니다. 
+            <a href="{{ page.new_ver_app_url }}">새 버전</a>을 사용해주시기 바랍니다.
+          </p>
+        </div>
+        {% endif %}
+        
+        {% if page.new_ver_post_url %}
+        <div class="bluebox-newversion">
+          <p>
+            <a href="{{ page.new_ver_post_url }}">새 글</a>이 올라왔습니다. 
+            <a href="{{ page.new_ver_post_url }}">새 글</a>을 읽어주시기 바랍니다.
           </p>
         </div>
         {% endif %}

@@ -6,7 +6,7 @@ last_modified_at: 2024-5-1
 categories:
   - iDevice
 tags: ["ffmpeg"]
-new_version_url: "/idevice/iTransHEIF-v4.12/"
+new_ver_app_url: "/idevice/iTransHEIF-v4.12/"
 ---
 
 ## 소개 및 다운로드

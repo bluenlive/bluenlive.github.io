@@ -4,7 +4,7 @@ title: "사진 정리 툴 FPO(Family Photo Organizer) 9.31 업데이트"
 date: 2026-2-13 11:40:00 +0900
 categories:
   - MyProgram
-new_version_url: "/myprogram/Family-Photo-Organizer-10.00/"
+new_ver_app_url: "/myprogram/Family-Photo-Organizer-10.00/"
 ---
 
 이제 DSLR 이외의 수많은 장비들이 카메라의 자리를 대신하고 있다.\
