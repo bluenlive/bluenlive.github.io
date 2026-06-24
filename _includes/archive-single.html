@@ -52,7 +52,10 @@
     {% for line in lines %}
       {% assign trimmed = line | strip %}
       {% if trimmed != "" %}
-        {% assign filtered_lines = filtered_lines | push: trimmed %}
+        {% comment %} 이미지 태그(<img 또는 <IMG)가 포함된 줄은 요약문 구성에서 제외합니다 {% endcomment %}
+        {% unless trimmed contains "<img" or trimmed contains "<IMG" %}
+          {% assign filtered_lines = filtered_lines | push: trimmed %}
+        {% endunless %}
       {% endif %}
     {% endfor %}
     {% assign cleaned = filtered_lines | join: newline %}
