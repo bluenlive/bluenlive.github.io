@@ -26,15 +26,15 @@
       {% endif %}
     </h2>
     {% include page__meta.html locale=locale type=include.type %}
-    {% comment %} 1. 본문과 요약에서 HTML 태그를 제거하되 줄바꿈은 보존 {% endcomment %}
-    {% assign pure_excerpt = post.excerpt | strip_html %}
-    {% assign pure_content = post.content | strip_html %}
 
-    {% comment %} 2. 줄바꿈을 보존한 순수 텍스트 기준으로 글자 수를 판단하여 가져옴 {% endcomment %}
+    {% comment %} 1. 요약(excerpt)에서 마크다운 문법을 HTML로 먼저 변환한 후, 태그를 제거하여 순수 텍스트만 추출 {% endcomment %}
+    {% assign pure_excerpt = post.excerpt | markdownify | strip_html %}
+
+    {% comment %} 2. 순수 텍스트 기준으로 글자 수를 판단하여 가져옴 (본문 변환은 필요할 때만 수행하여 빌드 속도 최적화) {% endcomment %}
     {% if pure_excerpt.size > 150 %}
       {% assign cleaned = pure_excerpt %}
     {% else %}
-      {% assign cleaned = pure_content %}
+      {% assign cleaned = post.content | markdownify | strip_html %}
     {% endif %}
 
     {% comment %} 3. 특수문자 치환 로직 수행 {% endcomment %}
