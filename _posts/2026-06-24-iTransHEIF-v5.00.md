@@ -56,8 +56,8 @@ tags: ["ffmpeg"]
 - 2026.6.24꞉ v5.04
   - 오픈소스 라이선스 표시 내용 수정
   - 내부 어플리케이션 및 라이브러리 업데이트
-    - libjpeg-turbo를 3.1.91 (3.2 beta2)로 업데이트(Jun 19, 2026)
-    - libheif: v1.23.0 업데이트 (2026.6.22 수정사항 반영)
-    - libde265: v1.1.1 업데이트 (2026.6.4)
-    - libpng(x64)를 1.8.0.git(Jun 23, 2026 수정사항 반영)으로, zlib-ng를 2.3.90.dev(Jun 23, 2026)으로 업데이트
-    - ffmpeg(x64)을 8.1.1[gyan.dev]로 업데이트
+    - [libjpeg-turbo](https://github.com/libjpeg-turbo/libjpeg-turbo)를 3.1.91 (3.2 beta2)로 업데이트(Jun 19, 2026)
+    - [libheif](https://github.com/strukturag/libheif): v1.23.0 업데이트 (2026.6.22 수정사항 반영)
+    - [libde265](https://github.com/strukturag/libde265): v1.1.1 업데이트 (2026.6.4)
+    - [libpng](https://github.com/pnggroup/libpng)(x64)를 1.8.0.git(Jun 23, 2026 수정사항 반영)으로, [zlib-ng](https://github.com/zlib-ng/zlib-ng)를 2.3.90.dev(Jun 23, 2026)으로 업데이트
+    - [FFmpeg](http://ffmpeg.org/download.html)(x64)을 8.1.1\[gyan.dev\]로 업데이트

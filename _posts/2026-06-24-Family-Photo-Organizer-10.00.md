@@ -60,13 +60,13 @@ PNG / WebP / MP4 / MOV / MKV는 파일 내에 태깅된 날짜 정보 활용함
     - WIC에서 HEIF 지원이 제대로 되지 않는 경우를 대비하여, **자체적으로 HEIF 처리**를 위해 추가로 적용함
     - WIC보다 읽는 속도가 더 빠름
   - [jpeg-quantsmooth](https://github.com/ilyakurdyukov/jpeg-quantsmooth) 제거
-  - libpng(x64)를 1.8.0.git(Merge v1.6.56, Feb 11, 2026)으로, zlib-ng를 2.3.3(Feb 4, 2026)으로 업데이트
+  - [libpng](https://github.com/pnggroup/libpng)(x64)를 1.8.0.git(Merge v1.6.56, Feb 11, 2026)으로, [zlib-ng](https://github.com/zlib-ng/zlib-ng)를 2.3.3(Feb 4, 2026)으로 업데이트
   - HEVC WIC 주소 수정
 - 2026.6.24: v10.04 공개
   - 오픈소스 라이선스 표시 내용 수정
   - 일부 PC에서 프로그램이 시작되지 않는 오류 수정
     - 아마도 [이 문제](/ittalk/VS2026_18.6_loop_opt_bug/)의 영향이라 판단됨
   - 라이브러리 업데이트
-    - libheif: v1.23.0 업데이트 (2026.6.22 수정사항 반영)
-    - libde265: v1.1.1 업데이트 (2026.6.4)
-    - libpng(x64)를 1.8.0.git(Jun 23, 2026 수정사항 반영)으로, zlib-ng를 2.3.90.dev(Jun 23, 2026)으로 업데이트
+    - [libheif](https://github.com/strukturag/libheif): v1.23.0 업데이트 (2026.6.22 수정사항 반영)
+    - [libde265](https://github.com/strukturag/libde265): v1.1.1 업데이트 (2026.6.4)
+    - [libpng](https://github.com/pnggroup/libpng)(x64)를 1.8.0.git(Jun 23, 2026 수정사항 반영)으로, [zlib-ng](https://github.com/zlib-ng/zlib-ng)를 2.3.90.dev(Jun 23, 2026)으로 업데이트
