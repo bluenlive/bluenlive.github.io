@@ -117,12 +117,12 @@
       var header = document.createElement('div');
       header.className = 'code-block-header';
 
-      // 3. 언어 추출 및 소문자 확장자 포맷 적용 (.ext)
+      // 3. 언어 추출 및 대문자 포맷 적용 (⧉ LANGUAGE)
       var langName = 'code';
       var match = block.className.match(/language-([^\s]+)/) || 
                   (block.querySelector('[class*="language-"]') && block.querySelector('[class*="language-"]').className.match(/language-([^\s]+)/));
       if (match) {
-        langName = '.' + match[1].toLowerCase();
+        langName = '⧉ ' + match[1].toUpperCase();
       }
       var langSpan = document.createElement('span');
       langSpan.className = 'code-block-lang';
