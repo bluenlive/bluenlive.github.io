@@ -40,7 +40,14 @@
  .code-block-wrapper .code-block-lang {
    font-weight: 600 !important;
    letter-spacing: 0.05em !important;
- }
+
+  text-transform: uppercase !important; 
+  &::before {
+    content: "⧉ " !important;          
+    margin-right: 5px !important;
+    font-weight: normal !important;
+  }
+}
  
  .code-block-wrapper .code-block-copy-btn {
    background: transparent !important;
