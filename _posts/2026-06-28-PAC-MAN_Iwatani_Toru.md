@@ -44,6 +44,7 @@ tags: ["팩맨", "PAC-MAN", "namco", "namcot", "도루 이와타니", "이와타
 프로세싱 파워가 부족한 시대에 최소한의 개념과 제한된 자원만으로 이 정도의 지능을 구현해낸 점은 지금 봐도 경이롭다.
 
 ![image](/images/2026-06-28/maso2_okl_s64.webp)
+*\'까다로왔어요\'의 압박*
 
 인터뷰 말미에 향후의 게임 판도를 예측한 내용은 너무나 현재의 게임 환경을 정확히 보고 있었다.\
 물론, 게임 업계의 상층부에 있던 분이니 더 많은 정보가 있었겠지만, 인터넷이라는 개념조차 대중화되지 않았던 1980년대에 모르는 적들과 네트워크로 연결되어 협동 플레이를 펼치는 미래를 내다봤다는 것은 대단한 통찰력이다.
@@ -60,7 +61,7 @@ tags: ["팩맨", "PAC-MAN", "namco", "namcot", "도루 이와타니", "이와타
 몇 해 전에 구글은 팩맨 출시 30주년을 기념하여 메인 화면에서 곧바로 플레이할 수 있는 [구글 팩맨 플레이어블 두들(Doodle)](https://www.google.com/doodles/30th-anniversary-of-pac-man) 이벤트를 선보였다.\
 이 페이지는 지금도 여전히 열려 있다.
 
-[file-hunter](https://www.file-hunter.com/MSX/?id=pacman)에서는 MSX 에뮬레이터 환경에서 동작하는 팩맨을 온라인으로 즐길 수도 있다.
+[file-hunter](https://www.file-hunter.com/MSX/?id=pacman)에서는 MSX 에뮬레이터 환경에서 동작하는 팩맨을 **온라인**으로 즐길 수도 있다.
 
 [깃허브 pacman-javafx](https://github.com/armin-reichert/pacman-javafx)에서는 2D와 3D를 수시로 바꿔 즐길 수 있는 팩맨을 공개하기도 했다.
 
