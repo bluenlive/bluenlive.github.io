@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "〈수퍼걸〉꞉ 무능과 오만이 낳은 총체적 난국"
-date: 2026-7-7 11:12:00 +0900
+date: 2026-7-1 11:12:00 +0900
 categories:
   - DCHero
 ---
