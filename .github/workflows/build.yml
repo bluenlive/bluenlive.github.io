@@ -25,8 +25,9 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true # Gem 설치 및 캐싱 자동화
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
+      # Warning 회피를 위한 주석 처리 (2026.7.5)
+      # - name: Setup Pages
+      #   uses: actions/configure-pages@v5
 
       - name: Build with Jekyll
         run: bundle exec jekyll build
