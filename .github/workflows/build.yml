@@ -15,12 +15,12 @@ jobs:
     name: 1단계 - 사이트 빌드 및 압축
     runs-on: ubuntu-latest
     steps:
-      - name: [소스코드] 레포지토리 가져오기
+      - name: "[소스코드] 레포지토리 가져오기"
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
-      - name: [환경설정] Ruby 및 캐시 세팅
+      - name: "[환경설정] Ruby 및 캐시 세팅"
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
@@ -30,7 +30,7 @@ jobs:
       # - name: Setup Pages
       #   uses: actions/configure-pages@v5
 
-      - name: [실행] 제킬 빌드 수행 (실패 시 1회 자동 재시도)
+      - name: "[실행] 제킬 빌드 수행 (실패 시 1회 자동 재시도)"
         uses: nick-fields/retry@v4
         with:
           timeout_seconds: 300 # 단일 시도당 제한 시간 (5분)
@@ -39,7 +39,7 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: [아티팩트] 빌드 결과물 임시 업로드
+      - name: "[아티팩트] 빌드 결과물 임시 업로드"
         uses: actions/upload-pages-artifact@v5
 
   deploy:
@@ -50,6 +50,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: [배포] GitHub Pages 활성화
+      - name: "[배포] GitHub Pages 활성화"
         id: deployment
         uses: actions/deploy-pages@v5
