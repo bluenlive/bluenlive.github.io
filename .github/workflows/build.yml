@@ -30,7 +30,7 @@ jobs:
       #   uses: actions/configure-pages@v5
 
       - name: Build with Jekyll (with 1 Retry)
-        uses: nick-fields/retry@v3
+        uses: nick-fields/retry@v4
         with:
           timeout_seconds: 300 # 단일 시도당 제한 시간 (5분)
           max_attempts: 2      # 실패 시 최대 2번까지 재시도
