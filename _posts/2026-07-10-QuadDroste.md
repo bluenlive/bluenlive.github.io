@@ -145,3 +145,7 @@ Lanczos3, Spline36을 모두 LUT 적용하여 역시 고속화
 *19년 전에 이걸 위해 찍었던 사진*
 
 오랜 호기심과 현대 AI의 기술 지원이 만나 만들어낸 의미 있는 결과물인 **'QuadDroste'** 플러그인이다.
+
+## 덧. Droste에 좀 더 상세한 설명은 아래 영상에서 볼 수 있음
+
+{% include video id="ldxFjLJ3rVY" provider="youtube" %}
