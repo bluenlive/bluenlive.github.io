@@ -239,6 +239,6 @@
  }
 
 /* pre 하위가 아닌 인라인 code 요소만 타겟팅하여 본문 크기로 복원 */
-:not(pre) > code {
-  font-size: 1em;
+.page__content :not(pre) > code {
+  font-size: 1em; /* 본문 기본 크기로 설정 */
 }
