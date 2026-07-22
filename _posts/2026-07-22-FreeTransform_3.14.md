@@ -11,8 +11,8 @@ categories:
 [2020년에 Paint.NET 용 자유 변형 플러그인을 제작해서 공개](https://teus.tistory.com/669)했었다.\
 포토샵의 기능들 중에 이것만은 **대체 프로그램을 찾을 수 없었기 때문**이었다.
 
-처음 개발 목적은 이미 왜곡된 이미지를 사각형으로 원복하는 것이었다.\
-이후 프로그램이 정방향(Forward), 역방향(Backward) 변형 기능을 모두 갖도록 수정했다.
+처음 개발 목적은 이미 **왜곡된 이미지를 사각형으로 원복**하는 것이었다.\
+이후 프로그램이 **정방향(Forward)**, **역방향(Backward)** 변형 기능을 모두 갖도록 수정했다.
 
 이 프로그램은 특성 상 구현 이후는 특별히 업데이트 할 일이 없는 편이다.\
 그런데, 조금씩 손을 대다보니 꽤 많은 수정이 쌓였다.
@@ -26,12 +26,12 @@ categories:
 다운은 아래 링크에서 받을 수 있다.
 
 {% include bnl_download-box.html
-   file="/attachment/2026-07-22/FreeTransform3.rar"
+   file="/attachment/2026-07-22/FreeTransform3.14.rar"
    password="teus.me" %}
 
 ## 간단한 사용법
 
-이미지를 연 뒤 `효과`-`비틀기`-`FreeTransform3`를 선택하면 된다.\
+이미지를 연 뒤 **`효과`-`비틀기`-`FreeTransform3…`**를 선택하면 된다.\
 역방향은 **이미 왜곡된 이미지에서 사각형으로 복원할 때** 사용한다.\
 여기서는 역방향만 설명한다.
 
@@ -47,7 +47,7 @@ categories:
 `quick and dirty` 모드를 선택하면 화질은 거칠지만 굉장히 빠르게 **원복된 preview**를 보여준다.\
 **적절하게 선을 그어주는 것**은 덤이다.
 
-여기서 Aspect Ratio를 지정할 수도 있다.
+여기서 종횡비(Aspect Ratio)를 지정할 수도 있다.
 
 {: .bluebox-blue}
 - 이미지의 각도를 통해 최대한 종횡비를 추정(`Auto`)해줌
