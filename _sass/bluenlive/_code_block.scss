@@ -240,5 +240,5 @@
 
 /* pre 하위가 아닌 인라인 code 요소만 타겟팅 */
 .page__content :not(pre) > code {
-  font-size: 0.925em; /* 본문 기본 크기와 어울리게 설정 */
+  font-size: 0.9125em; /* 본문 기본 크기와 어울리게 설정 */
 }
