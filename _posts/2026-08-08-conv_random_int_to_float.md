@@ -212,14 +212,14 @@ inline float BitHackToFloat(uint32_t x)
 }
 
 // 64비트 -> double 변환
-inline double BitHackToDouble(uint64_t x)
+inline double BitHackToDouble64(uint64_t x)
 {
     uint64_t bits = 0x3FF0000000000000ULL | (x >> 12);
     return std::bit_cast<double>(bits) - 1.0;
 }
 
 // 32비트 -> double 변환
-inline double BitHackToDouble(uint32_t x)
+inline double BitHackToDouble32(uint32_t x)
 {
     // 32비트 난수를 double의 52비트 가수부 상위 영역(비트 51~20)에 배치
     uint64_t bits = 0x3FF0000000000000ULL | (static_cast<uint64_t>(x) << 20);
