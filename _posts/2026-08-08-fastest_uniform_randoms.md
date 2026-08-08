@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "굉장히 빠르게 균일(uniform) 난수 생성하기"
-date: 2025-8-8 10:22:00 +0900
+date: 2026-8-8 10:22:00 +0900
 categories:
   - algorithm
 tags: ["Ryzen", "SplitMix64", "Xoshiro", "MT19937", "SFMT19937", "ChaCha20"]
