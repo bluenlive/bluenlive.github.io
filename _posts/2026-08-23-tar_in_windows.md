@@ -23,13 +23,13 @@ tar는 **Tape Archive**의 줄임말이다.\
 
 * **압축 없이 묶기:**
 
-```dos
+```bat
 tar -cvf archive.tar -C "C:\target_folder" .
 ```
 
 * **gzip으로 압축하며 묶기:**
 
-```dos
+```bat
 tar -czvf archive.tar.gz -C "C:\target_folder" .
 ```
 
@@ -37,13 +37,13 @@ tar -czvf archive.tar.gz -C "C:\target_folder" .
 
 * **내용 목록만 미리 보기 (압축 해제 X):**
 
-```dos
+```bat
 tar -tf archive.tar.gz
 ```
 
 * **원하는 폴더에 압축 풀기:**
 
-```dos
+```bat
 tar -xzvf archive.tar.gz -C "C:\extract_folder"
 ```
 
