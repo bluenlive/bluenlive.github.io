@@ -47,7 +47,7 @@ tar -tf archive.tar.gz
 tar -xzvf archive.tar.gz -C "C:\extract_folder"
 ```
 
-*(무압축 `.tar` 파일이라면 `-xvf`를 사용한다.)*
+*(무압축 `.tar` 파일이라면 `-xvf`를 사용)*
 
 ## 대용량 파일을 3.5GiB 단위로 분할하고 합치기
 FAT32 파일 시스템의 4GiB 단일 파일 제한을 피하기 위해 대용량 아카이브를 분할해야 할 때가 있다.\

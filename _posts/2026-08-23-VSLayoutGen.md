@@ -16,7 +16,7 @@ categories:
 
 ## 2. Visual Studio 오프라인 설치본 다운로드 방법
 
-Microsoft는 Visual Studio를 오프라인 환경에 설치할 수 있도록 공식 커맨드라인 레이아웃 다운로드 기능을 지원한다.
+Microsoft는 Visual Studio를 오프라인 환경에 설치할 수 있도록 [공식 커맨드라인 레이아웃 다운로드 기능](https://learn.microsoft.com/ko-kr/visualstudio/install/create-an-offline-installation-of-visual-studio?view=visualstudio)을 지원한다.
 
 ### 지원 버전 및 에디션
 
