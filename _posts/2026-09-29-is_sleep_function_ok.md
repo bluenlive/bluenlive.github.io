@@ -43,7 +43,8 @@ C++11 이후 모던 C++이 제공하는 `std::this_thread::sleep_for`를 대안�
 * 이는 곧바로 Windows API인 `SleepEx()` 또는 `NtDelayExecution()` 시스템 콜로 이어짐
 
 결국 Win32 `::Sleep()`과 100% 동일한 커널 경로를 거친다.\
-플랫폼 독립성을 위한 추상화 계층일 뿐, Windows 네이티브 환경에서는 코드 길이만 늘어날 뿐 정밀도 상의 이득은 전혀 없다.
+플랫폼 독립성을 위한 추상화 계층일 뿐인 것이다.\
+Windows 네이티브 환경에서는 코드 길이만 늘어날 뿐 **정밀도 상의 이득은 전혀 없다**.
 
 ---
 
@@ -54,7 +55,8 @@ C++11 이후 모던 C++이 제공하는 `std::this_thread::sleep_for`를 대안�
 ### ① Spin-Yield (협력적 양보 + 미세 스핀)
 
 QPC(QueryPerformanceCounter)로 하드웨어 누적 틱을 추적한다.\
-남은 대기 시간이 넉넉할 때(2ms 초과)는 `SwitchToThread()`로 타 스레드에 양보하고, 마지막 2ms 구간에서만 스핀 루프를 돌며 시간을 맞춘다.
+남은 대기 시간이 넉넉할 때(2ms 초과)는 `SwitchToThread()`로 타 스레드에 양보한다.\
+그러다, 마지막 2ms 구간에서만 스핀 루프를 돌며 시간을 맞춘다.
 
 ```cpp
 void DoSpinYieldSleep(double milliseconds)
@@ -93,7 +95,8 @@ Windows 10 1803부터 지원되는 `CREATE_WAITABLE_TIMER_HIGH_RESOLUTION`을 �
 전역 부작용이 없는 프로세스 로컬 고해상도 커널 타이머다.
 
 대기 시간 대부분은 커널 타이머(`WaitForSingleObject`)로 코어를 완전히 비운 채 잠든다.\
-만료 직후 남은 0.5~1.0ms는 `SwitchToThread()`로 가볍게 양보하고, 마지막 0.5ms 미만 구간만 `_mm_pause()`로 시간을 맞춘다.
+만료 직후 남은 0.5~1.0ms는 `SwitchToThread()`로 가볍게 양보한다.\
+그러다, 마지막 0.5ms 미만 구간만 `_mm_pause()`로 시간을 맞춘다.
 
 ```cpp
 void DoHybridSleep(double milliseconds)
@@ -192,7 +195,7 @@ STL의 `sleep_for()`가 Win32 `Sleep()` 계열 API의 껍데기에 불과함을 
 ## 5. 최적의 대안꞉ '스레드 CPU 시간'의 진정한 의미
 
 경과 시간 수치만 보면 Spin-Yield도 19.0005ms로 목표를 달성한다.\
-하지만 핵심 판별 기준은 스레드 CPU 시간(Thread CPU Time)이다.
+하지만, 핵심 판별 기준은 스레드 CPU 시간(Thread CPU Time)이다.
 
 스레드 CPU 시간은 물리적인 경과 시간이 아니다.\
 해당 스레드가 실제 CPU 코어를 점유하고 기계어 연산을 수행한 순수 시간(User + Kernel Mode)을 뜻한다.
@@ -203,7 +206,7 @@ STL의 `sleep_for()`가 Win32 `Sleep()` 계열 API의 껍데기에 불과함을 
 {: .bluebox-green}
 * **Spin-Yield의 한계꞉**\
 백그라운드 작업이 있는 일반 데스크톱에서는 `SwitchToThread()`가 동작해 CPU 시간이 31ms 수준으로 선방.\
-하지만 다른 프로세스가 없는 독립 전용 장비에서는 양보할 대상이 없음.\
+하지만, 다른 프로세스가 없는 독립 전용 장비에서는 양보할 대상이 없음.\
 즉시 리턴하면서 남은 17ms 구간까지 코어를 100% 태우게 됨.
 * **Hybrid Sleep의 우위꞉**\
 전체 대기 시간의 90% 이상을 커널 절전 대기 상태로 유지함.\
