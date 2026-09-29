@@ -4,7 +4,7 @@ title: "Windows 고정밀 Sleep 구현기꞉ 정밀도와 CPU 점유율의 딜�
 date: 2026-9-29 00:20:00 +0900
 categories:
   - algorithm
-tags: ["Ryzen", "SplitMix64", "Xoshiro", "MT19937", "SFMT19937", "ChaCha20"]
+tags: ["Sleep", "sleep_for", "Spin-Yield", "Hybrid", "CREATE_WAITABLE_TIMER_HIGH_RESOLUTION"]
 toc: true
 toc_label: "Contents"
 #toc_icon: "cog"
