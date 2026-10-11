@@ -4,12 +4,26 @@
 
 ### Enhancements
 
+- Change link color mixing in notices to use `$text-color` (#5527)
+
+### Bug Fixes
+
+- Fix `.page__content :first-child` from #5103 removes the top margin of nested first children. (#5538)
+
+## [4.28.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.28.1)
+
+### Enhancements
+
 - Respect custom parameters in yiq-contrast-color function (#5453)
 - Allow specifying `rtl` in both page and layout (#5460)
 - Add title attribute to video iframes for accessibility (#5471)
 - Silence "Sass @import rules are deprecated" warning
 - Allow per-post or per-collection `date_format` values. (#5477)
 - Replace inline style `padding-left` with `padding-inline-start` for RTL support (#5480)
+
+### Bug Fixes
+
+- Fix animations to pass Lighthouse. (#5494)
 
 ### Documentation & Maintenance
 
