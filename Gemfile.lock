@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    minimal-mistakes-jekyll (4.28.0)
+    minimal-mistakes-jekyll (4.28.1)
       jekyll (>= 3.7, < 5.0)
       jekyll-feed (~> 0.1)
       jekyll-gist (~> 1.5)
