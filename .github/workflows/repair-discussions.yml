@@ -1,0 +1,98 @@
+name: Discussions 복구 및 재색인
+
+on:
+  workflow_dispatch: # 웹에서 수동 실행 버튼 활성화
+
+permissions:
+  discussions: write
+  contents: read
+
+jobs:
+  repair-and-reindex:
+    name: 잠금 해제 및 카테고리 재색인
+    runs-on: ubuntu-latest
+    steps:
+      - name: Discussions 순회 및 일괄 복구 실행
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          echo "==> 저장소 카테고리 및 Discussion 목록 조회 중..."
+          
+          # 1. Announcements 및 General 카테고리 ID, Discussion 목록 가져오기
+          DATA=$(gh api graphql -f query='
+            query($owner: String!, $name: String!) {
+              repository(owner: $owner, name: $name) {
+                discussionCategories(first: 10) {
+                  nodes { id name }
+                }
+                discussions(first: 100) {
+                  nodes {
+                    id
+                    number
+                    title
+                    locked
+                    category { id name }
+                  }
+                }
+              }
+            }' -F owner="${REPO%/*}" -F name="${REPO#*/}")
+
+          ANN_ID=$(echo "$DATA" | jq -r '.data.repository.discussionCategories.nodes[] | select(.name=="Announcements") | .id')
+          GEN_ID=$(echo "$DATA" | jq -r '.data.repository.discussionCategories.nodes[] | select(.name=="General") | .id')
+
+          echo "Target Category (Announcements) ID: $ANN_ID"
+          echo "Temp Category (General) ID: $GEN_ID"
+
+          # 2. 모든 Discussion 순회 처리
+          echo "$DATA" | jq -c '.data.repository.discussions.nodes[]' | while read -r item; do
+            ID=$(echo "$item" | jq -r '.id')
+            NUM=$(echo "$item" | jq -r '.number')
+            TITLE=$(echo "$item" | jq -r '.title')
+            LOCKED=$(echo "$item" | jq -r '.locked')
+            CAT_NAME=$(echo "$item" | jq -r '.category.name')
+
+            echo "--------------------------------------------------"
+            echo "Discussion #${NUM}: ${TITLE}"
+
+            # 1단계: 잠겨 있는 경우 Unlock 실행
+            if [ "$LOCKED" = "true" ]; then
+              echo " -> 잠금 상태 감지: Unlock 실행 중..."
+              gh api graphql -f query='
+                mutation($id: ID!) {
+                  unlockLockable(input: { lockableId: $id }) {
+                    unlockedRecord { ... on Discussion { locked } }
+                  }
+                }' -F id="$ID" > /dev/null
+              echo " -> 잠금 해제 완료"
+            else
+              echo " -> 이미 열려 있음 (Locked 아님)"
+            fi
+
+            # 2단계: Announcements 글이면 General로 이동 후 다시 Announcements로 복귀 (강제 색인 갱신)
+            if [ "$CAT_NAME" = "Announcements" ] && [ -n "$GEN_ID" ] && [ -n "$ANN_ID" ]; then
+              echo " -> 색인 재가동: General 카테고리로 임시 이동..."
+              gh api graphql -f query='
+                mutation($id: ID!, $catId: ID!) {
+                  updateDiscussion(input: { discussionId: $id, categoryId: $catId }) {
+                    discussion { number }
+                  }
+                }' -F id="$ID" -F catId="$GEN_ID" > /dev/null
+
+              sleep 1
+
+              echo " -> Announcements 카테고리로 복귀..."
+              gh api graphql -f query='
+                mutation($id: ID!, $catId: ID!) {
+                  updateDiscussion(input: { discussionId: $id, categoryId: $catId }) {
+                    discussion { number }
+                  }
+                }' -F id="$ID" -F catId="$ANN_ID" > /dev/null
+              echo " -> 색인 갱신 완료"
+            fi
+
+            sleep 1 # API 호출 제한 방지
+          done
+
+          echo "--------------------------------------------------"
+          echo "모든 Discussion의 잠금 해제 및 색인 재가동 작업이 완료되었습니다."
