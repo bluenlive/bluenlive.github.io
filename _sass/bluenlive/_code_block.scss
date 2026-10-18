@@ -10,235 +10,329 @@
 /* =======================================================
  * 1. 최외곽 컨테이너 및 슬림 헤더 바
  * ======================================================= */
- .page__content .code-block-wrapper,
- .code-block-wrapper {
-   position: relative !important;
-   margin: 0 0 1.5em 0 !important;
-   border-radius: 6px !important;
-   overflow: hidden !important;
-   border: 1px solid #d1d5da !important;
-   background-color: #ffffff !important;
-   display: flex !important;
-   flex-direction: column !important;
-   width: 100% !important;
-   box-sizing: border-box !important;
- }
- 
- .code-block-wrapper .code-block-header {
-   display: flex !important;
-   justify-content: space-between !important;
-   align-items: center !important;
-   background-color: #e2e6ea !important;
-   padding: 0.25rem 0.8rem !important;
-   font-size: 0.70rem !important;
-   color: #444d56 !important;
-   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-   border-bottom: 1px solid #d1d5da !important;
-   user-select: none !important;
- }
- 
- .code-block-wrapper .code-block-lang {
-   font-weight: 600 !important;
-   letter-spacing: 0.05em !important;
-
-  text-transform: uppercase !important; 
-  &::before {
-    content: "🔣" !important;          
-    margin-right: 3px !important;
-    font-weight: normal !important;
-  }
+.page__content .code-block-wrapper,
+.code-block-wrapper {
+  position: relative !important;
+  margin: 0 0 1.5em 0 !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  border: 1px solid #d1d5da !important;
+  background-color: #ffffff !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
 }
- 
- .code-block-wrapper .code-block-copy-btn {
-   background: transparent !important;
-   border: 1px solid rgba(0, 0, 0, 0.15) !important;
-   color: #586069 !important;
-   padding: 0.1rem 0.4rem !important;
-   border-radius: 4px !important;
-   cursor: pointer !important;
-   font-size: 0.7rem !important;
-   transition: all 0.2s ease !important;
+
+.code-block-wrapper .code-block-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  background-color: #e2e6ea !important;
+  padding: 0.25rem 0.8rem !important;
+  font-size: 0.70rem !important;
+  color: #444d56 !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  border-bottom: 1px solid #d1d5da !important;
+  user-select: none !important;
+}
+
+.code-block-wrapper .code-block-lang {
+  font-weight: 600 !important;
+  letter-spacing: 0.05em !important;
+
+ text-transform: uppercase !important; 
+ &::before {
+   content: "🔣" !important;          
+   margin-right: 3px !important;
+   font-weight: normal !important;
  }
- 
- .code-block-wrapper .code-block-copy-btn:hover {
-   background-color: rgba(0, 0, 0, 0.06) !important;
-   color: #24292e !important;
-   border-color: rgba(0, 0, 0, 0.25) !important;
- }
- 
- .code-block-wrapper .code-block-copy-btn.copied {
-   background-color: #2ea44f !important;
-   border-color: #2ea44f !important;
-   color: #ffffff !important;
-   font-weight: bold !important;
- }
- 
- /* =======================================================
-  * 2. 테마 고유의 기본 프레임 레이아웃 초기화
-  * ======================================================= */
- .page__content .code-block-wrapper .highlighter-rouge,
- .page__content .code-block-wrapper figure.highlight,
- .page__content .code-block-wrapper div.highlight,
- .page__content .code-block-wrapper .highlight,
- .code-block-wrapper .highlighter-rouge,
- .code-block-wrapper figure.highlight,
- .code-block-wrapper div.highlight,
- .code-block-wrapper .highlight {
-   margin: 0 !important;
-   padding: 0 !important;
-   border: none !important;
-   background: transparent !important;
-   box-shadow: none !important;
-   width: 100% !important;
-   display: block !important;
- }
- 
- .code-block-wrapper table,
- .code-block-wrapper tbody,
- .code-block-wrapper tr {
-   margin: 0 !important;
-   padding: 0 !important;
-   border: none !important;
-   background: transparent !important;
-   width: 100% !important;
-   display: table !important;
-   border-collapse: collapse !important;
- }
- 
- .code-block-wrapper tr { display: table-row !important; }
- .page__content .code-block-wrapper td,
- .code-block-wrapper td { 
-   display: table-cell !important; 
-   margin: 0 !important;
-   padding: 0 !important;
- }
- 
- /* =======================================================
-  * 3. 폰트 및 줄바꿈 균일화 (정확한 수직 줄 맞춤 집행)
-  * ======================================================= */
- /* 외곽 pre와 td 셀에만 글자 크기 비율을 적용 */
- .page__content .code-block-wrapper pre,
- .page__content .code-block-wrapper td,
- .code-block-wrapper pre,
- .code-block-wrapper td {
-   font-size: 0.97em !important; /* 원래 본문 크기 대비 비율, 기본 100%는 inherit를 사용 */
-   font-family: 'Cascadia Code', 'MonoplexNerd', Menlo, Consolas, 'DejaVu Sans Mono', monospace !important;
-   line-height: 1.5 !important;   
- }
- 
- /* 내부 code 태그가 글자 크기를 중첩해서 작게 만들지 않도록 차단 */
- .page__content .code-block-wrapper code,
- .code-block-wrapper code {
-   font-size: inherit !important; 
-   font-family: inherit !important;
- }
- 
- /* =======================================================
-  * 4. 이중 유격 유발 요소 박멸
-  * ======================================================= */
- /* 테이블을 내부에 포함하고 있는 최외곽 pre 태그의 여백을 완전히 지움 */
- .page__content .code-block-wrapper pre:has(table),
- .code-block-wrapper pre:has(table) {
-   padding: 0 !important;
-   margin: 0 !important;
-   background: transparent !important;
- }
- 
- /* 테이블 내부 셀(td) 안에 들어있는 두 번째 pre 태그의 여백을 완전히 지움 */
- .page__content .code-block-wrapper td pre,
- .code-block-wrapper td pre {
-   padding: 0 !important;
-   margin: 0 !important;
-   background: transparent !important;
- }
- 
- /* =======================================================
-  * 5. 단일 구조 패딩 집행
-  * ======================================================= */
- /* 좌측 행 번호 영역 */
- .page__content .code-block-wrapper td.gutter,
- .page__content .code-block-wrapper td.rouge-gutter,
- .page__content .code-block-wrapper td.linenos,
- .code-block-wrapper td.gutter,
- .code-block-wrapper td.rouge-gutter,
- .code-block-wrapper td.linenos {
-   width: 1% !important;
-   white-space: nowrap !important;
-   padding: 0.4rem 0.3rem 0.4rem 0.5rem !important; /* 상하 여백 0.4rem 고정 */
-   text-align: right !important;
-   color: #57606a !important;        /* GitHub 폰트 컬러 적용 */
-   opacity: 0.85 !important;         /* 불투명도 조절로 흐릿함 대폭 개선 */
-   background-color: #f6f8fa !important;
-   border-right: 1px solid #e1e4e8 !important;
-   user-select: none !important;
-   vertical-align: top !important;
-   text-overflow: clip !important;
-   overflow: visible !important;
- }
- 
- /* 행 번호 내부 pre 태그의 말줄임표(.. 잔상) 현상 차단 */
- .code-block-wrapper td.gutter pre,
- .code-block-wrapper td.rouge-gutter pre,
- .code-block-wrapper td.linenos pre {
-   overflow: visible !important;
-   text-overflow: clip !important;
- }
- 
- /* 우측 실제 소스 코드 영역 */
- .page__content .code-block-wrapper td.code,
- .page__content .code-block-wrapper td.rouge-code,
- .code-block-wrapper td.code,
- .code-block-wrapper td.rouge-code {
-   padding: 0.4rem 0.6rem !important; /* 상하 여백을 행 번호와 동일하게 맞추어 정렬 */
-   background-color: #ffffff !important;
-   vertical-align: top !important;
-   width: 99% !important;
- }
- 
- .code-block-wrapper td.code pre,
- .code-block-wrapper td.rouge-code pre {
-   display: block !important;
-   overflow-x: auto !important;
- }
- 
- /* 행 번호가 없는 일반 코드 블록 (테이블이 없는 pre) */
- .page__content .code-block-wrapper > pre:not(:has(table)),
- .page__content .code-block-wrapper .highlight > pre:not(:has(table)),
- .code-block-wrapper > pre:not(:has(table)) {
-   padding: 0.4rem 0.6rem !important;
-   background-color: #ffffff !important;
-   display: block !important;
-   overflow-x: auto !important;
- }
- 
- /* =======================================================
-  * 6. 리퀴드 태그 특정 행 강조 기능 (hl_lines / .hll) 대응
-  * ======================================================= */
- /* 행 번호 영역(gutter)과 코드 영역(code) 내부의 강조 행 배경색 설정 */
- .code-block-wrapper .hll {
-   background-color: #fffbdd !important; /* 은은한 노란색 강조 */
-   display: block !important;
-   width: 100% !important;
- }
- 
- /* 테이블 행(tr) 자체에 hll이 걸리는 경우 대응 */
- .code-block-wrapper tr.hll td {
-   background-color: #fffbdd !important;
- }
- 
- /* =======================================================
-  * 7. 테마 의존성 잔상 제거 (반응형 스크롤 힌트 소거)
-  * ======================================================= */
- .code-block-wrapper table::before,
- .code-block-wrapper table::after,
- .code-block-wrapper pre::before,
- .code-block-wrapper pre::after,
- .code-block-wrapper td::before,
- .code-block-wrapper td::after {
-   content: none !important;
- }
+}
+
+.code-block-wrapper .code-block-copy-btn {
+  background: transparent !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  color: #586069 !important;
+  padding: 0.1rem 0.4rem !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  font-size: 0.7rem !important;
+  transition: all 0.2s ease !important;
+  min-width: 3.8rem !important;         /* Copy 버튼 가로 폭 */
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+/* 클릭 시 발생하는 흰색 테두리 및 포커스 링 없애기 위함 */
+.code-block-wrapper .code-block-copy-btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.code-block-wrapper .code-block-copy-btn:hover {
+  background-color: rgba(0, 0, 0, 0.06) !important;
+  color: #24292e !important;
+  border-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.code-block-wrapper .code-block-copy-btn.copied {
+  background-color: #2ea44f !important;
+  border-color: #2ea44f !important;
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
+
+/* =======================================================
+ * 2. 테마 고유의 기본 프레임 레이아웃 초기화
+ * ======================================================= */
+.page__content .code-block-wrapper .highlighter-rouge,
+.page__content .code-block-wrapper figure.highlight,
+.page__content .code-block-wrapper div.highlight,
+.page__content .code-block-wrapper .highlight,
+.code-block-wrapper .highlighter-rouge,
+.code-block-wrapper figure.highlight,
+.code-block-wrapper div.highlight,
+.code-block-wrapper .highlight {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  width: 100% !important;
+  display: block !important;
+}
+
+.code-block-wrapper table,
+.code-block-wrapper tbody,
+.code-block-wrapper tr {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  width: 100% !important;
+  display: table !important;
+  border-collapse: collapse !important;
+}
+
+.code-block-wrapper tr { display: table-row !important; }
+.page__content .code-block-wrapper td,
+.code-block-wrapper td { 
+  display: table-cell !important; 
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* =======================================================
+ * 3. 폰트 및 줄바꿈 균일화 (정확한 수직 줄 맞춤 집행)
+ * ======================================================= */
+/* 외곽 pre와 td 셀에만 글자 크기 비율을 적용 */
+.page__content .code-block-wrapper pre,
+.page__content .code-block-wrapper td,
+.code-block-wrapper pre,
+.code-block-wrapper td {
+  font-size: 0.97em !important; /* 원래 본문 크기 대비 비율, 기본 100%는 inherit를 사용 */
+  font-family: 'Cascadia Code', 'MonoplexNerd', Menlo, Consolas, 'DejaVu Sans Mono', monospace !important;
+  line-height: 1.5 !important;   
+}
+
+/* 내부 code 태그가 글자 크기를 중첩해서 작게 만들지 않도록 차단 */
+.page__content .code-block-wrapper code,
+.code-block-wrapper code {
+  font-size: inherit !important; 
+  font-family: inherit !important;
+}
+
+/* =======================================================
+ * 4. 이중 유격 유발 요소 박멸
+ * ======================================================= */
+/* 테이블을 내부에 포함하고 있는 최외곽 pre 태그의 여백을 완전히 지움 */
+.page__content .code-block-wrapper pre:has(table),
+.code-block-wrapper pre:has(table) {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+}
+
+/* 테이블 내부 셀(td) 안에 들어있는 두 번째 pre 태그의 여백을 완전히 지움 */
+.page__content .code-block-wrapper td pre,
+.code-block-wrapper td pre {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+}
+
+/* =======================================================
+ * 5. 단일 구조 패딩 집행
+ * ======================================================= */
+/* 좌측 행 번호 영역 */
+.page__content .code-block-wrapper td.gutter,
+.page__content .code-block-wrapper td.rouge-gutter,
+.page__content .code-block-wrapper td.linenos,
+.code-block-wrapper td.gutter,
+.code-block-wrapper td.rouge-gutter,
+.code-block-wrapper td.linenos {
+  width: 1% !important;
+  white-space: nowrap !important;
+  padding: 0.4rem 0.3rem 0.4rem 0.5rem !important; /* 상하 여백 0.4rem 고정 */
+  text-align: right !important;
+  color: #57606a !important;        /* GitHub 폰트 컬러 적용 */
+  opacity: 0.85 !important;         /* 불투명도 조절로 흐릿함 대폭 개선 */
+  background-color: #f6f8fa !important;
+  border-right: 1px solid #e1e4e8 !important;
+  user-select: none !important;
+  vertical-align: top !important;
+  text-overflow: clip !important;
+  overflow: visible !important;
+}
+
+/* 행 번호 내부 pre 태그의 말줄임표(.. 잔상) 현상 차단 */
+.code-block-wrapper td.gutter pre,
+.code-block-wrapper td.rouge-gutter pre,
+.code-block-wrapper td.linenos pre {
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+/* 우측 실제 소스 코드 영역 */
+.page__content .code-block-wrapper td.code,
+.page__content .code-block-wrapper td.rouge-code,
+.code-block-wrapper td.code,
+.code-block-wrapper td.rouge-code {
+  padding: 0.4rem 0.6rem !important; /* 상하 여백을 행 번호와 동일하게 맞추어 정렬 */
+  background-color: #ffffff !important;
+  vertical-align: top !important;
+  width: 99% !important;
+}
+
+.code-block-wrapper td.code pre,
+.code-block-wrapper td.rouge-code pre {
+  display: block !important;
+  overflow-x: auto !important;
+}
+
+/* 행 번호가 없는 일반 코드 블록 (테이블이 없는 pre) */
+.page__content .code-block-wrapper > pre:not(:has(table)),
+.page__content .code-block-wrapper .highlight > pre:not(:has(table)),
+.code-block-wrapper > pre:not(:has(table)) {
+  padding: 0.4rem 0.6rem !important;
+  background-color: #ffffff !important;
+  display: block !important;
+  overflow-x: auto !important;
+}
+
+/* =======================================================
+ * 6. 리퀴드 태그 특정 행 강조 기능 (hl_lines / .hll) 대응
+ * ======================================================= */
+/* 행 번호 영역(gutter)과 코드 영역(code) 내부의 강조 행 배경색 설정 */
+.code-block-wrapper .hll {
+  background-color: #fffbdd !important; /* 은은한 노란색 강조 */
+  display: block !important;
+  width: 100% !important;
+}
+
+/* 테이블 행(tr) 자체에 hll이 걸리는 경우 대응 */
+.code-block-wrapper tr.hll td {
+  background-color: #fffbdd !important;
+}
+
+/* =======================================================
+ * 7. 테마 의존성 잔상 제거 (반응형 스크롤 힌트 소거)
+ * ======================================================= */
+.code-block-wrapper table::before,
+.code-block-wrapper table::after,
+.code-block-wrapper pre::before,
+.code-block-wrapper pre::after,
+.code-block-wrapper td::before,
+.code-block-wrapper td::after {
+  content: none !important;
+}
 
 /* pre 하위가 아닌 인라인 code 요소만 타겟팅 */
 .page__content :not(pre) > code {
   font-size: 0.9125em; /* 본문 기본 크기와 어울리게 설정 */
+}
+
+/* =======================================================
+ * 8. 코드 블록 접기/펼치기 (Collapse / Expand)
+ * ======================================================= */
+/* 접힌 상태: 최대 높이 제한 및 오버플로 차단 (JS의 --code-max-height 값과 연동) */
+.code-block-wrapper.is-collapsed > .highlighter-rouge,
+.code-block-wrapper.is-collapsed > figure.highlight,
+.code-block-wrapper.is-collapsed > div.highlight {
+  max-height: var(--code-max-height, 380px) !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+/* 접힌 상태 하단: 배경색(#ffffff)과 이어지는 페이드아웃 그라데이션 */
+.code-block-wrapper.is-collapsed > .highlighter-rouge::after,
+.code-block-wrapper.is-collapsed > figure.highlight::after,
+.code-block-wrapper.is-collapsed > div.highlight::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: 60px !important;
+  background: linear-gradient(rgba(255, 255, 255, 0), #ffffff) !important;
+  pointer-events: none !important;
+}
+
+/* 상단 헤더 우측 액션 그룹 및 상단 보조 토글 버튼 */
+.code-block-wrapper .code-block-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+}
+
+.code-block-wrapper .code-block-toggle-btn {
+  background: transparent !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  color: #586069 !important;
+  padding: 0.1rem 0.4rem !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  font-size: 0.7rem !important;
+  transition: all 0.2s ease !important;
+  min-width: 5.0rem !important;         /* Expand/Collapse 버튼 가로 폭 */
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+/* 클릭 시 발생하는 흰색 테두리 및 포커스 링 없애기 위함 */
+.code-block-wrapper .code-block-toggle-btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.code-block-wrapper .code-block-toggle-btn:hover {
+  background-color: rgba(0, 0, 0, 0.06) !important;
+  color: #24292e !important;
+  border-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+/* 하단 접기/펼치기 버튼 바 */
+.code-block-wrapper .code-expand-btn {
+  display: block !important;
+  width: 100% !important;
+  background-color: #f6f8fa !important;
+  border: none !important;
+  border-top: 1px solid #d1d5da !important;
+  color: #57606a !important;
+  padding: 0.35rem 0.8rem !important;
+  font-size: 0.72rem !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  user-select: none !important;
+  transition: background-color 0.2s ease, color 0.2s ease !important;
+  min-width: 5.6rem !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+.code-block-wrapper .code-expand-btn:hover {
+  background-color: #e2e6ea !important;
+  color: #24292e !important;
 }

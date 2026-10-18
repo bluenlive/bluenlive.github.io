@@ -76,6 +76,14 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
+    // =======================================================
+    // 코드 블록 높이 설정 (이 값들로 전체 동작 제어)
+    // =======================================================
+    var COLLAPSED_HEIGHT = 300;       // 접힌 상태의 기본 노출 높이 (px)
+    var EXPAND_MARGIN_RATIO = 1.3;    // 접기 기능을 적용할 최소 임계 비율 (130%)
+
+    document.documentElement.style.setProperty('--code-max-height', COLLAPSED_HEIGHT + 'px');
+
     // Jekyll/Minimal Mistakes가 생성하는 최상위 코드 블록 컨테이너들을 모두 수집
     var codeBlocks = document.querySelectorAll('.highlighter-rouge, figure.highlight, div.highlight');
 
@@ -117,7 +125,7 @@
       var header = document.createElement('div');
       header.className = 'code-block-header';
 
-      // 3. 언어 추출 및 적용 (스타일은 .code-block-wrapper .code-block-lang 적용)
+      // 3. 언어 추출 및 적용
       var langName = 'code';
       var match = block.className.match(/language-([^\s]+)/) || 
                   (block.querySelector('[class*="language-"]') && block.querySelector('[class*="language-"]').className.match(/language-([^\s]+)/));
@@ -129,7 +137,10 @@
       langSpan.innerText = langName;
       header.appendChild(langSpan);
 
-      // 4. 복사 버튼 생성
+      // 4. 우측 액션 버튼 영역 생성
+      var actions = document.createElement('div');
+      actions.className = 'code-block-actions';
+
       var copyBtn = document.createElement('button');
       copyBtn.className = 'code-block-copy-btn';
       copyBtn.innerText = 'Copy';
@@ -142,10 +153,7 @@
         var codeElement = targetPre.querySelector('code');
         var textToCopy = codeElement ? codeElement.innerText : targetPre.innerText;
 
-        // 레이아웃용으로 넣었던 폭 없는 공백(\u200B)을 제거하여 순수한 빈 줄로 복사되도록 정돈
         textToCopy = textToCopy.replace(/\u200B/g, '');
-
-        // [핀포인트 추가] 하일라이팅 미적용 블록 끝에 붙어오는 불필요한 맨 마지막 줄바꿈(\n)을 제거하여 일관성 유지
         textToCopy = textToCopy.replace(/\r?\n$/, '');
 
         navigator.clipboard.writeText(textToCopy).then(function () {
@@ -159,7 +167,9 @@
           console.error('코드 복사 실패:', err);
         });
       });
-      header.appendChild(copyBtn);
+
+      actions.appendChild(copyBtn);
+      header.appendChild(actions);
 
       // 5. 생성한 헤더와 원본 블록을 wrapper 내부로 순서대로 집어넣음
       wrapper.appendChild(header);
@@ -198,7 +208,7 @@
         var codeTd = block.querySelector('td.code pre') || block.querySelector('td.rouge-code pre') || block.querySelector('pre');
         var gutterTd = block.querySelector('td.gutter pre') || block.querySelector('td.rouge-gutter pre') || block.querySelector('td.linenos pre');
 
-        // 1. 본문 코드 영역 강조 레이어 주입
+        // 본문 코드 영역 강조 레이어 주입
         if (codeTd) {
           var targetInner = codeTd.querySelector('code') || codeTd;
           var codeLines = targetInner.innerHTML.split('\n');
@@ -206,8 +216,6 @@
 
           var wrappedCode = codeLines.map(function (line, index) {
             var currentLineNum = (index + 1).toString();
-            
-            // 빈 줄(\r 또는 완전 공백)일 때 높이 정보가 상실되어 행이 뒤틀리는 현상 방지
             var displayLine = (line === '' || line === '\r') ? '&#8203;' : line;
 
             if (targetLines.indexOf(currentLineNum) !== -1) {
@@ -218,7 +226,7 @@
           targetInner.innerHTML = wrappedCode.join('');
         }
 
-        // 2. 좌측 행 번호 영역 강조색 동기화
+        // 좌측 행 번호 영역 강조색 동기화
         if (gutterTd) {
           var gutterLines = gutterTd.innerHTML.split('\n');
           if (gutterLines.length > 1 && gutterLines[gutterLines.length - 1] === '') gutterLines.pop();
@@ -232,6 +240,50 @@
           });
           gutterTd.innerHTML = wrappedGutter.join('');
         }
+      }
+
+      // =======================================================
+      // 일정 높이(버퍼 비율 적용)를 초과하는 긴 코드 블록 접기/펼치기 처리
+      // =======================================================
+      if (block.scrollHeight > (COLLAPSED_HEIGHT * EXPAND_MARGIN_RATIO)) {
+        wrapper.classList.add('is-collapsed');
+
+        // 상단 헤더 보조 버튼 (Copy 좌측에 삽입)
+        var topToggleBtn = document.createElement('button');
+        topToggleBtn.className = 'code-block-toggle-btn';
+        topToggleBtn.type = 'button';
+        topToggleBtn.innerText = '▼ Expand';
+        actions.insertBefore(topToggleBtn, copyBtn);
+
+        // 하단 전체 너비 바
+        var bottomToggleBtn = document.createElement('button');
+        bottomToggleBtn.className = 'code-expand-btn';
+        bottomToggleBtn.type = 'button';
+        bottomToggleBtn.innerText = '▼ 전체 코드 펼치기';
+        wrapper.appendChild(bottomToggleBtn);
+
+        // 상단/하단 동기화 토글 함수
+        var toggleCodeBlock = function (shouldScroll) {
+          var isNowCollapsed = wrapper.classList.toggle('is-collapsed');
+          if (isNowCollapsed) {
+            topToggleBtn.innerText = '▼ Expand';
+            bottomToggleBtn.innerText = '▼ 전체 코드 펼치기';
+            if (shouldScroll) {
+              wrapper.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+          } else {
+            topToggleBtn.innerText = '▲ Collapse';
+            bottomToggleBtn.innerText = '▲ 코드 접기';
+          }
+        };
+
+        topToggleBtn.addEventListener('click', function () {
+          toggleCodeBlock(false); // 상단에서 접을 때는 스크롤 유지
+        });
+
+        bottomToggleBtn.addEventListener('click', function () {
+          toggleCodeBlock(true);  // 하단에서 접을 때는 블록 상단으로 스크롤 보정
+        });
       }
     });
   });
