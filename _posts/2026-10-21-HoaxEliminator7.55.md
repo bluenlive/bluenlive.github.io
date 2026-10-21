@@ -1,8 +1,8 @@
 ---
 layout: single
 #classes: wide
-title: "구라제거기(키보드 보안 프로그램 삭제) 7.60 업데이트"
-date: 2026-8-9 22:33:00 +0900
+title: "구라제거기(키보드 보안 프로그램 삭제) 7.62 업데이트"
+date: 2026-10-21 23:33:00 +0900
 categories:
   - HoaxEliminator
 tags: ["activex","nProtect","구라제거기","뱅킹","보안","안랩"]
@@ -25,7 +25,7 @@ PC 뱅킹을 하고 나면 컴퓨터가 미친 듯이 느려지기 때문이다.
 그래서 간단히 만들었다.\
 설치 프로그램 목록에서 이러한 **백해무익한 쓰레기들을 찾아서 한방에 제거**해주는 프로그램.
 
-![image](/images/2026-08-09/hoaxelem_B_okl_s64_Q.webp)
+![image](/images/2026-10-21/hoaxelem_B_okl_s64_Q.webp)
 
 이 프로그램을 실행하면 위와 같은 화면이 나온다.
 
@@ -40,7 +40,7 @@ PC에 설치된 프로그램들 중에 제거해야 될 프로그램들의 목�
 x86, x64 및 ARM64 버전이 함께 들어있는데, x64 윈도우 환경이라면 x64 버전을 추천한다.
 
 {% include bnl_download-box.html
-   file="/attachment/2026-08-09/HoaxEliminator7.60.zip"
+   file="/attachment/2026-10-21/HoaxEliminator7.60.zip"
    password="teus.me" %}
 
 ## 히스토리
@@ -75,3 +75,14 @@ x86, x64 및 ARM64 버전이 함께 들어있는데, x64 윈도우 환경이라�
   - 대상 프로그램 목록 중 오타 수정 **(AI 믿지 맙시다)**
   - 라이브러리 업데이트
     - Zstandard 라이브러리를 1.6.0.git 버전(2026-8-1)으로 업데이트
+
+- 2026.10.21: v7.62
+  - 대상 프로그램 추가
+    - co∗∗fCe∗∗
+    - Fi∗∗Age∗∗ ∗.∗
+    - GP∗∗∗MP∗∗
+    - KM∗ Cli∗∗∗ NA∗
+    - e∗PDFRe∗∗∗∗ ∗.∗∗
+    - e∗PDFPr∗∗∗∗∗
+    - iFo∗∗Edit∗∗
+    - SCO∗∗∗ Sc∗∗Te∗∗ ∗.∗.∗.∗
