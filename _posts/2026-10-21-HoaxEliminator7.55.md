@@ -40,7 +40,7 @@ PC에 설치된 프로그램들 중에 제거해야 될 프로그램들의 목�
 x86, x64 및 ARM64 버전이 함께 들어있는데, x64 윈도우 환경이라면 x64 버전을 추천한다.
 
 {% include bnl_download-box.html
-   file="/attachment/2026-10-21/HoaxEliminator7.60.zip"
+   file="/attachment/2026-10-21/HoaxEliminator7.62.zip"
    password="teus.me" %}
 
 ## 히스토리
