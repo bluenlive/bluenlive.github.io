@@ -32,7 +32,7 @@ FBI 조사와 이사회 조사, 주주 소송까지 번지며 엔비디아 주�
 
 ## 2. 제임스 건: "D.C.를 사랑한 스파이"
 
-![image](/images/2026-11-11/gunn-safran_B_okl_s36.webp)
+![image](/images/2026-11-11/gunn-safran_D_B_okl_s36.webp)
 *The Spies Who Loved D.C.*
 
 제임스 건은 늘 입버릇처럼 **"DC 코믹스를 진심으로 사랑한다"**고 말했다.\
@@ -56,7 +56,7 @@ FBI 조사와 이사회 조사, 주주 소송까지 번지며 엔비디아 주�
 
 ## 3. 젠슨 황: 말 그대로 당해버린 "나를 따먹은 스파이"
 
-![image](/images/2026-11-11/huangs_B_okl_s36.webp)
+![image](/images/2026-11-11/huangs_D_B_okl_s36.webp)
 *The Spy Who Shagged Huang*
 
 제임스 건이 **사랑을 위장**해 적진을 턴 스파이라면, 젠슨 황은 정반대다.\
