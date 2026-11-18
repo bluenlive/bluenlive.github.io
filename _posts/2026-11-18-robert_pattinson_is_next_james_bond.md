@@ -12,6 +12,7 @@ categories:
 연출은 드니 빌뇌브 감독이 맡는다.
 
 ![image](/images/2026-11-18/007_pattenson_B_okl_s36.webp)
+*아는 분들은 다 아는 그 사진*
 
 화려한 이름값 뒤로 씁쓸한 뒷맛이 남는다.\
 배우 개인의 연기력이나 호불호와는 별개의 문제다.\
@@ -26,6 +27,7 @@ categories:
 넷플릭스 **위약금**까지 대납하며 워너를 삼킨 스카이댄스는 곧바로 **DC 스튜디오 수장 제임스 건과 피터 사프란을 해임**했다.
 
 ![image](/images/2026-11-18/gunnperman_B_okl_s36.webp)
+*깡통을 얻어맞은 그 분...*
 
 모기업의 주인이 바뀌고 수뇌부가 날아가면서 DC 유니버스는 거대한 혼란에 빠졌다.\
 하지만 패틴슨은 《더 배트맨 파트 2》에서 하차하지 않았다.\
@@ -36,7 +38,7 @@ categories:
 
 더 큰 문제는 아마존 MGM이 보여준 불투명한 선발 과정이다.\
 지난 몇 달간 외신과 베팅 시장은 칼럼 터너, 잭 로던, 조시 오코너 등 1990년생 영국 배우들의 치열한 경쟁으로 달아올랐다.\
-[글로벌 예측 시장의 배당률 경쟁](https://news.kalshi.com/p/james-bond-casting-market-lowden-leads-turner)부터 [NME의 칼럼 터너 유력 보도](https://www.nme.com/news/film/james-bond-experts-think-callum-turner-has-been-named-new-007-3974783), [버라이어티의 잭 로던 인터뷰](https://au.variety.com/2026/film/news/jack-lowden-responds-james-bond-rumours-42193/)까지 이어지며 분위기가 무르익었다.
+[글로벌 예측 시장의 배당률 경쟁](https://news.kalshi.com/p/james-bond-casting-market-lowden-leads-turner)부터 [NME의 터너 유력 보도](https://www.nme.com/news/film/james-bond-experts-think-callum-turner-has-been-named-new-007-3974783), [버라이어티의 잭 로던 인터뷰](https://au.variety.com/2026/film/news/jack-lowden-responds-james-bond-rumours-42193/)까지 분위기를 끌어올렸다.
 
 **10월 말에는 영국 브레이 스튜디오에서 이들이 최종 스크린 테스트**를 치른다는 소식까지 전해졌다.\
 [더랩(TheWrap)의 단독 보도](https://www.thewrap.com/creative-content/movies/final-james-bond-screen-tests-jack-lowden-callum-turner-josh-oconnor/)와 [IGN의 숏리스트 검증 기사](https://www.ign.com/articles/final-james-bond-screen-tests-are-underway-with-jack-lowden-callum-turner-and-others-on-the-shortlist), [월드 오브 릴(World of Reel)의 테스트 일정 보도](https://www.worldofreel.com/blog/2026/10/22/jack-lowden-callum-turner-and-josh-oconnor-will-screen-test-for-james-bond-this-week)가 잇따르며 새 얼굴에 대한 기대감은 최고조에 달했다.
@@ -46,7 +48,7 @@ categories:
 
 ### 3. 공정한 발굴 대신 작동한 '제작진 인맥'과 자본 논리
 
-패틴슨이 배트맨이라는 거대한 제약에도 본드 역을 따낸 배경에는 두터운 '제작진 인맥'이 자리한다.\
+패틴슨이 배트맨이라는 거대한 제약에도 본드 역을 따낸 배경에는 두터운 **제작진 인맥**이 자리한다.\
 연출을 맡은 드니 빌뇌브 감독은 이미 《듄: 파트 3》에서 패틴슨과 호흡을 맞추며 깊은 신뢰를 쌓았다.\
 이번 007의 프로듀서 데이비드 헤이먼은 2005년 《해리 포터와 불의 잔》에서 무명이던 패틴슨을 처음 발굴한 장본인이다.
 
@@ -57,9 +59,9 @@ categories:
 
 과거 EON 프로덕션 체제에서 007 캐스팅에는 엄격한 불문율이 존재했다.\
 다른 캐릭터의 얼굴로 각인된 배우를 배제하고, 오직 **본드로만 10년 이상 활약**할 배우를 찾아내는 원칙이었다.\
-숀 코너리부터 다니엘 크레이그까지, 본드는 언제나 새로운 발견을 통해 시리즈의 생명력을 이어왔다.
+션 코너리부터 다니엘 크레이그까지, 본드는 언제나 새로운 발견을 통해 시리즈의 생명력을 이어왔다.
 
-그러나 아마존 MGM은 첫 작품부터 그 전통을 지워버렸다.\
+그러나, 아마존 MGM은 첫 작품부터 그 전통을 지워버렸다.\
 거대 자본의 리스크 회피와 제작진 내부의 인맥 중심 캐스팅이 60년 프랜차이즈의 고유한 품격을 훼손했다.
 
 ---
@@ -70,6 +72,6 @@ categories:
 하지만 그가 본드가 되는 과정에는 신선한 발견의 카타르시스도, 공정한 경쟁의 설득력도 없었다.
 
 패틴슨은 배트맨의 망토 위에 007의 턱시도를 겹쳐 입게 되었다.\
-이 결정은, 할리우드 거대 자본이 프랜차이즈의 정체성보다 단기 흥행 보증 수표와 인맥을 우선시한다는 사실을 보여준 씁쓸한 선례로 남을 것이다.
+이 결정은, 할리우드 거대 자본이 프랜차이즈의 정체성보다 단기 흥행 보증 수표와 인맥을 우선시한다는 사실을 보여준 씁쓸한 선례로 남을 것 같다.
 
 [^1]: 바로 그 오라클 창업자임
