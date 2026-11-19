@@ -12,7 +12,7 @@ categories:
 연출은 드니 빌뇌브 감독이 맡는다.
 
 ![image](/images/2026-11-18/007_pattenson_B_okl_s36.webp)
-*아는 분들은 다 아는 그 사진*
+*아는 분들은 다 아는 그 사진일까?*
 
 화려한 이름값 뒤로 씁쓸한 뒷맛이 남는다.\
 배우 개인의 연기력이나 호불호와는 별개의 문제다.\
@@ -23,16 +23,17 @@ categories:
 최근 할리우드 최대 이슈는 래리 엘리슨[^1]의 자본을 등에 업은 스카이댄스의 워너브라더스 디스커버리(WBD) 인수였다.
 
 ![image](/images/2026-11-18/Skydance-Corp_B_okl_s36.webp)
+*집안 돈으로 넷플릭스의 위약금까지 대납한 그곳*
 
 넷플릭스 **위약금**까지 대납하며 워너를 삼킨 스카이댄스는 곧바로 **DC 스튜디오 수장 제임스 건과 피터 사프란을 해임**했다.
 
 ![image](/images/2026-11-18/gunnperman_B_okl_s36.webp)
-*깡통을 얻어맞은 그 분...*
+*DC 내에서 트롤링 하다가 깡통을 얻어맞은 그 분...*
 
 모기업의 주인이 바뀌고 수뇌부가 날아가면서 DC 유니버스는 거대한 혼란에 빠졌다.\
 하지만 패틴슨은 《더 배트맨 파트 2》에서 하차하지 않았다.\
 오히려 배트맨 촬영을 이어가면서 동시에 경쟁 스튜디오인 아마존 MGM의 제임스 본드 역까지 거머쥐었다.\
-한 배우가 현역 '배트맨'과 '007'을 동시에 연기하는 초유의 사태가 벌어진 셈이다.
+한 배우가 현역 **배트맨**과 **007**을 동시에 연기하는 초유의 사태가 벌어진 셈이다.
 
 ### 2. 공개 테스트는 연막이었나: 들러리가 된 30대 후보들
 
@@ -41,7 +42,7 @@ categories:
 [글로벌 예측 시장의 배당률 경쟁](https://news.kalshi.com/p/james-bond-casting-market-lowden-leads-turner)부터 [NME의 터너 유력 보도](https://www.nme.com/news/film/james-bond-experts-think-callum-turner-has-been-named-new-007-3974783), [버라이어티의 잭 로던 인터뷰](https://au.variety.com/2026/film/news/jack-lowden-responds-james-bond-rumours-42193/)까지 분위기를 끌어올렸다.
 
 **10월 말에는 영국 브레이 스튜디오에서 이들이 최종 스크린 테스트**를 치른다는 소식까지 전해졌다.\
-[더랩(TheWrap)의 단독 보도](https://www.thewrap.com/creative-content/movies/final-james-bond-screen-tests-jack-lowden-callum-turner-josh-oconnor/)와 [IGN의 숏리스트 검증 기사](https://www.ign.com/articles/final-james-bond-screen-tests-are-underway-with-jack-lowden-callum-turner-and-others-on-the-shortlist), [월드 오브 릴(World of Reel)의 테스트 일정 보도](https://www.worldofreel.com/blog/2026/10/22/jack-lowden-callum-turner-and-josh-oconnor-will-screen-test-for-james-bond-this-week)가 잇따르며 새 얼굴에 대한 기대감은 최고조에 달했다.
+[TheWrap의 단독 보도](https://www.thewrap.com/creative-content/movies/final-james-bond-screen-tests-jack-lowden-callum-turner-josh-oconnor/)와 [IGN의 숏리스트 검증 기사](https://www.ign.com/articles/final-james-bond-screen-tests-are-underway-with-jack-lowden-callum-turner-and-others-on-the-shortlist), [World of Reel의 테스트 일정 보도](https://www.worldofreel.com/blog/2026/10/22/jack-lowden-callum-turner-and-josh-oconnor-will-screen-test-for-james-bond-this-week)가 잇따르며 기대감은 최고조에 달했다.
 
 하지만 결과는 이미 다른 대형 프랜차이즈를 이끄는 톱스타의 낙점이었다.\
 정식 절차처럼 포장됐던 30대 배우들의 검증 과정은 결과적으로 대중의 시선을 돌리는 **연막**이자 **들러리 쇼**에 그쳤다.
