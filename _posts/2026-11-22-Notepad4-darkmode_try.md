@@ -30,14 +30,14 @@ Zufuliu는 [GitHub 이슈(#1287)](https://github.com/zufuliu/notepad4/issues/128
 
 ```cpp
 void BitmapInvertColor(HBITMAP hbmp) noexcept {
-  BITMAP bmp;
-  if (GetObject(hbmp, sizeof(BITMAP), &bmp) && bmp.bmBitsPixel == 32) {
-    const ULONG count = bmp.bmHeight * bmp.bmWidth;
-    uint32_t *prgba = static_cast<uint32_t *>(bmp.bmBits);
-    for (ULONG x = 0; x < count; x++, prgba++) {
-      *prgba ^= 0x00ffffff;
+    BITMAP bmp;
+    if (GetObject(hbmp, sizeof(BITMAP), &bmp) && bmp.bmBitsPixel == 32) {
+        const ULONG count = bmp.bmHeight * bmp.bmWidth;
+        uint32_t *prgba = static_cast<uint32_t *>(bmp.bmBits);
+        for (ULONG x = 0; x < count; x++, prgba++) {
+            *prgba ^= 0x00ffffff;
+        }
     }
-  }
 }
 ```
 
@@ -92,9 +92,9 @@ b = clamp(b + delta, 0, 255);
 // ITU-R BT.601 휘도(Luminance) 기준 어두운 픽셀만 선택 반전
 const int luma = (r * 299 + g * 587 + b * 114) / 1000;
 if (luma < 128) {
-  r = 255 - r;
-  g = 255 - g;
-  b = 255 - b;
+    r = 255 - r;
+    g = 255 - g;
+    b = 255 - b;
 }
 ```
 
@@ -119,10 +119,10 @@ const int maxC = max(max(r, g), b);
 const int minC = min(min(r, g), b);
 const int effectiveChroma = (maxC - minC) * 2;
 if (effectiveChroma < 255) {
-  const int delta = ((225 - (maxC + minC)) * (255 - effectiveChroma)) / 255;
-  r = clamp(r + delta, 0, 255);
-  g = clamp(g + delta, 0, 255);
-  b = clamp(b + delta, 0, 255);
+    const int delta = ((225 - (maxC + minC)) * (255 - effectiveChroma)) / 255;
+    r = clamp(r + delta, 0, 255);
+    g = clamp(g + delta, 0, 255);
+    b = clamp(b + delta, 0, 255);
 }
 ```
 
