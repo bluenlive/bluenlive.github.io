@@ -8,7 +8,7 @@ categories:
 
 ## Robert Pattinson is James Bond
 
-2026년 11월 16일, 아마존 MGM 스튜디오가 제7대 제임스 본드로 로버트 패틴슨을 공식 발표했다.\
+2026년 11월 16일, 아마존 MGM 스튜디오가 제7대 제임스 본드로 **로버트 패틴슨**을 공식 발표했다.\
 연출은 드니 빌뇌브 감독이 맡는다.
 
 ![image](/images/2026-11-18/007_pattenson_B_okl_s36.webp)
@@ -42,7 +42,7 @@ categories:
 [글로벌 예측 시장의 배당률 경쟁](https://news.kalshi.com/p/james-bond-casting-market-lowden-leads-turner)부터 [NME의 터너 유력 보도](https://www.nme.com/news/film/james-bond-experts-think-callum-turner-has-been-named-new-007-3974783), [버라이어티의 잭 로던 인터뷰](https://au.variety.com/2026/film/news/jack-lowden-responds-james-bond-rumours-42193/)까지 분위기를 끌어올렸다.
 
 **10월 말에는 영국 브레이 스튜디오에서 이들이 최종 스크린 테스트**를 치른다는 소식까지 전해졌다.\
-[TheWrap의 단독 보도](https://www.thewrap.com/creative-content/movies/final-james-bond-screen-tests-jack-lowden-callum-turner-josh-oconnor/)와 [IGN의 숏리스트 검증 기사](https://www.ign.com/articles/final-james-bond-screen-tests-are-underway-with-jack-lowden-callum-turner-and-others-on-the-shortlist), [World of Reel의 테스트 일정 보도](https://www.worldofreel.com/blog/2026/10/22/jack-lowden-callum-turner-and-josh-oconnor-will-screen-test-for-james-bond-this-week)가 잇따르며 기대감은 최고조에 달했다.
+[TheWrap 단독 보도](https://www.thewrap.com/creative-content/movies/final-james-bond-screen-tests-jack-lowden-callum-turner-josh-oconnor/)와 [IGN 숏리스트 검증 기사](https://www.ign.com/articles/final-james-bond-screen-tests-are-underway-with-jack-lowden-callum-turner-and-others-on-the-shortlist), [World of Reel 테스트 일정 보도](https://www.worldofreel.com/blog/2026/10/22/jack-lowden-callum-turner-and-josh-oconnor-will-screen-test-for-james-bond-this-week)가 잇따르며 기대감은 최고조에 달했다.
 
 하지만 결과는 이미 다른 대형 프랜차이즈를 이끄는 톱스타의 낙점이었다.\
 정식 절차처럼 포장됐던 30대 배우들의 검증 과정은 결과적으로 대중의 시선을 돌리는 **연막**이자 **들러리 쇼**에 그쳤다.
@@ -73,6 +73,6 @@ categories:
 하지만 그가 본드가 되는 과정에는 신선한 발견의 카타르시스도, 공정한 경쟁의 설득력도 없었다.
 
 패틴슨은 배트맨의 망토 위에 007의 턱시도를 겹쳐 입게 되었다.\
-이 결정은, 할리우드 거대 자본이 프랜차이즈의 정체성보다 단기 흥행 보증 수표와 인맥을 우선시한다는 사실을 보여준 씁쓸한 선례로 남을 것 같다.
+할리우드 거대 자본이 프랜차이즈의 정체성보다 단기 흥행 보증 수표와 인맥을 우선시한다는 걸 보여준 씁쓸한 선례로 남을 것 같다.
 
 [^1]: 바로 그 오라클 창업자임
